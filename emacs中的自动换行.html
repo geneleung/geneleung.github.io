@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>emacs中的自动换行</title>
+<!-- 2017-12-15 Fri 00:23 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="http://www.iknockdoor.com/"> UP </a>
+
+ <a accesskey="H" href="http://www.iknockdoor.com/"> HOME </a>
+
+<a accesskey="H" href="RSS"> RSS </a>
+</div>
+<hr /><div id="content">
+<h1 class="title">emacs中的自动换行</h1>
+<p>
+2017-07-23 18:01 CST 1500804100
+这里自动换行是有两种意思：
+</p>
+<ul class="org-ul">
+<li>一种显示层面的，当显示长句时，超过屏幕范围时自动在起另一行显示，这种操作叫做
+truncate-lines，这种操作只是在显示层面做了换行，并不是真的在原内容上
+插入了换行符。
+
+<p>
+可以用以下命令在buffer种打开自动换行
+</p>
+<pre class="example">
+M-x toggle-truncate-lines
+</pre>
+<p>
+可以在初始化文件中加入以下内容，默认全部换行，还是很方便的，阅读内容
+时不用总是移动
+</p>
+<pre class="example">
+(set-default 'truncate-lines t)
+</pre>
+</li>
+
+<li>另一种换行是在编辑层面的，当编辑内容超出一定长度后自动插入换行符，这样可
+以使得编辑内容非常整齐，这里不同于truncate-lines，这里是真的插入了换
+行符。
+
+<p>
+refill-mode和auto-fill-mode都是做这个事情的，不过refill-mode会把
+buffer中所有内容做处理，不够智能，往往有一些内容，比如表格什么的我们
+并不想做处理。所以常用auto-fill-mode，只对当前行生效，再配合
+fill-region等命令非常智能和方便。
+</p>
+</li>
+</ul>
+</div>
+<div id="postamble" class="status">
+<hr />
+<p>By Chappie 
+<a href="https://www.gnu.org/software/emacs/">emacs 25.3.1</a>
+
+<a href="https://orgmode.org/">org mode 8.2.10</a></p>
+</div>
+</body>
+</html>

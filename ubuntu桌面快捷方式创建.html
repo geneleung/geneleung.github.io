@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>ubuntu桌面快捷方式创建</title>
+<!-- 2017-12-15 Fri 00:23 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="http://www.iknockdoor.com/"> UP </a>
+
+ <a accesskey="H" href="http://www.iknockdoor.com/"> HOME </a>
+
+<a accesskey="H" href="RSS"> RSS </a>
+</div>
+<hr /><div id="content">
+<h1 class="title">ubuntu桌面快捷方式创建</h1>
+<p>
+2017-07-22 13:41 CST 1500702093
+以下目录创建.desktop文件都会生效，作用范围不同
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">/usr/share/applications</td>
+<td class="left">全局</td>
+</tr>
+
+<tr>
+<td class="left">~/.local/share/applications</td>
+<td class="left">用户</td>
+</tr>
+
+<tr>
+<td class="left">~/.gnome/apps</td>
+<td class="left">用户</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+创建emacs启动快捷方式
+emacs ~/.local/share/applications/emacs.desktop
+</p>
+<pre class="example">
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=emacs
+Icon=emacs
+Path=/usr/local/bin
+Exec=emacs
+StartupNotify=false
+StartupWMClass=Emacs
+OnlyShowIn=Unity;
+X-UnityGenerated=true
+</pre>
+<p>
+创建intellj idea快捷方式
+emacs ~/.local/share/applications/idea.desktop
+</p>
+<pre class="example">
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=IntelliJ IDEA Community Edition
+Icon=/home/liangzhen/Tools/idea-IC-163.13906.18/bin/idea.png
+Exec="/home/liangzhen/Tools/idea-IC-163.13906.18/bin/idea.sh" %f
+Comment=The Drive to Develop
+Categories=Development;IDE;
+Terminal=false
+StartupWMClass=jetbrains-idea-ce
+</pre>
+</div>
+<div id="postamble" class="status">
+<hr />
+<p>By Chappie 
+<a href="https://www.gnu.org/software/emacs/">emacs 25.3.1</a>
+
+<a href="https://orgmode.org/">org mode 8.2.10</a></p>
+</div>
+</body>
+</html>

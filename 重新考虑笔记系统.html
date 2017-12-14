@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>重新考虑笔记系统</title>
+<!-- 2017-12-15 Fri 00:23 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="http://www.iknockdoor.com/"> UP </a>
+
+ <a accesskey="H" href="http://www.iknockdoor.com/"> HOME </a>
+
+<a accesskey="H" href="RSS"> RSS </a>
+</div>
+<hr /><div id="content">
+<h1 class="title">重新考虑笔记系统</h1>
+<p>
+重新考虑笔记系统
+</p>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">一些功能点</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">静态网页生成器</h3>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">图片的处理</h3>
+</div>
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3">如何部署</h3>
+</div>
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4">UML的支持</h3>
+</div>
+<div id="outline-container-sec-1-5" class="outline-3">
+<h3 id="sec-1-5">自定义样式</h3>
+</div>
+<div id="outline-container-sec-1-6" class="outline-3">
+<h3 id="sec-1-6">网页布局与风格</h3>
+</div>
+<div id="outline-container-sec-1-7" class="outline-3">
+<h3 id="sec-1-7">MathJax</h3>
+</div>
+<div id="outline-container-sec-1-8" class="outline-3">
+<h3 id="sec-1-8">RSS</h3>
+</div>
+<div id="outline-container-sec-1-9" class="outline-3">
+<h3 id="sec-1-9">版本管理</h3>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">笔记系统是什么样子的才可以助力保持写笔记的习惯？</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">专注于笔记的内容，不打断写笔记的灵感</h3>
+<div class="outline-text-3" id="text-2-1">
+<ol class="org-ol">
+<li>不要必须写个标题，考虑写个什么标题会打断思路和灵感。保存文件时如
+果没有标题自动截取开头文字作为标题就好
+</li>
+<li>不要写什么元信息，比如作者，标签，URL这些，也会打断思路，URL随机
+就好，跟标题分离，标题没事可能会改，URL随机字符串，生成之后可以
+固定
+</li>
+<li>要方便分类和全文搜索
+</li>
+<li>有的时候分目录也挺蛋疼，如果写一个文件前还需要考虑应该放在哪个目
+录，也会被打断，所有有个按时间的归档就好，一个月也写不了那么多，
+按月归档就好
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">要做的事情</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="todo TODO">TODO</span> 本地整个项目导出html</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+最基本的导出static html的功能使用org-mode自带的就好，文档丰富，越简
+单越好，事情搞复杂了就偏离了他重在写内容看内容的本质上。
+</p>
+<ol class="org-ol">
+<li>是否支持多级目录的org文件扫描？其实并不需要关心生成html的目录情
+况，原文件的才重要。
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="todo TODO">TODO</span> push到github</h3>
+</div>
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="todo TODO">TODO</span> 调整样式，同时适合台式机和移动设备</h3>
+</div>
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4"><span class="todo TODO">TODO</span> 支持图片</h3>
+<div class="outline-text-3" id="text-3-4">
+<ol class="org-ol">
+<li>图片如何组织？考虑用attachment
+</li>
+<li>支持从剪切板粘贴图片进来
+</li>
+<li>支持拖拽图片进来
+</li>
+<li>支持控制图片大小，位置，浮动效果
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-3-5" class="outline-3">
+<h3 id="sec-3-5"><span class="todo TODO">TODO</span> 支持uml</h3>
+</div>
+<div id="outline-container-sec-3-6" class="outline-3">
+<h3 id="sec-3-6"><span class="todo TODO">TODO</span> 支持mathjax</h3>
+</div>
+<div id="outline-container-sec-3-7" class="outline-3">
+<h3 id="sec-3-7"><span class="todo TODO">TODO</span> 整个站点排版</h3>
+<div class="outline-text-3" id="text-3-7">
+<ol class="org-ol">
+<li>首页，文章列表+简单截取部分内容
+</li>
+<li>另外是侧边栏，导航还是需要的，两部分，按日期的归档和按tag的输出，
+包含最近内容.侧边栏的内容可以用index来做，可以实现按日期归档，日
+期可以自动生成，这样就可以实现自动归档了。
+</li>
+<li>头部导航也是需要的，但可以做的尽量低调，重点在内容，导航有就可以了。
+</li>
+<li>底部版权信息，闭环回流
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-3-8" class="outline-3">
+<h3 id="sec-3-8"><span class="todo TODO">TODO</span> RSS</h3>
+</div>
+<div id="outline-container-sec-3-9" class="outline-3">
+<h3 id="sec-3-9"><span class="todo TODO">TODO</span> google custom search</h3>
+</div>
+<div id="outline-container-sec-3-10" class="outline-3">
+<h3 id="sec-3-10"><span class="todo TODO">TODO</span> google baidu统计</h3>
+</div>
+<div id="outline-container-sec-3-11" class="outline-3">
+<h3 id="sec-3-11"><span class="todo TODO">TODO</span> 文章模版</h3>
+<div class="outline-text-3" id="text-3-11">
+<p>
+文章标题，作者，日期啥的，不用每次都按一定的格式写，最好可以做到自
+动。标题有就有，没有就截取前面部分内容就好
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3-12" class="outline-3">
+<h3 id="sec-3-12"><span class="todo TODO">TODO</span> 首页怎么搞？</h3>
+<div class="outline-text-3" id="text-3-12">
+<p>
+如果使用sitemap后面可能会变得比较大，是否考虑分页？真心不用搞得太麻
+烦，看其他的站点，比如干货杂货铺，都好几年了也没多大，就用sitemap就
+好。
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">怎么做？</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1">第一个版本</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+第一个版本计划最一个很简单的。
+</p>
+<ul class="org-ul">
+<li>首页就是sitemap按时间倒序排序
+</li>
+<li>每个页面包含头部导航
+</li>
+<li>头部导航包含首页，关于，RSS，联系方式
+</li>
+<li>文章页面只包含头部导航和底部版权信息，及一些文章的信息
+</li>
+<li>处理一下css
+</li>
+<li>增加百度，google统计
+</li>
+<li>文件名用前段内容截取
+</li>
+<li>应该做到写笔记的适合不需要考虑任何事情，不用加什么乱七八糟的头部，
+不用考虑文件名，URL这些
+</li>
+<li>支持图片拖拽，截屏
+</li>
+</ul>
+</div>
+<div id="outline-container-sec-4-1-1" class="outline-4">
+<h4 id="sec-4-1-1"><a id="ID-D4D6B9BB-C7C3-4B8F-869D-6C7B5DD071CF" name="ID-D4D6B9BB-C7C3-4B8F-869D-6C7B5DD071CF"></a>todo list&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h4>
+<div class="outline-text-4" id="text-4-1-1">
+<ul class="org-ul">
+<li><code>[X]</code> 环境搭建
+确认emacs,org版本号
+</li>
+<li><code>[X]</code> 搞清楚头部那些导出参数有啥用，如果有用就设置一个模版
+看了下，只是控制输出html的meta-data，作用并不大，可能对seo优化用，
+前期可以先不用了
+</li>
+<li><code>[-]</code> 配好首页，和导航和底部以及导出的html内容
+以下主要看org官方文档和自带的帮助文件即可设置，自带的帮助文件比
+较重要，要仔细看，不同版本差异可能会较大。
+<ul class="org-ul">
+<li><code>[X]</code> 头部导航搞定
+可以用自带的后home，up样式的订制，也可用html-preamble，这里我
+用自带做定义，重新定义org-html-home/up-format
+</li>
+<li><code>[X]</code> 导出源码文件内容控制
+</li>
+<li><code>[X]</code> 底部内容
+设置html-postamble即可
+</li>
+<li><code>[&#xa0;]</code> 文章时间应该有两个，一个是创建时间，一个是最后修改时间，如
+果都能取git的时间就好了.可以参考<a href="https://wpc.io/blog/posts/blogging-with-org-mode.html">这篇</a> 文章，看下如何获取git时间。
+</li>
+</ul>
+</li>
+<li><code>[X]</code> 处理文件名和URL
+org生成的文件名如果没有用title指定，默认就是文件名，因此只需要处
+理文件名就可以了，源文件和生成文件也可以保持统一 
+<ul class="org-ul">
+<li><code>[X]</code> URL就用文件名就好
+</li>
+<li><code>[X]</code> 文件名取首行或者前部分内容
+文件重命名部分参考<a href="https://stackoverflow.com/questions/384284/how-do-i-rename-an-open-file-in-emacs">这里</a> 其他获取首行自己写的，感觉还不错.按键绑
+定也取代了系统的另存为，用了C-x C-w
+</li>
+</ul>
+</li>
+<li><code>[X]</code> 处理图片
+org-download插件是个不错的东西，试了下直接使用package安装缺少的
+async即可使用。 配置了图片保存到attachment中
+<ul class="org-ul">
+<li><code>[X]</code> 拖拽OK了
+</li>
+<li><code>[X]</code> 网络粘贴？
+org-download-yank
+</li>
+<li><code>[X]</code> 截屏
+org-download-screen
+</li>
+<li><code>[X]</code> attach的目录怎么设置的？
+可以通过org-attach-directory设置，默认是相对与org文件当前目录
+下的data目录，如果没有会自动创建，这个目录也挺好的。如果设置了
+固定目录，所有org文件的attach都放在那个目录下也不好。
+</li>
+<li><code>[X]</code> 图片大小，位置等属性的设置
+检查
+<p>
+:(image-type-available-p 'imagemagick)
+</p>
+</li>
+<li><code>[X]</code> 把旧文章的图片迁移过去
+</li>
+</ul>
+</li>
+<li><code>[&#xa0;]</code> 处理发布到GitHub
+实现其实也简单，要么就本地发布，不在通过服务器中转，要么就多一个
+生成文件的仓库，测试一下删除文件的场景。删除文件也简单，强制同步生成
+一次就好。
+</li>
+<li><code>[&#xa0;]</code> 添加google baidu统计
+</li>
+<li><code>[&#xa0;]</code> 添加RSS支持
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2">静态站点生成</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+使用org-mode原生的发布功能，指定一个根目录，对文件命名，目录命名，
+   目录结构无任何特殊要求。org会递归的把目录下的org文件生成对应的
+   html文件，并保持目录结构。支持中文。
+</p>
+</div>
+<div id="outline-container-sec-4-2-1" class="outline-4">
+<h4 id="sec-4-2-1">最简单的生成配置</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<ol class="org-ol">
+<li>版本信息
+emacs version "GNU Emacs 25.3.1 (x86_64-apple-darwin16.7.0,
+NS appkit-1504.83 Version 10.12.6 (Build 16G29)) of 2017-09-15"
+org-mode version "8.2.10"
+在支持图片拖拽功能时，使用org-download库依赖async库，使用默
+认emacs自带package install
+</li>
+<li>设置 org-publish-project-alist变量，进行生成配置，最重要的指
+定输入目录和输出目录
+<div class="org-src-container">
+
+<pre class="src src-elisp">          (require 'ox-publish)
+(setq org-publish-project-alist
+      '(
+        ("blog-notes"
+         :base-directory "~/personal/public-notes/"
+         :base-extension "org"
+         :publishing-directory "~/public_html/"
+         :recursive t
+         :publishing-function org-html-publish-to-html
+         :headline-levels 4             ; Just the default for this project.
+         :auto-preamble t
+         )
+        ("blog-static"
+         :base-directory "~/personal/public-notes/"
+         :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
+         :publishing-directory "~/public_html/"
+         :recursive t
+         :publishing-function org-publish-attachment
+         )
+        ("blog" :components ("blog-notes" "blog-static"))
+        ))
+</pre>
+</div>
+</li>
+<li>M-x org-publish-project 生成
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-4-2-2" class="outline-4">
+<h4 id="sec-4-2-2">sitemap的生成</h4>
+</div>
+<div id="outline-container-sec-4-2-3" class="outline-4">
+<h4 id="sec-4-2-3">默认模版</h4>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<hr />
+<p>By Chappie 
+<a href="https://www.gnu.org/software/emacs/">emacs 25.3.1</a>
+
+<a href="https://orgmode.org/">org mode 8.2.10</a></p>
+</div>
+</body>
+</html>

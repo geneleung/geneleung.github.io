@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>git命令按tab键的自动补全</title>
+<!-- 2017-12-15 Fri 00:23 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="http://www.iknockdoor.com/"> UP </a>
+
+ <a accesskey="H" href="http://www.iknockdoor.com/"> HOME </a>
+
+<a accesskey="H" href="RSS"> RSS </a>
+</div>
+<hr /><div id="content">
+<h1 class="title">git命令按tab键的自动补全</h1>
+<p>
+2017-09-15 23:49 CST 1505490578
+在mac os x系统中的terminal中使用git命令时默认没有支持tab自动补全，用起
+来会不太方便。
+</p>
+
+<p>
+如果不想用网上的脚本解决，倒是有个安全简单的方法：
+</p>
+
+<p>
+step 1.通过以下命令搜索系统中的git补全脚本
+</p>
+<pre class="example">
+sudo find / -name git-completion.bash
+</pre>
+<p>
+搜出来的路径会因是从Xcode安装的还是从Command Line Tools安装的有区别，
+我的是Xcode安装的（建议Command Line Tools安装，Xcode比较大，而且如果不
+做iOS开发并没什么用），路径如下：
+</p>
+<pre class="example">
+/Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
+</pre>
+<p>
+step 2.在~/.bash_profile文件添加一下内容
+</p>
+<div class="org-src-container">
+
+<pre class="src src-bash">if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash ]; then
+   source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
+fi
+</pre>
+</div>
+<p>
+step 3.重启一下terminal或者执行下面的命令，然后试一下吧
+</p>
+<pre class="example">
+source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
+</pre>
+</div>
+<div id="postamble" class="status">
+<hr />
+<p>By Chappie 
+<a href="https://www.gnu.org/software/emacs/">emacs 25.3.1</a>
+
+<a href="https://orgmode.org/">org mode 8.2.10</a></p>
+</div>
+</body>
+</html>
