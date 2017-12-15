@@ -4,19 +4,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>orgmode做todolist</title>
-<!-- 2017-12-15 Fri 00:23 -->
+<!-- 2017-12-16 Sat 01:38 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
+<link rel='stylesheet' href='res/code.css' />
+<link rel='stylesheet' href='res/main.css' />
 </head>
 <body>
 <div id="org-div-home-and-up">
  <a accesskey="h" href="http://www.iknockdoor.com/"> UP </a>
-
+|
  <a accesskey="H" href="http://www.iknockdoor.com/"> HOME </a>
-
-<a accesskey="H" href="RSS"> RSS </a>
-</div>
-<hr /><div id="content">
+|
+<a accesskey="H" href=""> RSS </a>
+</div><div id="content">
 <h1 class="title">orgmode做todolist</h1>
 <p>
 org mode中todo的原生概念就是分散在各个笔记中的，因为todo往往是在记笔记
@@ -135,8 +136,8 @@ todo的功能本质上是在一组关键字和无关键字之间轮换，然后�
 </p>
 <div class="org-src-container">
 
-<pre class="src src-elisp">(setq org-todo-keywords
-'((sequence "TODO" "FEEDBACK" "VERIFY" "|" "DONE" "DELEGATED")))
+<pre class="src src-elisp">(<span style="color: #ffad29; font-weight: bold;">setq</span> org-todo-keywords
+'((sequence <span style="color: #e67128;">"TODO"</span> <span style="color: #e67128;">"FEEDBACK"</span> <span style="color: #e67128;">"VERIFY"</span> <span style="color: #e67128;">"|"</span> <span style="color: #e67128;">"DONE"</span> <span style="color: #e67128;">"DELEGATED"</span>)))
 </pre>
 </div>
 </div>
@@ -226,8 +227,8 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 <div class="outline-text-3" id="text-9-1">
 <div class="org-src-container">
 
-<pre class="src src-elisp">(setq org-log-done 'time) ;;相同的in-buffer settings #+STARTUP: logdone
-(setq org-log-done 'note) ;;#+STARTUP: lognotedone
+<pre class="src src-elisp">(<span style="color: #ffad29; font-weight: bold;">setq</span> org-log-done 'time) <span style="color: #74af68;">;;</span><span style="color: #74af68;">&#30456;&#21516;&#30340;in-buffer settings #+STARTUP: logdone</span>
+(<span style="color: #ffad29; font-weight: bold;">setq</span> org-log-done 'note) <span style="color: #74af68;">;;</span><span style="color: #74af68;">#+STARTUP: lognotedone</span>
 </pre>
 </div>
 <p>
@@ -245,14 +246,14 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 </p>
 <div class="org-src-container">
 
-<pre class="src src-elisp">(setq org-todo-keywords
-'((sequence "TODO(t)" "WAIT(w@/!)" "|" "DONE(d!)" "CANCELED(c@)")))
-;;或者用in-buffer settings
-;;#+TODO: TODO(t) WAIT(w@/!) | DONE(d!) CANCELED(c@)
-;;再或者用property
-;;:PROPERTIES:
-;;:LOGGING: TODO(!) WAIT(!) DONE(!) CANCELED(!)
-;;:END:
+<pre class="src src-elisp">(<span style="color: #ffad29; font-weight: bold;">setq</span> org-todo-keywords
+'((sequence <span style="color: #e67128;">"TODO(t)"</span> <span style="color: #e67128;">"WAIT(w@/!)"</span> <span style="color: #e67128;">"|"</span> <span style="color: #e67128;">"DONE(d!)"</span> <span style="color: #e67128;">"CANCELED(c@)"</span>)))
+<span style="color: #74af68;">;;</span><span style="color: #74af68;">&#25110;&#32773;&#29992;in-buffer settings</span>
+<span style="color: #74af68;">;;</span><span style="color: #74af68;">#+TODO: TODO(t) WAIT(w@/!) | DONE(d!) CANCELED(c@)</span>
+<span style="color: #74af68;">;;</span><span style="color: #74af68;">&#20877;&#25110;&#32773;&#29992;property</span>
+<span style="color: #74af68;">;;</span><span style="color: #74af68;">:PROPERTIES:</span>
+<span style="color: #74af68;">;;</span><span style="color: #74af68;">:LOGGING: TODO(!) WAIT(!) DONE(!) CANCELED(!)</span>
+<span style="color: #74af68;">;;</span><span style="color: #74af68;">:END:</span>
 </pre>
 </div>
 <p>

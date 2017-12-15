@@ -4,19 +4,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>重新考虑笔记系统</title>
-<!-- 2017-12-15 Fri 00:23 -->
+<!-- 2017-12-16 Sat 01:38 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
+<link rel='stylesheet' href='res/code.css' />
+<link rel='stylesheet' href='res/main.css' />
 </head>
 <body>
 <div id="org-div-home-and-up">
  <a accesskey="h" href="http://www.iknockdoor.com/"> UP </a>
-
+|
  <a accesskey="H" href="http://www.iknockdoor.com/"> HOME </a>
-
-<a accesskey="H" href="RSS"> RSS </a>
-</div>
-<hr /><div id="content">
+|
+<a accesskey="H" href=""> RSS </a>
+</div><div id="content">
 <h1 class="title">重新考虑笔记系统</h1>
 <p>
 重新考虑笔记系统
@@ -265,10 +266,34 @@ org-download-screen
 </li>
 </ul>
 </li>
-<li><code>[&#xa0;]</code> 处理发布到GitHub
+<li><code>[X]</code> 处理发布到GitHub
 实现其实也简单，要么就本地发布，不在通过服务器中转，要么就多一个
 生成文件的仓库，测试一下删除文件的场景。删除文件也简单，强制同步生成
 一次就好。
+</li>
+<li><code>[X]</code> 处理样式外观字体等等
+一开始并没有想要处理外观样式的内容，毕竟追求简单，不想在界面上花
+太多精力。但是直接借用了其他网站的css样式并稍作修改后发现阅读舒
+服了很多。
+<ul class="org-ul">
+<li><code>[X]</code> css配置，直接下载的<a href="https://ogbe.net/">https://ogbe.net/</a> 这个站点的样式，他也
+是使用org生成的站点，修改了li的高度，字体，其他基本上不用做任
+何修改，效果很不错。
+</li>
+<li><code>[X]</code> 关于字体设置，基本知识参考
+<a href="http://borninsummer.com/2013/11/30/blog-typography-custom/">http://borninsummer.com/2013/11/30/blog-typography-custom/</a> 最
+后使用了简书的字体配置
+<pre class="example">
+SF UI Display, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif
+</pre>
+<p>
+更适合中文一点
+</p>
+</li>
+<li><code>[X]</code> 最后是代码高亮的问题，之前导出的一直没有高亮，居然是因为没
+有emacs没有装htmlize插件，装了之后成功导出代码高亮
+</li>
+</ul>
 </li>
 <li><code>[&#xa0;]</code> 添加google baidu统计
 </li>
@@ -302,26 +327,26 @@ org-mode version "8.2.10"
 定输入目录和输出目录
 <div class="org-src-container">
 
-<pre class="src src-elisp">          (require 'ox-publish)
-(setq org-publish-project-alist
+<pre class="src src-elisp">          (<span style="color: #ffad29; font-weight: bold;">require</span> '<span style="color: #008b8b;">ox-publish</span>)
+(<span style="color: #ffad29; font-weight: bold;">setq</span> org-publish-project-alist
       '(
-        ("blog-notes"
-         :base-directory "~/personal/public-notes/"
-         :base-extension "org"
-         :publishing-directory "~/public_html/"
-         :recursive t
-         :publishing-function org-html-publish-to-html
-         :headline-levels 4             ; Just the default for this project.
-         :auto-preamble t
+        (<span style="color: #e67128;">"blog-notes"</span>
+         <span style="color: #23d7d7;">:base-directory</span> <span style="color: #e67128;">"~/personal/public-notes/"</span>
+         <span style="color: #23d7d7;">:base-extension</span> <span style="color: #e67128;">"org"</span>
+         <span style="color: #23d7d7;">:publishing-directory</span> <span style="color: #e67128;">"~/public_html/"</span>
+         <span style="color: #23d7d7;">:recursive</span> t
+         <span style="color: #23d7d7;">:publishing-function</span> org-html-publish-to-html
+         <span style="color: #23d7d7;">:headline-levels</span> 4             <span style="color: #74af68;">; </span><span style="color: #74af68;">Just the default for this project.</span>
+         <span style="color: #23d7d7;">:auto-preamble</span> t
          )
-        ("blog-static"
-         :base-directory "~/personal/public-notes/"
-         :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
-         :publishing-directory "~/public_html/"
-         :recursive t
-         :publishing-function org-publish-attachment
+        (<span style="color: #e67128;">"blog-static"</span>
+         <span style="color: #23d7d7;">:base-directory</span> <span style="color: #e67128;">"~/personal/public-notes/"</span>
+         <span style="color: #23d7d7;">:base-extension</span> <span style="color: #e67128;">"css</span><span style="color: #e67128; font-weight: bold;">\\</span><span style="color: #e67128; font-weight: bold;">|</span><span style="color: #e67128;">js</span><span style="color: #e67128; font-weight: bold;">\\</span><span style="color: #e67128; font-weight: bold;">|</span><span style="color: #e67128;">png</span><span style="color: #e67128; font-weight: bold;">\\</span><span style="color: #e67128; font-weight: bold;">|</span><span style="color: #e67128;">jpg</span><span style="color: #e67128; font-weight: bold;">\\</span><span style="color: #e67128; font-weight: bold;">|</span><span style="color: #e67128;">gif</span><span style="color: #e67128; font-weight: bold;">\\</span><span style="color: #e67128; font-weight: bold;">|</span><span style="color: #e67128;">pdf</span><span style="color: #e67128; font-weight: bold;">\\</span><span style="color: #e67128; font-weight: bold;">|</span><span style="color: #e67128;">mp3</span><span style="color: #e67128; font-weight: bold;">\\</span><span style="color: #e67128; font-weight: bold;">|</span><span style="color: #e67128;">ogg</span><span style="color: #e67128; font-weight: bold;">\\</span><span style="color: #e67128; font-weight: bold;">|</span><span style="color: #e67128;">swf"</span>
+         <span style="color: #23d7d7;">:publishing-directory</span> <span style="color: #e67128;">"~/public_html/"</span>
+         <span style="color: #23d7d7;">:recursive</span> t
+         <span style="color: #23d7d7;">:publishing-function</span> org-publish-attachment
          )
-        ("blog" :components ("blog-notes" "blog-static"))
+        (<span style="color: #e67128;">"blog"</span> <span style="color: #23d7d7;">:components</span> (<span style="color: #e67128;">"blog-notes"</span> <span style="color: #e67128;">"blog-static"</span>))
         ))
 </pre>
 </div>
