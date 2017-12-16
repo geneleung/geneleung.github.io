@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>安装emacs</title>
-<!-- 2017-12-16 Sat 01:38 -->
+<!-- 2017-12-17 Sun 01:52 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <link rel='stylesheet' href='res/code.css' />
@@ -34,18 +34,18 @@
 </p>
 <div class="org-src-container">
 
-<pre class="src src-sh"><span style="color: #74af68;"># </span><span style="color: #74af68;">&#23433;&#35013;&#20381;&#36182;</span>
+<pre class="src src-sh"><span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">&#23433;&#35013;&#20381;&#36182;</span>
 sudo apt-get install build-essential
 sudo apt-get build-dep emacs24
-<span style="color: #74af68;"># </span><span style="color: #74af68;">&#19979;&#36733;&#28304;&#30721;</span>
+<span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">&#19979;&#36733;&#28304;&#30721;</span>
 wget http://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.gz
-<span style="color: #74af68;"># </span><span style="color: #74af68;">&#35299;&#21387;&#32534;&#35793;</span>
+<span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">&#35299;&#21387;&#32534;&#35793;</span>
 tar zxvf emacs-24.5.tar.gz
-<span style="color: #23d7d7;">cd</span> emacs-24.5
+<span style="font-weight: bold;">cd</span> emacs-24.5
 ./configure
-<span style="color: #74af68;">#</span><span style="color: #74af68;">&#22914;&#26524; configure &#36825;&#19968;&#27493;&#20986;&#38169;, &#19968;&#33324;&#26159;&#32570;&#23569;&#20854;&#20182;&#30456;&#23545;&#24212;&#30340;&#20381;&#36182;&#30340;, &#36825;&#26102;, &#21487;&#20197;&#20351;&#29992; `aptitude` &#36825;&#20010;&#24037;&#20855;&#26469;&#35299;&#20915;&#20381;&#36182;&#30340;&#38382;&#39064;.</span>
+<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">&#22914;&#26524; configure &#36825;&#19968;&#27493;&#20986;&#38169;, &#19968;&#33324;&#26159;&#32570;&#23569;&#20854;&#20182;&#30456;&#23545;&#24212;&#30340;&#20381;&#36182;&#30340;, &#36825;&#26102;, &#21487;&#20197;&#20351;&#29992; `aptitude` &#36825;&#20010;&#24037;&#20855;&#26469;&#35299;&#20915;&#20381;&#36182;&#30340;&#38382;&#39064;.</span>
 make -j 4
-<span style="color: #74af68;"># </span><span style="color: #74af68;">&#23433;&#35013;</span>
+<span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">&#23433;&#35013;</span>
 sudo make install
 </pre>
 </div>
@@ -59,15 +59,15 @@ sudo make install
 </p>
 <div class="org-src-container">
 
-<pre class="src src-sh"><span style="color: #74af68;"># </span><span style="color: #74af68;">&#19979;&#36733;&#28304;&#30721;</span>
+<pre class="src src-sh"><span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">&#19979;&#36733;&#28304;&#30721;</span>
 wget http://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.gz
-<span style="color: #74af68;"># </span><span style="color: #74af68;">&#35299;&#21387;&#32534;&#35793;</span>
+<span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">&#35299;&#21387;&#32534;&#35793;</span>
 tar zxvf emacs-24.5.tar.gz
-<span style="color: #23d7d7;">cd</span> emacs-24.5
+<span style="font-weight: bold;">cd</span> emacs-24.5
 ./configure
 make -j 4
 sudo make install
-<span style="color: #74af68;"># </span><span style="color: #74af68;">&#23436;&#25104;&#19978;&#36848;&#27493;&#39588;&#21518;&#20250;&#22312;&#28304;&#30721;nextstep&#30446;&#24405;&#29983;&#25104;emacs.app&#65292;copy&#33267;application&#30446;&#24405;&#21363;&#21487;</span>
+<span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">&#23436;&#25104;&#19978;&#36848;&#27493;&#39588;&#21518;&#20250;&#22312;&#28304;&#30721;nextstep&#30446;&#24405;&#29983;&#25104;emacs.app&#65292;copy&#33267;application&#30446;&#24405;&#21363;&#21487;</span>
 </pre>
 </div>
 </div>
@@ -90,10 +90,10 @@ sudo make install
 
 <pre class="src src-sh">yum install gcc make ncurses-devel
 yum install giflib-devel libjpeg-devel libtiff-devel -y
-<span style="color: #23d7d7;">cd</span> /usr/local/src
+<span style="font-weight: bold;">cd</span> /usr/local/src
 wget http://ftp.gnu.org/pub/gnu/emacs/emacs-25.2.1.tar.gz
 tar xzvf emacs-25.2.1.tar.gz
-<span style="color: #23d7d7;">cd</span> emacs-25.2.1
+<span style="font-weight: bold;">cd</span> emacs-25.2.1
 ./configure --without-x --without-selinux
 make &amp;&amp; make install
 which emacs
@@ -112,7 +112,7 @@ emacs --version
 
 <pre class="src src-sh">wget http://mirror.sdunix.com/gnu/emacs/emacs-24.5.tar.gz
 tar zxvfp emacs-24.5.tar.gz 
-<span style="color: #23d7d7;">cd</span> emacs-24.5/
+<span style="font-weight: bold;">cd</span> emacs-24.5/
 ./configure 
 sudo yum -y install libXpm-devel libjpeg-turbo-devel openjpeg-devel openjpeg2-devel turbojpeg-devel giflib-devel libtiff-devel gnutls-devel libxml2-devel GConf2-devel dbus-devel wxGTK-devel gtk3-devel
 ./configure 
@@ -130,12 +130,12 @@ sudo make install
 <pre class="src src-sh">sudo yum -y install libXpm-devel libjpeg-turbo-devel openjpeg-devel openjpeg2-devel turbojpeg-devel giflib-devel libtiff-devel gnutls-devel libxml2-devel GConf2-devel dbus-devel wxGTK-devel gtk3-devel
 wget http://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-25.1.tar.gz
 tar zxvf emacs-25.1.tar.gz
-<span style="color: #23d7d7;">cd</span> emacs-25.1
+<span style="font-weight: bold;">cd</span> emacs-25.1
 ./autogen
-./configure --without-makeinfo <span style="color: #74af68;"># </span><span style="color: #74af68;">incase makeinfo is not available on your system: Example Centos 7 else `./configure` would do</span>
+./configure --without-makeinfo <span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">incase makeinfo is not available on your system: Example Centos 7 else `./configure` would do</span>
 sudo make install
 
-<span style="color: #74af68;">## </span><span style="color: #74af68;">verify installation</span>
+<span style="font-weight: bold; font-style: italic;">## </span><span style="font-weight: bold; font-style: italic;">verify installation</span>
 which emacs
 emacs --version
 </pre>
