@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>重新考虑笔记系统</title>
-<!-- 2017-12-19 Tue 18:59 -->
+<!-- 2017-12-19 Tue 20:59 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <link rel='stylesheet' href='/res/code.css' />
@@ -288,9 +288,11 @@ SF UI Display, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi 
 <li><code>[X]</code> 最后是代码高亮的问题，之前导出的一直没有高亮，居然是因为没
 有emacs没有装htmlize插件，装了之后成功导出代码高亮
 </li>
-<li><code>[&#xa0;]</code> 遗留了一个问题，用vps部署后为什么代码高亮没有了？
-</li>
-<li><code>[&#xa0;]</code> 测试一下
+<li><code>[X]</code> 遗留了一个问题，用vps部署后为什么代码高亮没有了？
+把服务端的.emacs.d copy到本地做了个测试，发现是窗口方式和命令
+行方式运行emacs的区别，窗口方式会有颜色，命令行方式没有，通过
+设置htmlize-output-type 'css 来解决，注意不能用htmlize里面定义
+的htmlize-output-type要用org-html-htmlize-output-type才有效
 </li>
 </ul>
 </li>
