@@ -4,11 +4,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>orgmode做todolist</title>
-<!-- 2017-12-17 Sun 02:13 -->
+<!-- 2017-12-19 Tue 18:59 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
-<link rel='stylesheet' href='res/code.css' />
-<link rel='stylesheet' href='res/main.css' />
+<link rel='stylesheet' href='/res/code.css' />
+<link rel='stylesheet' href='/res/main.css' />
 </head>
 <body>
 <div id="org-div-home-and-up">
@@ -136,8 +136,8 @@ todo的功能本质上是在一组关键字和无关键字之间轮换，然后�
 </p>
 <div class="org-src-container">
 
-<pre class="src src-elisp">(<span style="font-weight: bold;">setq</span> org-todo-keywords
-'((sequence <span style="font-style: italic;">"TODO"</span> <span style="font-style: italic;">"FEEDBACK"</span> <span style="font-style: italic;">"VERIFY"</span> <span style="font-style: italic;">"|"</span> <span style="font-style: italic;">"DONE"</span> <span style="font-style: italic;">"DELEGATED"</span>)))
+<pre class="src src-elisp">(<span class="org-keyword">setq</span> org-todo-keywords
+'((sequence <span class="org-string">"TODO"</span> <span class="org-string">"FEEDBACK"</span> <span class="org-string">"VERIFY"</span> <span class="org-string">"|"</span> <span class="org-string">"DONE"</span> <span class="org-string">"DELEGATED"</span>)))
 </pre>
 </div>
 </div>
@@ -227,8 +227,8 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 <div class="outline-text-3" id="text-9-1">
 <div class="org-src-container">
 
-<pre class="src src-elisp">(<span style="font-weight: bold;">setq</span> org-log-done 'time) <span style="font-weight: bold; font-style: italic;">;;</span><span style="font-weight: bold; font-style: italic;">&#30456;&#21516;&#30340;in-buffer settings #+STARTUP: logdone</span>
-(<span style="font-weight: bold;">setq</span> org-log-done 'note) <span style="font-weight: bold; font-style: italic;">;;</span><span style="font-weight: bold; font-style: italic;">#+STARTUP: lognotedone</span>
+<pre class="src src-elisp">(<span class="org-keyword">setq</span> org-log-done 'time) <span class="org-comment-delimiter">;;</span><span class="org-comment">&#30456;&#21516;&#30340;in-buffer settings #+STARTUP: logdone</span>
+(<span class="org-keyword">setq</span> org-log-done 'note) <span class="org-comment-delimiter">;;</span><span class="org-comment">#+STARTUP: lognotedone</span>
 </pre>
 </div>
 <p>
@@ -246,14 +246,14 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 </p>
 <div class="org-src-container">
 
-<pre class="src src-elisp">(<span style="font-weight: bold;">setq</span> org-todo-keywords
-'((sequence <span style="font-style: italic;">"TODO(t)"</span> <span style="font-style: italic;">"WAIT(w@/!)"</span> <span style="font-style: italic;">"|"</span> <span style="font-style: italic;">"DONE(d!)"</span> <span style="font-style: italic;">"CANCELED(c@)"</span>)))
-<span style="font-weight: bold; font-style: italic;">;;</span><span style="font-weight: bold; font-style: italic;">&#25110;&#32773;&#29992;in-buffer settings</span>
-<span style="font-weight: bold; font-style: italic;">;;</span><span style="font-weight: bold; font-style: italic;">#+TODO: TODO(t) WAIT(w@/!) | DONE(d!) CANCELED(c@)</span>
-<span style="font-weight: bold; font-style: italic;">;;</span><span style="font-weight: bold; font-style: italic;">&#20877;&#25110;&#32773;&#29992;property</span>
-<span style="font-weight: bold; font-style: italic;">;;</span><span style="font-weight: bold; font-style: italic;">:PROPERTIES:</span>
-<span style="font-weight: bold; font-style: italic;">;;</span><span style="font-weight: bold; font-style: italic;">:LOGGING: TODO(!) WAIT(!) DONE(!) CANCELED(!)</span>
-<span style="font-weight: bold; font-style: italic;">;;</span><span style="font-weight: bold; font-style: italic;">:END:</span>
+<pre class="src src-elisp">(<span class="org-keyword">setq</span> org-todo-keywords
+'((sequence <span class="org-string">"TODO(t)"</span> <span class="org-string">"WAIT(w@/!)"</span> <span class="org-string">"|"</span> <span class="org-string">"DONE(d!)"</span> <span class="org-string">"CANCELED(c@)"</span>)))
+<span class="org-comment-delimiter">;;</span><span class="org-comment">&#25110;&#32773;&#29992;in-buffer settings</span>
+<span class="org-comment-delimiter">;;</span><span class="org-comment">#+TODO: TODO(t) WAIT(w@/!) | DONE(d!) CANCELED(c@)</span>
+<span class="org-comment-delimiter">;;</span><span class="org-comment">&#20877;&#25110;&#32773;&#29992;property</span>
+<span class="org-comment-delimiter">;;</span><span class="org-comment">:PROPERTIES:</span>
+<span class="org-comment-delimiter">;;</span><span class="org-comment">:LOGGING: TODO(!) WAIT(!) DONE(!) CANCELED(!)</span>
+<span class="org-comment-delimiter">;;</span><span class="org-comment">:END:</span>
 </pre>
 </div>
 <p>
