@@ -217,6 +217,18 @@
 </li>
 <li><code>[&#xa0;]</code> 文章时间应该有两个，一个是创建时间，一个是最后修改时间，如
 果都能取git的时间就好了.可以参考<a href="https://wpc.io/blog/posts/blogging-with-org-mode.html">这篇</a> 文章，看下如何获取git时间。
+<div class="org-src-container">
+
+<pre class="src src-bash"># 获取文件或路径最新提交的时间
+git log -1 --format=%ci path
+# 获取文件或路径首次提交的时间
+git log --reverse --pretty=oneline --format=%ci  path| head -1
+</pre>
+</div>
+<p>
+用命令行的方式可以获取到，重写org-publish-find-date函数可以替
+换sitemap获取时间戳的方式，遇到了些困难，.git目录也会被获取.
+</p>
 </li>
 </ul>
 </li>
