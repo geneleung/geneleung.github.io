@@ -313,3 +313,7 @@ dd,
 blockquote {
     text-align: justify;
 }
+.timestamp {
+    float:right;
+    color:#657b83;
+}
