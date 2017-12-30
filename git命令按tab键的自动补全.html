@@ -20,8 +20,7 @@
 <h1 class="title">git命令按tab键的自动补全</h1>
 <p>
 2017-09-15 23:49 CST 1505490578
-在mac os x系统中的terminal中使用git命令时默认没有支持tab自动补全，用起
-来会不太方便。
+在mac os x系统中的terminal中使用git命令时默认没有支持tab自动补全，用起来会不太方便。
 </p>
 
 <p>
@@ -35,9 +34,7 @@ step 1.通过以下命令搜索系统中的git补全脚本
 sudo find / -name git-completion.bash
 </pre>
 <p>
-搜出来的路径会因是从Xcode安装的还是从Command Line Tools安装的有区别，
-我的是Xcode安装的（建议Command Line Tools安装，Xcode比较大，而且如果不
-做iOS开发并没什么用），路径如下：
+搜出来的路径会因是从Xcode安装的还是从Command Line Tools安装的有区别，我的是Xcode安装的（建议Command Line Tools安装，Xcode比较大，而且如果不做iOS开发并没什么用），路径如下：
 </p>
 <pre class="example">
 /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
@@ -60,10 +57,12 @@ source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-complet
 </pre>
 </div>
 <div id="postamble" class="status">
-<hr />
-<p>By Chappie 
-<a href="https://www.gnu.org/software/emacs/">emacs 25.3.1</a>
-<a href="https://orgmode.org/">org mode 8.2.10</a></p>
+
+<div id="org-div-home-and-up">
+ <a href="/index.html"> 返回目录 </a>
+</div>
+<p class="author">by chappie (iknockdoor.com@gmail.com)</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

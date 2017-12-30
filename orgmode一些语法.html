@@ -19,9 +19,7 @@
 </div><div id="content">
 <h1 class="title">orgmode一些语法</h1>
 <p>
-orgmode只是提供了一个很好的工具，但能否用好这个工具才是重点。可以用兵
-器和招式来理解。
-官方文档上说可以做为keep notes,todo list,project planning
+orgmode只是提供了一个很好的工具，但能否用好这个工具才是重点。可以用兵器和招式来理解。官方文档上说可以做为keep notes,todo list,project planning
 </p>
 <div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1">记录一下使用orgmode都可以做哪些事情，怎么做法</h2>
@@ -63,8 +61,7 @@ org-lint命令可以检查org语法
 #+ 开头的关键字并非是任意写的，orgmode识别这些是有限的，通过输入
 </p>
 <p>
-#+然后再入M-TAB 自动补全可以看到orgmode支持的关键字，另外当输入了这
-些关键字之后，可以通过C-c C-c来刷新生效
+#+然后再入M-TAB 自动补全可以看到orgmode支持的关键字，另外当输入了这些关键字之后，可以通过C-c C-c来刷新生效
 </p>
 </div>
 </div>
@@ -73,8 +70,7 @@ org-lint命令可以检查org语法
 <div class="outline-text-2" id="text-4">
 <p>
 &lt;s TAB completes the ‘src’ code block.
-&lt;e TAB 输入例子块，这个我常用
-其他如下：
+&lt;e TAB 输入例子块，这个我常用其他如下：
 s #+BEGIN_SRC &#x2026; #+END_SRC
 e #+BEGIN_EXAMPLE &#x2026; #+END_EXAMPLE
 q #+BEGIN_QUOTE &#x2026; #+END_QUOTE
@@ -93,8 +89,7 @@ I #+INCLUDE: line
 <div class="outline-text-2" id="text-5">
 <p>
 C-c C-x d 添加一个Drawer
-C-c C-z 这个命令很好使，添加一条日志，包含时间戳和笔记，很适合用来做
-批注，或者做阅读笔记。如果设置了org-log-into-drawer，会记录在指定的
+C-c C-z 这个命令很好使，添加一条日志，包含时间戳和笔记，很适合用来做批注，或者做阅读笔记。如果设置了org-log-into-drawer，会记录在指定的
 Drawer中，一般设置为LOGBOOK
 </p>
 </div>
@@ -103,26 +98,25 @@ Drawer中，一般设置为LOGBOOK
 <h2 id="sec-6">org-mode的时间戳</h2>
 <div class="outline-text-2" id="text-6">
 <p>
-默认时间戳是会根据loacl变化的，尤其是星期几，中文就是三，四这样这样，
-但是公司电脑和个人电脑似乎local不太一样，一个是中文一个是英文。做如
-下设置，统一使用英文
+默认时间戳是会根据loacl变化的，尤其是星期几，中文就是三，四这样这样，但是公司电脑和个人电脑似乎local不太一样，一个是中文一个是英文。做如下设置，统一使用英文
 </p>
 <pre class="example">
 (setq system-time-locale "C")
 </pre>
 <p>
-其他local的设置就先不管了，似乎公司电脑用的还是GB2312，语言和local环
-境设置是另外一个问题了。上面这个方法是在一下地址找到的
+其他local的设置就先不管了，似乎公司电脑用的还是GB2312，语言和local环境设置是另外一个问题了。上面这个方法是在一下地址找到的
 <a href="https://emacs.stackexchange.com/questions/22371/org-mode-timestamps-encoding">https://emacs.stackexchange.com/questions/22371/org-mode-timestamps-encoding</a>
 </p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<hr />
-<p>By Chappie 
-<a href="https://www.gnu.org/software/emacs/">emacs 25.3.1</a>
-<a href="https://orgmode.org/">org mode 8.2.10</a></p>
+
+<div id="org-div-home-and-up">
+ <a href="/index.html"> 返回目录 </a>
+</div>
+<p class="author">by chappie (iknockdoor.com@gmail.com)</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
