@@ -36,6 +36,21 @@
 </div>
 <div id="outline-container-sec-3" class="outline-2">
 <h2 id="sec-3">view绘制的三个流程的调用关系</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+view的默认onMeasure取了默认值，ViewGroup作为布局的基类，没有重写
+onMeasure方法，但是提供了measureChildren的方法，其中最重要的是
+getChildMeasureSpec方法，这里可以看到如何处理layout的各种不同spec的情况，自定义ViewGroup时可以借鉴。
+</p>
+
+<p>
+父view对子view的layout都是相对自己的，一般都是从0开始。
+</p>
+
+<p>
+View和ViewGroup的onLayout方法默认是空的
+</p>
+</div>
 </div>
 <div id="outline-container-sec-4" class="outline-2">
 <h2 id="sec-4">滚动原理，界面绘制与自定义view</h2>
@@ -75,6 +90,11 @@ requestLayout
 <div class="outline-text-2" id="text-5">
 <p>
 先看measure的数据有什么用，measure计算出了没一个view的大小，包含了内部子view的margin和padding（事实上是否包含要看ViewGroup onMeasure方法的实现），在下一步layout的过程会使用宽高数据计算出view位置的四个顶点，这是应该是最主要的作用了；另外在控制是否需要重绘和dirty区域也有用到。
+</p>
+
+<p>
+实践中发现，继承ViewGroup onMeasure方法不是必须重写的，但onLayout方法是要的。事实上发现，onLayout方法完全可以不使用measure的数据直接布局。但是会有一个问题，由于子view没有被遍历measure，然后没有measureed
+的size，然后在子view视图更新的时候不会发生重绘，可能是因为dirty区域的关系，所以onMeasure方法还是非常有必要重写的。
 </p>
 
 <p>
@@ -131,6 +151,19 @@ butom这些值，另外还会用刀scrollX，transform，matrix这些值，这�
 通过学习view的绘制过程，会发现视图动画其实是原生支持的，在draw的过程中直接使用transform的matrix实现的，他只影响draw的过程，不会重新
 measure和layout，因此不会有性能问题，那么属性动画呢？经过实验，属性动画其实也是和视图动画类似的，动画过程中并不会重新measure和layout，也不会有性能问题，其他的区别就是网上大家说的那些了。
 </p>
+</div>
+</div>
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10">最简单的，最基本的自定义的ViewGroup应该怎么写？</h2>
+<div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li>onMeasure
+调用ViewGroup.measureChildren(..)方法
+</li>
+<li>onLayout
+逐个调用子view的layout方法，不考虑magin,padding，参数给0,0,l-r,b-t
+</li>
+</ul>
 </div>
 </div>
 </div>
