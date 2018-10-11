@@ -1,0 +1,221 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>iknockdoor</title>
+		<meta name="description" content="">
+		<meta name="author" content="chappie">
+
+		<link rel="stylesheet" href="/theme/css/foundation.css" />
+		<link rel="stylesheet" href="/theme/css/pygment/monokai.css" />
+		<link rel="stylesheet" href="/theme/css/custom.css" />
+
+
+		<script src="/theme/js/modernizr.js"></script>
+
+		<!-- Feeds -->
+
+
+		<!-- mathjax config similar to math.stackexchange -->
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+				inlineMath: [ ['$', '$'] ],
+				displayMath: [ ['$$', '$$']],
+				processEscapes: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+			},
+			messageStyle: "none",
+			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+		});
+		</script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	</head>
+	<body>
+		<div class="off-canvas-wrap">
+			<div class="inner-wrap">
+				<!-- mobile top bar to activate nav -->
+				<nav class="tab-bar show-for-small">
+					<section class="left-small">
+						<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+					</section>
+
+					<section class="middle tab-bar-section">
+						<h1 class="title">iknockdoor</h1>
+					</section>
+				</nav>
+
+				<!-- mobile side bar nav -->
+				<aside class="left-off-canvas-menu">
+					<ul class="off-canvas-list">
+						<li><a href="">Home</a></li>
+						<li><label>Categories</label></li>
+							<li class="active"><a href="/category/misc.html">misc</a></li>
+							<li ><a href="/category/sheng-huo.html">生活</a></li>
+
+						<li><label>Links</label></li>
+
+
+
+						<li><label>Social</label></li>
+							<li><a href="mailto:iknockdoor.com@gmail.com">E-mail</a></li>
+					</ul>	
+				</aside>
+
+				<!-- top bar nav -->
+				<nav class="top-bar hide-for-small-only" data-topbar>
+					<ul class="title-area">
+						<li class="name">
+							<h1><a href="/">iknockdoor</a></h1>
+						</li>
+					</ul>
+
+					<section class="top-bar-section">
+						<ul class="left">
+								<li class="active"><a href="/category/misc.html">misc</a></li>
+								<li ><a href="/category/sheng-huo.html">生活</a></li>
+						</ul>
+                        <ul class="right">                                                                                                                                           
+                                                                                                                                             
+                        </ul>  
+					</section>
+				</nav>
+
+				<!-- Main Page Content and Sidebar -->
+				<section class="main-section">
+					<div class="row">
+						<!-- Main Content -->
+						<div class="medium-9 small-12 columns" role="content">
+<article>
+	<h2>java中的闭包和匿名内部类</h2>
+	
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> java中匿名内部类使用外部方法的参数或局部变量的场景</h2>
+<div class="outline-text-2" id="text-1">
+<div class="org-src-container">
+
+<pre class="src src-java">  interface AnnoInner(){addXYZ();}
+public class Outer {
+    public AnnoInner getAnnoInner(final int x){
+	final int y=100;
+	return new AnnoInner(){
+	    int z=100;
+	    public int addXYZ(){return x+y+z;}
+	    //public void changeY(){y+=1;}    //这个函数无法修改外部环境中的自由变量y。
+	};
+    }
+    private int num=100;
+}
+</pre>
+</div>
+<p>
+上面这段代码匿名内部类的addXYZ()函数却直接使用了x和y这两个自由变量来
+计算结果。这就说明，外部方法getAnnoInner()事实上已经对内部类
+AnnoInner构成了一个闭包。但这里别扭的地方是这两个x和y都必须用final修
+饰。
+</p>
+
+<p>
+这是为什么呢？因为这里Java编译器支持了闭包，但支持地不完整。说支持了
+闭包，是因为编译器编译的时候其实悄悄对函数做了手脚，偷偷把外部环境方
+法的x和y局部变量，拷贝了一份到匿名内部类里。如下面的代码所示。
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-java">interface AnnoInner(){addXYZ();}
+public class Outer {
+    public AnnoInner getAnnoInner(final int x){
+	final int y=100;
+	return new AnnoInner(){
+	    int copyX=x;    //编译器相当于拷贝了外部自由变量x的一个副本到匿名内部类里。
+	    int copyY=y;    //编译器相当于拷贝了外部自由变量y的一个副本到匿名内部类里。
+	    int z=100;
+	    public int addXYZ(){return x+y+z;}
+	    //public void changeY(){y+=1;}    //这个函数无法修改外部环境中的自由变量y。
+	};
+    }
+
+    private int num=100;
+}
+</pre>
+</div>
+<p>
+所以用R大回答里的原话说就是：
+</p>
+<pre class="example">
+Java编译器实现的只是capture-by-value，并没有实现capture-by-reference。
+</pre>
+<p>
+而只有后者才能保持匿名内部类和外部环境局部变量保持同步。但Java又不肯
+明说，只能粗暴地一刀切，就说既然内外不能同步，那就不许大家改外围的局
+部变量。
+</p>
+
+<p>
+这就解释了两个问题：
+</p>
+<ol class="org-ol">
+<li>为什么匿名内部类能够访问外部方法的参数或者局部变量
+</li>
+<li>为什么被匿名内部类访问的外部方法的参数或局部变量必须是final的
+</li>
+</ol>
+</div>
+</div>
+
+	<hr/>
+	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Wed 28 February 2018.</h6>
+</article>
+
+<hr/>
+						</div>
+						<!-- End Main Content -->
+						<!-- Sidebar -->
+						<aside class="medium-3 hide-for-small-only columns">
+							<div class="panel">
+								<h5>Links</h5>
+								<ul class="side-nav">
+								</ul>
+							</div>
+
+							<div class="panel">
+								<h5>Tags</h5>
+								<ul class="tag-cloud">
+								</ul>
+							</div>
+
+
+							<div class="panel">
+								<h5>Social</h5>
+								<ul class="side-nav">
+									<li><a href="mailto:iknockdoor.com@gmail.com">E-mail</a></li>
+								</ul>
+							</div>
+						</aside>
+						<!-- End Sidebar -->
+					</div>
+
+					<!-- Footer -->
+					<footer class="row">
+						<div class="medium-9 small-12">
+							<hr/>
+							<p class="text-center">Powered by <a href="http://getpelican.com">Pelican</a> and <a href="http://foundation.zurb.com/">Zurb Foundation</a>. Theme by <a href="http://hamaluik.com">Kenton Hamaluik</a>.</p>
+						</div>
+					</footer>
+					<!-- End Footer -->
+				</section>
+				<a class="exit-off-canvas"></a>
+			</div><!--off-canvas inner-->
+		</div><!--off-canvas wrap-->
+
+		<script src="/theme/js/jquery.js"></script>
+		<script src="/theme/js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+	</body>
+</html>

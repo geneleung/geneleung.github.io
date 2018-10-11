@@ -1,0 +1,410 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>iknockdoor</title>
+		<meta name="description" content="">
+		<meta name="author" content="chappie">
+
+		<link rel="stylesheet" href="/theme/css/foundation.css" />
+		<link rel="stylesheet" href="/theme/css/pygment/monokai.css" />
+		<link rel="stylesheet" href="/theme/css/custom.css" />
+
+
+		<script src="/theme/js/modernizr.js"></script>
+
+		<!-- Feeds -->
+
+
+		<!-- mathjax config similar to math.stackexchange -->
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+				inlineMath: [ ['$', '$'] ],
+				displayMath: [ ['$$', '$$']],
+				processEscapes: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+			},
+			messageStyle: "none",
+			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+		});
+		</script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	</head>
+	<body>
+		<div class="off-canvas-wrap">
+			<div class="inner-wrap">
+				<!-- mobile top bar to activate nav -->
+				<nav class="tab-bar show-for-small">
+					<section class="left-small">
+						<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+					</section>
+
+					<section class="middle tab-bar-section">
+						<h1 class="title">iknockdoor</h1>
+					</section>
+				</nav>
+
+				<!-- mobile side bar nav -->
+				<aside class="left-off-canvas-menu">
+					<ul class="off-canvas-list">
+						<li><a href="">Home</a></li>
+						<li><label>Categories</label></li>
+							<li class="active"><a href="/category/misc.html">misc</a></li>
+							<li ><a href="/category/sheng-huo.html">生活</a></li>
+
+						<li><label>Links</label></li>
+
+
+
+						<li><label>Social</label></li>
+							<li><a href="mailto:iknockdoor.com@gmail.com">E-mail</a></li>
+					</ul>	
+				</aside>
+
+				<!-- top bar nav -->
+				<nav class="top-bar hide-for-small-only" data-topbar>
+					<ul class="title-area">
+						<li class="name">
+							<h1><a href="/">iknockdoor</a></h1>
+						</li>
+					</ul>
+
+					<section class="top-bar-section">
+						<ul class="left">
+								<li class="active"><a href="/category/misc.html">misc</a></li>
+								<li ><a href="/category/sheng-huo.html">生活</a></li>
+						</ul>
+                        <ul class="right">                                                                                                                                           
+                                                                                                                                             
+                        </ul>  
+					</section>
+				</nav>
+
+				<!-- Main Page Content and Sidebar -->
+				<section class="main-section">
+					<div class="row">
+						<!-- Main Content -->
+						<div class="medium-9 small-12 columns" role="content">
+<article>
+	<h2>Android的attrs,style和theme</h2>
+	
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Android的attrs,style和theme</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+在理解style和theme之前需要先理解attrs
+</p>
+</div>
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> attrs和styleable</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+官方文档在<a href="https://developer.android.com/training/custom-views/create-view.html#applyattr">这里</a>
+</p>
+</div>
+<div id="outline-container-sec-1-1-1" class="outline-4">
+<h4 id="sec-1-1-1"><span class="section-number-4">1.1.1</span> 什么是styleable和attrs</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+从字面上理解，styleable就是可定义风格(style)的。attrs就是一个属性，
+定义一个属性更像第一个键值对，同时定义了这个键的类型和取值范围。
+</p>
+
+<p>
+对于一个styleable，他的style是由多个属性(attrs)来定义的，所以从这
+角度理解，一个styleable是定义了一组属性的集合。举个例子：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-xml">    &lt;resources&gt;
+   &lt;declare-styleable name="PieChart"&gt;
+       &lt;attr name="showText" format="boolean" /&gt;
+       &lt;attr name="labelPosition" format="enum"&gt;
+	   &lt;enum name="left" value="0"/&gt;
+	   &lt;enum name="right" value="1"/&gt;
+       &lt;/attr&gt;
+   &lt;/declare-styleable&gt;
+&lt;/resources&gt;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-1-1-2" class="outline-4">
+<h4 id="sec-1-1-2"><span class="section-number-4">1.1.2</span> 如何定义styleable和attrs</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<p>
+如上，只需要在res/values/attrs.xml文件中定义
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-1-3" class="outline-4">
+<h4 id="sec-1-1-3"><span class="section-number-4">1.1.3</span> styleable的命名习惯</h4>
+<div class="outline-text-4" id="text-1-1-3">
+<p>
+可以定义style不是一定是view，可以是一个view，一个控件，一个theme，
+一个类，甚至一个虚拟存在的概念。他只需要满足一个概念，他具备一些属
+性，这些属性可以通过外部赋值，供他读取从而产生不同的行为。
+</p>
+
+<p>
+最常见的就是各个控件各个view了，他们会通过styleable来改变自己的外
+观，通常每个view有自己不同的可定义的属性，所以每个view会定义一个
+styleable来指明自己有哪些属性可订制。对于这些styleable通常会直接以
+控件名或者view名命名，但这不是强制的，这只是约定俗成。
+</p>
+
+<p>
+另外一个常见的就是theme了，Android将theme可定义的所欲属性集合在一
+起定义一个了styleable，由Activity创建时读取和使用来改变自身的行为
+或样式。
+</p>
+
+<p>
+Android系统定义的styleable和attrs可以在<a href="https://android.googlesource.com/platform/frameworks/base/+/refs/heads/master/core/res/res/values/attrs.xml">这里</a> 查看
+</p>
+
+<p>
+需要注意，attrs的定义并不需要依赖于styleable，在styleable里面定义，
+可以独立的定义attrs。既然可以独立定义attrs为什么还要有styleable呢？
+一个命名的styleable也是一个资源，最后会有一个资源ID指向他，他存在的意义
+可以供配套的控件方便的使用他指导系统读取哪些属性，还是在于
+styleable的本质是个属性的集合。
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-1-4" class="outline-4">
+<h4 id="sec-1-1-4"><span class="section-number-4">1.1.4</span> styleable的命名空间</h4>
+<div class="outline-text-4" id="text-1-1-4">
+<p>
+命名空间是为了避免自定义的属性与系统定义的属性冲突，同时方便使用。
+如下：
+</p>
+<div class="org-src-container">
+
+<pre class="src src-xml">    &lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:custom="http://schemas.android.com/apk/res/com.example.customviews"&gt;
+ &lt;com.example.customviews.charting.PieChart
+     custom:showText="true"
+     custom:labelPosition="left" /&gt;
+&lt;/LinearLayout&gt;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-1-1-5" class="outline-4">
+<h4 id="sec-1-1-5"><span class="section-number-4">1.1.5</span> styleable的使用</h4>
+<div class="outline-text-4" id="text-1-1-5">
+<ul class="org-ul">
+<li>可以直接在控件的布局文件中使用，比如：
+<div class="org-src-container">
+
+<pre class="src src-xml">      &lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:custom="http://schemas.android.com/apk/res/com.example.customviews"&gt;
+ &lt;com.example.customviews.charting.PieChart
+     custom:showText="true"
+     custom:labelPosition="left" /&gt;
+&lt;/LinearLayout&gt;
+</pre>
+</div>
+</li>
+<li>也可以用style定义取值
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-1-6" class="outline-4">
+<h4 id="sec-1-1-6"><span class="section-number-4">1.1.6</span> 查看view或控件支持的属性</h4>
+<div class="outline-text-4" id="text-1-1-6">
+<ul class="org-ul">
+<li>查看某一个控件或view支持的属性，直接查看这个类的API，比如
+<a href="https://developer.android.com/reference/android/widget/TextView.html#lattrs">TextView</a>
+</li>
+<li>查看各个控件所有的属性的集合<a href="https://developer.android.com/reference/android/R.attr.html">R.attr</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> style和theme</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+有了对attrs和styleable的理解，再理解style和theme就非常容易了，一个
+style或一个theme就是为styleable的各个属性配置一套值。
+</p>
+
+<p>
+style和theme本质上是一样，都是对styleable赋值，style常用在view和控
+件上。theme常用在activity和application上，并会对activity或
+application下的所有view产生影响。<a href="http://androiddoc.qiniudn.com/guide/topics/ui/themes.html">官网介绍</a> 
+</p>
+</div>
+<div id="outline-container-sec-1-2-1" class="outline-4">
+<h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> 定义style</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<p>
+对命名无特殊要求，所有的资源文件最后都会编译成为一个ID，定义style
+只需要满足一下几点
+</p>
+<ol class="org-ol">
+<li>保存在res/values/目下，xml文件
+</li>
+<li>根结点为&lt;resource&gt;
+<div class="org-src-container">
+
+<pre class="src src-xml">   &lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;resources&gt;
+    &lt;style name="CodeFont" parent="@android:style/TextAppearance.Medium"&gt;
+	&lt;item name="android:layout_width"&gt;fill_parent&lt;/item&gt;
+	&lt;item name="android:layout_height"&gt;wrap_content&lt;/item&gt;
+	&lt;item name="android:textColor"&gt;#00FF00&lt;/item&gt;
+	&lt;item name="android:typeface"&gt;monospace&lt;/item&gt;
+    &lt;/style&gt;
+&lt;/resources&gt;
+</pre>
+</div>
+</li>
+<li>style的继承
+<ul class="org-ul">
+<li>系统style的继承需要用parent方式
+</li>
+<li>自定义style的继承使用点的语法
+</li>
+</ul>
+</li>
+<li>定义style的语法
+文档在<a href="https://developer.android.com/guide/topics/resources/style-resource.html">这里</a>
+<div class="org-src-container">
+
+<pre class="src src-xml">      &lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;resources&gt;
+    &lt;style
+	name="style_name"
+	parent="@[package:]style/style_to_inherit"&gt;
+	&lt;item
+	    name="[package:]style_property_name"
+	    &gt;style_value&lt;/item&gt;
+    &lt;/style&gt;
+&lt;/resources&gt;
+</pre>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-1-2-2" class="outline-4">
+<h4 id="sec-1-2-2"><span class="section-number-4">1.2.2</span> 读取style的值和使用style</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<p>
+对于系统view，控件以及自定义view，通常都是在构造器中读取指定style
+来创建控件。类似代码如下：
+</p>
+<pre class="example">
+TypedArray a =  context.obtainStyledAttributes(attrs, com.android.internal.R.styleable.TextView, defStyle, 0); 
+注意TypedArray资源需要释放
+</pre>
+<p>
+可以看到，styleable指定读取哪些属性，defStyle提供了一个属性和值的
+集合。
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-2-3" class="outline-4">
+<h4 id="sec-1-2-3"><span class="section-number-4">1.2.3</span> style与styleable的关系</h4>
+<div class="outline-text-4" id="text-1-2-3">
+<p>
+从上面style的读取中可能会有些疑问，style和styleable是否有什么联系？
+或者是否是必须配套的？
+</p>
+
+<p>
+其实两者并没有必然联系，style可以给任意属性赋值，并集合在一起，并
+不理会styleable是如何定义集合的，哪些属性是一套的。当styleable指定
+要读取的属性不在style的提供范围中时控件自己处理给个默认值，并不会
+报错，对于style中多提供的styleable没有指定的属性时在读取过程中会直
+接被忽略。
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-2-4" class="outline-4">
+<h4 id="sec-1-2-4"><span class="section-number-4">1.2.4</span> theme的读取</h4>
+<div class="outline-text-4" id="text-1-2-4">
+<p>
+因为theme和style本质是一样的，所以读取过程基本也是一样的。只是读取
+时机不同，style一般用于控件，在构造函数读取，theme一般用于activity
+和application，在创建activity时读取。
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-2-5" class="outline-4">
+<h4 id="sec-1-2-5"><span class="section-number-4">1.2.5</span> 系统定义的style和theme的值</h4>
+<div class="outline-text-4" id="text-1-2-5">
+<ul class="org-ul">
+<li><a href="https://android.googlesource.com/platform/frameworks/base/+/refs/heads/master/core/res/res/values/styles.xml">style.xml</a>
+</li>
+<li><a href="https://android.googlesource.com/platform/frameworks/base/+/refs/heads/master/core/res/res/values/themes.xml">themes</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+	<hr/>
+	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Tue 16 January 2018.</h6>
+</article>
+
+<hr/>
+						</div>
+						<!-- End Main Content -->
+						<!-- Sidebar -->
+						<aside class="medium-3 hide-for-small-only columns">
+							<div class="panel">
+								<h5>Links</h5>
+								<ul class="side-nav">
+								</ul>
+							</div>
+
+							<div class="panel">
+								<h5>Tags</h5>
+								<ul class="tag-cloud">
+								</ul>
+							</div>
+
+
+							<div class="panel">
+								<h5>Social</h5>
+								<ul class="side-nav">
+									<li><a href="mailto:iknockdoor.com@gmail.com">E-mail</a></li>
+								</ul>
+							</div>
+						</aside>
+						<!-- End Sidebar -->
+					</div>
+
+					<!-- Footer -->
+					<footer class="row">
+						<div class="medium-9 small-12">
+							<hr/>
+							<p class="text-center">Powered by <a href="http://getpelican.com">Pelican</a> and <a href="http://foundation.zurb.com/">Zurb Foundation</a>. Theme by <a href="http://hamaluik.com">Kenton Hamaluik</a>.</p>
+						</div>
+					</footer>
+					<!-- End Footer -->
+				</section>
+				<a class="exit-off-canvas"></a>
+			</div><!--off-canvas inner-->
+		</div><!--off-canvas wrap-->
+
+		<script src="/theme/js/jquery.js"></script>
+		<script src="/theme/js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,302 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>iknockdoor</title>
+		<meta name="description" content="">
+		<meta name="author" content="chappie">
+
+		<link rel="stylesheet" href="/theme/css/foundation.css" />
+		<link rel="stylesheet" href="/theme/css/pygment/monokai.css" />
+		<link rel="stylesheet" href="/theme/css/custom.css" />
+
+
+		<script src="/theme/js/modernizr.js"></script>
+
+		<!-- Feeds -->
+
+
+		<!-- mathjax config similar to math.stackexchange -->
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+				inlineMath: [ ['$', '$'] ],
+				displayMath: [ ['$$', '$$']],
+				processEscapes: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+			},
+			messageStyle: "none",
+			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+		});
+		</script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	</head>
+	<body>
+		<div class="off-canvas-wrap">
+			<div class="inner-wrap">
+				<!-- mobile top bar to activate nav -->
+				<nav class="tab-bar show-for-small">
+					<section class="left-small">
+						<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+					</section>
+
+					<section class="middle tab-bar-section">
+						<h1 class="title">iknockdoor</h1>
+					</section>
+				</nav>
+
+				<!-- mobile side bar nav -->
+				<aside class="left-off-canvas-menu">
+					<ul class="off-canvas-list">
+						<li><a href="">Home</a></li>
+						<li><label>Categories</label></li>
+							<li class="active"><a href="/category/misc.html">misc</a></li>
+							<li ><a href="/category/sheng-huo.html">生活</a></li>
+
+						<li><label>Links</label></li>
+
+
+
+						<li><label>Social</label></li>
+							<li><a href="mailto:iknockdoor.com@gmail.com">E-mail</a></li>
+					</ul>	
+				</aside>
+
+				<!-- top bar nav -->
+				<nav class="top-bar hide-for-small-only" data-topbar>
+					<ul class="title-area">
+						<li class="name">
+							<h1><a href="/">iknockdoor</a></h1>
+						</li>
+					</ul>
+
+					<section class="top-bar-section">
+						<ul class="left">
+								<li class="active"><a href="/category/misc.html">misc</a></li>
+								<li ><a href="/category/sheng-huo.html">生活</a></li>
+						</ul>
+                        <ul class="right">                                                                                                                                           
+                                                                                                                                             
+                        </ul>  
+					</section>
+				</nav>
+
+				<!-- Main Page Content and Sidebar -->
+				<section class="main-section">
+					<div class="row">
+						<!-- Main Content -->
+						<div class="medium-9 small-12 columns" role="content">
+<article>
+	<h2>mac通过homebrew安装imagemagick新老版本</h2>
+	<p>
+emacs支持显示嵌入式的显示图片并能够调整图片大小需要在编译期间指定
+imagemagick的支持，但emacs 25.3的编译只能够识别imagemagick的6.x版本，
+无法识别7.x版本，使用brew在mac系统上安装imagemagic的老版本算是比较方便
+了，下面是安装方法。
+</p>
+
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 版本信息</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Mac OS X 10.12.6 (16G29) Sierra
+Emacs 25.3
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> 安装command line tool</h2>
+<div class="outline-text-2" id="text-2">
+<pre class="example">
+xcode-select --install
+</pre>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> 安装brew</h2>
+<div class="outline-text-2" id="text-3">
+<pre class="example">
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+</pre>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><a id="ID-B0BEE131-FC9B-4506-BB02-6AE1BFC5E2F5" name="ID-B0BEE131-FC9B-4506-BB02-6AE1BFC5E2F5"></a><span class="section-number-2">4</span> 安装imagemagick 6.9.7-10&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h2>
+<div class="outline-text-2" id="text-4">
+<p>
+原地址在<a href="https://gist.github.com/leesheppard/69a283ee4af484e2029809a0f5e09932">这里</a> ，brew的安装脚本如下，brew在安装时会去imagemagick的官网
+上下载源文件并交验hash值，为了避免对应版本下线，我把源文件做了备份。
+<a href="data/B0/BEE131-FC9B-4506-BB02-6AE1BFC5E2F5/ImageMagick-6.9.7-10.tar.xz">ImageMagick-6.9.7-10.tar.xz</a>
+</p>
+<pre class="example">
+brew install https://gist.githubusercontent.com/leesheppard/69a283ee4af484e2029809a0f5e09932/raw/88bc116b515a456a2e1bad476b6124d28ce2f6f6/imagemagick.rb
+brew pin imagemagick # 避免被版本被升级，可以固定这个版本
+</pre>
+
+<div class="org-src-container">
+
+<pre class="src src-ruby">require 'formula'
+
+class Imagemagick &lt; Formula
+  homepage 'http://www.imagemagick.org'
+
+  url 'http://www.imagemagick.org/download/releases/ImageMagick-6.9.7-10.tar.xz'
+  sha256 '0bfb2e3459b739669845c20ee1b6014a1a3c429fb0cb9777a8b65cd5c3effb09'
+
+  head 'https://www.imagemagick.org/subversion/ImageMagick/trunk',
+    :using =&gt; UnsafeSubversionDownloadStrategy
+
+  option 'with-quantum-depth-8', 'Compile with a quantum depth of 8 bit'
+  option 'with-quantum-depth-16', 'Compile with a quantum depth of 16 bit'
+  option 'with-quantum-depth-32', 'Compile with a quantum depth of 32 bit'
+  option 'with-perl', 'enable build/install of PerlMagick'
+  option 'without-magick-plus-plus', 'disable build/install of Magick++'
+
+  depends_on "libtool" =&gt; :run
+
+  depends_on 'pkg-config' =&gt; :build
+
+  depends_on 'jpeg' =&gt; :recommended
+  depends_on 'libpng' =&gt; :recommended
+  depends_on 'freetype' =&gt; :recommended
+
+  depends_on :x11 =&gt; :optional
+  depends_on 'fontconfig' =&gt; :optional
+  depends_on 'libtiff' =&gt; :optional
+  depends_on 'little-cms' =&gt; :optional
+  depends_on 'little-cms2' =&gt; :optional
+  depends_on 'jasper' =&gt; :optional
+  depends_on 'libwmf' =&gt; :optional
+  depends_on 'librsvg' =&gt; :optional
+  depends_on 'liblqr' =&gt; :optional
+  depends_on 'openexr' =&gt; :optional
+  depends_on 'ghostscript' =&gt; :optional
+  depends_on 'webp' =&gt; :optional
+
+  opoo '--with-ghostscript is not recommended' if build.with? 'ghostscript'
+
+  skip_clean :la
+
+  def install
+    args = [ "--disable-osx-universal-binary",
+	     "--prefix=#{prefix}",
+	     "--disable-dependency-tracking",
+	     "--enable-shared",
+	     "--disable-static",
+	     "--without-pango",
+	     "--with-modules",
+	     "--disable-openmp"]
+
+    args &lt;&lt; "--disable-opencl" if build.include? 'disable-opencl'
+    args &lt;&lt; "--without-gslib" if build.without? 'ghostscript'
+    args &lt;&lt; "--without-perl" if build.without? 'perl'
+    args &lt;&lt; "--with-gs-font-dir=#{HOMEBREW_PREFIX}/share/ghostscript/fonts" if build.without? 'ghostscript'
+    args &lt;&lt; "--without-magick-plus-plus" if build.without? 'magick-plus-plus'
+    args &lt;&lt; "--enable-hdri=yes" if build.include? 'enable-hdri'
+
+    if build.with? 'quantum-depth-32'
+      quantum_depth = 32
+    elsif build.with? 'quantum-depth-16'
+      quantum_depth = 16
+    elsif build.with? 'quantum-depth-8'
+      quantum_depth = 8
+    end
+
+    args &lt;&lt; "--with-quantum-depth=#{quantum_depth}" if quantum_depth
+    args &lt;&lt; "--with-rsvg" if build.with? 'librsvg'
+    args &lt;&lt; "--without-x" if build.without? 'x11'
+    args &lt;&lt; "--with-fontconfig=yes" if build.with? 'fontconfig'
+    args &lt;&lt; "--with-freetype=yes" if build.with? 'freetype'
+    args &lt;&lt; "--with-webp=yes" if build.include? 'webp'
+
+    # versioned stuff in main tree is pointless for us
+    inreplace 'configure', '${PACKAGE_NAME}-${PACKAGE_VERSION}', '${PACKAGE_NAME}'
+    system "./configure", *args
+    system "make install"
+  end
+
+  def caveats
+    s = &lt;&lt;-EOS.undent
+      For full Perl support you must install the Image::Magick module from the CPAN.
+	https://metacpan.org/module/Image::Magick
+
+      The version of the Perl module and ImageMagick itself need to be kept in sync.
+      If you upgrade one, you must upgrade the other.
+
+      For this version of ImageMagick you should install
+      version #{version} of the Image::Magick Perl module.
+    EOS
+    s if build.with? 'perl'
+  end
+
+  test do
+    system "#{bin}/identify", "/usr/share/doc/cups/images/cups.png"
+  end
+end
+</pre>
+</div>
+<p>
+如果要支持PDF转image，还需安装依赖库gs
+</p>
+<pre class="example">
+brew install ghostscript
+</pre>
+</div>
+</div>
+
+	<hr/>
+	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Fri 29 December 2017.</h6>
+</article>
+
+<hr/>
+						</div>
+						<!-- End Main Content -->
+						<!-- Sidebar -->
+						<aside class="medium-3 hide-for-small-only columns">
+							<div class="panel">
+								<h5>Links</h5>
+								<ul class="side-nav">
+								</ul>
+							</div>
+
+							<div class="panel">
+								<h5>Tags</h5>
+								<ul class="tag-cloud">
+								</ul>
+							</div>
+
+
+							<div class="panel">
+								<h5>Social</h5>
+								<ul class="side-nav">
+									<li><a href="mailto:iknockdoor.com@gmail.com">E-mail</a></li>
+								</ul>
+							</div>
+						</aside>
+						<!-- End Sidebar -->
+					</div>
+
+					<!-- Footer -->
+					<footer class="row">
+						<div class="medium-9 small-12">
+							<hr/>
+							<p class="text-center">Powered by <a href="http://getpelican.com">Pelican</a> and <a href="http://foundation.zurb.com/">Zurb Foundation</a>. Theme by <a href="http://hamaluik.com">Kenton Hamaluik</a>.</p>
+						</div>
+					</footer>
+					<!-- End Footer -->
+				</section>
+				<a class="exit-off-canvas"></a>
+			</div><!--off-canvas inner-->
+		</div><!--off-canvas wrap-->
+
+		<script src="/theme/js/jquery.js"></script>
+		<script src="/theme/js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,279 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>iknockdoor</title>
+		<meta name="description" content="">
+		<meta name="author" content="chappie">
+
+		<link rel="stylesheet" href="/theme/css/foundation.css" />
+		<link rel="stylesheet" href="/theme/css/pygment/monokai.css" />
+		<link rel="stylesheet" href="/theme/css/custom.css" />
+
+
+		<script src="/theme/js/modernizr.js"></script>
+
+		<!-- Feeds -->
+
+
+		<!-- mathjax config similar to math.stackexchange -->
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+				inlineMath: [ ['$', '$'] ],
+				displayMath: [ ['$$', '$$']],
+				processEscapes: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+			},
+			messageStyle: "none",
+			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+		});
+		</script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	</head>
+	<body>
+		<div class="off-canvas-wrap">
+			<div class="inner-wrap">
+				<!-- mobile top bar to activate nav -->
+				<nav class="tab-bar show-for-small">
+					<section class="left-small">
+						<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+					</section>
+
+					<section class="middle tab-bar-section">
+						<h1 class="title">iknockdoor</h1>
+					</section>
+				</nav>
+
+				<!-- mobile side bar nav -->
+				<aside class="left-off-canvas-menu">
+					<ul class="off-canvas-list">
+						<li><a href="">Home</a></li>
+						<li><label>Categories</label></li>
+							<li class="active"><a href="/category/misc.html">misc</a></li>
+							<li ><a href="/category/sheng-huo.html">生活</a></li>
+
+						<li><label>Links</label></li>
+
+
+
+						<li><label>Social</label></li>
+							<li><a href="mailto:iknockdoor.com@gmail.com">E-mail</a></li>
+					</ul>	
+				</aside>
+
+				<!-- top bar nav -->
+				<nav class="top-bar hide-for-small-only" data-topbar>
+					<ul class="title-area">
+						<li class="name">
+							<h1><a href="/">iknockdoor</a></h1>
+						</li>
+					</ul>
+
+					<section class="top-bar-section">
+						<ul class="left">
+								<li class="active"><a href="/category/misc.html">misc</a></li>
+								<li ><a href="/category/sheng-huo.html">生活</a></li>
+						</ul>
+                        <ul class="right">                                                                                                                                           
+                                                                                                                                             
+                        </ul>  
+					</section>
+				</nav>
+
+				<!-- Main Page Content and Sidebar -->
+				<section class="main-section">
+					<div class="row">
+						<!-- Main Content -->
+						<div class="medium-9 small-12 columns" role="content">
+<article>
+	<h2>如何分析和可视化的清楚的表达出程序结构</h2>
+	<pre class="example">
+原来写在Confluence上的，搬过来
+</pre>
+<ol class="org-ol">
+<li>类图，各个类的关系，接口，一对一，一对多的关系，这个是对对象的组织和关系有帮助的，但无法表现时序，进程，线程关系
+</li>
+<li>时序图，以对象生命周期为轴，可以表现对象之间的交互，也无法表现进程，
+线程关系，而且有点过于太细，不容易宏观表现这个点之前还是理解错了，
+时序图通过fragment是可以表达条件，循环，各种语句的
+</li>
+<li>需要有一个能个表现进程线程关系的图
+</li>
+</ol>
+
+
+<ul class="org-ul">
+<li>时序图貌似不太容易表达逻辑的分支情况，流程图可以清楚的表达这种情况。
+</li>
+<li>时序图可以清楚的表达同步调用，异步调用，以及线程关系。
+</li>
+<li>类图，时序图，都还是不好表达一种程序或者软件架构的概念，比如某个模块
+或者摸个类负责什么样的事务，组织结构图？类图是表示集成关系这些，概念
+比较具体化，需要一个能够表示相对抽象的概念，某个类是干什么事的。
+</li>
+<li>类图不容易表示对象之间的调用关系，先后顺序，数据流向，只能表现类的组织结构，这是个缺陷
+</li>
+</ul>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 如何分析一个程序？</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+程序的抽象结构是什么样的？有哪些模块，每个模块是做什么事情的，模块之间
+的关系，每个模块里面又可以具体到类有哪些进程，哪些线程，协调关系？需要
+有个线程模型图？貌似时序图就可以搞定核心任务的完成流程 
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> 程序的图形化描述</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>如何表达线程关系
+</li>
+<li>如何表达分支与swtich case结构
+</li>
+<li>如何表达循环结构
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> 描述做一件事情，无非需要描述清楚以下几个方面：</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>怎么做？第一步做什么，第二步做什么？描述这个过程可以用以下两种方式，视情况选择
+</li>
+<li>活动图，包含对象传递，可以在具体的活动上添加谁在处理或负责这个活动，也可以用框图表示哪个进程或者哪个部门处理这个活动
+</li>
+<li>状态图，适合处理步骤不多，但状态变化复杂的内容
+</li>
+<li>都谁参与这个事儿？组织架构是怎样的？职责范围是怎样的？
+</li>
+<li>类图，可以很好的表达出类组织关系，通过类的名字，或者添加注释，可以描
+述职责范围
+</li>
+<li>框图，可以从另一个角度表示模块之间的组织关系和职责范围
+</li>
+<li>参与这件事儿的人是如何相互协作的，有几条工作流水线？
+</li>
+</ul>
+
+<p>
+时序图可以很好的表达这个过程，可以表达条件处理，循环处理，对象生命周期，
+注意，时序图未必一定是具体到代码的执行层面，完全可以抽象成只描述具体环
+节。其实时序图如果简化成不表示对象生命周期，那么就和模块图类似了，可以
+表达模块之间的简单协作关系。最后还有一个数据流向图，之前有用过，觉得还
+是挺好用的，还没有理解如何和上面的结合起来，在哪里使用。 
+</p>
+
+<p>
+分析android context时用了一下时序图，发现不太容易表示对象持有的情况，
+如果在给对象发消息时参数是对象，如何关联是哪一个对象？活动图似乎也不好
+解决这个问题。其实这个问题也就是说，时序图可以表达对象之间的相互发消息，
+但有一个前提是对象首先要知道彼此的存在，或者持有彼此，才能相互发消息，
+而如何知道彼此的存在，如何持有彼此该如何用时序图表达？ 
+</p>
+
+
+<p>
+时序图如何表达静态方法的调用？时序图是对象之间的交互，要给对象发消息，
+但静态方法并没有对象，该如何表示？答：metaClass，见
+<a href="http://www.informit.com/articles/article.aspx?p=360441&seqNum=5">http://www.informit.com/articles/article.aspx?p=360441&seqNum=5</a> 
+</p>
+
+<p>
+还有一个问题，时序图描述对象在时序上的交互过程 ，对于一个过程应该如何
+用时序图描述，比如就是一个方法的具体实现，在这个方法中有创建对象，设置
+对象，发送对象，操作的都还是静态方法。 
+</p>
+
+
+
+<p>
+如果各种UML的图都不好清晰的表达，是否可以考虑用动图表达？比如gif？
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> 无论是面向过程的，还是面向对象的，表达清楚三个要素：</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>数据的组织结构
+</li>
+<li>数据的传递过程
+</li>
+<li>结果处理后的数据变化
+</li>
+<li>归根到底，软件还是数据与结构，通过一系列的操作，处理各种各样的数据。
+</li>
+</ul>
+
+<p>
+线程关系也要表达。
+</p>
+
+<p>
+应该做个可视化的jvm，把程序的执行过程可视化的表达出来。输入一段程序，输出这个程序的可视化流程。
+</p>
+</div>
+</div>
+
+	<hr/>
+	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Wed 04 April 2018.</h6>
+</article>
+
+<hr/>
+						</div>
+						<!-- End Main Content -->
+						<!-- Sidebar -->
+						<aside class="medium-3 hide-for-small-only columns">
+							<div class="panel">
+								<h5>Links</h5>
+								<ul class="side-nav">
+								</ul>
+							</div>
+
+							<div class="panel">
+								<h5>Tags</h5>
+								<ul class="tag-cloud">
+								</ul>
+							</div>
+
+
+							<div class="panel">
+								<h5>Social</h5>
+								<ul class="side-nav">
+									<li><a href="mailto:iknockdoor.com@gmail.com">E-mail</a></li>
+								</ul>
+							</div>
+						</aside>
+						<!-- End Sidebar -->
+					</div>
+
+					<!-- Footer -->
+					<footer class="row">
+						<div class="medium-9 small-12">
+							<hr/>
+							<p class="text-center">Powered by <a href="http://getpelican.com">Pelican</a> and <a href="http://foundation.zurb.com/">Zurb Foundation</a>. Theme by <a href="http://hamaluik.com">Kenton Hamaluik</a>.</p>
+						</div>
+					</footer>
+					<!-- End Footer -->
+				</section>
+				<a class="exit-off-canvas"></a>
+			</div><!--off-canvas inner-->
+		</div><!--off-canvas wrap-->
+
+		<script src="/theme/js/jquery.js"></script>
+		<script src="/theme/js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+	</body>
+</html>
