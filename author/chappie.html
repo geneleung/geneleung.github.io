@@ -53,6 +53,7 @@
 					<ul class="off-canvas-list">
 						<li><a href="">Home</a></li>
 						<li><label>Categories</label></li>
+							<li ><a href="/category/jie-jue-fang-an.html">解决方案</a></li>
 							<li ><a href="/category/misc.html">misc</a></li>
 							<li ><a href="/category/sheng-huo.html">生活</a></li>
 
@@ -75,6 +76,7 @@
 
 					<section class="top-bar-section">
 						<ul class="left">
+								<li ><a href="/category/jie-jue-fang-an.html">解决方案</a></li>
 								<li ><a href="/category/misc.html">misc</a></li>
 								<li ><a href="/category/sheng-huo.html">生活</a></li>
 						</ul>
@@ -90,6 +92,40 @@
 						<!-- Main Content -->
 						<div class="medium-9 small-12 columns" role="content">
 
+<article>
+	<h3><a href="/博客系统解决方案.html">博客系统解决方案</a></h3>
+	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/jie-jue-fang-an.html">解决方案</a> on Fri 12 October 2018. Tags: <a href="/tag/vps.html">vps</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/org-blog.html">org-blog</a>, <a href="/tag/blog.html">blog</a>, </h6>
+	<p>
+category只能有一个，如果有多个会算成一个，比如
+</p>
+<pre class="example">
+#+CATEGORY: c1,c2
+</pre>
+<p>
+会生成一个叫"c1,c2 "的分类，而不是c1和c2两个分类
+</p>
+
+<p>
+TAGS的写法就是
+</p>
+<pre class="example">
+#+PROPERTY: TAGS vps,pelican,org-blog,blog
+</pre>
+<p>
+这样子了，但生成似乎有bug，并没有生成出tag，这个后面再看吧。
+</p>
+
+<p>
+时间戳的规范
+git获取文件的时间戳
+</p>
+<pre class="example">
+git log --pretty=format:%cd -n 1 --date=iso
+</pre>
+
+		<p class="continue"><a href="/博客系统解决方案.html">Continue reading &raquo;</a></p>
+</article>
+<hr />
 <article>
 	<h3><a href="/跟换为Pelican生成笔记系统.html">跟换为Pelican生成笔记系统</a></h3>
 	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Wed 10 October 2018.</h6>
