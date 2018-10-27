@@ -1,140 +1,133 @@
-<!doctype html>
-<html class="no-js" lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-		<title>iknockdoor</title>
-		<meta name="description" content="">
-		<meta name="author" content="chappie">
-
-		<link rel="stylesheet" href="/theme/css/foundation.css" />
-		<link rel="stylesheet" href="/theme/css/pygment/monokai.css" />
-		<link rel="stylesheet" href="/theme/css/custom.css" />
-
-
-		<script src="/theme/js/modernizr.js"></script>
-
-		<!-- Feeds -->
-
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+        <title>iknockdoor</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="/theme/css/org.css" />
+        <link rel="stylesheet" type="text/css" href="/theme/css/custom.css" />
 <script>var _gaq=[['_setAccount','UA-103057848-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+        <!-- mathjax config similar to math.stackexchange -->
+	<script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({
+	  jax: ["input/TeX", "output/HTML-CSS"],
+	  tex2jax: {
+	  inlineMath: [ ['$', '$'] ],
+	  displayMath: [ ['$$', '$$']],
+	  processEscapes: true,
+	  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+	  },
+	  messageStyle: "none",
+	  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+	  });
+	</script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
 
-		<!-- mathjax config similar to math.stackexchange -->
-		<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({
-			jax: ["input/TeX", "output/HTML-CSS"],
-			tex2jax: {
-				inlineMath: [ ['$', '$'] ],
-				displayMath: [ ['$$', '$$']],
-				processEscapes: true,
-				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-			},
-			messageStyle: "none",
-			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
-		});
-		</script>
-		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-	</head>
-	<body>
-		<div class="off-canvas-wrap">
-			<div class="inner-wrap">
-				<!-- mobile top bar to activate nav -->
-				<nav class="tab-bar show-for-small">
-					<section class="left-small">
-						<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
-					</section>
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1>iknockdoor <strong></strong></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+        </ul></nav><!-- /#menu -->
+        <nav class="sidebar">
+	    <h5>分类</h5>
+	    <ul>
+	      <li ><a href="/category/jie-jue-fang-an.html">解决方案(1)</a></li>
+	      <li ><a href="/category/misc.html">misc(48)</a></li>
+	      <li ><a href="/category/sheng-huo.html">生活(1)</a></li>
+	    </ul>
+	    <h5>标签</h5>
+	    <ul>
+	      <li><a href="/tag/blog.html">blog(1)</a></li>
+	      <li><a href="/tag/org-blog.html">org-blog(1)</a></li>
+	      <li><a href="/tag/pelican.html">pelican(1)</a></li>
+	      <li><a href="/tag/vps.html">vps(1)</a></li>
+	    </ul>
 
-					<section class="middle tab-bar-section">
-						<h1 class="title">iknockdoor</h1>
-					</section>
-				</nav>
-
-				<!-- mobile side bar nav -->
-				<aside class="left-off-canvas-menu">
-					<ul class="off-canvas-list">
-						<li><a href="">Home</a></li>
-						<li><label>Categories</label></li>
-							<li ><a href="/category/jie-jue-fang-an.html">解决方案</a></li>
-							<li ><a href="/category/misc.html">misc</a></li>
-							<li ><a href="/category/sheng-huo.html">生活</a></li>
-
-						<li><label>Links</label></li>
-
-
-
-						<li><label>Social</label></li>
-							<li><a href="mailto:iknockdoor.com@gmail.com">E-mail</a></li>
-					</ul>	
-				</aside>
-
-				<!-- top bar nav -->
-				<nav class="top-bar hide-for-small-only" data-topbar>
-					<ul class="title-area">
-						<li class="name">
-							<h1><a href="/">iknockdoor</a></h1>
-						</li>
-					</ul>
-
-					<section class="top-bar-section">
-						<ul class="left">
-								<li ><a href="/category/jie-jue-fang-an.html">解决方案</a></li>
-								<li ><a href="/category/misc.html">misc</a></li>
-								<li ><a href="/category/sheng-huo.html">生活</a></li>
-						</ul>
-                        <ul class="right">                                                                                                                                           
-                                                                                                                                             
-                        </ul>  
-					</section>
-				</nav>
-
-				<!-- Main Page Content and Sidebar -->
-				<section class="main-section">
-					<div class="row">
-						<!-- Main Content -->
-						<div class="medium-9 small-12 columns" role="content">
-
+	    <h5>归档</h5>
+	    <ul>
+	      <li><a href="/posts/2018/10/index.html">October 2018 (3)</a></li>
+	      <li><a href="/posts/2018/09/index.html">September 2018 (2)</a></li>
+	      <li><a href="/posts/2018/07/index.html">July 2018 (2)</a></li>
+	      <li><a href="/posts/2018/06/index.html">June 2018 (1)</a></li>
+	      <li><a href="/posts/2018/05/index.html">May 2018 (2)</a></li>
+	      <li><a href="/posts/2018/04/index.html">April 2018 (2)</a></li>
+	      <li><a href="/posts/2018/03/index.html">March 2018 (1)</a></li>
+	      <li><a href="/posts/2018/02/index.html">February 2018 (3)</a></li>
+	      <li><a href="/posts/2018/01/index.html">January 2018 (7)</a></li>
+	      <li><a href="/posts/2017/12/index.html">December 2017 (18)</a></li>
+	      <li><a href="/posts/2017/09/index.html">September 2017 (1)</a></li>
+	      <li><a href="/posts/2017/08/index.html">August 2017 (1)</a></li>
+	      <li><a href="/posts/2017/07/index.html">July 2017 (7)</a></li>
+	    </ul>
+             <h5>Links</h5>
+	    <ul>
+	    </ul>
+	    <h5>与我联系</h5>
+	    <ul>
+	      <li><a href="mailto:iknockdoor.com@gmail.com">E-mail</a></li>
+	    </ul>
+	</nav>
+	    <!-- End Sidebar -->
+<section id="content">
 <article>
-	<h3><a href="/博客系统解决方案.html">博客系统解决方案</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/jie-jue-fang-an.html">解决方案</a> on Fri 12 October 2018. Tags: <a href="/tag/vps.html">vps</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/org-blog.html">org-blog</a>, <a href="/tag/blog.html">blog</a>, </h6>
-	<p>
-category只能有一个，如果有多个会算成一个，比如
-</p>
-<pre class="example">
-#+CATEGORY: c1,c2
-</pre>
+	<header><h3><a href="/博客系统解决方案.html">使用emacs,org-mode和pelican搭建博客系统解决方案</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/jie-jue-fang-an.html">解决方案</a>  Fri 12 October 2018. <a href="/tag/vps.html">vps</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/org-blog.html">org-blog</a>, <a href="/tag/blog.html">blog</a>, </footer>
+        <div class="entry-content"> 
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">设计</h2>
+<div class="outline-text-2" id="text-1">
 <p>
-会生成一个叫"c1,c2 "的分类，而不是c1和c2两个分类
+  主要静态网页生成器放在VPS，这样可以在远端只负责写内容和推送到服务器
+了，不必关心生成的过程，如此一来即使是用手机也可以很方便的写文章。
 </p>
 
 <p>
-TAGS的写法就是
+画个图描述一下。
 </p>
-<pre class="example">
-#+PROPERTY: TAGS vps,pelican,org-blog,blog
-</pre>
-<p>
-这样子了，但生成似乎有bug，并没有生成出tag，这个后面再看吧。
-</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">搭建</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">环境</h3>
+<div class="outline-text-3" id="text-2-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
-<p>
-时间戳的规范
-git获取文件的时间戳
-</p>
-<pre class="example">
-git log --pretty=format:%cd -n 1 --date=iso
-</pre>
 
-<p>
-ooo
-</p>
+<colgroup>
+<col  class="left" />
 
-		<p class="continue"><a href="/博客系统解决方案.html">Continue reading &raquo;</a></p>
+<col  class="right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">配置</td>
+<td class="right">版本</td>
+</tr>
+
+<tr>
+<td class="left">CentOS</td>
+<td class="right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">Python</td>
+<td class="right">3.6.3</td>
+</tr>
+
+<tr>
+<td class="left">emacs</td>
+<td class="right">25.3.1 …</td></tr></tbody></table></div></div></div> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/博客系统解决方案.html">继续 &raquo;</a></p>
 </article>
 <hr />
 <article>
-	<h3><a href="/跟换为Pelican生成笔记系统.html">跟换为Pelican生成笔记系统</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Wed 10 October 2018.</h6>
-	
+	<header><h3><a href="/跟换为Pelican生成笔记系统.html">跟换为Pelican生成笔记系统</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  Wed 10 October 2018.</footer>
+        <div class="entry-content"> 
 <div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1"><span class="section-number-2">1</span> Todolist</h2>
 <div class="outline-text-2" id="text-1">
@@ -150,30 +143,14 @@ ooo
 <li>必须有date metadata
 </li>
 <li>文章的唯一标示是什么？推测应该是slug，也就是URL，包括评论应该都
-会根据URL走，Pelican如果不提供slug，默认会使用title作为slug。考
-虑自己的笔记的维护基本上是通过文件名，而且git和文件系统也是根据
-文件名，所以这里唯一标示想通过文件名走，然后默认title根据文件名
-生成，slug也就是跟文件名一致了，如果需要修改title直接改metadata
-就好，不去修改文件名。
-</li>
-</ul>
-</li>
-<li>对图片的支持，和原来的一致，设置静态目录即可，STATIC<sub>PATHS</sub> = ['images']
-</li>
-<li>默认语言的设置，这里跟多语言有关，还是要设置一下的
-</li>
-<li>自动summary简介，Pelican默认支持，挺好用的
-</li>
-<li>内部文件link，这个点需要试一下
-</li>
-<li>code block，这个点需要试一下 …</li></ul></div></div>
-		<p class="continue"><a href="/跟换为Pelican生成笔记系统.html">Continue reading &raquo;</a></p>
+会根据URL走 …</li></ul></li></ul></div></div> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/跟换为Pelican生成笔记系统.html">继续 &raquo;</a></p>
 </article>
 <hr />
 <article>
-	<h3><a href="/递归.html">递归</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Tue 09 October 2018.</h6>
-	<p>
+	<header><h3><a href="/递归.html">递归</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  Tue 09 October 2018.</footer>
+        <div class="entry-content"> <p>
 一直以来对递归的理解和使用都感觉很陌生，完全没有掌握递归的套路。总觉得
 不是归纳法那么简单。后来看了一些资料，发现递归确实是一个非常有意义的话
 题。
@@ -187,23 +164,14 @@ ooo
 <p>
 通过这两天查资料和对递归的思考，发现递归的使用最重要的是找到子问题，即
 能够把问题用递归定义出来。然而如何找到子问题，如何将一个问题定义成递归
-呢？我的思考是去找问题关联的状态，看问题的变化是依赖的谁，比如是依赖一
-个更小的问题，那么就可以循着这个思路思考下去，找出递归定义，理解了递归
-的原理，再掌握了将问题递归的思路，就可以比较顺利的使用递归了。
-</p>
-
-<p>
-不动点函数，Y组合式与递归以及母函数是什么关系？即使有了不动点函数，这
-个函数是否就能求的出来？莫非母函数就是做这个的？
-</p>
-
-		<p class="continue"><a href="/递归.html">Continue reading &raquo;</a></p>
+呢？我的思考是去找问题关联的状态 …</p> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/递归.html">继续 &raquo;</a></p>
 </article>
 <hr />
 <article>
-	<h3><a href="/听《最爱的人伤我最深》这首歌.html">听《最爱的人伤我最深》这首歌</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Tue 25 September 2018.</h6>
-	<p>
+	<header><h3><a href="/听《最爱的人伤我最深》这首歌.html">听《最爱的人伤我最深》这首歌</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  Tue 25 September 2018.</footer>
+        <div class="entry-content"> <p>
 前两天在的士上从收音机中听到张惠妹的歌，阿妹的声线太过迷人了，今天把张
 惠妹《最爱的人伤我最深》找到听一下，从前奏开始就直接进入了歌曲。
 </p>
@@ -212,29 +180,14 @@ ooo
 以为是张惠妹的自己的歌，没想到第一句竟是张雨生开始的，久违的声音，两个
 无与伦比的声音交替着，并没有去听唱的什么内容，只是单纯的听这两个声音，
 心中感慨万千，世间竟有如此美妙的嗓音，唱的又这么好的两个人，然而这两个
-人竟又是师徒，听着这首歌，脑中浮现出师徒二人站在音乐之巅，陶醉在音乐之
-中，享受音乐，欣赏着对方，能与自己同类的人做着共同爱好的事，是一件多么
-美妙的事情，这不是决战紫禁城之巅的巅峰对决与惺惺相惜，而是强强联手，两
-位相得益彰的大师共同演绎了一首无与伦比的作品。
-</p>
-
-<p>
-世间能有如此的声音已经是件如此美妙的事情，这样的两个人能够相遇，成为师
-徒，师徒二人共唱一曲，不禁让人感叹大千世界的神奇。回想起张惠妹为张雨生
-专门出过一张专辑，在演唱会上张惠妹怀念张雨生几度落泪，师徒二人感情之深，
-这种感情我无法理解，是师徒情深，还是知音难求，还是心痛天嫉英才，总之很
-深，让人充满敬意。
-</p>
-
-<p>
-第一次知道张雨生还是因为我的父亲 …</p>
-		<p class="continue"><a href="/听《最爱的人伤我最深》这首歌.html">Continue reading &raquo;</a></p>
+人竟又是师徒，听着这首歌 …</p> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/听《最爱的人伤我最深》这首歌.html">继续 &raquo;</a></p>
 </article>
 <hr />
 <article>
-	<h3><a href="/RecyclerView版本问题.html">RecyclerView版本问题</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Mon 10 September 2018.</h6>
-	
+	<header><h3><a href="/RecyclerView版本问题.html">RecyclerView版本问题</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  Mon 10 September 2018.</footer>
+        <div class="entry-content"> 
 <div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1"><span class="section-number-2">1</span> RecyclerView 23.0.1版本和26.0的版本在measure过程有比较大的差异</h2>
 <div class="outline-text-2" id="text-1">
@@ -252,26 +205,14 @@ ooo
 <div class="outline-text-3" id="text-2-1">
 <p>
 已经知道getMeasuredHeight给的是mMeasuredHeight的值，即测量值。而
-getHeight给的是bottom-top的值。之前会认为控件会根据mMeasuredHeight
-的值来计算bottom和top的值，时尚上，这并不是强相关的，甚至bottom和
-top的值跟控件的实际宽高和布局都不要有关系。
-</p>
-
-<p>
-一句话，layout和measure是完全不相关的过程，两个过程互不依赖各自的结
-果。举个例子。LinearLayout,父布局给定EXACTLY布局，子view计算后大于
-给定布局，最终LinearLayout的measure height为父布局指定的值。在
-layout阶段，LinearLayout会将子view依次向下排，下一个view的top即上一
-个view的bottom，并不考虑LinearLayout的测量高度，以及父布局给的
-t,l,r,b的范围。最终LinearLayout的内容会超出屏幕，而LinearLayout的
-mMeasureHeight为父布局给的EXACTLY高度 …</p></div></div></div>
-		<p class="continue"><a href="/RecyclerView版本问题.html">Continue reading &raquo;</a></p>
+getHeight给的是bottom-top的值。之前会认为控件会根据mMeasuredHeight …</p></div></div></div> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/RecyclerView版本问题.html">继续 &raquo;</a></p>
 </article>
 <hr />
 <article>
-	<h3><a href="/Android消息传递机制.html">Android消息传递机制</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Tue 03 July 2018.</h6>
-	<div id="outline-container-sec-1" class="outline-2">
+	<header><h3><a href="/Android消息传递机制.html">Android消息传递机制</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  Tue 03 July 2018.</footer>
+        <div class="entry-content"> <div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1"><span class="section-number-2">1</span> 传递规则</h2>
 <div class="outline-text-2" id="text-1">
 <ol class="org-ol">
@@ -312,46 +253,14 @@ mMeasureHeight为父布局给的EXACTLY高度 …</p></div></div></div>
 <td class="left">no</td>
 <td class="left">no</td>
 <td class="left">no</td>
-<td class="left">group interrupt,onTouch,View onTouch都能收到actionDown的消息，但都不会收到move的消息，因为rule1</td>
-</tr>
-
-<tr>
-<td class="right">2</td>
-<td class="left">yes</td>
-<td class="left">no</td>
-<td class="left">no</td>
-<td class="left">view onTouch不会再收到down的消息</td>
-</tr>
-
-<tr>
-<td class="right">3</td>
-<td class="left">yes</td>
-<td class="left">yes</td>
-<td class="left">no</td>
-<td class="left">group onTouch可以收到move消息，其他和上面一样</td>
-</tr>
-
-<tr>
-<td class="right">4</td>
-<td class="left">no</td>
-<td class="left">yes</td>
-<td class="left">no</td>
-<td class="left">view可以收到down的消息了，其他和上面一样</td>
-</tr>
-
-<tr>
-<td class="right">5</td>
-<td class="left">no</td>
-<td class="left">no</td>
-<td class="left">yes</td>
-<td class="left">group interrupt和view onTouch可以收到down和move消息 …</td></tr></tbody></table></div></div>
-		<p class="continue"><a href="/Android消息传递机制.html">Continue reading &raquo;</a></p>
+<td class="left">group interrupt,onTouch …</td></tr></tbody></table></div></div> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/Android消息传递机制.html">继续 &raquo;</a></p>
 </article>
 <hr />
 <article>
-	<h3><a href="/长安十二时辰读书笔记.html">长安十二时辰读书笔记</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Tue 03 July 2018.</h6>
-	<p>
+	<header><h3><a href="/长安十二时辰读书笔记.html">长安十二时辰读书笔记</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  Tue 03 July 2018.</footer>
+        <div class="entry-content"> <p>
 昨天在飞机上最后读完了长安十二时辰，书中直接描写的几个人物都个性十分鲜
 明，比如李泌，张小敬，元载，姚汝能等。整个故事情节非常紧凑，故事始终一
 波三折，一波未平一波又起，所以整个故事读下来全程基本无尿点，高潮一波接
@@ -360,23 +269,14 @@ mMeasureHeight为父布局给的EXACTLY高度 …</p></div></div></div>
 
 <p>
 就几个个性鲜明且迥异的主角来说，一号男主角自然是张小敬了，整个故事中张
-小敬是一个有情有义，亦正亦邪的末路英雄的形象，喜欢单打独斗，喜欢个人英
-雄主义，感觉像是马伯庸所以喜欢或崇拜或向往的一个形象，然而我并不是很喜
-欢这个形象。说是够狠，总感觉对待敌人或者小人的时候却没那么果断干脆，如
-果能早一点结果了封大伦，也并不会有那么多的麻烦。如果真的要选择千千万万
-的百姓，不在乎牺牲一两个人，那也完全可以早点结果了龙波也完全可以制止整
-个悲剧。同时，在张小敬办案过程遇到的种种困难其实跟张小敬自己的做事方法
-也有关系，过于的考虑通过自己的努力解决问题，而没有考虑利用资源，至少要
-考虑如何保护自己和维持自己的自由和权利，如果自由和权利都没有了，还怎么
-办案和解决问题？看似自我牺牲，天下为公，事实上却有反作用，不爱自己怎么
-爱别人 …</p>
-		<p class="continue"><a href="/长安十二时辰读书笔记.html">Continue reading &raquo;</a></p>
+小敬是一个有情有义，亦正亦邪的末路英雄的形象，喜欢单打独斗 …</p> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/长安十二时辰读书笔记.html">继续 &raquo;</a></p>
 </article>
 <hr />
 <article>
-	<h3><a href="/微信发展简史.html">微信发展简史</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Mon 11 June 2018.</h6>
-	<p>
+	<header><h3><a href="/微信发展简史.html">微信发展简史</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  Mon 11 June 2018.</footer>
+        <div class="entry-content"> <p>
 转自36kr <a href="https://36kr.com/p/5135834.html">《微信发展简史：微信成功的必然和偶然》</a>
 </p>
 
@@ -397,36 +297,14 @@ mMeasureHeight为父布局给的EXACTLY高度 …</p></div></div></div>
 </p>
 
 <p>
-编者按：本文首发于微信公众号“行者慎思”（ID: shensing）。作者陆树燊，创业者，微信创始团队成员。
-</p>
-
-<p>
-微信是互联网圈永远的热点，这不，这两天突然微信又成了话题中心，原因有两个：
-</p>
-<ol class="org-ol">
-<li>微信更新版本，做了一个『浮窗』，有了这个小小的浮窗，用户可以在聊
-天和阅读文章之间随时切换；
-</li>
-<li>有人把7年前微信刚上线时App store各种一星差评的截图发出来，整个科
-技圈投资圈都在惊叹：原来成功者当年也是很落魄的（这个鸡汤真好喝）。 
-</li>
-</ol>
-
-<p>
-作为微信创始期的亲历者，我想到了一些不同的东西。本文源自2016年9月我
-在一次产品经理社群分享中的演讲稿。当时已有不少听众把我的一些观点做了
-笔记发在公共媒体，但现场讲稿却在我的电脑里存放了一年半。 
-</p>
-
-<p>
-现在把讲稿整理出来，做了一些修改，希望能帮大家还原出一个不一样的微信 …</p></div></div>
-		<p class="continue"><a href="/微信发展简史.html">Continue reading &raquo;</a></p>
+编者按：本文首发于微信公众号“行者慎思”（ID …</p></div></div> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/微信发展简史.html">继续 &raquo;</a></p>
 </article>
 <hr />
 <article>
-	<h3><a href="/1加6普通用户评测.html">1加6普通用户评</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Fri 25 May 2018.</h6>
-	<p>
+	<header><h3><a href="/1加6普通用户评测.html">1加6普通用户评</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  Fri 25 May 2018.</footer>
+        <div class="entry-content"> <p>
 型号：6G内存，128G ROM，墨石黑
 </p>
 
@@ -438,34 +316,14 @@ mMeasureHeight为父布局给的EXACTLY高度 …</p></div></div></div>
 </li>
 <li>4G网速感觉比之前的nexus 6p块很多，不晓得为啥
 </li>
-<li>屏幕比之前用的 nexus 6p渣，宽度为1080像素，400ppi，细看有像素点，用惯了1440的会看到细节不精致，用了一天后适应了，没那么强烈的不适感
-</li>
-</ol>
-<p>
-4 .音质相比之前nexus 6p和iPhone x都要渣，听音乐声音不够纯厚，但也凑合能听，毕竟不是发烧友
-</p>
-<ol class="org-ol">
-<li>小马达那是相当渣，马达灵敏度很低，导致输入法震动反馈不够灵敏，常常打字快了会误以为没打到
-</li>
-<li>软件品控一般，用了一天发现系统桌面一个bug
-</li>
-<li>整机手感不错，略长
-</li>
-<li>指纹解锁速度非常快，但是指纹面积略小，而且靠下，常常摸不到
-</li>
-<li>电池为3300mah，但是非常给力，重度用户一天完全没有问题
-</li>
-</ol>
-
-<p>
-整体，中规中矩，中庸路线高性价比旗舰机，没有槽点 …</p>
-		<p class="continue"><a href="/1加6普通用户评测.html">Continue reading &raquo;</a></p>
+<li>屏幕比之前用的 nexus 6p渣，宽度为1080像素，400ppi …</li></ol> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/1加6普通用户评测.html">继续 &raquo;</a></p>
 </article>
 <hr />
 <article>
-	<h3><a href="/iPhone X电池待机与用量时间一样的问题的解决.html">iPhone X电池待机与用量时间一样的问题的解决</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Tue 01 May 2018.</h6>
-	
+	<header><h3><a href="/iPhone X电池待机与用量时间一样的问题的解决.html">iPhone X电池待机与用量时间一样的问题的解决</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  Tue 01 May 2018.</footer>
+        <div class="entry-content"> 
 <div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1"><span class="section-number-2">1</span> 问题描述</h2>
 <div class="outline-text-2" id="text-1">
@@ -483,1556 +341,20 @@ mMeasureHeight为父布局给的EXACTLY高度 …</p></div></div></div>
 <h2 id="sec-2"><span class="section-number-2">2</span> 问题解决</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
-<li>尝试了各种设置项，重启，刷机，最终只有以下方法有效
-</li>
-<li>充电完成时，需要在灭屏情况下拔线，如果在使用中拔线就会导致待机与用
-量相同了
-</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 感受</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-iPhone真的是越来越不好用了，很介意的几个问题：
-</p>
-<ul class="org-ul">
-<li>全系列产品相互捆绑升级，最重要的是升级之后都会不好用，耗电，卡顿
-</li>
-<li>Bug比以前要多，版本质量下降
-</li>
-<li>新买的手机续航能力不给力
-</li>
-<li>AppStore付费推广，越来越难找到好的app，满屏推荐的都是各种游戏
-</li>
-</ul>
-<p>
-相反，Android现在却做的越来越好，可惜Google亲儿子系列在国内会有些水
-土不服，比如Google的各种服务在连不上网的时候会持续耗电，比如推送通知
-会延迟。越来越想换个国产Android机，比如华为P20.
-</p>
-</div>
-</div>
-
-		<p class="continue"><a href="/iPhone X电池待机与用量时间一样的问题的解决.html">Continue reading &raquo;</a></p>
+<li>尝试了各种设置项，重启 …</li></ul></div></div> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/iPhone X电池待机与用量时间一样的问题的解决.html">继续 &raquo;</a></p>
 </article>
 <hr />
-<article>
-	<h3><a href="/Android UI开发知识点.html">Android UI开发知识点</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Wed 04 April 2018.</h6>
-	<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 子view要的大小父view满足不了会怎样？&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">技术</span></span></h2>
-<div class="outline-text-2" id="text-1">
-<p>
-在measure过程中，系统会给最顶层一个w和h的值，这个是可以理解为屏幕的
-大小，更准确的理解是可视窗口的大小，注意是可视范围，而不是可绘制范围，
-可绘制的范围是无限大的，因此绘制区域并不会出现不够用的情况，系统给的
-区域大小和父view传给子view的只是指导意见的大小，就是告诉子view这么大
-才能被看到，超了这个会看不到，但子view可以不参考，子该画多大画多大，
-画布是无限大的可以满足的。如果绘制区域大于了可视窗口的大小，可以通过
-滚动看到，并没有什么影响。
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 布局参数</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-每个view自己持有自己的布局参数，但是是由其父view使用的。
-</p>
-</div>
-</div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> view绘制的三个流程的调用关系</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-view的默认onMeasure取了默认值，ViewGroup作为布局的基类，没有重写
-onMeasure方法，但是提供了measureChildren的方法，其中最重要的是
-getChildMeasureSpec方法，这里可以看到如何处理layout的各种不同spec的
-情况，自定义ViewGroup时可以借鉴。
-</p>
-
-<p>
-父view对子view的layout都是相对自己的，一般都是从0开始。
-</p>
-
-<p>
-View和ViewGroup的onLayout方法默认是空的
-</p>
-</div>
-</div>
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> 滚动原理，界面绘制与自定义view</h2>
-<div class="outline-text-2" id="text-4">
-<p>
-<a href="http://chanthuang.github.io/2016/08/31/Android-View-%25E7%259A%2584%25E6%25BB%259A%25E5%258A%25A8%25E5%258E%259F%25E7%2590%2586%25E5%2592%258C-Scroller%25E3%2580%2581VelocityTracker-%25E7%25B1%25BB%25E7%259A%2584%25E4%25BD%25BF%25E7%2594%25A8/">这里</a> 有一个小教程，讲的很好，循序渐进的讲解viewgroup如何布局子view …</p></div></div>
-		<p class="continue"><a href="/Android UI开发知识点.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/如何分析和可视化的清楚的表达出程序结构.html">如何分析和可视化的清楚的表达出程序结构</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Wed 04 April 2018.</h6>
-	<pre class="example">
-原来写在Confluence上的，搬过来
-</pre>
-<ol class="org-ol">
-<li>类图，各个类的关系，接口，一对一，一对多的关系，这个是对对象的组织和关系有帮助的，但无法表现时序，进程，线程关系
-</li>
-<li>时序图，以对象生命周期为轴，可以表现对象之间的交互，也无法表现进程，
-线程关系，而且有点过于太细，不容易宏观表现这个点之前还是理解错了，
-时序图通过fragment是可以表达条件，循环，各种语句的
-</li>
-<li>需要有一个能个表现进程线程关系的图
-</li>
-</ol>
-
-
-<ul class="org-ul">
-<li>时序图貌似不太容易表达逻辑的分支情况，流程图可以清楚的表达这种情况。
-</li>
-<li>时序图可以清楚的表达同步调用，异步调用，以及线程关系。
-</li>
-<li>类图，时序图，都还是不好表达一种程序或者软件架构的概念，比如某个模块
-或者摸个类负责什么样的事务，组织结构图？类图是表示集成关系这些，概念
-比较具体化，需要一个能够表示相对抽象的概念，某个类是干什么事的。
-</li>
-<li>类图不容易表示对象之间的调用关系，先后顺序，数据流向，只能表现类的组织结构，这是个缺陷
-</li>
-</ul>
-
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 如何分析一个程序？</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-程序的抽象结构是什么样的？有哪些模块，每个模块是做什么事情的，模块之间
-的关系 …</p></div></div>
-		<p class="continue"><a href="/如何分析和可视化的清楚的表达出程序结构.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/Android界面开发积累.html">Android界面开发积累</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Tue 13 March 2018.</h6>
-	
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 获取root layout</h2>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> width与mesured width</h2>
-</div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 同一个view能够同时出现在两个地方？</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-不能，ViewGroup的addViewInner方法中会判断view是否已经有了parent，如
-果已经有了会抛出异常。
-</p>
-</div>
-</div>
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> mesure或者layout到底怎么处理MATCH<sub>PARENT的？如果有margin值呢？</sub></h2>
-</div>
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> 通常measure layout这些是以哪个位置为准的？左上角？baseline？</h2>
-</div>
-<div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6"><span class="section-number-2">6</span> mesure和layout还要再撸一遍，看下最后画的位置到底是哪个参数，又受什么影响</h2>
-</div>
-<div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7"><span class="section-number-2">7</span> dp px再撸一遍</h2>
-</div>
-<div id="outline-container-sec-8" class="outline-2">
-<h2 id="sec-8"><span class="section-number-2">8</span> 位移，setTranslationX里面是怎么实现的？</h2>
-</div>
-<div id="outline-container-sec-9" class="outline-2">
-<h2 id="sec-9"><span class="section-number-2">9</span> 通过布局参数动态改变大小是怎么实现的？</h2>
-</div>
-<div id="outline-container-sec-10" class="outline-2">
-<h2 id="sec-10"><span class="section-number-2">10</span> 属性动画内部的实现原理是什么</h2>
-</div>
-<div id="outline-container-sec-11" class="outline-2">
-<h2 id="sec-11"><span class="section-number-2">11</span> 事件分发再搞搞</h2>
-</div>
-<div id="outline-container-sec-12" class="outline-2">
-<h2 id="sec-12"><span class="section-number-2">12</span> 手势识别再搞搞，感觉就差不多了</h2>
-</div>
-<div id="outline-container-sec-13" class="outline-2">
-<h2 id="sec-13"><span class="section-number-2">13</span> viewpager</h2>
-</div>
-<div id="outline-container-sec-14" class="outline-2">
-<h2 id="sec-14"><span class="section-number-2">14</span> recyclerview</h2>
-</div>
-<div id="outline-container-sec-15" class="outline-2">
-<h2 id="sec-15"><span class="section-number-2">15</span> view tree的遍历时机</h2>
-<div class="outline-text-2" id="text-15">
-</div><div id="outline-container-sec-15-1" class="outline-3">
-<h3 id="sec-15-1"><span class="section-number-3">15.1</span> 内部事件 …</h3></div></div>
-		<p class="continue"><a href="/Android界面开发积累.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/java中的闭包和匿名内部类.html">java中的闭包和匿名内部类</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Wed 28 February 2018.</h6>
-	
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> java中匿名内部类使用外部方法的参数或局部变量的场景</h2>
-<div class="outline-text-2" id="text-1">
-<div class="org-src-container">
-
-<pre class="src src-java">  interface AnnoInner(){addXYZ();}
-public class Outer {
-    public AnnoInner getAnnoInner(final int x){
-	final int y=100;
-	return new AnnoInner(){
-	    int z=100;
-	    public int addXYZ(){return x+y+z;}
-	    //public void changeY(){y+=1;}    //这个函数无法修改外部环境中的自由变量y。
-	};
-    }
-    private int num=100;
-}
-</pre>
-</div>
-<p>
-上面这段代码匿名内部类的addXYZ()函数却直接使用了x和y这两个自由变量来
-计算结果。这就说明，外部方法getAnnoInner()事实上已经对内部类
-AnnoInner构成了一个闭包。但这里别扭的地方是这两个x和y都必须用final修
-饰 …</p></div></div>
-		<p class="continue"><a href="/java中的闭包和匿名内部类.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/校招培训引发的思考.html">校招培训引发的思考</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Wed 28 February 2018.</h6>
-	<p>
-今天参加了一场公司的校招培训，其中一位经验丰富的面试官分享了他的校招经
-验，其中讲了各种名牌大学各种实验室，各种同各大名企争夺优秀人才，听了感
-觉自己离“人才”两字好远，好想太过普通了，这是在做面试官，如果是放在当
-年让自己去应聘校招，可能简历都发不出去。
-</p>
-
-<p>
-那当不是名牌大学毕业，没有研究什么高大上的算法，推荐模型，学历，经历平
-平的我们该怎么办呢？或者说如果我们也去做这些，会不会真的跟高学历的人有
-很大的差距？如果真的是这样，我们的立足点又在哪里？
-</p>
-
-		<p class="continue"><a href="/校招培训引发的思考.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/iPhone X使用两周后的体验.html">iPhone X使用两周后的体验</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Fri 02 February 2018.</h6>
-	
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 电池</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-刚拿到手上的时候发现还是比较小的，整体外观跟iPhone 6差不多大小，只是
-屏幕略长，所以一直担心电池续航问题，毕竟iPhone 6的续航跟iPhone 6
-plus的还是差的不少。实际用下来除了前面一个星期感觉比较费电，能撑一个
-白天+一个晚上+半个白天，到现在比较稳定了，可以撑两个白天一个晚上，这
-样第二天晚上充电整体节奏还可以。
-</p>
-<ol class="org-ol">
-<li>iOS 11.2.2
-</li>
-<li>关闭动态背景
-</li>
-<li>打开抬起唤醒
-</li>
-</ol>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> face ID</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-这是一项很大的进步，很方便，包含解锁，记事本，支付都可以使用face ID，
-平时不再需要输入密码，非常方便，感觉这才是注入one password之类的密码
-管理的终极解决方案。
-</p>
-</div>
-</div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 齐刘海是个缺陷</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-使得屏幕上少了一块区域，状态栏能够呈现的信息变少，比如VPN，电量百分
-比这些都没了，需要下拉才能看到。
-</p>
-</div>
-</div>
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4 …</span></h2></div>
-		<p class="continue"><a href="/iPhone X使用两周后的体验.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/java中的注解(Annotation).html">java中的注解(Annotation)</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Mon 29 January 2018.</h6>
-	
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> java中的注解(Annotation)</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-现在很多框架工具都使用注解的方式实现，比如junit，eventbugs等等，理解
-java的注解会比较有助于理解这些工具，也可以在平时应用注解。
-</p>
-</div>
-<div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 什么是java注解</h3>
-<div class="outline-text-3" id="text-1-1">
-<p>
-从使用层面来理解，java注解并不会提供程序，方法，对象，类新的功能或
-者任何可执行的代码，他只会提供给编译器一些key value，根据注解的类型
-不同，编译器可以在编译阶段使用注解，也可以将注解信息作为一个key
-value记录在编译好的class文件中，供程序通过反射的方法读取，并根据这
-些key value来执行不同的动作。比如junit，通过注解的方式告诉来junit框
-架哪些方法是测试用例，哪些是前置后置条件，然后junit执行过程中根据这
-些信息知道如何调用测试用例。
-</p>
-</div>
-</div>
-<div id="outline-container-sec-1-2" class="outline-3">
-<h3 id="sec-1-2"><span class="section-number-3">1.2</span> 自定义注解的语法</h3>
-<div class="outline-text-3" id="text-1-2">
-<div class="org-src-container">
-
-<pre class="src src-java">   @Documented
-@Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.ANNOTATION_TYPE)
-public @interface Target {
-    String value …</pre></div></div></div></div>
-		<p class="continue"><a href="/java中的注解(Annotation).html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/Android的LayoutParams.html">Android的LayoutParams</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Tue 16 January 2018.</h6>
-	<p>
-之前对布局文件中的各控件的布局参数的理解一直存在一些误区，需要明确以下
-几个关键点
-</p>
-
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 布局参数由view持有，由view直接上级的viewgroup使用</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-LayoutParams虽然由view持有，但是是ViewGroup的布局属性，根据不同
-ViewGroup会有不同的属性，同时也是由ViewGroup使用的。
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> LayoutParams的创建时机</h2>
-<div class="outline-text-2" id="text-2">
-</div><div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> 从布局文件创建</h3>
-<div class="outline-text-3" id="text-2-1">
-<p>
-由inflator在解析xml时根据view的ViewGourp调用ViewGroup的方法，并根据
-view的attrs创建一个LayoutParams对象，并在add view到ViewGroup时给
-view持有
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2-2" class="outline-3">
-<h3 id="sec-2-2"><span class="section-number-3">2.2</span> 从代码创建</h3>
-<div class="outline-text-3" id="text-2-2">
-<p>
-这就简单了，直接创建，add view时作为参数传进去
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> LayoutParams的类型</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-view持有的LayoutParams一定是父容器ViewGroup的LayoutParams类，在添加
-到ViewGroup时会做类型检查，这个逻辑也是合理的
-</p>
-<ul class="org-ul">
-<li>LayoutParams是由ViewGroup使用的，所以必须是ViewGroup知道的类型，才
-能使用
-</li>
-<li>也因此，当view在不同ViewGroup下时可以由不同的布局参数
-</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> 自定义布局</h2>
-<div class="outline-text-2" id="text-4">
-<p>
-在自定义布局时需要重载创建的LayoutParams的几个方法，如果需要，也需要
-自定义LayoutParams
-</p>
-</div>
-</div>
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> 参考</h2>
-<div class="outline-text-2" id="text-5">
-<p>
-<a href="http://blog.csdn.net/qinjuning/article/details/8051811">这里 …</a></p></div></div>
-		<p class="continue"><a href="/Android的LayoutParams.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/Android的attrs,style和theme.html">Android的attrs,style和theme</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Tue 16 January 2018.</h6>
-	
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Android的attrs,style和theme</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-在理解style和theme之前需要先理解attrs
-</p>
-</div>
-<div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> attrs和styleable</h3>
-<div class="outline-text-3" id="text-1-1">
-<p>
-官方文档在<a href="https://developer.android.com/training/custom-views/create-view.html#applyattr">这里</a>
-</p>
-</div>
-<div id="outline-container-sec-1-1-1" class="outline-4">
-<h4 id="sec-1-1-1"><span class="section-number-4">1.1.1</span> 什么是styleable和attrs</h4>
-<div class="outline-text-4" id="text-1-1-1">
-<p>
-从字面上理解，styleable就是可定义风格(style)的。attrs就是一个属性，
-定义一个属性更像第一个键值对，同时定义了这个键的类型和取值范围。
-</p>
-
-<p>
-对于一个styleable，他的style是由多个属性(attrs)来定义的，所以从这
-角度理解，一个styleable是定义了一组属性的集合。举个例子：
-</p>
-<div class="org-src-container">
-
-<pre class="src src-xml">    &lt;resources&gt;
-   &lt;declare-styleable name="PieChart"&gt;
-       &lt;attr name="showText" format="boolean" /&gt;
-       &lt;attr name="labelPosition" format="enum"&gt;
-	   &lt;enum name="left" value="0"/&gt;
-	   &lt;enum name="right …</pre></div></div></div></div></div>
-		<p class="continue"><a href="/Android的attrs,style和theme.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/我要给自己订个目标....html">我要给自己订个目标</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Thu 11 January 2018.</h6>
-	<p>
-我要给自己订个目标，不让自己再这么随波逐流，走到哪儿算哪，好想走到哪儿
-算哪也不是很坏的方式，比如有一些认识的人就是跟着命走，也会很成功。那么
-还是这样，这两点一定不会是冲突的。
-</p>
-
-<p>
-给自己订个目标，比如：
-</p>
-<ul class="org-ul">
-<li>35岁之前有自己的事业
-</li>
-<li>35岁之前赚够多少钱
-</li>
-</ul>
-
-<p>
-一上来这么大的目标？搞一些小目标好不好？
-</p>
-
-<p>
-还有方向的问题，目前看到的方向有这些：
-</p>
-<ul class="org-ul">
-<li>人工智能，我觉得我在这方面还有有兴趣的，以前自己也思考过，如果几年前
-我就搞这些，可能现在还能挺好的
-</li>
-<li>区块链，摆在眼前就有机会
-</li>
-<li>发现用户痛点，做些小产品
-</li>
-<li>继续当前的职业生涯
-</li>
-</ul>
-
-		<p class="continue"><a href="/我要给自己订个目标....html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/Beyond Compare 4.2.3激活.html">Beyond Compare 4.2.3激活</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Sat 06 January 2018.</h6>
-	
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><a id="ID-45EF9D15-80D8-46A6-B0DA-21ABB3DB558E" name="ID-45EF9D15-80D8-46A6-B0DA-21ABB3DB558E"></a><span class="section-number-2">1</span> Beyond Compare 4.2.3 (Build 22587)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h2>
-<div class="outline-text-2" id="text-1">
-<p>
-原文在<a href="https://gist.github.com/huqi/35f2a0792aef830898ca">这里</a> 
-</p>
-<ol class="org-ol">
-<li>Open trial.key at path: /Applications/Beyond\ Compare.app/Contents/Resources/trial.key
-</li>
-<li>Replace content of trial.key with:
-<pre class="example">
---- BEGIN LICENSE KEY ---
-H1bJTd2SauPv5Garuaq0Ig43uqq5NJOEw94wxdZTpU-pFB9GmyPk677gJ
-vC1Ro6sbAvKR4pVwtxdCfuoZDb6hJ5bVQKqlfihJfSYZt-xVrVU27+0Ja
-hFbqTmYskatMTgPyjvv99CF2Te8ec+Ys2SPxyZAF0YwOCNOWmsyqN5y9t
-q2Kw2pjoiDs5gIH-uw5U49JzOB6otS7kThBJE-H9A76u4uUvR8DKb+VcB
-rWu5qSJGEnbsXNfJdq5L2D8QgRdV-sXHp2A-7j1X2n4WIISvU1V9koIyS
-NisHFBTcWJS0sC5BTFwrtfLEE9lEwz2bxHQpWJiu12ZeKpi+7oUSqebX+
---- END LICENSE KEY -----
-</pre>
-</li>
-<li>Save trial.key file …</li></ol></div></div>
-		<p class="continue"><a href="/Beyond Compare 4.2.3激活.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/org导出attachments.html">org导出attachments</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Sat 06 January 2018.</h6>
-	
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 添加附件attachments</h2>
-<div class="outline-text-2" id="text-1">
-<pre class="example">
-C-c C-a
-</pre>
-<p>
-然后会有选项，可以是copy或者move或者link文件，然后默认放在data目录。
-添加附件后会有一个个属性记录附件ID信息，但这个时候在导出成hmtl时并不
-会有附件的链接，需要自己手动添加一个附件的链接。
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 添加链接</h2>
-<div class="outline-text-2" id="text-2">
-<pre class="example">
-C-C C-l
-</pre>
-<p>
-选择file: 回车会自动让指定文件目录，根据上面属性信息选择文件，导出成
-html即可指向附件并提供下载。
-</p>
-</div>
-</div>
-
-		<p class="continue"><a href="/org导出attachments.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/org-mode中agenda的简单使用.html">org-mode中agenda的简单使用</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Thu 04 January 2018.</h6>
-	
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> agenda视图中的常用操作</h2>
-<div class="outline-text-2" id="text-1">
-<ul class="org-ul">
-<li>t 更新todo项的状态，agenda视图中直接更新不需要打开源文件，很强大
-</li>
-<li>w 周视图
-</li>
-<li>d 日视图，可以用来看今天做了些什么事，还有哪些事儿要做
-</li>
-<li>f 下一个周期，根据当前是周视图还是日视图步长不同
-</li>
-<li>b 上一个周期，同上，可以用来看上周都做了些什么事
-</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 在org mode中从日历中快速选择自己想要的日期</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-目前需要输入日期的场景：
-</p>
-<ul class="org-ul">
-<li>capture的todo项，指定计划日期或者deadline之后会能够出现agenda view
-中，方便查看工作计划和查看这周做了哪些工作。
-</li>
-</ul>
-</div>
-<div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> 在弹出的calendar中快速选择日期</h3>
-<div class="outline-text-3" id="text-2-1">
-<ul class="org-ul">
-<li>直接输入日，会自动选择距离当前最近那个日，比如今天是1月4日，如果输
-入10，就会是1月10日，如果输入1，就会是2月1日
-</li>
-<li>输入差值
-<ul class="org-ul">
-<li>+1
-下一天
-</li>
-<li>+2w
-下两周
-</li>
-</ul>
-</li>
-<li>快捷键选择日期
-<ul class="org-ul">
-<li>RET 选择当前日期
-</li>
-<li>S-right/left 下一天 …</li></ul></li></ul></div></div></div>
-		<p class="continue"><a href="/org-mode中agenda的简单使用.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/mac office 2016激活.html">mac office 2016激活</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Fri 29 December 2017.</h6>
-	<p>
-office 2016版本支持retina屏幕，安装激活方法如下：
-</p>
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 下载官方原版microsoft office 2016 mac版并安装</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-<a href="https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/OfficeMac/Microsoft_Office_2016_15.38.17090200_Installer.pkg">https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/OfficeMac/Microsoft_Office_2016_15.38.17090200_Installer.pkg</a>
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><a id="ID-72FBD493-A1EF-4732-904C-36ACE24ABDFF" name="ID-72FBD493-A1EF-4732-904C-36ACE24ABDFF"></a><span class="section-number-2">2</span> 下载激活程序并运行&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h2>
-<div class="outline-text-2" id="text-2">
-<p>
-<a href="data/72/FBD493-A1EF-4732-904C-36ACE24ABDFF/microsoft%20office%20setup%20assistant.app.zip">microsoft office setup assistant.app.zip</a>
-以上内容为网上收集。
-</p>
-</div>
-</div>
-
-		<p class="continue"><a href="/mac office 2016激活.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/mac通过homebrew安装imagemagick新老版本.html">mac通过homebrew安装imagemagick新老版本</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Fri 29 December 2017.</h6>
-	<p>
-emacs支持显示嵌入式的显示图片并能够调整图片大小需要在编译期间指定
-imagemagick的支持，但emacs 25.3的编译只能够识别imagemagick的6.x版本，
-无法识别7.x版本，使用brew在mac系统上安装imagemagic的老版本算是比较方便
-了，下面是安装方法。
-</p>
-
-
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 版本信息</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-Mac OS X 10.12.6 (16G29) Sierra
-Emacs 25.3
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 安装command line tool</h2>
-<div class="outline-text-2" id="text-2">
-<pre class="example">
-xcode-select --install
-</pre>
-</div>
-</div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 安装brew</h2>
-<div class="outline-text-2" id="text-3">
-<pre class="example">
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-</pre>
-</div>
-</div>
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><a id="ID-B0BEE131-FC9B-4506-BB02-6AE1BFC5E2F5" name="ID-B0BEE131-FC9B-4506-BB02-6AE1BFC5E2F5"></a><span class="section-number-2">4</span> 安装imagemagick 6.9 …</h2></div>
-		<p class="continue"><a href="/mac通过homebrew安装imagemagick新老版本.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/你听到的即使是合理的也未必是真的.html">你听到的即使是合理的也未必是真的</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Thu 28 December 2017.</h6>
-	<p>
-你看到的，别人跟你讲的，即使看起来是合理的也未必是真是的，一个结果摆在
-眼前，最终形成这种结果的方式有万万种，事实可能是其中的一种，跟你讲的可
-能是别人期望的一种，未验证过的一种。
-有很多这样的例子，比如某一个产品的成功，在没有成功前大家可能并未关注，
-当他成功后老板在公开场所或者媒体上讲述他们的成功史或者成功秘诀，这个讲
-出来的就未必是真实的了，背后可能会有其他目的了。
-所以，很多成功学，励志书，鸡汤文，真是鸡汤，想调整下心态就看看，干货还
-需自己探索，理性思考，敏感洞察。
-</p>
-
-		<p class="continue"><a href="/你听到的即使是合理的也未必是真的.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/原则.html">原则</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Thu 28 December 2017.</h6>
-	<p>
-原则
-总是问问自己应该如何做人，做一个什么样的人，一直以来没有一个满意的答案。
-从高中的时候开始慢慢形成人生观价值观的时候，就开始考虑应该如何做人，似
-乎也是从那个时候起开始信奉绝对自由，说白了，就是想无拘无束，不喜欢任何
-的束缚，老师说并不存在绝对自由，现在我信了，不是不存在，而是不应该。人
-要对自己有约束，因为约束是管理自我，任何事物需要在合理的管理之下才能健
-康发展，绝对自由与放任劣根性是一样的。自我约束，自我管理是对自己的负责
-和爱。
-</p>
-
-<p>
-于是，给自己一些原则约束自己，在这样约束下自己就是我，我就是这样的一些
-约束，这样的一些原则。
-</p>
-
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 原则</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-给自己定一些原则，这些原则形成了自己的人格。没事常看，要做到。
-</p>
-</div>
-<div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> <span class="todo TODO">TODO</span> 坚守原则</h3>
-<div class="outline-text-3" id="text-1-1">
-<p>
-第一条原则就是要坚守原则，首先要有可以坚守原则，如果不能坚守原则，
-那么剩下的原则就没有任何意义了。
-</p>
-</div>
-</div>
-<div id="outline-container-sec-1-2" class="outline-3">
-<h3 id="sec-1-2"><span class="section-number-3">1.2</span> <span class="todo TODO">TODO</span> 爱自己</h3>
-<div class="outline-text-3" id="text-1-2">
-<p>
-不爱自己怎么爱别人 …</p></div></div></div>
-		<p class="continue"><a href="/原则.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/做一名研发lead....html">做一名研发leader还是做一个名工程师</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Mon 25 December 2017.</h6>
-	<p>
-做一名研发leader还是做一个名工程师
-或者能够找到不冲突的方式？肯定是有的，我要想办法，人应该是关键，搭班子，
-建队伍。
-</p>
-
-		<p class="continue"><a href="/做一名研发lead....html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/做了一项针对产品的....html">做了一项针对产品的技术调研然后被领导批得狗血淋头</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Mon 25 December 2017.</h6>
-	<p>
-做了一项针对产品的技术调研，然后被领导批得狗血淋头，还要赔礼道歉，承认
-自己的局限性，没有给其他团队提需求。
-</p>
-
-<p>
-整个这个事情最后想下来，不知道这种现象对于一家公司或是一家企业到底是好
-的还是不好的。跳出来看，像是出现了行业寡头，对技术进行了垄断，只能这个
-寡头做，别人都不能做，其他人都只能用寡头垄断的技术，不能自己做调研，不
-能自己做优化，有定制化的需求只能提需求给他们，对你需求的支持力度，响应
-速度好与不好你都得接受。
-</p>
-
-<p>
-这样可能会限制技术百家争鸣的发展，新技术的出现，和技术的进步，毕竟当形
-成了垄断，内耗便会加剧。
-</p>
-
-<p>
-同时由于只能跨部门的使用技术，和业务可能会出现脱节，业务团队和技术团队
-的沟通成本变高，技术团队反而成为了累赘。
-</p>
-
-<p>
-如此可能并不是一个好的现象。
-</p>
-
-		<p class="continue"><a href="/做了一项针对产品的....html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/向前走的太快，想回....html">向前走的太快</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Mon 25 December 2017.</h6>
-	<p>
-向前走的太快，想回头看看，看看路上的风景，看看路上的人。感觉像是没有了
-根，想去找寻自己的根，或者是信仰么？总是不想给自己的打上标签，标签跟根
-和信仰好想并不是一样的。要接受自己的过去，总是厌恶自己的过去，总是想有
-新的开始，于是每次都没了根。是自己都不喜欢自己这样的人，那就面对，那就
-改正。说到底，做人还是要有原则，要对自己有约束，不要太出世，要有羁绊，
-要回头找回的就是这些羁绊，这些牵挂。因为有原则，有所为有所不为，于是不
-再厌恶自己，而是爱自己，不再常常需要新的开始，从头再来，而是开始有根，
-有过去。
-</p>
-
-<p>
-总是相当自由人，不想给自己贴标签，不喜欢束缚。
-</p>
-
-		<p class="continue"><a href="/向前走的太快，想回....html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/重新考虑笔记系统.html">重新考虑笔记系统</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Sun 24 December 2017.</h6>
-	<p>
-重新考虑笔记系统
-</p>
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 一些功能点</h2>
-<div class="outline-text-2" id="text-1">
-<ul class="org-ul">
-<li>静态网页生成器
-</li>
-<li>图片的处理
-</li>
-<li>如何部署
-</li>
-<li>UML的支持
-</li>
-<li>自定义样式
-</li>
-<li>网页布局与风格
-</li>
-<li>MathJax
-</li>
-<li>RSS
-</li>
-<li>版本管理
-</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 笔记系统是什么样子的才可以助力保持写笔记的习惯？</h2>
-<div class="outline-text-2" id="text-2">
-</div><div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> 专注于笔记的内容，不打断写笔记的灵感</h3>
-<div class="outline-text-3" id="text-2-1">
-<ol class="org-ol">
-<li>不要必须写个标题，考虑写个什么标题会打断思路和灵感。保存文件时如
-果没有标题自动截取开头文字作为标题就好
-</li>
-<li>不要写什么元信息，比如作者，标签，URL这些，也会打断思路，URL随机
-就好，跟标题分离，标题没事可能会改，URL随机字符串，生成之后可以
-固定
-</li>
-<li>要方便分类和全文搜索
-</li>
-<li>有的时候分目录也挺蛋疼，如果写一个文件前还需要考虑应该放在哪个目
-录，也会被打断，所有有个按时间的归档就好，一个月也写不了那么多，
-按月归档就好
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 要做的事情</h2>
-<div class="outline-text-2" id="text-3">
-</div><div id="outline-container-sec-3-1" class="outline-3">
-<h3 id="sec-3-1"><span class="section-number-3">3.1</span> <span class="todo TODO">TODO</span> 本地整个项目导出html</h3>
-<div class="outline-text-3" id="text-3-1">
-<p>
-最基本的导出static html的功能使用org-mode自带的就好 …</p></div></div></div>
-		<p class="continue"><a href="/重新考虑笔记系统.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/homebrew的使用.html">homebrew的使用</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Wed 13 December 2017.</h6>
-	<p>
-homebrew的使用
-brew search
-brew list
-brew pin
-brew install
-brew uninstall
-</p>
-
-		<p class="continue"><a href="/homebrew的使用.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/mac下支持imagemagick编译emacs.html">mac下支持imagemagick编译emacs</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Wed 13 December 2017.</h6>
-	<p>
-mac下支持imagemagick编译emacs
-</p>
-
-		<p class="continue"><a href="/mac下支持imagemagick编译emacs.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/org-page使用中的一些问题.html">org-page使用中的一些问题</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Wed 13 December 2017.</h6>
-	
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 中文文件名</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-本质问题还是在于git，可以支持org源文件的中文名和中文目录。
-org-page使用了命令"Git ls-tree -r &#x2013;name-only"命令,该命令有时候不能正
-确显示中文名,这时候org-page会把中文的org文件忽略掉. 若要正确处理中文的
-org文件,需要在shell中执行"git config core.quotepath false"
-</p>
-</div>
-</div>
-
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 图片问题</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-首先org-mode版本要对，8.x org 同样的代码是不成功的，升级到9.x的
-org-mode就可以了。其次git中文问题要解决。总之org-mode如果导出html正常，
-org-page也就不会有太大问题。
-</p>
-<pre class="example">
-[[./xxx/xxx.jpg]]
-</pre>
-</div>
-<div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> 跨分类图片问题</h3>
-</div>
-</div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 预览问题</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-已经提交了的文件，修改后可以立即preview，修改的内容会生效，但是新文件
-却无法预览，原因可能还需要研究一下。
-猜测应该是会依赖于提交记录中的文件选择要生成的文件，但是文件内容拿的是 …</p></div></div>
-		<p class="continue"><a href="/org-page使用中的一些问题.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/orgmode一些语法.html">orgmode一些语法</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Wed 13 December 2017.</h6>
-	<p>
-orgmode只是提供了一个很好的工具，但能否用好这个工具才是重点。可以用兵
-器和招式来理解。
-官方文档上说可以做为keep notes,todo list,project planning
-</p>
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 记录一下使用orgmode都可以做哪些事情，怎么做法</h2>
-<div class="outline-text-2" id="text-1">
-<ul class="org-ul">
-<li>记笔记，最基本的
-</li>
-<li>Todo list
-</li>
-<li>习惯养成
-</li>
-<li>做项目计划
-</li>
-<li>RSS订阅
-</li>
-<li>书签管理
-</li>
-<li>做一个计时器
-</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 查看和检查org语法树</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-M-: (org-element-parse-buffer) RET  查看org语法树
-org-lint命令可以检查org语法
-</p>
-</div>
-</div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> #+开头的是个什么鬼？</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-以#+开头加关键字和冒号的语法称之为in-buffer settings
-</p>
-<p>
-#+ 开头的关键字并非是任意写的，orgmode识别这些是有限的，通过输入
-</p>
-<p>
-#+然后再入M-TAB 自动补全可以看到orgmode支持的关键字，另外当输入了这
-些关键字之后，可以通过C-c C-c来刷新生效
-</p>
-</div>
-</div>
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> 输入结构块的快捷方法</h2>
-<div class="outline-text-2" id="text-4">
-<p>
-&lt;s TAB completes the ‘src …</p></div></div>
-		<p class="continue"><a href="/orgmode一些语法.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/orgmode做todolist.html">orgmode做todolist</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Wed 13 December 2017.</h6>
-	<p>
-org mode中todo的原生概念就是分散在各个笔记中的，因为todo往往是在记笔记
-的过程中产生的，但org mode提供了便利的从各个文件中收集todo的方法。
-</p>
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> todo的概念</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-TODO List是用来做待办事项管理的，了解GTD的同学会很熟悉。Org mode通过
-以下概念和方式实现对TODO list的支持，可以支持：
-</p>
-<ul class="org-ul">
-<li>任务和子任务
-</li>
-<li>标签分类
-</li>
-<li>状态修改历史
-</li>
-<li>通过标签全局搜索
-</li>
-<li>优先级
-</li>
-<li>自定义任务状态
-</li>
-</ul>
-<p>
-总之可能是最好的todo list管理工具了。
-TODO的实现是基于headline的，他在headline的头部通过插入关键字的方式标
-记TODO不同的状态。
-todo的功能本质上是在一组关键字和无关键字之间轮换，然后通过一个竖线区
-分成了两个状态，如果没有提供竖线最后一个关键字就作为和前面不同的状态。
-这个状态只是在agent view中使用判断出现和不出现而已。
-通过上面这种机制，可以当成几种工具来用
-</p>
-<ul class="org-ul">
-<li>也是最基本的，在待办与完成之间切换
-</li>
-<li>把关键在当成工作流，记录工作步骤
-</li>
-<li>把关键字当成分类，同时也可以在不同种类之间切换，比如一项工作安排给
-谁做
-</li>
-</ul>
-</div>
-<div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> todo配置的生效范围</h3>
-<div class="outline-text-3" id="text-1-1">
-<p>
-下面讨论的配置基本上都会有三种有效范围
-</p>
-<ul class="org-ul">
-<li>通过设置变量的方式，会影响所有org文件
-</li>
-<li>通过设置in-buffer …</li></ul></div></div></div>
-		<p class="continue"><a href="/orgmode做todolist.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/个人知识管理解决方案实现.html">个人知识管理解决方案实现</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Wed 13 December 2017.</h6>
-	<p>
-如果早一点学会做只是管理，可能现在会掌握更多的知识，不过什么时候开始做
-只是管理都会晚。
-</p>
-
-<p>
-知识管理很重要的一个环节在于要经常翻看思考，理解和记忆自己的一些笔记。
-</p>
-
-<p>
-前两年在使用iPhone自带的笔记app时，偶尔把一些想法记录下来，或者把自己
-悟到的一些道理记下来，然后时长翻看，那阵子效果就很好，可以真正的把领悟
-大的知识理解和运用起来。
-</p>
-
-<p>
-可能还是随着年龄的增长，记忆力在逐渐下降，有的
-时候突然在一个环境或者遇到某件事情的时候理解了一个知识点，或者明白了一
-个道理，比如小到一个shell命令怎么用，或者更深刻的理解了一个方法论，可
-能只是那一刻明白了，记住了，即使他很重要，过阵子就会忘掉，更别提很好的
-运用了。如此一来，当时的思考和学习其实就被浪费掉了，因为并没有变成自己
-的东西，忘了，或者用不起来，跟没学是一样的，然后等到某一天再遇到同样的
-问题，思考了一番，突然又明白了（甚至有些时候以前能想明白的问题现在都想
-不明白了，这就更尴尬了），发现，咦，这个问题以前我会啊，或者这个道理以
-前我懂啊，但是有什么用呢？如果不记录下来 …</p>
-		<p class="continue"><a href="/个人知识管理解决方案实现.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/关于我.html">关于我</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Wed 13 December 2017.</h6>
-	<p>
-关于我
-我是一名码农，这并不是自嘲，在目前的大环境下，除非是在顶尖的科技公司，
-像Google，苹果这些的，大部分可能只是代码的搬运工，或者做一些组装和应用
-的工作，缺乏创造力，缺乏技术性。当我什么时候可以通过技术改变生活，那个
-时候可能才能称得上是一名工程师。
-</p>
-
-<p>
-我使用emacs <a href="http://orgmode.org/">org-mode</a> 做笔记。之前用过一些工具，都不是很称心，用过
-Evernote，OneNote，confluence，也有一些blog工具，还用过org-page，在这
-个过程中不断探索，一直考虑如何可以专注于内容，专注于记和读，直到从2016
-年开始接触org-mode，作为记的工具是比较趁手了。平时用iPhone自带的笔记本
-感觉也很好用，所以研究了一下他的产品思路，发现一切都很简单，于是我开始
-简化工具，不再使用org-page，单纯的使用org-mode和他的导出发布功能讲内容
-发布到网上以便阅读，于是便有了此。
-</p>
-
-		<p class="continue"><a href="/关于我.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/利用orgmode做项目计划.html">利用orgmode做项目计划</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Wed 13 December 2017.</h6>
-	
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 装逼专项</h2>
-<div class="outline-text-2" id="text-1">
-</div>
-<div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 第一步</h3>
-<div class="outline-text-3" id="text-1-1">
-</div>
-</div>
-<div id="outline-container-sec-1-2" class="outline-3">
-<h3 id="sec-1-2"><span class="section-number-3">1.2</span> 第二步</h3>
-<div class="outline-text-3" id="text-1-2">
-</div>
-<div id="outline-container-sec-1-2-1" class="outline-4">
-<h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> 第二步里面的小插曲</h4>
-<div class="outline-text-4" id="text-1-2-1">
-</div>
-</div>
-</div>
-<div id="outline-container-sec-1-3" class="outline-3">
-<h3 id="sec-1-3"><span class="section-number-3">1.3</span> 第三步</h3>
-<div class="outline-text-3" id="text-1-3">
-</div>
-</div>
-</div>
-
-		<p class="continue"><a href="/利用orgmode做项目计划.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/如何与人相处.html">如何与人相处</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Wed 13 December 2017.</h6>
-	
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 做人要有原则</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-这个问题也不是第一次提及了，但是每次好想都没有做的很到位。做人有原则
-是顺利个人威信，个人态度，值得他人尊重的最基本因素。到现在所遇到的特
-别需要讲原则的地方有：
-</p>
-<ul class="org-ul">
-<li>言而有信
-就是说到做到，无论你的地位如何，无论事情多么的小，当给人承诺的适合
-就一定做到，说在什么时候做到，就一定在什么时候做到，不给自己找任何
-的理由。比如DF说周四找国内某领导谈播放器的事情，虽然一周都没在，周
-四的时候还是准时给了我答复；比如之前创维的领导，喝酒的时候说给我一
-个手包，第二天真的给我带来了，当时我是打心底的佩服。
-</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 成人之美</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-这个点也不是第一次提了
-</p>
-</div>
-</div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 心胸豁达</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-这个点可以说是这样的，从小总是很谨慎，把人总往坏处想，事情总往不好的
-方面想，或者负能量过多，对事待人太过谨慎和负面。完全可以把事情正能量
-的思考，这个点以前思考过，该来的总会来，正能量与负能量对事情本身的改
-变通常是没有什么区别的，但是不同的态度却可能有很大变化。另外，可以把 …</p></div></div>
-		<p class="continue"><a href="/如何与人相处.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/如何实现在emacs中编辑org文件并在浏览器中实时预览.html">如何实现在emacs中编辑org文件并在浏览器中实时预览</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Wed 13 December 2017.</h6>
-	<p>
-如何实现在emacs中编辑org文件并在浏览器中实时预览
-</p>
-
-		<p class="continue"><a href="/如何实现在emacs中编辑org文件并在浏览器中实时预览.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/git命令按tab键的自动补全.html">git命令按tab键的自动补全</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Fri 15 September 2017.</h6>
-	<p>
-在mac os x系统中的terminal中使用git命令时默认没有支持tab自动补全，用起
-来会不太方便。
-</p>
-
-<p>
-如果不想用网上的脚本解决，倒是有个安全简单的方法：
-</p>
-
-<p>
-step 1.通过以下命令搜索系统中的git补全脚本
-</p>
-<pre class="example">
-sudo find / -name git-completion.bash
-</pre>
-<p>
-搜出来的路径会因是从Xcode安装的还是从Command Line Tools安装的有区别，
-我的是Xcode安装的（建议Command Line Tools安装，Xcode比较大，而且如果不
-做iOS开发并没什么用），路径如下：
-</p>
-<pre class="example">
-/Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
-</pre>
-<p>
-step 2.在~/.bash<sub>profile文件添加一下内容</sub>
-</p>
-<div class="org-src-container">
-
-<pre class="src src-bash">if [ -f /Applications/Xcode.app/Contents/Developer/usr/share …</pre></div>
-		<p class="continue"><a href="/git命令按tab键的自动补全.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/石家庄一日.html">石家庄一日</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/sheng-huo.html">生活</a> on Tue 08 August 2017.</h6>
-	
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><a id="ID-4BC6C044-08CD-4A93-A311-7F7A83C1E0E6" name="ID-4BC6C044-08CD-4A93-A311-7F7A83C1E0E6"></a><span class="section-number-2">1</span> 2017-08-08 23:16 CST 1502205413&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h2>
-<div class="outline-text-2" id="text-1">
-<p>
-石家庄是一个很不错的城市，刚下火车，在去办事地方的路上发现空气比上次来
-好太多了，天空已经是可以看得见的蓝，还有白云，之前到处在施工的地铁已经
-建好，马路很干净。
-</p>
-
-<p>
-周六去到办事的地方，虽然上班但是无法办理相应业务，只能等到周一再办。但
-是服务人员的还是很热情的帮我看了下材料是否齐全，得知我从外地过来还告诉
-我可以代办。等到周一的时候只用了20分钟就办完了所有手续，真心为我大石家
-庄公职部门办事效率和服务态度点赞！
-</p>
-
-<p>
-石家庄人民的热情直爽随处
-都可以感受到，从的士司机师傅，到公职人员，从街边小贩到酒店保洁阿姨，你
-会发现这个城市人民的淳朴和热情，可以拿老北京对比，少了一些痞气，多了一
-些悠然，可以从他们身上感受到他们生活在这里安居乐业，怡然自得，没有大城
-市随处可见的焦虑和压抑。
-</p>
-
-<p>
-回来的时候网上查了一下烧鸡店，想吃一下南方吃不
-到烧鸡，事实上这几天一直在吃炒饼，真是百吃不厌。找到一家大名正宗二毛烧
-鸡，沿路线而寻，却没找到 …</p></div></div>
-		<p class="continue"><a href="/石家庄一日.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/早点睡觉.html">早点睡觉</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Thu 27 July 2017.</h6>
-	<p>
-好累，最近两三个星期总是感觉身体很疲惫。晚上又总是睡不着或睡不好，白天
-状态也很糟糕。可能真的是身体越来越不如以前，这种感觉也是第一次出现。以
-前加班，熬夜，第二天依然精神很好，现在只要头一天晚上睡的晚一些，第二天
-整个人的状态就不好，总是感觉乏，感觉困。到现在连出去玩都不愿意去了，和
-朋友一起吃吃饭，唱唱歌的精力感觉都没有。
-</p>
-
-<p>
-身体太重要，25岁的时候感觉身体状态开始恢复的没那么快，开始意识到这个问
-题，30岁的时候感觉不只是恢复的问题了，所以还是要从一开始就保养身体，不要等到发现
-身体有问题时才反应过来，往往很难补救。
-</p>
-
-<p>
-一直想着晚上能够早点睡觉，11点，这样第二天的状态会不错，可是总是无法很
-好的控制自己的心态和情绪，有的时候心里一有事情就会总是挂念着，翻来覆去，
-前思后想，心理负担很重，患得患失。或者就是因为一些事情兴奋，然后也是睡
-不着。无论是焦虑还是兴奋，还是无法很好的控制自己的情绪，不够成熟，不够
-有调理的处理事情，还是心太急，这是自己的一个老毛病，难道真的是江山易改 …</p>
-		<p class="continue"><a href="/早点睡觉.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/神化与崇拜.html">神化与崇拜</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Mon 24 July 2017.</h6>
-	
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><a id="ID-3AB97E96-17B5-49BC-B823-CD4F269CD0C8" name="ID-3AB97E96-17B5-49BC-B823-CD4F269CD0C8"></a><span class="section-number-2">1</span> 2017-07-24 00:09 CST 1500826141&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h2>
-<div class="outline-text-2" id="text-1">
-
-<div class="figure">
-<p><img src="data/3A/B97E96-17B5-49BC-B823-CD4F269CD0C8/emacs_2017-12-13_22-20-43.png" alt="emacs_2017-12-13_22-20-43.png" style="width:128px" />
-</p>
-</div>
-
-<p>
-gnu emacs version 25.x开始换了新的logo，感觉异常的漂亮，看到这个logo心
-中会有一种如同见到了女神一样的喜悦之情，感觉血管中充满了多巴胺。
-</p>
-
-<p>
-从来没有追过星，可能这就是追星的感觉吧。
-</p>
-
-<p>
-并不一定就是这个logo真的有多漂亮，仔细想了下，应该是最近使用emacs更多
-了，而且尝试了一些新功能，elisp也有些进步，尤其是体验了org-mode强大的
-功能，确实为之叹服，因此心中确实认为emacs无所不能，强大至极，崇拜之情
-油然而生，形成了一种只要有emacs在手，还有什么做不到的错觉。在这种感觉
-之下，爱屋及乌吧，于是觉得emacs的logo异常漂亮。
-</p>
-
-<p>
-可以扩展以下，在生活中应该也是如此，当一个人强大到神的地步，什么都可以
-做的好，什么都可以赢的时候，就会给人一种安全感，令人崇拜的感觉，比如体
-育明星，各种世界冠军，当常人做不到的时候，他们可以做得到 …</p></div></div>
-		<p class="continue"><a href="/神化与崇拜.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/芽庄游记.html">芽庄游记</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Mon 24 July 2017.</h6>
-	
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><a id="ID-9FC095A6-5669-4D85-8158-78A6325D29F8" name="ID-9FC095A6-5669-4D85-8158-78A6325D29F8"></a><span class="section-number-2">1</span> 2017-07-24 00:57 CST 1500829035&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h2>
-<div class="outline-text-2" id="text-1">
-<p>
-跟团去的，并不是什么纯玩团，会有两个购物点，去就可以了，并不强制购物，
-但整体价格还相对便宜。但整个芽庄之旅体验非常糟糕。也是第一次出国，回国
-之后由衷的感慨祖国的强大，先进与文明。
-</p>
-
-<p>
-越南的海关工作人员真的会索取小费，入关的时候给了，开始的时候以为是导游为了让自己少一些
-麻烦然后错误的引导大家，回程的时候才发现，如果没有给小费，工作人员真的
-会各种怠慢，而且可能还会找茬儿，同事的签证有了一点点的污迹，都被拉去小
-黑屋，然后被索取了200RMB就解决了。另外一个同事签证名字拼错了，竟然用
-20RMB就解决了，而且还可以插队安检（准确的说，安检完全是形同虚设），如
-果公职人员都是这样有钱能使鬼推磨，那得是有多么黑暗。再对比一下国内，你
-真的会发现，我们的祖国是多么的先进和文明，公职人员是多么的认真负责。
-</p>
-
-<p>
-第一天住的酒店五星级，还算挺好的，比较新，海景房，面朝大海春暖花开的感 …</p></div></div>
-		<p class="continue"><a href="/芽庄游记.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/emacs中的自动换行.html">emacs中的自动换行</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Sun 23 July 2017.</h6>
-	<p>
-这里自动换行是有两种意思：
-</p>
-<ul class="org-ul">
-<li>一种显示层面的，当显示长句时，超过屏幕范围时自动在起另一行显示，这种操作叫做
-truncate-lines，这种操作只是在显示层面做了换行，并不是真的在原内容上
-插入了换行符。
-
-<p>
-可以用以下命令在buffer种打开自动换行
-</p>
-<pre class="example">
-M-x toggle-truncate-lines
-</pre>
-<p>
-可以在初始化文件中加入以下内容，默认全部换行，还是很方便的，阅读内容
-时不用总是移动
-</p>
-<pre class="example">
-(set-default 'truncate-lines t)
-</pre>
-</li>
-
-<li>另一种换行是在编辑层面的，当编辑内容超出一定长度后自动插入换行符，这样可
-以使得编辑内容非常整齐，这里不同于truncate-lines，这里是真的插入了换
-行符。
-
-<p>
-refill-mode和auto-fill-mode都是做这个事情的，不过refill-mode会把
-buffer中所有内容做处理，不够智能，往往有一些内容，比如表格什么的我们
-并不想做处理。所以常用auto-fill-mode，只对当前行生效，再配合
-fill-region等命令非常智能和方便。
-</p>
-</li>
-</ul>
-
-		<p class="continue"><a href="/emacs中的自动换行.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/ubuntu桌面快捷方式创建.html">ubuntu桌面快捷方式创建</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Sat 22 July 2017.</h6>
-	<p>
-以下目录创建.desktop文件都会生效，作用范围不同
-</p>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="left" />
-
-<col  class="left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="left">/usr/share/applications</td>
-<td class="left">全局</td>
-</tr>
-
-<tr>
-<td class="left">~/.local/share/applications</td>
-<td class="left">用户</td>
-</tr>
-
-<tr>
-<td class="left">~/.gnome/apps</td>
-<td class="left">用户</td>
-</tr>
-</tbody>
-</table>
-
-<p>
-创建emacs启动快捷方式
-emacs ~/.local/share/applications/emacs.desktop
-</p>
-<pre class="example">
-[Desktop Entry]
-Encoding=UTF-8
-Version=1.0
-Type=Application
-Name=emacs
-Icon=emacs
-Path=/usr/local/bin
-Exec=emacs
-StartupNotify=false
-StartupWMClass=Emacs
-OnlyShowIn=Unity;
-X-UnityGenerated=true
-</pre>
-<p>
-创建intellj idea快捷方式 …</p>
-		<p class="continue"><a href="/ubuntu桌面快捷方式创建.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/安装emacs.html">安装emacs</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Sat 22 July 2017.</h6>
-	
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> ubuntu 14.04</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-以下安装的是24.5，安装目前最新版本25.2.1只需要下载对应的源码，相同的编译安装步骤
-</p>
-
-<p>
-安装完成后添加启动快捷方式到launcher，参考 ubuntu添加快捷方式
-</p>
-<div class="org-src-container">
-
-<pre class="src src-sh"># 安装依赖
-sudo apt-get install build-essential
-sudo apt-get build-dep emacs24
-# 下载源码
-wget http://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.gz
-# 解压编译
-tar zxvf emacs-24.5.tar.gz
-cd emacs-24.5
-./configure
-#如果 configure 这一步出错, 一般是缺少其他相对应的依赖的, 这时 …</pre></div></div></div>
-		<p class="continue"><a href="/安装emacs.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<h3><a href="/notebook-config-done.html">notebook-config-done</a></h3>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Thu 20 July 2017.</h6>
-	<p>
-最终还是完成了云笔记的配置，中间有一些关于 emacs，elisp，git和org-page使用的知识，也都还不算难，这里记录一下我的云笔记整体解决方案。
-</p>
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><a id="ID-9B6B3951-F473-4A7B-86F6-E255F776F044" name="ID-9B6B3951-F473-4A7B-86F6-E255F776F044"></a><span class="section-number-2">1</span> 记笔记&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h2>
-<div class="outline-text-2" id="text-1">
-<p>
-emacs org-mode真的很好用
-关于记笔记，尝试过很多方案和工具，用过Evernote，confluence，但都不尽如人意，没有一个好的工具也就很难坚持下来，因为常常会丢失。
-</p>
-<div class="org-src-container">
-
-<pre class="src src-java">public void main(String args[]){
-   System.out.println("hello world");
-}
-</pre>
-</div>
-<p>
-嵌入html
-</p>
-<pre class="example">
-@@html:&lt;a href="http://www.flickr.com/photos/ini_always/11186646664/"
-title="bind-plain-function-one-var-zero-args by kelvin_hu, on
-Flickr"&gt;&lt;img
-src="http://farm8 …</pre></div></div>
-		<p class="continue"><a href="/notebook-config-done.html">Continue reading &raquo;</a></p>
-</article>
-<hr />
-
-
-						</div>
-						<!-- End Main Content -->
-						<!-- Sidebar -->
-						<aside class="medium-3 hide-for-small-only columns">
-							<div class="panel">
-								<h5>Links</h5>
-								<ul class="side-nav">
-								</ul>
-							</div>
-
-							<div class="panel">
-								<h5>Tags</h5>
-								<ul class="tag-cloud">
-								</ul>
-							</div>
-
-
-							<div class="panel">
-								<h5>Social</h5>
-								<ul class="side-nav">
-									<li><a href="mailto:iknockdoor.com@gmail.com">E-mail</a></li>
-								</ul>
-							</div>
-						</aside>
-						<!-- End Sidebar -->
-					</div>
-
-					<!-- Footer -->
-					<footer class="row">
-						<div class="medium-9 small-12">
-							<hr/>
-							<p class="text-center">Powered by <a href="http://getpelican.com">Pelican</a> and <a href="http://foundation.zurb.com/">Zurb Foundation</a>. Theme by <a href="http://hamaluik.com">Kenton Hamaluik</a>.</p>
-						</div>
-					</footer>
-					<!-- End Footer -->
-				</section>
-				<a class="exit-off-canvas"></a>
-			</div><!--off-canvas inner-->
-		</div><!--off-canvas wrap-->
-
-		<script src="/theme/js/jquery.js"></script>
-		<script src="/theme/js/foundation.min.js"></script>
-		<script>
-			$(document).foundation();
-		</script>
-	</body>
+<p class="paginator">
+    Page 1 / 5
+        <a href="/index2.html">&raquo;</a>
+</p>
+</section><!-- /#content -->
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
 </html>

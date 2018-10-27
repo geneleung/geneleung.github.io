@@ -1,100 +1,98 @@
-<!doctype html>
-<html class="no-js" lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-		<title>iknockdoor</title>
-		<meta name="description" content="">
-		<meta name="author" content="chappie">
-
-		<link rel="stylesheet" href="/theme/css/foundation.css" />
-		<link rel="stylesheet" href="/theme/css/pygment/monokai.css" />
-		<link rel="stylesheet" href="/theme/css/custom.css" />
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+          <title>iknockdoor - RecyclerView版本问题</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="/theme/css/org.css" />
+        <link rel="stylesheet" type="text/css" href="/theme/css/custom.css" />
 
 
-		<script src="/theme/js/modernizr.js"></script>
-
-		<!-- Feeds -->
 
 <script>var _gaq=[['_setAccount','UA-103057848-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+        <!-- mathjax config similar to math.stackexchange -->
+	<script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({
+	  jax: ["input/TeX", "output/HTML-CSS"],
+	  tex2jax: {
+	  inlineMath: [ ['$', '$'] ],
+	  displayMath: [ ['$$', '$$']],
+	  processEscapes: true,
+	  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+	  },
+	  messageStyle: "none",
+	  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+	  });
+	</script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
 
-		<!-- mathjax config similar to math.stackexchange -->
-		<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({
-			jax: ["input/TeX", "output/HTML-CSS"],
-			tex2jax: {
-				inlineMath: [ ['$', '$'] ],
-				displayMath: [ ['$$', '$$']],
-				processEscapes: true,
-				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-			},
-			messageStyle: "none",
-			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
-		});
-		</script>
-		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-	</head>
-	<body>
-		<div class="off-canvas-wrap">
-			<div class="inner-wrap">
-				<!-- mobile top bar to activate nav -->
-				<nav class="tab-bar show-for-small">
-					<section class="left-small">
-						<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
-					</section>
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1>iknockdoor <strong></strong></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+        </ul></nav><!-- /#menu -->
+        <nav class="sidebar">
+	    <h5>分类</h5>
+	    <ul>
+	      <li ><a href="/category/jie-jue-fang-an.html">解决方案(1)</a></li>
+	      <li class="active"><a href="/category/misc.html">misc(48)</a></li>
+	      <li ><a href="/category/sheng-huo.html">生活(1)</a></li>
+	    </ul>
+	    <h5>标签</h5>
+	    <ul>
+	      <li><a href="/tag/blog.html">blog(1)</a></li>
+	      <li><a href="/tag/org-blog.html">org-blog(1)</a></li>
+	      <li><a href="/tag/pelican.html">pelican(1)</a></li>
+	      <li><a href="/tag/vps.html">vps(1)</a></li>
+	    </ul>
 
-					<section class="middle tab-bar-section">
-						<h1 class="title">iknockdoor</h1>
-					</section>
-				</nav>
-
-				<!-- mobile side bar nav -->
-				<aside class="left-off-canvas-menu">
-					<ul class="off-canvas-list">
-						<li><a href="">Home</a></li>
-						<li><label>Categories</label></li>
-							<li ><a href="/category/jie-jue-fang-an.html">解决方案</a></li>
-							<li class="active"><a href="/category/misc.html">misc</a></li>
-							<li ><a href="/category/sheng-huo.html">生活</a></li>
-
-						<li><label>Links</label></li>
-
-
-
-						<li><label>Social</label></li>
-							<li><a href="mailto:iknockdoor.com@gmail.com">E-mail</a></li>
-					</ul>	
-				</aside>
-
-				<!-- top bar nav -->
-				<nav class="top-bar hide-for-small-only" data-topbar>
-					<ul class="title-area">
-						<li class="name">
-							<h1><a href="/">iknockdoor</a></h1>
-						</li>
-					</ul>
-
-					<section class="top-bar-section">
-						<ul class="left">
-								<li ><a href="/category/jie-jue-fang-an.html">解决方案</a></li>
-								<li class="active"><a href="/category/misc.html">misc</a></li>
-								<li ><a href="/category/sheng-huo.html">生活</a></li>
-						</ul>
-                        <ul class="right">                                                                                                                                           
-                                                                                                                                             
-                        </ul>  
-					</section>
-				</nav>
-
-				<!-- Main Page Content and Sidebar -->
-				<section class="main-section">
-					<div class="row">
-						<!-- Main Content -->
-						<div class="medium-9 small-12 columns" role="content">
-<article>
-	<h2>RecyclerView版本问题</h2>
-	
+	    <h5>归档</h5>
+	    <ul>
+	      <li><a href="/posts/2018/10/index.html">October 2018 (3)</a></li>
+	      <li><a href="/posts/2018/09/index.html">September 2018 (2)</a></li>
+	      <li><a href="/posts/2018/07/index.html">July 2018 (2)</a></li>
+	      <li><a href="/posts/2018/06/index.html">June 2018 (1)</a></li>
+	      <li><a href="/posts/2018/05/index.html">May 2018 (2)</a></li>
+	      <li><a href="/posts/2018/04/index.html">April 2018 (2)</a></li>
+	      <li><a href="/posts/2018/03/index.html">March 2018 (1)</a></li>
+	      <li><a href="/posts/2018/02/index.html">February 2018 (3)</a></li>
+	      <li><a href="/posts/2018/01/index.html">January 2018 (7)</a></li>
+	      <li><a href="/posts/2017/12/index.html">December 2017 (18)</a></li>
+	      <li><a href="/posts/2017/09/index.html">September 2017 (1)</a></li>
+	      <li><a href="/posts/2017/08/index.html">August 2017 (1)</a></li>
+	      <li><a href="/posts/2017/07/index.html">July 2017 (7)</a></li>
+	    </ul>
+             <h5>Links</h5>
+	    <ul>
+	    </ul>
+	    <h5>与我联系</h5>
+	    <ul>
+	      <li><a href="mailto:iknockdoor.com@gmail.com">E-mail</a></li>
+	    </ul>
+	</nav>
+	    <!-- End Sidebar -->
+<section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="/RecyclerView版本问题.html" rel="bookmark"
+         title="Permalink to RecyclerView版本问题">RecyclerView版本问题</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <time class="published" datetime="2018-09-10T00:00:00+08:00">
+      Mon 10 September 2018
+    </time>
+    <address class="vcard author">
+      By           <a class="url fn" href="/author/chappie.html">chappie</a>
+    </address>
+    <div class="category">
+        Category: <a href="/category/misc.html">misc</a>
+    </div>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    
 <div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1"><span class="section-number-2">1</span> RecyclerView 23.0.1版本和26.0的版本在measure过程有比较大的差异</h2>
 <div class="outline-text-2" id="text-1">
@@ -206,55 +204,13 @@ scrollby函数。这样有个缺点，像RecyclerView这样的控件，内部有
 </div>
 </div>
 
-	<hr/>
-	<h6>Written by <a href="/author/chappie.html">chappie</a> in <a href="/category/misc.html">misc</a> on Mon 10 September 2018.</h6>
-</article>
-
-<hr/>
-						</div>
-						<!-- End Main Content -->
-						<!-- Sidebar -->
-						<aside class="medium-3 hide-for-small-only columns">
-							<div class="panel">
-								<h5>Links</h5>
-								<ul class="side-nav">
-								</ul>
-							</div>
-
-							<div class="panel">
-								<h5>Tags</h5>
-								<ul class="tag-cloud">
-								</ul>
-							</div>
-
-
-							<div class="panel">
-								<h5>Social</h5>
-								<ul class="side-nav">
-									<li><a href="mailto:iknockdoor.com@gmail.com">E-mail</a></li>
-								</ul>
-							</div>
-						</aside>
-						<!-- End Sidebar -->
-					</div>
-
-					<!-- Footer -->
-					<footer class="row">
-						<div class="medium-9 small-12">
-							<hr/>
-							<p class="text-center">Powered by <a href="http://getpelican.com">Pelican</a> and <a href="http://foundation.zurb.com/">Zurb Foundation</a>. Theme by <a href="http://hamaluik.com">Kenton Hamaluik</a>.</p>
-						</div>
-					</footer>
-					<!-- End Footer -->
-				</section>
-				<a class="exit-off-canvas"></a>
-			</div><!--off-canvas inner-->
-		</div><!--off-canvas wrap-->
-
-		<script src="/theme/js/jquery.js"></script>
-		<script src="/theme/js/foundation.min.js"></script>
-		<script>
-			$(document).foundation();
-		</script>
-	</body>
+  </div><!-- /.entry-content -->
+</section>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
 </html>
