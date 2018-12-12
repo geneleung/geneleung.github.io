@@ -98,9 +98,25 @@
     </div>
   </footer><!-- /.post-info -->
   <div class="entry-content">
-    <p>
-之前对布局文件中的各控件的布局参数的理解一直存在一些误区，需要明确以下
-几个关键点
+    <div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. 布局参数由view持有，由view直接上级的viewgroup使用</a></li>
+<li><a href="#sec-2">2. LayoutParams的创建时机</a>
+<ul>
+<li><a href="#sec-2-1">2.1. 从布局文件创建</a></li>
+<li><a href="#sec-2-2">2.2. 从代码创建</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3. LayoutParams的类型</a></li>
+<li><a href="#sec-4">4. 自定义布局</a></li>
+<li><a href="#sec-5">5. 参考</a></li>
+</ul>
+</div>
+</div>
+<p>
+之前对布局文件中的各控件的布局参数的理解一直存在一些误区，需要明确以下几个关键点
 </p>
 
 <div id="outline-container-sec-1" class="outline-2">
@@ -138,12 +154,10 @@ view持有
 <h2 id="sec-3"><span class="section-number-2">3</span> LayoutParams的类型</h2>
 <div class="outline-text-2" id="text-3">
 <p>
-view持有的LayoutParams一定是父容器ViewGroup的LayoutParams类，在添加
-到ViewGroup时会做类型检查，这个逻辑也是合理的
+view持有的LayoutParams一定是父容器ViewGroup的LayoutParams类，在添加到ViewGroup时会做类型检查，这个逻辑也是合理的
 </p>
 <ul class="org-ul">
-<li>LayoutParams是由ViewGroup使用的，所以必须是ViewGroup知道的类型，才
-能使用
+<li>LayoutParams是由ViewGroup使用的，所以必须是ViewGroup知道的类型，才能使用
 </li>
 <li>也因此，当view在不同ViewGroup下时可以由不同的布局参数
 </li>
@@ -154,8 +168,7 @@ view持有的LayoutParams一定是父容器ViewGroup的LayoutParams类，在添�
 <h2 id="sec-4"><span class="section-number-2">4</span> 自定义布局</h2>
 <div class="outline-text-2" id="text-4">
 <p>
-在自定义布局时需要重载创建的LayoutParams的几个方法，如果需要，也需要
-自定义LayoutParams
+在自定义布局时需要重载创建的LayoutParams的几个方法，如果需要，也需要自定义LayoutParams
 </p>
 </div>
 </div>

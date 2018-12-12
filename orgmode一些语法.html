@@ -98,10 +98,21 @@
     </div>
   </footer><!-- /.post-info -->
   <div class="entry-content">
-    <p>
-orgmode只是提供了一个很好的工具，但能否用好这个工具才是重点。可以用兵
-器和招式来理解。
-官方文档上说可以做为keep notes,todo list,project planning
+    <div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. 记录一下使用orgmode都可以做哪些事情，怎么做法</a></li>
+<li><a href="#sec-2">2. 查看和检查org语法树</a></li>
+<li><a href="#sec-3">3. #+开头的是个什么鬼？</a></li>
+<li><a href="#sec-4">4. 输入结构块的快捷方法</a></li>
+<li><a href="#sec-5">5. Drawer</a></li>
+<li><a href="#sec-6">6. org-mode的时间戳</a></li>
+</ul>
+</div>
+</div>
+<p>
+orgmode只是提供了一个很好的工具，但能否用好这个工具才是重点。可以用兵器和招式来理解。官方文档上说可以做为keep notes,todo list,project planning
 </p>
 <div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1"><span class="section-number-2">1</span> 记录一下使用orgmode都可以做哪些事情，怎么做法</h2>
@@ -143,8 +154,7 @@ org-lint命令可以检查org语法
 #+ 开头的关键字并非是任意写的，orgmode识别这些是有限的，通过输入
 </p>
 <p>
-#+然后再入M-TAB 自动补全可以看到orgmode支持的关键字，另外当输入了这
-些关键字之后，可以通过C-c C-c来刷新生效
+#+然后再入M-TAB 自动补全可以看到orgmode支持的关键字，另外当输入了这些关键字之后，可以通过C-c C-c来刷新生效
 </p>
 </div>
 </div>
@@ -153,8 +163,7 @@ org-lint命令可以检查org语法
 <div class="outline-text-2" id="text-4">
 <p>
 &lt;s TAB completes the ‘src’ code block.
-&lt;e TAB 输入例子块，这个我常用
-其他如下：
+&lt;e TAB 输入例子块，这个我常用其他如下：
 s #+BEGIN<sub>SRC</sub> &#x2026; #+END<sub>SRC</sub>
 e #+BEGIN<sub>EXAMPLE</sub> &#x2026; #+END<sub>EXAMPLE</sub>
 q #+BEGIN<sub>QUOTE</sub> &#x2026; #+END<sub>QUOTE</sub>
@@ -173,8 +182,7 @@ I #+INCLUDE: line
 <div class="outline-text-2" id="text-5">
 <p>
 C-c C-x d 添加一个Drawer
-C-c C-z 这个命令很好使，添加一条日志，包含时间戳和笔记，很适合用来做
-批注，或者做阅读笔记。如果设置了org-log-into-drawer，会记录在指定的
+C-c C-z 这个命令很好使，添加一条日志，包含时间戳和笔记，很适合用来做批注，或者做阅读笔记。如果设置了org-log-into-drawer，会记录在指定的
 Drawer中，一般设置为LOGBOOK
 </p>
 </div>
@@ -183,16 +191,13 @@ Drawer中，一般设置为LOGBOOK
 <h2 id="sec-6"><span class="section-number-2">6</span> org-mode的时间戳</h2>
 <div class="outline-text-2" id="text-6">
 <p>
-默认时间戳是会根据loacl变化的，尤其是星期几，中文就是三，四这样这样，
-但是公司电脑和个人电脑似乎local不太一样，一个是中文一个是英文。做如
-下设置，统一使用英文
+默认时间戳是会根据loacl变化的，尤其是星期几，中文就是三，四这样这样，但是公司电脑和个人电脑似乎local不太一样，一个是中文一个是英文。做如下设置，统一使用英文
 </p>
 <pre class="example">
 (setq system-time-locale "C")
 </pre>
 <p>
-其他local的设置就先不管了，似乎公司电脑用的还是GB2312，语言和local环
-境设置是另外一个问题了。上面这个方法是在一下地址找到的
+其他local的设置就先不管了，似乎公司电脑用的还是GB2312，语言和local环境设置是另外一个问题了。上面这个方法是在一下地址找到的
 <a href="https://emacs.stackexchange.com/questions/22371/org-mode-timestamps-encoding">https://emacs.stackexchange.com/questions/22371/org-mode-timestamps-encoding</a>
 </p>
 </div>

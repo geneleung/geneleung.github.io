@@ -83,9 +83,7 @@
 	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  五 07 十二月 2018.</footer>
         <div class="entry-content"> <div class="preview">
 <p>
-上个月VPS被人黑了，找回来后不得已需要重置，以前配置的都丢了，这里记录
-下来快速配置的步骤和脚本，再出现类似情况可以快速恢复。具体的原理可以看
-其他相关的笔记。
+上个月VPS被人黑了，找回来后不得已需要重置，以前配置的都丢了，这里记录下来快速配置的步骤和脚本，再出现类似情况可以快速恢复。具体的原理可以看其他相关的笔记。
 </p>
 
 </div>
@@ -109,7 +107,10 @@ CentOS 7 x86_64
 <h2 id="sec-2">确认服务器身份</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-从客户端ssh登陆VPS会提示服务器指纹 …</p></div></div> </div><!-- /.entry-content -->
+从客户端ssh登陆VPS会提示服务器指纹，如：
+</p>
+<pre class="example">
+ECDSA …</pre></div></div> </div><!-- /.entry-content -->
         <p class="continue"><a href="/快速配置VPS.html">继续 &raquo;</a></p>
 </article>
 <hr />
@@ -138,8 +139,7 @@ centos-7-x86_64
 <h3 id="sec-2-1">原理</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-服务器在安装openssh-server之后会生成各支持的加密算法的私钥和公钥，
-通常在下面的目录<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup>下，pub的文件就是公钥文件了
+服务器在安装openssh-server之后会生成各支持的加密算法的私钥和公钥，通常在下面的目录<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup>下，pub的文件就是公钥文件了
 </p>
 <pre class="example">
 /etc/ssh/
@@ -155,15 +155,13 @@ centos-7-x86_64
 	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  六 24 十一月 2018.</footer>
         <div class="entry-content"> <p>
 11月8日的时候我发了一条朋友圈，说自己一直以来都没能够真正理解过
-Church-Turing论题，更别说递归定理了，然而却写了这么久的代码，这是一件
-多么恐怖的事情。可是到了后来几天我再想起来这条朋友圈的时候，我竟想不起
-来我是因为什么发出这样的感慨。所以这里记录一下，别以后可能对这个论题的
-理解一步一步加深的时候会会想不起来当时是在那一层迷惑了。
+Church-Turing论题，更别说递归定理了，然而却写了这么久的代码，这是一件多么恐怖的事情。可是到了后来几天我再想起来这条朋友圈的时候，我竟想不起来我是因为什么发出这样的感慨。所以这里记录一下，别以后可能对这个论题的理解一步一步加深的时候会会想不起来当时是在那一层迷惑了。
 </p>
 
 <p>
-给我这样感慨的应该是在读《递归论》时遇到：是否一切可计算的数论函数都是
-原始递归函数。答案是否定的，后来又有了一般递归函数 …</p> </div><!-- /.entry-content -->
+给我这样感慨的应该是在读《递归论》时遇到：是否一切可计算的数论函数都是原始递归函数。答案是否定的，后来又有了一般递归函数。而丘奇-图灵论题讲的就是一切可计算函数就是一般递归函数。
+</p>
+ </div><!-- /.entry-content -->
         <p class="continue"><a href="/从未真正理解过丘奇图灵论题.html">继续 &raquo;</a></p>
 </article>
 <hr />
@@ -252,15 +250,11 @@ No toolchains found in the NDK toolchains folder for ABI with prefix mipsel-linu
 	<header><h3><a href="/互联网的版本管理系统.html">互联网的版本管理系统</a></h3></header>
 	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  三 21 十一月 2018.</footer>
         <div class="entry-content"> <p>
-记得之前在网上看到过，可能是知乎吧，忘记了，有一个系统可以记录网页的变
-迁历史，有点像git。包括互联网的去中心化，现在突然发现这个很重要，但是
-又找不到当时看的是什么了。
+记得之前在网上看到过，可能是知乎吧，忘记了，有一个系统可以记录网页的变迁历史，有点像git。包括互联网的去中心化，现在突然发现这个很重要，但是又找不到当时看的是什么了。
 </p>
 
 <p>
-想到这个主要是因为想起来之前看到的一个博客在底部有个版权声明，隐约记得
-是说本文已经在哪个区块链系统上登记之类的，觉得这是种非常好的版权保护手
-段，可惜的是这个网页也找不到了。
+想到这个主要是因为想起来之前看到的一个博客在底部有个版权声明，隐约记得是说本文已经在哪个区块链系统上登记之类的，觉得这是种非常好的版权保护手段，可惜的是这个网页也找不到了。
 </p>
  </div><!-- /.entry-content -->
         <p class="continue"><a href="/互联网的版本管理系统.html">继续 &raquo;</a></p>
@@ -270,15 +264,11 @@ No toolchains found in the NDK toolchains folder for ABI with prefix mipsel-linu
 	<header><h3><a href="/这几天学英语学的有点小兴奋.html">这几天学英语学的有点小兴奋</a></h3></header>
 	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  三 21 十一月 2018.</footer>
         <div class="entry-content"> <p>
-今天在学习和理解定冠词和不定冠词的时候，逐渐找到了感觉，课后的练习题竟
-然100%全对，一时间提起来英语学习的兴趣，似乎找到了窍门，在今天后面的学
-习中对知识点的理解也非常顺利，就是这种顿悟的感觉，很棒。
+今天在学习和理解定冠词和不定冠词的时候，逐渐找到了感觉，课后的练习题竟然100%全对，一时间提起来英语学习的兴趣，似乎找到了窍门，在今天后面的学习中对知识点的理解也非常顺利，就是这种顿悟的感觉，很棒。
 </p>
 
 <p>
-这个窍门就是英语思维，更准确的说应该是人的思维。对这个点的顿悟跟这段时
-间学习《集异璧》也有关系，语言事实上是一个形式系统，无论是中文还是英文，
-他们都是与现实生活 …</p> </div><!-- /.entry-content -->
+这个窍门就是英语思维，更准确的说应该是人的思维。对这个点的顿悟跟这段时间学习《集异璧》也有关系，语言事实上是一个形式系统，无论是中文还是英文，他们都是与现实生活，行为，故事同构的，在这种同构下 …</p> </div><!-- /.entry-content -->
         <p class="continue"><a href="/这几天学英语学的有点小兴奋.html">继续 &raquo;</a></p>
 </article>
 <hr />

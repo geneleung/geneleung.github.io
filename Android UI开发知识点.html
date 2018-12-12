@@ -98,17 +98,28 @@
     </div>
   </footer><!-- /.post-info -->
   <div class="entry-content">
-    <div id="outline-container-sec-1" class="outline-2">
+    <div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. 子view要的大小父view满足不了会怎样？&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">技术</span></span></a></li>
+<li><a href="#sec-2">2. 布局参数</a></li>
+<li><a href="#sec-3">3. view绘制的三个流程的调用关系</a></li>
+<li><a href="#sec-4">4. 滚动原理，界面绘制与自定义view</a></li>
+<li><a href="#sec-5">5. 为什么要有measure的过程，measure的数据有什么用？</a></li>
+<li><a href="#sec-6">6. 计算大小的时候跟layout有没有关系？measure的宽高跟用顶点计算的宽高有什么异同？</a></li>
+<li><a href="#sec-7">7. view的layoutParam是如何生效的？像fill<sub>parent这样的值是如何生效的？</sub></a></li>
+<li><a href="#sec-8">8. view的draw的过程</a></li>
+<li><a href="#sec-9">9. 属性动画和视图动画会有性能上的区别吗？</a></li>
+<li><a href="#sec-10">10. 最简单的，最基本的自定义的ViewGroup应该怎么写？</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1"><span class="section-number-2">1</span> 子view要的大小父view满足不了会怎样？&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">技术</span></span></h2>
 <div class="outline-text-2" id="text-1">
 <p>
-在measure过程中，系统会给最顶层一个w和h的值，这个是可以理解为屏幕的
-大小，更准确的理解是可视窗口的大小，注意是可视范围，而不是可绘制范围，
-可绘制的范围是无限大的，因此绘制区域并不会出现不够用的情况，系统给的
-区域大小和父view传给子view的只是指导意见的大小，就是告诉子view这么大
-才能被看到，超了这个会看不到，但子view可以不参考，子该画多大画多大，
-画布是无限大的可以满足的。如果绘制区域大于了可视窗口的大小，可以通过
-滚动看到，并没有什么影响。
+在measure过程中，系统会给最顶层一个w和h的值，这个是可以理解为屏幕的大小，更准确的理解是可视窗口的大小，注意是可视范围，而不是可绘制范围，可绘制的范围是无限大的，因此绘制区域并不会出现不够用的情况，系统给的区域大小和父view传给子view的只是指导意见的大小，就是告诉子view这么大才能被看到，超了这个会看不到，但子view可以不参考，子该画多大画多大，画布是无限大的可以满足的。如果绘制区域大于了可视窗口的大小，可以通过滚动看到，并没有什么影响。
 </p>
 </div>
 </div>
@@ -126,8 +137,7 @@
 <p>
 view的默认onMeasure取了默认值，ViewGroup作为布局的基类，没有重写
 onMeasure方法，但是提供了measureChildren的方法，其中最重要的是
-getChildMeasureSpec方法，这里可以看到如何处理layout的各种不同spec的
-情况，自定义ViewGroup时可以借鉴。
+getChildMeasureSpec方法，这里可以看到如何处理layout的各种不同spec的情况，自定义ViewGroup时可以借鉴。
 </p>
 
 <p>
@@ -143,16 +153,12 @@ View和ViewGroup的onLayout方法默认是空的
 <h2 id="sec-4"><span class="section-number-2">4</span> 滚动原理，界面绘制与自定义view</h2>
 <div class="outline-text-2" id="text-4">
 <p>
-<a href="http://chanthuang.github.io/2016/08/31/Android-View-%25E7%259A%2584%25E6%25BB%259A%25E5%258A%25A8%25E5%258E%259F%25E7%2590%2586%25E5%2592%258C-Scroller%25E3%2580%2581VelocityTracker-%25E7%25B1%25BB%25E7%259A%2584%25E4%25BD%25BF%25E7%2594%25A8/">这里</a> 有一个小教程，讲的很好，循序渐进的讲解viewgroup如何布局子view，
-以及touch事件的处理，动画的形成，里面可以很容易理解几个关键的知识点。
-加上自己的思考，有以下几个点：
+<a href="http://chanthuang.github.io/2016/08/31/Android-View-%25E7%259A%2584%25E6%25BB%259A%25E5%258A%25A8%25E5%258E%259F%25E7%2590%2586%25E5%2592%258C-Scroller%25E3%2580%2581VelocityTracker-%25E7%25B1%25BB%25E7%259A%2584%25E4%25BD%25BF%25E7%2594%25A8/">这里</a> 有一个小教程，讲的很好，循序渐进的讲解viewgroup如何布局子view，以及touch事件的处理，动画的形成，里面可以很容易理解几个关键的知识点。加上自己的思考，有以下几个点：
 </p>
 <ol class="org-ol">
 <li>ViewGroup到底是如何measure和layout的
 </li>
-<li>触发重新布局的几个时机。view提供的一些方法内部其实也是通过这几个
-时机去触发重新布局的，比如scroll方法，因此调用了scroll方法后就不
-需要再触发重新布局了
+<li>触发重新布局的几个时机。view提供的一些方法内部其实也是通过这几个时机去触发重新布局的，比如scroll方法，因此调用了scroll方法后就不需要再触发重新布局了
 <ul class="org-ul">
 <li>View.requestLayout
 <ol class="org-ol">
@@ -180,32 +186,21 @@ requestLayout
 <h2 id="sec-5"><span class="section-number-2">5</span> 为什么要有measure的过程，measure的数据有什么用？</h2>
 <div class="outline-text-2" id="text-5">
 <p>
-先看measure的数据有什么用，measure计算出了没一个view的大小，包含了内
-部子view的margin和padding（事实上是否包含要看ViewGroup onMeasure方法
-的实现），在下一步layout的过程会使用宽高数据计算出view位置的四个顶点，
-这是应该是最主要的作用了；另外在控制是否需要重绘和dirty区域也有用到。
+先看measure的数据有什么用，measure计算出了没一个view的大小，包含了内部子view的margin和padding（事实上是否包含要看ViewGroup onMeasure方法的实现），在下一步layout的过程会使用宽高数据计算出view位置的四个顶点，这是应该是最主要的作用了；另外在控制是否需要重绘和dirty区域也有用到。
 </p>
 
 <p>
-实践中发现，继承ViewGroup onMeasure方法不是必须重写的，但onLayout方
-法是要的。事实上发现，onLayout方法完全可以不使用measure的数据直接布
-局。但是会有一个问题，由于子view没有被遍历measure，然后没有measureed
-的size，然后在子view视图更新的时候不会发生重绘，可能是因为dirty区域
-的关系，所以onMeasure方法还是非常有必要重写的。
+实践中发现，继承ViewGroup onMeasure方法不是必须重写的，但onLayout方法是要的。事实上发现，onLayout方法完全可以不使用measure的数据直接布局。但是会有一个问题，由于子view没有被遍历measure，然后没有measureed
+的size，然后在子view视图更新的时候不会发生重绘，可能是因为dirty区域的关系，所以onMeasure方法还是非常有必要重写的。
 </p>
 
 <p>
-再看measure的过程，measure的过程是个后序遍历，即是会先计算子view再计
-算父view的大小，而对于layout过程是相反的，先算父view的四个顶点，再算
-子view的四个顶点，也就是说对于layout过程自上而下计算一次就可以完成。
-但对于measure过程，因为会有动态大小，比如按比例分配，或者fill<sub>parent，</sub>
-在一次遍历的过程中可能会不能全部确定view的大小，往往需要遍历多次才能
-最终确认每一个view的大小。
+再看measure的过程，measure的过程是个后序遍历，即是会先计算子view再计算父view的大小，而对于layout过程是相反的，先算父view的四个顶点，再算子view的四个顶点，也就是说对于layout过程自上而下计算一次就可以完成。但对于measure过程，因为会有动态大小，比如按比例分配，或者fill<sub>parent，</sub>
+在一次遍历的过程中可能会不能全部确定view的大小，往往需要遍历多次才能最终确认每一个view的大小。
 </p>
 
 <p>
-所以结论也比较明显，如果不分开measure，layout，draw的过程，合并在一
-个过程中完成，可能没一步都要遍历多次，性能上会打折扣，所以单独把
+所以结论也比较明显，如果不分开measure，layout，draw的过程，合并在一个过程中完成，可能没一步都要遍历多次，性能上会打折扣，所以单独把
 measure拿出来，让有必要遍历多次的遍历多次，没必要的步骤就只做一次。
 </p>
 </div>
@@ -215,21 +210,17 @@ measure拿出来，让有必要遍历多次的遍历多次，没必要的步骤�
 <div class="outline-text-2" id="text-6">
 <p>
 layout的过程用了margin来确定边界，measure的过程其实也需要考虑margin
-和padding，可以参考具体的布局实现类。事实上，layout和measure的过程都
-是可以订制的，怎么实现都可以。
+和padding，可以参考具体的布局实现类。事实上，layout和measure的过程都是可以订制的，怎么实现都可以。
 </p>
 
 <p>
 measure计算出来的宽高跟最后用顶点计算出来的宽高有什么异同？其实看
 layout和measure的过程就清楚，如果两个过程的计算中都考虑margin和
-padding，最后两个值是一样的，没区别，如果两个计算过程计算方法上有区
-别，那两个值是不一样的。
+padding，最后两个值是一样的，没区别，如果两个计算过程计算方法上有区别，那两个值是不一样的。
 </p>
 
 <p>
-两个值会不一样，应该以谁为准？draw的过程事实上是依赖layout的结果，即
-四个顶点的值来绘制，也就是说，如果measure和layout出来的值不同，应该
-以layout的结果为准。
+两个值会不一样，应该以谁为准？draw的过程事实上是依赖layout的结果，即四个顶点的值来绘制，也就是说，如果measure和layout出来的值不同，应该以layout的结果为准。
 </p>
 </div>
 </div>
@@ -237,10 +228,8 @@ padding，最后两个值是一样的，没区别，如果两个计算过程计�
 <h2 id="sec-7"><span class="section-number-2">7</span> view的layoutParam是如何生效的？像fill<sub>parent这样的值是如何生效的？</sub></h2>
 <div class="outline-text-2" id="text-7">
 <p>
-默认view的measure大小是由父亲传进来的spec决定的，而spec是ViewGroup传
-进来的，ViewGroup的onMeasure方法是空的，需要继承者自己实现，然而
-ViewGroup默认提供了MeasureChild的方法，这里是用layoutParam的宽高传给
-子view的。
+默认view的measure大小是由父亲传进来的spec决定的，而spec是ViewGroup传进来的，ViewGroup的onMeasure方法是空的，需要继承者自己实现，然而
+ViewGroup默认提供了MeasureChild的方法，这里是用layoutParam的宽高传给子view的。
 </p>
 </div>
 </div>
@@ -249,8 +238,7 @@ ViewGroup默认提供了MeasureChild的方法，这里是用layoutParam的宽高
 <div class="outline-text-2" id="text-8">
 <p>
 view默认的draw方法使用的是layout之后的结果，即top，left，right，
-butom这些值，另外还会用刀scrollX，transform，matrix这些值，这些就是
-做动画用了。
+butom这些值，另外还会用刀scrollX，transform，matrix这些值，这些就是做动画用了。
 </p>
 </div>
 </div>
@@ -258,11 +246,8 @@ butom这些值，另外还会用刀scrollX，transform，matrix这些值，这�
 <h2 id="sec-9"><span class="section-number-2">9</span> 属性动画和视图动画会有性能上的区别吗？</h2>
 <div class="outline-text-2" id="text-9">
 <p>
-通过学习view的绘制过程，会发现视图动画其实是原生支持的，在draw的过程
-中直接使用transform的matrix实现的，他只影响draw的过程，不会重新
-measure和layout，因此不会有性能问题，那么属性动画呢？经过实验，属性
-动画其实也是和视图动画类似的，动画过程中并不会重新measure和layout，
-也不会有性能问题，其他的区别就是网上大家说的那些了。
+通过学习view的绘制过程，会发现视图动画其实是原生支持的，在draw的过程中直接使用transform的matrix实现的，他只影响draw的过程，不会重新
+measure和layout，因此不会有性能问题，那么属性动画呢？经过实验，属性动画其实也是和视图动画类似的，动画过程中并不会重新measure和layout，也不会有性能问题，其他的区别就是网上大家说的那些了。
 </p>
 </div>
 </div>

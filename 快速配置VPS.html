@@ -100,9 +100,7 @@
   <div class="entry-content">
     <div class="preview">
 <p>
-上个月VPS被人黑了，找回来后不得已需要重置，以前配置的都丢了，这里记录
-下来快速配置的步骤和脚本，再出现类似情况可以快速恢复。具体的原理可以看
-其他相关的笔记。
+上个月VPS被人黑了，找回来后不得已需要重置，以前配置的都丢了，这里记录下来快速配置的步骤和脚本，再出现类似情况可以快速恢复。具体的原理可以看其他相关的笔记。
 </p>
 
 </div>
@@ -182,26 +180,24 @@ emacs --version
 </p>
 <div class="org-src-container">
 
-<pre class="src src-sh"># 添加xxx用户
+<pre class="src src-sh"><span class="org-comment-delimiter"># </span><span class="org-comment">&#28155;&#21152;xxx&#29992;&#25143;</span>
 adduser xxx
-# 生成一个随机密码
+<span class="org-comment-delimiter"># </span><span class="org-comment">&#29983;&#25104;&#19968;&#20010;&#38543;&#26426;&#23494;&#30721;</span>
 &lt; /dev/urandom tr -dc A-Za-z0-9_ | head -c8
-# 设置xxx用户密码
+<span class="org-comment-delimiter"># </span><span class="org-comment">&#35774;&#32622;xxx&#29992;&#25143;&#23494;&#30721;</span>
 passwd xxx
 </pre>
 </div>
 <p>
-注意不用在给普通用户sudo权限了，远程登陆后再使用root用户进行高权限的
-操作，高权限的操作并不是很频繁。
-在客户端执行一下命令
+注意不用在给普通用户sudo权限了，远程登陆后再使用root用户进行高权限的操作，高权限的操作并不是很频繁。在客户端执行一下命令
 </p>
 <div class="org-src-container">
 
-<pre class="src src-sh"># 生成密钥对
+<pre class="src src-sh"><span class="org-comment-delimiter"># </span><span class="org-comment">&#29983;&#25104;&#23494;&#38053;&#23545;</span>
 ssh-keygen -t rsa -b 4096
-# 公钥添加到服务端
+<span class="org-comment-delimiter"># </span><span class="org-comment">&#20844;&#38053;&#28155;&#21152;&#21040;&#26381;&#21153;&#31471;</span>
 ssh-copy-id -i .ssh/id_rsa.pub -p xxx xxx@xxx.xxx.xxx.xxx
-# 如果本机存在多个密钥对，可以用下面的命令指定登陆时使用的密钥
+<span class="org-comment-delimiter"># </span><span class="org-comment">&#22914;&#26524;&#26412;&#26426;&#23384;&#22312;&#22810;&#20010;&#23494;&#38053;&#23545;&#65292;&#21487;&#20197;&#29992;&#19979;&#38754;&#30340;&#21629;&#20196;&#25351;&#23450;&#30331;&#38470;&#26102;&#20351;&#29992;&#30340;&#23494;&#38053;</span>
 ssh -i .ssh/xxx -p xxx xxx@xxx.xxx.xxx.xxx
 </pre>
 </div>
@@ -213,18 +209,18 @@ ssh -i .ssh/xxx -p xxx xxx@xxx.xxx.xxx.xxx
 <div class="outline-text-2" id="text-5">
 <div class="org-src-container">
 
-<pre class="src src-sh"># 使用ssh最新程序和依赖库
+<pre class="src src-sh"><span class="org-comment-delimiter"># </span><span class="org-comment">&#20351;&#29992;ssh&#26368;&#26032;&#31243;&#24207;&#21644;&#20381;&#36182;&#24211;</span>
 yum update openssh-server openssh openssh-clients -y
-# 备份sshd_config
+<span class="org-comment-delimiter"># </span><span class="org-comment">&#22791;&#20221;sshd_config</span>
 cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak.lz
-# 配置sshd_config
+<span class="org-comment-delimiter"># </span><span class="org-comment">&#37197;&#32622;sshd_config</span>
 emacs /etc/ssh/sshd_config
-# 配置比较简单，大部分配置保持系统安装后的默认值就好，需要修改的是一下几个
-# Protocol 2 强制使用ssh2
-# PasswordAuthentication no 关闭用户密码登陆，必须使用公钥登陆
-# UsePAM no 不知道这是什么
-# PermitRootLogin     no 禁止root用户远程登陆
-# 重启sshd服务，不知道为什么会失败，所以我是直接reboot的
+<span class="org-comment-delimiter"># </span><span class="org-comment">&#37197;&#32622;&#27604;&#36739;&#31616;&#21333;&#65292;&#22823;&#37096;&#20998;&#37197;&#32622;&#20445;&#25345;&#31995;&#32479;&#23433;&#35013;&#21518;&#30340;&#40664;&#35748;&#20540;&#23601;&#22909;&#65292;&#38656;&#35201;&#20462;&#25913;&#30340;&#26159;&#19968;&#19979;&#20960;&#20010;</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">Protocol 2 &#24378;&#21046;&#20351;&#29992;ssh2</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">PasswordAuthentication no &#20851;&#38381;&#29992;&#25143;&#23494;&#30721;&#30331;&#38470;&#65292;&#24517;&#39035;&#20351;&#29992;&#20844;&#38053;&#30331;&#38470;</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">UsePAM no &#19981;&#30693;&#36947;&#36825;&#26159;&#20160;&#20040;</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">PermitRootLogin     no &#31105;&#27490;root&#29992;&#25143;&#36828;&#31243;&#30331;&#38470;</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">&#37325;&#21551;sshd&#26381;&#21153;&#65292;&#19981;&#30693;&#36947;&#20026;&#20160;&#20040;&#20250;&#22833;&#36133;&#65292;&#25152;&#20197;&#25105;&#26159;&#30452;&#25509;reboot&#30340;</span>
 service sshd restart
 </pre>
 </div>
@@ -235,8 +231,7 @@ service sshd restart
 <h2 id="sec-6">配置ipsec</h2>
 <div class="outline-text-2" id="text-6">
 <p>
-修改vps_ip和证书信息，然后使用root账户执行以下一键安装配置脚本，注意
-不是sudo，centos 7下一定要用root账户
+修改vps_ip和证书信息，然后使用root账户执行以下一键安装配置脚本，注意不是sudo，centos 7下一定要用root账户
 </p>
 <div class="org-src-container">
 
@@ -434,8 +429,7 @@ ipsec restart
 emacs /usr/local/etc/ipsec.secrets
 </pre>
 <p>
-配置开机自起，待补充
-下载证书ca.cert.pem，就可以安装使用了
+配置开机自起，待补充下载证书ca.cert.pem，就可以安装使用了
 </p>
 </div>
 </div>

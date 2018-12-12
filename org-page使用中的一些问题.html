@@ -98,14 +98,33 @@
     </div>
   </footer><!-- /.post-info -->
   <div class="entry-content">
-    
+    <div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. 中文文件名</a></li>
+<li><a href="#sec-2">2. 图片问题</a>
+<ul>
+<li><a href="#sec-2-1">2.1. 跨分类图片问题</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3. 预览问题</a></li>
+<li><a href="#sec-4">4. 自动push时多仓库问题</a></li>
+<li><a href="#sec-5">5. <b>temp</b> buffer问题</a></li>
+<li><a href="#sec-6">6. wrong type agument:listp 问题</a></li>
+<li><a href="#sec-7">7. 编译时org-mode-error nil问题</a></li>
+<li><a href="#sec-8">8. 二级目录问题</a></li>
+<li><a href="#sec-9">9. 换行格式问题</a></li>
+</ul>
+</div>
+</div>
+
 <div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1"><span class="section-number-2">1</span> 中文文件名</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 本质问题还是在于git，可以支持org源文件的中文名和中文目录。
-org-page使用了命令"Git ls-tree -r &#x2013;name-only"命令,该命令有时候不能正
-确显示中文名,这时候org-page会把中文的org文件忽略掉. 若要正确处理中文的
+org-page使用了命令"Git ls-tree -r &#x2013;name-only"命令,该命令有时候不能正确显示中文名,这时候org-page会把中文的org文件忽略掉. 若要正确处理中文的
 org文件,需要在shell中执行"git config core.quotepath false"
 </p>
 </div>
@@ -131,11 +150,8 @@ org-page也就不会有太大问题。
 <h2 id="sec-3"><span class="section-number-2">3</span> 预览问题</h2>
 <div class="outline-text-2" id="text-3">
 <p>
-已经提交了的文件，修改后可以立即preview，修改的内容会生效，但是新文件
-却无法预览，原因可能还需要研究一下。
-猜测应该是会依赖于提交记录中的文件选择要生成的文件，但是文件内容拿的是
-worktree中的，这样worktree的修改能够及时体现，但新增的文件却不能及时体
-现。
+已经提交了的文件，修改后可以立即preview，修改的内容会生效，但是新文件却无法预览，原因可能还需要研究一下。猜测应该是会依赖于提交记录中的文件选择要生成的文件，但是文件内容拿的是
+worktree中的，这样worktree的修改能够及时体现，但新增的文件却不能及时体现。
 </p>
 </div>
 </div>
@@ -155,8 +171,7 @@ worktree中的，这样worktree的修改能够及时体现，但新增的文件�
 <div class="outline-text-2" id="text-6">
 <p>
 我在Mac os x遇到了这个问题，也是org-mode导出html时报的错，org-page主要功能都是基于org-mode的，因此
-org-mode如果导出没什么问题，org-page也不会有问题。wrong type的问题并没
-有找到原因，可能是老版本没有卸载干净吧。执行以下命令解决了。
+org-mode如果导出没什么问题，org-page也不会有问题。wrong type的问题并没有找到原因，可能是老版本没有卸载干净吧。执行以下命令解决了。
 </p>
 <pre class="example">
 C-u M-x org-reload
@@ -171,16 +186,11 @@ C-u M-x org-reload
 <div class="outline-text-2" id="text-8">
 <p>
 org源文件可以有多级目录，但最后生成的html都还是只有一级目录，都在blog
-目录下。一级目录会作为分类，这样的话，事实上就是只支持一级分类，多级的
-暂时不支持。
-对于一级分类，支持多个，但是在首页和导航中都没有出现一级分类的链接，这个
-目录是存在的，这个分类下面会生成一个index索引文件，指向具体的文件。具体分类下的文件最
-终还是放在blog目录下。
+目录下。一级目录会作为分类，这样的话，事实上就是只支持一级分类，多级的暂时不支持。对于一级分类，支持多个，但是在首页和导航中都没有出现一级分类的链接，这个目录是存在的，这个分类下面会生成一个index索引文件，指向具体的文件。具体分类下的文件最终还是放在blog目录下。
 </p>
 
 <p>
-在首页和导航中没有出现链接的问题跟theme有关，kacus主题没有出现，mdo主
-题会自动出现在导航中
+在首页和导航中没有出现链接的问题跟theme有关，kacus主题没有出现，mdo主题会自动出现在导航中
 </p>
 </div>
 </div>
@@ -188,8 +198,7 @@ org源文件可以有多级目录，但最后生成的html都还是只有一级�
 <h2 id="sec-9"><span class="section-number-2">9</span> 换行格式问题</h2>
 <div class="outline-text-2" id="text-9">
 <p>
-org源文件中的直接换行在导出文件中仍然是一个段（&lt;p&gt;），段与段之间源文件
-中需要空一行
+org源文件中的直接换行在导出文件中仍然是一个段（&lt;p&gt;），段与段之间源文件中需要空一行
 </p>
 </div>
 </div>

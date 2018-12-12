@@ -120,8 +120,7 @@ centos-7-x86_64
 <h3 id="sec-2-1">原理</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-服务器在安装openssh-server之后会生成各支持的加密算法的私钥和公钥，
-通常在下面的目录<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup>下，pub的文件就是公钥文件了
+服务器在安装openssh-server之后会生成各支持的加密算法的私钥和公钥，通常在下面的目录<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup>下，pub的文件就是公钥文件了
 </p>
 <pre class="example">
 /etc/ssh/
@@ -140,9 +139,7 @@ centos-7-x86_64
 </pre>
 </div>
 <p>
-当客户端ssh到服务器时会自动协商使用的加密算法，并拿到对应算法的服务
-器公钥，同时提示服务器公钥指纹，我们只需要比对指纹信息就可以确认服
-务器身份了。
+当客户端ssh到服务器时会自动协商使用的加密算法，并拿到对应算法的服务器公钥，同时提示服务器公钥指纹，我们只需要比对指纹信息就可以确认服务器身份了。
 </p>
 </div>
 </div>
@@ -150,8 +147,7 @@ centos-7-x86_64
 <h3 id="sec-2-2">验证服务器公钥指纹</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-第一次ssh登陆服务器时会有如下提示(第一次是指~/.ssh/known_host文件中
-不包含此服务器)
+第一次ssh登陆服务器时会有如下提示(第一次是指~/.ssh/known_host文件中不包含此服务器)
 </p>
 <div class="org-src-container">
 
@@ -162,8 +158,7 @@ Warning: Permanently added '[xxx.xxx.xxx.xxx]:xxxx' (ECDSA) to the list of known
 </pre>
 </div>
 <p>
-如上可以知道服务器ssh采用的公钥的加密算法及公钥签名和公钥签名的格式，
-然后可以用可信的方式登陆服务器查看和比对服务器的公钥签名
+如上可以知道服务器ssh采用的公钥的加密算法及公钥签名和公钥签名的格式，然后可以用可信的方式登陆服务器查看和比对服务器的公钥签名
 </p>
 <div class="org-src-container">
 
@@ -239,8 +234,7 @@ xxx     ALL=(ALL)       ALL  #这个是新增的用户
 <ul class="org-ul">
 <li>DSA： 已被证明不安全，且从OpenSSH Server 7 之后便不再支持
 </li>
-<li>RSA： RSA算法产生的私钥的安全性依赖于密钥的长度，如果密钥的长度小
-于3072，则不够安全，比如常见的2048 位的ssh key 是不够安全的，1024
+<li>RSA： RSA算法产生的私钥的安全性依赖于密钥的长度，如果密钥的长度小于3072，则不够安全，比如常见的2048 位的ssh key 是不够安全的，1024
 位直接被标记为不安全
 </li>
 <li>ECDSA：这个算法产生的密钥安全性依赖于当前机器产生的随机数的强度

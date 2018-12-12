@@ -98,11 +98,20 @@
     </div>
   </footer><!-- /.post-info -->
   <div class="entry-content">
-    <p>
+    <div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. 版本信息</a></li>
+<li><a href="#sec-2">2. 安装command line tool</a></li>
+<li><a href="#sec-3">3. 安装brew</a></li>
+<li><a href="#sec-4">4. 安装imagemagick 6.9.7-10&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
+</ul>
+</div>
+</div>
+<p>
 emacs支持显示嵌入式的显示图片并能够调整图片大小需要在编译期间指定
-imagemagick的支持，但emacs 25.3的编译只能够识别imagemagick的6.x版本，
-无法识别7.x版本，使用brew在mac系统上安装imagemagic的老版本算是比较方便
-了，下面是安装方法。
+imagemagick的支持，但emacs 25.3的编译只能够识别imagemagick的6.x版本，无法识别7.x版本，使用brew在mac系统上安装imagemagic的老版本算是比较方便了，下面是安装方法。
 </p>
 
 
@@ -135,8 +144,7 @@ xcode-select --install
 <h2 id="sec-4"><a id="ID-B0BEE131-FC9B-4506-BB02-6AE1BFC5E2F5" name="ID-B0BEE131-FC9B-4506-BB02-6AE1BFC5E2F5"></a><span class="section-number-2">4</span> 安装imagemagick 6.9.7-10&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h2>
 <div class="outline-text-2" id="text-4">
 <p>
-原地址在<a href="https://gist.github.com/leesheppard/69a283ee4af484e2029809a0f5e09932">这里</a> ，brew的安装脚本如下，brew在安装时会去imagemagick的官网
-上下载源文件并交验hash值，为了避免对应版本下线，我把源文件做了备份。
+原地址在<a href="https://gist.github.com/leesheppard/69a283ee4af484e2029809a0f5e09932">这里</a> ，brew的安装脚本如下，brew在安装时会去imagemagick的官网上下载源文件并交验hash值，为了避免对应版本下线，我把源文件做了备份。
 <a href="data/B0/BEE131-FC9B-4506-BB02-6AE1BFC5E2F5/ImageMagick-6.9.7-10.tar.xz">ImageMagick-6.9.7-10.tar.xz</a>
 </p>
 <pre class="example">
@@ -146,104 +154,104 @@ brew pin imagemagick # 避免被版本被升级，可以固定这个版本
 
 <div class="org-src-container">
 
-<pre class="src src-ruby">require 'formula'
+<pre class="src src-ruby"><span class="org-builtin">require</span> <span class="org-string">'formula'</span>
 
-class Imagemagick &lt; Formula
-  homepage 'http://www.imagemagick.org'
+<span class="org-keyword">class</span> <span class="org-type">Imagemagick</span> &lt; <span class="org-type">Formula</span>
+  homepage <span class="org-string">'http://www.imagemagick.org'</span>
 
-  url 'http://www.imagemagick.org/download/releases/ImageMagick-6.9.7-10.tar.xz'
-  sha256 '0bfb2e3459b739669845c20ee1b6014a1a3c429fb0cb9777a8b65cd5c3effb09'
+  url <span class="org-string">'http://www.imagemagick.org/download/releases/ImageMagick-6.9.7-10.tar.xz'</span>
+  sha256 <span class="org-string">'0bfb2e3459b739669845c20ee1b6014a1a3c429fb0cb9777a8b65cd5c3effb09'</span>
 
-  head 'https://www.imagemagick.org/subversion/ImageMagick/trunk',
-    :using =&gt; UnsafeSubversionDownloadStrategy
+  head <span class="org-string">'https://www.imagemagick.org/subversion/ImageMagick/trunk'</span>,
+    <span class="org-constant">:using</span> =&gt; <span class="org-type">UnsafeSubversionDownloadStrategy</span>
 
-  option 'with-quantum-depth-8', 'Compile with a quantum depth of 8 bit'
-  option 'with-quantum-depth-16', 'Compile with a quantum depth of 16 bit'
-  option 'with-quantum-depth-32', 'Compile with a quantum depth of 32 bit'
-  option 'with-perl', 'enable build/install of PerlMagick'
-  option 'without-magick-plus-plus', 'disable build/install of Magick++'
+  option <span class="org-string">'with-quantum-depth-8'</span>, <span class="org-string">'Compile with a quantum depth of 8 bit'</span>
+  option <span class="org-string">'with-quantum-depth-16'</span>, <span class="org-string">'Compile with a quantum depth of 16 bit'</span>
+  option <span class="org-string">'with-quantum-depth-32'</span>, <span class="org-string">'Compile with a quantum depth of 32 bit'</span>
+  option <span class="org-string">'with-perl'</span>, <span class="org-string">'enable build/install of PerlMagick'</span>
+  option <span class="org-string">'without-magick-plus-plus'</span>, <span class="org-string">'disable build/install of Magick++'</span>
 
-  depends_on "libtool" =&gt; :run
+  depends_on <span class="org-string">"libtool"</span> =&gt; <span class="org-constant">:run</span>
 
-  depends_on 'pkg-config' =&gt; :build
+  depends_on <span class="org-string">'pkg-config'</span> =&gt; <span class="org-constant">:build</span>
 
-  depends_on 'jpeg' =&gt; :recommended
-  depends_on 'libpng' =&gt; :recommended
-  depends_on 'freetype' =&gt; :recommended
+  depends_on <span class="org-string">'jpeg'</span> =&gt; <span class="org-constant">:recommended</span>
+  depends_on <span class="org-string">'libpng'</span> =&gt; <span class="org-constant">:recommended</span>
+  depends_on <span class="org-string">'freetype'</span> =&gt; <span class="org-constant">:recommended</span>
 
-  depends_on :x11 =&gt; :optional
-  depends_on 'fontconfig' =&gt; :optional
-  depends_on 'libtiff' =&gt; :optional
-  depends_on 'little-cms' =&gt; :optional
-  depends_on 'little-cms2' =&gt; :optional
-  depends_on 'jasper' =&gt; :optional
-  depends_on 'libwmf' =&gt; :optional
-  depends_on 'librsvg' =&gt; :optional
-  depends_on 'liblqr' =&gt; :optional
-  depends_on 'openexr' =&gt; :optional
-  depends_on 'ghostscript' =&gt; :optional
-  depends_on 'webp' =&gt; :optional
+  depends_on <span class="org-constant">:x11</span> =&gt; <span class="org-constant">:optional</span>
+  depends_on <span class="org-string">'fontconfig'</span> =&gt; <span class="org-constant">:optional</span>
+  depends_on <span class="org-string">'libtiff'</span> =&gt; <span class="org-constant">:optional</span>
+  depends_on <span class="org-string">'little-cms'</span> =&gt; <span class="org-constant">:optional</span>
+  depends_on <span class="org-string">'little-cms2'</span> =&gt; <span class="org-constant">:optional</span>
+  depends_on <span class="org-string">'jasper'</span> =&gt; <span class="org-constant">:optional</span>
+  depends_on <span class="org-string">'libwmf'</span> =&gt; <span class="org-constant">:optional</span>
+  depends_on <span class="org-string">'librsvg'</span> =&gt; <span class="org-constant">:optional</span>
+  depends_on <span class="org-string">'liblqr'</span> =&gt; <span class="org-constant">:optional</span>
+  depends_on <span class="org-string">'openexr'</span> =&gt; <span class="org-constant">:optional</span>
+  depends_on <span class="org-string">'ghostscript'</span> =&gt; <span class="org-constant">:optional</span>
+  depends_on <span class="org-string">'webp'</span> =&gt; <span class="org-constant">:optional</span>
 
-  opoo '--with-ghostscript is not recommended' if build.with? 'ghostscript'
+  opoo <span class="org-string">'--with-ghostscript is not recommended'</span> <span class="org-keyword">if</span> build.with? <span class="org-string">'ghostscript'</span>
 
-  skip_clean :la
+  skip_clean <span class="org-constant">:la</span>
 
-  def install
-    args = [ "--disable-osx-universal-binary",
-	     "--prefix=#{prefix}",
-	     "--disable-dependency-tracking",
-	     "--enable-shared",
-	     "--disable-static",
-	     "--without-pango",
-	     "--with-modules",
-	     "--disable-openmp"]
+  <span class="org-keyword">def</span> <span class="org-function-name">install</span>
+    args = [ <span class="org-string">"--disable-osx-universal-binary"</span>,
+             <span class="org-string">"--prefix=</span><span class="org-variable-name">#{prefix}</span><span class="org-string">"</span>,
+             <span class="org-string">"--disable-dependency-tracking"</span>,
+             <span class="org-string">"--enable-shared"</span>,
+             <span class="org-string">"--disable-static"</span>,
+             <span class="org-string">"--without-pango"</span>,
+             <span class="org-string">"--with-modules"</span>,
+             <span class="org-string">"--disable-openmp"</span>]
 
-    args &lt;&lt; "--disable-opencl" if build.include? 'disable-opencl'
-    args &lt;&lt; "--without-gslib" if build.without? 'ghostscript'
-    args &lt;&lt; "--without-perl" if build.without? 'perl'
-    args &lt;&lt; "--with-gs-font-dir=#{HOMEBREW_PREFIX}/share/ghostscript/fonts" if build.without? 'ghostscript'
-    args &lt;&lt; "--without-magick-plus-plus" if build.without? 'magick-plus-plus'
-    args &lt;&lt; "--enable-hdri=yes" if build.include? 'enable-hdri'
+    args &lt;&lt; <span class="org-string">"--disable-opencl"</span> <span class="org-keyword">if</span> build.include? <span class="org-string">'disable-opencl'</span>
+    args &lt;&lt; <span class="org-string">"--without-gslib"</span> <span class="org-keyword">if</span> build.without? <span class="org-string">'ghostscript'</span>
+    args &lt;&lt; <span class="org-string">"--without-perl"</span> <span class="org-keyword">if</span> build.without? <span class="org-string">'perl'</span>
+    args &lt;&lt; <span class="org-string">"--with-gs-font-dir=</span><span class="org-variable-name">#{HOMEBREW_PREFIX}</span><span class="org-string">/share/ghostscript/fonts"</span> <span class="org-keyword">if</span> build.without? <span class="org-string">'ghostscript'</span>
+    args &lt;&lt; <span class="org-string">"--without-magick-plus-plus"</span> <span class="org-keyword">if</span> build.without? <span class="org-string">'magick-plus-plus'</span>
+    args &lt;&lt; <span class="org-string">"--enable-hdri=yes"</span> <span class="org-keyword">if</span> build.include? <span class="org-string">'enable-hdri'</span>
 
-    if build.with? 'quantum-depth-32'
+    <span class="org-keyword">if</span> build.with? <span class="org-string">'quantum-depth-32'</span>
       quantum_depth = 32
-    elsif build.with? 'quantum-depth-16'
+    <span class="org-keyword">elsif</span> build.with? <span class="org-string">'quantum-depth-16'</span>
       quantum_depth = 16
-    elsif build.with? 'quantum-depth-8'
+    <span class="org-keyword">elsif</span> build.with? <span class="org-string">'quantum-depth-8'</span>
       quantum_depth = 8
-    end
+    <span class="org-keyword">end</span>
 
-    args &lt;&lt; "--with-quantum-depth=#{quantum_depth}" if quantum_depth
-    args &lt;&lt; "--with-rsvg" if build.with? 'librsvg'
-    args &lt;&lt; "--without-x" if build.without? 'x11'
-    args &lt;&lt; "--with-fontconfig=yes" if build.with? 'fontconfig'
-    args &lt;&lt; "--with-freetype=yes" if build.with? 'freetype'
-    args &lt;&lt; "--with-webp=yes" if build.include? 'webp'
+    args &lt;&lt; <span class="org-string">"--with-quantum-depth=</span><span class="org-variable-name">#{quantum_depth}</span><span class="org-string">"</span> <span class="org-keyword">if</span> quantum_depth
+    args &lt;&lt; <span class="org-string">"--with-rsvg"</span> <span class="org-keyword">if</span> build.with? <span class="org-string">'librsvg'</span>
+    args &lt;&lt; <span class="org-string">"--without-x"</span> <span class="org-keyword">if</span> build.without? <span class="org-string">'x11'</span>
+    args &lt;&lt; <span class="org-string">"--with-fontconfig=yes"</span> <span class="org-keyword">if</span> build.with? <span class="org-string">'fontconfig'</span>
+    args &lt;&lt; <span class="org-string">"--with-freetype=yes"</span> <span class="org-keyword">if</span> build.with? <span class="org-string">'freetype'</span>
+    args &lt;&lt; <span class="org-string">"--with-webp=yes"</span> <span class="org-keyword">if</span> build.include? <span class="org-string">'webp'</span>
 
-    # versioned stuff in main tree is pointless for us
-    inreplace 'configure', '${PACKAGE_NAME}-${PACKAGE_VERSION}', '${PACKAGE_NAME}'
-    system "./configure", *args
-    system "make install"
-  end
+    <span class="org-comment-delimiter"># </span><span class="org-comment">versioned stuff in main tree is pointless for us</span>
+    inreplace <span class="org-string">'configure'</span>, <span class="org-string">'${PACKAGE_NAME}-${PACKAGE_VERSION}'</span>, <span class="org-string">'${PACKAGE_NAME}'</span>
+    <span class="org-builtin">system</span> <span class="org-string">"./configure"</span>, *args
+    <span class="org-builtin">system</span> <span class="org-string">"make install"</span>
+  <span class="org-keyword">end</span>
 
-  def caveats
-    s = &lt;&lt;-EOS.undent
-      For full Perl support you must install the Image::Magick module from the CPAN.
-	https://metacpan.org/module/Image::Magick
+  <span class="org-keyword">def</span> <span class="org-function-name">caveats</span>
+    s = <span class="org-string">&lt;&lt;-EOS</span>.undent
+<span class="org-string">      For full Perl support you must install the Image::Magick module from the CPAN.</span>
+<span class="org-string">        https://metacpan.org/module/Image::Magick</span>
 
-      The version of the Perl module and ImageMagick itself need to be kept in sync.
-      If you upgrade one, you must upgrade the other.
+<span class="org-string">      The version of the Perl module and ImageMagick itself need to be kept in sync.</span>
+<span class="org-string">      If you upgrade one, you must upgrade the other.</span>
 
-      For this version of ImageMagick you should install
-      version #{version} of the Image::Magick Perl module.
-    EOS
-    s if build.with? 'perl'
-  end
+<span class="org-string">      For this version of ImageMagick you should install</span>
+<span class="org-string">      version </span><span class="org-variable-name">#{version}</span><span class="org-string"> of the Image::Magick Perl module.</span>
+<span class="org-string">    EOS</span>
+    s <span class="org-keyword">if</span> build.with? <span class="org-string">'perl'</span>
+  <span class="org-keyword">end</span>
 
-  test do
-    system "#{bin}/identify", "/usr/share/doc/cups/images/cups.png"
-  end
-end
+  test <span class="org-keyword">do</span>
+    <span class="org-builtin">system</span> <span class="org-string">"</span><span class="org-variable-name">#{bin}</span><span class="org-string">/identify"</span>, <span class="org-string">"/usr/share/doc/cups/images/cups.png"</span>
+  <span class="org-keyword">end</span>
+<span class="org-keyword">end</span>
 </pre>
 </div>
 <p>
