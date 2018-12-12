@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh_cn">
 <head>
         <title>iknockdoor - Articles by chappie</title>
         <meta charset="utf-8" />
@@ -33,13 +33,17 @@
         <nav class="sidebar">
 	    <h5>分类</h5>
 	    <ul>
+	      <li ><a href="/category/du-shu.html">读书(1)</a></li>
 	      <li ><a href="/category/jie-jue-fang-an.html">解决方案(1)</a></li>
-	      <li ><a href="/category/misc.html">misc(49)</a></li>
+	      <li ><a href="/category/misc.html">misc(60)</a></li>
 	      <li ><a href="/category/sheng-huo.html">生活(1)</a></li>
 	    </ul>
 	    <h5>标签</h5>
 	    <ul>
+	      <li><a href="/tag/androidstudio.html">AndroidStudio(1)</a></li>
 	      <li><a href="/tag/blog.html">blog(1)</a></li>
+	      <li><a href="/tag/di-gui-lun.html">递归论(1)</a></li>
+	      <li><a href="/tag/english.html">english(1)</a></li>
 	      <li><a href="/tag/org-blog.html">org-blog(1)</a></li>
 	      <li><a href="/tag/pelican.html">pelican(1)</a></li>
 	      <li><a href="/tag/vps.html">vps(1)</a></li>
@@ -47,7 +51,8 @@
 
 	    <h5>归档</h5>
 	    <ul>
-	      <li><a href="/posts/2018/11/index.html">十一月 2018 (1)</a></li>
+	      <li><a href="/posts/2018/12/index.html">十二月 2018 (2)</a></li>
+	      <li><a href="/posts/2018/11/index.html">十一月 2018 (11)</a></li>
 	      <li><a href="/posts/2018/10/index.html">十月 2018 (3)</a></li>
 	      <li><a href="/posts/2018/09/index.html">九月 2018 (2)</a></li>
 	      <li><a href="/posts/2018/07/index.html">七月 2018 (2)</a></li>
@@ -74,216 +79,267 @@
 <section id="content">
 <h2>Articles by chappie</h2>
 <article>
-	<header><h3><a href="/iPhone X电池待机与用量时间一样的问题的解决.html">iPhone X电池待机与用量时间一样的问题的解决</a></h3></header>
-	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  二 01 五月 2018.</footer>
+	<header><h3><a href="/逐行解码base64文件.html">逐行解码base64文件</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  三 21 十一月 2018.</footer>
+        <div class="entry-content"> <div class="org-src-container">
+
+<pre class="src src-bash">while IFS= read -r line; do echo "$line" | base64 --decode; done &lt; file
+# 下面这个解出的结果会换行
+while IFS= read -r line; do echo …</pre></div> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/逐行解码base64文件.html">继续 &raquo;</a></p>
+</article>
+<hr />
+<article>
+	<header><h3><a href="/Dota中的猥琐流打发与生活态度.html">Dota中的猥琐流打发与生活态度</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  五 09 十一月 2018.</footer>
+        <div class="entry-content"> <p>
+最近和一个朋友一起打DOTA2。这个朋友的水平在我们这几个玩的人中算是比较
+高的了，一起玩了几局之后你就会发现他的打法很猥琐，基本上就是一看形势不
+好，掉头就跑那种，一看有人头能拿就会不择手段的猥琐抢人头，可以理解为
+“送死你去，好处我拿”。看吧，是不是确实很猥琐，但是这位朋友却猥琐的很
+可爱，从来不会让人觉得讨厌，而是很自然，让人感觉还挺舒服的。这里我们暂
+且不讨论他是如何做到猥琐而不失可爱的 …</p> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/Dota中的猥琐流打发与生活态度.html">继续 &raquo;</a></p>
+</article>
+<hr />
+<article>
+	<header><h3><a href="/递归论读书笔记.html">递归论读书笔记</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/du-shu.html">读书</a>  四 08 十一月 2018. <a href="/tag/di-gui-lun.html">递归论</a>, </footer>
         <div class="entry-content"> 
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 问题描述</h2>
+<h2 id="sec-1">笔记</h2>
 <div class="outline-text-2" id="text-1">
-<ul class="org-ul">
-<li>iPhone X,11.2.2
-</li>
-<li>在设置-&gt;电池 中查看，最低下一行，待机与用量时间相等
-</li>
-<li>虽然没有待机，但手机续航能力还可以，20多个小时，同平时差不多
-</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 问题解决</h2>
-<div class="outline-text-2" id="text-2">
-<ul class="org-ul">
-<li>尝试了各种设置项，重启 …</li></ul></div></div> </div><!-- /.entry-content -->
-        <p class="continue"><a href="/iPhone X电池待机与用量时间一样的问题的解决.html">继续 &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<header><h3><a href="/Android UI开发知识点.html">Android UI开发知识点</a></h3></header>
-	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  三 04 四月 2018.</footer>
-        <div class="entry-content"> <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 子view要的大小父view满足不了会怎样？&#xa0;&#xa0;&#xa0;<span class="tag"><span class="__">技术</span></span></h2>
-<div class="outline-text-2" id="text-1">
-<p>
-在measure过程中，系统会给最顶层一个w和h的值，这个是可以理解为屏幕的
-大小，更准确的理解是可视窗口的大小，注意是可视范围，而不是可绘制范围，
-可绘制的范围是无限大的，因此绘制区域并不会出现不够用的情况，系统给的
-区域大小和父view传给子view的只是指导意见的大小，就是告诉子view这么大
-才能被看到，超了这个会看不到，但子view可以不参考，子该画多大画多大，
-画布是无限大的可以满足的 …</p></div></div> </div><!-- /.entry-content -->
-        <p class="continue"><a href="/Android UI开发知识点.html">继续 &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<header><h3><a href="/如何分析和可视化的清楚的表达出程序结构.html">如何分析和可视化的清楚的表达出程序结构</a></h3></header>
-	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  三 04 四月 2018.</footer>
-        <div class="entry-content"> <pre class="example">
-原来写在Confluence上的，搬过来
-</pre>
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">绪论</h3>
+<div class="outline-text-3" id="text-1-1">
 <ol class="org-ol">
-<li>类图，各个类的关系，接口，一对一，一对多的关系，这个是对对象的组织和关系有帮助的，但无法表现时序，进程，线程关系
+<li>1923年Skolem宣称所有初等数论中的数论函数都可以通过原始递归式定义
 </li>
-<li>时序图，以对象生命周期为轴，可以表现对象之间的交互，也无法表现进程，
-线程关系，而且有点过于太细，不容易宏观表现这个点之前还是理解错了，
-时序图通过fragment是可以表达条件，循环 …</li></ol> </div><!-- /.entry-content -->
-        <p class="continue"><a href="/如何分析和可视化的清楚的表达出程序结构.html">继续 &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<header><h3><a href="/Android界面开发积累.html">Android界面开发积累</a></h3></header>
-	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  二 13 三月 2018.</footer>
-        <div class="entry-content"> 
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 获取root layout</h2>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> width与mesured width</h2>
-</div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 同一个view能够同时出现在两个地方？</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-不能，ViewGroup的addViewInner方法中会判断view是否已经有了parent，如
-果已经有了会抛出异常。
-</p>
-</div>
-</div>
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> mesure或者layout到底怎么处理MATCH<sub>PARENT的？如果有margin值呢？</sub></h2>
-</div>
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> 通常measure layout这些是以哪个位置为准的？左上角 …</h2></div> </div><!-- /.entry-content -->
-        <p class="continue"><a href="/Android界面开发积累.html">继续 &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<header><h3><a href="/java中的闭包和匿名内部类.html">java中的闭包和匿名内部类</a></h3></header>
-	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  三 28 二月 2018.</footer>
-        <div class="entry-content"> 
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> java中匿名内部类使用外部方法的参数或局部变量的场景</h2>
-<div class="outline-text-2" id="text-1">
-<div class="org-src-container">
-
-<pre class="src src-java">  interface AnnoInner(){addXYZ();}
-public class Outer {
-    public AnnoInner getAnnoInner(final int x){
-	final int y=100;
-	return new …</pre></div></div></div> </div><!-- /.entry-content -->
-        <p class="continue"><a href="/java中的闭包和匿名内部类.html">继续 &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<header><h3><a href="/校招培训引发的思考.html">校招培训引发的思考</a></h3></header>
-	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  三 28 二月 2018.</footer>
-        <div class="entry-content"> <p>
-今天参加了一场公司的校招培训，其中一位经验丰富的面试官分享了他的校招经
-验，其中讲了各种名牌大学各种实验室，各种同各大名企争夺优秀人才，听了感
-觉自己离“人才”两字好远，好想太过普通了，这是在做面试官，如果是放在当
-年让自己去应聘校招，可能简历都发不出去。
-</p>
-
-<p>
-那当不是名牌大学毕业，没有研究什么高大上的算法，推荐模型，学历，经历平
-平的我们该怎么办呢 …</p> </div><!-- /.entry-content -->
-        <p class="continue"><a href="/校招培训引发的思考.html">继续 &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<header><h3><a href="/iPhone X使用两周后的体验.html">iPhone X使用两周后的体验</a></h3></header>
-	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  五 02 二月 2018.</footer>
-        <div class="entry-content"> 
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 电池</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-刚拿到手上的时候发现还是比较小的，整体外观跟iPhone 6差不多大小，只是
-屏幕略长，所以一直担心电池续航问题，毕竟iPhone 6的续航跟iPhone 6
-plus的还是差的不少。实际用下来除了前面一个星期感觉比较费电，能撑一个
-白天+一个晚上+半个白天，到现在比较稳定了，可以撑两个白天一个晚上，这 …</p></div></div> </div><!-- /.entry-content -->
-        <p class="continue"><a href="/iPhone X使用两周后的体验.html">继续 &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<header><h3><a href="/java中的注解(Annotation).html">java中的注解(Annotation)</a></h3></header>
-	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  一 29 一月 2018.</footer>
-        <div class="entry-content"> 
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> java中的注解(Annotation)</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-现在很多框架工具都使用注解的方式实现，比如junit，eventbugs等等，理解
-java的注解会比较有助于理解这些工具，也可以在平时应用注解。
-</p>
-</div>
-<div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 什么是java注解</h3>
-<div class="outline-text-3" id="text-1-1">
-<p>
-从使用层面来理解，java注解并不会提供程序，方法，对象，类新的功能或
-者任何可执行的代码，他只会提供给编译器一些key value …</p></div></div></div> </div><!-- /.entry-content -->
-        <p class="continue"><a href="/java中的注解(Annotation).html">继续 &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<header><h3><a href="/Android的LayoutParams.html">Android的LayoutParams</a></h3></header>
-	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  二 16 一月 2018.</footer>
-        <div class="entry-content"> <p>
-之前对布局文件中的各控件的布局参数的理解一直存在一些误区，需要明确以下
-几个关键点
-</p>
-
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 布局参数由view持有，由view直接上级的viewgroup使用</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-LayoutParams虽然由view持有，但是是ViewGroup的布局属性，根据不同
-ViewGroup会有不同的属性，同时也是由ViewGroup使用的。
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> LayoutParams的创建时机</h2>
-<div class="outline-text-2" id="text-2">
-</div><div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> 从布局文件创建</h3>
-<div class="outline-text-3" id="text-2-1">
-<p>
-由inflator在解析xml时根据view的ViewGourp调用ViewGroup的方法，并根据
-view的attrs创建一个LayoutParams对象，并在add …</p></div></div></div> </div><!-- /.entry-content -->
-        <p class="continue"><a href="/Android的LayoutParams.html">继续 &raquo;</a></p>
-</article>
-<hr />
-<article>
-	<header><h3><a href="/Android的attrs,style和theme.html">Android的attrs,style和theme</a></h3></header>
-	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  二 16 一月 2018.</footer>
-        <div class="entry-content"> 
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Android的attrs,style和theme</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-在理解style和theme之前需要先理解attrs
-</p>
-</div>
-<div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> attrs和styleable</h3>
-<div class="outline-text-3" id="text-1-1">
-<p>
-官方文档在<a href="https://developer.android.com/training/custom-views/create-view.html#applyattr">这里</a>
-</p>
+<li>是否一切可计算的数论函数都是原始递归函数？Ackermann给出了否定的
+答案，给出了一个可计算但增长速度远远超过一切原始递归函数的函数。
+</li>
+<li>Kleene给出了一般递归函数的定义
+</li>
+<li>Church-Turing论点：人们一般所说的可计算函数恰巧便是一般递归函数。
+<pre class="example">
+书中说这个点有点武断，但后来不但没有找到反例，反倒发现的事项越来越有利于这个论点。这个论点是直接给出了一个结论，但这个结论从哪里来？需要看一下一般递归函数和可计算函数的定义。
+</pre>
+</li>
+</ol>
 </div>
 <div id="outline-container-sec-1-1-1" class="outline-4">
-<h4 id="sec-1-1-1"><span class="section-number-4">1.1.1</span> 什么是styleable和attrs</h4>
+<h4 id="sec-1-1-1">基本概念</h4>
 <div class="outline-text-4" id="text-1-1-1">
+<ol class="org-ol">
+<li>（数论）函数：把数变成数 …</li></ol></div></div></div></div> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/递归论读书笔记.html">继续 &raquo;</a></p>
+</article>
+<hr />
+<article>
+	<header><h3><a href="/博客系统解决方案.html">使用emacs,org-mode和pelican搭建博客系统解决方案</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/jie-jue-fang-an.html">解决方案</a>  五 12 十月 2018. <a href="/tag/vps.html">vps</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/org-blog.html">org-blog</a>, <a href="/tag/blog.html">blog</a>, </footer>
+        <div class="entry-content"> 
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">设计</h2>
+<div class="outline-text-2" id="text-1">
 <p>
-从字面上理解，styleable就是可定义风格(style)的。attrs就是一个属性，
-定义一个属性更像第一个键值对，同时定义了这个键的类型和取值范围 …</p></div></div></div></div> </div><!-- /.entry-content -->
-        <p class="continue"><a href="/Android的attrs,style和theme.html">继续 &raquo;</a></p>
+  主要静态网页生成器放在VPS，这样可以在远端只负责写内容和推送到服务器
+了，不必关心生成的过程，如此一来即使是用手机也可以很方便的写文章。
+</p>
+
+<p>
+画个图描述一下。
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">搭建</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">环境</h3>
+<div class="outline-text-3" id="text-2-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">配置</td>
+<td class="right">版本</td>
+</tr>
+
+<tr>
+<td class="left">CentOS</td>
+<td class="right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">Python</td>
+<td class="right">3.6.3</td>
+</tr>
+
+<tr>
+<td class="left">emacs</td>
+<td class="right">25.3.1 …</td></tr></tbody></table></div></div></div> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/博客系统解决方案.html">继续 &raquo;</a></p>
+</article>
+<hr />
+<article>
+	<header><h3><a href="/跟换为Pelican生成笔记系统.html">跟换为Pelican生成笔记系统</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  三 10 十月 2018.</footer>
+        <div class="entry-content"> 
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Todolist</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>对org-mode的支持
+<ul class="org-ul">
+<li>pelican有org-mode的插件，但是有两个，一个依赖emacs一个不依赖，而
+且简单看了下依赖emacs的插件的代码，非常的简单，那么他实现的原理
+是什么呢？
+</li>
+<li>必须有title metadata
+</li>
+<li>必须有date metadata
+</li>
+<li>文章的唯一标示是什么？推测应该是slug，也就是URL，包括评论应该都
+会根据URL走 …</li></ul></li></ul></div></div> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/跟换为Pelican生成笔记系统.html">继续 &raquo;</a></p>
+</article>
+<hr />
+<article>
+	<header><h3><a href="/递归.html">递归</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  二 09 十月 2018.</footer>
+        <div class="entry-content"> <p>
+一直以来对递归的理解和使用都感觉很陌生，完全没有掌握递归的套路。总觉得
+不是归纳法那么简单。后来看了一些资料，发现递归确实是一个非常有意义的话
+题。
+</p>
+
+<p>
+关于递归有两个定理很重要，一个就是递归定理，另外一个是不动点定理。还有
+一个是自生产程序。
+</p>
+
+<p>
+通过这两天查资料和对递归的思考，发现递归的使用最重要的是找到子问题，即
+能够把问题用递归定义出来。然而如何找到子问题，如何将一个问题定义成递归
+呢？我的思考是去找问题关联的状态 …</p> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/递归.html">继续 &raquo;</a></p>
+</article>
+<hr />
+<article>
+	<header><h3><a href="/听《最爱的人伤我最深》这首歌.html">听《最爱的人伤我最深》这首歌</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  二 25 九月 2018.</footer>
+        <div class="entry-content"> <p>
+前两天在的士上从收音机中听到张惠妹的歌，阿妹的声线太过迷人了，今天把张
+惠妹《最爱的人伤我最深》找到听一下，从前奏开始就直接进入了歌曲。
+</p>
+
+<p>
+以为是张惠妹的自己的歌，没想到第一句竟是张雨生开始的，久违的声音，两个
+无与伦比的声音交替着，并没有去听唱的什么内容，只是单纯的听这两个声音，
+心中感慨万千，世间竟有如此美妙的嗓音，唱的又这么好的两个人，然而这两个
+人竟又是师徒，听着这首歌 …</p> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/听《最爱的人伤我最深》这首歌.html">继续 &raquo;</a></p>
+</article>
+<hr />
+<article>
+	<header><h3><a href="/RecyclerView版本问题.html">RecyclerView版本问题</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  一 10 九月 2018.</footer>
+        <div class="entry-content"> 
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> RecyclerView 23.0.1版本和26.0的版本在measure过程有比较大的差异</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+如果父亲给定UNSPECIFIED的高度，23的版本会measure高度为0，而26的版本
+会measure出自己所需要的高度。
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> 由上面这个问题导致对measure和layout的理解</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> getHeight和getMeasuredHeight</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+已经知道getMeasuredHeight给的是mMeasuredHeight的值，即测量值。而
+getHeight给的是bottom-top的值。之前会认为控件会根据mMeasuredHeight …</p></div></div></div> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/RecyclerView版本问题.html">继续 &raquo;</a></p>
+</article>
+<hr />
+<article>
+	<header><h3><a href="/Android消息传递机制.html">Android消息传递机制</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  二 03 七月 2018.</footer>
+        <div class="entry-content"> <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 传递规则</h2>
+<div class="outline-text-2" id="text-1">
+<ol class="org-ol">
+<li>如果消费touch down消息后续move等消息才会传给他
+</li>
+<li>消息默认都是优先传给子view处理，如果子view不处理，父view再处理
+</li>
+<li>如果一个group自己包括子view都不处理down消息，move消息也就不会传给
+这个group了
+</li>
+</ol>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="right">&#xa0;</th>
+<th scope="col" class="left">Group拦截</th>
+<th scope="col" class="left">Group消费</th>
+<th scope="col" class="left">View消费</th>
+<th scope="col" class="left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="right">1</td>
+<td class="left">no</td>
+<td class="left">no</td>
+<td class="left">no</td>
+<td class="left">group interrupt,onTouch …</td></tr></tbody></table></div></div> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/Android消息传递机制.html">继续 &raquo;</a></p>
+</article>
+<hr />
+<article>
+	<header><h3><a href="/长安十二时辰读书笔记.html">长安十二时辰读书笔记</a></h3></header>
+	<footer class="title_info"><a href="/author/chappie.html">chappie</a>  <a href="/category/misc.html">misc</a>  二 03 七月 2018.</footer>
+        <div class="entry-content"> <p>
+昨天在飞机上最后读完了长安十二时辰，书中直接描写的几个人物都个性十分鲜
+明，比如李泌，张小敬，元载，姚汝能等。整个故事情节非常紧凑，故事始终一
+波三折，一波未平一波又起，所以整个故事读下来全程基本无尿点，高潮一波接
+一波。
+</p>
+
+<p>
+就几个个性鲜明且迥异的主角来说，一号男主角自然是张小敬了，整个故事中张
+小敬是一个有情有义，亦正亦邪的末路英雄的形象，喜欢单打独斗 …</p> </div><!-- /.entry-content -->
+        <p class="continue"><a href="/长安十二时辰读书笔记.html">继续 &raquo;</a></p>
 </article>
 <hr />
 <p class="paginator">
         <a href="/author/chappie.html">&laquo;</a>
-    Page 2 / 6
+    Page 2 / 7
         <a href="/author/chappie3.html">&raquo;</a>
 </p>
 </section><!-- /#content -->

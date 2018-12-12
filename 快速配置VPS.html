@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+          <title>iknockdoor - 快速配置VPS</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="/theme/css/org.css" />
+        <link rel="stylesheet" type="text/css" href="/theme/css/custom.css" />
+
+
+
+<script>var _gaq=[['_setAccount','UA-103057848-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+        <!-- mathjax config similar to math.stackexchange -->
+	<script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({
+	  jax: ["input/TeX", "output/HTML-CSS"],
+	  tex2jax: {
+	  inlineMath: [ ['$', '$'] ],
+	  displayMath: [ ['$$', '$$']],
+	  processEscapes: true,
+	  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+	  },
+	  messageStyle: "none",
+	  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+	  });
+	</script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1>iknockdoor <strong></strong></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+        </ul></nav><!-- /#menu -->
+        <nav class="sidebar">
+	    <h5>分类</h5>
+	    <ul>
+	      <li ><a href="/category/du-shu.html">读书(1)</a></li>
+	      <li ><a href="/category/jie-jue-fang-an.html">解决方案(1)</a></li>
+	      <li class="active"><a href="/category/misc.html">misc(60)</a></li>
+	      <li ><a href="/category/sheng-huo.html">生活(1)</a></li>
+	    </ul>
+	    <h5>标签</h5>
+	    <ul>
+	      <li><a href="/tag/androidstudio.html">AndroidStudio(1)</a></li>
+	      <li><a href="/tag/blog.html">blog(1)</a></li>
+	      <li><a href="/tag/di-gui-lun.html">递归论(1)</a></li>
+	      <li><a href="/tag/english.html">english(1)</a></li>
+	      <li><a href="/tag/org-blog.html">org-blog(1)</a></li>
+	      <li><a href="/tag/pelican.html">pelican(1)</a></li>
+	      <li><a href="/tag/vps.html">vps(1)</a></li>
+	    </ul>
+
+	    <h5>归档</h5>
+	    <ul>
+	      <li><a href="/posts/2018/12/index.html">十二月 2018 (2)</a></li>
+	      <li><a href="/posts/2018/11/index.html">十一月 2018 (11)</a></li>
+	      <li><a href="/posts/2018/10/index.html">十月 2018 (3)</a></li>
+	      <li><a href="/posts/2018/09/index.html">九月 2018 (2)</a></li>
+	      <li><a href="/posts/2018/07/index.html">七月 2018 (2)</a></li>
+	      <li><a href="/posts/2018/06/index.html">六月 2018 (1)</a></li>
+	      <li><a href="/posts/2018/05/index.html">五月 2018 (2)</a></li>
+	      <li><a href="/posts/2018/04/index.html">四月 2018 (2)</a></li>
+	      <li><a href="/posts/2018/03/index.html">三月 2018 (1)</a></li>
+	      <li><a href="/posts/2018/02/index.html">二月 2018 (3)</a></li>
+	      <li><a href="/posts/2018/01/index.html">一月 2018 (7)</a></li>
+	      <li><a href="/posts/2017/12/index.html">十二月 2017 (18)</a></li>
+	      <li><a href="/posts/2017/09/index.html">九月 2017 (1)</a></li>
+	      <li><a href="/posts/2017/08/index.html">八月 2017 (1)</a></li>
+	      <li><a href="/posts/2017/07/index.html">七月 2017 (7)</a></li>
+	    </ul>
+             <h5>Links</h5>
+	    <ul>
+	    </ul>
+	    <h5>与我联系</h5>
+	    <ul>
+	      <li><a href="mailto:iknockdoor.com@gmail.com">E-mail</a></li>
+	    </ul>
+	</nav>
+	    <!-- End Sidebar -->
+<section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="/快速配置VPS.html" rel="bookmark"
+         title="Permalink to 快速配置VPS">快速配置VPS</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <time class="published" datetime="2018-12-07T00:00:00+08:00">
+      五 07 十二月 2018
+    </time>
+    <address class="vcard author">
+      By           <a class="url fn" href="/author/chappie.html">chappie</a>
+    </address>
+    <div class="category">
+        Category: <a href="/category/misc.html">misc</a>
+    </div>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <div class="preview">
+<p>
+上个月VPS被人黑了，找回来后不得已需要重置，以前配置的都丢了，这里记录
+下来快速配置的步骤和脚本，再出现类似情况可以快速恢复。具体的原理可以看
+其他相关的笔记。
+</p>
+
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">重新安装操作系统</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+KiwiVM上stop服务器，然后install new OS
+</p>
+<pre class="example">
+CentOS 7 x86_64
+</pre>
+<p>
+重新安装后会提示root密码和ssh端口，记录下来
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">确认服务器身份</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+从客户端ssh登陆VPS会提示服务器指纹，如：
+</p>
+<pre class="example">
+ECDSA key fingerprint is SHA256:xxxxx
+</pre>
+<p>
+从KiviVM上basic shell查看比对指纹是否正确
+</p>
+<div class="org-src-container">
+
+<pre class="src src-bash">ssh-keygen -lf /etc/ssh/ssh_host_ecdsa_key.pub
+</pre>
+</div>
+<p>
+有时上述过程给出的指纹编码方式不同，可通过在端上调整指纹编码比对
+</p>
+<div class="org-src-container">
+
+<pre class="src src-bash">ssh-keygen -E MD5 -lf ~/.ssh/known_hosts
+</pre>
+</div>
+<p>
+一致则指纹正确，后面就可以用ssh登陆操作了，不再需要KiviVM
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">安装emacs</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+在<a href="http://ftp.gnu.org/gnu/emacs/">http://ftp.gnu.org/gnu/emacs/</a> 选择对应的版本，目前用的25.3
+</p>
+<div class="org-src-container">
+
+<pre class="src src-bash">wget http://ftp.gnu.org/gnu/emacs/emacs-25.3.tar.gz
+tar zxvf emacs-25.3.tar.gz
+cd emacs-25.3
+yum -y install gcc make ncurses-devel
+yum -y install libXpm-devel libjpeg-turbo-devel openjpeg-devel openjpeg2-devel turbojpeg-devel giflib-devel libtiff-devel gnutls-devel libxml2-devel GConf2-devel dbus-devel wxGTK-devel gtk3-devel
+./configure 
+make &amp;&amp; make install
+emacs --version
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">添加普通用户</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+使用root账户登陆服务器，执行一下命令
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh"># 添加xxx用户
+adduser xxx
+# 生成一个随机密码
+&lt; /dev/urandom tr -dc A-Za-z0-9_ | head -c8
+# 设置xxx用户密码
+passwd xxx
+</pre>
+</div>
+<p>
+注意不用在给普通用户sudo权限了，远程登陆后再使用root用户进行高权限的
+操作，高权限的操作并不是很频繁。
+在客户端执行一下命令
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh"># 生成密钥对
+ssh-keygen -t rsa -b 4096
+# 公钥添加到服务端
+ssh-copy-id -i .ssh/id_rsa.pub -p xxx xxx@xxx.xxx.xxx.xxx
+# 如果本机存在多个密钥对，可以用下面的命令指定登陆时使用的密钥
+ssh -i .ssh/xxx -p xxx xxx@xxx.xxx.xxx.xxx
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">配置sshd安全加固</h2>
+<div class="outline-text-2" id="text-5">
+<div class="org-src-container">
+
+<pre class="src src-sh"># 使用ssh最新程序和依赖库
+yum update openssh-server openssh openssh-clients -y
+# 备份sshd_config
+cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak.lz
+# 配置sshd_config
+emacs /etc/ssh/sshd_config
+# 配置比较简单，大部分配置保持系统安装后的默认值就好，需要修改的是一下几个
+# Protocol 2 强制使用ssh2
+# PasswordAuthentication no 关闭用户密码登陆，必须使用公钥登陆
+# UsePAM no 不知道这是什么
+# PermitRootLogin     no 禁止root用户远程登陆
+# 重启sshd服务，不知道为什么会失败，所以我是直接reboot的
+service sshd restart
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">配置ipsec</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+修改vps_ip和证书信息，然后使用root账户执行以下一键安装配置脚本，注意
+不是sudo，centos 7下一定要用root账户
+</p>
+<div class="org-src-container">
+
+<pre class="src src-bash">  #! /bin/bash
+
+vps_ip="xxx.xxx.xxx.xxx"
+my_cert_c="com"
+my_cert_o="ognazation"
+my_cert_cn="CA"
+
+function configure_ipsec(){
+ cat &gt; /usr/local/etc/ipsec.conf&lt;&lt;EOF
+config setup
+    uniqueids=never 
+
+conn iOS_cert
+    keyexchange=ikev1
+    fragmentation=yes
+    left=%defaultroute
+    leftauth=pubkey
+    leftsubnet=0.0.0.0/0
+    leftcert=server.cert.pem
+    right=%any
+    rightauth=pubkey
+    rightauth2=xauth
+    rightsourceip=10.31.2.0/24
+    rightcert=client.cert.pem
+    auto=add
+
+conn android_xauth_psk
+    keyexchange=ikev1
+    left=%defaultroute
+    leftauth=psk
+    leftsubnet=0.0.0.0/0
+    right=%any
+    rightauth=psk
+    rightauth2=xauth
+    rightsourceip=10.31.2.0/24
+    auto=add
+
+conn networkmanager-strongswan
+    keyexchange=ikev2
+    left=%defaultroute
+    leftauth=pubkey
+    leftsubnet=0.0.0.0/0
+    leftcert=server.cert.pem
+    right=%any
+    rightauth=pubkey
+    rightsourceip=10.31.2.0/24
+    rightcert=client.cert.pem
+    auto=add
+
+conn ios_ikev2
+    keyexchange=ikev2
+    ike=aes256-sha256-modp2048,3des-sha1-modp2048,aes256-sha1-modp2048!
+    esp=aes256-sha256,3des-sha1,aes256-sha1!
+    rekey=no
+    left=%defaultroute
+    leftid=${vps_ip}
+    leftsendcert=always
+    leftsubnet=0.0.0.0/0
+    leftcert=server.cert.pem
+    right=%any
+    rightauth=eap-mschapv2
+    rightsourceip=10.31.2.0/24
+    rightsendcert=never
+    eap_identity=%any
+    dpdaction=clear
+    fragmentation=yes
+    auto=add
+
+conn windows7
+    keyexchange=ikev2
+    ike=aes256-sha1-modp1024!
+    rekey=no
+    left=%defaultroute
+    leftauth=pubkey
+    leftsubnet=0.0.0.0/0
+    leftcert=server.cert.pem
+    right=%any
+    rightauth=eap-mschapv2
+    rightsourceip=10.31.2.0/24
+    rightsendcert=never
+    eap_identity=%any
+    auto=add
+
+EOF
+}
+
+# configure the strongswan.conf
+function configure_strongswan(){
+ cat &gt; /usr/local/etc/strongswan.conf&lt;&lt;EOF
+ charon {
+	load_modular = yes
+	duplicheck.enable = no
+	compress = yes
+	plugins {
+		include strongswan.d/charon/*.conf
+	}
+	dns1 = 8.8.8.8
+	dns2 = 8.8.4.4
+	nbns1 = 8.8.8.8
+	nbns2 = 8.8.4.4
+}
+include strongswan.d/*.conf
+EOF
+}
+
+# configure the ipsec.secrets
+function configure_secrets(){
+    cat &gt; /usr/local/etc/ipsec.secrets&lt;&lt;-EOF
+: RSA server.pem
+: PSK "myPSKkey"
+: XAUTH "myXAUTHPass"
+myUserName %any : EAP "myUserPass"
+EOF
+}
+
+# iptables set
+function iptables_set(){
+    sysctl -w net.ipv4.ip_forward=1
+    sysctl -p
+
+    interface="venet0"
+    static_ip=$vps_ip
+
+    iptables -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
+    iptables -A FORWARD -s 10.31.0.0/24  -j ACCEPT
+    iptables -A FORWARD -s 10.31.1.0/24  -j ACCEPT
+    iptables -A FORWARD -s 10.31.2.0/24  -j ACCEPT
+    iptables -A INPUT -i $interface -p esp -j ACCEPT
+    iptables -A INPUT -i $interface -p udp --dport 500 -j ACCEPT
+    iptables -A INPUT -i $interface -p tcp --dport 500 -j ACCEPT
+    iptables -A INPUT -i $interface -p udp --dport 4500 -j ACCEPT
+    iptables -A INPUT -i $interface -p udp --dport 1701 -j ACCEPT
+    iptables -A INPUT -i $interface -p tcp --dport 1723 -j ACCEPT
+    #iptables -A FORWARD -j REJECT
+
+    iptables -t nat -A POSTROUTING -s 10.31.0.0/24 -o $interface -j SNAT --to-source $static_ip
+    iptables -t nat -A POSTROUTING -s 10.31.1.0/24 -o $interface -j SNAT --to-source $static_ip
+    iptables -t nat -A POSTROUTING -s 10.31.2.0/24 -o $interface -j SNAT --to-source $static_ip
+
+    service iptables save
+}
+
+
+
+# step 1.install necessary lib
+yum -y install pam-devel openssl-devel gcc make
+# step 2.Download strongswan,config,make and install
+wget https://download.strongswan.org/strongswan-5.5.1.tar.gz
+tar -zxvf strongswan-5.5.1.tar.gz
+cd strongswan-5.5.1
+./configure  --enable-eap-identity --enable-eap-md5 \
+--enable-eap-mschapv2 --enable-eap-tls --enable-eap-ttls --enable-eap-peap  \
+--enable-eap-tnc --enable-eap-dynamic --enable-eap-radius --enable-xauth-eap  \
+--enable-xauth-pam  --enable-dhcp  --enable-openssl  --enable-addrblock --enable-unity  \
+--enable-certexpire --enable-radattr --enable-swanctl --enable-openssl --disable-gmp --enable-kernel-libipsec
+make; make install
+
+
+# step 3.create cert and cp
+cd ~
+mkdir ipseckey
+cd ipseckey
+ipsec pki --gen --outform pem &gt; ca.pem
+ipsec pki --self --in ca.pem --dn "C=${my_cert_c}, O=${my_cert_o}, CN=${my_cert_cn}" --ca --outform pem &gt;ca.cert.pem
+ipsec pki --gen --outform pem &gt; server.pem
+ipsec pki --pub --in server.pem | ipsec pki --issue --cacert ca.cert.pem \
+    --cakey ca.pem --dn "C=${my_cert_c}, O=${my_cert_o}, CN=${vps_ip}" \
+    --san="${vps_ip}" --flag serverAuth --flag ikeIntermediate \
+    --outform pem &gt; server.cert.pem
+ipsec pki --gen --outform pem &gt; client.pem
+ipsec pki --pub --in client.pem | ipsec pki --issue --cacert ca.cert.pem --cakey ca.pem --dn "C=${my_cert_c}, O=${my_cert_o}, CN=LZ Client" --outform pem &gt; client.cert.pem
+openssl pkcs12 -export -inkey client.pem -in client.cert.pem -name "client" -certfile ca.cert.pem -caname "${my_cert_cn}"  -out client.cert.p12
+
+cp -f ca.cert.pem /usr/local/etc/ipsec.d/cacerts/
+cp -f server.cert.pem /usr/local/etc/ipsec.d/certs/
+cp -f server.pem /usr/local/etc/ipsec.d/private/
+cp -f client.cert.pem /usr/local/etc/ipsec.d/certs/
+cp -f client.pem  /usr/local/etc/ipsec.d/private/
+
+# step 4.configure the ipsec.conf
+configure_ipsec
+configure_strongswan
+configure_secrets
+iptables_set
+ipsec restart
+</pre>
+</div>
+<p>
+添加账户
+</p>
+<pre class="example">
+emacs /usr/local/etc/ipsec.secrets
+</pre>
+<p>
+配置开机自起，待补充
+下载证书ca.cert.pem，就可以安装使用了
+</p>
+</div>
+</div>
+
+  </div><!-- /.entry-content -->
+</section>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>
