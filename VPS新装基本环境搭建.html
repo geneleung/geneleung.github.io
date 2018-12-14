@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="zh_cn">
 <head>
-          <title>iknockdoor - VPS新装基本环境搭建</title>
+        <title>iknockdoor-VPS新装基本环境搭建</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="/theme/css/org.css" />
-        <link rel="stylesheet" type="text/css" href="/theme/css/custom.css" />
+        <link rel="stylesheet" type="text/css" href="http://iknockdoor.com/theme/css/org.css" />
+        <link rel="stylesheet" type="text/css" href="http://iknockdoor.com/theme/css/custom.css" />
+        <link href="http://iknockdoor.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="iknockdoor Full Atom Feed" />
 
+<meta name="description" content="<div class="preview">
+<p>
+哈哈哈，简介
+</p>
 
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">install OS</h2>
+<div class="outline-text-2" id="text-1">
+<pre class="example">
+centos-7-x86_64
+</pre>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">验证服务器ssh指纹，避免中间人攻击</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">原理</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+服务器在安装openssh-server之后会生成各支持的加密算法的私钥和公钥，通常在下面的目录<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup>下，pub的文件就是公钥文件了
+</p>
+<pre class="example">
+/etc/ssh/
+</pre>
+<div class="org-src-container">
+
+<pre class="src src-bash">   $ ls -1 /etc/ssh/ssh_host …</pre></div></div></div></div>" />
 
 <script>var _gaq=[['_setAccount','UA-103057848-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
         <!-- mathjax config similar to math.stackexchange -->
@@ -36,26 +66,28 @@
         <nav class="sidebar">
 	    <h5>分类</h5>
 	    <ul>
-	      <li ><a href="/category/du-shu.html">读书(2)</a></li>
-	      <li ><a href="/category/jie-jue-fang-an.html">解决方案(1)</a></li>
-	      <li class="active"><a href="/category/misc.html">misc(61)</a></li>
-	      <li ><a href="/category/sheng-huo.html">生活(1)</a></li>
+	      <li ><a href="http://iknockdoor.com/category/du-shu.html">读书(2)</a></li>
+	      <li ><a href="http://iknockdoor.com/category/jie-jue-fang-an.html">解决方案(1)</a></li>
+	      <li class="active"><a href="http://iknockdoor.com/category/misc.html">misc(62)</a></li>
+	      <li ><a href="http://iknockdoor.com/category/sheng-huo.html">生活(1)</a></li>
 	    </ul>
 	    <h5>标签</h5>
 	    <ul>
-	      <li><a href="/tag/androidstudio.html">AndroidStudio(1)</a></li>
-	      <li><a href="/tag/blog.html">blog(1)</a></li>
-	      <li><a href="/tag/di-gui-lun.html">递归论(1)</a></li>
-	      <li><a href="/tag/emacs.html">emacs(1)</a></li>
-	      <li><a href="/tag/english.html">english(2)</a></li>
-	      <li><a href="/tag/org-blog.html">org-blog(1)</a></li>
-	      <li><a href="/tag/pelican.html">pelican(1)</a></li>
-	      <li><a href="/tag/vps.html">vps(1)</a></li>
+	      <li><a href="http://iknockdoor.com/tag/android.html">Android(1)</a></li>
+	      <li><a href="http://iknockdoor.com/tag/androidstudio.html">AndroidStudio(1)</a></li>
+	      <li><a href="http://iknockdoor.com/tag/blog.html">blog(1)</a></li>
+	      <li><a href="http://iknockdoor.com/tag/di-gui-lun.html">递归论(1)</a></li>
+	      <li><a href="http://iknockdoor.com/tag/emacs.html">emacs(1)</a></li>
+	      <li><a href="http://iknockdoor.com/tag/english.html">english(2)</a></li>
+	      <li><a href="http://iknockdoor.com/tag/org-blog.html">org-blog(1)</a></li>
+	      <li><a href="http://iknockdoor.com/tag/pelican.html">pelican(1)</a></li>
+	      <li><a href="http://iknockdoor.com/tag/recyclerview.html">RecyclerView(1)</a></li>
+	      <li><a href="http://iknockdoor.com/tag/vps.html">vps(1)</a></li>
 	    </ul>
 
 	    <h5>归档</h5>
 	    <ul>
-	      <li><a href="/posts/2018/12/index.html">十二月 2018 (4)</a></li>
+	      <li><a href="/posts/2018/12/index.html">十二月 2018 (5)</a></li>
 	      <li><a href="/posts/2018/11/index.html">十一月 2018 (11)</a></li>
 	      <li><a href="/posts/2018/10/index.html">十月 2018 (3)</a></li>
 	      <li><a href="/posts/2018/09/index.html">九月 2018 (2)</a></li>
@@ -83,7 +115,7 @@
 <section id="content" class="body">
   <header>
     <h2 class="entry-title">
-      <a href="/VPS新装基本环境搭建.html" rel="bookmark"
+      <a href="http://iknockdoor.com/VPS新装基本环境搭建.html" rel="bookmark"
          title="Permalink to VPS新装基本环境搭建">VPS新装基本环境搭建</a></h2>
  
   </header>
@@ -92,10 +124,10 @@
       二 04 十二月 2018
     </time>
     <address class="vcard author">
-      By           <a class="url fn" href="/author/chappie.html">chappie</a>
+      By           <a class="url fn" href="http://iknockdoor.com/author/chappie.html">chappie</a>
     </address>
     <div class="category">
-        Category: <a href="/category/misc.html">misc</a>
+        Category: <a href="http://iknockdoor.com/category/misc.html">misc</a>
     </div>
   </footer><!-- /.post-info -->
   <div class="entry-content">
