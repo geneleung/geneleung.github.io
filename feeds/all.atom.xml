@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>iknockdoor</title><link href="http://iknockdoor.com/" rel="alternate"></link><link href="http://iknockdoor.com/feeds/all.atom.xml" rel="self"></link><id>http://iknockdoor.com/</id><updated>2018-12-14T00:00:00+08:00</updated><entry><title>RecyclerView在ConstraintLayout中使用时item的width设置MATCH</title><link href="http://iknockdoor.com/RecyclerView%E5%9C%A8ConstraintLayout%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%97%B6item%E7%9A%84width%E8%AE%BE%E7%BD%AEMATCH_PARENT%E6%97%A0%E6%95%88%E7%9A%84%E9%97%AE%E9%A2%98.html" rel="alternate"></link><published>2018-12-14T00:00:00+08:00</published><updated>2018-12-14T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:iknockdoor.com,2018-12-14:/RecyclerView在ConstraintLayout中使用时item的width设置MATCH_PARENT无效的问题.html</id><summary type="html">&lt;p&gt;
-RecyclerView外部是ContrantLayout，在RecyclerView中new出view，并new出LayoutParams，此时给MATCH_PARENT是无效的。通过调试，应该是ConstrantLayout的和RecyclerView的问题，使用其他布局包含RecyclerView是正常的。
+RecyclerView外部是ContrantLayout，在RecyclerView中new出view，并new出
+LayoutParams，此时给MATCH_PARENT是无效的。通过调试，应该是
+ConstrantLayout的和RecyclerView的问题，使用其他布局包含RecyclerView是正常的。 
 &lt;/p&gt;
 
 &lt;p&gt;
 具体原因还未查清。
 &lt;/p&gt;
 </summary><content type="html">&lt;p&gt;
-RecyclerView外部是ContrantLayout，在RecyclerView中new出view，并new出LayoutParams，此时给MATCH_PARENT是无效的。通过调试，应该是ConstrantLayout的和RecyclerView的问题，使用其他布局包含RecyclerView是正常的。
+RecyclerView外部是ContrantLayout，在RecyclerView中new出view，并new出
+LayoutParams，此时给MATCH_PARENT是无效的。通过调试，应该是
+ConstrantLayout的和RecyclerView的问题，使用其他布局包含RecyclerView是正常的。 
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -6544,21 +6548,6 @@ git仓库中，可以选择性的提交想提交的分支上去，相反，可�
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content></entry><entry><title>关于我</title><link href="http://iknockdoor.com/%E5%85%B3%E4%BA%8E%E6%88%91.html" rel="alternate"></link><published>2017-12-13T00:00:00+08:00</published><updated>2017-12-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:iknockdoor.com,2017-12-13:/关于我.html</id><summary type="html">&lt;p&gt;
-关于我我是一名码农，这并不是自嘲，在目前的大环境下，除非是在顶尖的科技公司，像Google，苹果这些的，大部分可能只是代码的搬运工，或者做一些组装和应用的工作，缺乏创造力，缺乏技术性。当我什么时候可以通过技术改变生活，那个时候可能才能称得上是一名工程师。
-&lt;/p&gt;
-
-&lt;p&gt;
-我使用emacs &lt;a href="http://orgmode.org/"&gt;org-mode&lt;/a&gt; 做笔记。之前用过一些工具，都不是很称心，用过
-Evernote，OneNote …&lt;/p&gt;</summary><content type="html">&lt;p&gt;
-关于我我是一名码农，这并不是自嘲，在目前的大环境下，除非是在顶尖的科技公司，像Google，苹果这些的，大部分可能只是代码的搬运工，或者做一些组装和应用的工作，缺乏创造力，缺乏技术性。当我什么时候可以通过技术改变生活，那个时候可能才能称得上是一名工程师。
-&lt;/p&gt;
-
-&lt;p&gt;
-我使用emacs &lt;a href="http://orgmode.org/"&gt;org-mode&lt;/a&gt; 做笔记。之前用过一些工具，都不是很称心，用过
-Evernote，OneNote，confluence，也有一些blog工具，还用过org-page，在这个过程中不断探索，一直考虑如何可以专注于内容，专注于记和读，直到从2016
-年开始接触org-mode，作为记的工具是比较趁手了。平时用iPhone自带的笔记本感觉也很好用，所以研究了一下他的产品思路，发现一切都很简单，于是我开始简化工具，不再使用org-page，单纯的使用org-mode和他的导出发布功能讲内容发布到网上以便阅读，于是便有了此。
-&lt;/p&gt;
 </content></entry><entry><title>利用orgmode做项目计划</title><link href="http://iknockdoor.com/%E5%88%A9%E7%94%A8orgmode%E5%81%9A%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92.html" rel="alternate"></link><published>2017-12-13T00:00:00+08:00</published><updated>2017-12-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:iknockdoor.com,2017-12-13:/利用orgmode做项目计划.html</id><summary type="html">&lt;div id="table-of-contents"&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id="text-table-of-contents"&gt;
@@ -6726,9 +6715,9 @@ step 2.在~/.bash&lt;sub&gt;profile文件添加一下内容&lt;/sub&gt;
 &lt;/p&gt;
 &lt;div class="org-src-container"&gt;
 
-&lt;pre class="src src-bash"&gt;if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash ]; then
-   source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
-fi
+&lt;pre class="src src-sh"&gt;&lt;span class="org-keyword"&gt;if&lt;/span&gt; [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash ]; &lt;span class="org-keyword"&gt;then&lt;/span&gt;
+   &lt;span class="org-builtin"&gt;source&lt;/span&gt; /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
+&lt;span class="org-keyword"&gt;fi&lt;/span&gt;
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;p&gt;
