@@ -1,5 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>iknockdoor</title><link href="http://iknockdoor.com/" rel="alternate"></link><link href="http://iknockdoor.com/feeds/all.atom.xml" rel="self"></link><id>http://iknockdoor.com/</id><updated>2018-12-14T00:00:00+08:00</updated><entry><title>RecyclerView在ConstraintLayout中使用时item的width设置MATCH</title><link href="http://iknockdoor.com/RecyclerView%E5%9C%A8ConstraintLayout%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%97%B6item%E7%9A%84width%E8%AE%BE%E7%BD%AEMATCH_PARENT%E6%97%A0%E6%95%88%E7%9A%84%E9%97%AE%E9%A2%98.html" rel="alternate"></link><published>2018-12-14T00:00:00+08:00</published><updated>2018-12-14T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:iknockdoor.com,2018-12-14:/RecyclerView在ConstraintLayout中使用时item的width设置MATCH_PARENT无效的问题.html</id><summary type="html">&lt;p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>iknockdoor</title><link href="http://iknockdoor.com/" rel="alternate"></link><link href="http://iknockdoor.com/feeds/all.atom.xml" rel="self"></link><id>http://iknockdoor.com/</id><updated>2018-12-18T00:00:00+08:00</updated><entry><title>Android开发中如何充分利用Exception</title><link href="http://iknockdoor.com/Android%E5%BC%80%E5%8F%91%E4%B8%AD%E5%A6%82%E4%BD%95%E5%85%85%E5%88%86%E5%88%A9%E7%94%A8Exception.html" rel="alternate"></link><published>2018-12-18T00:00:00+08:00</published><updated>2018-12-18T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:iknockdoor.com,2018-12-18:/Android开发中如何充分利用Exception.html</id><summary type="html">Java中的Exception往往在Android开发中不能被充分利用，这里结合日常开发 中的一些经验，总结一下如何正确使用Excption，包括何时抛出异常，何时处理异常</summary><content type="html">
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; 充分利用RuntimeException&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
+&lt;h3 id="sec-1-1"&gt;&lt;span class="section-number-3"&gt;1.1&lt;/span&gt; 什么是RuntimeException&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-1"&gt;
+&lt;p&gt;
+基础知识，不必详细介绍了，RuntimeException不强制要求捕获的特性正好带来了他的好处。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2" class="outline-3"&gt;
+&lt;h3 id="sec-1-2"&gt;&lt;span class="section-number-3"&gt;1.2&lt;/span&gt; 可以使用RuntimException的场景&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-2"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-1-2-1" class="outline-4"&gt;
+&lt;h4 id="sec-1-2-1"&gt;&lt;span class="section-number-4"&gt;1.2.1&lt;/span&gt; 场景一&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-2-1"&gt;
+&lt;p&gt;
+通常在开发中，尤其是在开发一些基础类库给其他人使用时，会有一些异常场景，比如说当前状态错误，或者使用者传入了错误数据，然而这些异常场景又不至于影响模块功能的运行，也可以说内部就可以消化掉，这时抛出一个RuntimException再合适不过了。当然，需要配合全局的RuntimException
+的捕捉器，否则还是会造成crash的。在这个全局的捕捉器中可以做一些记录工作，或者在调试阶段直接crash，都对调试非常有帮助。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2-2" class="outline-4"&gt;
+&lt;h4 id="sec-1-2-2"&gt;&lt;span class="section-number-4"&gt;1.2.2&lt;/span&gt; 场景二&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-2-2"&gt;
+&lt;p&gt;
+在日常开发中有一些情况，比如：
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;极少出现
+&lt;/li&gt;
+&lt;li&gt;一旦出现不可恢复
+&lt;/li&gt;
+&lt;li&gt;不应出现，基本上数据外部使用错误，允许在调试阶段出现，不允许线上出现，比如被0除的问题，应该是在开发阶段就避免的。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+对于上面这些情况，如果使用ThrowalbeException就会导致使用者很麻烦，所有的使用代码都需要处理exception，如果极少出现，那么处理的话性价比就会很低；如果不可恢复，使用者也不知道怎么处理；对于不应出现的情况外部catch就更没意义了。所以这种情况下使用RuntimException再合适不过。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;span class="section-number-2"&gt;2&lt;/span&gt; 异常可以一层一层的抛，那么哪一层处理最合适？&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+其实很简单，中间层最好是都不要处理，直接全部抛给最上层处理。那么哪里才是最上层呢？就是需要决定界面变化的哪一层，比如显示错误界面，提示错误信息，记录错误日志。如果中间层做了处理，会造成异常信息的丢失，如果这个信息正好是外部需要用的，那会更麻烦。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content></entry><entry><title>RecyclerView在ConstraintLayout中使用时item的width设置MATCH</title><link href="http://iknockdoor.com/RecyclerView%E5%9C%A8ConstraintLayout%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%97%B6item%E7%9A%84width%E8%AE%BE%E7%BD%AEMATCH_PARENT%E6%97%A0%E6%95%88%E7%9A%84%E9%97%AE%E9%A2%98.html" rel="alternate"></link><published>2018-12-14T00:00:00+08:00</published><updated>2018-12-14T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:iknockdoor.com,2018-12-14:/RecyclerView在ConstraintLayout中使用时item的width设置MATCH_PARENT无效的问题.html</id><summary type="html">&lt;p&gt;
 RecyclerView外部是ContrantLayout，在RecyclerView中new出view，并new出
 LayoutParams，此时给MATCH_PARENT是无效的。通过调试，应该是
 ConstrantLayout的和RecyclerView的问题，使用其他布局包含RecyclerView是正常的。 
@@ -960,23 +1013,23 @@ question就是没得商量，绝对不行的意思了。而对于out of question
 &lt;/p&gt;
 &lt;div class="org-src-container"&gt;
 
-&lt;pre class="src src-bash"&gt;adb tcpip PORT               restart adb server listening on TCP on PORT
-# adb tcpip 5555
+&lt;pre class="src src-sh"&gt;adb tcpip PORT               restart adb server listening on TCP on PORT
+&lt;span class="org-comment-delimiter"&gt;# &lt;/span&gt;&lt;span class="org-comment"&gt;adb tcpip 5555&lt;/span&gt;
 adb connect HOST …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;
 主要以下两个命令，可以通过adb &amp;#x2013;help查看到
 &lt;/p&gt;
 &lt;div class="org-src-container"&gt;
 
-&lt;pre class="src src-bash"&gt;adb tcpip PORT               restart adb server listening on TCP on PORT
-# adb tcpip 5555
-adb connect HOST[:PORT]      connect to a device via TCP/IP [default port=5555]
-# adb connect x.x.x.x:5555
+&lt;pre class="src src-sh"&gt;adb tcpip PORT               restart adb server listening on TCP on PORT
+&lt;span class="org-comment-delimiter"&gt;# &lt;/span&gt;&lt;span class="org-comment"&gt;adb tcpip 5555&lt;/span&gt;
+adb connect HOST[:PORT]      connect to a device via TCP/IP [default &lt;span class="org-variable-name"&gt;port&lt;/span&gt;=5555]
+&lt;span class="org-comment-delimiter"&gt;# &lt;/span&gt;&lt;span class="org-comment"&gt;adb connect x.x.x.x:5555&lt;/span&gt;
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;p&gt;
 就这样很简单。
 &lt;/p&gt;
-</content></entry><entry><title>Could not open Selected VM debug port (8700)</title><link href="http://iknockdoor.com/Could%20not%20open%20Selected%20VM%20debug%20port%20(8700).html" rel="alternate"></link><published>2018-11-22T00:00:00+08:00</published><updated>2018-11-22T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:iknockdoor.com,2018-11-22:/Could not open Selected VM debug port (8700).html</id><summary type="html">
+</content><category term="android"></category><category term="adb"></category><category term="调试"></category></entry><entry><title>Could not open Selected VM debug port (8700)</title><link href="http://iknockdoor.com/Could%20not%20open%20Selected%20VM%20debug%20port%20(8700).html" rel="alternate"></link><published>2018-11-22T00:00:00+08:00</published><updated>2018-11-22T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:iknockdoor.com,2018-11-22:/Could not open Selected VM debug port (8700).html</id><summary type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;a id="ID-77E0C5D5-09EC-47B1-BE3D-BD6CFCC403B3" name="ID-77E0C5D5-09EC-47B1-BE3D-BD6CFCC403B3"&gt;&lt;/a&gt;xxx&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class="tag"&gt;&lt;span class="ATTACH"&gt;ATTACH&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
