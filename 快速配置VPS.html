@@ -464,7 +464,16 @@ ipsec restart
 emacs /usr/local/etc/ipsec.secrets
 </pre>
 <p>
-配置开机自起，待补充下载证书ca.cert.pem，就可以安装使用了
+配置开机自起
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">  systemctl start strongswan
+systemctl enable strongswan
+</pre>
+</div>
+<p>
+下载证书ca.cert.pem，就可以安装使用了
 </p>
 </div>
 </div>
