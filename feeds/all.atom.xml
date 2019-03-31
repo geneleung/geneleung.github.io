@@ -582,17 +582,8 @@ CentOS 7 x86_64
 &lt;p&gt;
 重新安装后会提示root密码和ssh端口，记录下来
 &lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;确认服务器身份&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
-&lt;p&gt;
-从客户端ssh登陆VPS会提示服务器指纹，如：
-&lt;/p&gt;
 &lt;pre class="example"&gt;
-ECDSA …&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="preview"&gt;
+centos 6 也能支持，区别很小 …&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="preview"&gt;
 &lt;p&gt;
 上个月VPS被人黑了，找回来后不得已需要重置，以前配置的都丢了，这里记录下来快速配置的步骤和脚本，再出现类似情况可以快速恢复。具体的原理可以看其他相关的笔记。
 &lt;/p&gt;
@@ -611,6 +602,9 @@ CentOS 7 x86_64
 &lt;p&gt;
 重新安装后会提示root密码和ssh端口，记录下来
 &lt;/p&gt;
+&lt;pre class="example"&gt;
+centos 6 也能支持，区别很小，区别点在下面有提到。不过系统提供的ss配置安装支持只支持centos 6，因此如果安装centos 7用ss会不太方便。
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -688,7 +682,10 @@ passwd xxx
 &lt;div class="org-src-container"&gt;
 
 &lt;pre class="src src-sh"&gt;&lt;span class="org-comment-delimiter"&gt;# &lt;/span&gt;&lt;span class="org-comment"&gt;&amp;#29983;&amp;#25104;&amp;#23494;&amp;#38053;&amp;#23545;&lt;/span&gt;
-ssh-keygen -t rsa -b 4096
+&lt;span class="org-comment-delimiter"&gt;# &lt;/span&gt;&lt;span class="org-comment"&gt;centos6 not support ed25519&lt;/span&gt;
+&lt;span class="org-comment-delimiter"&gt;#&lt;/span&gt;&lt;span class="org-comment"&gt;ssh-keygen -t rsa -b 4096&lt;/span&gt;
+&lt;span class="org-comment-delimiter"&gt;# &lt;/span&gt;&lt;span class="org-comment"&gt;but ed25519 is better than rsa,so use ed25519 as possiable as you can&lt;/span&gt;
+ssh-keygen -o -a 100 -t ed25519
 &lt;span class="org-comment-delimiter"&gt;# &lt;/span&gt;&lt;span class="org-comment"&gt;&amp;#20844;&amp;#38053;&amp;#28155;&amp;#21152;&amp;#21040;&amp;#26381;&amp;#21153;&amp;#31471;&lt;/span&gt;
 ssh-copy-id -i .ssh/id_rsa.pub -p xxx xxx@xxx.xxx.xxx.xxx
 &lt;span class="org-comment-delimiter"&gt;# &lt;/span&gt;&lt;span class="org-comment"&gt;&amp;#22914;&amp;#26524;&amp;#26412;&amp;#26426;&amp;#23384;&amp;#22312;&amp;#22810;&amp;#20010;&amp;#23494;&amp;#38053;&amp;#23545;&amp;#65292;&amp;#21487;&amp;#20197;&amp;#29992;&amp;#19979;&amp;#38754;&amp;#30340;&amp;#21629;&amp;#20196;&amp;#25351;&amp;#23450;&amp;#30331;&amp;#38470;&amp;#26102;&amp;#20351;&amp;#29992;&amp;#30340;&amp;#23494;&amp;#38053;&lt;/span&gt;
@@ -917,7 +914,13 @@ ipsec restart
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;p&gt;
-添加账户
+注意，上面的脚本也支持centos 6，但sysctl的控制无法写入到文件，重启之后转发就没有了，导致能连上，但无法访问网络，因此需要手动修改
+&lt;/p&gt;
+&lt;pre class="example"&gt;
+/etc/sysctl.conf
+&lt;/pre&gt;
+&lt;p&gt;
+配置网络转发。另外centos 6下也不知道如何配置ipsec服务的开机启动，只能每次重启手动执行ipsec start。添加账户
 &lt;/p&gt;
 &lt;pre class="example"&gt;
 emacs /usr/local/etc/ipsec.secrets
@@ -6480,7 +6483,7 @@ calendar/diary package一起使用，形式如下：
 &lt;span class="timestamp-wrapper"&gt;&lt;span class="timestamp"&gt;&amp;lt;%%(diary-float t 4 2)&amp;gt;&lt;/span&gt;&lt;/span&gt;
 &lt;/li&gt;
 &lt;li&gt;时间段，时间范围
-&lt;span class="timestamp-wrapper"&gt;&lt;span class="timestamp"&gt;&amp;lt;2017-08-07 一 10:46&amp;gt;&amp;#x2013;&amp;lt;2017-08-08 二 10:46&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="timestamp-wrapper"&gt;&lt;span class="timestamp"&gt;&amp;lt;2017-08-07 Mon 10:46&amp;gt;&amp;#x2013;&amp;lt;2017-08-08 Tue 10:46&amp;gt;&lt;/span&gt;&lt;/span&gt;
 &lt;/li&gt;
 &lt;li&gt;不活跃的时间戳，也能记录时间，只是不会在agenda中生效
 &lt;span class="timestamp-wrapper"&gt;&lt;span class="timestamp"&gt;[2017-08-07 Mon]&lt;/span&gt;&lt;/span&gt;
