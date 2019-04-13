@@ -151,14 +151,16 @@ chmod +x /usr/local/bin/emacs
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="#sec-1-4"&gt;1.4. 第二章 限定词（一）冠词&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-1-4-1"&gt;1.4.1. 泛指与特指&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-1-4-2"&gt;1.4.2. the修饰复数时一定是表示特指&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-1-4-3"&gt;1.4.3. 是否所有的普通名词前必须有限定词或者说是冠词？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-1-4-4"&gt;1.4.4. 专有名词中的冠词&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-4-1"&gt;1.4.1. 限定词的作用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-4-2"&gt;1.4.2. 泛指与特指&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-4-3"&gt;1.4.3. the修饰复数时一定是表示特指&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-4-4"&gt;1.4.4. 是否所有的普通名词前必须有限定词或者说是冠词？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-4-5"&gt;1.4.5. 专有名词中的冠词&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2"&gt;2. 思考和总结&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -443,6 +445,50 @@ people做“人们，人民”讲的时候，相当于person的复数形式，�
 表示一类人，此时当作复数名词，做主语时谓语要用复数。
 &lt;/p&gt;
 &lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-1-3-7-5" name="sec-1-3-7-5"&gt;&lt;/a&gt;有新词义的复数名词&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-7-5"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;arm
+arms表示军事，武器
+&lt;/li&gt;
+&lt;li&gt;custom 风俗
+customs 海关
+&lt;/li&gt;
+&lt;li&gt;damage 损坏 damages 赔偿金
+&lt;/li&gt;
+&lt;li&gt;letter 信 letters 文学
+&lt;/li&gt;
+&lt;li&gt;minute 分钟 minutes 会议记录
+&lt;/li&gt;
+&lt;li&gt;spirit 精神 spirits 烈酒
+&lt;/li&gt;
+&lt;li&gt;premise 前提 premises 房屋，营业场所
+&lt;/li&gt;
+&lt;li&gt;security 安全 securities 证券
+&lt;/li&gt;
+&lt;li&gt;line 行 lines 台词
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-1-3-7-6" name="sec-1-3-7-6"&gt;&lt;/a&gt;扑克牌的四种花色&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-7-6"&gt;
+&lt;p&gt;
+表示扑克牌花色的时候要用复数
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;hearts 红桃
+&lt;/li&gt;
+&lt;li&gt;spades 黑桃
+&lt;/li&gt;
+&lt;li&gt;clubs 梅花
+&lt;/li&gt;
+&lt;li&gt;diamonds 方块
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+the ace of clubs 梅花尖 the jack of hearts  红桃勾
+&lt;/p&gt;
+&lt;/div&gt;
 &lt;/li&gt;&lt;/ol&gt;
 &lt;/div&gt;
 &lt;div id="outline-container-sec-1-3-8" class="outline-4"&gt;
@@ -489,18 +535,77 @@ people做“人们，人民”讲的时候，相当于person的复数形式，�
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
+&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-1-3-9-1" name="sec-1-3-9-1"&gt;&lt;/a&gt;同位关系&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-9-1"&gt;
+&lt;p&gt;
+这里涉及到一个所有格表示的同位关系，先看下经常出现的同位关系，同位语，同位语从句中的同位到底是个什么概念。
+&lt;/p&gt;
+&lt;pre class="example"&gt;
+For Washington,Bhutto's loss is incalculable.
+&lt;/pre&gt;
+&lt;p&gt;
+这里Bhutto's loss相当于the loss of Bhutto，中心词是loss，Bhutto更像loss的补足语，补充说明loss，书中说Bhutto's相当于一个同位语，
+Bhutto和loss既不是主谓关系，也不是动宾关系。其实不太理解，后面继续理解。看下面这个就很容易理解了。
+&lt;/p&gt;
+&lt;pre class="example"&gt;
+the city of Rome / the news of the team's victory
+&lt;/pre&gt;
+&lt;p&gt;
+这里就可以理解“同位”是什么意思了，其实就是同一种事物的两个不同不同说法，互为补充说明，他们在句中是同一个成分。
+Bhutto's loss的同位关系难理解在于刚好是loss这个词，这里准确说应该是
+&lt;/p&gt;
+&lt;pre class="example"&gt;
+the loss of Bhutto's loss 失去Bhutto的这一损失
+&lt;/pre&gt;
+&lt;p&gt;
+这么一看，同位关系就很明确了。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id="outline-container-sec-1-4" class="outline-3"&gt;
 &lt;h3 id="sec-1-4"&gt;&lt;span class="section-number-3"&gt;1.4&lt;/span&gt; 第二章 限定词（一）冠词&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-1-4"&gt;
 &lt;p&gt;
-限定词是修饰名词的，所以冠词的使用跟名词的可数不可数，单复数关系很大，搞清楚名词的可数与不可数，冠词也就容易掌握了。
+限定词是修饰名词的，所以冠词的使用跟名词的可数不可数，单复数关系很大，搞清楚名词的可数与不可数，冠词也就容易掌握了。英文中的限定词包括：
 &lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;冠词：the,an和a
+&lt;/li&gt;
+&lt;li&gt;基数词和序数词：one/first,two/second,three/third等
+&lt;/li&gt;
+&lt;li&gt;指示限定词：this,that,these和those
+&lt;/li&gt;
+&lt;li&gt;物主限定词：my,your,his,her,our和their
+&lt;/li&gt;
+&lt;li&gt;数量限定词：a few,a little,much,many,a lot
+of,some,any,enough,several,most和all
+&lt;/li&gt;
+&lt;li&gt;个体限定词：each,every,either,neither和both等
+&lt;/li&gt;
+&lt;li&gt;名词属格：Mary's,john's和his father's等
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id="outline-container-sec-1-4-1" class="outline-4"&gt;
-&lt;h4 id="sec-1-4-1"&gt;&lt;span class="section-number-4"&gt;1.4.1&lt;/span&gt; 泛指与特指&lt;/h4&gt;
+&lt;h4 id="sec-1-4-1"&gt;&lt;span class="section-number-4"&gt;1.4.1&lt;/span&gt; 限定词的作用&lt;/h4&gt;
 &lt;div class="outline-text-4" id="text-1-4-1"&gt;
+&lt;p&gt;
+这个问题似乎没什么用，限定词不就是修饰限定名词的吗？还有什么作用？这里想说的是限定词所能够表达的意义，以及在表达这些意义时应该如何使用。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;特指还是泛指
+&lt;/li&gt;
+&lt;li&gt;沟通双方之间的共识
+&lt;/li&gt;
+&lt;li&gt;定指还是不定指
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-4-2" class="outline-4"&gt;
+&lt;h4 id="sec-1-4-2"&gt;&lt;span class="section-number-4"&gt;1.4.2&lt;/span&gt; 泛指与特指&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-4-2"&gt;
 &lt;p&gt;
 一直以来对泛指和特指的概念其实理解的不是很清晰，总是从字面理解为特别的事物，其实不然，泛指就是表示一类事物，或某类事物的总称，特指就是表示某类事物中的具体某一个或某一些，可以这么理解，一个某一个特定事物的全集，一个是子集。对于定冠词的the的理解也存在误区，以前一直the就是特指的，准确的是这样的：
 &lt;/p&gt;
@@ -534,22 +639,69 @@ animal冠词都不知道该怎么用了，另外表达的意义也不清楚，�
 所有的普通名词前必须有限定词吗？必须有冠词吗？特殊用法，固定搭配的已经看到是不用的，其他的呢？
 &lt;/pre&gt;
 &lt;/div&gt;
+&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-1-4-2-1" name="sec-1-4-2-1"&gt;&lt;/a&gt;可数名词表示泛指的三种方法的区别&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-4-2-1"&gt;
+&lt;p&gt;
+先看下面三个例句，都是表示泛指
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;A tiger is a dangerous animal.
+一类事物中任何一个具有代表性的成员。强调个体，可以用any替换，不能表示那些属于整个类别的特性。比如可以用下面这两种方式
+&lt;pre class="example"&gt;
+The tiger is becoming almost extinct./Tigers are becoming almost extinct.
+&lt;/pre&gt;
+&lt;p&gt;
+而不能用“a/an + 单数名词”的方式。另外a/an与单数名词连用表示泛指，主要是限于用在主语的位置，如果是在其他位置则不表示泛指.甚至即使是在主语位置也不一定都是表示泛指的概念。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;The tiger is a dangerous animal.
+&lt;/li&gt;
+&lt;li&gt;Tigers are dangerous animals.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+区别
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;the与单数名词连用时，可以表示泛指。在语气上显得比较正式或文雅，表示一个由典型的样品所代表的那个类别。这种表达方式也可以用来表达这类事物的属性，比如
+&lt;pre class="example"&gt;
+The tiger is becoming almost extinct.而不能说A tiger is becoming almost extinct.
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;可数名词复数，相对于上面的用法，没那么正式或文雅吧。
+&lt;/li&gt;
+&lt;li&gt;a/an + 单数可数名词可以表示泛指，不定冠词a/an的泛指用法指的是某一类事物中任何一个具有代表性的成员，所以我们可以用any来替换a/an
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-sec-1-4-2" class="outline-4"&gt;
-&lt;h4 id="sec-1-4-2"&gt;&lt;span class="section-number-4"&gt;1.4.2&lt;/span&gt; the修饰复数时一定是表示特指&lt;/h4&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-1-4-2-2" name="sec-1-4-2-2"&gt;&lt;/a&gt;the的特指用法&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-4-2-2"&gt;
+&lt;p&gt;
+什么是特指？就是指根据说话者和听话者共有的知识，或根据上下文，可以识别的独特的某物。换句话说，说话者用the是想要听话者找到双方心中都知道的所指，而听话者一方“判断”或“还原”所指对象的方法有多种。一般来说的特指模式（判断方法）：
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;情景/文化特指
+&lt;/li&gt;
+&lt;li&gt;上下文共指
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;
 &lt;/div&gt;
 &lt;div id="outline-container-sec-1-4-3" class="outline-4"&gt;
-&lt;h4 id="sec-1-4-3"&gt;&lt;span class="section-number-4"&gt;1.4.3&lt;/span&gt; 是否所有的普通名词前必须有限定词或者说是冠词？&lt;/h4&gt;
-&lt;div class="outline-text-4" id="text-1-4-3"&gt;
+&lt;h4 id="sec-1-4-3"&gt;&lt;span class="section-number-4"&gt;1.4.3&lt;/span&gt; the修饰复数时一定是表示特指&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-4-4" class="outline-4"&gt;
+&lt;h4 id="sec-1-4-4"&gt;&lt;span class="section-number-4"&gt;1.4.4&lt;/span&gt; 是否所有的普通名词前必须有限定词或者说是冠词？&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-4-4"&gt;
 &lt;p&gt;
 我的理解是必须的。可以发现英语的逻辑思维对于名词的表达英语一定会说清这个名词的单复数，多个还是一个，某个还是一类，这种准确的表达是英语的思维，所以冠词就像单复数一样，英语中说一个名词时一定会区分他的单复数，所以冠词也一定会区分。对于一次词组的特殊用法，比如 by
 train,on foot这些，不需要加冠词，很合理，因为上面我们说的是英语在表达名词概念时的逻辑思维，上面的特殊词组已经不再是表示名词概念的了。
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-sec-1-4-4" class="outline-4"&gt;
-&lt;h4 id="sec-1-4-4"&gt;&lt;span class="section-number-4"&gt;1.4.4&lt;/span&gt; 专有名词中的冠词&lt;/h4&gt;
-&lt;div class="outline-text-4" id="text-1-4-4"&gt;
+&lt;div id="outline-container-sec-1-4-5" class="outline-4"&gt;
+&lt;h4 id="sec-1-4-5"&gt;&lt;span class="section-number-4"&gt;1.4.5&lt;/span&gt; 专有名词中的冠词&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-4-5"&gt;
 &lt;p&gt;
 前面说的是普通名词前是否必须有限定词，看下专有名词。在讲专有名词那一节的时候，可以看到，有些专有名词有定冠词the，有些没有，那么什么时候应该有什么时候应该没有呢？对于独一无二的概念，一般就没必要加了，应该一提到大家都知道就这么一个，否则还是有的，特指这个专业的名词。
 &lt;/p&gt;
@@ -582,6 +734,44 @@ england的queen
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;span class="section-number-2"&gt;2&lt;/span&gt; 思考和总结&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+目前总结的的英语学习的几个关键点
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;名次的单复数
+&lt;/li&gt;
+&lt;li&gt;限定词的使用
+&lt;/li&gt;
+&lt;li&gt;'s与of所有格
+&lt;/li&gt;
+&lt;li&gt;形容词的位置
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;前置的
+&lt;/li&gt;
+&lt;li&gt;后置的
+&lt;/li&gt;
+&lt;li&gt;多个形容词的顺序
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;陈述句，一般疑问句和特殊疑问句的形式
+&lt;/li&gt;
+&lt;li&gt;五大基本句型
+&lt;/li&gt;
+&lt;li&gt;谓词决定句子的骨架，各个谓词常见固定搭配，使用形式的积累
+&lt;/li&gt;
+&lt;li&gt;时态的真正含义的理解和使用
+&lt;/li&gt;
+&lt;li&gt;从句
+&lt;/li&gt;
+&lt;li&gt;不要被词性所限制，而要重点从词或者词组或短语在句子中起到的作用来学习和理解词，比如名词也是可以做定语的，重点在于这个词起的作用，而不是他的词性限制他能做什么不能做什么；还有不定式短语做宾语，补语之类；分词做主语之类，都是类似的。
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </content><category term="english"></category></entry><entry><title>快速配置VPS</title><link href="http://www.iknockdoor.com/%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AEVPS.html" rel="alternate"></link><published>2018-12-07T00:00:00+08:00</published><updated>2018-12-07T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-12-07:/快速配置VPS.html</id><summary type="html">&lt;div class="preview"&gt;
@@ -6504,7 +6694,7 @@ calendar/diary package一起使用，形式如下：
 &lt;span class="timestamp-wrapper"&gt;&lt;span class="timestamp"&gt;&amp;lt;%%(diary-float t 4 2)&amp;gt;&lt;/span&gt;&lt;/span&gt;
 &lt;/li&gt;
 &lt;li&gt;时间段，时间范围
-&lt;span class="timestamp-wrapper"&gt;&lt;span class="timestamp"&gt;&amp;lt;2017-08-07 Mon 10:46&amp;gt;&amp;#x2013;&amp;lt;2017-08-08 Tue 10:46&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class="timestamp-wrapper"&gt;&lt;span class="timestamp"&gt;&amp;lt;2017-08-07 一 10:46&amp;gt;&amp;#x2013;&amp;lt;2017-08-08 二 10:46&amp;gt;&lt;/span&gt;&lt;/span&gt;
 &lt;/li&gt;
 &lt;li&gt;不活跃的时间戳，也能记录时间，只是不会在agenda中生效
 &lt;span class="timestamp-wrapper"&gt;&lt;span class="timestamp"&gt;[2017-08-07 Mon]&lt;/span&gt;&lt;/span&gt;
