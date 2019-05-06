@@ -1008,31 +1008,18 @@ england的queen
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="english"></category></entry><entry><title>快速配置VPS</title><link href="http://www.iknockdoor.com/%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AEVPS.html" rel="alternate"></link><published>2018-12-07T00:00:00+08:00</published><updated>2018-12-07T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-12-07:/快速配置VPS.html</id><summary type="html">&lt;div class="preview"&gt;
-&lt;p&gt;
-上个月VPS被人黑了，找回来后不得已需要重置，以前配置的都丢了，这里记录下来快速配置的步骤和脚本，再出现类似情况可以快速恢复。具体的原理可以看其他相关的笔记。
-&lt;/p&gt;
-
+</content><category term="english"></category></entry><entry><title>快速配置VPS</title><link href="http://www.iknockdoor.com/%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AEVPS.html" rel="alternate"></link><published>2018-12-07T00:00:00+08:00</published><updated>2018-12-07T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-12-07:/快速配置VPS.html</id><summary type="html">上个月VPS被人黑了，找回来后不得已需要重置，以前配置的都丢了，这里记录 下来快速配置的步骤和脚本，再出现类似情况可以快速恢复。具体的原理可以看 其他相关的笔记。</summary><content type="html">&lt;div id="table-of-contents"&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;div id="text-table-of-contents"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#sec-1"&gt;重新安装操作系统&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2"&gt;确认服务器身份&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-3"&gt;安装emacs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-4"&gt;添加普通用户&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-5"&gt;配置sshd安全加固&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-6"&gt;配置ipsec&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
-
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;重新安装操作系统&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-KiwiVM上stop服务器，然后install new OS
-&lt;/p&gt;
-&lt;pre class="example"&gt;
-CentOS 7 x86_64
-&lt;/pre&gt;
-&lt;p&gt;
-重新安装后会提示root密码和ssh端口，记录下来
-&lt;/p&gt;
-&lt;pre class="example"&gt;
-centos 6 也能支持，区别很小 …&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="preview"&gt;
-&lt;p&gt;
-上个月VPS被人黑了，找回来后不得已需要重置，以前配置的都丢了，这里记录下来快速配置的步骤和脚本，再出现类似情况可以快速恢复。具体的原理可以看其他相关的笔记。
-&lt;/p&gt;
-
 &lt;/div&gt;
 
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
@@ -1384,42 +1371,7 @@ systemctl enable strongswan
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content></entry><entry><title>VPS新装基本环境搭建</title><link href="http://www.iknockdoor.com/VPS%E6%96%B0%E8%A3%85%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.html" rel="alternate"></link><published>2018-12-04T00:00:00+08:00</published><updated>2018-12-04T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-12-04:/VPS新装基本环境搭建.html</id><summary type="html">&lt;div class="preview"&gt;
-&lt;p&gt;
-哈哈哈，简介
-&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;install OS&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;pre class="example"&gt;
-centos-7-x86_64
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;验证服务器ssh指纹，避免中间人攻击&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
-&lt;/div&gt;&lt;div id="outline-container-sec-2-1" class="outline-3"&gt;
-&lt;h3 id="sec-2-1"&gt;原理&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-2-1"&gt;
-&lt;p&gt;
-服务器在安装openssh-server之后会生成各支持的加密算法的私钥和公钥，通常在下面的目录&lt;sup&gt;&lt;a id="fnr.1" name="fnr.1" class="footref" href="#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;下，pub的文件就是公钥文件了
-&lt;/p&gt;
-&lt;pre class="example"&gt;
-/etc/ssh/
-&lt;/pre&gt;
-&lt;div class="org-src-container"&gt;
-
-&lt;pre class="src src-bash"&gt;   $ ls -1 /etc/ssh/ssh_host …&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="preview"&gt;
-&lt;p&gt;
-哈哈哈，简介
-&lt;/p&gt;
-
-&lt;/div&gt;
-
+</content></entry><entry><title>VPS新装基本环境搭建</title><link href="http://www.iknockdoor.com/VPS%E6%96%B0%E8%A3%85%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.html" rel="alternate"></link><published>2018-12-04T00:00:00+08:00</published><updated>2018-12-04T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-12-04:/VPS新装基本环境搭建.html</id><summary type="html">VPS新装基本环境搭建，快速安装，使用方便，安全的VPS</summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;install OS&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -1680,24 +1632,7 @@ adb connect HOST[:PORT]      connect to a device via TCP/IP [default &lt;span cl
 &lt;p&gt;
 就这样很简单。
 &lt;/p&gt;
-</content><category term="android"></category><category term="adb"></category><category term="调试"></category></entry><entry><title>Could not open Selected VM debug port (8700)</title><link href="http://www.iknockdoor.com/Could%20not%20open%20Selected%20VM%20debug%20port%20(8700).html" rel="alternate"></link><published>2018-11-22T00:00:00+08:00</published><updated>2018-11-22T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-22:/Could not open Selected VM debug port (8700).html</id><summary type="html">
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;a id="ID-77E0C5D5-09EC-47B1-BE3D-BD6CFCC403B3" name="ID-77E0C5D5-09EC-47B1-BE3D-BD6CFCC403B3"&gt;&lt;/a&gt;xxx&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class="tag"&gt;&lt;span class="ATTACH"&gt;ATTACH&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-
-&lt;p&gt;
-今天Android studio毫无征兆的突然连不上手机调试了，但是通过terminal中的
-adb命令却可以连上，百思不得其解。提示如下错误：
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;img src="data/77/E0C5D5-09EC-47B1-BE3D-BD6CFCC403B3/sreencapture_2018-11-22_14-48-45.png" alt="sreencapture_2018-11-22_14-48-45.png" /&gt;
-然而检查本地并没有端口占用或其他adb进程了。查看Android Stuido Event
-log如下：
-&lt;/p&gt;
-&lt;div class="org-src-container"&gt;
-
-&lt;pre class="src src-bash"&gt;14:41   Could not open Selected VM …&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+</content><category term="android"></category><category term="adb"></category><category term="调试"></category></entry><entry><title>Could not open Selected VM debug port (8700)</title><link href="http://www.iknockdoor.com/Could%20not%20open%20Selected%20VM%20debug%20port%20(8700).html" rel="alternate"></link><published>2018-11-22T00:00:00+08:00</published><updated>2018-11-22T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-22:/Could not open Selected VM debug port (8700).html</id><summary type="html">今天Android studio毫无征兆的突然连不上手机调试了，但是通过terminal中的adb命令却可以连上，百思不得其解。</summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;a id="ID-77E0C5D5-09EC-47B1-BE3D-BD6CFCC403B3" name="ID-77E0C5D5-09EC-47B1-BE3D-BD6CFCC403B3"&gt;&lt;/a&gt;xxx&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class="tag"&gt;&lt;span class="ATTACH"&gt;ATTACH&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -2571,33 +2506,9 @@ test
 &lt;p&gt;
 第一次知道张雨生还是因为我的父亲，我的父亲特别喜欢张雨生，小的时候在电视上看到张雨生，我父亲说那是他弟弟，我一直以为是真的，每次在电视上看到张雨生都会很兴奋的说我爸爸弟弟出来了。长大后听张雨生的歌，是那样的清澈，那样的励志，相比当代的靡靡之音，简直就是一股清流。欣赏之于让人肃然起敬，，看他本人如同一个学生一样，毫无偶像包袱，就是这样的一个人带给我们如此美妙的事物，想到这里又不禁想起因为哥哥才接触到的黄家驹，多少人才让人崇拜让人尊敬，感谢他们给我们带来的乐趣，带来的另一个世界，也许我们永远无法达到他们的境界，但我们会尽量在自己擅长的领域学习他们精神。感谢他们带来的作品，也感谢他们教会我们如何做人。
 &lt;/p&gt;
-</content></entry><entry><title>RecyclerView版本问题</title><link href="http://www.iknockdoor.com/RecyclerView%E7%89%88%E6%9C%AC%E9%97%AE%E9%A2%98.html" rel="alternate"></link><published>2018-09-10T00:00:00+08:00</published><updated>2018-09-10T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-09-10:/RecyclerView版本问题.html</id><summary type="html">&lt;div id="table-of-contents"&gt;
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;div id="text-table-of-contents"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-1"&gt;1. RecyclerView 23.0.1版本和26.0的版本在measure过程有比较大的差异&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2"&gt;2. 由上面这个问题导致对measure和layout的理解&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-2-1"&gt;2.1. getHeight和getMeasuredHeight&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2-2"&gt;2.2. MeasureSpec的AT&lt;sub&gt;MOST&lt;/sub&gt;,EXACTLY,UNSPECTFIED与MATCH …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div id="table-of-contents"&gt;
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;div id="text-table-of-contents"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-1"&gt;1. RecyclerView 23.0.1版本和26.0的版本在measure过程有比较大的差异&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2"&gt;2. 由上面这个问题导致对measure和layout的理解&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-2-1"&gt;2.1. getHeight和getMeasuredHeight&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2-2"&gt;2.2. MeasureSpec的AT&lt;sub&gt;MOST&lt;/sub&gt;,EXACTLY,UNSPECTFIED与MATCH&lt;sub&gt;PARENT，WRAP&lt;/sub&gt;&lt;sub&gt;CONTENT的关系&lt;/sub&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2-3"&gt;2.3. scroll&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-3"&gt;3. NestedScrollView的fling问题&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
+</content></entry><entry><title>RecyclerView版本问题</title><link href="http://www.iknockdoor.com/RecyclerView%E7%89%88%E6%9C%AC%E9%97%AE%E9%A2%98.html" rel="alternate"></link><published>2018-09-10T00:00:00+08:00</published><updated>2018-09-10T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-09-10:/RecyclerView版本问题.html</id><summary type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; RecyclerView 23.0.1版本和26.0的版本在measure过程有比较大的差异&lt;/h2&gt;
+&lt;h2 id="sec-1"&gt;RecyclerView 23.0.1版本和26.0的版本在measure过程有比较大的差异&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 如果父亲给定UNSPECIFIED的高度，23的版本会measure高度为0，而26的版本会measure出自己所需要的高度。
@@ -2605,10 +2516,29 @@ test
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;&lt;span class="section-number-2"&gt;2&lt;/span&gt; 由上面这个问题导致对measure和layout的理解&lt;/h2&gt;
+&lt;h2 id="sec-2"&gt;由上面这个问题导致对measure和layout的理解&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-2"&gt;
 &lt;/div&gt;&lt;div id="outline-container-sec-2-1" class="outline-3"&gt;
-&lt;h3 id="sec-2-1"&gt;&lt;span class="section-number-3"&gt;2.1&lt;/span&gt; getHeight和getMeasuredHeight&lt;/h3&gt;
+&lt;h3 id="sec-2-1"&gt;getHeight和getMeasuredHeight&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-1"&gt;
+&lt;p&gt;
+已经知道getMeasuredHeight给的是mMeasuredHeight的值，即测量值。而
+getHeight给的是bottom-top的值。之前会认为控件会根据mMeasuredHeight
+的值来计算bottom和top的值，时尚上，这并不是强相关的，甚至bottom和
+top的值跟控件的实际宽高和布局都不要有关系 …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;RecyclerView 23.0.1版本和26.0的版本在measure过程有比较大的差异&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+如果父亲给定UNSPECIFIED的高度，23的版本会measure高度为0，而26的版本会measure出自己所需要的高度。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;由上面这个问题导致对measure和layout的理解&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-2-1" class="outline-3"&gt;
+&lt;h3 id="sec-2-1"&gt;getHeight和getMeasuredHeight&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-2-1"&gt;
 &lt;p&gt;
 已经知道getMeasuredHeight给的是mMeasuredHeight的值，即测量值。而
@@ -2627,7 +2557,7 @@ LinearLayout的实际内容可以超出屏幕，但他以这样的方式计算t,
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id="outline-container-sec-2-2" class="outline-3"&gt;
-&lt;h3 id="sec-2-2"&gt;&lt;span class="section-number-3"&gt;2.2&lt;/span&gt; MeasureSpec的AT&lt;sub&gt;MOST&lt;/sub&gt;,EXACTLY,UNSPECTFIED与MATCH&lt;sub&gt;PARENT，WRAP&lt;/sub&gt;&lt;sub&gt;CONTENT的关系&lt;/sub&gt;&lt;/h3&gt;
+&lt;h3 id="sec-2-2"&gt;MeasureSpec的AT_MOST,EXACTLY,UNSPECTFIED与MATCH_PARENT，WRAP_CONTENT的关系&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-2-2"&gt;
 &lt;p&gt;
 涉及到measure过程的核心部分，通常这个对应关系是由layout自己来决定的，但Android将这一部分抽象来出来，大部分控件会默认采用这种对应关系，少数控件会根据自己的情况做调整，比如scrollview，即使父亲给来EXACTLY，他也会在可滚动的方向上给子控件UNSPECTFIED。
@@ -2648,7 +2578,7 @@ view的spec
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id="outline-container-sec-2-3" class="outline-3"&gt;
-&lt;h3 id="sec-2-3"&gt;&lt;a id="ID-81D03D44-3022-406C-A169-F0A506A6EC2D" name="ID-81D03D44-3022-406C-A169-F0A506A6EC2D"&gt;&lt;/a&gt;&lt;span class="section-number-3"&gt;2.3&lt;/span&gt; scroll&lt;/h3&gt;
+&lt;h3 id="sec-2-3"&gt;&lt;a id="ID-81D03D44-3022-406C-A169-F0A506A6EC2D" name="ID-81D03D44-3022-406C-A169-F0A506A6EC2D"&gt;&lt;/a&gt;scroll&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-2-3"&gt;
 &lt;p&gt;
 &lt;img src="data/81/D03D44-3022-406C-A169-F0A506A6EC2D/sreencapture_2018-09-10_14-52-50.png" alt="sreencapture_2018-09-10_14-52-50.png" /&gt;                                                            :ATTACH:
@@ -2665,7 +2595,7 @@ range,extend和offest三个函数会结合控件的宽高计算，计算方式�
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id="outline-container-sec-3" class="outline-2"&gt;
-&lt;h2 id="sec-3"&gt;&lt;span class="section-number-2"&gt;3&lt;/span&gt; NestedScrollView的fling问题&lt;/h2&gt;
+&lt;h2 id="sec-3"&gt;NestedScrollView的fling问题&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-3"&gt;
 &lt;p&gt;
 NestedScrollView的scroll是没有问题的，但是fling效果是无法从内到外的连续起来的。有两种实现思路：
@@ -2681,26 +2611,7 @@ scrollby函数。这样有个缺点，像RecyclerView这样的控件，内部有
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content></entry><entry><title>Android消息传递机制</title><link href="http://www.iknockdoor.com/Android%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92%E6%9C%BA%E5%88%B6.html" rel="alternate"></link><published>2018-07-03T00:00:00+08:00</published><updated>2018-07-03T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-07-03:/Android消息传递机制.html</id><summary type="html">&lt;div id="table-of-contents"&gt;
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;div id="text-table-of-contents"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-1"&gt;1. 传递规则&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2"&gt;2. 分发机制&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-3"&gt;3. 多点触摸处理&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-4"&gt;4. 历史事件获取&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; 传递规则&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;如果消费touch down消息后续move等消息才会传给他
-&lt;/li&gt;
-&lt;li&gt;消息默认都是优先传给子view处理，如果子view不处理，父view再处理
-&lt;/li&gt;
-&lt;li&gt;如果一个group自己包括子view都不处理down消息，move消息也就不会传给这个group了 …&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div id="table-of-contents"&gt;
+</content></entry><entry><title>Android消息传递机制</title><link href="http://www.iknockdoor.com/Android%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92%E6%9C%BA%E5%88%B6.html" rel="alternate"></link><published>2018-07-03T00:00:00+08:00</published><updated>2018-07-03T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-07-03:/Android消息传递机制.html</id><summary type="html">深入理解Android事件分发机制和事件流的处理</summary><content type="html">&lt;div id="table-of-contents"&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id="text-table-of-contents"&gt;
 &lt;ul&gt;
@@ -3575,19 +3486,7 @@ Demo做好了，小龙一看，不如把它合并到微信里面吧，于是就�
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content></entry><entry><title>1加6普通用户评</title><link href="http://www.iknockdoor.com/1%E5%8A%A06%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E8%AF%84%E6%B5%8B.html" rel="alternate"></link><published>2018-05-25T00:00:00+08:00</published><updated>2018-05-25T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-05-25:/1加6普通用户评测.html</id><summary type="html">&lt;p&gt;
-型号：6G内存，128G ROM，墨石黑
-&lt;/p&gt;
-
-&lt;p&gt;
-用了一天，各方面都中规中矩，没有槽点，下面是具体感受：
-&lt;/p&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;CPU有点屌，速度很快，硬件性能强大是亮点
-&lt;/li&gt;
-&lt;li&gt;4G网速感觉比之前的nexus 6p块很多，不晓得为啥
-&lt;/li&gt;
-&lt;li&gt;屏幕比之前用的 nexus 6p渣，宽度为1080像素，400ppi …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;
+</content></entry><entry><title>1加6普通用户评</title><link href="http://www.iknockdoor.com/1%E5%8A%A06%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E8%AF%84%E6%B5%8B.html" rel="alternate"></link><published>2018-05-25T00:00:00+08:00</published><updated>2018-05-25T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-05-25:/1加6普通用户评测.html</id><summary type="html">用了一天，各方面都中规中矩，没有亮点，槽点不少</summary><content type="html">&lt;p&gt;
 型号：6G内存，128G ROM，墨石黑
 &lt;/p&gt;
 
@@ -3694,17 +3593,7 @@ iPhone真的是越来越不好用了，很介意的几个问题：
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content></entry><entry><title>Android UI开发知识点</title><link href="http://www.iknockdoor.com/Android%20UI%E5%BC%80%E5%8F%91%E7%9F%A5%E8%AF%86%E7%82%B9.html" rel="alternate"></link><published>2018-04-04T00:00:00+08:00</published><updated>2018-04-04T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-04-04:/Android UI开发知识点.html</id><summary type="html">&lt;div id="table-of-contents"&gt;
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;div id="text-table-of-contents"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-1"&gt;1. 子view要的大小父view满足不了会怎样？&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class="tag"&gt;&lt;span class="__"&gt;技术&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2"&gt;2. 布局参数&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-3"&gt;3. view绘制的三个流程的调用关系&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-4"&gt;4. 滚动原理，界面绘制与自定义view&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-5"&gt;5. 为什么要有measure的过程，measure的数据有什么用？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-6"&gt;6. 计算大小的时候跟layout有没有关系？measure的宽高跟用顶点计算的宽高有什么异同？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-7"&gt;7 …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div id="table-of-contents"&gt;
+</content></entry><entry><title>Android UI开发知识点</title><link href="http://www.iknockdoor.com/Android%20UI%E5%BC%80%E5%8F%91%E7%9F%A5%E8%AF%86%E7%82%B9.html" rel="alternate"></link><published>2018-04-04T00:00:00+08:00</published><updated>2018-04-04T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-04-04:/Android UI开发知识点.html</id><summary type="html">Android UI开发知识积累，一些自己问过的问题，自问自答</summary><content type="html">&lt;div id="table-of-contents"&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id="text-table-of-contents"&gt;
 &lt;ul&gt;
@@ -4011,15 +3900,7 @@ measure和layout，因此不会有性能问题，那么属性动画呢？经过�
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content></entry><entry><title>Android界面开发积累</title><link href="http://www.iknockdoor.com/Android%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91%E7%A7%AF%E7%B4%AF.html" rel="alternate"></link><published>2018-03-13T00:00:00+08:00</published><updated>2018-03-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-03-13:/Android界面开发积累.html</id><summary type="html">&lt;div id="table-of-contents"&gt;
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;div id="text-table-of-contents"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-1"&gt;1. 获取root layout&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2"&gt;2. width与mesured width&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-3"&gt;3. 同一个view能够同时出现在两个地方？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-4"&gt;4. mesure或者layout到底怎么处理MATCH&lt;sub&gt;PARENT的？如果有margin值呢？&lt;/sub&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-5"&gt;5. 通常measure layout这些是以哪个位置为准的？左上角？baseline …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div id="table-of-contents"&gt;
+</content></entry><entry><title>Android界面开发积累</title><link href="http://www.iknockdoor.com/Android%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91%E7%A7%AF%E7%B4%AF.html" rel="alternate"></link><published>2018-03-13T00:00:00+08:00</published><updated>2018-03-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-03-13:/Android界面开发积累.html</id><summary type="html">一些界面开发知识，自己的思考，自问自答</summary><content type="html">&lt;div id="table-of-contents"&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id="text-table-of-contents"&gt;
 &lt;ul&gt;
@@ -4435,20 +4316,7 @@ java.lang.annotation.Annotation的接口
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content></entry><entry><title>Android的LayoutParams</title><link href="http://www.iknockdoor.com/Android%E7%9A%84LayoutParams.html" rel="alternate"></link><published>2018-01-16T00:00:00+08:00</published><updated>2018-01-16T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-01-16:/Android的LayoutParams.html</id><summary type="html">&lt;div id="table-of-contents"&gt;
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;div id="text-table-of-contents"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-1"&gt;1. 布局参数由view持有，由view直接上级的viewgroup使用&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2"&gt;2. LayoutParams的创建时机&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-2-1"&gt;2.1. 从布局文件创建&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2-2"&gt;2.2. 从代码创建&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-3"&gt;3. LayoutParams的类型&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-4"&gt;4. 自定义布局&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-5"&gt;5. 参考 …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div id="table-of-contents"&gt;
+</content></entry><entry><title>Android的LayoutParams</title><link href="http://www.iknockdoor.com/Android%E7%9A%84LayoutParams.html" rel="alternate"></link><published>2018-01-16T00:00:00+08:00</published><updated>2018-01-16T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-01-16:/Android的LayoutParams.html</id><summary type="html">对于Android界面布局和layout过程的理解</summary><content type="html">&lt;div id="table-of-contents"&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id="text-table-of-contents"&gt;
 &lt;ul&gt;
@@ -4530,17 +4398,7 @@ view持有的LayoutParams一定是父容器ViewGroup的LayoutParams类，在添�
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content></entry><entry><title>Android的attrs,style和theme</title><link href="http://www.iknockdoor.com/Android%E7%9A%84attrs,style%E5%92%8Ctheme.html" rel="alternate"></link><published>2018-01-16T00:00:00+08:00</published><updated>2018-01-16T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-01-16:/Android的attrs,style和theme.html</id><summary type="html">&lt;div id="table-of-contents"&gt;
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;div id="text-table-of-contents"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-1"&gt;1. Android的attrs,style和theme&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-1-1"&gt;1.1. attrs和styleable&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-1-1-1"&gt;1.1.1. 什么是styleable和attrs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-1-1-2"&gt;1.1.2. 如何定义styleable和attrs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-1-1-3"&gt;1.1.3 …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div id="table-of-contents"&gt;
+</content></entry><entry><title>Android的attrs,style和theme</title><link href="http://www.iknockdoor.com/Android%E7%9A%84attrs,style%E5%92%8Ctheme.html" rel="alternate"></link><published>2018-01-16T00:00:00+08:00</published><updated>2018-01-16T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-01-16:/Android的attrs,style和theme.html</id><summary type="html">其实Android的theme，style还挺重要的，应该是Android界面的开发的基础</summary><content type="html">&lt;div id="table-of-contents"&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id="text-table-of-contents"&gt;
 &lt;ul&gt;
@@ -4866,27 +4724,7 @@ TypedArray a =  context.obtainStyledAttributes(attrs, com.android.internal.R.sty
 &lt;li&gt;继续当前的职业生涯
 &lt;/li&gt;
 &lt;/ul&gt;
-</content></entry><entry><title>Beyond Compare 4.2.3激活</title><link href="http://www.iknockdoor.com/Beyond%20Compare%204.2.3%E6%BF%80%E6%B4%BB.html" rel="alternate"></link><published>2018-01-06T00:00:00+08:00</published><updated>2018-01-06T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-01-06:/Beyond Compare 4.2.3激活.html</id><summary type="html">&lt;div id="table-of-contents"&gt;
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;div id="text-table-of-contents"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-1"&gt;1. Beyond Compare 4.2.3 (Build 22587)&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class="tag"&gt;&lt;span class="ATTACH"&gt;ATTACH&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2"&gt;2. 官方app和中文翻译&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;a id="ID-45EF9D15-80D8-46A6-B0DA-21ABB3DB558E" name="ID-45EF9D15-80D8-46A6-B0DA-21ABB3DB558E"&gt;&lt;/a&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; Beyond Compare 4.2.3 …&lt;/h2&gt;&lt;/div&gt;</summary><content type="html">&lt;div id="table-of-contents"&gt;
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;div id="text-table-of-contents"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-1"&gt;1. Beyond Compare 4.2.3 (Build 22587)&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class="tag"&gt;&lt;span class="ATTACH"&gt;ATTACH&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2"&gt;2. 官方app和中文翻译&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
+</content></entry><entry><title>Beyond Compare 4.2.3激活</title><link href="http://www.iknockdoor.com/Beyond%20Compare%204.2.3%E6%BF%80%E6%B4%BB.html" rel="alternate"></link><published>2018-01-06T00:00:00+08:00</published><updated>2018-01-06T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-01-06:/Beyond Compare 4.2.3激活.html</id><summary type="html">Beyond Compare 4.2.3 (Build 22587)激活码</summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;a id="ID-45EF9D15-80D8-46A6-B0DA-21ABB3DB558E" name="ID-45EF9D15-80D8-46A6-B0DA-21ABB3DB558E"&gt;&lt;/a&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; Beyond Compare 4.2.3 (Build 22587)&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class="tag"&gt;&lt;span class="ATTACH"&gt;ATTACH&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;

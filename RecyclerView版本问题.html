@@ -8,15 +8,26 @@
         <link rel="stylesheet" type="text/css" href="http://www.iknockdoor.com/theme/css/custom.css" />
         <link href="http://www.iknockdoor.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="iknockdoor Full Atom Feed" />
 
-<meta name="description" content="<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#sec-1">1. RecyclerView 23.0.1版本和26.0的版本在measure过程有比较大的差异</a></li>
-<li><a href="#sec-2">2. 由上面这个问题导致对measure和layout的理解</a>
-<ul>
-<li><a href="#sec-2-1">2.1. getHeight和getMeasuredHeight</a></li>
-<li><a href="#sec-2-2">2.2. MeasureSpec的AT<sub>MOST</sub>,EXACTLY,UNSPECTFIED与MATCH …</a></li></ul></li></ul></div></div>" />
+<meta name="description" content="
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">RecyclerView 23.0.1版本和26.0的版本在measure过程有比较大的差异</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+如果父亲给定UNSPECIFIED的高度，23的版本会measure高度为0，而26的版本会measure出自己所需要的高度。
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">由上面这个问题导致对measure和layout的理解</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">getHeight和getMeasuredHeight</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+已经知道getMeasuredHeight给的是mMeasuredHeight的值，即测量值。而
+getHeight给的是bottom-top的值。之前会认为控件会根据mMeasuredHeight
+的值来计算bottom和top的值，时尚上，这并不是强相关的，甚至bottom和
+top的值跟控件的实际宽高和布局都不要有关系 …</p></div></div></div>" />
 
 <script>var _gaq=[['_setAccount','UA-103057848-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
         <!-- mathjax config similar to math.stackexchange -->
@@ -124,25 +135,9 @@
     </div>
   </footer><!-- /.post-info -->
   <div class="entry-content">
-    <div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#sec-1">1. RecyclerView 23.0.1版本和26.0的版本在measure过程有比较大的差异</a></li>
-<li><a href="#sec-2">2. 由上面这个问题导致对measure和layout的理解</a>
-<ul>
-<li><a href="#sec-2-1">2.1. getHeight和getMeasuredHeight</a></li>
-<li><a href="#sec-2-2">2.2. MeasureSpec的AT<sub>MOST</sub>,EXACTLY,UNSPECTFIED与MATCH<sub>PARENT，WRAP</sub><sub>CONTENT的关系</sub></a></li>
-<li><a href="#sec-2-3">2.3. scroll</a></li>
-</ul>
-</li>
-<li><a href="#sec-3">3. NestedScrollView的fling问题</a></li>
-</ul>
-</div>
-</div>
-
+    
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> RecyclerView 23.0.1版本和26.0的版本在measure过程有比较大的差异</h2>
+<h2 id="sec-1">RecyclerView 23.0.1版本和26.0的版本在measure过程有比较大的差异</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 如果父亲给定UNSPECIFIED的高度，23的版本会measure高度为0，而26的版本会measure出自己所需要的高度。
@@ -150,10 +145,10 @@
 </div>
 </div>
 <div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> 由上面这个问题导致对measure和layout的理解</h2>
+<h2 id="sec-2">由上面这个问题导致对measure和layout的理解</h2>
 <div class="outline-text-2" id="text-2">
 </div><div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> getHeight和getMeasuredHeight</h3>
+<h3 id="sec-2-1">getHeight和getMeasuredHeight</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 已经知道getMeasuredHeight给的是mMeasuredHeight的值，即测量值。而
@@ -172,7 +167,7 @@ LinearLayout的实际内容可以超出屏幕，但他以这样的方式计算t,
 </div>
 </div>
 <div id="outline-container-sec-2-2" class="outline-3">
-<h3 id="sec-2-2"><span class="section-number-3">2.2</span> MeasureSpec的AT<sub>MOST</sub>,EXACTLY,UNSPECTFIED与MATCH<sub>PARENT，WRAP</sub><sub>CONTENT的关系</sub></h3>
+<h3 id="sec-2-2">MeasureSpec的AT_MOST,EXACTLY,UNSPECTFIED与MATCH_PARENT，WRAP_CONTENT的关系</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 涉及到measure过程的核心部分，通常这个对应关系是由layout自己来决定的，但Android将这一部分抽象来出来，大部分控件会默认采用这种对应关系，少数控件会根据自己的情况做调整，比如scrollview，即使父亲给来EXACTLY，他也会在可滚动的方向上给子控件UNSPECTFIED。
@@ -193,7 +188,7 @@ view的spec
 </div>
 </div>
 <div id="outline-container-sec-2-3" class="outline-3">
-<h3 id="sec-2-3"><a id="ID-81D03D44-3022-406C-A169-F0A506A6EC2D" name="ID-81D03D44-3022-406C-A169-F0A506A6EC2D"></a><span class="section-number-3">2.3</span> scroll</h3>
+<h3 id="sec-2-3"><a id="ID-81D03D44-3022-406C-A169-F0A506A6EC2D" name="ID-81D03D44-3022-406C-A169-F0A506A6EC2D"></a>scroll</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 <img src="data/81/D03D44-3022-406C-A169-F0A506A6EC2D/sreencapture_2018-09-10_14-52-50.png" alt="sreencapture_2018-09-10_14-52-50.png" />                                                            :ATTACH:
@@ -210,7 +205,7 @@ range,extend和offest三个函数会结合控件的宽高计算，计算方式�
 </div>
 </div>
 <div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> NestedScrollView的fling问题</h2>
+<h2 id="sec-3">NestedScrollView的fling问题</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 NestedScrollView的scroll是没有问题的，但是fling效果是无法从内到外的连续起来的。有两种实现思路：

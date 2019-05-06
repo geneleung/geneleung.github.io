@@ -229,40 +229,32 @@
 <article>
 	<header><h3><a href="http://www.iknockdoor.com/RecyclerView版本问题.html">RecyclerView版本问题</a></h3></header>
 	<footer class="title_info"><a href="http://www.iknockdoor.com/author/chappie.html">chappie</a>  <a href="http://www.iknockdoor.com/category/misc.html">misc</a>  一 10 九月 2018.</footer>
-        <div class="entry-content"> <div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#sec-1">1. RecyclerView 23.0.1版本和26.0的版本在measure过程有比较大的差异</a></li>
-<li><a href="#sec-2">2. 由上面这个问题导致对measure和layout的理解</a>
-<ul>
-<li><a href="#sec-2-1">2.1. getHeight和getMeasuredHeight</a></li>
-<li><a href="#sec-2-2">2.2. MeasureSpec的AT<sub>MOST</sub>,EXACTLY,UNSPECTFIED与MATCH …</a></li></ul></li></ul></div></div> </div><!-- /.entry-content -->
+        <div class="entry-content"> 
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">RecyclerView 23.0.1版本和26.0的版本在measure过程有比较大的差异</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+如果父亲给定UNSPECIFIED的高度，23的版本会measure高度为0，而26的版本会measure出自己所需要的高度。
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">由上面这个问题导致对measure和layout的理解</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">getHeight和getMeasuredHeight</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+已经知道getMeasuredHeight给的是mMeasuredHeight的值，即测量值。而
+getHeight给的是bottom-top的值。之前会认为控件会根据mMeasuredHeight
+的值来计算bottom和top的值，时尚上，这并不是强相关的，甚至bottom和
+top的值跟控件的实际宽高和布局都不要有关系 …</p></div></div></div> </div><!-- /.entry-content -->
         <p class="continue"><a href="http://www.iknockdoor.com/RecyclerView版本问题.html">继续 &raquo;</a></p>
 </article>
 <article>
 	<header><h3><a href="http://www.iknockdoor.com/Android消息传递机制.html">Android消息传递机制</a></h3></header>
 	<footer class="title_info"><a href="http://www.iknockdoor.com/author/chappie.html">chappie</a>  <a href="http://www.iknockdoor.com/category/misc.html">misc</a>  二 03 七月 2018.</footer>
-        <div class="entry-content"> <div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#sec-1">1. 传递规则</a></li>
-<li><a href="#sec-2">2. 分发机制</a></li>
-<li><a href="#sec-3">3. 多点触摸处理</a></li>
-<li><a href="#sec-4">4. 历史事件获取</a></li>
-</ul>
-</div>
-</div>
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 传递规则</h2>
-<div class="outline-text-2" id="text-1">
-<ol class="org-ol">
-<li>如果消费touch down消息后续move等消息才会传给他
-</li>
-<li>消息默认都是优先传给子view处理，如果子view不处理，父view再处理
-</li>
-<li>如果一个group自己包括子view都不处理down消息，move消息也就不会传给这个group了 …</li></ol></div></div> </div><!-- /.entry-content -->
+        <div class="entry-content"> 深入理解Android事件分发机制和事件流的处理 </div><!-- /.entry-content -->
         <p class="continue"><a href="http://www.iknockdoor.com/Android消息传递机制.html">继续 &raquo;</a></p>
 </article>
 <article>
@@ -294,19 +286,7 @@
 <article>
 	<header><h3><a href="http://www.iknockdoor.com/1加6普通用户评测.html">1加6普通用户评</a></h3></header>
 	<footer class="title_info"><a href="http://www.iknockdoor.com/author/chappie.html">chappie</a>  <a href="http://www.iknockdoor.com/category/misc.html">misc</a>  五 25 五月 2018.</footer>
-        <div class="entry-content"> <p>
-型号：6G内存，128G ROM，墨石黑
-</p>
-
-<p>
-用了一天，各方面都中规中矩，没有槽点，下面是具体感受：
-</p>
-<ol class="org-ol">
-<li>CPU有点屌，速度很快，硬件性能强大是亮点
-</li>
-<li>4G网速感觉比之前的nexus 6p块很多，不晓得为啥
-</li>
-<li>屏幕比之前用的 nexus 6p渣，宽度为1080像素，400ppi …</li></ol> </div><!-- /.entry-content -->
+        <div class="entry-content"> 用了一天，各方面都中规中矩，没有亮点，槽点不少 </div><!-- /.entry-content -->
         <p class="continue"><a href="http://www.iknockdoor.com/1加6普通用户评测.html">继续 &raquo;</a></p>
 </article>
 <p class="paginator">
