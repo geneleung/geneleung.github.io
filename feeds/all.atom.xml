@@ -1,5 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>iknockdoor</title><link href="http://www.iknockdoor.com/" rel="alternate"></link><link href="http://www.iknockdoor.com/feeds/all.atom.xml" rel="self"></link><id>http://www.iknockdoor.com/</id><updated>2019-04-23T00:00:00+08:00</updated><entry><title>Termux对中文的支持</title><link href="http://www.iknockdoor.com/Termux%E5%AF%B9%E4%B8%AD%E6%96%87%E7%9A%84%E6%94%AF%E6%8C%81.html" rel="alternate"></link><published>2019-04-23T00:00:00+08:00</published><updated>2019-04-23T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-04-23:/Termux对中文的支持.html</id><summary type="html">Termux是个很好的APP，他在Android模拟了Linux环境，使得很多强大的linux工具可以在Android上使用，包括emacs，但使用中文时却走了一些弯路。</summary><content type="html">&lt;p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>iknockdoor</title><link href="http://www.iknockdoor.com/" rel="alternate"></link><link href="http://www.iknockdoor.com/feeds/all.atom.xml" rel="self"></link><id>http://www.iknockdoor.com/</id><updated>2019-05-06T00:00:00+08:00</updated><entry><title>英语学习笔记之句型</title><link href="http://www.iknockdoor.com/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E5%8F%A5%E5%9E%8B.html" rel="alternate"></link><published>2019-05-06T00:00:00+08:00</published><updated>2019-05-06T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-05-06:/英语学习笔记之句型.html</id><summary type="html">五大基本句型，以及陈述句，一般疑问句，特殊疑问句，从句。。。</summary><content type="html">
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; 谓语&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+在英语中，谓语决定了整个句子的框架，因为谓语的含义和习惯性用法决定了句型，比如谓语是及物动词或不及物动词等。
+&lt;/p&gt;
+
+&lt;p&gt;
+谓语有以下分类：
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;实义动词
+&lt;/li&gt;
+&lt;li&gt;助动词
+&lt;/li&gt;
+&lt;li&gt;情态动词
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;span class="section-number-2"&gt;2&lt;/span&gt; 五大基本句型&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;主+系+表
+&lt;/li&gt;
+&lt;li&gt;主+谓
+&lt;/li&gt;
+&lt;li&gt;主+谓+宾
+&lt;/li&gt;
+&lt;li&gt;主+谓+间接宾语+直接宾语
+&lt;/li&gt;
+&lt;li&gt;主+谓+宾+宾补
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;&lt;span class="section-number-2"&gt;3&lt;/span&gt; 基本句型&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;陈述句没什么说的
+&lt;/li&gt;
+&lt;li&gt;否定句
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;be动词或者情态动词的否定
+&lt;/li&gt;
+&lt;li&gt;实义动词的否定
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;一般疑问句
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;将be动词或情态动词移到句首
+&lt;/li&gt;
+&lt;li&gt;实义动词的一般疑问句只需在句首添加助动词do
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;特殊疑问句特殊疑问句是在一般疑问句的基础上变化而来的，其句式为“特殊疑问词 + 一般疑问句”
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4" class="outline-2"&gt;
+&lt;h2 id="sec-4"&gt;&lt;span class="section-number-2"&gt;4&lt;/span&gt; 复合句&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-4"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-4-1" class="outline-3"&gt;
+&lt;h3 id="sec-4-1"&gt;&lt;span class="section-number-3"&gt;4.1&lt;/span&gt; 名词从句&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-4-1"&gt;
+&lt;p&gt;
+名词从句指的是从句直接当名词用，充当名词在句中起到的作用，根据从句在句中的不同作用，名词从句有以下几种：
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;主语从句
+&lt;/li&gt;
+&lt;li&gt;宾语从句
+&lt;/li&gt;
+&lt;li&gt;表语从句
+&lt;/li&gt;
+&lt;li&gt;同位语从句
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4-1-1" class="outline-4"&gt;
+&lt;h4 id="sec-4-1-1"&gt;&lt;span class="section-number-4"&gt;4.1.1&lt;/span&gt; 陈述句做名词从句&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-4-1-1"&gt;
+&lt;p&gt;
+that + 陈述句
+&lt;/p&gt;
+
+&lt;p&gt;
+宾语从句的that一般可以省略，对于名词从句，that能否省略主要是看能否清楚的区分主句和从句的谓语，因为同时存在两个谓语，通常宾语从句的
+that省略后不会引起句子的歧义，所以宾语从句的that通常可以省略，而其他主语从句，表语从句，同位语从句一般不能省略。
+&lt;/p&gt;
+
+&lt;p&gt;
+陈述句做名词从句做主语时，有一个习惯性用法，会以一个it作为先行词
+&lt;/p&gt;
+&lt;pre class="example"&gt;
+It ... + that ...
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4-1-2" class="outline-4"&gt;
+&lt;h4 id="sec-4-1-2"&gt;&lt;span class="section-number-4"&gt;4.1.2&lt;/span&gt; 一般疑问句做名词从句&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-4-1-2"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;先把疑问句倒装成陈述句
+&lt;/li&gt;
+&lt;li&gt;从句句首+whether/if
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4-1-3" class="outline-4"&gt;
+&lt;h4 id="sec-4-1-3"&gt;&lt;span class="section-number-4"&gt;4.1.3&lt;/span&gt; 特殊疑问句做名词从句&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-4-1-3"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;变倒桩语序为陈述句
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+特殊疑问句做名词从句时，如果特殊疑问词在从句中作主语那么从句无需变为陈述句了，因为此时这个特殊疑问句本身就是陈述句语序了。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4-2" class="outline-3"&gt;
+&lt;h3 id="sec-4-2"&gt;&lt;span class="section-number-3"&gt;4.2&lt;/span&gt; 定语从句&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-4-2"&gt;
+&lt;p&gt;
+定语从句主要看先行词和关系词，先行词是定语从句所修饰的对象，关系词重复指代先行词、起连接主句和从句的作用，并且在定语从句中充当一定成分的连接词。和名词从句的主要区别就是关系词是否做为从句的成分。
+&lt;/p&gt;
+
+&lt;p&gt;
+剩下定语从句的重点就是各连接词的使用了，什么情况下用什么连接词。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4-2-1" class="outline-4"&gt;
+&lt;h4 id="sec-4-2-1"&gt;&lt;span class="section-number-4"&gt;4.2.1&lt;/span&gt; 定语从句的主谓一致问题&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-4-2-1"&gt;
+&lt;p&gt;
+定语从句的谓语动词形式是由关系词所指代的先行词来决定的，而不是取决于关系词本身。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4-2-2" class="outline-4"&gt;
+&lt;h4 id="sec-4-2-2"&gt;&lt;span class="section-number-4"&gt;4.2.2&lt;/span&gt; 做宾语的关系词可以省略&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4-2-3" class="outline-4"&gt;
+&lt;h4 id="sec-4-2-3"&gt;&lt;span class="section-number-4"&gt;4.2.3&lt;/span&gt; 关系副词&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-4-2-3"&gt;
+&lt;p&gt;
+关系词在从句中充当状语的情况。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4-2-4" class="outline-4"&gt;
+&lt;h4 id="sec-4-2-4"&gt;&lt;span class="section-number-4"&gt;4.2.4&lt;/span&gt; 限定性与非限定性定语从句&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-4-2-4"&gt;
+&lt;p&gt;
+看先行词和关系词之间有没有逗号，有逗号的是非限定定语从句，没逗号的是限定性定语从句，两种从句所表达的意思是有区别的。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4-3" class="outline-3"&gt;
+&lt;h3 id="sec-4-3"&gt;&lt;span class="section-number-3"&gt;4.3&lt;/span&gt; 状语从句&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content></entry><entry><title>Termux对中文的支持</title><link href="http://www.iknockdoor.com/Termux%E5%AF%B9%E4%B8%AD%E6%96%87%E7%9A%84%E6%94%AF%E6%8C%81.html" rel="alternate"></link><published>2019-04-23T00:00:00+08:00</published><updated>2019-04-23T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-04-23:/Termux对中文的支持.html</id><summary type="html">Termux是个很好的APP，他在Android模拟了Linux环境，使得很多强大的linux工具可以在Android上使用，包括emacs，但使用中文时却走了一些弯路。</summary><content type="html">&lt;p&gt;
 Termux是个很好的APP，他在Android模拟了Linux环境，使得很多强大的linux工具可以在Android上使用，包括emacs，但使用中文时却走了一些弯路。
 &lt;/p&gt;
 
