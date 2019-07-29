@@ -1,5 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>iknockdoor</title><link href="http://www.iknockdoor.com/" rel="alternate"></link><link href="http://www.iknockdoor.com/feeds/all.atom.xml" rel="self"></link><id>http://www.iknockdoor.com/</id><updated>2019-05-06T00:00:00+08:00</updated><entry><title>英语学习笔记之句型</title><link href="http://www.iknockdoor.com/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E5%8F%A5%E5%9E%8B.html" rel="alternate"></link><published>2019-05-06T00:00:00+08:00</published><updated>2019-05-06T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-05-06:/英语学习笔记之句型.html</id><summary type="html">五大基本句型，以及陈述句，一般疑问句，特殊疑问句，从句。。。</summary><content type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>iknockdoor</title><link href="http://www.iknockdoor.com/" rel="alternate"></link><link href="http://www.iknockdoor.com/feeds/all.atom.xml" rel="self"></link><id>http://www.iknockdoor.com/</id><updated>2019-07-29T00:00:00+08:00</updated><entry><title>Android的状态栏</title><link href="http://www.iknockdoor.com/Android%E7%9A%84%E7%8A%B6%E6%80%81%E6%A0%8F.html" rel="alternate"></link><published>2019-07-29T00:00:00+08:00</published><updated>2019-07-29T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-07-29:/Android的状态栏.html</id><summary type="html">从需求和原理的角度来解释Android的statusbar到底应该如何设置，解决沉浸式状态栏，透明状态的各种问题。</summary><content type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; Android的statusbar在不同版本中的区别能力&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
+&lt;h3 id="sec-1-1"&gt;&lt;span class="section-number-3"&gt;1.1&lt;/span&gt; Android 4.4(API 19)&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-1"&gt;
+&lt;p&gt;
+从Android 4.4开始，Android开始支持windowTranslucentStatus样式属性，即支持状态栏的透明。那这个功能有什么用呢？
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;对于全屏的应用，APP内容可以显示在状态栏下面，获得更大的显示面积，同时又不受状态栏遮挡，因为状态栏是透明的，像一个梦层盖在上面。
+&lt;/li&gt;
+&lt;li&gt;即使不是全屏的应用，我们也可以利用这一特性，通过透明状态栏底下的内容颜色来调整状态的栏的颜色，从而避免栏4.4以下Android都是黑漆漆的单调的状态栏，带来更好的视觉体验。
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+那么透明状态栏这个特性在使用中是否存在什么问题呢？有的
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;背景色如果太浅，状态栏上的文字和图标可能会看不清楚。4.4的透明状态栏不是完全透明的，会有一个蒙层的效果，因此不会出现这个问题。
+&lt;/li&gt;
+&lt;li&gt;由于整个APP内容是延伸到状态栏下面的，因此对view的高度计算会有影响，需要padding出状态栏的这部分高度，如果处理不好，可能会导致布局在显示时抖动，上下移位等问题。因此通常在使用
+windowTranslucentStatus样式时会配合设置根布局的
+SYSTEM&lt;sub&gt;UI&lt;/sub&gt;&lt;sub&gt;FLAG&lt;/sub&gt;&lt;sub&gt;LAYOUT&lt;/sub&gt;&lt;sub&gt;FULLSCREEN和SYSTEM&lt;/sub&gt;&lt;sub&gt;UI&lt;/sub&gt;&lt;sub&gt;FLAG&lt;/sub&gt;&lt;sub&gt;LAYOUT&lt;/sub&gt;&lt;sub&gt;STABLE以&lt;/sub&gt;
+及使用fitSystemWindows()方法。详见：&lt;a href="https://developer.android.com/training/system-ui/status"&gt;https://developer.android.com/training/system-ui/status&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;正如前面所说，透明状态栏是个蒙层的效果，如果想要纯色，状态栏和
+toolbar或者和内容背景色一致，浑然一体的效果，透明状态栏就无能为力了，因此才有了5.0和6.0的一些特性。
+&lt;/li&gt;
+&lt;li&gt;如果不是全屏应用，只是想调整状态栏颜色以取得更好的视觉效果，使用
+4.4的这个方法还需要处理布局中状态栏高度的问题，整个解决方案会比较复杂。
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2" class="outline-3"&gt;
+&lt;h3 id="sec-1-2"&gt;&lt;span class="section-number-3"&gt;1.2&lt;/span&gt; Android 5.0 (API 21)&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-2"&gt;
+&lt;p&gt;
+继续前面4.4遇到的这些问题，对于全屏APP的需求场景，5.0和4.4的处理没有什么区别。对于只是想修改状态栏颜色的需求，5.0支持了直接设置状态栏颜色功能，同时配套支持了colorPrimaryDark这样的样式属性，状态栏颜色默认会使用colorPrimaryDark的颜色，同时通过support包，这种能力也可以兼容到5.0以下。
+&lt;/p&gt;
+
+&lt;p&gt;
+但是却又带来了另外一个问题，如果状态栏颜色设置的是浅色的，比如白色，那么状态栏上的文字和图标就会完全看不见，但是又无法改变状态栏文字和图标的颜色，这个问题到Android 6.0得到了解决。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-3" class="outline-3"&gt;
+&lt;h3 id="sec-1-3"&gt;&lt;span class="section-number-3"&gt;1.3&lt;/span&gt; Android 6.0 （API 23）&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-3"&gt;
+&lt;p&gt;
+支持直接设置状态栏颜色，同时支持设置状态栏文字和图标颜色设置为深色或者浅色。至此，全屏应用和非全屏应用对状态栏的需求基本上都可以满足了。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-4" class="outline-3"&gt;
+&lt;h3 id="sec-1-4"&gt;&lt;span class="section-number-3"&gt;1.4&lt;/span&gt; 状态栏的最佳实践&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-4"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-1-4-1" class="outline-4"&gt;
+&lt;h4 id="sec-1-4-1"&gt;&lt;span class="section-number-4"&gt;1.4.1&lt;/span&gt; 需要全屏的APP&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-4-1"&gt;
+&lt;p&gt;
+首先，需要确定背景内容一定是需要延伸到状态栏区域的，这意味着背景内容一定不是纯色的，如果是纯色完全可以通过设置状态栏颜色做到，这样可以避免计算布局高度等问题。如果不是纯色的，我们也就完全没必要再计算状态栏的高度了，因为计算高度只是为了不让状态栏遮挡内容。对于这种场景，4.4版本就足以处理了
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;style中windowTranslucentStatus设置为true
+&lt;/li&gt;
+&lt;li&gt;根布局设置SYSTEM&lt;sub&gt;UI&lt;/sub&gt;&lt;sub&gt;FLAG&lt;/sub&gt;&lt;sub&gt;LAYOUT&lt;/sub&gt;&lt;sub&gt;FULLSCREEN和&lt;/sub&gt;
+       SYSTEM&lt;sub&gt;UI&lt;/sub&gt;&lt;sub&gt;FLAG&lt;/sub&gt;&lt;sub&gt;LAYOUT&lt;/sub&gt;&lt;sub&gt;STABLE标志位&lt;/sub&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-4-2" class="outline-4"&gt;
+&lt;h4 id="sec-1-4-2"&gt;&lt;span class="section-number-4"&gt;1.4.2&lt;/span&gt; 只需要纯色状态栏的APP&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-4-2"&gt;
+&lt;p&gt;
+这种是不需要将背景内容延伸到状态栏区域的。
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;如果是浅色状态栏，那就不要折腾兼容5.0及以下了，即使改变了状态栏的颜色，也会无法解决看不清状态栏上面内容的问题。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;4.4及以下系统默认就好，状态栏黑底白字
+&lt;/li&gt;
+&lt;li&gt;5.0及以下设置有辨识度的colorPrimaryDark，并且能和背景色配合的好看一些，能比4.4的体验好一点点
+&lt;/li&gt;
+&lt;li&gt;6.0及以上，直接设置状态栏颜色，同时设置
+SYSTEM&lt;sub&gt;UI&lt;/sub&gt;&lt;sub&gt;FLAG&lt;/sub&gt;&lt;sub&gt;LIGHT&lt;/sub&gt;&lt;sub&gt;STATUS&lt;/sub&gt;&lt;sub&gt;BAR，使状态栏内容为深色。&lt;/sub&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如果是深色状态栏，5.0的效果可以更好一些。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;4.4及以下系统默认就好，状态栏黑底白字
+&lt;/li&gt;
+&lt;li&gt;5.0及以上将colorPrimaryDark设置为想要的颜色
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content></entry><entry><title>英语学习笔记之句型</title><link href="http://www.iknockdoor.com/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E5%8F%A5%E5%9E%8B.html" rel="alternate"></link><published>2019-05-06T00:00:00+08:00</published><updated>2019-05-06T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-05-06:/英语学习笔记之句型.html</id><summary type="html">五大基本句型，以及陈述句，一般疑问句，特殊疑问句，从句。。。</summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; 谓语&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;

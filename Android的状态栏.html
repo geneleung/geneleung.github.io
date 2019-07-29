@@ -1,27 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh_cn">
 <head>
-        <title>iknockdoor-芽庄游记</title>
+        <title>iknockdoor-Android的状态栏</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="http://www.iknockdoor.com/theme/css/org.css" />
         <link rel="stylesheet" type="text/css" href="http://www.iknockdoor.com/theme/css/custom.css" />
         <link href="http://www.iknockdoor.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="iknockdoor Full Atom Feed" />
 
-<meta name="description" content="<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#sec-1">1. 2017-07-24 00:57 CST 1500829035&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><a id="ID-9FC095A6-5669-4D85-8158-78A6325D29F8" name="ID-9FC095A6-5669-4D85-8158-78A6325D29F8"></a><span class="section-number-2">1</span> 2017-07-24 00:57 CST 1500829035&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h2>
-<div class="outline-text-2" id="text-1">
-<p>
-跟团去的，并不是什么纯玩团，会有两个购物点 …</p></div></div>" />
+<meta name="description" content="从需求和原理的角度来解释Android的statusbar到底应该如何设置，解决沉浸式状态栏，透明状态的各种问题。" />
 
 <script>var _gaq=[['_setAccount','UA-103057848-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
         <!-- mathjax config similar to math.stackexchange -->
@@ -114,13 +101,13 @@
 <section id="content" class="body">
   <header>
     <h2 class="entry-title">
-      <a href="http://www.iknockdoor.com/芽庄游记.html" rel="bookmark"
-         title="Permalink to 芽庄游记">芽庄游记</a></h2>
+      <a href="http://www.iknockdoor.com/Android的状态栏.html" rel="bookmark"
+         title="Permalink to Android的状态栏">Android的状态栏</a></h2>
  
   </header>
   <footer class="post-info">
-    <time class="published" datetime="2017-07-24T00:00:00+08:00">
-      一 24 七月 2017
+    <time class="published" datetime="2019-07-29T00:00:00+08:00">
+      一 29 七月 2019
     </time>
     <address class="vcard author">
       By           <a class="url fn" href="http://www.iknockdoor.com/author/chappie.html">chappie</a>
@@ -130,55 +117,108 @@
     </div>
   </footer><!-- /.post-info -->
   <div class="entry-content">
-    <div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#sec-1">1. 2017-07-24 00:57 CST 1500829035&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><a id="ID-9FC095A6-5669-4D85-8158-78A6325D29F8" name="ID-9FC095A6-5669-4D85-8158-78A6325D29F8"></a><span class="section-number-2">1</span> 2017-07-24 00:57 CST 1500829035&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></h2>
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Android的statusbar在不同版本中的区别能力</h2>
 <div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Android 4.4(API 19)</h3>
+<div class="outline-text-3" id="text-1-1">
 <p>
-跟团去的，并不是什么纯玩团，会有两个购物点，去就可以了，并不强制购物，但整体价格还相对便宜。但整个芽庄之旅体验非常糟糕。也是第一次出国，回国之后由衷的感慨祖国的强大，先进与文明。
+从Android 4.4开始，Android开始支持windowTranslucentStatus样式属性，即支持状态栏的透明。那这个功能有什么用呢？
+</p>
+<ol class="org-ol">
+<li>对于全屏的应用，APP内容可以显示在状态栏下面，获得更大的显示面积，同时又不受状态栏遮挡，因为状态栏是透明的，像一个梦层盖在上面。
+</li>
+<li>即使不是全屏的应用，我们也可以利用这一特性，通过透明状态栏底下的内容颜色来调整状态的栏的颜色，从而避免栏4.4以下Android都是黑漆漆的单调的状态栏，带来更好的视觉体验。
+</li>
+</ol>
+<p>
+那么透明状态栏这个特性在使用中是否存在什么问题呢？有的
+</p>
+<ol class="org-ol">
+<li>背景色如果太浅，状态栏上的文字和图标可能会看不清楚。4.4的透明状态栏不是完全透明的，会有一个蒙层的效果，因此不会出现这个问题。
+</li>
+<li>由于整个APP内容是延伸到状态栏下面的，因此对view的高度计算会有影响，需要padding出状态栏的这部分高度，如果处理不好，可能会导致布局在显示时抖动，上下移位等问题。因此通常在使用
+windowTranslucentStatus样式时会配合设置根布局的
+SYSTEM<sub>UI</sub><sub>FLAG</sub><sub>LAYOUT</sub><sub>FULLSCREEN和SYSTEM</sub><sub>UI</sub><sub>FLAG</sub><sub>LAYOUT</sub><sub>STABLE以</sub>
+及使用fitSystemWindows()方法。详见：<a href="https://developer.android.com/training/system-ui/status">https://developer.android.com/training/system-ui/status</a>
+</li>
+<li>正如前面所说，透明状态栏是个蒙层的效果，如果想要纯色，状态栏和
+toolbar或者和内容背景色一致，浑然一体的效果，透明状态栏就无能为力了，因此才有了5.0和6.0的一些特性。
+</li>
+<li>如果不是全屏应用，只是想调整状态栏颜色以取得更好的视觉效果，使用
+4.4的这个方法还需要处理布局中状态栏高度的问题，整个解决方案会比较复杂。
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Android 5.0 (API 21)</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+继续前面4.4遇到的这些问题，对于全屏APP的需求场景，5.0和4.4的处理没有什么区别。对于只是想修改状态栏颜色的需求，5.0支持了直接设置状态栏颜色功能，同时配套支持了colorPrimaryDark这样的样式属性，状态栏颜色默认会使用colorPrimaryDark的颜色，同时通过support包，这种能力也可以兼容到5.0以下。
 </p>
 
 <p>
-越南的海关工作人员真的会索取小费，入关的时候给了，开始的时候以为是导游为了让自己少一些麻烦然后错误的引导大家，回程的时候才发现，如果没有给小费，工作人员真的会各种怠慢，而且可能还会找茬儿，同事的签证有了一点点的污迹，都被拉去小黑屋，然后被索取了200RMB就解决了。另外一个同事签证名字拼错了，竟然用
-20RMB就解决了，而且还可以插队安检（准确的说，安检完全是形同虚设），如果公职人员都是这样有钱能使鬼推磨，那得是有多么黑暗。再对比一下国内，你真的会发现，我们的祖国是多么的先进和文明，公职人员是多么的认真负责。
+但是却又带来了另外一个问题，如果状态栏颜色设置的是浅色的，比如白色，那么状态栏上的文字和图标就会完全看不见，但是又无法改变状态栏文字和图标的颜色，这个问题到Android 6.0得到了解决。
 </p>
-
+</div>
+</div>
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Android 6.0 （API 23）</h3>
+<div class="outline-text-3" id="text-1-3">
 <p>
-第一天住的酒店五星级，还算挺好的，比较新，海景房，面朝大海春暖花开的感觉。后面两天四星级酒店，环境也还可以，只是会停电。。。而且第一天就停了大半天。。。基础设施啊。。。
+支持直接设置状态栏颜色，同时支持设置状态栏文字和图标颜色设置为深色或者浅色。至此，全屏应用和非全屏应用对状态栏的需求基本上都可以满足了。
 </p>
-
+</div>
+</div>
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> 状态栏的最佳实践</h3>
+<div class="outline-text-3" id="text-1-4">
+</div><div id="outline-container-sec-1-4-1" class="outline-4">
+<h4 id="sec-1-4-1"><span class="section-number-4">1.4.1</span> 需要全屏的APP</h4>
+<div class="outline-text-4" id="text-1-4-1">
 <p>
-芽庄除了海边，几乎就没有什么景点了，第一天去了一个什么什么寺，据说有些历史了，景点小，几乎没什么可观赏的不说，到那就遇到了本地人大家，而且还是城管出手。。。出门又遇到强买强卖的小朋友，拿着不知道是什么东西往你身上塞，还不断的追着你要钱。。。我们只能灰溜溜的远离。
+首先，需要确定背景内容一定是需要延伸到状态栏区域的，这意味着背景内容一定不是纯色的，如果是纯色完全可以通过设置状态栏颜色做到，这样可以避免计算布局高度等问题。如果不是纯色的，我们也就完全没必要再计算状态栏的高度了，因为计算高度只是为了不让状态栏遮挡内容。对于这种场景，4.4版本就足以处理了
 </p>
-
+<ol class="org-ol">
+<li>style中windowTranslucentStatus设置为true
+</li>
+<li>根布局设置SYSTEM<sub>UI</sub><sub>FLAG</sub><sub>LAYOUT</sub><sub>FULLSCREEN和</sub>
+       SYSTEM<sub>UI</sub><sub>FLAG</sub><sub>LAYOUT</sub><sub>STABLE标志位</sub>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-1-4-2" class="outline-4">
+<h4 id="sec-1-4-2"><span class="section-number-4">1.4.2</span> 只需要纯色状态栏的APP</h4>
+<div class="outline-text-4" id="text-1-4-2">
 <p>
-再说这民风吧，据之前来过的同事说，几年前芽庄人民还是很淳朴的，可是我们这次却完全没有体验到。打车司机会绕路，即使你拿着手机给他导航，他还是会装作听不懂你说什么，继续在错的路线上开，最后还要跟你要钱。再加上地接导游各种讲的民风彪悍，什么飞车抢包的，什么坑蒙拐骗偷的。。。
+这种是不需要将背景内容延伸到状态栏区域的。
 </p>
-
-<p>
-吃饭我们遇到的事情也算是挺奇葩了，值得一说。首先，在芽庄，你用大众点评之类的搜到的基本上都是中国人很多的地方。芽庄俄罗斯人和中国人都非常多，但是俄罗斯人只在海边度度假而已，中国人就是在各个景点了，芽庄有几个岛，有一些娱乐项目，上到岛上你会发现人山人海的都是中国人，比国内还要火爆。有点跑偏，继续说这个吃的。去了一家海鲜餐厅，嗯，一定要特意说出这家餐厅的名字叫879，这个餐厅就有意思了，你在点菜的时候，你问哪个菜多少钱，他就说你点了哪个菜，然后还假装听不懂，然后菜单还是两份的，本地人一份，中国人一份，我们还没有确定要吃什么，老板就把我们问过的菜上来了，还好我们制止的早，但也就几个素菜，就花去了500多RMB，然后还各种说不清，真是第一次遇到，感觉非常坑。
-<img src="data/9F/C095A6-5669-4D85-8158-78A6325D29F8/img0310_2017-12-13_22-21-39.jpg" alt="img0310_2017-12-13_22-21-39.jpg" />
-<img src="data/9F/C095A6-5669-4D85-8158-78A6325D29F8/img0311_2017-12-13_22-21-44.jpg" alt="img0311_2017-12-13_22-21-44.jpg" />
-<img src="data/9F/C095A6-5669-4D85-8158-78A6325D29F8/img0312_2017-12-13_22-21-47.jpg" alt="img0312_2017-12-13_22-21-47.jpg" />
-上面有说到去海岛上玩，一方面是人山人海的中国人，另一方面本地的娱乐项目就如同走马观花，而且价格不菲，说好的深浅项目，只是下去洗了个澡，几分钟就上来了，而且就一次，然后就下一波人，跟印钞机一样。另外海水也不清澈，还不如三亚。。。
-</p>
-
-<p>
-最后说一下购物环节，本来还算好吧，那个傻逼猪头地接导游因为我们不买乳胶店的产品，就各种谩骂我们的同事，还不叫车来，我们足足在乳胶店等到中午1
-点多，相当于国内的两点多，饭都没吃上。。。第二天我们就抗议了，开除了那个导游，没再让她过来。另外回国的时候司机还跟我们要小费，明码标价，跟抢似的，每次都让我们顶着大太阳等车，还真好意思要。。。反正我是没给。
-</p>
-
-<p>
-最后我想说，越南虽然是个农业国，相对落后，但是出去了才会发现还是祖国好，才会发现祖国的繁荣富强。
-</p>
+<ol class="org-ol">
+<li>如果是浅色状态栏，那就不要折腾兼容5.0及以下了，即使改变了状态栏的颜色，也会无法解决看不清状态栏上面内容的问题。
+<ul class="org-ul">
+<li>4.4及以下系统默认就好，状态栏黑底白字
+</li>
+<li>5.0及以下设置有辨识度的colorPrimaryDark，并且能和背景色配合的好看一些，能比4.4的体验好一点点
+</li>
+<li>6.0及以上，直接设置状态栏颜色，同时设置
+SYSTEM<sub>UI</sub><sub>FLAG</sub><sub>LIGHT</sub><sub>STATUS</sub><sub>BAR，使状态栏内容为深色。</sub>
+</li>
+</ul>
+</li>
+<li>如果是深色状态栏，5.0的效果可以更好一些。
+<ul class="org-ul">
+<li>4.4及以下系统默认就好，状态栏黑底白字
+</li>
+<li>5.0及以上将colorPrimaryDark设置为想要的颜色
+</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
 </div>
 </div>
 
