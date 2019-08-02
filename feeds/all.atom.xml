@@ -1,5 +1,383 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>iknockdoor</title><link href="http://www.iknockdoor.com/" rel="alternate"></link><link href="http://www.iknockdoor.com/feeds/all.atom.xml" rel="self"></link><id>http://www.iknockdoor.com/</id><updated>2019-07-29T00:00:00+08:00</updated><entry><title>Android的状态栏</title><link href="http://www.iknockdoor.com/Android%E7%9A%84%E7%8A%B6%E6%80%81%E6%A0%8F.html" rel="alternate"></link><published>2019-07-29T00:00:00+08:00</published><updated>2019-07-29T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-07-29:/Android的状态栏.html</id><summary type="html">从需求和原理的角度来解释Android的statusbar到底应该如何设置，解决沉浸式状态栏，透明状态的各种问题。</summary><content type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>iknockdoor</title><link href="http://www.iknockdoor.com/" rel="alternate"></link><link href="http://www.iknockdoor.com/feeds/all.atom.xml" rel="self"></link><id>http://www.iknockdoor.com/</id><updated>2019-07-31T00:00:00+08:00</updated><entry><title>kotlin学习笔记</title><link href="http://www.iknockdoor.com/kotlin%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate"></link><published>2019-07-31T00:00:00+08:00</published><updated>2019-07-31T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-07-31:/kotlin学习笔记.html</id><summary type="html">《Kotlin in Action》看完一遍，想用Kotlin进行开发发现还是无从下手，再看一遍记录一下看的过程中思考的点。</summary><content type="html">
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; 函数式和面向对象&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;头等函数
+&lt;/li&gt;
+&lt;li&gt;不可变性
+&lt;/li&gt;
+&lt;li&gt;无副作用
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+书上提到的函数式编程的三个核心概念。很多人，包括我在内，从真正开始接触开发，基本上都是学习的面向对象的思想，对思考方式影响还是很大，因此对kotlin的学习很大程度上也是想要学习这一个基本的编程思维的转变，从面向对象到函数式，并不是说使用kotlin就必须函数式编程，只是如果用了
+kotlin但是不做函数式开发，那么收益就会大打折扣了，kotlin不只是Google
+推荐的Android平台的开发语言，而且通过kotlin掌握了函数式开发的思维方式，后面对python，swift都有很大帮助，这也是学习kotlin的目的。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;span class="section-number-2"&gt;2&lt;/span&gt; kotlin的小工具&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+这里说两个点：
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;编译kotlin代码。和java一样，也是编译成字节码，但在打包时需要将
+kotlin运行时包含进来，其实就是kotlin的一些标准库以及对JavaAPI的扩展。
+&lt;/li&gt;
+&lt;li&gt;kotlin也有交互式shell（REPL），这是很多动态语言才有的，很方便，可以充分利用。
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;&lt;span class="section-number-2"&gt;3&lt;/span&gt; 类型推导&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;p&gt;
+kotlin中，包括变量声明，函数签名的声明等，只要能够做类型推导的地方基本上都是可以省略类型声明的。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-4" class="outline-2"&gt;
+&lt;h2 id="sec-4"&gt;&lt;span class="section-number-2"&gt;4&lt;/span&gt; 变量与属性&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-4"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;val和var变量，val相当于final的，var就是普通的Java变量
+&lt;/li&gt;
+&lt;li&gt;属性的声明用的关键字和变量是一样的，但属性是对象的概念，不只包含变量本身，而且包含了对变量的访问器，合起来称为属性。
+&lt;/li&gt;
+&lt;li&gt;顶层属性。顶层属性应该就相当于顶层函数所在类中的静态字段，注意他是属性，所以也会有getter和setter方法，如果直接以常量暴露给Java，可以用const修饰，相当于：
+&lt;pre class="example"&gt;
+public static final String XXX = "" (const val XXX = "")
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-5" class="outline-2"&gt;
+&lt;h2 id="sec-5"&gt;&lt;span class="section-number-2"&gt;5&lt;/span&gt; 基本语法&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-5"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-5-1" class="outline-3"&gt;
+&lt;h3 id="sec-5-1"&gt;&lt;span class="section-number-3"&gt;5.1&lt;/span&gt; 语句和表达式&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-5-1"&gt;
+&lt;p&gt;
+语句和表达式的区别在于，表达式有值，并且能够作为另一个表达式的一部分使用；而语句只是一种语法结构。在Java中，所有的控制结构都是语句。在
+Kotlin中除了循环（for,while,do/while）以外大多数控制结构都是表达式。另一方面，Java中赋值操作是表达式，而在kotlin中反而变成了语句。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-5-2" class="outline-3"&gt;
+&lt;h3 id="sec-5-2"&gt;&lt;span class="section-number-3"&gt;5.2&lt;/span&gt; 表达式函数体&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-5-2"&gt;
+&lt;p&gt;
+如果一个函数的函数体是由单个表达式构成的，可以用这个表达式作为完整的函数体，省略掉花括号和return语句，这称为/*表达式体*/语法。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-5-3" class="outline-3"&gt;
+&lt;h3 id="sec-5-3"&gt;&lt;span class="section-number-3"&gt;5.3&lt;/span&gt; 中缀调用与解构声明&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-5-3"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;中缀调用就是对于只有一个参数的函数，比如1.to("one")可以写成如下形式：
+&lt;pre class="example"&gt;
+1 to "one"
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;解构声明就是一次初始化多个变量
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-5-4" class="outline-3"&gt;
+&lt;h3 id="sec-5-4"&gt;&lt;span class="section-number-3"&gt;5.4&lt;/span&gt; 可变参数与展开运算符&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-6" class="outline-2"&gt;
+&lt;h2 id="sec-6"&gt;&lt;span class="section-number-2"&gt;6&lt;/span&gt; 代码组织方式与访问限制&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-6"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-6-1" class="outline-3"&gt;
+&lt;h3 id="sec-6-1"&gt;&lt;span class="section-number-3"&gt;6.1&lt;/span&gt; 包&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-6-1"&gt;
+&lt;p&gt;
+kotlin中的包没有什么其他作用，只是作为命名空间使用
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-6-2" class="outline-3"&gt;
+&lt;h3 id="sec-6-2"&gt;&lt;span class="section-number-3"&gt;6.2&lt;/span&gt; 源码文件&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-6-2"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;文件名可以随意了，不用像Java必须是类名
+&lt;/li&gt;
+&lt;li&gt;文件的组织也无需按照包结构，但保持包结构是一个良好的习惯
+&lt;/li&gt;
+&lt;li&gt;一个文件可以包含多个类，也可以直接包含函数
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-6-3" class="outline-3"&gt;
+&lt;h3 id="sec-6-3"&gt;&lt;span class="section-number-3"&gt;6.3&lt;/span&gt; kotlin中的可见性修饰&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-6-3"&gt;
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;修饰符&lt;/td&gt;
+&lt;td class="left"&gt;类成员&lt;/td&gt;
+&lt;td class="left"&gt;顶层声明&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;public(默认)&lt;/td&gt;
+&lt;td class="left"&gt;所有地方可见&lt;/td&gt;
+&lt;td class="left"&gt;所有地方可见&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;internal&lt;/td&gt;
+&lt;td class="left"&gt;模块中可见&lt;/td&gt;
+&lt;td class="left"&gt;模块中可见&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;protected&lt;/td&gt;
+&lt;td class="left"&gt;子类中可见&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;private&lt;/td&gt;
+&lt;td class="left"&gt;类中可见&lt;/td&gt;
+&lt;td class="left"&gt;文件中可见&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre class="example"&gt;
+所谓一个模块是指一起参与编译的一组文件
+kotlin和Java的protected也是不一样的，kotlin中的protected只能在类和他的子类中访问
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-6-4" class="outline-3"&gt;
+&lt;h3 id="sec-6-4"&gt;&lt;span class="section-number-3"&gt;6.4&lt;/span&gt; 嵌套类和内部类&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-6-4"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;kotlin中的，在类中声明的类默认嵌套类，即相当于Java中的静态内部类
+&lt;/li&gt;
+&lt;li&gt;kotlin中如果声明持有外部类引用的内部类，需要用inner关键字
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-6-5" class="outline-3"&gt;
+&lt;h3 id="sec-6-5"&gt;&lt;span class="section-number-3"&gt;6.5&lt;/span&gt; 密封类&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-6-5"&gt;
+&lt;p&gt;
+这块书上其实也没讲太清楚，大概意思是说用sealed关键字声明的类默认是
+open的，但是他的直接子类必须嵌套在父类中。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-7" class="outline-2"&gt;
+&lt;h2 id="sec-7"&gt;&lt;span class="section-number-2"&gt;7&lt;/span&gt; 与Java互操作&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-7"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;.javaClass
+&lt;/li&gt;
+&lt;li&gt;函数命名参数和默认值 @JvmOverloads
+&lt;/li&gt;
+&lt;li&gt;属性的getter和setter
+&lt;/li&gt;
+&lt;li&gt;顶层函数的如何在Java中调用？顶层函数都会编译成为所声明的包下的
+JoinKt类的静态方法。也可以通过@JvmName注解指定生成包含顶层函数的类的名字。
+&lt;/li&gt;
+&lt;li&gt;带有默认实现的接口，默认实现也是通过静态方法实现的
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-8" class="outline-2"&gt;
+&lt;h2 id="sec-8"&gt;&lt;span class="section-number-2"&gt;8&lt;/span&gt; 扩展函数，局部函数和扩展属性&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-8"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-8-1" class="outline-3"&gt;
+&lt;h3 id="sec-8-1"&gt;&lt;span class="section-number-3"&gt;8.1&lt;/span&gt; 扩展函数的声明&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-8-1"&gt;
+&lt;pre class="example"&gt;
+fun String.lastChar():Char = get(length - 1)
+&lt;/pre&gt;
+&lt;p&gt;
+挺简单的，只有接收者类型是必须的，接收者对象this是可以省略的，上面就省略了this
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-8-2" class="outline-3"&gt;
+&lt;h3 id="sec-8-2"&gt;&lt;span class="section-number-3"&gt;8.2&lt;/span&gt; &lt;span class="todo TODO"&gt;TODO&lt;/span&gt; 扩展函数的声明位置和有效范围&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-8-2"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;目前书上看到的例子是在顶层做的声明，是否可以在类的内部声明呢？
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;可以在方法内声明
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;有效范围应该是包范围，遵循import导入语法，不会在整个项目范围内生效
+&lt;/li&gt;
+&lt;li&gt;为了避免函数名冲突，可以通过as关键字重命名，如:
+&lt;pre class="example"&gt;
+import strings.lastChar as last
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-8-3" class="outline-3"&gt;
+&lt;h3 id="sec-8-3"&gt;&lt;span class="section-number-3"&gt;8.3&lt;/span&gt; 扩展函数的本质与Java的互操作&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-8-3"&gt;
+&lt;p&gt;
+其实就是个类的静态方法，将接受者对象作为了第一个参数。这个类是自动生成的，类名是声明函数的文件名决定的。所以扩展函数无非就是静态函数的一个高效语法糖。准确的说，kotlin就是Java的一个语法糖。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-8-4" class="outline-3"&gt;
+&lt;h3 id="sec-8-4"&gt;&lt;span class="section-number-3"&gt;8.4&lt;/span&gt; 扩展函数需要注意的点&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-8-4"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;由于实现原理的原因，扩展函数并不具备多态性
+&lt;/li&gt;
+&lt;li&gt;如果成员函数与扩展函数有相同的签名，会优先使用成员函数。
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-8-5" class="outline-3"&gt;
+&lt;h3 id="sec-8-5"&gt;&lt;span class="section-number-3"&gt;8.5&lt;/span&gt; 扩展属性&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-8-5"&gt;
+&lt;p&gt;
+扩展属性只是一种语法，本质也是一个静态函数，而且没有支持字段，并不可能真的给已有的Java对象增加属性。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-8-6" class="outline-3"&gt;
+&lt;h3 id="sec-8-6"&gt;&lt;span class="section-number-3"&gt;8.6&lt;/span&gt; 局部函数和扩展函数是有点像的，感觉低层实现原理应该也是一样的&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-9" class="outline-2"&gt;
+&lt;h2 id="sec-9"&gt;&lt;span class="section-number-2"&gt;9&lt;/span&gt; kotlin的面向对象&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-9"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;重载或者实现接口，抽象类的抽象方法，必须使用override关键字
+&lt;/li&gt;
+&lt;li&gt;接口方法可以有默认实现
+&lt;/li&gt;
+&lt;li&gt;类和方法都是默认final的，如果可被继承或可被重写，需要显式的声明
+open，被重写的类或者方法默认是open的，但可以通过主动声明成final的
+&lt;/li&gt;
+&lt;li&gt;数据类，就是默认给提供了equals啊，hashcode啊，toString啊等模版式的实现
+&lt;/li&gt;
+&lt;li&gt;类委托
+&lt;/li&gt;
+&lt;li&gt;object关键字
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;对象声明
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;把class关键词换成object就可以了
+&lt;/li&gt;
+&lt;li&gt;另外一个区别是没有构造方法，由于是单例，并不需要
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;伴生对象伴生对象需要先说明为什么要有伴生对象。kotlin中没有static关键字，那么Java中的static方法的用法要怎么实现呢？kotlin大部分情况是通过顶层函数做这个事儿的，但是顶层函数又无法访问类内部的private
+方法和成员，这个时候就需要伴生对象了，伴生对象也不是什么新的专门为这事儿创建的语法，而是因为对象声明的实现本来就是类用静态成员，刚刚好满足这个需求。伴生对象的语法
+&lt;/li&gt;
+&lt;li&gt;对象表达式
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-9-1" class="outline-3"&gt;
+&lt;h3 id="sec-9-1"&gt;&lt;span class="section-number-3"&gt;9.1&lt;/span&gt; 类的声明&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-9-1"&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-kotlin"&gt;   class User //:最简单的，构造方法不带参数使用默认构造方法
+   open class User(val name:String)//:带参数主构造方法
+   class User constructor(_name:string){
+       val name:String
+       init{
+	   name = _name
+       }
+   }
+   class FBUser(name:String):User(name){...}//:初始化父类
+   open class Button
+   class RadioButton:Button()//:必须显示的调用父类的默认构造方法，如果父类是接口就不需要了
+   class View{//:无主构造方法，两个从构造方法
+   constructor(ctx:Context){}
+   constructor(ctx:Context, attr:AttributeSet){}
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-10" class="outline-2"&gt;
+&lt;h2 id="sec-10"&gt;&lt;span class="section-number-2"&gt;10&lt;/span&gt; &lt;span class="todo TODO"&gt;TODO&lt;/span&gt; 依赖注入的问题&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-10"&gt;
+&lt;p&gt;
+在Java中存在这样的一个问题，类的功能依赖于其他类，其他类的对象需要在类的该类的方法调用前就被初始化。比如类A的实现依赖类B，在调用A的方法前需要已经有B的实例了，但是由于A存在一些框架内，比如A是Android的一个自定义view，如果可以被规范的xml inflate出来，需要A的构造方法满足一定范式，这样的话我们就无法在A构造时给出B的实例，只能通过在A中增加方法来注入B的实例，但缺点时我们无法保证注入的方法的调用顺序，这就是一个依赖注入的问题，看看kotlin中是否有解决办法。
+&lt;/p&gt;
+
+&lt;p&gt;
+事实上构造方法不应该用来做依赖注入，而是应该专注类自身的配置初始化。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-11" class="outline-2"&gt;
+&lt;h2 id="sec-11"&gt;&lt;span class="section-number-2"&gt;11&lt;/span&gt; &lt;span class="todo TODO"&gt;TODO&lt;/span&gt; 修改函数的能力&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-11"&gt;
+&lt;p&gt;
+之前在学习lisp时有个功能是可以给已有的函数增加在执行前执行的代码，或增加在执行后执行的代码，一直觉得这个功能很强大也很有用，但在用Java的时候就有点麻烦。例如以下的例子
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-java"&gt;  &lt;span class="org-keyword"&gt;class&lt;/span&gt; &lt;span class="org-type"&gt;A&lt;/span&gt;{
+&lt;span class="org-type"&gt;void&lt;/span&gt; &lt;span class="org-function-name"&gt;f&lt;/span&gt;(){}
+}
+&lt;span class="org-keyword"&gt;class&lt;/span&gt; B &lt;span class="org-type"&gt;extend&lt;/span&gt; &lt;span class="org-type"&gt;A&lt;/span&gt;{
+  &lt;span class="org-type"&gt;void&lt;/span&gt; &lt;span class="org-function-name"&gt;f&lt;/span&gt;(){
+&lt;span class="org-keyword"&gt;super&lt;/span&gt;.f()&lt;span class="org-comment-delimiter"&gt;//&lt;/span&gt;&lt;span class="org-comment"&gt;:&amp;#36825;&amp;#31181;&amp;#32487;&amp;#25215;&amp;#20851;&amp;#31995;&amp;#65292;&amp;#24076;&amp;#26395;B&amp;#30340;f&amp;#26041;&amp;#27861;&amp;#35843;&amp;#29992;&amp;#26102;&amp;#21487;&amp;#20197;&amp;#40664;&amp;#35748;&amp;#35843;&amp;#29992;&amp;#21040;A&amp;#65292;&amp;#21482;&amp;#33021;&amp;#36890;&amp;#36807;super&amp;#36825;&amp;#31181;&amp;#26041;&amp;#24335;&amp;#35843;&amp;#29992;&amp;#65292;&amp;#20294;&amp;#26159;&amp;#21448;&amp;#26080;&amp;#27861;&amp;#24378;&amp;#21046;&amp;#65292;&amp;#24456;&amp;#23481;&amp;#26131;&amp;#34987;&amp;#24536;&amp;#35760;&lt;/span&gt;
+&lt;span class="org-comment-delimiter"&gt;//&lt;/span&gt;&lt;span class="org-comment"&gt;...&lt;/span&gt;
+}
+}
+&lt;span class="org-comment-delimiter"&gt;//&lt;/span&gt;&lt;span class="org-comment"&gt;&amp;#65306;&amp;#21478;&amp;#22806;&amp;#19968;&amp;#31181;&amp;#22788;&amp;#29702;&amp;#30340;&amp;#36825;&amp;#31181;&amp;#38656;&amp;#27714;&amp;#30340;&amp;#26041;&amp;#24335;&amp;#26159;&amp;#22312;&amp;#29238;&amp;#31867;&amp;#20013;&amp;#35843;&amp;#29992;&amp;#23376;&amp;#31867;&amp;#30340;&amp;#22238;&amp;#35843;&amp;#20989;&amp;#25968;&amp;#65292;&amp;#20063;&amp;#19981;&amp;#26041;&amp;#20415;&amp;#65292;&amp;#32780;&amp;#19988;&amp;#23376;&amp;#31867;&amp;#30340;&amp;#25509;&amp;#21475;&amp;#20063;&amp;#19981;&amp;#23481;&amp;#26131;&amp;#29702;&amp;#35299;&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;
+除了继承的方式，通过委托的方式也可以实现，不过和通过super的方法调用没什么区别，需要主动调用，而且有感知，我想尽量做到子类无感知，毕竟是子类无需关注的需求。
+&lt;/p&gt;
+
+&lt;p&gt;
+kotlin中是否有比较好的处理方法呢？
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content></entry><entry><title>Android的状态栏</title><link href="http://www.iknockdoor.com/Android%E7%9A%84%E7%8A%B6%E6%80%81%E6%A0%8F.html" rel="alternate"></link><published>2019-07-29T00:00:00+08:00</published><updated>2019-07-29T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-07-29:/Android的状态栏.html</id><summary type="html">从需求和原理的角度来解释Android的statusbar到底应该如何设置，解决沉浸式状态栏，透明状态的各种问题。</summary><content type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; Android的statusbar在不同版本中的区别能力&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;/div&gt;&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
