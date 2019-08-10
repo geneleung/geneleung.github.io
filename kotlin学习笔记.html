@@ -37,6 +37,7 @@
         <nav class="sidebar">
 	    <h5>分类</h5>
 	    <ul>
+	      <li ><a href="http://www.iknockdoor.com/category/android.html">Android(1)</a></li>
 	      <li ><a href="http://www.iknockdoor.com/category/du-shu.html">读书(2)</a></li>
 	      <li ><a href="http://www.iknockdoor.com/category/jie-jue-fang-an.html">解决方案(1)</a></li>
 	      <li class="active"><a href="http://www.iknockdoor.com/category/misc.html">misc(68)</a></li>
@@ -69,6 +70,7 @@
 
 	    <h5>归档</h5>
 	    <ul>
+	      <li><a href="/posts/2019/08/index.html">八月 2019 (1)</a></li>
 	      <li><a href="/posts/2019/07/index.html">七月 2019 (2)</a></li>
 	      <li><a href="/posts/2019/05/index.html">五月 2019 (1)</a></li>
 	      <li><a href="/posts/2019/04/index.html">四月 2019 (2)</a></li>
@@ -207,7 +209,7 @@ Kotlin中除了循环（for,while,do/while）以外大多数控制结构都是�
 1 to "one"
 </pre>
 </li>
-<li>解构声明就是一次初始化多个变量
+<li>解构声明就是一次初始化多个变量。原理是约定，使用了componentN()函数
 </li>
 </ul>
 </div>
@@ -327,6 +329,8 @@ JoinKt类的静态方法。也可以通过@JvmName注解指定生成包含顶层
 </li>
 <li>带有默认实现的接口，默认实现也是通过静态方法实现的
 </li>
+<li>lambda与函数式接口
+</li>
 </ol>
 </div>
 </div>
@@ -421,7 +425,18 @@ open，被重写的类或者方法默认是open的，但可以通过主动声明
 </ol>
 </li>
 <li>伴生对象伴生对象需要先说明为什么要有伴生对象。kotlin中没有static关键字，那么Java中的static方法的用法要怎么实现呢？kotlin大部分情况是通过顶层函数做这个事儿的，但是顶层函数又无法访问类内部的private
-方法和成员，这个时候就需要伴生对象了，伴生对象也不是什么新的专门为这事儿创建的语法，而是因为对象声明的实现本来就是类用静态成员，刚刚好满足这个需求。伴生对象的语法
+方法和成员，这个时候就需要伴生对象了，伴生对象也不是什么新的专门为这事儿创建的语法，而是因为对象声明的实现本来就是类用静态成员，刚刚好满足这个需求。伴生对象的语法:
+<div class="org-src-container">
+
+<pre class="src src-kotlin">	class A {
+companion object {
+fun bar(){
+...
+}
+}
+}
+</pre>
+</div>
 </li>
 <li>对象表达式
 </li>
@@ -455,8 +470,72 @@ open，被重写的类或者方法默认是open的，但可以通过主动声明
 </div>
 </div>
 <div id="outline-container-sec-10" class="outline-2">
-<h2 id="sec-10"><span class="section-number-2">10</span> <span class="todo TODO">TODO</span> 依赖注入的问题</h2>
+<h2 id="sec-10"><span class="section-number-2">10</span> 函数式编程</h2>
 <div class="outline-text-2" id="text-10">
+<ol class="org-ol">
+<li>lambda表达式
+<pre class="example">
+{x: Int,y: Int -&gt; x+y}
+</pre>
+</li>
+<li>函数类型声明，一个变量可以是函数类型的
+<pre class="example">
+(Int,Int) -&gt; Int
+</pre>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11"><span class="section-number-2">11</span> 类型系统与空保护</h2>
+<div class="outline-text-2" id="text-11">
+<ul class="org-ul">
+<li>安全调用运算符 ?.(foo?.bar())
+<ul class="org-ul">
+<li>foo != null -&gt; foo.bar()
+</li>
+<li>foo == null -&gt; null
+</li>
+</ul>
+</li>
+<li>Elvis 运算符 ?: (foo ?: bar)
+<ul class="org-ul">
+<li>foo != null -&gt; foo
+</li>
+<li>foo == null -&gt; bar
+</li>
+</ul>
+</li>
+<li>安全转换 as? (foo as? Type)
+<ul class="org-ul">
+<li>foo is Type -&gt; foo as Type
+</li>
+<li>foo !is Type -&gt; null
+</li>
+</ul>
+</li>
+<li>非空断言 !! (foo!!)
+<ul class="org-ul">
+<li>foo != null -&gt; foo
+</li>
+<li>foo == null -&gt; NullPointerException
+</li>
+</ul>
+</li>
+<li>let表达式 (foo?.let{..it ..})
+<ul class="org-ul">
+<li>foo != null -&gt; 在lambda内部it是非空的
+</li>
+<li>foo == null -&gt; 什么都不会发生
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-12" class="outline-2">
+<h2 id="sec-12"><span class="section-number-2">12</span> <span class="todo TODO">TODO</span> 依赖注入的问题</h2>
+<div class="outline-text-2" id="text-12">
 <p>
 在Java中存在这样的一个问题，类的功能依赖于其他类，其他类的对象需要在类的该类的方法调用前就被初始化。比如类A的实现依赖类B，在调用A的方法前需要已经有B的实例了，但是由于A存在一些框架内，比如A是Android的一个自定义view，如果可以被规范的xml inflate出来，需要A的构造方法满足一定范式，这样的话我们就无法在A构造时给出B的实例，只能通过在A中增加方法来注入B的实例，但缺点时我们无法保证注入的方法的调用顺序，这就是一个依赖注入的问题，看看kotlin中是否有解决办法。
 </p>
@@ -464,11 +543,14 @@ open，被重写的类或者方法默认是open的，但可以通过主动声明
 <p>
 事实上构造方法不应该用来做依赖注入，而是应该专注类自身的配置初始化。
 </p>
+<pre class="example">
+果然，在看到类型系统一章时找到了解决方法，而且是语言级的很好。使用延迟初始化的属性，关键字lateinit
+</pre>
 </div>
 </div>
-<div id="outline-container-sec-11" class="outline-2">
-<h2 id="sec-11"><span class="section-number-2">11</span> <span class="todo TODO">TODO</span> 修改函数的能力</h2>
-<div class="outline-text-2" id="text-11">
+<div id="outline-container-sec-13" class="outline-2">
+<h2 id="sec-13"><span class="section-number-2">13</span> <span class="todo TODO">TODO</span> 修改函数的能力</h2>
+<div class="outline-text-2" id="text-13">
 <p>
 之前在学习lisp时有个功能是可以给已有的函数增加在执行前执行的代码，或增加在执行后执行的代码，一直觉得这个功能很强大也很有用，但在用Java的时候就有点麻烦。例如以下的例子
 </p>

@@ -1,5 +1,262 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>iknockdoor</title><link href="http://www.iknockdoor.com/" rel="alternate"></link><link href="http://www.iknockdoor.com/feeds/all.atom.xml" rel="self"></link><id>http://www.iknockdoor.com/</id><updated>2019-07-31T00:00:00+08:00</updated><entry><title>kotlin学习笔记</title><link href="http://www.iknockdoor.com/kotlin%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate"></link><published>2019-07-31T00:00:00+08:00</published><updated>2019-07-31T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-07-31:/kotlin学习笔记.html</id><summary type="html">《Kotlin in Action》看完一遍，想用Kotlin进行开发发现还是无从下手，再看一遍记录一下看的过程中思考的点。</summary><content type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>iknockdoor</title><link href="http://www.iknockdoor.com/" rel="alternate"></link><link href="http://www.iknockdoor.com/feeds/all.atom.xml" rel="self"></link><id>http://www.iknockdoor.com/</id><updated>2019-08-10T00:00:00+08:00</updated><entry><title>Android style实战</title><link href="http://www.iknockdoor.com/Android%20style%E5%AE%9E%E6%88%98.html" rel="alternate"></link><published>2019-08-10T00:00:00+08:00</published><updated>2019-08-10T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-08-10:/Android style实战.html</id><summary type="html">之前有写过一个篇学习和分析Android attr,style,theme原理的blog，在实际应用中遇到时，尤其是一些系统空间，用起来和分析起来还是不是那么得心应手，这次就从系统控件EditText入手分析一下，看看Android的style到底怎么定义怎么生效怎么影响控件的。</summary><content type="html">&lt;p&gt;
+之前有写过一个篇学习和分析Android attr,style,theme原理的&lt;a href="Android%E7%9A%84attrs,style%E5%92%8Ctheme.html"&gt;blog&lt;/a&gt;， 在实际应用中遇到时，尤其是一些系统空间，用起来和分析起来还是不是那么得心应手，这次就从系统控件EditText入手分析一下，看看Android的style到底怎么定义怎么生效怎么影响控件的。
+&lt;/p&gt;
+
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;a id="ID-1E409AD0-2B86-4BEA-B0AE-13E7F8966366" name="ID-1E409AD0-2B86-4BEA-B0AE-13E7F8966366"&gt;&lt;/a&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; 系统默认的EditText&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class="tag"&gt;&lt;span class="ATTACH"&gt;ATTACH&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+这是一个Materail Design下的系统默认的全屏的EditText
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="data/1E/409AD0-2B86-4BEA-B0AE-13E7F8966366/sreencapture_2019-08-10_10-52-26.png" alt="sreencapture_2019-08-10_10-52-26.png" /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+注意这里有几个明显的外观上的特点
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;红色的光标
+&lt;/li&gt;
+&lt;li&gt;红色的下划线
+&lt;/li&gt;
+&lt;li&gt;具有上下左右四边均有一定的边距，但是我们并没有设置padding
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+布局文件如下：
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-xml"&gt;&lt;span class="org-nxml-processing-instruction-delimiter"&gt;&amp;lt;?&lt;/span&gt;&lt;span class="org-nxml-processing-instruction-target"&gt;xml&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;version&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;1.0&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;encoding&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;utf-8&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-processing-instruction-delimiter"&gt;?&amp;gt;&lt;/span&gt;
+&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;androidx.constraintlayout.widget.ConstraintLayout&lt;/span&gt;
+        &lt;span class="org-nxml-namespace-attribute-xmlns"&gt;xmlns&lt;/span&gt;&lt;span class="org-nxml-namespace-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-namespace-attribute-prefix"&gt;android&lt;/span&gt;=&lt;span class="org-nxml-namespace-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-namespace-attribute-value"&gt;http://schemas.android.com/apk/res/android&lt;/span&gt;&lt;span class="org-nxml-namespace-attribute-value-delimiter"&gt;"&lt;/span&gt;
+        &lt;span class="org-nxml-namespace-attribute-xmlns"&gt;xmlns&lt;/span&gt;&lt;span class="org-nxml-namespace-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-namespace-attribute-prefix"&gt;tools&lt;/span&gt;=&lt;span class="org-nxml-namespace-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-namespace-attribute-value"&gt;http://schemas.android.com/tools&lt;/span&gt;&lt;span class="org-nxml-namespace-attribute-value-delimiter"&gt;"&lt;/span&gt;
+        &lt;span class="org-nxml-namespace-attribute-xmlns"&gt;xmlns&lt;/span&gt;&lt;span class="org-nxml-namespace-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-namespace-attribute-prefix"&gt;app&lt;/span&gt;=&lt;span class="org-nxml-namespace-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-namespace-attribute-value"&gt;http://schemas.android.com/apk/res-auto&lt;/span&gt;&lt;span class="org-nxml-namespace-attribute-value-delimiter"&gt;"&lt;/span&gt;
+        &lt;span class="org-nxml-attribute-prefix"&gt;android&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;layout_width&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;match_parent&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;
+        &lt;span class="org-nxml-attribute-prefix"&gt;android&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;layout_height&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;match_parent&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;
+        &lt;span class="org-nxml-attribute-prefix"&gt;tools&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;context&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;.MainActivity&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;EditText&lt;/span&gt;
+            &lt;span class="org-nxml-attribute-prefix"&gt;android&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;id&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;@+id/edit_view&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;
+            &lt;span class="org-nxml-attribute-prefix"&gt;android&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;layout_width&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;0dp&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;
+            &lt;span class="org-nxml-attribute-prefix"&gt;android&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;layout_height&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;0dp&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;
+            &lt;span class="org-nxml-attribute-prefix"&gt;android&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;gravity&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;start&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;
+            &lt;span class="org-nxml-attribute-prefix"&gt;app&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;layout_constraintBottom_toBottomOf&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;parent&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;
+            &lt;span class="org-nxml-attribute-prefix"&gt;app&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;layout_constraintLeft_toLeftOf&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;parent&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;
+            &lt;span class="org-nxml-attribute-prefix"&gt;app&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;layout_constraintRight_toRightOf&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;parent&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;
+            &lt;span class="org-nxml-attribute-prefix"&gt;app&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;layout_constraintTop_toTopOf&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;parent&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;
+    &lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;androidx.constraintlayout.widget.ConstraintLayout&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+光标是比较容易设置的，当时下划线和边距是从哪里来的？一开始我一直以为是
+EditView控件自己绘制的，后来查资料想要去掉下划线时发现下划线是个
+background的属性，那它是什么时候被设置的？在哪里被设置的？这个下划线是怎么实现的？下面来分析下划线和边距是如何被系统设置和生效的。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;span class="section-number-2"&gt;2&lt;/span&gt; Theme的声明&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+从Theme入手，我们的Theme定义如下：
+&lt;/p&gt;
+&lt;pre class="example"&gt;
+&amp;lt;style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;
+先看一下一个Theme需要定义哪些键值对，对Theme的声明见系统文件
+attrs.xml，每个SDK包都有。
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-xml"&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;resources&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="org-nxml-comment-delimiter"&gt;&amp;lt;!--&lt;/span&gt;&lt;span class="org-nxml-comment-content"&gt; These are the standard attributes that make up a complete theme. &lt;/span&gt;&lt;span class="org-nxml-comment-delimiter"&gt;--&amp;gt;&lt;/span&gt;
+  &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;declare-styleable&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;Theme&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-comment-delimiter"&gt;&amp;lt;!--&lt;/span&gt;&lt;span class="org-nxml-comment-content"&gt; ============== &lt;/span&gt;&lt;span class="org-nxml-comment-delimiter"&gt;--&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-comment-delimiter"&gt;&amp;lt;!--&lt;/span&gt;&lt;span class="org-nxml-comment-content"&gt; Generic styles &lt;/span&gt;&lt;span class="org-nxml-comment-delimiter"&gt;--&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-comment-delimiter"&gt;&amp;lt;!--&lt;/span&gt;&lt;span class="org-nxml-comment-content"&gt; ============== &lt;/span&gt;&lt;span class="org-nxml-comment-delimiter"&gt;--&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;eat-comment&lt;/span&gt; &lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+
+      &lt;span class="org-nxml-comment-delimiter"&gt;&amp;lt;!--&lt;/span&gt;&lt;span class="org-nxml-comment-content"&gt; Specifies that a theme has a light background with dark text on top.  &lt;/span&gt;&lt;span class="org-nxml-comment-delimiter"&gt;--&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;attr&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;isLightTheme&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;format&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;boolean&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt; &lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="org-nxml-text"&gt;      ...&lt;/span&gt;
+&lt;span class="org-nxml-text"&gt;      &lt;/span&gt;&lt;span class="org-nxml-comment-delimiter"&gt;&amp;lt;!--&lt;/span&gt;&lt;span class="org-nxml-comment-content"&gt; Default EditText style. &lt;/span&gt;&lt;span class="org-nxml-comment-delimiter"&gt;--&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;attr&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;editTextStyle&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;format&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;reference&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt; &lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="org-nxml-text"&gt;      ...&lt;/span&gt;
+&lt;span class="org-nxml-text"&gt;      &lt;/span&gt;&lt;span class="org-nxml-comment-delimiter"&gt;&amp;lt;!--&lt;/span&gt;&lt;span class="org-nxml-comment-content"&gt; EditText text foreground color. &lt;/span&gt;&lt;span class="org-nxml-comment-delimiter"&gt;--&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;attr&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;editTextColor&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;format&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;reference|color&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt; &lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-comment-delimiter"&gt;&amp;lt;!--&lt;/span&gt;&lt;span class="org-nxml-comment-content"&gt; EditText background drawable. &lt;/span&gt;&lt;span class="org-nxml-comment-delimiter"&gt;--&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;attr&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;editTextBackground&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;format&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;reference&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt; &lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;declare-styleable&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="org-nxml-text"&gt;  ...&lt;/span&gt;
+&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;resources&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;
+这里可以看到一个Theme是可以定义EditStyle,background等属性的。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;&lt;span class="section-number-2"&gt;3&lt;/span&gt; Theme的定义&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;p&gt;
+在系统文件themes.xml定义系统Theme声明的各个字段的值。
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-xml"&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;resources&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="org-nxml-comment-delimiter"&gt;&amp;lt;!--&lt;/span&gt;&lt;span class="org-nxml-comment-content"&gt; The default theme for apps on API level 10 and lower. This is the theme used for&lt;/span&gt;
+&lt;span class="org-nxml-comment-content"&gt;       activities that have not explicitly set their own theme.&lt;/span&gt;
+&lt;span class="org-nxml-comment-content"&gt;       &amp;lt;p&amp;gt;You can count on this being a dark&lt;/span&gt;
+&lt;span class="org-nxml-comment-content"&gt;       background with light text on top, but should try to make no&lt;/span&gt;
+&lt;span class="org-nxml-comment-content"&gt;       other assumptions about its appearance. In particular, the text&lt;/span&gt;
+&lt;span class="org-nxml-comment-content"&gt;       inside of widgets using this theme may be completely different,&lt;/span&gt;
+&lt;span class="org-nxml-comment-content"&gt;       with the widget container being a light color and the text on top&lt;/span&gt;
+&lt;span class="org-nxml-comment-content"&gt;       of it a dark color.&lt;/span&gt;
+&lt;span class="org-nxml-comment-content"&gt;       &amp;lt;p&amp;gt;If you're developing for API level 11 and higher, you should instead use {@link&lt;/span&gt;
+&lt;span class="org-nxml-comment-content"&gt;       #Theme_Holo} or {@link #Theme_DeviceDefault}.&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="org-nxml-comment-content"&gt;  &lt;/span&gt;&lt;span class="org-nxml-comment-delimiter"&gt;--&amp;gt;&lt;/span&gt;
+  &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;style&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;Theme&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;isLightTheme&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;&lt;span class="org-nxml-text"&gt;false&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="org-nxml-text"&gt;      ...&lt;/span&gt;
+&lt;span class="org-nxml-text"&gt;      &lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;editTextStyle&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;&lt;span class="org-nxml-text"&gt;@style/Widget.EditText&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="org-nxml-text"&gt;      ...&lt;/span&gt;
+&lt;span class="org-nxml-text"&gt;      &lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;editTextBackground&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;&lt;span class="org-nxml-text"&gt;@drawable/edit_text&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;style&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="org-nxml-text"&gt;  ...&lt;/span&gt;
+&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;rescources&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;
+这里可以看到，editTextStyle定义的值是一个引用指向到Widget.EditText，
+Theme.AppCompat.Light.DarkActionBar Theme实际编译出来的editTextStyle
+和editTextBackground定义的值和上面不一样，但是我没有找到
+Theme.AppCompat.Light.DarkActionBar主题的定义文件，可能在support包中，不过并不影响理解，和上面最基本的Theme的定义方式是一样的。
+Theme.AppCompat.Light.DarkActionBar主题具体的值如下：
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-xml"&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;editTextStyle&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;&lt;span class="org-nxml-text"&gt;@style/Widget.AppCompat.EditText&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;editTextBackground&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;&lt;span class="org-nxml-text"&gt;@drawable/abc_edit_text_material&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;editTextColor&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;&lt;span class="org-nxml-text"&gt;?android:attr/textColorPrimary&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;
+已经很接近了。
+Widget.AppCompat.EditText样式的定义在文件styles&lt;sub&gt;material&lt;/sub&gt;.xml文件中
+&lt;/p&gt;
+&lt;pre class="example"&gt;
+&amp;lt;style name="Widget.Material.EditText" parent="Widget.EditText"/&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;
+最终Widget.EditText的定义在系统的styles.xml文件中
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-xml"&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;style&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;Widget.EditText&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;focusable&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;&lt;span class="org-nxml-text"&gt;true&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;focusableInTouchMode&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;&lt;span class="org-nxml-text"&gt;true&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;clickable&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;&lt;span class="org-nxml-text"&gt;true&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;background&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;&lt;span class="org-nxml-text"&gt;?attr/editTextBackground&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;textAppearance&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;&lt;span class="org-nxml-text"&gt;?attr/textAppearanceMediumInverse&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;textColor&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;&lt;span class="org-nxml-text"&gt;?attr/editTextColor&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;gravity&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;&lt;span class="org-nxml-text"&gt;center_vertical&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;breakStrategy&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;&lt;span class="org-nxml-text"&gt;simple&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;hyphenationFrequency&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;&lt;span class="org-nxml-text"&gt;normal&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-local-name"&gt;name&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;defaultFocusHighlightEnabled&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;&lt;span class="org-nxml-text"&gt;false&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;style&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;
+而EditText的声明也是在attrs.xml文件中，具体比较长就不贴了，没搞明白包名怎么给的，就是widget。*重点是到这里，就跟自定义view用到的字段开始一一对应了，*看上面的EditText style的定义，都是EditText的属性，这里可以看到background的值是一个样式属性attr/editTextBackground，而这个值在前面给了，就是@drawable/abc&lt;sub&gt;edit&lt;/sub&gt;&lt;sub&gt;text&lt;/sub&gt;&lt;sub&gt;material&lt;/sub&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4" class="outline-2"&gt;
+&lt;h2 id="sec-4"&gt;&lt;span class="section-number-2"&gt;4&lt;/span&gt; EditText的background&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-4"&gt;
+&lt;p&gt;
+我们再看一下drawable/abc&lt;sub&gt;edit&lt;/sub&gt;&lt;sub&gt;text&lt;/sub&gt;&lt;sub&gt;material&lt;/sub&gt;
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-xml"&gt;  &lt;span class="org-nxml-processing-instruction-delimiter"&gt;&amp;lt;?&lt;/span&gt;&lt;span class="org-nxml-processing-instruction-target"&gt;xml&lt;/span&gt; &lt;span class="org-nxml-processing-instruction-content"&gt;version="1.0" encoding="utf-8"&lt;/span&gt;&lt;span class="org-nxml-processing-instruction-delimiter"&gt;?&amp;gt;&lt;/span&gt;
+&lt;span class="org-nxml-comment-delimiter"&gt;&amp;lt;!--&lt;/span&gt;&lt;span class="org-nxml-comment-content"&gt; Copyright (C) 2014 The Android Open Source Project&lt;/span&gt;
+
+&lt;span class="org-nxml-comment-content"&gt;     Licensed under the Apache License, Version 2.0 (the "License");&lt;/span&gt;
+&lt;span class="org-nxml-comment-content"&gt;     you may not use this file except in compliance with the License.&lt;/span&gt;
+&lt;span class="org-nxml-comment-content"&gt;     You may obtain a copy of the License at&lt;/span&gt;
+
+&lt;span class="org-nxml-comment-content"&gt;          http://www.apache.org/licenses/LICENSE-2.0&lt;/span&gt;
+
+&lt;span class="org-nxml-comment-content"&gt;     Unless required by applicable law or agreed to in writing, software&lt;/span&gt;
+&lt;span class="org-nxml-comment-content"&gt;     distributed under the License is distributed on an "AS IS" BASIS,&lt;/span&gt;
+&lt;span class="org-nxml-comment-content"&gt;     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&lt;/span&gt;
+&lt;span class="org-nxml-comment-content"&gt;     See the License for the specific language governing permissions and&lt;/span&gt;
+&lt;span class="org-nxml-comment-content"&gt;     limitations under the License.&lt;/span&gt;
+&lt;span class="org-nxml-comment-delimiter"&gt;--&amp;gt;&lt;/span&gt;
+
+&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;inset&lt;/span&gt; &lt;span class="org-nxml-namespace-attribute-xmlns"&gt;xmlns&lt;/span&gt;&lt;span class="org-nxml-namespace-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-namespace-attribute-prefix"&gt;android&lt;/span&gt;=&lt;span class="org-nxml-namespace-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-namespace-attribute-value"&gt;http://schemas.android.com/apk/res/android&lt;/span&gt;&lt;span class="org-nxml-namespace-attribute-value-delimiter"&gt;"&lt;/span&gt;
+       &lt;span class="org-nxml-attribute-prefix"&gt;android&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;insetLeft&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;@dimen/abc_edit_text_inset_horizontal_material&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;
+       &lt;span class="org-nxml-attribute-prefix"&gt;android&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;insetRight&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;@dimen/abc_edit_text_inset_horizontal_material&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;
+       &lt;span class="org-nxml-attribute-prefix"&gt;android&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;insetTop&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;@dimen/abc_edit_text_inset_top_material&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;
+       &lt;span class="org-nxml-attribute-prefix"&gt;android&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;insetBottom&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;@dimen/abc_edit_text_inset_bottom_material&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;selector&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-prefix"&gt;android&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;state_enabled&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;false&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt; &lt;span class="org-nxml-attribute-prefix"&gt;android&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;drawable&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;@drawable/abc_textfield_default_mtrl_alpha&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-prefix"&gt;android&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;state_pressed&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;false&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt; &lt;span class="org-nxml-attribute-prefix"&gt;android&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;state_focused&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;false&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt; &lt;span class="org-nxml-attribute-prefix"&gt;android&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;drawable&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;@drawable/abc_textfield_default_mtrl_alpha&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;item&lt;/span&gt; &lt;span class="org-nxml-attribute-prefix"&gt;android&lt;/span&gt;&lt;span class="org-nxml-attribute-colon"&gt;:&lt;/span&gt;&lt;span class="org-nxml-attribute-local-name"&gt;drawable&lt;/span&gt;=&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-attribute-value"&gt;@drawable/abc_textfield_activated_mtrl_alpha&lt;/span&gt;&lt;span class="org-nxml-attribute-value-delimiter"&gt;"&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;selector&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class="org-nxml-tag-delimiter"&gt;&amp;lt;&lt;/span&gt;&lt;span class="org-nxml-tag-slash"&gt;/&lt;/span&gt;&lt;span class="org-nxml-element-local-name"&gt;inset&lt;/span&gt;&lt;span class="org-nxml-tag-delimiter"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;
+终于看到了边距和下划线。inset的官方文档见&lt;a href="https://developer.android.com/reference/android/graphics/drawable/InsetDrawable"&gt;这里&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-5" class="outline-2"&gt;
+&lt;h2 id="sec-5"&gt;&lt;span class="section-number-2"&gt;5&lt;/span&gt; Theme和Style中定义的属性值如何在view中使用&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-5"&gt;
+&lt;p&gt;
+看一下Attributeset和TypedArray已经R.styleable.*的源码即可
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-6" class="outline-2"&gt;
+&lt;h2 id="sec-6"&gt;&lt;span class="section-number-2"&gt;6&lt;/span&gt; 总结&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-6"&gt;
+&lt;p&gt;
+从上面整个过程可以看出，搞明白了EditText的样式设置过程基本上也就搞明白了Theme和style
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;attrs.xml中声明了Theme和它需要定义的属性，这些属性都是自定义的，跟Android控件没有任何关系
+&lt;/li&gt;
+&lt;li&gt;themes.xml中定义了指定Theme中各个属性的值，这个值可以是个具体的值也可以是个引用，对于editTextStyle它的值指向了一个style
+&lt;/li&gt;
+&lt;li&gt;Widget.EditText这个style就跟EditText控件有关系了，具体的值又可以引用样式属性
+&lt;/li&gt;
+&lt;li&gt;最终background的值定义到了一个drawable
+&lt;/li&gt;
+&lt;li&gt;包括EditText是如何取到这个值的
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content></entry><entry><title>kotlin学习笔记</title><link href="http://www.iknockdoor.com/kotlin%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate"></link><published>2019-07-31T00:00:00+08:00</published><updated>2019-07-31T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-07-31:/kotlin学习笔记.html</id><summary type="html">《Kotlin in Action》看完一遍，想用Kotlin进行开发发现还是无从下手，再看一遍记录一下看的过程中思考的点。</summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; 函数式和面向对象&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -89,7 +346,7 @@ Kotlin中除了循环（for,while,do/while）以外大多数控制结构都是�
 1 to "one"
 &lt;/pre&gt;
 &lt;/li&gt;
-&lt;li&gt;解构声明就是一次初始化多个变量
+&lt;li&gt;解构声明就是一次初始化多个变量。原理是约定，使用了componentN()函数
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -209,6 +466,8 @@ JoinKt类的静态方法。也可以通过@JvmName注解指定生成包含顶层
 &lt;/li&gt;
 &lt;li&gt;带有默认实现的接口，默认实现也是通过静态方法实现的
 &lt;/li&gt;
+&lt;li&gt;lambda与函数式接口
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -303,7 +562,18 @@ open，被重写的类或者方法默认是open的，但可以通过主动声明
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;伴生对象伴生对象需要先说明为什么要有伴生对象。kotlin中没有static关键字，那么Java中的static方法的用法要怎么实现呢？kotlin大部分情况是通过顶层函数做这个事儿的，但是顶层函数又无法访问类内部的private
-方法和成员，这个时候就需要伴生对象了，伴生对象也不是什么新的专门为这事儿创建的语法，而是因为对象声明的实现本来就是类用静态成员，刚刚好满足这个需求。伴生对象的语法
+方法和成员，这个时候就需要伴生对象了，伴生对象也不是什么新的专门为这事儿创建的语法，而是因为对象声明的实现本来就是类用静态成员，刚刚好满足这个需求。伴生对象的语法:
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-kotlin"&gt;	class A {
+companion object {
+fun bar(){
+...
+}
+}
+}
+&lt;/pre&gt;
+&lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;对象表达式
 &lt;/li&gt;
@@ -337,8 +607,72 @@ open，被重写的类或者方法默认是open的，但可以通过主动声明
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id="outline-container-sec-10" class="outline-2"&gt;
-&lt;h2 id="sec-10"&gt;&lt;span class="section-number-2"&gt;10&lt;/span&gt; &lt;span class="todo TODO"&gt;TODO&lt;/span&gt; 依赖注入的问题&lt;/h2&gt;
+&lt;h2 id="sec-10"&gt;&lt;span class="section-number-2"&gt;10&lt;/span&gt; 函数式编程&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-10"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;lambda表达式
+&lt;pre class="example"&gt;
+{x: Int,y: Int -&amp;gt; x+y}
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;函数类型声明，一个变量可以是函数类型的
+&lt;pre class="example"&gt;
+(Int,Int) -&amp;gt; Int
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-11" class="outline-2"&gt;
+&lt;h2 id="sec-11"&gt;&lt;span class="section-number-2"&gt;11&lt;/span&gt; 类型系统与空保护&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-11"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;安全调用运算符 ?.(foo?.bar())
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;foo != null -&amp;gt; foo.bar()
+&lt;/li&gt;
+&lt;li&gt;foo == null -&amp;gt; null
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Elvis 运算符 ?: (foo ?: bar)
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;foo != null -&amp;gt; foo
+&lt;/li&gt;
+&lt;li&gt;foo == null -&amp;gt; bar
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;安全转换 as? (foo as? Type)
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;foo is Type -&amp;gt; foo as Type
+&lt;/li&gt;
+&lt;li&gt;foo !is Type -&amp;gt; null
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;非空断言 !! (foo!!)
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;foo != null -&amp;gt; foo
+&lt;/li&gt;
+&lt;li&gt;foo == null -&amp;gt; NullPointerException
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;let表达式 (foo?.let{..it ..})
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;foo != null -&amp;gt; 在lambda内部it是非空的
+&lt;/li&gt;
+&lt;li&gt;foo == null -&amp;gt; 什么都不会发生
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-12" class="outline-2"&gt;
+&lt;h2 id="sec-12"&gt;&lt;span class="section-number-2"&gt;12&lt;/span&gt; &lt;span class="todo TODO"&gt;TODO&lt;/span&gt; 依赖注入的问题&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-12"&gt;
 &lt;p&gt;
 在Java中存在这样的一个问题，类的功能依赖于其他类，其他类的对象需要在类的该类的方法调用前就被初始化。比如类A的实现依赖类B，在调用A的方法前需要已经有B的实例了，但是由于A存在一些框架内，比如A是Android的一个自定义view，如果可以被规范的xml inflate出来，需要A的构造方法满足一定范式，这样的话我们就无法在A构造时给出B的实例，只能通过在A中增加方法来注入B的实例，但缺点时我们无法保证注入的方法的调用顺序，这就是一个依赖注入的问题，看看kotlin中是否有解决办法。
 &lt;/p&gt;
@@ -346,11 +680,14 @@ open，被重写的类或者方法默认是open的，但可以通过主动声明
 &lt;p&gt;
 事实上构造方法不应该用来做依赖注入，而是应该专注类自身的配置初始化。
 &lt;/p&gt;
+&lt;pre class="example"&gt;
+果然，在看到类型系统一章时找到了解决方法，而且是语言级的很好。使用延迟初始化的属性，关键字lateinit
+&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-sec-11" class="outline-2"&gt;
-&lt;h2 id="sec-11"&gt;&lt;span class="section-number-2"&gt;11&lt;/span&gt; &lt;span class="todo TODO"&gt;TODO&lt;/span&gt; 修改函数的能力&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-11"&gt;
+&lt;div id="outline-container-sec-13" class="outline-2"&gt;
+&lt;h2 id="sec-13"&gt;&lt;span class="section-number-2"&gt;13&lt;/span&gt; &lt;span class="todo TODO"&gt;TODO&lt;/span&gt; 修改函数的能力&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-13"&gt;
 &lt;p&gt;
 之前在学习lisp时有个功能是可以给已有的函数增加在执行前执行的代码，或增加在执行后执行的代码，一直觉得这个功能很强大也很有用，但在用Java的时候就有点麻烦。例如以下的例子
 &lt;/p&gt;
