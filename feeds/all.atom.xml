@@ -1837,6 +1837,12 @@ england的queen
 &lt;li&gt;&lt;a href="#sec-4"&gt;添加普通用户&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#sec-5"&gt;配置sshd安全加固&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#sec-6"&gt;配置ipsec&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-7"&gt;客户端的配置&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#sec-7-1"&gt;iOS和mac os x&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-7-2"&gt;Android&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2177,7 +2183,7 @@ ipsec restart
 emacs /usr/local/etc/ipsec.secrets
 &lt;/pre&gt;
 &lt;p&gt;
-配置开机自起
+&amp;#x2013;配置开机自起&amp;#x2013;
 &lt;/p&gt;
 &lt;div class="org-src-container"&gt;
 
@@ -2185,9 +2191,65 @@ emacs /usr/local/etc/ipsec.secrets
 systemctl enable strongswan
 &lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;p&gt;
+开机自起这块想多了，直接在启动脚步中执行 ipsec start即可，centos 6和
+7通用
+&lt;/p&gt;
+
 &lt;p&gt;
 下载证书ca.cert.pem，就可以安装使用了
 &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-7" class="outline-2"&gt;
+&lt;h2 id="sec-7"&gt;客户端的配置&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-7"&gt;
+&lt;p&gt;
+这里的配置都是使用系统自带的实现，无需安装其他任何程序或app
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-7-1" class="outline-3"&gt;
+&lt;h3 id="sec-7-1"&gt;iOS和mac os x&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-7-1"&gt;
+&lt;p&gt;
+这块之前用的最多，安装上面的ca.cert.pem证书，用前面配置的EAP的用户名和密码，VPN类型选择 IKEv2
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-7-2" class="outline-3"&gt;
+&lt;h3 id="sec-7-2"&gt;Android&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-7-2"&gt;
+&lt;p&gt;
+和iOS的区别主要是VPN类型和用户验证方式的区别，VPN类型需要选择IPSec
+Xauth PSK
+&lt;/p&gt;
+
+&lt;p&gt;
+ipsec.secrets的配置如下:
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-shell"&gt;: PSK 0s+base64  # 这里要注意，格式固定为0s+密码的base64编码
+username : XAUTH "myXAUTHPass"
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;
+PSK即预分享密钥，格式为 0s+base64，比如密钥为123456,123456的base64
+编码为MTIzNDU2，则PSK为0sMTIzNDU2
+&lt;/p&gt;
+
+&lt;p&gt;
+mac os terminal下base64编码和解码的命令如下：
+&lt;/p&gt;
+&lt;pre class="example"&gt;
+echo -n "123456" | base64
+&lt;/pre&gt;
+&lt;p&gt;
+在Android端配置时，预分享密钥填原字符串，不是base64编码，即填入
+123456，用户名和密码填XAUTH两侧的，即用户名是username，密码是myXAUTHPass
+&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </content></entry><entry><title>VPS新装基本环境搭建</title><link href="http://www.iknockdoor.com/VPS%E6%96%B0%E8%A3%85%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.html" rel="alternate"></link><published>2018-12-04T00:00:00+08:00</published><updated>2018-12-04T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-12-04:/VPS新装基本环境搭建.html</id><summary type="html">VPS新装基本环境搭建，快速安装，使用方便，安全的VPS</summary><content type="html">
