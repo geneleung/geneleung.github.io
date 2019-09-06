@@ -1,5 +1,591 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>iknockdoor</title><link href="http://www.iknockdoor.com/" rel="alternate"></link><link href="http://www.iknockdoor.com/feeds/all.atom.xml" rel="self"></link><id>http://www.iknockdoor.com/</id><updated>2019-08-10T00:00:00+08:00</updated><entry><title>Android style实战</title><link href="http://www.iknockdoor.com/Android%20style%E5%AE%9E%E6%88%98.html" rel="alternate"></link><published>2019-08-10T00:00:00+08:00</published><updated>2019-08-10T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-08-10:/Android style实战.html</id><summary type="html">之前有写过一个篇学习和分析Android attr,style,theme原理的blog，在实际应用中遇到时，尤其是一些系统空间，用起来和分析起来还是不是那么得心应手，这次就从系统控件EditText入手分析一下，看看Android的style到底怎么定义怎么生效怎么影响控件的。</summary><content type="html">&lt;p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>iknockdoor</title><link href="http://www.iknockdoor.com/" rel="alternate"></link><link href="http://www.iknockdoor.com/feeds/all.atom.xml" rel="self"></link><id>http://www.iknockdoor.com/</id><updated>2019-09-06T00:00:00+08:00</updated><entry><title>多元关系的的社交方式</title><link href="http://www.iknockdoor.com/%E5%A4%9A%E5%85%83%E5%85%B3%E7%B3%BB%E7%9A%84%E7%9A%84%E7%A4%BE%E4%BA%A4%E6%96%B9%E5%BC%8F.html" rel="alternate"></link><published>2019-09-06T00:00:00+08:00</published><updated>2019-09-06T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-09-06:/多元关系的的社交方式.html</id><summary type="html">
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; 什么是以自我为中心&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
+&lt;h3 id="sec-1-1"&gt;&lt;span class="section-number-3"&gt;1.1&lt;/span&gt; 这个秘密只跟你一个人说&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2" class="outline-3"&gt;
+&lt;h3 id="sec-1-2"&gt;&lt;span class="section-number-3"&gt;1.2&lt;/span&gt; 只见树木不见森林&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;span class="section-number-2"&gt;2&lt;/span&gt; 时刻谨记，你只是人际关系网中的一个节点&lt;/h2&gt;
+&lt;/div&gt;
+</summary><content type="html">
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; 什么是以自我为中心&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
+&lt;h3 id="sec-1-1"&gt;&lt;span class="section-number-3"&gt;1.1&lt;/span&gt; 这个秘密只跟你一个人说&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2" class="outline-3"&gt;
+&lt;h3 id="sec-1-2"&gt;&lt;span class="section-number-3"&gt;1.2&lt;/span&gt; 只见树木不见森林&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;span class="section-number-2"&gt;2&lt;/span&gt; 时刻谨记，你只是人际关系网中的一个节点&lt;/h2&gt;
+&lt;/div&gt;
+</content></entry><entry><title>长跑与人生</title><link href="http://www.iknockdoor.com/%E9%95%BF%E8%B7%91%E4%B8%8E%E4%BA%BA%E7%94%9F.html" rel="alternate"></link><published>2019-09-06T00:00:00+08:00</published><updated>2019-09-06T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-09-06:/长跑与人生.html</id><summary type="html">&lt;p&gt;
+道理是什么？努力就是你要跑，经常跑，但不需要上来就跑的很快，相反，可以尽量放慢，然后让身体慢慢的进入状态，会不自觉的进入最佳状态。很多事情都适用这个道理
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;考试
+&lt;/li&gt;
+&lt;li&gt;记笔记
+&lt;/li&gt;
+&lt;li&gt;理财
+&lt;/li&gt;
+&lt;li&gt;学习一项技能
+&lt;/li&gt;
+&lt;/ul&gt;
+</summary><content type="html">&lt;p&gt;
+道理是什么？努力就是你要跑，经常跑，但不需要上来就跑的很快，相反，可以尽量放慢，然后让身体慢慢的进入状态，会不自觉的进入最佳状态。很多事情都适用这个道理
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;考试
+&lt;/li&gt;
+&lt;li&gt;记笔记
+&lt;/li&gt;
+&lt;li&gt;理财
+&lt;/li&gt;
+&lt;li&gt;学习一项技能
+&lt;/li&gt;
+&lt;/ul&gt;
+</content></entry><entry><title>Android中的文本绘制TextView和EditView</title><link href="http://www.iknockdoor.com/Android%E4%B8%AD%E7%9A%84%E6%96%87%E6%9C%AC%E7%BB%98%E5%88%B6TextView%E5%92%8CEditView.html" rel="alternate"></link><published>2019-08-15T00:00:00+08:00</published><updated>2019-08-15T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-08-15:/Android中的文本绘制TextView和EditView.html</id><summary type="html">
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; TextView适合显示多大的数据量？如果需要切割，如何切割是合理的？&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+初步的几个想法：
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;具体可能没有说多大数据量合适，主要看内存和绘制速度，可以考虑根据手机内存大小，调整这个值
+&lt;/li&gt;
+&lt;li&gt;如何切割这个问题到现在也没有一个明确的解法，一个想法是根据
+TextView自己的Layout获取当前屏幕行数，或者根据行高，字体大小，估算出大概一屏是多少字，然后缓冲上下两屏的数据。
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;span class="section-number-2"&gt;2&lt;/span&gt; 渲染的基本单位是什么？一行？相同span的文字 …&lt;/h2&gt;&lt;/div&gt;</summary><content type="html">
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; TextView适合显示多大的数据量？如果需要切割，如何切割是合理的？&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+初步的几个想法：
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;具体可能没有说多大数据量合适，主要看内存和绘制速度，可以考虑根据手机内存大小，调整这个值
+&lt;/li&gt;
+&lt;li&gt;如何切割这个问题到现在也没有一个明确的解法，一个想法是根据
+TextView自己的Layout获取当前屏幕行数，或者根据行高，字体大小，估算出大概一屏是多少字，然后缓冲上下两屏的数据。
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;span class="section-number-2"&gt;2&lt;/span&gt; 渲染的基本单位是什么？一行？相同span的文字？同一行中不同的span如何处理？&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+看TextLine类，以一个可视行为基本渲染单位。同一行中不同的span如何处理呢？看了一遍源码，不是每个细节的处理都看懂了，但大体思路八九不离十，其实主要是看对TextPaint的理解，TextPaint有什么能力，能绘制什么，能否分段，在TextLine最后绘制的时候里面也有几个循环处理，处理同一行不同的
+span的效果，如果一行都是几个span的叠加，效果没有变化，算同一个。比如下划线的处理，TextLine是找出这一行中下划线的位置，然后单独绘制矩形的，可以这么理解TextLine对一行的渲染，分为几个图层，范围相同的span尽量一起绘制，如果无法一起绘制就根据span的类型和效果分段绘制。比如下划线是找到下划线位置，绘制矩形底线，再统一绘制文字，而如果给中间一段文字不同的颜色，会分三次绘制文字。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;&lt;span class="section-number-2"&gt;3&lt;/span&gt; 到底谁在负责渲染？&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;p&gt;
+Layout和TextLine
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Layout负责了ParagraphStyle的渲染
+&lt;/li&gt;
+&lt;li&gt;TextLine负责了CharacterStyle的渲染
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4" class="outline-2"&gt;
+&lt;h2 id="sec-4"&gt;&lt;span class="section-number-2"&gt;4&lt;/span&gt; 测量布局的相关内容&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-5" class="outline-2"&gt;
+&lt;h2 id="sec-5"&gt;&lt;span class="section-number-2"&gt;5&lt;/span&gt; EditText是如何修改内容的并通知监听者的，总不能不停的setText吧&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-6" class="outline-2"&gt;
+&lt;h2 id="sec-6"&gt;&lt;span class="section-number-2"&gt;6&lt;/span&gt; 文本体系的整体设计&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-6"&gt;
+&lt;p&gt;
+整个span文本体系可以分为几大部分，一个是可span的字符串，一个是span样式，一个是对span文本到span结构的解析。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-6-1" class="outline-3"&gt;
+&lt;h3 id="sec-6-1"&gt;&lt;span class="section-number-3"&gt;6.1&lt;/span&gt; span的存储结构&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-6-1"&gt;
+&lt;p&gt;
+在SpannableStringInternal的实现中可以看到span是如何存储的。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;int mSpanCount 有几个span
+&lt;/li&gt;
+&lt;li&gt;Object[] mSpans span的数组，数组的长度与mSpanCount对应
+&lt;/li&gt;
+&lt;li&gt;int[] mSpanData 保存span数据的数组，一个span会有三个数局，起点，重点，以及flag(标示如何处理起点和终点),因此这个数组有一点特殊，他的长度是mSpanCount的3倍。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-6-2" class="outline-3"&gt;
+&lt;h3 id="sec-6-2"&gt;&lt;span class="section-number-3"&gt;6.2&lt;/span&gt; span的分类设计&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-6-2"&gt;
+&lt;p&gt;
+Main rules:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;if a Span affects character-level text formatting, it extends
+CharacterStyle.
+&lt;/li&gt;
+&lt;li&gt;if a Span affects paragraph-level text formatting, it implements
+ParagraphStyle
+&lt;/li&gt;
+&lt;li&gt;if a Span modifies the character-level text appearance, it
+implements UpdateAppearance
+&lt;/li&gt;
+&lt;li&gt;if a Span modifies the character-level text metrics|size, it
+implements UpdateLayout
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-7" class="outline-2"&gt;
+&lt;h2 id="sec-7"&gt;&lt;span class="section-number-2"&gt;7&lt;/span&gt; TextView作为一个Android的view控件三大流程是怎样的？&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-7"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-7-1" class="outline-3"&gt;
+&lt;h3 id="sec-7-1"&gt;&lt;span class="section-number-3"&gt;7.1&lt;/span&gt; onMeasure和onLayout&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-7-1"&gt;
+&lt;p&gt;
+这两个流程放在一起说，不说的很详细，这里主要处理了几个问题：
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;根据语言，比如是从左到右还是从右到左，以及是否有span等信息选择布局类,BoringLayout,StaticLayout,DynamicLayout
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;BoringLayout 处理单行，从左到右，无span的文本
+&lt;/li&gt;
+&lt;li&gt;StaticLayout 处理不动态变化的富文本
+&lt;/li&gt;
+&lt;li&gt;DynamicLayout 处理动态变化的富文本
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;处理Android普遍的view的一些设置，比如padding等
+&lt;/li&gt;
+&lt;li&gt;处理TextView自定义的属性，比如行高，字间距等
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+TextView最复杂的部分就是上面三个Layout类了，在Layout的实现类中，处理了纯文本，带span的文本，emoji，图片，并根据文本的样式，比如span的样式处理文本的排版，比如换行。这里面的处理是比较复杂的，但是如果我们不处理布局问题，不需要太纠结细节的实现，总之知道Layout实现的功能即可。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-7-2" class="outline-3"&gt;
+&lt;h3 id="sec-7-2"&gt;&lt;span class="section-number-3"&gt;7.2&lt;/span&gt; onDraw&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-7-2"&gt;
+&lt;p&gt;
+重点看一下span文本的绘制过程。从TextView的onDraw方法入手，可以看到最终对于可编辑的TextView是交给Editor处理的，非可编辑的TextView是交给Layout处理的，Layout的三个子类重点区别在于测量和布局，对于绘制这块并没有区别，因此没有覆盖Layout的drawText（）方法，我们直接看
+Layout的drawText()方法（其中间还有绘制背景，间距，阴影等，比较容易，也不是重点，直接略过，我们重点考察文字的绘制过程）
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-java"&gt;&lt;span class="org-keyword"&gt;public&lt;/span&gt; &lt;span class="org-type"&gt;void&lt;/span&gt; &lt;span class="org-function-name"&gt;drawText&lt;/span&gt;(&lt;span class="org-type"&gt;Canvas&lt;/span&gt; &lt;span class="org-variable-name"&gt;canvas&lt;/span&gt;, &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;firstLine&lt;/span&gt;, &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;lastLine&lt;/span&gt;) {
+     &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;previousLineBottom&lt;/span&gt; = getLineTop(firstLine);
+     &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;previousLineEnd&lt;/span&gt; = getLineStart(firstLine);
+     &lt;span class="org-type"&gt;ParagraphStyle&lt;/span&gt;[] &lt;span class="org-variable-name"&gt;spans&lt;/span&gt; = NO_PARA_SPANS;
+     &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;spanEnd&lt;/span&gt; = 0;
+     &lt;span class="org-keyword"&gt;final&lt;/span&gt; &lt;span class="org-type"&gt;TextPaint&lt;/span&gt; &lt;span class="org-variable-name"&gt;paint&lt;/span&gt; = mWorkPaint;
+     paint.set(mPaint);
+     &lt;span class="org-type"&gt;CharSequence&lt;/span&gt; &lt;span class="org-variable-name"&gt;buf&lt;/span&gt; = mText;
+
+     &lt;span class="org-type"&gt;Alignment&lt;/span&gt; &lt;span class="org-variable-name"&gt;paraAlign&lt;/span&gt; = mAlignment;
+     &lt;span class="org-type"&gt;TabStops&lt;/span&gt; &lt;span class="org-variable-name"&gt;tabStops&lt;/span&gt; = &lt;span class="org-constant"&gt;null&lt;/span&gt;;
+     &lt;span class="org-type"&gt;boolean&lt;/span&gt; &lt;span class="org-variable-name"&gt;tabStopsIsInitialized&lt;/span&gt; = &lt;span class="org-constant"&gt;false&lt;/span&gt;;
+
+     &lt;span class="org-type"&gt;TextLine&lt;/span&gt; &lt;span class="org-variable-name"&gt;tl&lt;/span&gt; = TextLine.obtain();
+
+     &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;Draw the lines, one at a time.&lt;/span&gt;
+     &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;The baseline is the top of the following line minus the current line's descent.&lt;/span&gt;
+     &lt;span class="org-keyword"&gt;for&lt;/span&gt; (&lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;lineNum&lt;/span&gt; = firstLine; lineNum &amp;lt;= lastLine; lineNum++) {
+         &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;start&lt;/span&gt; = previousLineEnd;
+         previousLineEnd = getLineStart(lineNum + 1);
+         &lt;span class="org-keyword"&gt;final&lt;/span&gt; &lt;span class="org-type"&gt;boolean&lt;/span&gt; &lt;span class="org-variable-name"&gt;justify&lt;/span&gt; = isJustificationRequired(lineNum);
+         &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;end&lt;/span&gt; = getLineVisibleEnd(lineNum, start, previousLineEnd);
+         paint.setHyphenEdit(getHyphen(lineNum));
+
+         &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;ltop&lt;/span&gt; = previousLineBottom;
+         &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;lbottom&lt;/span&gt; = getLineTop(lineNum + 1);
+         previousLineBottom = lbottom;
+         &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;lbaseline&lt;/span&gt; = lbottom - getLineDescent(lineNum);
+
+         &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;dir&lt;/span&gt; = getParagraphDirection(lineNum);
+         &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;left&lt;/span&gt; = 0;
+         &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;right&lt;/span&gt; = mWidth;
+
+         &lt;span class="org-keyword"&gt;if&lt;/span&gt; (mSpannedText) {
+             &lt;span class="org-type"&gt;Spanned&lt;/span&gt; &lt;span class="org-variable-name"&gt;sp&lt;/span&gt; = (&lt;span class="org-type"&gt;Spanned&lt;/span&gt;) buf;
+             &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;textLength&lt;/span&gt; = buf.length();
+             &lt;span class="org-type"&gt;boolean&lt;/span&gt; &lt;span class="org-variable-name"&gt;isFirstParaLine&lt;/span&gt; = (start == 0 || buf.charAt(start - 1) == &lt;span class="org-string"&gt;'\n'&lt;/span&gt;);
+
+             &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;New batch of paragraph styles, collect into spans array.&lt;/span&gt;
+             &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;Compute the alignment, last alignment style wins.&lt;/span&gt;
+             &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;Reset tabStops, we'll rebuild if we encounter a line with&lt;/span&gt;
+             &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;tabs.&lt;/span&gt;
+             &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;We expect paragraph spans to be relatively infrequent, use&lt;/span&gt;
+             &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;spanEnd so that we can check less frequently.  Since&lt;/span&gt;
+             &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;paragraph styles ought to apply to entire paragraphs, we can&lt;/span&gt;
+             &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;just collect the ones present at the start of the paragraph.&lt;/span&gt;
+             &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;If spanEnd is before the end of the paragraph, that's not&lt;/span&gt;
+             &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;our problem.&lt;/span&gt;
+             &lt;span class="org-keyword"&gt;if&lt;/span&gt; (start &amp;gt;= spanEnd &amp;amp;&amp;amp; (lineNum == firstLine || isFirstParaLine)) {
+                 spanEnd = sp.nextSpanTransition(start, textLength,
+                                                 ParagraphStyle.&lt;span class="org-keyword"&gt;class&lt;/span&gt;);
+                 spans = getParagraphSpans(sp, start, spanEnd, ParagraphStyle.&lt;span class="org-keyword"&gt;class&lt;/span&gt;);
+
+                 paraAlign = mAlignment;
+                 &lt;span class="org-keyword"&gt;for&lt;/span&gt; (&lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;n&lt;/span&gt; = spans.length - 1; n &amp;gt;= 0; n--) {
+                     &lt;span class="org-keyword"&gt;if&lt;/span&gt; (spans[n] &lt;span class="org-keyword"&gt;instanceof&lt;/span&gt; AlignmentSpan) {
+                         paraAlign = ((&lt;span class="org-type"&gt;AlignmentSpan&lt;/span&gt;) spans[n]).getAlignment();
+                         &lt;span class="org-keyword"&gt;break&lt;/span&gt;;
+                     }
+                 }
+
+                 tabStopsIsInitialized = &lt;span class="org-constant"&gt;false&lt;/span&gt;;
+             }
+
+             &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;Draw all leading margin spans.  Adjust left or right according&lt;/span&gt;
+             &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;to the paragraph direction of the line.&lt;/span&gt;
+             &lt;span class="org-keyword"&gt;final&lt;/span&gt; &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;length&lt;/span&gt; = spans.length;
+             &lt;span class="org-type"&gt;boolean&lt;/span&gt; &lt;span class="org-variable-name"&gt;useFirstLineMargin&lt;/span&gt; = isFirstParaLine;
+             &lt;span class="org-keyword"&gt;for&lt;/span&gt; (&lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;n&lt;/span&gt; = 0; n &amp;lt; &lt;span class="org-type"&gt;length&lt;/span&gt;; n++) {
+                 &lt;span class="org-keyword"&gt;if&lt;/span&gt; (spans[n] &lt;span class="org-keyword"&gt;instanceof&lt;/span&gt; LeadingMarginSpan2) {
+                     &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;count&lt;/span&gt; = ((&lt;span class="org-type"&gt;LeadingMarginSpan2&lt;/span&gt;) spans[n]).getLeadingMarginLineCount();
+                     &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;startLine&lt;/span&gt; = getLineForOffset(sp.getSpanStart(spans[n]));
+                     &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;if there is more than one LeadingMarginSpan2, use&lt;/span&gt;
+                     &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;the count that is greatest&lt;/span&gt;
+                     &lt;span class="org-keyword"&gt;if&lt;/span&gt; (lineNum &amp;lt; &lt;span class="org-type"&gt;startLine&lt;/span&gt; + count) {
+                         useFirstLineMargin = &lt;span class="org-constant"&gt;true&lt;/span&gt;;
+                         &lt;span class="org-keyword"&gt;break&lt;/span&gt;;
+                     }
+                 }
+             }
+             &lt;span class="org-keyword"&gt;for&lt;/span&gt; (&lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;n&lt;/span&gt; = 0; n &amp;lt; &lt;span class="org-type"&gt;length&lt;/span&gt;; n++) {
+                 &lt;span class="org-keyword"&gt;if&lt;/span&gt; (spans[n] &lt;span class="org-keyword"&gt;instanceof&lt;/span&gt; LeadingMarginSpan) {
+                     &lt;span class="org-type"&gt;LeadingMarginSpan&lt;/span&gt; &lt;span class="org-variable-name"&gt;margin&lt;/span&gt; = (&lt;span class="org-type"&gt;LeadingMarginSpan&lt;/span&gt;) spans[n];
+                     &lt;span class="org-keyword"&gt;if&lt;/span&gt; (dir == DIR_RIGHT_TO_LEFT) {
+                         margin.drawLeadingMargin(canvas, paint, right, dir, ltop,
+                                                  lbaseline, lbottom, buf,
+                                                  start, end, isFirstParaLine, &lt;span class="org-keyword"&gt;this&lt;/span&gt;);
+                         right -= margin.getLeadingMargin(useFirstLineMargin);
+                     } &lt;span class="org-keyword"&gt;else&lt;/span&gt; {
+                         margin.drawLeadingMargin(canvas, paint, left, dir, ltop,
+                                                  lbaseline, lbottom, buf,
+                                                  start, end, isFirstParaLine, &lt;span class="org-keyword"&gt;this&lt;/span&gt;);
+                         left += margin.getLeadingMargin(useFirstLineMargin);
+                     }
+                 }
+             }
+         }
+
+         &lt;span class="org-type"&gt;boolean&lt;/span&gt; &lt;span class="org-variable-name"&gt;hasTab&lt;/span&gt; = getLineContainsTab(lineNum);
+         &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;Can't tell if we have tabs for sure, currently&lt;/span&gt;
+         &lt;span class="org-keyword"&gt;if&lt;/span&gt; (hasTab &amp;amp;&amp;amp; &lt;span class="org-negation-char"&gt;!&lt;/span&gt;tabStopsIsInitialized) {
+             &lt;span class="org-keyword"&gt;if&lt;/span&gt; (tabStops == &lt;span class="org-constant"&gt;null&lt;/span&gt;) {
+                 tabStops = &lt;span class="org-keyword"&gt;new&lt;/span&gt; &lt;span class="org-type"&gt;TabStops&lt;/span&gt;(TAB_INCREMENT, spans);
+             } &lt;span class="org-keyword"&gt;else&lt;/span&gt; {
+                 tabStops.reset(TAB_INCREMENT, spans);
+             }
+             tabStopsIsInitialized = &lt;span class="org-constant"&gt;true&lt;/span&gt;;
+         }
+
+         &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;Determine whether the line aligns to normal, opposite, or center.&lt;/span&gt;
+         &lt;span class="org-type"&gt;Alignment&lt;/span&gt; &lt;span class="org-variable-name"&gt;align&lt;/span&gt; = paraAlign;
+         &lt;span class="org-keyword"&gt;if&lt;/span&gt; (align == &lt;span class="org-constant"&gt;Alignment&lt;/span&gt;.ALIGN_LEFT) {
+             align = (dir == DIR_LEFT_TO_RIGHT) ?
+                 &lt;span class="org-constant"&gt;Alignment&lt;/span&gt;.ALIGN_NORMAL : &lt;span class="org-constant"&gt;Alignment&lt;/span&gt;.ALIGN_OPPOSITE;
+         } &lt;span class="org-keyword"&gt;else&lt;/span&gt; &lt;span class="org-keyword"&gt;if&lt;/span&gt; (align == &lt;span class="org-constant"&gt;Alignment&lt;/span&gt;.ALIGN_RIGHT) {
+             align = (dir == DIR_LEFT_TO_RIGHT) ?
+                 &lt;span class="org-constant"&gt;Alignment&lt;/span&gt;.ALIGN_OPPOSITE : &lt;span class="org-constant"&gt;Alignment&lt;/span&gt;.ALIGN_NORMAL;
+         }
+
+         &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;x&lt;/span&gt;;
+         &lt;span class="org-keyword"&gt;final&lt;/span&gt; &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;indentWidth&lt;/span&gt;;
+         &lt;span class="org-keyword"&gt;if&lt;/span&gt; (align == &lt;span class="org-constant"&gt;Alignment&lt;/span&gt;.ALIGN_NORMAL) {
+             &lt;span class="org-keyword"&gt;if&lt;/span&gt; (dir == DIR_LEFT_TO_RIGHT) {
+                 indentWidth = getIndentAdjust(lineNum, &lt;span class="org-constant"&gt;Alignment&lt;/span&gt;.ALIGN_LEFT);
+                 x = left + indentWidth;
+             } &lt;span class="org-keyword"&gt;else&lt;/span&gt; {
+                 indentWidth = -getIndentAdjust(lineNum, &lt;span class="org-constant"&gt;Alignment&lt;/span&gt;.ALIGN_RIGHT);
+                 x = right - indentWidth;
+             }
+         } &lt;span class="org-keyword"&gt;else&lt;/span&gt; {
+             &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;max&lt;/span&gt; = (&lt;span class="org-type"&gt;int&lt;/span&gt;)getLineExtent(lineNum, tabStops, &lt;span class="org-constant"&gt;false&lt;/span&gt;);
+             &lt;span class="org-keyword"&gt;if&lt;/span&gt; (align == &lt;span class="org-constant"&gt;Alignment&lt;/span&gt;.ALIGN_OPPOSITE) {
+                 &lt;span class="org-keyword"&gt;if&lt;/span&gt; (dir == DIR_LEFT_TO_RIGHT) {
+                     indentWidth = -getIndentAdjust(lineNum, &lt;span class="org-constant"&gt;Alignment&lt;/span&gt;.ALIGN_RIGHT);
+                     x = right - max - indentWidth;
+                 } &lt;span class="org-keyword"&gt;else&lt;/span&gt; {
+                     indentWidth = getIndentAdjust(lineNum, &lt;span class="org-constant"&gt;Alignment&lt;/span&gt;.ALIGN_LEFT);
+                     x = left - max + indentWidth;
+                 }
+             } &lt;span class="org-keyword"&gt;else&lt;/span&gt; { &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;Alignment.ALIGN_CENTER&lt;/span&gt;
+                 indentWidth = getIndentAdjust(lineNum, &lt;span class="org-constant"&gt;Alignment&lt;/span&gt;.ALIGN_CENTER);
+                 max = max &amp;amp; ~1;
+                 x = ((right + left - max) &amp;gt;&amp;gt; 1) + indentWidth;
+             }
+         }
+
+         &lt;span class="org-type"&gt;Directions&lt;/span&gt; &lt;span class="org-variable-name"&gt;directions&lt;/span&gt; = getLineDirections(lineNum);
+         &lt;span class="org-keyword"&gt;if&lt;/span&gt; (directions == DIRS_ALL_LEFT_TO_RIGHT &amp;amp;&amp;amp; &lt;span class="org-negation-char"&gt;!&lt;/span&gt;mSpannedText &amp;amp;&amp;amp; &lt;span class="org-negation-char"&gt;!&lt;/span&gt;hasTab &amp;amp;&amp;amp; &lt;span class="org-negation-char"&gt;!&lt;/span&gt;justify) {
+             &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;XXX: assumes there's nothing additional to be done&lt;/span&gt;
+             canvas.drawText(buf, start, end, x, lbaseline, paint);
+         } &lt;span class="org-keyword"&gt;else&lt;/span&gt; {
+             tl.set(paint, buf, start, end, dir, directions, hasTab, tabStops);
+             &lt;span class="org-keyword"&gt;if&lt;/span&gt; (justify) {
+                 tl.justify(right - left - indentWidth);
+             }
+             tl.draw(canvas, x, ltop, lbaseline, lbottom);
+         }
+     }
+
+     TextLine.recycle(tl);
+ }
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;
+这里可以看到拆行的处理，文本的绘制是一行一行进行的，怎么算是一行？拆行是在layout中已经处理好的，这里只是在使用拆行的信息。代码最后，如果是简单文本的绘制，就直接用canvas绘制了，如果是复杂文本就会调用
+TextLine的draw方法绘制了。以下是TextLine绘制的核心代码，再往后就是
+canvas的绘制了，尤其是到jni层，会比较通用，和文本处理关系不大了。
+&lt;/p&gt;
+
+&lt;p&gt;
+另外在Layout的draw方法中还处理了ParagraphStyle的span，计算段落间距缩进这些，包括段落样式，是在这里直接绘制的。
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-java"&gt;&lt;span class="org-doc"&gt;/**&lt;/span&gt;
+&lt;span class="org-doc"&gt;  * Utility function for handling a unidirectional run.  The run must not&lt;/span&gt;
+&lt;span class="org-doc"&gt;  * contain tabs but can contain styles.&lt;/span&gt;
+&lt;span class="org-doc"&gt;  *&lt;/span&gt;
+&lt;span class="org-doc"&gt;  *&lt;/span&gt;
+&lt;span class="org-doc"&gt;  * &lt;/span&gt;&lt;span class="org-doc"&gt;&lt;span class="org-constant"&gt;@param&lt;/span&gt;&lt;/span&gt;&lt;span class="org-doc"&gt; start the line-relative start of the run&lt;/span&gt;
+&lt;span class="org-doc"&gt;  * &lt;/span&gt;&lt;span class="org-doc"&gt;&lt;span class="org-constant"&gt;@param&lt;/span&gt;&lt;/span&gt;&lt;span class="org-doc"&gt; measureLimit the offset to measure to, between start and limit inclusive&lt;/span&gt;
+&lt;span class="org-doc"&gt;  * &lt;/span&gt;&lt;span class="org-doc"&gt;&lt;span class="org-constant"&gt;@param&lt;/span&gt;&lt;/span&gt;&lt;span class="org-doc"&gt; limit the limit of the run&lt;/span&gt;
+&lt;span class="org-doc"&gt;  * &lt;/span&gt;&lt;span class="org-doc"&gt;&lt;span class="org-constant"&gt;@param&lt;/span&gt;&lt;/span&gt;&lt;span class="org-doc"&gt; runIsRtl true if the run is right-to-left&lt;/span&gt;
+&lt;span class="org-doc"&gt;  * &lt;/span&gt;&lt;span class="org-doc"&gt;&lt;span class="org-constant"&gt;@param&lt;/span&gt;&lt;/span&gt;&lt;span class="org-doc"&gt; c the canvas, can be null&lt;/span&gt;
+&lt;span class="org-doc"&gt;  * &lt;/span&gt;&lt;span class="org-doc"&gt;&lt;span class="org-constant"&gt;@param&lt;/span&gt;&lt;/span&gt;&lt;span class="org-doc"&gt; x the end of the run closest to the leading margin&lt;/span&gt;
+&lt;span class="org-doc"&gt;  * &lt;/span&gt;&lt;span class="org-doc"&gt;&lt;span class="org-constant"&gt;@param&lt;/span&gt;&lt;/span&gt;&lt;span class="org-doc"&gt; top the top of the line&lt;/span&gt;
+&lt;span class="org-doc"&gt;  * &lt;/span&gt;&lt;span class="org-doc"&gt;&lt;span class="org-constant"&gt;@param&lt;/span&gt;&lt;/span&gt;&lt;span class="org-doc"&gt; y the baseline&lt;/span&gt;
+&lt;span class="org-doc"&gt;  * &lt;/span&gt;&lt;span class="org-doc"&gt;&lt;span class="org-constant"&gt;@param&lt;/span&gt;&lt;/span&gt;&lt;span class="org-doc"&gt; bottom the bottom of the line&lt;/span&gt;
+&lt;span class="org-doc"&gt;  * &lt;/span&gt;&lt;span class="org-doc"&gt;&lt;span class="org-constant"&gt;@param&lt;/span&gt;&lt;/span&gt;&lt;span class="org-doc"&gt; fmi receives metrics information, can be null&lt;/span&gt;
+&lt;span class="org-doc"&gt;  * &lt;/span&gt;&lt;span class="org-doc"&gt;&lt;span class="org-constant"&gt;@param&lt;/span&gt;&lt;/span&gt;&lt;span class="org-doc"&gt; needWidth true if the width is required&lt;/span&gt;
+&lt;span class="org-doc"&gt;  * &lt;/span&gt;&lt;span class="org-doc"&gt;&lt;span class="org-constant"&gt;@return&lt;/span&gt;&lt;/span&gt;&lt;span class="org-doc"&gt; the signed width of the run based on the run direction; only&lt;/span&gt;
+&lt;span class="org-doc"&gt;  * valid if needWidth is true&lt;/span&gt;
+&lt;span class="org-doc"&gt;  */&lt;/span&gt;
+ &lt;span class="org-keyword"&gt;private&lt;/span&gt; &lt;span class="org-type"&gt;float&lt;/span&gt; &lt;span class="org-function-name"&gt;handleRun&lt;/span&gt;(&lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;start&lt;/span&gt;, &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;measureLimit&lt;/span&gt;,
+         &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;limit&lt;/span&gt;, &lt;span class="org-type"&gt;boolean&lt;/span&gt; &lt;span class="org-variable-name"&gt;runIsRtl&lt;/span&gt;, &lt;span class="org-type"&gt;Canvas&lt;/span&gt; &lt;span class="org-variable-name"&gt;c&lt;/span&gt;, &lt;span class="org-type"&gt;float&lt;/span&gt; &lt;span class="org-variable-name"&gt;x&lt;/span&gt;, &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;top&lt;/span&gt;, &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;y&lt;/span&gt;,
+         &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;bottom&lt;/span&gt;, &lt;span class="org-type"&gt;FontMetricsInt&lt;/span&gt; &lt;span class="org-variable-name"&gt;fmi&lt;/span&gt;, &lt;span class="org-type"&gt;boolean&lt;/span&gt; &lt;span class="org-variable-name"&gt;needWidth&lt;/span&gt;) {
+
+     &lt;span class="org-keyword"&gt;if&lt;/span&gt; (measureLimit &amp;lt; &lt;span class="org-type"&gt;start&lt;/span&gt; || measureLimit &amp;gt; limit) {
+         &lt;span class="org-keyword"&gt;throw&lt;/span&gt; &lt;span class="org-keyword"&gt;new&lt;/span&gt; &lt;span class="org-type"&gt;IndexOutOfBoundsException&lt;/span&gt;(&lt;span class="org-string"&gt;"measureLimit ("&lt;/span&gt; + measureLimit + &lt;span class="org-string"&gt;") is out of "&lt;/span&gt;
+                 + &lt;span class="org-string"&gt;"start ("&lt;/span&gt; + start + &lt;span class="org-string"&gt;") and limit ("&lt;/span&gt; + limit + &lt;span class="org-string"&gt;") bounds"&lt;/span&gt;);
+     }
+
+     &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;Case of an empty line, make sure we update fmi according to mPaint&lt;/span&gt;
+     &lt;span class="org-keyword"&gt;if&lt;/span&gt; (start == measureLimit) {
+         &lt;span class="org-keyword"&gt;final&lt;/span&gt; &lt;span class="org-type"&gt;TextPaint&lt;/span&gt; &lt;span class="org-variable-name"&gt;wp&lt;/span&gt; = mWorkPaint;
+         wp.set(mPaint);
+         &lt;span class="org-keyword"&gt;if&lt;/span&gt; (fmi != &lt;span class="org-constant"&gt;null&lt;/span&gt;) {
+             expandMetricsFromPaint(fmi, wp);
+         }
+         &lt;span class="org-keyword"&gt;return&lt;/span&gt; 0f;
+     }
+
+     &lt;span class="org-keyword"&gt;final&lt;/span&gt; &lt;span class="org-type"&gt;boolean&lt;/span&gt; &lt;span class="org-variable-name"&gt;needsSpanMeasurement&lt;/span&gt;;
+     &lt;span class="org-keyword"&gt;if&lt;/span&gt; (mSpanned == &lt;span class="org-constant"&gt;null&lt;/span&gt;) {
+         needsSpanMeasurement = &lt;span class="org-constant"&gt;false&lt;/span&gt;;
+     } &lt;span class="org-keyword"&gt;else&lt;/span&gt; {
+         mMetricAffectingSpanSpanSet.init(mSpanned, mStart + start, mStart + limit);
+         mCharacterStyleSpanSet.init(mSpanned, mStart + start, mStart + limit);
+         needsSpanMeasurement = mMetricAffectingSpanSpanSet.numberOfSpans != 0
+                 || mCharacterStyleSpanSet.numberOfSpans != 0;
+     }
+
+     &lt;span class="org-keyword"&gt;if&lt;/span&gt; (&lt;span class="org-negation-char"&gt;!&lt;/span&gt;needsSpanMeasurement) {
+         &lt;span class="org-keyword"&gt;final&lt;/span&gt; &lt;span class="org-type"&gt;TextPaint&lt;/span&gt; &lt;span class="org-variable-name"&gt;wp&lt;/span&gt; = mWorkPaint;
+         wp.set(mPaint);
+         wp.setHyphenEdit(adjustHyphenEdit(start, limit, wp.getHyphenEdit()));
+         &lt;span class="org-keyword"&gt;return&lt;/span&gt; handleText(wp, start, limit, start, limit, runIsRtl, c, x, top,
+                 y, bottom, fmi, needWidth, measureLimit, &lt;span class="org-constant"&gt;null&lt;/span&gt;);
+     }
+
+     &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;Shaping needs to take into account context up to metric boundaries,&lt;/span&gt;
+     &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;but rendering needs to take into account character style boundaries.&lt;/span&gt;
+     &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;So we iterate through metric runs to get metric bounds,&lt;/span&gt;
+     &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;then within each metric run iterate through character style runs&lt;/span&gt;
+     &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;for the run bounds.&lt;/span&gt;
+     &lt;span class="org-keyword"&gt;final&lt;/span&gt; &lt;span class="org-type"&gt;float&lt;/span&gt; &lt;span class="org-variable-name"&gt;originalX&lt;/span&gt; = x;
+     &lt;span class="org-keyword"&gt;for&lt;/span&gt; (&lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;i&lt;/span&gt; = start, &lt;span class="org-variable-name"&gt;inext&lt;/span&gt;; i &amp;lt; &lt;span class="org-type"&gt;measureLimit&lt;/span&gt;; i = inext) {
+         &lt;span class="org-keyword"&gt;final&lt;/span&gt; &lt;span class="org-type"&gt;TextPaint&lt;/span&gt; &lt;span class="org-variable-name"&gt;wp&lt;/span&gt; = mWorkPaint;
+         wp.set(mPaint);
+
+         inext = mMetricAffectingSpanSpanSet.getNextTransition(mStart + i, mStart + limit) -
+                 mStart;
+         &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;mlimit&lt;/span&gt; = Math.min(inext, measureLimit);
+
+         &lt;span class="org-type"&gt;ReplacementSpan&lt;/span&gt; &lt;span class="org-variable-name"&gt;replacement&lt;/span&gt; = &lt;span class="org-constant"&gt;null&lt;/span&gt;;
+
+         &lt;span class="org-keyword"&gt;for&lt;/span&gt; (&lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;j&lt;/span&gt; = 0; j &amp;lt; mMetricAffectingSpanSpanSet.&lt;span class="org-type"&gt;numberOfSpans&lt;/span&gt;; j++) {
+             &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;Both intervals [spanStarts..spanEnds] and [mStart + i..mStart + mlimit] are NOT&lt;/span&gt;
+             &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;empty by construction. This special case in getSpans() explains the &amp;gt;= &amp;amp; &amp;lt;= tests&lt;/span&gt;
+             &lt;span class="org-keyword"&gt;if&lt;/span&gt; ((mMetricAffectingSpanSpanSet.spanStarts[j] &amp;gt;= mStart + mlimit) ||
+                     (mMetricAffectingSpanSpanSet.spanEnds[j] &amp;lt;= mStart + i)) &lt;span class="org-keyword"&gt;continue&lt;/span&gt;;
+             &lt;span class="org-keyword"&gt;final&lt;/span&gt; &lt;span class="org-type"&gt;MetricAffectingSpan&lt;/span&gt; &lt;span class="org-variable-name"&gt;span&lt;/span&gt; = mMetricAffectingSpanSpanSet.spans[j];
+             &lt;span class="org-keyword"&gt;if&lt;/span&gt; (span &lt;span class="org-keyword"&gt;instanceof&lt;/span&gt; ReplacementSpan) {
+                 replacement = (&lt;span class="org-type"&gt;ReplacementSpan&lt;/span&gt;)span;
+             } &lt;span class="org-keyword"&gt;else&lt;/span&gt; {
+                 &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;We might have a replacement that uses the draw&lt;/span&gt;
+                 &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;state, otherwise measure state would suffice.&lt;/span&gt;
+                 span.updateDrawState(wp);
+             }
+         }
+
+         &lt;span class="org-keyword"&gt;if&lt;/span&gt; (replacement != &lt;span class="org-constant"&gt;null&lt;/span&gt;) {
+             x += handleReplacement(replacement, wp, i, mlimit, runIsRtl, c, x, top, y,
+                     bottom, fmi, needWidth || mlimit &amp;lt; &lt;span class="org-type"&gt;measureLimit&lt;/span&gt;);
+             &lt;span class="org-keyword"&gt;continue&lt;/span&gt;;
+         }
+
+         &lt;span class="org-keyword"&gt;final&lt;/span&gt; &lt;span class="org-type"&gt;TextPaint&lt;/span&gt; &lt;span class="org-variable-name"&gt;activePaint&lt;/span&gt; = mActivePaint;
+         activePaint.set(mPaint);
+         &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;activeStart&lt;/span&gt; = i;
+         &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;activeEnd&lt;/span&gt; = mlimit;
+         &lt;span class="org-keyword"&gt;final&lt;/span&gt; &lt;span class="org-type"&gt;DecorationInfo&lt;/span&gt; &lt;span class="org-variable-name"&gt;decorationInfo&lt;/span&gt; = mDecorationInfo;
+         mDecorations.clear();
+         &lt;span class="org-keyword"&gt;for&lt;/span&gt; (&lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;j&lt;/span&gt; = i, &lt;span class="org-variable-name"&gt;jnext&lt;/span&gt;; j &amp;lt; &lt;span class="org-type"&gt;mlimit&lt;/span&gt;; j = jnext) {
+             jnext = mCharacterStyleSpanSet.getNextTransition(mStart + j, mStart + inext) -
+                     mStart;
+
+             &lt;span class="org-keyword"&gt;final&lt;/span&gt; &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;offset&lt;/span&gt; = Math.min(jnext, mlimit);
+             wp.set(mPaint);
+             &lt;span class="org-keyword"&gt;for&lt;/span&gt; (&lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;k&lt;/span&gt; = 0; k &amp;lt; mCharacterStyleSpanSet.&lt;span class="org-type"&gt;numberOfSpans&lt;/span&gt;; k++) {
+                 &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;Intentionally using &amp;gt;= and &amp;lt;= as explained above&lt;/span&gt;
+                 &lt;span class="org-keyword"&gt;if&lt;/span&gt; ((mCharacterStyleSpanSet.spanStarts[k] &amp;gt;= mStart + offset) ||
+                         (mCharacterStyleSpanSet.spanEnds[k] &amp;lt;= mStart + j)) &lt;span class="org-keyword"&gt;continue&lt;/span&gt;;
+
+                 &lt;span class="org-keyword"&gt;final&lt;/span&gt; &lt;span class="org-type"&gt;CharacterStyle&lt;/span&gt; &lt;span class="org-variable-name"&gt;span&lt;/span&gt; = mCharacterStyleSpanSet.spans[k];
+                 span.updateDrawState(wp);
+             }
+
+             extractDecorationInfo(wp, decorationInfo);
+
+             &lt;span class="org-keyword"&gt;if&lt;/span&gt; (j == i) {
+                 &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;First chunk of text. We can't handle it yet, since we may need to merge it&lt;/span&gt;
+                 &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;with the next chunk. So we just save the TextPaint for future comparisons&lt;/span&gt;
+                 &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;and use.&lt;/span&gt;
+                 activePaint.set(wp);
+             } &lt;span class="org-keyword"&gt;else&lt;/span&gt; &lt;span class="org-keyword"&gt;if&lt;/span&gt; (&lt;span class="org-negation-char"&gt;!&lt;/span&gt;wp.hasEqualAttributes(activePaint)) {
+                 &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;The style of the present chunk of text is substantially different from the&lt;/span&gt;
+                 &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;style of the previous chunk. We need to handle the active piece of text&lt;/span&gt;
+                 &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;and restart with the present chunk.&lt;/span&gt;
+                 activePaint.setHyphenEdit(adjustHyphenEdit(
+                         activeStart, activeEnd, mPaint.getHyphenEdit()));
+                 x += handleText(activePaint, activeStart, activeEnd, i, inext, runIsRtl, c, x,
+                         top, y, bottom, fmi, needWidth || activeEnd &amp;lt; &lt;span class="org-type"&gt;measureLimit&lt;/span&gt;,
+                         Math.&lt;span class="org-type"&gt;min&lt;/span&gt;(activeEnd, mlimit), &lt;span class="org-type"&gt;mDecorations&lt;/span&gt;);
+
+                 activeStart = j;
+                 activePaint.set(wp);
+                 mDecorations.clear();
+             } &lt;span class="org-keyword"&gt;else&lt;/span&gt; {
+                 &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;The present TextPaint is substantially equal to the last TextPaint except&lt;/span&gt;
+                 &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;perhaps for decorations. We just need to expand the active piece of text to&lt;/span&gt;
+                 &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;include the present chunk, which we always do anyway. We don't need to save&lt;/span&gt;
+                 &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;wp to activePaint, since they are already equal.&lt;/span&gt;
+             }
+
+             activeEnd = jnext;
+             &lt;span class="org-keyword"&gt;if&lt;/span&gt; (decorationInfo.hasDecoration()) {
+                 &lt;span class="org-keyword"&gt;final&lt;/span&gt; &lt;span class="org-type"&gt;DecorationInfo&lt;/span&gt; &lt;span class="org-variable-name"&gt;copy&lt;/span&gt; = decorationInfo.copyInfo();
+                 copy.start = j;
+                 copy.end = jnext;
+                 mDecorations.add(copy);
+             }
+         }
+         &lt;span class="org-comment-delimiter"&gt;// &lt;/span&gt;&lt;span class="org-comment"&gt;Handle the final piece of text.&lt;/span&gt;
+         activePaint.setHyphenEdit(adjustHyphenEdit(
+                 activeStart, activeEnd, mPaint.getHyphenEdit()));
+         x += handleText(activePaint, activeStart, activeEnd, i, inext, runIsRtl, c, x,
+                 top, y, bottom, fmi, needWidth || activeEnd &amp;lt; &lt;span class="org-type"&gt;measureLimit&lt;/span&gt;,
+                 Math.&lt;span class="org-type"&gt;min&lt;/span&gt;(activeEnd, mlimit), &lt;span class="org-type"&gt;mDecorations&lt;/span&gt;);
+     }
+
+     &lt;span class="org-keyword"&gt;return&lt;/span&gt; x - originalX;
+ }
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;
+上述代码有几个关键点：
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;span只是在updateDrawState()，即改变画笔，最终的绘制还是canvas自己绘制。
+&lt;/li&gt;
+&lt;li&gt;可以看到TextView处理的span的类型和顺序，只有下面两种
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;MetricAffectingSpan
+&lt;pre class="example"&gt;
+The classes that affect character-level text formatting in a way that changes the width or height of characters extend this class.
+&lt;/pre&gt;
+&lt;p&gt;
+字符级，影响尺寸的span
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;CharacterStyle
+&lt;/li&gt;
+&lt;li&gt;ReplacementSpan
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-8" class="outline-2"&gt;
+&lt;h2 id="sec-8"&gt;&lt;span class="section-number-2"&gt;8&lt;/span&gt; Footnote&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-8"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://old.flavienlaurent.com/blog/2014/01/31/spans/"&gt;http://old.flavienlaurent.com/blog/2014/01/31/spans/&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/androiddevelopers/spantastic-text-styling-with-spans-17b0c16b4568"&gt;https://medium.com/androiddevelopers/spantastic-text-styling-with-spans-17b0c16b4568&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.csdn.net/u012422440/article/details/52155924"&gt;https://blog.csdn.net/u012422440/article/details/52155924&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://jinjian.info/2017/08/06/TextView%20%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB%E7%AF%87/"&gt;http://jinjian.info/2017/08/06/TextView%20%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB%E7%AF%87/&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://jaeger.itscoder.com/android/2016/08/05/staticlayout-source-analyse.html"&gt;https://jaeger.itscoder.com/android/2016/08/05/staticlayout-source-analyse.html&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.cnblogs.com/bvin/p/5370490.html"&gt;https://www.cnblogs.com/bvin/p/5370490.html&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://ragnraok.github.io/textview-pre-render-research.html"&gt;http://ragnraok.github.io/textview-pre-render-research.html&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.csdn.net/kl794756707/article/details/52014688"&gt;https://blog.csdn.net/kl794756707/article/details/52014688&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content></entry><entry><title>Android style实战</title><link href="http://www.iknockdoor.com/Android%20style%E5%AE%9E%E6%88%98.html" rel="alternate"></link><published>2019-08-10T00:00:00+08:00</published><updated>2019-08-10T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-08-10:/Android style实战.html</id><summary type="html">之前有写过一个篇学习和分析Android attr,style,theme原理的blog，在实际应用中遇到时，尤其是一些系统空间，用起来和分析起来还是不是那么得心应手，这次就从系统控件EditText入手分析一下，看看Android的style到底怎么定义怎么生效怎么影响控件的。</summary><content type="html">&lt;p&gt;
 之前有写过一个篇学习和分析Android attr,style,theme原理的&lt;a href="Android%E7%9A%84attrs,style%E5%92%8Ctheme.html"&gt;blog&lt;/a&gt;， 在实际应用中遇到时，尤其是一些系统空间，用起来和分析起来还是不是那么得心应手，这次就从系统控件EditText入手分析一下，看看Android的style到底怎么定义怎么生效怎么影响控件的。
 &lt;/p&gt;
 
