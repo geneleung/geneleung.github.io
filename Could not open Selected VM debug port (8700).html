@@ -8,7 +8,6 @@
         <link rel="stylesheet" type="text/css" href="http://www.iknockdoor.com/theme/css/custom.css" />
         <link href="http://www.iknockdoor.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="iknockdoor Full Atom Feed" />
 
-<meta name="description" content="今天Android studio毫无征兆的突然连不上手机调试了，但是通过terminal中的adb命令却可以连上，百思不得其解。" />
 
 <script>var _gaq=[['_setAccount','UA-103057848-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
         <!-- mathjax config similar to math.stackexchange -->
@@ -25,83 +24,22 @@
 	  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
 	  });
 	</script>
-	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 
 <body id="index" class="home">
-        <header id="banner" class="body">
-                <h1>iknockdoor <strong></strong></h1>
+  <div id="banner"><div id="banner-inside">
+      <nav id="menu">
+      <header id="site_name">
+                iknockdoor
         </header><!-- /#banner -->
-        <nav id="menu"><ul>
-        </ul></nav><!-- /#menu -->
-        <nav class="sidebar">
-	    <h5>分类</h5>
-	    <ul>
-	      <li ><a href="http://www.iknockdoor.com/category/android.html">Android(2)</a></li>
-	      <li ><a href="http://www.iknockdoor.com/category/du-shu.html">读书(2)</a></li>
-	      <li ><a href="http://www.iknockdoor.com/category/jie-jue-fang-an.html">解决方案(1)</a></li>
-	      <li class="active"><a href="http://www.iknockdoor.com/category/misc.html">misc(71)</a></li>
-	      <li ><a href="http://www.iknockdoor.com/category/sheng-huo.html">生活(1)</a></li>
-	    </ul>
-	    <h5>标签</h5>
-	    <ul>
-	      <li><a href="http://www.iknockdoor.com/tag/adb.html">adb(1)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/android.html">Android(3)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/androidstudio.html">AndroidStudio(1)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/blog.html">blog(1)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/di-gui-lun.html">递归论(1)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/diao-shi.html">调试(1)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/emacs.html">emacs(1)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/english.html">english(2)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/gang-xing.html">港行(1)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/guo-xing.html">国行(1)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/org-blog.html">org-blog(1)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/pelican.html">pelican(1)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/recyclerview.html">RecyclerView(1)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/samsung-note9.html">samsung note9(1)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/sha1.html">sha1(1)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/shell.html">shell(1)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/shua-ji.html">刷机(1)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/terminal.html">terminal(1)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/termux.html">termux(1)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/vps.html">vps(1)</a></li>
-	      <li><a href="http://www.iknockdoor.com/tag/zhong-wen.html">中文(1)</a></li>
-	    </ul>
-
-	    <h5>归档</h5>
-	    <ul>
-	      <li><a href="/posts/2019/11/index.html">十一月 2019 (1)</a></li>
-	      <li><a href="/posts/2019/09/index.html">九月 2019 (2)</a></li>
-	      <li><a href="/posts/2019/08/index.html">八月 2019 (2)</a></li>
-	      <li><a href="/posts/2019/07/index.html">七月 2019 (2)</a></li>
-	      <li><a href="/posts/2019/05/index.html">五月 2019 (1)</a></li>
-	      <li><a href="/posts/2019/04/index.html">四月 2019 (2)</a></li>
-	      <li><a href="/posts/2019/03/index.html">三月 2019 (1)</a></li>
-	      <li><a href="/posts/2018/12/index.html">十二月 2018 (6)</a></li>
-	      <li><a href="/posts/2018/11/index.html">十一月 2018 (11)</a></li>
-	      <li><a href="/posts/2018/10/index.html">十月 2018 (3)</a></li>
-	      <li><a href="/posts/2018/09/index.html">九月 2018 (2)</a></li>
-	      <li><a href="/posts/2018/07/index.html">七月 2018 (2)</a></li>
-	      <li><a href="/posts/2018/06/index.html">六月 2018 (1)</a></li>
-	      <li><a href="/posts/2018/05/index.html">五月 2018 (2)</a></li>
-	      <li><a href="/posts/2018/04/index.html">四月 2018 (2)</a></li>
-	      <li><a href="/posts/2018/03/index.html">三月 2018 (1)</a></li>
-	      <li><a href="/posts/2018/02/index.html">二月 2018 (3)</a></li>
-	      <li><a href="/posts/2018/01/index.html">一月 2018 (7)</a></li>
-	      <li><a href="/posts/2017/12/index.html">十二月 2017 (17)</a></li>
-	      <li><a href="/posts/2017/09/index.html">九月 2017 (1)</a></li>
-	      <li><a href="/posts/2017/08/index.html">八月 2017 (1)</a></li>
-	      <li><a href="/posts/2017/07/index.html">七月 2017 (7)</a></li>
-	    </ul>
-             <h5>Links</h5>
-	    <ul>
-	    </ul>
-	    <h5>与我联系</h5>
-	    <ul>
-	      <li><a href="mailto:iknockdoor.com@gmail.com">E-mail</a></li>
-	    </ul>
-	</nav>
-	    <!-- End Sidebar -->
+          <ul>
+            <li><a href="index.html">index</a></li>
+            <li><a href="categories.html">categories</a></li>
+            <li><a href="tags.html">tags</a></li>
+            <li><a href="archives.html">archives</a></li>
+      </ul></nav><!-- /#menu -->
+  </div></div>
+  <div id="content">
 <section id="content" class="body">
   <header>
     <h2 class="entry-title">
@@ -113,12 +51,6 @@
     <time class="published" datetime="2018-11-22T00:00:00+08:00">
       四 22 十一月 2018
     </time>
-    <address class="vcard author">
-      By           <a class="url fn" href="http://www.iknockdoor.com/author/chappie.html">chappie</a>
-    </address>
-    <div class="category">
-        Category: <a href="http://www.iknockdoor.com/category/misc.html">misc</a>
-    </div>
   </footer><!-- /.post-info -->
   <div class="entry-content">
     
@@ -162,12 +94,13 @@ log如下：
 </div>
 
   </div><!-- /.entry-content -->
+  <footer class="post-info-footer">
+        Category: <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>
+  </footer>
 </section>
+        </div>
         <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+          © 2017-2020 iknockdoor</address><!-- /#about -->
         </footer><!-- /#contentinfo -->
 </body>
 </html>
