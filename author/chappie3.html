@@ -45,7 +45,29 @@
     <footer class="title_info">
       一 10 十二月 2018
  <a href="http://www.iknockdoor.com/category/kai-fa.html"><span>开发</span></a>  <a href="http://www.iknockdoor.com/tag/android.html"><span>Android</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/RecyclerView的onBindHolder与onViewAttachToWindow.html"> </a></div><!-- /.entry-content -->
+    <div class="entry-content"><a href="http://www.iknockdoor.com/RecyclerView的onBindHolder与onViewAttachToWindow.html"> <p>
+开发中遇到一个问题，原代码中在onBindViewHolder的时候对itemView
+setLayoutParamter，调整了itemView的布局，然后调整代码在
+onViewAttachToWindow中去做这件事，然后发现调整后发生崩溃，类型转换错误。
+</p>
+
+<p>
+原因在于RecyclerView在onBindViewHolder的时候会设置itemView的
+layoutManager，所以在onViewAttachToWindow时再去设置不同的layout会出现错误。生命周期如下：
+</p>
+<ul class="org-ul">
+<li>onBindViewHolder
+</li>
+<li>setLayoutParams
+</li>
+<li>setLayoutParams
+</li>
+<li>onAttachViewToWindow
+</li>
+<li>onLayout
+</li>
+</ul>
+</a></div><!-- /.entry-content -->
     <a href="http://www.iknockdoor.com/RecyclerView的onBindHolder与onViewAttachToWindow.html"><span class="more"> more &raquo;</span></a>
 </article>
   <article class="article_list_item">
@@ -53,7 +75,15 @@
     <footer class="title_info">
       一 10 十二月 2018
  <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>  <a href="http://www.iknockdoor.com/tag/emacs.html"><span>emacs</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/emacs中的加密.html"> </a></div><!-- /.entry-content -->
+    <div class="entry-content"><a href="http://www.iknockdoor.com/emacs中的加密.html"> 
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">参考下面两个链接</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<a href="https://github.com/Sauermann/emacs-aes">https://github.com/Sauermann/emacs-aes</a>
+<a href="http://aes.jypc.org/?p=51451">http://aes.jypc.org/?p=51451</a>
+<a href="https://www.jianshu.com/p/bd4266fb4551">https://www.jianshu.com/p/bd4266fb4551</a>
+<a href="http://www.voidcn.com/article/p-ewqtcfbn-a.html">http://www …</a></p></div></div></a></div><!-- /.entry-content -->
     <a href="http://www.iknockdoor.com/emacs中的加密.html"><span class="more"> more &raquo;</span></a>
 </article>
   <article class="article_list_item">
@@ -61,7 +91,27 @@
     <footer class="title_info">
       一 10 十二月 2018
  <a href="http://www.iknockdoor.com/category/kai-fa.html"><span>开发</span></a>  <a href="http://www.iknockdoor.com/tag/python.html"><span>python</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/python3学习笔记.html"> </a></div><!-- /.entry-content -->
+    <div class="entry-content"><a href="http://www.iknockdoor.com/python3学习笔记.html"> 
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">tutorial</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">代码块是用缩进控制的，缩进多少个space不重要，重要的是需要一致</h3>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">交互模式下&gt;&gt;&gt; 与 &#x2026;的区别，&#x2026;需要用一个换行结束</h3>
+</div>
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3">除法的返回值是浮点数，无论除数与被除数是什么类型，除法取整用//，取模用%</h3>
+</div>
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4">幂运算符 **</h3>
+</div>
+<div id="outline-container-sec-1-5" class="outline-3">
+<h3 id="sec-1-5">在交互模式下，最后一个表达式的值总会被赋给一个内建变量"_"，这个变量对用户只可读不可写。如果我们自己声明一个同名的变量，会覆盖内建变量。</h3>
+</div>
+<div id="outline-container-sec-1-6" class="outline-3">
+<h3 id="sec-1-6">字符串 …</h3></div></div></a></div><!-- /.entry-content -->
     <a href="http://www.iknockdoor.com/python3学习笔记.html"><span class="more"> more &raquo;</span></a>
 </article>
   <article class="article_list_item">
@@ -85,7 +135,15 @@
     <footer class="title_info">
       六 24 十一月 2018
  <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/从未真正理解过丘奇图灵论题.html"> </a></div><!-- /.entry-content -->
+    <div class="entry-content"><a href="http://www.iknockdoor.com/从未真正理解过丘奇图灵论题.html"> <p>
+11月8日的时候我发了一条朋友圈，说自己一直以来都没能够真正理解过
+Church-Turing论题，更别说递归定理了，然而却写了这么久的代码，这是一件多么恐怖的事情。可是到了后来几天我再想起来这条朋友圈的时候，我竟想不起来我是因为什么发出这样的感慨。所以这里记录一下，别以后可能对这个论题的理解一步一步加深的时候会会想不起来当时是在那一层迷惑了。
+</p>
+
+<p>
+给我这样感慨的应该是在读《递归论》时遇到：是否一切可计算的数论函数都是原始递归函数。答案是否定的，后来又有了一般递归函数。而丘奇-图灵论题讲的就是一切可计算函数就是一般递归函数。
+</p>
+</a></div><!-- /.entry-content -->
     <a href="http://www.iknockdoor.com/从未真正理解过丘奇图灵论题.html"><span class="more"> more &raquo;</span></a>
 </article>
   <article class="article_list_item">
@@ -93,7 +151,15 @@
     <footer class="title_info">
       六 24 十一月 2018
  <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>  <a href="http://www.iknockdoor.com/tag/english.html"><span>english</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/通过冠词分析名词的含义.html"> </a></div><!-- /.entry-content -->
+    <div class="entry-content"><a href="http://www.iknockdoor.com/通过冠词分析名词的含义.html"> <p>
+I have a cat,
+Its name is Kit.
+And by the fire,
+It loves to sit.
+</p>
+
+<p>
+这是《英国语文》课本的第一课，看这首诗中的by …</p></a></div><!-- /.entry-content -->
     <a href="http://www.iknockdoor.com/通过冠词分析名词的含义.html"><span class="more"> more &raquo;</span></a>
 </article>
   <article class="article_list_item">
@@ -101,7 +167,14 @@
     <footer class="title_info">
       五 23 十一月 2018
  <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>  <a href="http://www.iknockdoor.com/tag/english.html"><span>english</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/question这个单词.html"> </a></div><!-- /.entry-content -->
+    <div class="entry-content"><a href="http://www.iknockdoor.com/question这个单词.html"> <p>
+词典中question有个多个含义，常用的：
+</p>
+<ul class="org-ul">
+<li>[C]a sentence or phrase that is used to ask for information or to
+test someone's knowledge.
+</li>
+<li>[C …</li></ul></a></div><!-- /.entry-content -->
     <a href="http://www.iknockdoor.com/question这个单词.html"><span class="more"> more &raquo;</span></a>
 </article>
   <article class="article_list_item">
@@ -109,7 +182,14 @@
     <footer class="title_info">
       四 22 十一月 2018
  <a href="http://www.iknockdoor.com/category/kai-fa.html"><span>开发</span></a>  <a href="http://www.iknockdoor.com/tag/android.html"><span>Android</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/ADB通过WIFI无线调试Android手机.html"> </a></div><!-- /.entry-content -->
+    <div class="entry-content"><a href="http://www.iknockdoor.com/ADB通过WIFI无线调试Android手机.html"> <p>
+主要以下两个命令，可以通过adb &#x2013;help查看到
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">adb tcpip PORT               restart adb server listening on TCP on PORT
+<span class="org-comment-delimiter"># </span><span class="org-comment">adb tcpip 5555</span>
+adb connect HOST …</pre></div></a></div><!-- /.entry-content -->
     <a href="http://www.iknockdoor.com/ADB通过WIFI无线调试Android手机.html"><span class="more"> more &raquo;</span></a>
 </article>
   <article class="article_list_item">
