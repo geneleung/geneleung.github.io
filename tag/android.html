@@ -45,24 +45,7 @@
     <footer class="title_info">
       四 10 十月 2019
  <a href="http://www.iknockdoor.com/category/kai-fa.html"><span>开发</span></a>  <a href="http://www.iknockdoor.com/tag/android.html"><span>Android</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/Android大格式化文本分页机制及渲染效率初步考察.html"> 
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 格式化文本的分页机制</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-先说问题，由于TextView的机制，我们不能将很大量的文本直接填入TextView
-显示，这样会导致TextView的效率很低，内存占用率巨大，因此需要考虑将文本进行分段加载，重复使用TextView。所以问题来了，应该如何分段？考虑过几种方法：
-</p>
-<ul class="org-ul">
-<li>按自然行。自然行行不通，如果一个大文本文件没有换行怎么办？
-</li>
-<li>按固定字数。
-</li>
-<li>按固定内存大小。
-</li>
-</ul>
-<p>
-上面几种都不太合适，格式化文本除了会影响颜色 …</p></div></div></a></div><!-- /.entry-content -->
+    <div class="entry-content"><a href="http://www.iknockdoor.com/Android大格式化文本分页机制及渲染效率初步考察.html"> </a></div><!-- /.entry-content -->
     <a href="http://www.iknockdoor.com/Android大格式化文本分页机制及渲染效率初步考察.html"><span class="more"> more &raquo;</span></a>
 </article>
   <article class="article_list_item">
@@ -102,16 +85,7 @@
     <footer class="title_info">
       五 14 十二月 2018
  <a href="http://www.iknockdoor.com/category/kai-fa.html"><span>开发</span></a>  <a href="http://www.iknockdoor.com/tag/android.html"><span>Android</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/RecyclerView在ConstraintLayout中使用时item的width设置MATCH_PARENT无效的问题.html"> <p>
-RecyclerView外部是ContrantLayout，在RecyclerView中new出view，并new出
-LayoutParams，此时给MATCH_PARENT是无效的。通过调试，应该是
-ConstrantLayout的和RecyclerView的问题，使用其他布局包含RecyclerView是正常的。 
-</p>
-
-<p>
-具体原因还未查清。
-</p>
-</a></div><!-- /.entry-content -->
+    <div class="entry-content"><a href="http://www.iknockdoor.com/RecyclerView在ConstraintLayout中使用时item的width设置MATCH_PARENT无效的问题.html"> </a></div><!-- /.entry-content -->
     <a href="http://www.iknockdoor.com/RecyclerView在ConstraintLayout中使用时item的width设置MATCH_PARENT无效的问题.html"><span class="more"> more &raquo;</span></a>
 </article>
   <article class="article_list_item">
@@ -119,29 +93,7 @@ ConstrantLayout的和RecyclerView的问题，使用其他布局包含RecyclerVie
     <footer class="title_info">
       一 10 十二月 2018
  <a href="http://www.iknockdoor.com/category/kai-fa.html"><span>开发</span></a>  <a href="http://www.iknockdoor.com/tag/android.html"><span>Android</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/RecyclerView的onBindHolder与onViewAttachToWindow.html"> <p>
-开发中遇到一个问题，原代码中在onBindViewHolder的时候对itemView
-setLayoutParamter，调整了itemView的布局，然后调整代码在
-onViewAttachToWindow中去做这件事，然后发现调整后发生崩溃，类型转换错误。
-</p>
-
-<p>
-原因在于RecyclerView在onBindViewHolder的时候会设置itemView的
-layoutManager，所以在onViewAttachToWindow时再去设置不同的layout会出现错误。生命周期如下：
-</p>
-<ul class="org-ul">
-<li>onBindViewHolder
-</li>
-<li>setLayoutParams
-</li>
-<li>setLayoutParams
-</li>
-<li>onAttachViewToWindow
-</li>
-<li>onLayout
-</li>
-</ul>
-</a></div><!-- /.entry-content -->
+    <div class="entry-content"><a href="http://www.iknockdoor.com/RecyclerView的onBindHolder与onViewAttachToWindow.html"> </a></div><!-- /.entry-content -->
     <a href="http://www.iknockdoor.com/RecyclerView的onBindHolder与onViewAttachToWindow.html"><span class="more"> more &raquo;</span></a>
 </article>
   <article class="article_list_item">
@@ -149,14 +101,7 @@ layoutManager，所以在onViewAttachToWindow时再去设置不同的layout会�
     <footer class="title_info">
       四 22 十一月 2018
  <a href="http://www.iknockdoor.com/category/kai-fa.html"><span>开发</span></a>  <a href="http://www.iknockdoor.com/tag/android.html"><span>Android</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/ADB通过WIFI无线调试Android手机.html"> <p>
-主要以下两个命令，可以通过adb &#x2013;help查看到
-</p>
-<div class="org-src-container">
-
-<pre class="src src-sh">adb tcpip PORT               restart adb server listening on TCP on PORT
-<span class="org-comment-delimiter"># </span><span class="org-comment">adb tcpip 5555</span>
-adb connect HOST …</pre></div></a></div><!-- /.entry-content -->
+    <div class="entry-content"><a href="http://www.iknockdoor.com/ADB通过WIFI无线调试Android手机.html"> </a></div><!-- /.entry-content -->
     <a href="http://www.iknockdoor.com/ADB通过WIFI无线调试Android手机.html"><span class="more"> more &raquo;</span></a>
 </article>
   <article class="article_list_item">
@@ -172,14 +117,7 @@ adb connect HOST …</pre></div></a></div><!-- /.entry-content -->
     <footer class="title_info">
       四 22 十一月 2018
  <a href="http://www.iknockdoor.com/category/kai-fa.html"><span>开发</span></a>  <a href="http://www.iknockdoor.com/tag/android.html"><span>Android</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/Error: No toolchains found in the NDK toolchains folder for ABI with prefix.html"> <p>
-Android Studio升级到3.2.1之后在编译代码是遇到如下错误
-</p>
-<pre class="example">
-No toolchains found in the NDK toolchains folder for ABI with prefix mipsel-linux-android
-</pre>
-<p>
-原因是Android SDK在新版本中移除NDK对mipsel平台的支持，但是旧版的 …</p></a></div><!-- /.entry-content -->
+    <div class="entry-content"><a href="http://www.iknockdoor.com/Error: No toolchains found in the NDK toolchains folder for ABI with prefix.html"> </a></div><!-- /.entry-content -->
     <a href="http://www.iknockdoor.com/Error: No toolchains found in the NDK toolchains folder for ABI with prefix.html"><span class="more"> more &raquo;</span></a>
 </article>
 <ul class="paginator">

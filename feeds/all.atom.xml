@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>iknockdoor</title><link href="http://www.iknockdoor.com/" rel="alternate"></link><link href="http://www.iknockdoor.com/feeds/all.atom.xml" rel="self"></link><id>http://www.iknockdoor.com/</id><updated>2020-02-04T00:00:00+08:00</updated><entry><title>swich破解</title><link href="http://www.iknockdoor.com/swich%E7%A0%B4%E8%A7%A3.html" rel="alternate"></link><published>2020-02-04T00:00:00+08:00</published><updated>2020-02-04T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2020-02-04:/swich破解.html</id><summary type="html">
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; &lt;span class="todo TODO"&gt;TODO&lt;/span&gt; &lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;AutoRCM
-&lt;/li&gt;
-&lt;li&gt;install by usb
-&lt;/li&gt;
-&lt;li&gt;虚拟系统格式化？破解系统只玩破解，正版系统玩正版，貌似也不用格式化，不要联网就对了，删除联网信息，避免自动联网。不格式化只是想要以前的游戏，这些游戏再下载破解的就好，貌似还是可以的格式化的。用原来的账户玩某些游戏也会被ban.还是得格式化，破解系统有联网可装得软件，homebrew这些 …&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>iknockdoor</title><link href="http://www.iknockdoor.com/" rel="alternate"></link><link href="http://www.iknockdoor.com/feeds/all.atom.xml" rel="self"></link><id>http://www.iknockdoor.com/</id><updated>2020-02-04T00:00:00+08:00</updated><entry><title>swich破解</title><link href="http://www.iknockdoor.com/swich%E7%A0%B4%E8%A7%A3.html" rel="alternate"></link><published>2020-02-04T00:00:00+08:00</published><updated>2020-02-04T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2020-02-04:/swich破解.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; &lt;span class="todo TODO"&gt;TODO&lt;/span&gt; &lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -82,34 +73,7 @@ hekate必须依赖SD卡的上文件，这样启动正版系统就比需插着SD�
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="搞机"></category></entry><entry><title>计算机图形学</title><link href="http://www.iknockdoor.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6.html" rel="alternate"></link><published>2019-12-12T00:00:00+08:00</published><updated>2019-12-12T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-12-12:/计算机图形学.html</id><summary type="html">
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; 计算机图形学学习笔记&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-随便翻看了一下，计算机图形学的书，发现有些内容还是很有意思的，做个记录。
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
-&lt;h3 id="sec-1-1"&gt;&lt;span class="section-number-3"&gt;1.1&lt;/span&gt; 为什么经常用三角形拼凑一个对象？&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-1-1"&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;书中第4章有简单提到，由于计算精度误差的因素，多边形可能会不在同一个平面上。
-&lt;/li&gt;
-&lt;li&gt;简化显示算法
-&lt;/li&gt;
-&lt;li&gt;简化填充算法
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-1-2" class="outline-3"&gt;
-&lt;h3 id="sec-1-2"&gt;&lt;span class="section-number-3"&gt;1.2&lt;/span&gt; 样条&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-sec-1-3" class="outline-3"&gt;
-&lt;h3 id="sec-1-3"&gt;&lt;span class="section-number-3"&gt;1.3&lt;/span&gt; 什么是建模 …&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+</content><category term="搞机"></category></entry><entry><title>计算机图形学</title><link href="http://www.iknockdoor.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6.html" rel="alternate"></link><published>2019-12-12T00:00:00+08:00</published><updated>2019-12-12T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-12-12:/计算机图形学.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; 计算机图形学学习笔记&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -151,13 +115,7 @@ hekate必须依赖SD卡的上文件，这样启动正版系统就比需插着SD�
 &lt;h3 id="sec-1-7"&gt;&lt;span class="section-number-3"&gt;1.7&lt;/span&gt; 光照模型&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category></entry><entry><title>豁然开朗的人生</title><link href="http://www.iknockdoor.com/%E8%B1%81%E7%84%B6%E5%BC%80%E6%9C%97%E7%9A%84%E4%BA%BA%E7%94%9F.html" rel="alternate"></link><published>2019-11-29T00:00:00+08:00</published><updated>2019-11-29T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-11-29:/豁然开朗的人生.html</id><summary type="html">&lt;p&gt;
-   今年在这个年龄，开始觉得对人生有点豁然开朗的感觉。以前有很多问题会想不通，比如如何与朋友相处，如何面对生活中突如其来的福或者祸，人生是天命难违还是事在人为？如今这些疑惑似乎慢慢有了答案。
-&lt;/p&gt;
-
-
-&lt;p&gt;
-   人生不是一条线，而是一个面。如何理解这句话呢？人生不是一个个的目标，从一个点努力到另一个点，这些目标并不是人生，并不是实现了某一个目标人生就圆满了，人生不是由这一个一个的点构成，而是你所走过的路，以及路上的人和风景，这些经历才是你的人生。于是，我可以放下心来认认真真的体会人生路上的点点滴滴 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category></entry><entry><title>豁然开朗的人生</title><link href="http://www.iknockdoor.com/%E8%B1%81%E7%84%B6%E5%BC%80%E6%9C%97%E7%9A%84%E4%BA%BA%E7%94%9F.html" rel="alternate"></link><published>2019-11-29T00:00:00+08:00</published><updated>2019-11-29T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-11-29:/豁然开朗的人生.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
    今年在这个年龄，开始觉得对人生有点豁然开朗的感觉。以前有很多问题会想不通，比如如何与朋友相处，如何面对生活中突如其来的福或者祸，人生是天命难违还是事在人为？如今这些疑惑似乎慢慢有了答案。
 &lt;/p&gt;
 
@@ -432,18 +390,7 @@ Flying the F-16 straight and level is easy.注意这里，这样的并列形容�
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category></entry><entry><title>Kotlin泛型中的协变</title><link href="http://www.iknockdoor.com/Kotlin%E6%B3%9B%E5%9E%8B%E4%B8%AD%E7%9A%84%E5%8D%8F%E5%8F%98.html" rel="alternate"></link><published>2019-10-18T00:00:00+08:00</published><updated>2019-10-18T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-10-18:/Kotlin泛型中的协变.html</id><summary type="html">
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; 子类与子类型&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-理解协变首先要将子类和子类型这两个概念区别开。先定义什么是子类型：
-&lt;/p&gt;
-&lt;pre class="example"&gt;
-子类型：如果期望A的时候可以使用B，那么B就是A的子类型
-&lt;/pre&gt;
-&lt;p&gt;
-子类的概念就是继承关系，如果B继承A，那么B就是A的子类。如果只有简单的普通类，那么这两个概念是没有区别的，但是涉及到泛型化的容器类时这两个概念就会有区别了（包括Kotlin中的可空性也会有区别），泛型化的容器类容器类型和具体内容类型组成了新的类型，而这个新的类型并没有对应的具体类。比如List&amp;lt;String&amp;gt;，是一个新的类型，但是并找不到这样的一个类的声明 …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+</content><category term="misc"></category></entry><entry><title>Kotlin泛型中的协变</title><link href="http://www.iknockdoor.com/Kotlin%E6%B3%9B%E5%9E%8B%E4%B8%AD%E7%9A%84%E5%8D%8F%E5%8F%98.html" rel="alternate"></link><published>2019-10-18T00:00:00+08:00</published><updated>2019-10-18T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-10-18:/Kotlin泛型中的协变.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; 子类与子类型&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -468,24 +415,7 @@ List&amp;lt;Any&amp;gt;的子类型，就是由List声明时是否支持协变�
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="开发"></category><category term="Kotlin"></category></entry><entry><title>Android大格式化文本分页机制及渲染效率初步考察</title><link href="http://www.iknockdoor.com/Android%E5%A4%A7%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%96%87%E6%9C%AC%E5%88%86%E9%A1%B5%E6%9C%BA%E5%88%B6%E5%8F%8A%E6%B8%B2%E6%9F%93%E6%95%88%E7%8E%87%E5%88%9D%E6%AD%A5%E8%80%83%E5%AF%9F.html" rel="alternate"></link><published>2019-10-10T00:00:00+08:00</published><updated>2019-10-10T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-10-10:/Android大格式化文本分页机制及渲染效率初步考察.html</id><summary type="html">
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; 格式化文本的分页机制&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-先说问题，由于TextView的机制，我们不能将很大量的文本直接填入TextView
-显示，这样会导致TextView的效率很低，内存占用率巨大，因此需要考虑将文本进行分段加载，重复使用TextView。所以问题来了，应该如何分段？考虑过几种方法：
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;按自然行。自然行行不通，如果一个大文本文件没有换行怎么办？
-&lt;/li&gt;
-&lt;li&gt;按固定字数。
-&lt;/li&gt;
-&lt;li&gt;按固定内存大小。
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-上面几种都不太合适，格式化文本除了会影响颜色 …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+</content><category term="开发"></category><category term="Kotlin"></category></entry><entry><title>Android大格式化文本分页机制及渲染效率初步考察</title><link href="http://www.iknockdoor.com/Android%E5%A4%A7%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%96%87%E6%9C%AC%E5%88%86%E9%A1%B5%E6%9C%BA%E5%88%B6%E5%8F%8A%E6%B8%B2%E6%9F%93%E6%95%88%E7%8E%87%E5%88%9D%E6%AD%A5%E8%80%83%E5%AF%9F.html" rel="alternate"></link><published>2019-10-10T00:00:00+08:00</published><updated>2019-10-10T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-10-10:/Android大格式化文本分页机制及渲染效率初步考察.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; 格式化文本的分页机制&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -513,7 +443,7 @@ List&amp;lt;Any&amp;gt;的子类型，就是由List声明时是否支持协变�
 &lt;div id="outline-container-sec-3" class="outline-2"&gt;
 &lt;h2 id="sec-3"&gt;&lt;span class="section-number-2"&gt;3&lt;/span&gt; RecyclerView&lt;/h2&gt;
 &lt;/div&gt;
-</content><category term="开发"></category><category term="Android"></category></entry><entry><title>多元关系的的社交方式</title><link href="http://www.iknockdoor.com/%E5%A4%9A%E5%85%83%E5%85%B3%E7%B3%BB%E7%9A%84%E7%9A%84%E7%A4%BE%E4%BA%A4%E6%96%B9%E5%BC%8F.html" rel="alternate"></link><published>2019-09-06T00:00:00+08:00</published><updated>2019-09-06T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-09-06:/多元关系的的社交方式.html</id><content type="html">
+</content><category term="开发"></category><category term="Android"></category></entry><entry><title>多元关系的的社交方式</title><link href="http://www.iknockdoor.com/%E5%A4%9A%E5%85%83%E5%85%B3%E7%B3%BB%E7%9A%84%E7%9A%84%E7%A4%BE%E4%BA%A4%E6%96%B9%E5%BC%8F.html" rel="alternate"></link><published>2019-09-06T00:00:00+08:00</published><updated>2019-09-06T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-09-06:/多元关系的的社交方式.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; 什么是以自我为中心&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -527,7 +457,7 @@ List&amp;lt;Any&amp;gt;的子类型，就是由List声明时是否支持协变�
 &lt;div id="outline-container-sec-2" class="outline-2"&gt;
 &lt;h2 id="sec-2"&gt;&lt;span class="section-number-2"&gt;2&lt;/span&gt; 时刻谨记，你只是人际关系网中的一个节点&lt;/h2&gt;
 &lt;/div&gt;
-</content><category term="misc"></category></entry><entry><title>长跑与人生</title><link href="http://www.iknockdoor.com/%E9%95%BF%E8%B7%91%E4%B8%8E%E4%BA%BA%E7%94%9F.html" rel="alternate"></link><published>2019-09-06T00:00:00+08:00</published><updated>2019-09-06T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-09-06:/长跑与人生.html</id><content type="html">&lt;p&gt;
+</content><category term="misc"></category></entry><entry><title>长跑与人生</title><link href="http://www.iknockdoor.com/%E9%95%BF%E8%B7%91%E4%B8%8E%E4%BA%BA%E7%94%9F.html" rel="alternate"></link><published>2019-09-06T00:00:00+08:00</published><updated>2019-09-06T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-09-06:/长跑与人生.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
 道理是什么？努力就是你要跑，经常跑，但不需要上来就跑的很快，相反，可以尽量放慢，然后让身体慢慢的进入状态，会不自觉的进入最佳状态。很多事情都适用这个道理
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
@@ -2241,7 +2171,7 @@ SHA1，一致则可以放心的刷机了，安全可靠。
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="开发"></category><category term="Android"></category></entry><entry><title>RecyclerView在ConstraintLayout中使用时item的width设置MATCH</title><link href="http://www.iknockdoor.com/RecyclerView%E5%9C%A8ConstraintLayout%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%97%B6item%E7%9A%84width%E8%AE%BE%E7%BD%AEMATCH_PARENT%E6%97%A0%E6%95%88%E7%9A%84%E9%97%AE%E9%A2%98.html" rel="alternate"></link><published>2018-12-14T00:00:00+08:00</published><updated>2018-12-14T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-12-14:/RecyclerView在ConstraintLayout中使用时item的width设置MATCH_PARENT无效的问题.html</id><content type="html">&lt;p&gt;
+</content><category term="开发"></category><category term="Android"></category></entry><entry><title>RecyclerView在ConstraintLayout中使用时item的width设置MATCH</title><link href="http://www.iknockdoor.com/RecyclerView%E5%9C%A8ConstraintLayout%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%97%B6item%E7%9A%84width%E8%AE%BE%E7%BD%AEMATCH_PARENT%E6%97%A0%E6%95%88%E7%9A%84%E9%97%AE%E9%A2%98.html" rel="alternate"></link><published>2018-12-14T00:00:00+08:00</published><updated>2018-12-14T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-12-14:/RecyclerView在ConstraintLayout中使用时item的width设置MATCH_PARENT无效的问题.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
 RecyclerView外部是ContrantLayout，在RecyclerView中new出view，并new出
 LayoutParams，此时给MATCH_PARENT是无效的。通过调试，应该是
 ConstrantLayout的和RecyclerView的问题，使用其他布局包含RecyclerView是正常的。 
@@ -2250,12 +2180,7 @@ ConstrantLayout的和RecyclerView的问题，使用其他布局包含RecyclerVie
 &lt;p&gt;
 具体原因还未查清。
 &lt;/p&gt;
-</content><category term="开发"></category><category term="Android"></category></entry><entry><title>替换Mac OS X terminal系统自带emacs</title><link href="http://www.iknockdoor.com/%E6%9B%BF%E6%8D%A2Mac%20OS%20X%20terminal%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%B8%A6emacs.html" rel="alternate"></link><published>2018-12-13T00:00:00+08:00</published><updated>2018-12-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-12-13:/替换Mac OS X terminal系统自带emacs.html</id><summary type="html">&lt;p&gt;
-由于Mac OS X 10.13.6及更新版本对root权限的限制机制很严格，因此不能再像以前一样直接替换/usr/bin/emacs了，但可以使用/usr/local/bin目录，效果一样，也更合理。
-&lt;/p&gt;
-&lt;div class="org-src-container"&gt;
-
-&lt;pre class="src src-sh"&gt;touch /usr/local/bin …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="开发"></category><category term="Android"></category></entry><entry><title>替换Mac OS X terminal系统自带emacs</title><link href="http://www.iknockdoor.com/%E6%9B%BF%E6%8D%A2Mac%20OS%20X%20terminal%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%B8%A6emacs.html" rel="alternate"></link><published>2018-12-13T00:00:00+08:00</published><updated>2018-12-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-12-13:/替换Mac OS X terminal系统自带emacs.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
 由于Mac OS X 10.13.6及更新版本对root权限的限制机制很严格，因此不能再像以前一样直接替换/usr/bin/emacs了，但可以使用/usr/local/bin目录，效果一样，也更合理。
 &lt;/p&gt;
 &lt;div class="org-src-container"&gt;
@@ -2933,7 +2858,7 @@ england的queen
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category><category term="english"></category></entry><entry><title>RecyclerView的onBindHolder与onViewAttachToWindow</title><link href="http://www.iknockdoor.com/RecyclerView%E7%9A%84onBindHolder%E4%B8%8EonViewAttachToWindow.html" rel="alternate"></link><published>2018-12-10T00:00:00+08:00</published><updated>2018-12-10T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-12-10:/RecyclerView的onBindHolder与onViewAttachToWindow.html</id><content type="html">&lt;p&gt;
+</content><category term="misc"></category><category term="english"></category></entry><entry><title>RecyclerView的onBindHolder与onViewAttachToWindow</title><link href="http://www.iknockdoor.com/RecyclerView%E7%9A%84onBindHolder%E4%B8%8EonViewAttachToWindow.html" rel="alternate"></link><published>2018-12-10T00:00:00+08:00</published><updated>2018-12-10T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-12-10:/RecyclerView的onBindHolder与onViewAttachToWindow.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
 开发中遇到一个问题，原代码中在onBindViewHolder的时候对itemView
 setLayoutParamter，调整了itemView的布局，然后调整代码在
 onViewAttachToWindow中去做这件事，然后发现调整后发生崩溃，类型转换错误。
@@ -2955,15 +2880,7 @@ layoutManager，所以在onViewAttachToWindow时再去设置不同的layout会�
 &lt;li&gt;onLayout
 &lt;/li&gt;
 &lt;/ul&gt;
-</content><category term="开发"></category><category term="Android"></category></entry><entry><title>emacs中的加密</title><link href="http://www.iknockdoor.com/emacs%E4%B8%AD%E7%9A%84%E5%8A%A0%E5%AF%86.html" rel="alternate"></link><published>2018-12-10T00:00:00+08:00</published><updated>2018-12-10T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-12-10:/emacs中的加密.html</id><summary type="html">
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;参考下面两个链接&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-&lt;a href="https://github.com/Sauermann/emacs-aes"&gt;https://github.com/Sauermann/emacs-aes&lt;/a&gt;
-&lt;a href="http://aes.jypc.org/?p=51451"&gt;http://aes.jypc.org/?p=51451&lt;/a&gt;
-&lt;a href="https://www.jianshu.com/p/bd4266fb4551"&gt;https://www.jianshu.com/p/bd4266fb4551&lt;/a&gt;
-&lt;a href="http://www.voidcn.com/article/p-ewqtcfbn-a.html"&gt;http://www …&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+</content><category term="开发"></category><category term="Android"></category></entry><entry><title>emacs中的加密</title><link href="http://www.iknockdoor.com/emacs%E4%B8%AD%E7%9A%84%E5%8A%A0%E5%AF%86.html" rel="alternate"></link><published>2018-12-10T00:00:00+08:00</published><updated>2018-12-10T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-12-10:/emacs中的加密.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;参考下面两个链接&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -2975,27 +2892,7 @@ layoutManager，所以在onViewAttachToWindow时再去设置不同的layout会�
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category><category term="emacs"></category></entry><entry><title>python3学习笔记</title><link href="http://www.iknockdoor.com/python3%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate"></link><published>2018-12-10T00:00:00+08:00</published><updated>2018-12-10T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-12-10:/python3学习笔记.html</id><summary type="html">
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;tutorial&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;/div&gt;&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
-&lt;h3 id="sec-1-1"&gt;代码块是用缩进控制的，缩进多少个space不重要，重要的是需要一致&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-sec-1-2" class="outline-3"&gt;
-&lt;h3 id="sec-1-2"&gt;交互模式下&amp;gt;&amp;gt;&amp;gt; 与 &amp;#x2026;的区别，&amp;#x2026;需要用一个换行结束&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-sec-1-3" class="outline-3"&gt;
-&lt;h3 id="sec-1-3"&gt;除法的返回值是浮点数，无论除数与被除数是什么类型，除法取整用//，取模用%&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-sec-1-4" class="outline-3"&gt;
-&lt;h3 id="sec-1-4"&gt;幂运算符 **&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-sec-1-5" class="outline-3"&gt;
-&lt;h3 id="sec-1-5"&gt;在交互模式下，最后一个表达式的值总会被赋给一个内建变量"_"，这个变量对用户只可读不可写。如果我们自己声明一个同名的变量，会覆盖内建变量。&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-sec-1-6" class="outline-3"&gt;
-&lt;h3 id="sec-1-6"&gt;字符串 …&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+</content><category term="misc"></category><category term="emacs"></category></entry><entry><title>python3学习笔记</title><link href="http://www.iknockdoor.com/python3%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html" rel="alternate"></link><published>2018-12-10T00:00:00+08:00</published><updated>2018-12-10T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-12-10:/python3学习笔记.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;tutorial&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -3780,7 +3677,7 @@ xxx     ALL=(ALL)       ALL  #这个是新增的用户
 
 
 &lt;/div&gt;
-&lt;/div&gt;</content><category term="misc"></category><category term="vps"></category></entry><entry><title>从未真正理解过丘奇图灵论题</title><link href="http://www.iknockdoor.com/%E4%BB%8E%E6%9C%AA%E7%9C%9F%E6%AD%A3%E7%90%86%E8%A7%A3%E8%BF%87%E4%B8%98%E5%A5%87%E5%9B%BE%E7%81%B5%E8%AE%BA%E9%A2%98.html" rel="alternate"></link><published>2018-11-24T00:00:00+08:00</published><updated>2018-11-24T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-24:/从未真正理解过丘奇图灵论题.html</id><content type="html">&lt;p&gt;
+&lt;/div&gt;</content><category term="misc"></category><category term="vps"></category></entry><entry><title>从未真正理解过丘奇图灵论题</title><link href="http://www.iknockdoor.com/%E4%BB%8E%E6%9C%AA%E7%9C%9F%E6%AD%A3%E7%90%86%E8%A7%A3%E8%BF%87%E4%B8%98%E5%A5%87%E5%9B%BE%E7%81%B5%E8%AE%BA%E9%A2%98.html" rel="alternate"></link><published>2018-11-24T00:00:00+08:00</published><updated>2018-11-24T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-24:/从未真正理解过丘奇图灵论题.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
 11月8日的时候我发了一条朋友圈，说自己一直以来都没能够真正理解过
 Church-Turing论题，更别说递归定理了，然而却写了这么久的代码，这是一件多么恐怖的事情。可是到了后来几天我再想起来这条朋友圈的时候，我竟想不起来我是因为什么发出这样的感慨。所以这里记录一下，别以后可能对这个论题的理解一步一步加深的时候会会想不起来当时是在那一层迷惑了。
 &lt;/p&gt;
@@ -3788,15 +3685,7 @@ Church-Turing论题，更别说递归定理了，然而却写了这么久的代�
 &lt;p&gt;
 给我这样感慨的应该是在读《递归论》时遇到：是否一切可计算的数论函数都是原始递归函数。答案是否定的，后来又有了一般递归函数。而丘奇-图灵论题讲的就是一切可计算函数就是一般递归函数。
 &lt;/p&gt;
-</content><category term="misc"></category></entry><entry><title>通过冠词分析名词的含义</title><link href="http://www.iknockdoor.com/%E9%80%9A%E8%BF%87%E5%86%A0%E8%AF%8D%E5%88%86%E6%9E%90%E5%90%8D%E8%AF%8D%E7%9A%84%E5%90%AB%E4%B9%89.html" rel="alternate"></link><published>2018-11-24T00:00:00+08:00</published><updated>2018-11-24T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-24:/通过冠词分析名词的含义.html</id><summary type="html">&lt;p&gt;
-I have a cat,
-Its name is Kit.
-And by the fire,
-It loves to sit.
-&lt;/p&gt;
-
-&lt;p&gt;
-这是《英国语文》课本的第一课，看这首诗中的by …&lt;/p&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category></entry><entry><title>通过冠词分析名词的含义</title><link href="http://www.iknockdoor.com/%E9%80%9A%E8%BF%87%E5%86%A0%E8%AF%8D%E5%88%86%E6%9E%90%E5%90%8D%E8%AF%8D%E7%9A%84%E5%90%AB%E4%B9%89.html" rel="alternate"></link><published>2018-11-24T00:00:00+08:00</published><updated>2018-11-24T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-24:/通过冠词分析名词的含义.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
 I have a cat,
 Its name is Kit.
 And by the fire,
@@ -3822,14 +3711,7 @@ fire这个概念应该是作者想象中的，无论是做火焰讲还是做火�
 fire是不可数的，那么不应该有冠词the，因此，by the fire中的fire因为有
 the的修饰应该是“the + 可数名词单数”表示的泛指概念，类似于“用作单”这个概念，因此fire在这里是单数火炉的意思。
 &lt;/p&gt;
-</content><category term="misc"></category><category term="english"></category></entry><entry><title>question这个单词</title><link href="http://www.iknockdoor.com/question%E8%BF%99%E4%B8%AA%E5%8D%95%E8%AF%8D.html" rel="alternate"></link><published>2018-11-23T00:00:00+08:00</published><updated>2018-11-23T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-23:/question这个单词.html</id><summary type="html">&lt;p&gt;
-词典中question有个多个含义，常用的：
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;[C]a sentence or phrase that is used to ask for information or to
-test someone's knowledge.
-&lt;/li&gt;
-&lt;li&gt;[C …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category><category term="english"></category></entry><entry><title>question这个单词</title><link href="http://www.iknockdoor.com/question%E8%BF%99%E4%B8%AA%E5%8D%95%E8%AF%8D.html" rel="alternate"></link><published>2018-11-23T00:00:00+08:00</published><updated>2018-11-23T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-23:/question这个单词.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
 词典中question有个多个含义，常用的：
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
@@ -3854,14 +3736,7 @@ question这里question表达的含义是全集，泛指，那为什么会有the�
 question在这里是可数的，所以他表达的意思是讨论，商讨，所以out of the
 question就是没得商量，绝对不行的意思了。而对于out of question，question在这里也是表示泛指的概念，没有限定词，说明他是不可数的含义，就是疑问，困惑的意思，所以out of question表示没有疑问，没有困惑，就是毫无疑问的意思了。如此理解两个短语的区别很清晰。
 &lt;/p&gt;
-</content><category term="misc"></category><category term="english"></category></entry><entry><title>ADB通过WIFI无线调试Android手机</title><link href="http://www.iknockdoor.com/ADB%E9%80%9A%E8%BF%87WIFI%E6%97%A0%E7%BA%BF%E8%B0%83%E8%AF%95Android%E6%89%8B%E6%9C%BA.html" rel="alternate"></link><published>2018-11-22T00:00:00+08:00</published><updated>2018-11-22T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-22:/ADB通过WIFI无线调试Android手机.html</id><summary type="html">&lt;p&gt;
-主要以下两个命令，可以通过adb &amp;#x2013;help查看到
-&lt;/p&gt;
-&lt;div class="org-src-container"&gt;
-
-&lt;pre class="src src-sh"&gt;adb tcpip PORT               restart adb server listening on TCP on PORT
-&lt;span class="org-comment-delimiter"&gt;# &lt;/span&gt;&lt;span class="org-comment"&gt;adb tcpip 5555&lt;/span&gt;
-adb connect HOST …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category><category term="english"></category></entry><entry><title>ADB通过WIFI无线调试Android手机</title><link href="http://www.iknockdoor.com/ADB%E9%80%9A%E8%BF%87WIFI%E6%97%A0%E7%BA%BF%E8%B0%83%E8%AF%95Android%E6%89%8B%E6%9C%BA.html" rel="alternate"></link><published>2018-11-22T00:00:00+08:00</published><updated>2018-11-22T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-22:/ADB通过WIFI无线调试Android手机.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
 主要以下两个命令，可以通过adb &amp;#x2013;help查看到
 &lt;/p&gt;
 &lt;div class="org-src-container"&gt;
@@ -3914,14 +3789,7 @@ log如下：
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="开发"></category><category term="Android"></category></entry><entry><title>Error: No toolchains found in the NDK toolchains folder for ABI with prefix</title><link href="Error:%20No%20toolchains%20found%20in%20the%20NDK%20toolchains%20folder%20for%20ABI%20with%20prefix.html" rel="alternate"></link><published>2018-11-22T00:00:00+08:00</published><updated>2018-11-22T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:None,2018-11-22: No toolchains found in the NDK toolchains folder for ABI with prefix.html</id><summary type="html">&lt;p&gt;
-Android Studio升级到3.2.1之后在编译代码是遇到如下错误
-&lt;/p&gt;
-&lt;pre class="example"&gt;
-No toolchains found in the NDK toolchains folder for ABI with prefix mipsel-linux-android
-&lt;/pre&gt;
-&lt;p&gt;
-原因是Android SDK在新版本中移除NDK对mipsel平台的支持，但是旧版的 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="开发"></category><category term="Android"></category></entry><entry><title>Error: No toolchains found in the NDK toolchains folder for ABI with prefix</title><link href="Error:%20No%20toolchains%20found%20in%20the%20NDK%20toolchains%20folder%20for%20ABI%20with%20prefix.html" rel="alternate"></link><published>2018-11-22T00:00:00+08:00</published><updated>2018-11-22T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:None,2018-11-22: No toolchains found in the NDK toolchains folder for ABI with prefix.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
 Android Studio升级到3.2.1之后在编译代码是遇到如下错误
 &lt;/p&gt;
 &lt;pre class="example"&gt;
@@ -3946,42 +3814,28 @@ ln -s aarch64-linux-android-4.9 mips64el-linux-android
 ln -s arm-linux-androideabi-4.9 mipsel-linux-android
 &lt;/pre&gt;
 &lt;/div&gt;
-</content><category term="开发"></category><category term="Android"></category></entry><entry><title>互联网的版本管理系统</title><link href="http://www.iknockdoor.com/%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.html" rel="alternate"></link><published>2018-11-21T00:00:00+08:00</published><updated>2018-11-21T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-21:/互联网的版本管理系统.html</id><content type="html">&lt;p&gt;
+</content><category term="开发"></category><category term="Android"></category></entry><entry><title>互联网的版本管理系统</title><link href="http://www.iknockdoor.com/%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.html" rel="alternate"></link><published>2018-11-21T00:00:00+08:00</published><updated>2018-11-21T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-21:/互联网的版本管理系统.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
    记得之前在网上看到过，可能是知乎吧，忘记了，有一个系统可以记录网页的变迁历史，有点像git。包括互联网的去中心化，现在突然发现这个很重要，但是又找不到当时看的是什么了。
 &lt;/p&gt;
 
 &lt;p&gt;
    想到这个主要是因为想起来之前看到的一个博客在底部有个版权声明，隐约记得是说本文已经在哪个区块链系统上登记之类的，觉得这是种非常好的版权保护手段，可惜的是这个网页也找不到了。
 &lt;/p&gt;
-</content><category term="misc"></category></entry><entry><title>这几天学英语学的有点小兴奋</title><link href="http://www.iknockdoor.com/%E8%BF%99%E5%87%A0%E5%A4%A9%E5%AD%A6%E8%8B%B1%E8%AF%AD%E5%AD%A6%E7%9A%84%E6%9C%89%E7%82%B9%E5%B0%8F%E5%85%B4%E5%A5%8B.html" rel="alternate"></link><published>2018-11-21T00:00:00+08:00</published><updated>2018-11-21T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-21:/这几天学英语学的有点小兴奋.html</id><summary type="html">&lt;p&gt;
-   今天在学习和理解定冠词和不定冠词的时候，逐渐找到了感觉，课后的练习题竟然100%全对，一时间提起来英语学习的兴趣，似乎找到了窍门，在今天后面的学习中对知识点的理解也非常顺利，就是这种顿悟的感觉，很棒。
-&lt;/p&gt;
-
-&lt;p&gt;
-   这个窍门就是英语思维，更准确的说应该是人的思维。对这个点的顿悟跟这段时间学习《集异璧》也有关系，语言事实上是一个形式系统，无论是中文还是英文，他们都是与现实生活，行为，故事同构的，在这种同构下 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category></entry><entry><title>这几天学英语学的有点小兴奋</title><link href="http://www.iknockdoor.com/%E8%BF%99%E5%87%A0%E5%A4%A9%E5%AD%A6%E8%8B%B1%E8%AF%AD%E5%AD%A6%E7%9A%84%E6%9C%89%E7%82%B9%E5%B0%8F%E5%85%B4%E5%A5%8B.html" rel="alternate"></link><published>2018-11-21T00:00:00+08:00</published><updated>2018-11-21T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-21:/这几天学英语学的有点小兴奋.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
    今天在学习和理解定冠词和不定冠词的时候，逐渐找到了感觉，课后的练习题竟然100%全对，一时间提起来英语学习的兴趣，似乎找到了窍门，在今天后面的学习中对知识点的理解也非常顺利，就是这种顿悟的感觉，很棒。
 &lt;/p&gt;
 
 &lt;p&gt;
    这个窍门就是英语思维，更准确的说应该是人的思维。对这个点的顿悟跟这段时间学习《集异璧》也有关系，语言事实上是一个形式系统，无论是中文还是英文，他们都是与现实生活，行为，故事同构的，在这种同构下，他们的推理规则是不同的，所以我们只需要按照这一语言的推理规则推理就好，比如中文不区分单复数，但英语要很明确的区分，没关系，我们可以很清楚的知道这两种不同规则下表达的同一个意义。
 &lt;/p&gt;
-</content><category term="misc"></category></entry><entry><title>逐行解码base64文件</title><link href="http://www.iknockdoor.com/%E9%80%90%E8%A1%8C%E8%A7%A3%E7%A0%81base64%E6%96%87%E4%BB%B6.html" rel="alternate"></link><published>2018-11-21T00:00:00+08:00</published><updated>2018-11-21T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-21:/逐行解码base64文件.html</id><summary type="html">&lt;div class="org-src-container"&gt;
-
-&lt;pre class="src src-bash"&gt;while IFS= read -r line; do echo "$line" | base64 --decode; done &amp;lt; file
-# 下面这个解出的结果会换行
-while IFS= read -r line; do echo …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="org-src-container"&gt;
+</content><category term="misc"></category></entry><entry><title>逐行解码base64文件</title><link href="http://www.iknockdoor.com/%E9%80%90%E8%A1%8C%E8%A7%A3%E7%A0%81base64%E6%96%87%E4%BB%B6.html" rel="alternate"></link><published>2018-11-21T00:00:00+08:00</published><updated>2018-11-21T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-21:/逐行解码base64文件.html</id><summary type="html"></summary><content type="html">&lt;div class="org-src-container"&gt;
 
 &lt;pre class="src src-bash"&gt;while IFS= read -r line; do echo "$line" | base64 --decode; done &amp;lt; file
 # 下面这个解出的结果会换行
 while IFS= read -r line; do echo "$line"  | base64 --decode &amp;gt;&amp;gt; out.txt;echo ""&amp;gt;&amp;gt;out.txt; done &amp;lt; tmp2.org
 &lt;/pre&gt;
 &lt;/div&gt;
-</content><category term="misc"></category></entry><entry><title>Dota中的猥琐流打法与生活态度</title><link href="http://www.iknockdoor.com/Dota%E4%B8%AD%E7%9A%84%E7%8C%A5%E7%90%90%E6%B5%81%E6%89%93%E5%8F%91%E4%B8%8E%E7%94%9F%E6%B4%BB%E6%80%81%E5%BA%A6.html" rel="alternate"></link><published>2018-11-09T00:00:00+08:00</published><updated>2018-11-09T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-09:/Dota中的猥琐流打发与生活态度.html</id><summary type="html">&lt;p&gt;
-   最近和一个朋友一起打DOTA2。这个朋友的水平在我们这几个玩的人中算是比较高的了，一起玩了几局之后你就会发现他的打法很猥琐，基本上就是一看形势不好，掉头就跑那种，一看有人头能拿就会不择手段的猥琐抢人头，可以理解为“送死你去，好处我拿”。看吧，是不是确实很猥琐，但是这位朋友却猥琐的很可爱，从来不会让人觉得讨厌，而是很自然，让人感觉还挺舒服的。这里我们暂且不讨论他是如何做到猥琐而不失可爱的，只讨论一下猥琐的生活理念。
-&lt;/p&gt;
-
-&lt;p&gt;
-   在游戏中，猥琐的这个打法虽然看起来有点怂，但似乎应该是正确的打法 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category></entry><entry><title>Dota中的猥琐流打法与生活态度</title><link href="http://www.iknockdoor.com/Dota%E4%B8%AD%E7%9A%84%E7%8C%A5%E7%90%90%E6%B5%81%E6%89%93%E5%8F%91%E4%B8%8E%E7%94%9F%E6%B4%BB%E6%80%81%E5%BA%A6.html" rel="alternate"></link><published>2018-11-09T00:00:00+08:00</published><updated>2018-11-09T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-09:/Dota中的猥琐流打发与生活态度.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
    最近和一个朋友一起打DOTA2。这个朋友的水平在我们这几个玩的人中算是比较高的了，一起玩了几局之后你就会发现他的打法很猥琐，基本上就是一看形势不好，掉头就跑那种，一看有人头能拿就会不择手段的猥琐抢人头，可以理解为“送死你去，好处我拿”。看吧，是不是确实很猥琐，但是这位朋友却猥琐的很可爱，从来不会让人觉得讨厌，而是很自然，让人感觉还挺舒服的。这里我们暂且不讨论他是如何做到猥琐而不失可爱的，只讨论一下猥琐的生活理念。
 &lt;/p&gt;
 
@@ -4018,34 +3872,7 @@ while IFS= read -r line; do echo "$line"  | base64 --decode &amp;gt;&amp;gt; out
 &lt;p&gt;
 从游戏说回生活和工作，会发现会有很多相似之处，不要跟愣头青似的不服就干，这样太虎了，这样不但不会有好的结果，而且也很低级，完全没有睿智可言。所以在生活和工作中，量力而行，见好就收，不硬上，不莽撞，有好处就想尽办法得到好处，别害羞，别觉得为难，甚至内疚，因为不是猥琐，这才是真正的智慧。
 &lt;/p&gt;
-</content><category term="misc"></category></entry><entry><title>递归论读书笔记</title><link href="http://www.iknockdoor.com/%E9%80%92%E5%BD%92%E8%AE%BA%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html" rel="alternate"></link><published>2018-11-08T00:00:00+08:00</published><updated>2018-11-08T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-08:/递归论读书笔记.html</id><summary type="html">
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;笔记&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;/div&gt;&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
-&lt;h3 id="sec-1-1"&gt;绪论&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-1-1"&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;1923年Skolem宣称所有初等数论中的数论函数都可以通过原始递归式定义
-&lt;/li&gt;
-&lt;li&gt;是否一切可计算的数论函数都是原始递归函数？Ackermann给出了否定的答案，给出了一个可计算但增长速度远远超过一切原始递归函数的函数。
-&lt;/li&gt;
-&lt;li&gt;Kleene给出了一般递归函数的定义
-&lt;/li&gt;
-&lt;li&gt;Church-Turing论点：人们一般所说的可计算函数恰巧便是一般递归函数。
-&lt;pre class="example"&gt;
-书中说这个点有点武断，但后来不但没有找到反例，反倒发现的事项越来越有利于这个论点。这个论点是直接给出了一个结论，但这个结论从哪里来？需要看一下一般递归函数和可计算函数的定义。
-&lt;/pre&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-sec-1-1-1" class="outline-4"&gt;
-&lt;h4 id="sec-1-1-1"&gt;基本概念&lt;/h4&gt;
-&lt;div class="outline-text-4" id="text-1-1-1"&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;（数论）函数：把数变成数
-&lt;/li&gt;
-&lt;li&gt;谓词 …&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+</content><category term="misc"></category></entry><entry><title>递归论读书笔记</title><link href="http://www.iknockdoor.com/%E9%80%92%E5%BD%92%E8%AE%BA%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html" rel="alternate"></link><published>2018-11-08T00:00:00+08:00</published><updated>2018-11-08T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-11-08:/递归论读书笔记.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;笔记&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -4093,28 +3920,7 @@ while IFS= read -r line; do echo "$line"  | base64 --decode &amp;gt;&amp;gt; out
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category></entry><entry><title>使用emacs,org-mode和pelican搭建博客系统解决方案</title><link href="http://www.iknockdoor.com/%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html" rel="alternate"></link><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-10-12:/博客系统解决方案.html</id><summary type="html">&lt;div id="table-of-contents"&gt;
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;div id="text-table-of-contents"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-1"&gt;设计&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2"&gt;搭建&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-2-1"&gt;环境&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2-2"&gt;安装&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-2-2-1"&gt;CentOS下安装Python3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2-2-2"&gt;安装Pelican&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2-2-3"&gt;安装emacs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2-2-4"&gt;&lt;span class="todo TODO"&gt;TODO&lt;/span&gt; 安装Git&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2-3"&gt;&lt;span class="todo TODO"&gt;TODO&lt;/span&gt; 配置&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2-4"&gt;&lt;span class="todo TODO"&gt;TODO&lt;/span&gt; 测试环境的搭建&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-3"&gt;&lt;span class="todo TODO"&gt;TODO&lt;/span&gt; Pelican的原理与应用&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-4"&gt;&lt;span class="todo TODO"&gt;TODO&lt;/span&gt; 界面布局与样式美化 …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div id="table-of-contents"&gt;
+</content><category term="misc"></category></entry><entry><title>使用emacs,org-mode和pelican搭建博客系统解决方案</title><link href="http://www.iknockdoor.com/%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html" rel="alternate"></link><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-10-12:/博客系统解决方案.html</id><summary type="html"></summary><content type="html">&lt;div id="table-of-contents"&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id="text-table-of-contents"&gt;
 &lt;ul&gt;
@@ -4389,29 +4195,7 @@ git log --pretty=format:%cd -n 1 --date=iso
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category><category term="blog"></category></entry><entry><title>跟换为Pelican生成笔记系统</title><link href="http://www.iknockdoor.com/%E8%B7%9F%E6%8D%A2%E4%B8%BAPelican%E7%94%9F%E6%88%90%E7%AC%94%E8%AE%B0%E7%B3%BB%E7%BB%9F.html" rel="alternate"></link><published>2018-10-10T00:00:00+08:00</published><updated>2018-10-10T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-10-10:/跟换为Pelican生成笔记系统.html</id><summary type="html">&lt;div id="table-of-contents"&gt;
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;div id="text-table-of-contents"&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-1"&gt;Todolist&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2"&gt;想法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-3"&gt;设计&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-3-1"&gt;文章时间&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-3-1-1"&gt;时间戳格式&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-3-1-2"&gt;创建时间&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-3-1-3"&gt;最后修改时间&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-3-2"&gt;URL&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-3-3"&gt;theme&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#sec-3-3-1"&gt;martin-pelican&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-3-3-2"&gt;nice-blog&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class="tag"&gt;&lt;span class="ATTACH"&gt;ATTACH&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-3-3-3"&gt;elegant&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class="tag"&gt;&lt;span class="ATTACH"&gt;ATTACH&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-3-3-4"&gt;dev-random2&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class="tag"&gt;&lt;span class="ATTACH"&gt;ATTACH&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-3-3-5"&gt;foundation-default-colours …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div id="table-of-contents"&gt;
+</content><category term="misc"></category><category term="blog"></category></entry><entry><title>跟换为Pelican生成笔记系统</title><link href="http://www.iknockdoor.com/%E8%B7%9F%E6%8D%A2%E4%B8%BAPelican%E7%94%9F%E6%88%90%E7%AC%94%E8%AE%B0%E7%B3%BB%E7%BB%9F.html" rel="alternate"></link><published>2018-10-10T00:00:00+08:00</published><updated>2018-10-10T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-10-10:/跟换为Pelican生成笔记系统.html</id><summary type="html"></summary><content type="html">&lt;div id="table-of-contents"&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id="text-table-of-contents"&gt;
 &lt;ul&gt;
@@ -4714,16 +4498,7 @@ test
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category></entry><entry><title>递归</title><link href="http://www.iknockdoor.com/%E9%80%92%E5%BD%92.html" rel="alternate"></link><published>2018-10-09T00:00:00+08:00</published><updated>2018-10-09T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-10-09:/递归.html</id><summary type="html">&lt;p&gt;
-   一直以来对递归的理解和使用都感觉很陌生，完全没有掌握递归的套路。总觉得不是归纳法那么简单。后来看了一些资料，发现递归确实是一个非常有意义的话题。
-&lt;/p&gt;
-
-&lt;p&gt;
-   关于递归有两个定理很重要，一个就是递归定理，另外一个是不动点定理。还有一个是自生产程序。
-&lt;/p&gt;
-
-&lt;p&gt;
-   通过这两天查资料和对递归的思考，发现递归的使用最重要的是找到子问题，即能够把问题用递归定义出来。然而如何找到子问题，如何将一个问题定义成递归呢？我的思考是去找问题关联的状态，看问题的变化是依赖的谁，比如是依赖一个更小的问题，那么就可以循着这个思路思考下去，找出递归定义，理解了递归的原理 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category></entry><entry><title>递归</title><link href="http://www.iknockdoor.com/%E9%80%92%E5%BD%92.html" rel="alternate"></link><published>2018-10-09T00:00:00+08:00</published><updated>2018-10-09T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-10-09:/递归.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
    一直以来对递归的理解和使用都感觉很陌生，完全没有掌握递归的套路。总觉得不是归纳法那么简单。后来看了一些资料，发现递归确实是一个非常有意义的话题。
 &lt;/p&gt;
 
@@ -4738,12 +4513,7 @@ test
 &lt;p&gt;
    不动点函数，Y组合式与递归以及母函数是什么关系？即使有了不动点函数，这个函数是否就能求的出来？莫非母函数就是做这个的？
 &lt;/p&gt;
-</content><category term="misc"></category></entry><entry><title>听《最爱的人伤我最深》这首歌</title><link href="http://www.iknockdoor.com/%E5%90%AC%E3%80%8A%E6%9C%80%E7%88%B1%E7%9A%84%E4%BA%BA%E4%BC%A4%E6%88%91%E6%9C%80%E6%B7%B1%E3%80%8B%E8%BF%99%E9%A6%96%E6%AD%8C.html" rel="alternate"></link><published>2018-09-25T00:00:00+08:00</published><updated>2018-09-25T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-09-25:/听《最爱的人伤我最深》这首歌.html</id><summary type="html">&lt;p&gt;
-   前两天在的士上从收音机中听到张惠妹的歌，阿妹的声线太过迷人了，今天把张惠妹《最爱的人伤我最深》找到听一下，从前奏开始就直接进入了歌曲。
-&lt;/p&gt;
-
-&lt;p&gt;
-   以为是张惠妹的自己的歌，没想到第一句竟是张雨生开始的，久违的声音，两个无与伦比的声音交替着，并没有去听唱的什么内容，只是单纯的听这两个声音，心中感慨万千，世间竟有如此美妙的嗓音，唱的又这么好的两个人，然而这两个人竟又是师徒，听着这首歌，脑中浮现出师徒二人站在音乐之巅，陶醉在音乐之中，享受音乐 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category></entry><entry><title>听《最爱的人伤我最深》这首歌</title><link href="http://www.iknockdoor.com/%E5%90%AC%E3%80%8A%E6%9C%80%E7%88%B1%E7%9A%84%E4%BA%BA%E4%BC%A4%E6%88%91%E6%9C%80%E6%B7%B1%E3%80%8B%E8%BF%99%E9%A6%96%E6%AD%8C.html" rel="alternate"></link><published>2018-09-25T00:00:00+08:00</published><updated>2018-09-25T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-09-25:/听《最爱的人伤我最深》这首歌.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
    前两天在的士上从收音机中听到张惠妹的歌，阿妹的声线太过迷人了，今天把张惠妹《最爱的人伤我最深》找到听一下，从前奏开始就直接进入了歌曲。
 &lt;/p&gt;
 
@@ -4758,26 +4528,7 @@ test
 &lt;p&gt;
    第一次知道张雨生还是因为我的父亲，我的父亲特别喜欢张雨生，小的时候在电视上看到张雨生，我父亲说那是他弟弟，我一直以为是真的，每次在电视上看到张雨生都会很兴奋的说我爸爸弟弟出来了。长大后听张雨生的歌，是那样的清澈，那样的励志，相比当代的靡靡之音，简直就是一股清流。欣赏之于让人肃然起敬，，看他本人如同一个学生一样，毫无偶像包袱，就是这样的一个人带给我们如此美妙的事物，想到这里又不禁想起因为哥哥才接触到的黄家驹，多少人才让人崇拜让人尊敬，感谢他们给我们带来的乐趣，带来的另一个世界，也许我们永远无法达到他们的境界，但我们会尽量在自己擅长的领域学习他们精神。感谢他们带来的作品，也感谢他们教会我们如何做人。
 &lt;/p&gt;
-</content><category term="misc"></category></entry><entry><title>RecyclerView版本问题</title><link href="http://www.iknockdoor.com/RecyclerView%E7%89%88%E6%9C%AC%E9%97%AE%E9%A2%98.html" rel="alternate"></link><published>2018-09-10T00:00:00+08:00</published><updated>2018-09-10T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-09-10:/RecyclerView版本问题.html</id><summary type="html">
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;RecyclerView 23.0.1版本和26.0的版本在measure过程有比较大的差异&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-如果父亲给定UNSPECIFIED的高度，23的版本会measure高度为0，而26的版本会measure出自己所需要的高度。
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;由上面这个问题导致对measure和layout的理解&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
-&lt;/div&gt;&lt;div id="outline-container-sec-2-1" class="outline-3"&gt;
-&lt;h3 id="sec-2-1"&gt;getHeight和getMeasuredHeight&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-2-1"&gt;
-&lt;p&gt;
-已经知道getMeasuredHeight给的是mMeasuredHeight的值，即测量值。而
-getHeight给的是bottom-top的值。之前会认为控件会根据mMeasuredHeight
-的值来计算bottom和top的值，时尚上，这并不是强相关的，甚至bottom和
-top的值跟控件的实际宽高和布局都不要有关系 …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+</content><category term="misc"></category></entry><entry><title>RecyclerView版本问题</title><link href="http://www.iknockdoor.com/RecyclerView%E7%89%88%E6%9C%AC%E9%97%AE%E9%A2%98.html" rel="alternate"></link><published>2018-09-10T00:00:00+08:00</published><updated>2018-09-10T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-09-10:/RecyclerView版本问题.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;RecyclerView 23.0.1版本和26.0的版本在measure过程有比较大的差异&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -4993,12 +4744,7 @@ scrollby函数。这样有个缺点，像RecyclerView这样的控件，内部有
 &lt;div id="outline-container-sec-4" class="outline-2"&gt;
 &lt;h2 id="sec-4"&gt;&lt;span class="section-number-2"&gt;4&lt;/span&gt; 历史事件获取&lt;/h2&gt;
 &lt;/div&gt;
-</content><category term="开发"></category><category term="Android"></category></entry><entry><title>长安十二时辰读书笔记</title><link href="http://www.iknockdoor.com/%E9%95%BF%E5%AE%89%E5%8D%81%E4%BA%8C%E6%97%B6%E8%BE%B0%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html" rel="alternate"></link><published>2018-07-03T00:00:00+08:00</published><updated>2018-07-03T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-07-03:/长安十二时辰读书笔记.html</id><summary type="html">&lt;p&gt;
-   昨天在飞机上最后读完了长安十二时辰，书中直接描写的几个人物都个性十分鲜明，比如李泌，张小敬，元载，姚汝能等。整个故事情节非常紧凑，故事始终一波三折，一波未平一波又起，所以整个故事读下来全程基本无尿点，高潮一波接一波。
-&lt;/p&gt;
-
-&lt;p&gt;
-   就几个个性鲜明且迥异的主角来说，一号男主角自然是张小敬了，整个故事中张小敬是一个有情有义，亦正亦邪的末路英雄的形象，喜欢单打独斗，喜欢个人英雄主义，感觉像是马伯庸所以喜欢或崇拜或向往的一个形象，然而我并不是很喜欢这个形象。说是够狠 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="开发"></category><category term="Android"></category></entry><entry><title>长安十二时辰读书笔记</title><link href="http://www.iknockdoor.com/%E9%95%BF%E5%AE%89%E5%8D%81%E4%BA%8C%E6%97%B6%E8%BE%B0%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html" rel="alternate"></link><published>2018-07-03T00:00:00+08:00</published><updated>2018-07-03T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-07-03:/长安十二时辰读书笔记.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
    昨天在飞机上最后读完了长安十二时辰，书中直接描写的几个人物都个性十分鲜明，比如李泌，张小敬，元载，姚汝能等。整个故事情节非常紧凑，故事始终一波三折，一波未平一波又起，所以整个故事读下来全程基本无尿点，高潮一波接一波。
 &lt;/p&gt;
 
@@ -5759,24 +5505,7 @@ Demo做好了，小龙一看，不如把它合并到微信里面吧，于是就�
 &lt;p&gt;
 整体，中规中矩，中庸路线高性价比旗舰机，没有槽点，也没有令人惊艳的亮点，作为日常生活用机完全可以满足
 &lt;/p&gt;
-</content><category term="搞机"></category><category term="评测"></category></entry><entry><title>iPhone X电池待机与用量时间一样的问题的解决</title><link href="http://www.iknockdoor.com/iPhone%20X%E7%94%B5%E6%B1%A0%E5%BE%85%E6%9C%BA%E4%B8%8E%E7%94%A8%E9%87%8F%E6%97%B6%E9%97%B4%E4%B8%80%E6%A0%B7%E7%9A%84%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3.html" rel="alternate"></link><published>2018-05-01T00:00:00+08:00</published><updated>2018-05-01T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-05-01:/iPhone X电池待机与用量时间一样的问题的解决.html</id><summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;问题描述&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;iPhone X,11.2.2
-&lt;/li&gt;
-&lt;li&gt;在设置-&amp;gt;电池 中查看，最低下一行，待机与用量时间相等
-&lt;/li&gt;
-&lt;li&gt;虽然没有待机，但手机续航能力还可以，20多个小时，同平时差不多
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;问题解决&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;尝试了各种设置项，重启，刷机，最终只有以下方法有效 …&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+</content><category term="搞机"></category><category term="评测"></category></entry><entry><title>iPhone X电池待机与用量时间一样的问题的解决</title><link href="http://www.iknockdoor.com/iPhone%20X%E7%94%B5%E6%B1%A0%E5%BE%85%E6%9C%BA%E4%B8%8E%E7%94%A8%E9%87%8F%E6%97%B6%E9%97%B4%E4%B8%80%E6%A0%B7%E7%9A%84%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3.html" rel="alternate"></link><published>2018-05-01T00:00:00+08:00</published><updated>2018-05-01T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-05-01:/iPhone X电池待机与用量时间一样的问题的解决.html</id><summary type="html"></summary><content type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;问题描述&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;ul class="org-ul"&gt;
@@ -5987,13 +5716,7 @@ measure和layout，因此不会有性能问题，那么属性动画呢？经过�
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="开发"></category><category term="Android"></category></entry><entry><title>如何分析和可视化的清楚的表达出程序结构</title><link href="http://www.iknockdoor.com/%E5%A6%82%E4%BD%95%E5%88%86%E6%9E%90%E5%92%8C%E5%8F%AF%E8%A7%86%E5%8C%96%E7%9A%84%E6%B8%85%E6%A5%9A%E7%9A%84%E8%A1%A8%E8%BE%BE%E5%87%BA%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84.html" rel="alternate"></link><published>2018-04-04T00:00:00+08:00</published><updated>2018-04-04T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-04-04:/如何分析和可视化的清楚的表达出程序结构.html</id><summary type="html">&lt;pre class="example"&gt;
-原来写在Confluence上的，搬过来
-&lt;/pre&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;类图，各个类的关系，接口，一对一，一对多的关系，这个是对对象的组织和关系有帮助的，但无法表现时序，进程，线程关系
-&lt;/li&gt;
-&lt;li&gt;时序图，以对象生命周期为轴，可以表现对象之间的交互，也无法表现进程，线程关系，而且有点过于太细，不容易宏观表现这个点之前还是理解错了，时序图通过fragment是可以表达条件，循环 …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;pre class="example"&gt;
+</content><category term="开发"></category><category term="Android"></category></entry><entry><title>如何分析和可视化的清楚的表达出程序结构</title><link href="http://www.iknockdoor.com/%E5%A6%82%E4%BD%95%E5%88%86%E6%9E%90%E5%92%8C%E5%8F%AF%E8%A7%86%E5%8C%96%E7%9A%84%E6%B8%85%E6%A5%9A%E7%9A%84%E8%A1%A8%E8%BE%BE%E5%87%BA%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84.html" rel="alternate"></link><published>2018-04-04T00:00:00+08:00</published><updated>2018-04-04T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-04-04:/如何分析和可视化的清楚的表达出程序结构.html</id><summary type="html"></summary><content type="html">&lt;pre class="example"&gt;
 原来写在Confluence上的，搬过来
 &lt;/pre&gt;
 &lt;ol class="org-ol"&gt;
@@ -6223,17 +5946,7 @@ measure和layout，因此不会有性能问题，那么属性动画呢？经过�
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="开发"></category><category term="Android"></category></entry><entry><title>java中的闭包和匿名内部类</title><link href="http://www.iknockdoor.com/java%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85%E5%92%8C%E5%8C%BF%E5%90%8D%E5%86%85%E9%83%A8%E7%B1%BB.html" rel="alternate"></link><published>2018-02-28T00:00:00+08:00</published><updated>2018-02-28T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-02-28:/java中的闭包和匿名内部类.html</id><summary type="html">
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;java中匿名内部类使用外部方法的参数或局部变量的场景&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;div class="org-src-container"&gt;
-
-&lt;pre class="src src-java"&gt;  &lt;span class="org-keyword"&gt;interface&lt;/span&gt; &lt;span class="org-type"&gt;AnnoInner&lt;/span&gt;(){addXYZ();}
-&lt;span class="org-keyword"&gt;public&lt;/span&gt; &lt;span class="org-keyword"&gt;class&lt;/span&gt; &lt;span class="org-type"&gt;Outer&lt;/span&gt; {
-    &lt;span class="org-keyword"&gt;public&lt;/span&gt; &lt;span class="org-type"&gt;AnnoInner&lt;/span&gt; &lt;span class="org-function-name"&gt;getAnnoInner&lt;/span&gt;(&lt;span class="org-keyword"&gt;final&lt;/span&gt; &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;x&lt;/span&gt;){
-        &lt;span class="org-keyword"&gt;final&lt;/span&gt; &lt;span class="org-type"&gt;int&lt;/span&gt; &lt;span class="org-variable-name"&gt;y&lt;/span&gt;=100;
-        &lt;span class="org-keyword"&gt;return&lt;/span&gt; &lt;span class="org-keyword"&gt;new&lt;/span&gt; &lt;span class="org-type"&gt;AnnoInner …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+</content><category term="开发"></category><category term="Android"></category></entry><entry><title>java中的闭包和匿名内部类</title><link href="http://www.iknockdoor.com/java%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85%E5%92%8C%E5%8C%BF%E5%90%8D%E5%86%85%E9%83%A8%E7%B1%BB.html" rel="alternate"></link><published>2018-02-28T00:00:00+08:00</published><updated>2018-02-28T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-02-28:/java中的闭包和匿名内部类.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;java中匿名内部类使用外部方法的参数或局部变量的场景&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -6302,27 +6015,14 @@ Java编译器实现的只是capture-by-value，并没有实现capture-by-referen
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category><category term="java"></category></entry><entry><title>校招培训引发的思考</title><link href="http://www.iknockdoor.com/%E6%A0%A1%E6%8B%9B%E5%9F%B9%E8%AE%AD%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83.html" rel="alternate"></link><published>2018-02-28T00:00:00+08:00</published><updated>2018-02-28T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-02-28:/校招培训引发的思考.html</id><summary type="html">&lt;p&gt;
-   今天参加了一场公司的校招培训，其中一位经验丰富的面试官分享了他的校招经验，其中讲了各种名牌大学各种实验室，各种同各大名企争夺优秀人才，听了感觉自己离“人才”两字好远，好想太过普通了，这是在做面试官，如果是放在当年让自己去应聘校招，可能简历都发不出去。
-&lt;/p&gt;
-
-&lt;p&gt;
-   那当不是名牌大学毕业，没有研究什么高大上的算法，推荐模型，学历，经历平平的我们该怎么办呢？或者说如果我们也去做这些，会不会真的跟高学历的人有很大的差距？如果真的是这样，我们的立足点又在哪里 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category><category term="java"></category></entry><entry><title>校招培训引发的思考</title><link href="http://www.iknockdoor.com/%E6%A0%A1%E6%8B%9B%E5%9F%B9%E8%AE%AD%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83.html" rel="alternate"></link><published>2018-02-28T00:00:00+08:00</published><updated>2018-02-28T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-02-28:/校招培训引发的思考.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
    今天参加了一场公司的校招培训，其中一位经验丰富的面试官分享了他的校招经验，其中讲了各种名牌大学各种实验室，各种同各大名企争夺优秀人才，听了感觉自己离“人才”两字好远，好想太过普通了，这是在做面试官，如果是放在当年让自己去应聘校招，可能简历都发不出去。
 &lt;/p&gt;
 
 &lt;p&gt;
    那当不是名牌大学毕业，没有研究什么高大上的算法，推荐模型，学历，经历平平的我们该怎么办呢？或者说如果我们也去做这些，会不会真的跟高学历的人有很大的差距？如果真的是这样，我们的立足点又在哪里？
 &lt;/p&gt;
-</content><category term="misc"></category></entry><entry><title>iPhone X使用两周后的体验</title><link href="http://www.iknockdoor.com/iPhone%20X%E4%BD%BF%E7%94%A8%E4%B8%A4%E5%91%A8%E5%90%8E%E7%9A%84%E4%BD%93%E9%AA%8C.html" rel="alternate"></link><published>2018-02-02T00:00:00+08:00</published><updated>2018-02-02T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-02-02:/iPhone X使用两周后的体验.html</id><summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;电池&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-刚拿到手上的时候发现还是比较小的，整体外观跟iPhone 6差不多大小，只是屏幕略长，所以一直担心电池续航问题，毕竟iPhone 6的续航跟iPhone 6
-plus的还是差的不少。实际用下来除了前面一个星期感觉比较费电，能撑一个白天+一个晚上+半个白天，到现在比较稳定了，可以撑两个白天一个晚上，这样第二天晚上充电整体节奏还可以。
-&lt;/p&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;iOS 11.2 …&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+</content><category term="misc"></category></entry><entry><title>iPhone X使用两周后的体验</title><link href="http://www.iknockdoor.com/iPhone%20X%E4%BD%BF%E7%94%A8%E4%B8%A4%E5%91%A8%E5%90%8E%E7%9A%84%E4%BD%93%E9%AA%8C.html" rel="alternate"></link><published>2018-02-02T00:00:00+08:00</published><updated>2018-02-02T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-02-02:/iPhone X使用两周后的体验.html</id><summary type="html"></summary><content type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;电池&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -6390,21 +6090,7 @@ plus的还是差的不少。实际用下来除了前面一个星期感觉比较�
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="搞机"></category></entry><entry><title>java中的注解(Annotation)</title><link href="http://www.iknockdoor.com/java%E4%B8%AD%E7%9A%84%E6%B3%A8%E8%A7%A3(Annotation).html" rel="alternate"></link><published>2018-01-29T00:00:00+08:00</published><updated>2018-01-29T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-01-29:/java中的注解(Annotation).html</id><summary type="html">
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;java中的注解(Annotation)&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-现在很多框架工具都使用注解的方式实现，比如junit，eventbugs等等，理解
-java的注解会比较有助于理解这些工具，也可以在平时应用注解。
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
-&lt;h3 id="sec-1-1"&gt;什么是java注解&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-1-1"&gt;
-&lt;p&gt;
-从使用层面来理解，java注解并不会提供程序，方法，对象，类新的功能或者任何可执行的代码，他只会提供给编译器一些key value，根据注解的类型不同，编译器可以在编译阶段使用注解，也可以将注解信息作为一个key
-value记录在编译好的class文件中 …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+</content><category term="搞机"></category></entry><entry><title>java中的注解(Annotation)</title><link href="http://www.iknockdoor.com/java%E4%B8%AD%E7%9A%84%E6%B3%A8%E8%A7%A3(Annotation).html" rel="alternate"></link><published>2018-01-29T00:00:00+08:00</published><updated>2018-01-29T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-01-29:/java中的注解(Annotation).html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;java中的注解(Annotation)&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -6835,29 +6521,7 @@ TypedArray a =  context.obtainStyledAttributes(attrs, com.android.internal.R.sty
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="开发"></category><category term="Android"></category></entry><entry><title>我要给自己订个目标</title><link href="http://www.iknockdoor.com/%E6%88%91%E8%A6%81%E7%BB%99%E8%87%AA%E5%B7%B1%E8%AE%A2%E4%B8%AA%E7%9B%AE%E6%A0%87....html" rel="alternate"></link><published>2018-01-11T00:00:00+08:00</published><updated>2018-01-11T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-01-11:/我要给自己订个目标....html</id><summary type="html">&lt;p&gt;
-   我要给自己订个目标，不让自己再这么随波逐流，走到哪儿算哪，好想走到哪儿算哪也不是很坏的方式，比如有一些认识的人就是跟着命走，也会很成功。那么还是这样，这两点一定不会是冲突的。
-&lt;/p&gt;
-
-&lt;p&gt;
-给自己订个目标，比如：
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;35岁之前有自己的事业
-&lt;/li&gt;
-&lt;li&gt;35岁之前赚够多少钱
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-一上来这么大的目标？搞一些小目标好不好？
-&lt;/p&gt;
-
-&lt;p&gt;
-还有方向的问题，目前看到的方向有这些：
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;人工智能，我觉得我在这方面还有有兴趣的，以前自己也思考过，如果几年前我就搞这些 …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="开发"></category><category term="Android"></category></entry><entry><title>我要给自己订个目标</title><link href="http://www.iknockdoor.com/%E6%88%91%E8%A6%81%E7%BB%99%E8%87%AA%E5%B7%B1%E8%AE%A2%E4%B8%AA%E7%9B%AE%E6%A0%87....html" rel="alternate"></link><published>2018-01-11T00:00:00+08:00</published><updated>2018-01-11T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-01-11:/我要给自己订个目标....html</id><summary type="html"></summary><content type="html">&lt;p&gt;
    我要给自己订个目标，不让自己再这么随波逐流，走到哪儿算哪，好想走到哪儿算哪也不是很坏的方式，比如有一些认识的人就是跟着命走，也会很成功。那么还是这样，这两点一定不会是冲突的。
 &lt;/p&gt;
 
@@ -6928,7 +6592,7 @@ NisHFBTcWJS0sC5BTFwrtfLEE9lEwz2bxHQpWJiu12ZeKpi+7oUSqebX+
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category></entry><entry><title>org导出attachments</title><link href="http://www.iknockdoor.com/org%E5%AF%BC%E5%87%BAattachments.html" rel="alternate"></link><published>2018-01-06T00:00:00+08:00</published><updated>2018-01-06T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-01-06:/org导出attachments.html</id><content type="html">
+</content><category term="misc"></category></entry><entry><title>org导出attachments</title><link href="http://www.iknockdoor.com/org%E5%AF%BC%E5%87%BAattachments.html" rel="alternate"></link><published>2018-01-06T00:00:00+08:00</published><updated>2018-01-06T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-01-06:/org导出attachments.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;添加附件attachments&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -6952,26 +6616,7 @@ html即可指向附件并提供下载。
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category><category term="org-mode"></category></entry><entry><title>org-mode中agenda的简单使用</title><link href="http://www.iknockdoor.com/org-mode%E4%B8%ADagenda%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.html" rel="alternate"></link><published>2018-01-04T00:00:00+08:00</published><updated>2018-01-04T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-01-04:/org-mode中agenda的简单使用.html</id><summary type="html">
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;agenda视图中的常用操作&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;t 更新todo项的状态，agenda视图中直接更新不需要打开源文件，很强大
-&lt;/li&gt;
-&lt;li&gt;w 周视图
-&lt;/li&gt;
-&lt;li&gt;d 日视图，可以用来看今天做了些什么事，还有哪些事儿要做
-&lt;/li&gt;
-&lt;li&gt;f 下一个周期，根据当前是周视图还是日视图步长不同
-&lt;/li&gt;
-&lt;li&gt;b 上一个周期，同上，可以用来看上周都做了些什么事
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;在org mode中从日历中快速选择自己想要的日期 …&lt;/h2&gt;&lt;/div&gt;</summary><content type="html">
+</content><category term="misc"></category><category term="org-mode"></category></entry><entry><title>org-mode中agenda的简单使用</title><link href="http://www.iknockdoor.com/org-mode%E4%B8%ADagenda%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.html" rel="alternate"></link><published>2018-01-04T00:00:00+08:00</published><updated>2018-01-04T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-01-04:/org-mode中agenda的简单使用.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;agenda视图中的常用操作&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -7029,19 +6674,7 @@ html即可指向附件并提供下载。
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category><category term="org-mode"></category></entry><entry><title>mac office 2016激活</title><link href="http://www.iknockdoor.com/mac%20office%202016%E6%BF%80%E6%B4%BB.html" rel="alternate"></link><published>2017-12-29T00:00:00+08:00</published><updated>2017-12-29T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-29:/mac office 2016激活.html</id><summary type="html">&lt;p&gt;
-office 2016版本支持retina屏幕，安装激活方法如下：
-&lt;/p&gt;
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;下载官方原版microsoft office 2016 mac版并安装&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-&lt;a href="https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/OfficeMac/Microsoft_Office_2016_15.38.17090200_Installer.pkg"&gt;https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/OfficeMac/Microsoft_Office_2016_15.38.17090200_Installer.pkg&lt;/a&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;&lt;a id="ID-72FBD493-A1EF-4732-904C-36ACE24ABDFF" name="ID-72FBD493-A1EF-4732-904C-36ACE24ABDFF"&gt;&lt;/a&gt;下载激活程序并运行&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class="tag"&gt;&lt;span class="ATTACH"&gt;ATTACH …&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category><category term="org-mode"></category></entry><entry><title>mac office 2016激活</title><link href="http://www.iknockdoor.com/mac%20office%202016%E6%BF%80%E6%B4%BB.html" rel="alternate"></link><published>2017-12-29T00:00:00+08:00</published><updated>2017-12-29T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-29:/mac office 2016激活.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
 office 2016版本支持retina屏幕，安装激活方法如下：
 &lt;/p&gt;
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
@@ -7209,24 +6842,14 @@ brew install ghostscript
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category><category term="emacs"></category></entry><entry><title>你听到的即使是合理的也未必是真的</title><link href="http://www.iknockdoor.com/%E4%BD%A0%E5%90%AC%E5%88%B0%E7%9A%84%E5%8D%B3%E4%BD%BF%E6%98%AF%E5%90%88%E7%90%86%E7%9A%84%E4%B9%9F%E6%9C%AA%E5%BF%85%E6%98%AF%E7%9C%9F%E7%9A%84.html" rel="alternate"></link><published>2017-12-28T00:00:00+08:00</published><updated>2017-12-28T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-28:/你听到的即使是合理的也未必是真的.html</id><summary type="html">&lt;p&gt;
-   你看到的，别人跟你讲的，即使看起来是合理的也未必是真是的，一个结果摆在眼前，最终形成这种结果的方式有万万种，事实可能是其中的一种，跟你讲的可能是别人期望的一种，未验证过的一种。
-&lt;/p&gt;
-
-&lt;p&gt;
-   有很多这样的例子，比如某一个产品的成功，在没有成功前大家可能并未关注，当他成功后老板在公开场所或者媒体上讲述他们的成功史或者成功秘诀，这个讲出来的就未必是真实的了，背后可能会有其他目的了。所以，很多成功学，励志书，鸡汤文，真是鸡汤，想调整下心态就看看 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category><category term="emacs"></category></entry><entry><title>你听到的即使是合理的也未必是真的</title><link href="http://www.iknockdoor.com/%E4%BD%A0%E5%90%AC%E5%88%B0%E7%9A%84%E5%8D%B3%E4%BD%BF%E6%98%AF%E5%90%88%E7%90%86%E7%9A%84%E4%B9%9F%E6%9C%AA%E5%BF%85%E6%98%AF%E7%9C%9F%E7%9A%84.html" rel="alternate"></link><published>2017-12-28T00:00:00+08:00</published><updated>2017-12-28T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-28:/你听到的即使是合理的也未必是真的.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
    你看到的，别人跟你讲的，即使看起来是合理的也未必是真是的，一个结果摆在眼前，最终形成这种结果的方式有万万种，事实可能是其中的一种，跟你讲的可能是别人期望的一种，未验证过的一种。
 &lt;/p&gt;
 
 &lt;p&gt;
    有很多这样的例子，比如某一个产品的成功，在没有成功前大家可能并未关注，当他成功后老板在公开场所或者媒体上讲述他们的成功史或者成功秘诀，这个讲出来的就未必是真实的了，背后可能会有其他目的了。所以，很多成功学，励志书，鸡汤文，真是鸡汤，想调整下心态就看看，干货还需自己探索，理性思考，敏感洞察。
 &lt;/p&gt;
-</content><category term="misc"></category></entry><entry><title>原则</title><link href="http://www.iknockdoor.com/%E5%8E%9F%E5%88%99.html" rel="alternate"></link><published>2017-12-28T00:00:00+08:00</published><updated>2017-12-28T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-28:/原则.html</id><summary type="html">&lt;p&gt;
-   总是问问自己应该如何做人，做一个什么样的人，一直以来没有一个满意的答案。从高中的时候开始慢慢形成人生观价值观的时候，就开始考虑应该如何做人，似乎也是从那个时候起开始信奉绝对自由，说白了，就是想无拘无束，不喜欢任何的束缚，老师说并不存在绝对自由，现在我信了，不是不存在，而是不应该。人要对自己有约束，因为约束是管理自我，任何事物需要在合理的管理之下才能健康发展，绝对自由与放任劣根性是一样的。自我约束，自我管理是对自己的负责和爱。
-&lt;/p&gt;
-
-&lt;p&gt;
-   于是 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category></entry><entry><title>原则</title><link href="http://www.iknockdoor.com/%E5%8E%9F%E5%88%99.html" rel="alternate"></link><published>2017-12-28T00:00:00+08:00</published><updated>2017-12-28T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-28:/原则.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
    总是问问自己应该如何做人，做一个什么样的人，一直以来没有一个满意的答案。从高中的时候开始慢慢形成人生观价值观的时候，就开始考虑应该如何做人，似乎也是从那个时候起开始信奉绝对自由，说白了，就是想无拘无束，不喜欢任何的束缚，老师说并不存在绝对自由，现在我信了，不是不存在，而是不应该。人要对自己有约束，因为约束是管理自我，任何事物需要在合理的管理之下才能健康发展，绝对自由与放任劣根性是一样的。自我约束，自我管理是对自己的负责和爱。
 &lt;/p&gt;
 
@@ -7295,19 +6918,10 @@ brew install ghostscript
 &lt;h3 id="sec-1-6"&gt;&lt;span class="todo TODO"&gt;TODO&lt;/span&gt; 信用&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category></entry><entry><title>做一名研发leader还是做一个名工程师</title><link href="http://www.iknockdoor.com/%E5%81%9A%E4%B8%80%E5%90%8D%E7%A0%94%E5%8F%91leader%E8%BF%98%E6%98%AF%E5%81%9A%E4%B8%80%E4%B8%AA%E5%90%8D%E5%B7%A5%E7%A8%8B%E5%B8%88.html" rel="alternate"></link><published>2017-12-25T00:00:00+08:00</published><updated>2017-12-25T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-25:/做一名研发leader还是做一个名工程师.html</id><content type="html">&lt;p&gt;
+</content><category term="misc"></category></entry><entry><title>做一名研发leader还是做一个名工程师</title><link href="http://www.iknockdoor.com/%E5%81%9A%E4%B8%80%E5%90%8D%E7%A0%94%E5%8F%91leader%E8%BF%98%E6%98%AF%E5%81%9A%E4%B8%80%E4%B8%AA%E5%90%8D%E5%B7%A5%E7%A8%8B%E5%B8%88.html" rel="alternate"></link><published>2017-12-25T00:00:00+08:00</published><updated>2017-12-25T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-25:/做一名研发leader还是做一个名工程师.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
 做一名研发leader还是做一个名工程师或者能够找到不冲突的方式？肯定是有的，我要想办法，人应该是关键，搭班子，建队伍。
 &lt;/p&gt;
-</content><category term="misc"></category></entry><entry><title>做了一项针对产品的技术调研然后被领导批得狗血淋头</title><link href="http://www.iknockdoor.com/%E5%81%9A%E4%BA%86%E4%B8%80%E9%A1%B9%E9%92%88%E5%AF%B9%E4%BA%A7%E5%93%81%E7%9A%84%E6%8A%80%E6%9C%AF%E8%B0%83%E7%A0%94%E7%84%B6%E5%90%8E%E8%A2%AB%E9%A2%86%E5%AF%BC%E6%89%B9%E5%BE%97%E7%8B%97%E8%A1%80%E6%B7%8B%E5%A4%B4.html" rel="alternate"></link><published>2017-12-25T00:00:00+08:00</published><updated>2017-12-25T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-25:/做了一项针对产品的技术调研然后被领导批得狗血淋头.html</id><summary type="html">&lt;p&gt;
-   做了一项针对产品的技术调研，然后被领导批得狗血淋头，还要赔礼道歉，承认自己的局限性，没有给其他团队提需求。
-&lt;/p&gt;
-
-&lt;p&gt;
-   整个这个事情最后想下来，不知道这种现象对于一家公司或是一家企业到底是好的还是不好的。跳出来看，像是出现了行业寡头，对技术进行了垄断，只能这个寡头做，别人都不能做，其他人都只能用寡头垄断的技术，不能自己做调研，不能自己做优化，有定制化的需求只能提需求给他们，对你需求的支持力度，响应速度好与不好你都得接受。
-&lt;/p&gt;
-
-&lt;p&gt;
-   这样可能会限制技术百家争鸣的发展，新技术的出现 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category></entry><entry><title>做了一项针对产品的技术调研然后被领导批得狗血淋头</title><link href="http://www.iknockdoor.com/%E5%81%9A%E4%BA%86%E4%B8%80%E9%A1%B9%E9%92%88%E5%AF%B9%E4%BA%A7%E5%93%81%E7%9A%84%E6%8A%80%E6%9C%AF%E8%B0%83%E7%A0%94%E7%84%B6%E5%90%8E%E8%A2%AB%E9%A2%86%E5%AF%BC%E6%89%B9%E5%BE%97%E7%8B%97%E8%A1%80%E6%B7%8B%E5%A4%B4.html" rel="alternate"></link><published>2017-12-25T00:00:00+08:00</published><updated>2017-12-25T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-25:/做了一项针对产品的技术调研然后被领导批得狗血淋头.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
    做了一项针对产品的技术调研，然后被领导批得狗血淋头，还要赔礼道歉，承认自己的局限性，没有给其他团队提需求。
 &lt;/p&gt;
 
@@ -7326,52 +6940,14 @@ brew install ghostscript
 &lt;p&gt;
 如此可能并不是一个好的现象。
 &lt;/p&gt;
-</content><category term="misc"></category></entry><entry><title>向前走的太快</title><link href="http://www.iknockdoor.com/%E5%90%91%E5%89%8D%E8%B5%B0%E7%9A%84%E5%A4%AA%E5%BF%AB.html" rel="alternate"></link><published>2017-12-25T00:00:00+08:00</published><updated>2017-12-25T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-25:/向前走的太快.html</id><summary type="html">&lt;p&gt;
-   向前走的太快，想回头看看，看看路上的风景，看看路上的人。感觉像是没有了根，想去找寻自己的根，或者是信仰么？总是不想给自己的打上标签，标签跟根和信仰好想并不是一样的。要接受自己的过去，总是厌恶自己的过去，总是想有新的开始，于是每次都没了根。是自己都不喜欢自己这样的人，那就面对，那就改正。说到底，做人还是要有原则，要对自己有约束，不要太出世 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category></entry><entry><title>向前走的太快</title><link href="http://www.iknockdoor.com/%E5%90%91%E5%89%8D%E8%B5%B0%E7%9A%84%E5%A4%AA%E5%BF%AB.html" rel="alternate"></link><published>2017-12-25T00:00:00+08:00</published><updated>2017-12-25T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-25:/向前走的太快.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
    向前走的太快，想回头看看，看看路上的风景，看看路上的人。感觉像是没有了根，想去找寻自己的根，或者是信仰么？总是不想给自己的打上标签，标签跟根和信仰好想并不是一样的。要接受自己的过去，总是厌恶自己的过去，总是想有新的开始，于是每次都没了根。是自己都不喜欢自己这样的人，那就面对，那就改正。说到底，做人还是要有原则，要对自己有约束，不要太出世，要有羁绊，要回头找回的就是这些羁绊，这些牵挂。因为有原则，有所为有所不为，于是不再厌恶自己，而是爱自己，不再常常需要新的开始，从头再来，而是开始有根，有过去。
 &lt;/p&gt;
 
 &lt;p&gt;
 总是相当自由人，不想给自己贴标签，不喜欢束缚。
 &lt;/p&gt;
-</content><category term="misc"></category></entry><entry><title>重新考虑笔记系统</title><link href="http://www.iknockdoor.com/%E9%87%8D%E6%96%B0%E8%80%83%E8%99%91%E7%AC%94%E8%AE%B0%E7%B3%BB%E7%BB%9F.html" rel="alternate"></link><published>2017-12-24T00:00:00+08:00</published><updated>2017-12-24T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-24:/重新考虑笔记系统.html</id><summary type="html">&lt;p&gt;
-重新考虑笔记系统
-&lt;/p&gt;
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;一些功能点&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;静态网页生成器
-&lt;/li&gt;
-&lt;li&gt;图片的处理
-&lt;/li&gt;
-&lt;li&gt;如何部署
-&lt;/li&gt;
-&lt;li&gt;UML的支持
-&lt;/li&gt;
-&lt;li&gt;自定义样式
-&lt;/li&gt;
-&lt;li&gt;网页布局与风格
-&lt;/li&gt;
-&lt;li&gt;MathJax
-&lt;/li&gt;
-&lt;li&gt;RSS
-&lt;/li&gt;
-&lt;li&gt;版本管理
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;笔记系统是什么样子的才可以助力保持写笔记的习惯？&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
-&lt;/div&gt;&lt;div id="outline-container-sec-2-1" class="outline-3"&gt;
-&lt;h3 id="sec-2-1"&gt;专注于笔记的内容，不打断写笔记的灵感&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-2-1"&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;不要必须写个标题，考虑写个什么标题会打断思路和灵感。保存文件时如果没有标题自动截取开头文字作为标题就好
-&lt;/li&gt;
-&lt;li&gt;不要写什么元信息，比如作者，标签 …&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category></entry><entry><title>重新考虑笔记系统</title><link href="http://www.iknockdoor.com/%E9%87%8D%E6%96%B0%E8%80%83%E8%99%91%E7%AC%94%E8%AE%B0%E7%B3%BB%E7%BB%9F.html" rel="alternate"></link><published>2017-12-24T00:00:00+08:00</published><updated>2017-12-24T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-24:/重新考虑笔记系统.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
 重新考虑笔记系统
 &lt;/p&gt;
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
@@ -7686,7 +7262,7 @@ org-mode version "8.2.10"
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category></entry><entry><title>homebrew的使用</title><link href="http://www.iknockdoor.com/homebrew%E7%9A%84%E4%BD%BF%E7%94%A8.html" rel="alternate"></link><published>2017-12-13T00:00:00+08:00</published><updated>2017-12-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-13:/homebrew的使用.html</id><content type="html">&lt;p&gt;
+</content><category term="misc"></category></entry><entry><title>homebrew的使用</title><link href="http://www.iknockdoor.com/homebrew%E7%9A%84%E4%BD%BF%E7%94%A8.html" rel="alternate"></link><published>2017-12-13T00:00:00+08:00</published><updated>2017-12-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-13:/homebrew的使用.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
 homebrew的使用
 brew search
 brew list
@@ -7694,23 +7270,10 @@ brew pin
 brew install
 brew uninstall
 &lt;/p&gt;
-</content><category term="shell"></category></entry><entry><title>mac下支持imagemagick编译emacs</title><link href="http://www.iknockdoor.com/mac%E4%B8%8B%E6%94%AF%E6%8C%81imagemagick%E7%BC%96%E8%AF%91emacs.html" rel="alternate"></link><published>2017-12-13T00:00:00+08:00</published><updated>2017-12-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-13:/mac下支持imagemagick编译emacs.html</id><content type="html">&lt;p&gt;
+</content><category term="shell"></category></entry><entry><title>mac下支持imagemagick编译emacs</title><link href="http://www.iknockdoor.com/mac%E4%B8%8B%E6%94%AF%E6%8C%81imagemagick%E7%BC%96%E8%AF%91emacs.html" rel="alternate"></link><published>2017-12-13T00:00:00+08:00</published><updated>2017-12-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-13:/mac下支持imagemagick编译emacs.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
 mac下支持imagemagick编译emacs
 &lt;/p&gt;
-</content><category term="misc"></category><category term="emacs"></category></entry><entry><title>org-page使用中的一些问题</title><link href="http://www.iknockdoor.com/org-page%E4%BD%BF%E7%94%A8%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98.html" rel="alternate"></link><published>2017-12-13T00:00:00+08:00</published><updated>2017-12-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-13:/org-page使用中的一些问题.html</id><summary type="html">
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;中文文件名&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-本质问题还是在于git，可以支持org源文件的中文名和中文目录。
-org-page使用了命令"Git ls-tree -r &amp;#x2013;name-only"命令,该命令有时候不能正确显示中文名,这时候org-page会把中文的org文件忽略掉. 若要正确处理中文的
-org文件,需要在shell中执行"git config core.quotepath false"
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;图片问题 …&lt;/h2&gt;&lt;/div&gt;</summary><content type="html">
+</content><category term="misc"></category><category term="emacs"></category></entry><entry><title>org-page使用中的一些问题</title><link href="http://www.iknockdoor.com/org-page%E4%BD%BF%E7%94%A8%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98.html" rel="alternate"></link><published>2017-12-13T00:00:00+08:00</published><updated>2017-12-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-13:/org-page使用中的一些问题.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;中文文件名&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -8867,20 +8430,7 @@ agenda view的视图是可以自定义的，有几个内置的视图比较常用
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category><category term="org-mode"></category></entry><entry><title>个人知识管理解决方案实现</title><link href="http://www.iknockdoor.com/%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%AE%9E%E7%8E%B0.html" rel="alternate"></link><published>2017-12-13T00:00:00+08:00</published><updated>2017-12-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-13:/个人知识管理解决方案实现.html</id><summary type="html">&lt;p&gt;
-   如果早一点学会做只是管理，可能现在会掌握更多的知识，不过什么时候开始做只是管理都会晚。
-&lt;/p&gt;
-
-&lt;p&gt;
-知识管理很重要的一个环节在于要经常翻看思考，理解和记忆自己的一些笔记。
-&lt;/p&gt;
-
-&lt;p&gt;
-   前两年在使用iPhone自带的笔记app时，偶尔把一些想法记录下来，或者把自己悟到的一些道理记下来，然后时长翻看，那阵子效果就很好，可以真正的把领悟大的知识理解和运用起来。
-&lt;/p&gt;
-
-&lt;p&gt;
-   可能还是随着年龄的增长，记忆力在逐渐下降，有的时候突然在一个环境或者遇到某件事情的时候理解了一个知识点，或者明白了一个道理，比如小到一个shell命令怎么用，或者更深刻的理解了一个方法论，可能只是那一刻明白了，记住了，即使他很重要 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category><category term="org-mode"></category></entry><entry><title>个人知识管理解决方案实现</title><link href="http://www.iknockdoor.com/%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%AE%9E%E7%8E%B0.html" rel="alternate"></link><published>2017-12-13T00:00:00+08:00</published><updated>2017-12-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-13:/个人知识管理解决方案实现.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
    如果早一点学会做只是管理，可能现在会掌握更多的知识，不过什么时候开始做只是管理都会晚。
 &lt;/p&gt;
 
@@ -8949,7 +8499,7 @@ git仓库中，可以选择性的提交想提交的分支上去，相反，可�
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category></entry><entry><title>利用orgmode做项目计划</title><link href="http://www.iknockdoor.com/%E5%88%A9%E7%94%A8orgmode%E5%81%9A%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92.html" rel="alternate"></link><published>2017-12-13T00:00:00+08:00</published><updated>2017-12-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-13:/利用orgmode做项目计划.html</id><content type="html">
+</content><category term="misc"></category></entry><entry><title>利用orgmode做项目计划</title><link href="http://www.iknockdoor.com/%E5%88%A9%E7%94%A8orgmode%E5%81%9A%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92.html" rel="alternate"></link><published>2017-12-13T00:00:00+08:00</published><updated>2017-12-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-13:/利用orgmode做项目计划.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;装逼专项&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -8975,15 +8525,7 @@ git仓库中，可以选择性的提交想提交的分支上去，相反，可�
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category><category term="org-mode"></category></entry><entry><title>如何与人相处</title><link href="http://www.iknockdoor.com/%E5%A6%82%E4%BD%95%E4%B8%8E%E4%BA%BA%E7%9B%B8%E5%A4%84.html" rel="alternate"></link><published>2017-12-13T00:00:00+08:00</published><updated>2017-12-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-13:/如何与人相处.html</id><summary type="html">
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;做人要有原则&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-这个问题也不是第一次提及了，但是每次好想都没有做的很到位。做人有原则是顺利个人威信，个人态度，值得他人尊重的最基本因素。到现在所遇到的特别需要讲原则的地方有：
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;言而有信就是说到做到，无论你的地位如何，无论事情多么的小，当给人承诺的适合就一定做到，说在什么时候做到，就一定在什么时候做到，不给自己找任何的理由。比如DF说周四找国内某领导谈播放器的事情，虽然一周都没在，周四的时候还是准时给了我答复；比如之前创维的领导，喝酒的时候说给我一个手包，第二天真的给我带来了 …&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+</content><category term="misc"></category><category term="org-mode"></category></entry><entry><title>如何与人相处</title><link href="http://www.iknockdoor.com/%E5%A6%82%E4%BD%95%E4%B8%8E%E4%BA%BA%E7%9B%B8%E5%A4%84.html" rel="alternate"></link><published>2017-12-13T00:00:00+08:00</published><updated>2017-12-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-13:/如何与人相处.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;做人要有原则&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -9012,25 +8554,10 @@ git仓库中，可以选择性的提交想提交的分支上去，相反，可�
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category></entry><entry><title>如何实现在emacs中编辑org文件并在浏览器中实时预览</title><link href="http://www.iknockdoor.com/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%9C%A8emacs%E4%B8%AD%E7%BC%96%E8%BE%91org%E6%96%87%E4%BB%B6%E5%B9%B6%E5%9C%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E5%AE%9E%E6%97%B6%E9%A2%84%E8%A7%88.html" rel="alternate"></link><published>2017-12-13T00:00:00+08:00</published><updated>2017-12-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-13:/如何实现在emacs中编辑org文件并在浏览器中实时预览.html</id><content type="html">&lt;p&gt;
+</content><category term="misc"></category></entry><entry><title>如何实现在emacs中编辑org文件并在浏览器中实时预览</title><link href="http://www.iknockdoor.com/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%9C%A8emacs%E4%B8%AD%E7%BC%96%E8%BE%91org%E6%96%87%E4%BB%B6%E5%B9%B6%E5%9C%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E5%AE%9E%E6%97%B6%E9%A2%84%E8%A7%88.html" rel="alternate"></link><published>2017-12-13T00:00:00+08:00</published><updated>2017-12-13T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-12-13:/如何实现在emacs中编辑org文件并在浏览器中实时预览.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
 如何实现在emacs中编辑org文件并在浏览器中实时预览
 &lt;/p&gt;
-</content><category term="misc"></category><category term="emacs"></category></entry><entry><title>git命令按tab键的自动补全</title><link href="http://www.iknockdoor.com/git%E5%91%BD%E4%BB%A4%E6%8C%89tab%E9%94%AE%E7%9A%84%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8.html" rel="alternate"></link><published>2017-09-15T00:00:00+08:00</published><updated>2017-09-15T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-09-15:/git命令按tab键的自动补全.html</id><summary type="html">&lt;p&gt;
-在mac os x系统中的terminal中使用git命令时默认没有支持tab自动补全，用起来会不太方便。
-&lt;/p&gt;
-
-&lt;p&gt;
-如果不想用网上的脚本解决，倒是有个安全简单的方法：
-&lt;/p&gt;
-
-&lt;p&gt;
-step 1.通过以下命令搜索系统中的git补全脚本
-&lt;/p&gt;
-&lt;pre class="example"&gt;
-sudo find / -name git-completion.bash
-&lt;/pre&gt;
-&lt;p&gt;
-搜出来的路径会因是从Xcode安装的还是从Command Line Tools安装的有区别，我的是Xcode安装的（建议Command Line …&lt;/p&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category><category term="emacs"></category></entry><entry><title>git命令按tab键的自动补全</title><link href="http://www.iknockdoor.com/git%E5%91%BD%E4%BB%A4%E6%8C%89tab%E9%94%AE%E7%9A%84%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8.html" rel="alternate"></link><published>2017-09-15T00:00:00+08:00</published><updated>2017-09-15T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-09-15:/git命令按tab键的自动补全.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
 在mac os x系统中的terminal中使用git命令时默认没有支持tab自动补全，用起来会不太方便。
 &lt;/p&gt;
 
@@ -9066,20 +8593,7 @@ step 3.重启一下terminal或者执行下面的命令，然后试一下吧
 &lt;pre class="example"&gt;
 source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
 &lt;/pre&gt;
-</content><category term="misc"></category><category term="Android"></category></entry><entry><title>石家庄一日</title><link href="http://www.iknockdoor.com/%E7%9F%B3%E5%AE%B6%E5%BA%84%E4%B8%80%E6%97%A5.html" rel="alternate"></link><published>2017-08-08T00:00:00+08:00</published><updated>2017-08-08T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-08-08:/石家庄一日.html</id><summary type="html">
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;a id="ID-4BC6C044-08CD-4A93-A311-7F7A83C1E0E6" name="ID-4BC6C044-08CD-4A93-A311-7F7A83C1E0E6"&gt;&lt;/a&gt;2017-08-08 23:16:53&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class="tag"&gt;&lt;span class="ATTACH"&gt;ATTACH&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-石家庄是一个很不错的城市，刚下火车，在去办事地方的路上发现空气比上次来好太多了，天空已经是可以看得见的蓝，还有白云，之前到处在施工的地铁已经建好，马路很干净。
-&lt;/p&gt;
-
-&lt;p&gt;
-周六去到办事的地方，虽然上班但是无法办理相应业务，只能等到周一再办。但是服务人员的还是很热情的帮我看了下材料是否齐全，得知我从外地过来还告诉我可以代办。等到周一的时候只用了20分钟就办完了所有手续，真心为我大石家庄公职部门办事效率和服务态度点赞！
-&lt;/p&gt;
-
-&lt;p&gt;
-石家庄人民的热情直爽随处都可以感受到 …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+</content><category term="misc"></category><category term="Android"></category></entry><entry><title>石家庄一日</title><link href="http://www.iknockdoor.com/%E7%9F%B3%E5%AE%B6%E5%BA%84%E4%B8%80%E6%97%A5.html" rel="alternate"></link><published>2017-08-08T00:00:00+08:00</published><updated>2017-08-08T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-08-08:/石家庄一日.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;a id="ID-4BC6C044-08CD-4A93-A311-7F7A83C1E0E6" name="ID-4BC6C044-08CD-4A93-A311-7F7A83C1E0E6"&gt;&lt;/a&gt;2017-08-08 23:16:53&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class="tag"&gt;&lt;span class="ATTACH"&gt;ATTACH&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -9122,12 +8636,7 @@ source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-complet
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category></entry><entry><title>早点睡觉</title><link href="http://www.iknockdoor.com/%E6%97%A9%E7%82%B9%E7%9D%A1%E8%A7%89.html" rel="alternate"></link><published>2017-07-27T00:00:00+08:00</published><updated>2017-07-27T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-07-27:/早点睡觉.html</id><summary type="html">&lt;p&gt;
-   好累，最近两三个星期总是感觉身体很疲惫。晚上又总是睡不着或睡不好，白天状态也很糟糕。可能真的是身体越来越不如以前，这种感觉也是第一次出现。以前加班，熬夜，第二天依然精神很好，现在只要头一天晚上睡的晚一些，第二天整个人的状态就不好，总是感觉乏，感觉困。到现在连出去玩都不愿意去了，和朋友一起吃吃饭，唱唱歌的精力感觉都没有。
-&lt;/p&gt;
-
-&lt;p&gt;
-   身体太重要，25岁的时候感觉身体状态开始恢复的没那么快，开始意识到这个问题，30岁的时候感觉不只是恢复的问题了 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category></entry><entry><title>早点睡觉</title><link href="http://www.iknockdoor.com/%E6%97%A9%E7%82%B9%E7%9D%A1%E8%A7%89.html" rel="alternate"></link><published>2017-07-27T00:00:00+08:00</published><updated>2017-07-27T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-07-27:/早点睡觉.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
    好累，最近两三个星期总是感觉身体很疲惫。晚上又总是睡不着或睡不好，白天状态也很糟糕。可能真的是身体越来越不如以前，这种感觉也是第一次出现。以前加班，熬夜，第二天依然精神很好，现在只要头一天晚上睡的晚一些，第二天整个人的状态就不好，总是感觉乏，感觉困。到现在连出去玩都不愿意去了，和朋友一起吃吃饭，唱唱歌的精力感觉都没有。
 &lt;/p&gt;
 
@@ -9146,26 +8655,7 @@ source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-complet
 &lt;p&gt;
 11点了，睡觉。
 &lt;/p&gt;
-</content><category term="misc"></category></entry><entry><title>神化与崇拜</title><link href="http://www.iknockdoor.com/%E7%A5%9E%E5%8C%96%E4%B8%8E%E5%B4%87%E6%8B%9C.html" rel="alternate"></link><published>2017-07-24T00:00:00+08:00</published><updated>2017-07-24T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-07-24:/神化与崇拜.html</id><summary type="html">
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;a id="ID-3AB97E96-17B5-49BC-B823-CD4F269CD0C8" name="ID-3AB97E96-17B5-49BC-B823-CD4F269CD0C8"&gt;&lt;/a&gt;2017-07-24 00:09 CST 1500826141&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class="tag"&gt;&lt;span class="ATTACH"&gt;ATTACH&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="data/3A/B97E96-17B5-49BC-B823-CD4F269CD0C8/emacs_2017-12-13_22-20-43.png" alt="emacs_2017-12-13_22-20-43.png" style="width:128px" /&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-gnu emacs version 25.x开始换了新的logo，感觉异常的漂亮，看到这个logo心中会有一种如同见到了女神一样的喜悦之情，感觉血管中充满了多巴胺。
-&lt;/p&gt;
-
-&lt;p&gt;
-从来没有追过星，可能这就是追星的感觉吧。
-&lt;/p&gt;
-
-&lt;p&gt;
-并不一定就是这个logo真的有多漂亮，仔细想了下，应该是最近使用emacs更多了，而且尝试了一些新功能 …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+</content><category term="misc"></category></entry><entry><title>神化与崇拜</title><link href="http://www.iknockdoor.com/%E7%A5%9E%E5%8C%96%E4%B8%8E%E5%B4%87%E6%8B%9C.html" rel="alternate"></link><published>2017-07-24T00:00:00+08:00</published><updated>2017-07-24T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-07-24:/神化与崇拜.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;a id="ID-3AB97E96-17B5-49BC-B823-CD4F269CD0C8" name="ID-3AB97E96-17B5-49BC-B823-CD4F269CD0C8"&gt;&lt;/a&gt;2017-07-24 00:09 CST 1500826141&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class="tag"&gt;&lt;span class="ATTACH"&gt;ATTACH&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -9192,16 +8682,7 @@ gnu emacs version 25.x开始换了新的logo，感觉异常的漂亮，看到这
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category></entry><entry><title>芽庄游记</title><link href="http://www.iknockdoor.com/%E8%8A%BD%E5%BA%84%E6%B8%B8%E8%AE%B0.html" rel="alternate"></link><published>2017-07-24T00:00:00+08:00</published><updated>2017-07-24T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-07-24:/芽庄游记.html</id><summary type="html">
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;a id="ID-9FC095A6-5669-4D85-8158-78A6325D29F8" name="ID-9FC095A6-5669-4D85-8158-78A6325D29F8"&gt;&lt;/a&gt;2017-07-24 00:57:15&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class="tag"&gt;&lt;span class="ATTACH"&gt;ATTACH&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-跟团去的，并不是什么纯玩团，会有两个购物点，去就可以了，并不强制购物，但整体价格还相对便宜。但整个芽庄之旅体验非常糟糕。也是第一次出国，回国之后由衷的感慨祖国的强大，先进与文明。
-&lt;/p&gt;
-
-&lt;p&gt;
-越南的海关工作人员真的会索取小费，入关的时候给了，开始的时候以为是导游为了让自己少一些麻烦然后错误的引导大家，回程的时候才发现，如果没有给小费 …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+</content><category term="misc"></category></entry><entry><title>芽庄游记</title><link href="http://www.iknockdoor.com/%E8%8A%BD%E5%BA%84%E6%B8%B8%E8%AE%B0.html" rel="alternate"></link><published>2017-07-24T00:00:00+08:00</published><updated>2017-07-24T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-07-24:/芽庄游记.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;a id="ID-9FC095A6-5669-4D85-8158-78A6325D29F8" name="ID-9FC095A6-5669-4D85-8158-78A6325D29F8"&gt;&lt;/a&gt;2017-07-24 00:57:15&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class="tag"&gt;&lt;span class="ATTACH"&gt;ATTACH&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
@@ -9244,28 +8725,7 @@ gnu emacs version 25.x开始换了新的logo，感觉异常的漂亮，看到这
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category></entry><entry><title>emacs中的自动换行</title><link href="http://www.iknockdoor.com/emacs%E4%B8%AD%E7%9A%84%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C.html" rel="alternate"></link><published>2017-07-23T00:00:00+08:00</published><updated>2017-07-23T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-07-23:/emacs中的自动换行.html</id><summary type="html">&lt;p&gt;
-这里自动换行是有两种意思：
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;一种显示层面的，当显示长句时，超过屏幕范围时自动在起另一行显示，这种操作叫做
-truncate-lines，这种操作只是在显示层面做了换行，并不是真的在原内容上插入了换行符。
-
-&lt;p&gt;
-可以用以下命令在buffer种打开自动换行
-&lt;/p&gt;
-&lt;pre class="example"&gt;
-M-x toggle-truncate-lines
-&lt;/pre&gt;
-&lt;p&gt;
-可以在初始化文件中加入以下内容，默认全部换行，还是很方便的，阅读内容时不用总是移动
-&lt;/p&gt;
-&lt;pre class="example"&gt;
-(set-default 'truncate-lines t)
-&lt;/pre&gt;
-&lt;/li&gt;
-
-&lt;li&gt;另一种换行是在编辑层面的，当编辑内容超出一定长度后自动插入换行符 …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category></entry><entry><title>emacs中的自动换行</title><link href="http://www.iknockdoor.com/emacs%E4%B8%AD%E7%9A%84%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C.html" rel="alternate"></link><published>2017-07-23T00:00:00+08:00</published><updated>2017-07-23T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-07-23:/emacs中的自动换行.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
 这里自动换行是有两种意思：
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
@@ -9419,38 +8879,7 @@ org-page也有提到，可以考虑搭一个。再考虑这个问题，是否真
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="misc"></category></entry><entry><title>ubuntu桌面快捷方式创建</title><link href="http://www.iknockdoor.com/ubuntu%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%E5%88%9B%E5%BB%BA.html" rel="alternate"></link><published>2017-07-22T00:00:00+08:00</published><updated>2017-07-22T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-07-22:/ubuntu桌面快捷方式创建.html</id><summary type="html">&lt;p&gt;
-以下目录创建.desktop文件都会生效，作用范围不同
-&lt;/p&gt;
-&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
-
-
-&lt;colgroup&gt;
-&lt;col  class="left" /&gt;
-
-&lt;col  class="left" /&gt;
-&lt;/colgroup&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class="left"&gt;/usr/share/applications&lt;/td&gt;
-&lt;td class="left"&gt;全局&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="left"&gt;~/.local/share/applications&lt;/td&gt;
-&lt;td class="left"&gt;用户&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="left"&gt;~/.gnome/apps&lt;/td&gt;
-&lt;td class="left"&gt;用户&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;
-创建emacs启动快捷方式
-emacs ~/.local/share/applications/emacs …&lt;/p&gt;</summary><content type="html">&lt;p&gt;
+</content><category term="misc"></category></entry><entry><title>ubuntu桌面快捷方式创建</title><link href="http://www.iknockdoor.com/ubuntu%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%E5%88%9B%E5%BB%BA.html" rel="alternate"></link><published>2017-07-22T00:00:00+08:00</published><updated>2017-07-22T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-07-22:/ubuntu桌面快捷方式创建.html</id><summary type="html"></summary><content type="html">&lt;p&gt;
 以下目录创建.desktop文件都会生效，作用范围不同
 &lt;/p&gt;
 &lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
@@ -9513,22 +8942,7 @@ Categories=Development;IDE;
 Terminal=false
 StartupWMClass=jetbrains-idea-ce
 &lt;/pre&gt;
-</content><category term="misc"></category></entry><entry><title>安装emacs</title><link href="http://www.iknockdoor.com/%E5%AE%89%E8%A3%85emacs.html" rel="alternate"></link><published>2017-07-22T00:00:00+08:00</published><updated>2017-07-22T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-07-22:/安装emacs.html</id><summary type="html">
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;ubuntu 14.04&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-以下安装的是24.5，安装目前最新版本25.2.1只需要下载对应的源码，相同的编译安装步骤
-&lt;/p&gt;
-
-&lt;p&gt;
-安装完成后添加启动快捷方式到launcher，参考 ubuntu添加快捷方式
-&lt;/p&gt;
-&lt;div class="org-src-container"&gt;
-
-&lt;pre class="src src-sh"&gt;&lt;span class="org-comment-delimiter"&gt;# &lt;/span&gt;&lt;span class="org-comment"&gt;&amp;#23433;&amp;#35013;&amp;#20381;&amp;#36182;&lt;/span&gt;
-sudo apt-get install build-essential
-sudo apt-get build-dep …&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+</content><category term="misc"></category></entry><entry><title>安装emacs</title><link href="http://www.iknockdoor.com/%E5%AE%89%E8%A3%85emacs.html" rel="alternate"></link><published>2017-07-22T00:00:00+08:00</published><updated>2017-07-22T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2017-07-22:/安装emacs.html</id><summary type="html"></summary><content type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;ubuntu 14.04&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
