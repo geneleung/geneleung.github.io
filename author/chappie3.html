@@ -41,10 +41,92 @@
 <section id="content">
 <h2>Articles by chappie</h2>
   <article class="article_list_item">
+    <a href="http://www.iknockdoor.com/RecyclerView的onBindHolder与onViewAttachToWindow.html"><header class="article_title">RecyclerView的onBindHolder与onViewAttachToWindow</header></a>
+    <footer class="title_info">
+      一 10 十二月 2018
+ <a href="http://www.iknockdoor.com/category/kai-fa.html"><span>开发</span></a>  <a href="http://www.iknockdoor.com/tag/android.html"><span>Android</span></a> </footer>
+    <div class="entry-content"><a href="http://www.iknockdoor.com/RecyclerView的onBindHolder与onViewAttachToWindow.html"> <p>
+开发中遇到一个问题，原代码中在onBindViewHolder的时候对itemView
+setLayoutParamter，调整了itemView的布局，然后调整代码在
+onViewAttachToWindow中去做这件事，然后发现调整后发生崩溃，类型转换错误。
+</p>
+
+<p>
+原因在于RecyclerView在onBindViewHolder的时候会设置itemView的
+layoutManager，所以在onViewAttachToWindow时再去设置不同的layout会出现错误。生命周期如下：
+</p>
+<ul class="org-ul">
+<li>onBindViewHolder
+</li>
+<li>setLayoutParams
+</li>
+<li>setLayoutParams
+</li>
+<li>onAttachViewToWindow
+</li>
+<li>onLayout
+</li>
+</ul>
+</a></div><!-- /.entry-content -->
+    <a href="http://www.iknockdoor.com/RecyclerView的onBindHolder与onViewAttachToWindow.html"><span class="more"> more &raquo;</span></a>
+</article>
+  <article class="article_list_item">
+    <a href="http://www.iknockdoor.com/emacs中的加密.html"><header class="article_title">emacs中的加密</header></a>
+    <footer class="title_info">
+      一 10 十二月 2018
+ <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>  <a href="http://www.iknockdoor.com/tag/emacs.html"><span>emacs</span></a> </footer>
+    <div class="entry-content"><a href="http://www.iknockdoor.com/emacs中的加密.html"> 
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">参考下面两个链接</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<a href="https://github.com/Sauermann/emacs-aes">https://github.com/Sauermann/emacs-aes</a>
+<a href="http://aes.jypc.org/?p=51451">http://aes.jypc.org/?p=51451</a>
+<a href="https://www.jianshu.com/p/bd4266fb4551">https://www.jianshu.com/p/bd4266fb4551</a>
+<a href="http://www.voidcn.com/article/p-ewqtcfbn-a.html">http://www …</a></p></div></div></a></div><!-- /.entry-content -->
+    <a href="http://www.iknockdoor.com/emacs中的加密.html"><span class="more"> more &raquo;</span></a>
+</article>
+  <article class="article_list_item">
+    <a href="http://www.iknockdoor.com/python3学习笔记.html"><header class="article_title">python3学习笔记</header></a>
+    <footer class="title_info">
+      一 10 十二月 2018
+ <a href="http://www.iknockdoor.com/category/kai-fa.html"><span>开发</span></a>  <a href="http://www.iknockdoor.com/tag/python.html"><span>python</span></a> </footer>
+    <div class="entry-content"><a href="http://www.iknockdoor.com/python3学习笔记.html"> 
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">tutorial</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">代码块是用缩进控制的，缩进多少个space不重要，重要的是需要一致</h3>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">交互模式下&gt;&gt;&gt; 与 &#x2026;的区别，&#x2026;需要用一个换行结束</h3>
+</div>
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3">除法的返回值是浮点数，无论除数与被除数是什么类型，除法取整用//，取模用%</h3>
+</div>
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4">幂运算符 **</h3>
+</div>
+<div id="outline-container-sec-1-5" class="outline-3">
+<h3 id="sec-1-5">在交互模式下，最后一个表达式的值总会被赋给一个内建变量"_"，这个变量对用户只可读不可写。如果我们自己声明一个同名的变量，会覆盖内建变量。</h3>
+</div>
+<div id="outline-container-sec-1-6" class="outline-3">
+<h3 id="sec-1-6">字符串 …</h3></div></div></a></div><!-- /.entry-content -->
+    <a href="http://www.iknockdoor.com/python3学习笔记.html"><span class="more"> more &raquo;</span></a>
+</article>
+  <article class="article_list_item">
+    <a href="http://www.iknockdoor.com/快速配置VPS.html"><header class="article_title">快速配置VPS</header></a>
+    <footer class="title_info">
+      五 07 十二月 2018
+ <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
+    <div class="entry-content"><a href="http://www.iknockdoor.com/快速配置VPS.html"> 上个月VPS被人黑了，找回来后不得已需要重置，以前配置的都丢了，这里记录 下来快速配置的步骤和脚本，再出现类似情况可以快速恢复。具体的原理可以看 其他相关的笔记。</a></div><!-- /.entry-content -->
+    <a href="http://www.iknockdoor.com/快速配置VPS.html"><span class="more"> more &raquo;</span></a>
+</article>
+  <article class="article_list_item">
     <a href="http://www.iknockdoor.com/VPS新装基本环境搭建.html"><header class="article_title">VPS新装基本环境搭建</header></a>
     <footer class="title_info">
       二 04 十二月 2018
- <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
+ <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>  <a href="http://www.iknockdoor.com/tag/vps.html"><span>vps</span></a> </footer>
     <div class="entry-content"><a href="http://www.iknockdoor.com/VPS新装基本环境搭建.html"> VPS新装基本环境搭建，快速安装，使用方便，安全的VPS</a></div><!-- /.entry-content -->
     <a href="http://www.iknockdoor.com/VPS新装基本环境搭建.html"><span class="more"> more &raquo;</span></a>
 </article>
@@ -84,7 +166,7 @@ It loves to sit.
     <a href="http://www.iknockdoor.com/question这个单词.html"><header class="article_title">question这个单词</header></a>
     <footer class="title_info">
       五 23 十一月 2018
- <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
+ <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>  <a href="http://www.iknockdoor.com/tag/english.html"><span>english</span></a> </footer>
     <div class="entry-content"><a href="http://www.iknockdoor.com/question这个单词.html"> <p>
 词典中question有个多个含义，常用的：
 </p>
@@ -99,7 +181,7 @@ test someone's knowledge.
     <a href="http://www.iknockdoor.com/ADB通过WIFI无线调试Android手机.html"><header class="article_title">ADB通过WIFI无线调试Android手机</header></a>
     <footer class="title_info">
       四 22 十一月 2018
- <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>  <a href="http://www.iknockdoor.com/tag/android.html"><span>android</span></a> <a href="http://www.iknockdoor.com/tag/adb.html"><span>adb</span></a> <a href="http://www.iknockdoor.com/tag/diao-shi.html"><span>调试</span></a> </footer>
+ <a href="http://www.iknockdoor.com/category/kai-fa.html"><span>开发</span></a>  <a href="http://www.iknockdoor.com/tag/android.html"><span>Android</span></a> </footer>
     <div class="entry-content"><a href="http://www.iknockdoor.com/ADB通过WIFI无线调试Android手机.html"> <p>
 主要以下两个命令，可以通过adb &#x2013;help查看到
 </p>
@@ -114,64 +196,9 @@ adb connect HOST …</pre></div></a></div><!-- /.entry-content -->
     <a href="http://www.iknockdoor.com/Could not open Selected VM debug port (8700).html"><header class="article_title">Could not open Selected VM debug port (8700)</header></a>
     <footer class="title_info">
       四 22 十一月 2018
- <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
+ <a href="http://www.iknockdoor.com/category/kai-fa.html"><span>开发</span></a>  <a href="http://www.iknockdoor.com/tag/android.html"><span>Android</span></a> </footer>
     <div class="entry-content"><a href="http://www.iknockdoor.com/Could not open Selected VM debug port (8700).html"> 今天Android studio毫无征兆的突然连不上手机调试了，但是通过terminal中的adb命令却可以连上，百思不得其解。</a></div><!-- /.entry-content -->
     <a href="http://www.iknockdoor.com/Could not open Selected VM debug port (8700).html"><span class="more"> more &raquo;</span></a>
-</article>
-  <article class="article_list_item">
-    <a href="http://www.iknockdoor.com/Error: No toolchains found in the NDK toolchains folder for ABI with prefix.html"><header class="article_title">Error: No toolchains found in the NDK toolchains folder for ABI with prefix</header></a>
-    <footer class="title_info">
-      四 22 十一月 2018
- <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>  <a href="http://www.iknockdoor.com/tag/androidstudio.html"><span>AndroidStudio</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/Error: No toolchains found in the NDK toolchains folder for ABI with prefix.html"> <p>
-Android Studio升级到3.2.1之后在编译代码是遇到如下错误
-</p>
-<pre class="example">
-No toolchains found in the NDK toolchains folder for ABI with prefix mipsel-linux-android
-</pre>
-<p>
-原因是Android SDK在新版本中移除NDK对mipsel平台的支持，但是旧版的 …</p></a></div><!-- /.entry-content -->
-    <a href="http://www.iknockdoor.com/Error: No toolchains found in the NDK toolchains folder for ABI with prefix.html"><span class="more"> more &raquo;</span></a>
-</article>
-  <article class="article_list_item">
-    <a href="http://www.iknockdoor.com/互联网的版本管理系统.html"><header class="article_title">互联网的版本管理系统</header></a>
-    <footer class="title_info">
-      三 21 十一月 2018
- <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/互联网的版本管理系统.html"> <p>
-记得之前在网上看到过，可能是知乎吧，忘记了，有一个系统可以记录网页的变迁历史，有点像git。包括互联网的去中心化，现在突然发现这个很重要，但是又找不到当时看的是什么了。
-</p>
-
-<p>
-想到这个主要是因为想起来之前看到的一个博客在底部有个版权声明，隐约记得是说本文已经在哪个区块链系统上登记之类的，觉得这是种非常好的版权保护手段，可惜的是这个网页也找不到了。
-</p>
-</a></div><!-- /.entry-content -->
-    <a href="http://www.iknockdoor.com/互联网的版本管理系统.html"><span class="more"> more &raquo;</span></a>
-</article>
-  <article class="article_list_item">
-    <a href="http://www.iknockdoor.com/这几天学英语学的有点小兴奋.html"><header class="article_title">这几天学英语学的有点小兴奋</header></a>
-    <footer class="title_info">
-      三 21 十一月 2018
- <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/这几天学英语学的有点小兴奋.html"> <p>
-今天在学习和理解定冠词和不定冠词的时候，逐渐找到了感觉，课后的练习题竟然100%全对，一时间提起来英语学习的兴趣，似乎找到了窍门，在今天后面的学习中对知识点的理解也非常顺利，就是这种顿悟的感觉，很棒。
-</p>
-
-<p>
-这个窍门就是英语思维，更准确的说应该是人的思维。对这个点的顿悟跟这段时间学习《集异璧》也有关系，语言事实上是一个形式系统，无论是中文还是英文，他们都是与现实生活，行为，故事同构的，在这种同构下 …</p></a></div><!-- /.entry-content -->
-    <a href="http://www.iknockdoor.com/这几天学英语学的有点小兴奋.html"><span class="more"> more &raquo;</span></a>
-</article>
-  <article class="article_list_item">
-    <a href="http://www.iknockdoor.com/逐行解码base64文件.html"><header class="article_title">逐行解码base64文件</header></a>
-    <footer class="title_info">
-      三 21 十一月 2018
- <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/逐行解码base64文件.html"> <div class="org-src-container">
-
-<pre class="src src-bash">while IFS= read -r line; do echo "$line" | base64 --decode; done &lt; file
-# 下面这个解出的结果会换行
-while IFS= read -r line; do echo …</pre></div></a></div><!-- /.entry-content -->
-    <a href="http://www.iknockdoor.com/逐行解码base64文件.html"><span class="more"> more &raquo;</span></a>
 </article>
 <ul class="paginator">
   <li class="deactive"><a href="http://www.iknockdoor.com/author/chappie.html">1</a></li>

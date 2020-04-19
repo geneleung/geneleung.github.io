@@ -53,6 +53,104 @@
 <pre class="src src-sh">touch /usr/local/bin …</pre></div></a></div><!-- /.entry-content -->
     <a href="http://www.iknockdoor.com/替换Mac OS X terminal系统自带emacs.html"><span class="more"> more &raquo;</span></a>
 </article>
+  <article class="article_list_item">
+    <a href="http://www.iknockdoor.com/emacs中的加密.html"><header class="article_title">emacs中的加密</header></a>
+    <footer class="title_info">
+      一 10 十二月 2018
+ <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>  <a href="http://www.iknockdoor.com/tag/emacs.html"><span>emacs</span></a> </footer>
+    <div class="entry-content"><a href="http://www.iknockdoor.com/emacs中的加密.html"> 
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">参考下面两个链接</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<a href="https://github.com/Sauermann/emacs-aes">https://github.com/Sauermann/emacs-aes</a>
+<a href="http://aes.jypc.org/?p=51451">http://aes.jypc.org/?p=51451</a>
+<a href="https://www.jianshu.com/p/bd4266fb4551">https://www.jianshu.com/p/bd4266fb4551</a>
+<a href="http://www.voidcn.com/article/p-ewqtcfbn-a.html">http://www …</a></p></div></div></a></div><!-- /.entry-content -->
+    <a href="http://www.iknockdoor.com/emacs中的加密.html"><span class="more"> more &raquo;</span></a>
+</article>
+  <article class="article_list_item">
+    <a href="http://www.iknockdoor.com/mac通过homebrew安装imagemagick新老版本.html"><header class="article_title">mac通过homebrew安装imagemagick新老版本</header></a>
+    <footer class="title_info">
+      五 29 十二月 2017
+ <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>  <a href="http://www.iknockdoor.com/tag/emacs.html"><span>emacs</span></a> </footer>
+    <div class="entry-content"><a href="http://www.iknockdoor.com/mac通过homebrew安装imagemagick新老版本.html"> emacs支持显示嵌入式的显示图片并能够调整图片大小需要在编译期间指定imagemagick的支持，但emacs 25.3的编译只能够识别imagemagick的6.x版本，无法识别7.x版本，使用brew在mac系统上安装imagemagic的老版本算是比较方便了，下面是安装方法。</a></div><!-- /.entry-content -->
+    <a href="http://www.iknockdoor.com/mac通过homebrew安装imagemagick新老版本.html"><span class="more"> more &raquo;</span></a>
+</article>
+  <article class="article_list_item">
+    <a href="http://www.iknockdoor.com/mac下支持imagemagick编译emacs.html"><header class="article_title">mac下支持imagemagick编译emacs</header></a>
+    <footer class="title_info">
+      三 13 十二月 2017
+ <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>  <a href="http://www.iknockdoor.com/tag/emacs.html"><span>emacs</span></a> </footer>
+    <div class="entry-content"><a href="http://www.iknockdoor.com/mac下支持imagemagick编译emacs.html"> <p>
+mac下支持imagemagick编译emacs
+</p>
+</a></div><!-- /.entry-content -->
+    <a href="http://www.iknockdoor.com/mac下支持imagemagick编译emacs.html"><span class="more"> more &raquo;</span></a>
+</article>
+  <article class="article_list_item">
+    <a href="http://www.iknockdoor.com/如何实现在emacs中编辑org文件并在浏览器中实时预览.html"><header class="article_title">如何实现在emacs中编辑org文件并在浏览器中实时预览</header></a>
+    <footer class="title_info">
+      三 13 十二月 2017
+ <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>  <a href="http://www.iknockdoor.com/tag/emacs.html"><span>emacs</span></a> </footer>
+    <div class="entry-content"><a href="http://www.iknockdoor.com/如何实现在emacs中编辑org文件并在浏览器中实时预览.html"> <p>
+如何实现在emacs中编辑org文件并在浏览器中实时预览
+</p>
+</a></div><!-- /.entry-content -->
+    <a href="http://www.iknockdoor.com/如何实现在emacs中编辑org文件并在浏览器中实时预览.html"><span class="more"> more &raquo;</span></a>
+</article>
+  <article class="article_list_item">
+    <a href="http://www.iknockdoor.com/emacs中的自动换行.html"><header class="article_title">emacs中的自动换行</header></a>
+    <footer class="title_info">
+      日 23 七月 2017
+ <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>  <a href="http://www.iknockdoor.com/tag/emacs.html"><span>emacs</span></a> </footer>
+    <div class="entry-content"><a href="http://www.iknockdoor.com/emacs中的自动换行.html"> <p>
+这里自动换行是有两种意思：
+</p>
+<ul class="org-ul">
+<li>一种显示层面的，当显示长句时，超过屏幕范围时自动在起另一行显示，这种操作叫做
+truncate-lines，这种操作只是在显示层面做了换行，并不是真的在原内容上插入了换行符。
+
+<p>
+可以用以下命令在buffer种打开自动换行
+</p>
+<pre class="example">
+M-x toggle-truncate-lines
+</pre>
+<p>
+可以在初始化文件中加入以下内容，默认全部换行，还是很方便的，阅读内容时不用总是移动
+</p>
+<pre class="example">
+(set-default 'truncate-lines t)
+</pre>
+</li>
+
+<li>另一种换行是在编辑层面的，当编辑内容超出一定长度后自动插入换行符 …</li></ul></a></div><!-- /.entry-content -->
+    <a href="http://www.iknockdoor.com/emacs中的自动换行.html"><span class="more"> more &raquo;</span></a>
+</article>
+  <article class="article_list_item">
+    <a href="http://www.iknockdoor.com/安装emacs.html"><header class="article_title">安装emacs</header></a>
+    <footer class="title_info">
+      六 22 七月 2017
+ <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>  <a href="http://www.iknockdoor.com/tag/emacs.html"><span>emacs</span></a> </footer>
+    <div class="entry-content"><a href="http://www.iknockdoor.com/安装emacs.html"> 
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">ubuntu 14.04</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+以下安装的是24.5，安装目前最新版本25.2.1只需要下载对应的源码，相同的编译安装步骤
+</p>
+
+<p>
+安装完成后添加启动快捷方式到launcher，参考 ubuntu添加快捷方式
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh"><span class="org-comment-delimiter"># </span><span class="org-comment">&#23433;&#35013;&#20381;&#36182;</span>
+sudo apt-get install build-essential
+sudo apt-get build-dep …</pre></div></div></div></a></div><!-- /.entry-content -->
+    <a href="http://www.iknockdoor.com/安装emacs.html"><span class="more"> more &raquo;</span></a>
+</article>
 </section><!-- /#content -->
         </div>
         <footer id="contentinfo" class="body">

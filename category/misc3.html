@@ -41,110 +41,68 @@
 <section id="content">
 <h2>Articles in the misc category</h2>
   <article class="article_list_item">
-    <a href="http://www.iknockdoor.com/question这个单词.html"><header class="article_title">question这个单词</header></a>
+    <a href="http://www.iknockdoor.com/递归论读书笔记.html"><header class="article_title">递归论读书笔记</header></a>
     <footer class="title_info">
-      五 23 十一月 2018
+      四 08 十一月 2018
  <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/question这个单词.html"> <p>
-词典中question有个多个含义，常用的：
-</p>
-<ul class="org-ul">
-<li>[C]a sentence or phrase that is used to ask for information or to
-test someone's knowledge.
+    <div class="entry-content"><a href="http://www.iknockdoor.com/递归论读书笔记.html"> 
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">笔记</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">绪论</h3>
+<div class="outline-text-3" id="text-1-1">
+<ol class="org-ol">
+<li>1923年Skolem宣称所有初等数论中的数论函数都可以通过原始递归式定义
 </li>
-<li>[C …</li></ul></a></div><!-- /.entry-content -->
-    <a href="http://www.iknockdoor.com/question这个单词.html"><span class="more"> more &raquo;</span></a>
-</article>
-  <article class="article_list_item">
-    <a href="http://www.iknockdoor.com/ADB通过WIFI无线调试Android手机.html"><header class="article_title">ADB通过WIFI无线调试Android手机</header></a>
-    <footer class="title_info">
-      四 22 十一月 2018
- <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>  <a href="http://www.iknockdoor.com/tag/android.html"><span>android</span></a> <a href="http://www.iknockdoor.com/tag/adb.html"><span>adb</span></a> <a href="http://www.iknockdoor.com/tag/diao-shi.html"><span>调试</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/ADB通过WIFI无线调试Android手机.html"> <p>
-主要以下两个命令，可以通过adb &#x2013;help查看到
-</p>
-<div class="org-src-container">
-
-<pre class="src src-sh">adb tcpip PORT               restart adb server listening on TCP on PORT
-<span class="org-comment-delimiter"># </span><span class="org-comment">adb tcpip 5555</span>
-adb connect HOST …</pre></div></a></div><!-- /.entry-content -->
-    <a href="http://www.iknockdoor.com/ADB通过WIFI无线调试Android手机.html"><span class="more"> more &raquo;</span></a>
-</article>
-  <article class="article_list_item">
-    <a href="http://www.iknockdoor.com/Could not open Selected VM debug port (8700).html"><header class="article_title">Could not open Selected VM debug port (8700)</header></a>
-    <footer class="title_info">
-      四 22 十一月 2018
- <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/Could not open Selected VM debug port (8700).html"> 今天Android studio毫无征兆的突然连不上手机调试了，但是通过terminal中的adb命令却可以连上，百思不得其解。</a></div><!-- /.entry-content -->
-    <a href="http://www.iknockdoor.com/Could not open Selected VM debug port (8700).html"><span class="more"> more &raquo;</span></a>
-</article>
-  <article class="article_list_item">
-    <a href="http://www.iknockdoor.com/Error: No toolchains found in the NDK toolchains folder for ABI with prefix.html"><header class="article_title">Error: No toolchains found in the NDK toolchains folder for ABI with prefix</header></a>
-    <footer class="title_info">
-      四 22 十一月 2018
- <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>  <a href="http://www.iknockdoor.com/tag/androidstudio.html"><span>AndroidStudio</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/Error: No toolchains found in the NDK toolchains folder for ABI with prefix.html"> <p>
-Android Studio升级到3.2.1之后在编译代码是遇到如下错误
-</p>
+<li>是否一切可计算的数论函数都是原始递归函数？Ackermann给出了否定的答案，给出了一个可计算但增长速度远远超过一切原始递归函数的函数。
+</li>
+<li>Kleene给出了一般递归函数的定义
+</li>
+<li>Church-Turing论点：人们一般所说的可计算函数恰巧便是一般递归函数。
 <pre class="example">
-No toolchains found in the NDK toolchains folder for ABI with prefix mipsel-linux-android
+书中说这个点有点武断，但后来不但没有找到反例，反倒发现的事项越来越有利于这个论点。这个论点是直接给出了一个结论，但这个结论从哪里来？需要看一下一般递归函数和可计算函数的定义。
 </pre>
-<p>
-原因是Android SDK在新版本中移除NDK对mipsel平台的支持，但是旧版的 …</p></a></div><!-- /.entry-content -->
-    <a href="http://www.iknockdoor.com/Error: No toolchains found in the NDK toolchains folder for ABI with prefix.html"><span class="more"> more &raquo;</span></a>
+</li>
+</ol>
+</div>
+<div id="outline-container-sec-1-1-1" class="outline-4">
+<h4 id="sec-1-1-1">基本概念</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<ol class="org-ol">
+<li>（数论）函数：把数变成数
+</li>
+<li>谓词 …</li></ol></div></div></div></div></a></div><!-- /.entry-content -->
+    <a href="http://www.iknockdoor.com/递归论读书笔记.html"><span class="more"> more &raquo;</span></a>
 </article>
   <article class="article_list_item">
-    <a href="http://www.iknockdoor.com/互联网的版本管理系统.html"><header class="article_title">互联网的版本管理系统</header></a>
+    <a href="http://www.iknockdoor.com/博客系统解决方案.html"><header class="article_title">使用emacs,org-mode和pelican搭建博客系统解决方案</header></a>
     <footer class="title_info">
-      三 21 十一月 2018
- <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/互联网的版本管理系统.html"> <p>
-记得之前在网上看到过，可能是知乎吧，忘记了，有一个系统可以记录网页的变迁历史，有点像git。包括互联网的去中心化，现在突然发现这个很重要，但是又找不到当时看的是什么了。
-</p>
-
-<p>
-想到这个主要是因为想起来之前看到的一个博客在底部有个版权声明，隐约记得是说本文已经在哪个区块链系统上登记之类的，觉得这是种非常好的版权保护手段，可惜的是这个网页也找不到了。
-</p>
-</a></div><!-- /.entry-content -->
-    <a href="http://www.iknockdoor.com/互联网的版本管理系统.html"><span class="more"> more &raquo;</span></a>
-</article>
-  <article class="article_list_item">
-    <a href="http://www.iknockdoor.com/这几天学英语学的有点小兴奋.html"><header class="article_title">这几天学英语学的有点小兴奋</header></a>
-    <footer class="title_info">
-      三 21 十一月 2018
- <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/这几天学英语学的有点小兴奋.html"> <p>
-今天在学习和理解定冠词和不定冠词的时候，逐渐找到了感觉，课后的练习题竟然100%全对，一时间提起来英语学习的兴趣，似乎找到了窍门，在今天后面的学习中对知识点的理解也非常顺利，就是这种顿悟的感觉，很棒。
-</p>
-
-<p>
-这个窍门就是英语思维，更准确的说应该是人的思维。对这个点的顿悟跟这段时间学习《集异璧》也有关系，语言事实上是一个形式系统，无论是中文还是英文，他们都是与现实生活，行为，故事同构的，在这种同构下 …</p></a></div><!-- /.entry-content -->
-    <a href="http://www.iknockdoor.com/这几天学英语学的有点小兴奋.html"><span class="more"> more &raquo;</span></a>
-</article>
-  <article class="article_list_item">
-    <a href="http://www.iknockdoor.com/逐行解码base64文件.html"><header class="article_title">逐行解码base64文件</header></a>
-    <footer class="title_info">
-      三 21 十一月 2018
- <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/逐行解码base64文件.html"> <div class="org-src-container">
-
-<pre class="src src-bash">while IFS= read -r line; do echo "$line" | base64 --decode; done &lt; file
-# 下面这个解出的结果会换行
-while IFS= read -r line; do echo …</pre></div></a></div><!-- /.entry-content -->
-    <a href="http://www.iknockdoor.com/逐行解码base64文件.html"><span class="more"> more &raquo;</span></a>
-</article>
-  <article class="article_list_item">
-    <a href="http://www.iknockdoor.com/Dota中的猥琐流打发与生活态度.html"><header class="article_title">Dota中的猥琐流打发与生活态度</header></a>
-    <footer class="title_info">
-      五 09 十一月 2018
- <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
-    <div class="entry-content"><a href="http://www.iknockdoor.com/Dota中的猥琐流打发与生活态度.html"> <p>
-最近和一个朋友一起打DOTA2。这个朋友的水平在我们这几个玩的人中算是比较高的了，一起玩了几局之后你就会发现他的打法很猥琐，基本上就是一看形势不好，掉头就跑那种，一看有人头能拿就会不择手段的猥琐抢人头，可以理解为“送死你去，好处我拿”。看吧，是不是确实很猥琐，但是这位朋友却猥琐的很可爱，从来不会让人觉得讨厌，而是很自然，让人感觉还挺舒服的。这里我们暂且不讨论他是如何做到猥琐而不失可爱的，只讨论一下猥琐的生活理念。
-</p>
-
-<p>
-在游戏中，猥琐的这个打法虽然看起来有点怂，但似乎应该是正确的打法 …</p></a></div><!-- /.entry-content -->
-    <a href="http://www.iknockdoor.com/Dota中的猥琐流打发与生活态度.html"><span class="more"> more &raquo;</span></a>
+      五 12 十月 2018
+ <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>  <a href="http://www.iknockdoor.com/tag/blog.html"><span>blog</span></a> </footer>
+    <div class="entry-content"><a href="http://www.iknockdoor.com/博客系统解决方案.html"> <div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">设计</a></li>
+<li><a href="#sec-2">搭建</a>
+<ul>
+<li><a href="#sec-2-1">环境</a></li>
+<li><a href="#sec-2-2">安装</a>
+<ul>
+<li><a href="#sec-2-2-1">CentOS下安装Python3</a></li>
+<li><a href="#sec-2-2-2">安装Pelican</a></li>
+<li><a href="#sec-2-2-3">安装emacs</a></li>
+<li><a href="#sec-2-2-4"><span class="todo TODO">TODO</span> 安装Git</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-3"><span class="todo TODO">TODO</span> 配置</a></li>
+<li><a href="#sec-2-4"><span class="todo TODO">TODO</span> 测试环境的搭建</a></li>
+</ul>
+</li>
+<li><a href="#sec-3"><span class="todo TODO">TODO</span> Pelican的原理与应用</a></li>
+<li><a href="#sec-4"><span class="todo TODO">TODO</span> 界面布局与样式美化 …</a></li></ul></div></div></a></div><!-- /.entry-content -->
+    <a href="http://www.iknockdoor.com/博客系统解决方案.html"><span class="more"> more &raquo;</span></a>
 </article>
   <article class="article_list_item">
     <a href="http://www.iknockdoor.com/跟换为Pelican生成笔记系统.html"><header class="article_title">跟换为Pelican生成笔记系统</header></a>
@@ -155,14 +113,25 @@ while IFS= read -r line; do echo …</pre></div></a></div><!-- /.entry-content -
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. Todolist</a></li>
-<li><a href="#sec-2">2. 想法</a></li>
-<li><a href="#sec-3">3. 设计</a>
+<li><a href="#sec-1">Todolist</a></li>
+<li><a href="#sec-2">想法</a></li>
+<li><a href="#sec-3">设计</a>
 <ul>
-<li><a href="#sec-3-1">3.1. 文章时间</a>
+<li><a href="#sec-3-1">文章时间</a>
 <ul>
-<li><a href="#sec-3-1-1">3.1.1. 时间戳格式</a></li>
-<li><a href="#sec-3-1-2">3.1.2. 创建时间 …</a></li></ul></li></ul></li></ul></div></div></a></div><!-- /.entry-content -->
+<li><a href="#sec-3-1-1">时间戳格式</a></li>
+<li><a href="#sec-3-1-2">创建时间</a></li>
+<li><a href="#sec-3-1-3">最后修改时间</a></li>
+</ul>
+</li>
+<li><a href="#sec-3-2">URL</a></li>
+<li><a href="#sec-3-3">theme</a>
+<ul>
+<li><a href="#sec-3-3-1">martin-pelican</a></li>
+<li><a href="#sec-3-3-2">nice-blog&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
+<li><a href="#sec-3-3-3">elegant&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
+<li><a href="#sec-3-3-4">dev-random2&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
+<li><a href="#sec-3-3-5">foundation-default-colours …</a></li></ul></li></ul></li></ul></div></div></a></div><!-- /.entry-content -->
     <a href="http://www.iknockdoor.com/跟换为Pelican生成笔记系统.html"><span class="more"> more &raquo;</span></a>
 </article>
   <article class="article_list_item">
@@ -171,16 +140,111 @@ while IFS= read -r line; do echo …</pre></div></a></div><!-- /.entry-content -
       二 09 十月 2018
  <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
     <div class="entry-content"><a href="http://www.iknockdoor.com/递归.html"> <p>
-一直以来对递归的理解和使用都感觉很陌生，完全没有掌握递归的套路。总觉得不是归纳法那么简单。后来看了一些资料，发现递归确实是一个非常有意义的话题。
+   一直以来对递归的理解和使用都感觉很陌生，完全没有掌握递归的套路。总觉得不是归纳法那么简单。后来看了一些资料，发现递归确实是一个非常有意义的话题。
 </p>
 
 <p>
-关于递归有两个定理很重要，一个就是递归定理，另外一个是不动点定理。还有一个是自生产程序。
+   关于递归有两个定理很重要，一个就是递归定理，另外一个是不动点定理。还有一个是自生产程序。
 </p>
 
 <p>
-通过这两天查资料和对递归的思考，发现递归的使用最重要的是找到子问题，即能够把问题用递归定义出来。然而如何找到子问题，如何将一个问题定义成递归呢？我的思考是去找问题关联的状态，看问题的变化是依赖的谁，比如是依赖一个更小的问题，那么就可以循着这个思路思考下去，找出递归定义，理解了递归的原理 …</p></a></div><!-- /.entry-content -->
+   通过这两天查资料和对递归的思考，发现递归的使用最重要的是找到子问题，即能够把问题用递归定义出来。然而如何找到子问题，如何将一个问题定义成递归呢？我的思考是去找问题关联的状态，看问题的变化是依赖的谁，比如是依赖一个更小的问题，那么就可以循着这个思路思考下去，找出递归定义，理解了递归的原理 …</p></a></div><!-- /.entry-content -->
     <a href="http://www.iknockdoor.com/递归.html"><span class="more"> more &raquo;</span></a>
+</article>
+  <article class="article_list_item">
+    <a href="http://www.iknockdoor.com/听《最爱的人伤我最深》这首歌.html"><header class="article_title">听《最爱的人伤我最深》这首歌</header></a>
+    <footer class="title_info">
+      二 25 九月 2018
+ <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
+    <div class="entry-content"><a href="http://www.iknockdoor.com/听《最爱的人伤我最深》这首歌.html"> <p>
+   前两天在的士上从收音机中听到张惠妹的歌，阿妹的声线太过迷人了，今天把张惠妹《最爱的人伤我最深》找到听一下，从前奏开始就直接进入了歌曲。
+</p>
+
+<p>
+   以为是张惠妹的自己的歌，没想到第一句竟是张雨生开始的，久违的声音，两个无与伦比的声音交替着，并没有去听唱的什么内容，只是单纯的听这两个声音，心中感慨万千，世间竟有如此美妙的嗓音，唱的又这么好的两个人，然而这两个人竟又是师徒，听着这首歌，脑中浮现出师徒二人站在音乐之巅，陶醉在音乐之中，享受音乐 …</p></a></div><!-- /.entry-content -->
+    <a href="http://www.iknockdoor.com/听《最爱的人伤我最深》这首歌.html"><span class="more"> more &raquo;</span></a>
+</article>
+  <article class="article_list_item">
+    <a href="http://www.iknockdoor.com/长安十二时辰读书笔记.html"><header class="article_title">长安十二时辰读书笔记</header></a>
+    <footer class="title_info">
+      二 03 七月 2018
+ <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
+    <div class="entry-content"><a href="http://www.iknockdoor.com/长安十二时辰读书笔记.html"> <p>
+   昨天在飞机上最后读完了长安十二时辰，书中直接描写的几个人物都个性十分鲜明，比如李泌，张小敬，元载，姚汝能等。整个故事情节非常紧凑，故事始终一波三折，一波未平一波又起，所以整个故事读下来全程基本无尿点，高潮一波接一波。
+</p>
+
+<p>
+   就几个个性鲜明且迥异的主角来说，一号男主角自然是张小敬了，整个故事中张小敬是一个有情有义，亦正亦邪的末路英雄的形象，喜欢单打独斗，喜欢个人英雄主义，感觉像是马伯庸所以喜欢或崇拜或向往的一个形象，然而我并不是很喜欢这个形象。说是够狠 …</p></a></div><!-- /.entry-content -->
+    <a href="http://www.iknockdoor.com/长安十二时辰读书笔记.html"><span class="more"> more &raquo;</span></a>
+</article>
+  <article class="article_list_item">
+    <a href="http://www.iknockdoor.com/微信发展简史.html"><header class="article_title">微信发展简史</header></a>
+    <footer class="title_info">
+      一 11 六月 2018
+ <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
+    <div class="entry-content"><a href="http://www.iknockdoor.com/微信发展简史.html"> 这篇文章讲到了几个产品的思路和点，自认为还是挺深入的，所以转过来，反复研读思考，理解产品哲学。</a></div><!-- /.entry-content -->
+    <a href="http://www.iknockdoor.com/微信发展简史.html"><span class="more"> more &raquo;</span></a>
+</article>
+  <article class="article_list_item">
+    <a href="http://www.iknockdoor.com/java中的闭包和匿名内部类.html"><header class="article_title">java中的闭包和匿名内部类</header></a>
+    <footer class="title_info">
+      三 28 二月 2018
+ <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>  <a href="http://www.iknockdoor.com/tag/java.html"><span>java</span></a> </footer>
+    <div class="entry-content"><a href="http://www.iknockdoor.com/java中的闭包和匿名内部类.html"> 
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">java中匿名内部类使用外部方法的参数或局部变量的场景</h2>
+<div class="outline-text-2" id="text-1">
+<div class="org-src-container">
+
+<pre class="src src-java">  <span class="org-keyword">interface</span> <span class="org-type">AnnoInner</span>(){addXYZ();}
+<span class="org-keyword">public</span> <span class="org-keyword">class</span> <span class="org-type">Outer</span> {
+    <span class="org-keyword">public</span> <span class="org-type">AnnoInner</span> <span class="org-function-name">getAnnoInner</span>(<span class="org-keyword">final</span> <span class="org-type">int</span> <span class="org-variable-name">x</span>){
+        <span class="org-keyword">final</span> <span class="org-type">int</span> <span class="org-variable-name">y</span>=100;
+        <span class="org-keyword">return</span> <span class="org-keyword">new</span> <span class="org-type">AnnoInner …</span></pre></div></div></div></a></div><!-- /.entry-content -->
+    <a href="http://www.iknockdoor.com/java中的闭包和匿名内部类.html"><span class="more"> more &raquo;</span></a>
+</article>
+  <article class="article_list_item">
+    <a href="http://www.iknockdoor.com/校招培训引发的思考.html"><header class="article_title">校招培训引发的思考</header></a>
+    <footer class="title_info">
+      三 28 二月 2018
+ <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
+    <div class="entry-content"><a href="http://www.iknockdoor.com/校招培训引发的思考.html"> <p>
+   今天参加了一场公司的校招培训，其中一位经验丰富的面试官分享了他的校招经验，其中讲了各种名牌大学各种实验室，各种同各大名企争夺优秀人才，听了感觉自己离“人才”两字好远，好想太过普通了，这是在做面试官，如果是放在当年让自己去应聘校招，可能简历都发不出去。
+</p>
+
+<p>
+   那当不是名牌大学毕业，没有研究什么高大上的算法，推荐模型，学历，经历平平的我们该怎么办呢？或者说如果我们也去做这些，会不会真的跟高学历的人有很大的差距？如果真的是这样，我们的立足点又在哪里 …</p></a></div><!-- /.entry-content -->
+    <a href="http://www.iknockdoor.com/校招培训引发的思考.html"><span class="more"> more &raquo;</span></a>
+</article>
+  <article class="article_list_item">
+    <a href="http://www.iknockdoor.com/我要给自己订个目标....html"><header class="article_title">我要给自己订个目标</header></a>
+    <footer class="title_info">
+      四 11 一月 2018
+ <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a> </footer>
+    <div class="entry-content"><a href="http://www.iknockdoor.com/我要给自己订个目标....html"> <p>
+   我要给自己订个目标，不让自己再这么随波逐流，走到哪儿算哪，好想走到哪儿算哪也不是很坏的方式，比如有一些认识的人就是跟着命走，也会很成功。那么还是这样，这两点一定不会是冲突的。
+</p>
+
+<p>
+给自己订个目标，比如：
+</p>
+<ul class="org-ul">
+<li>35岁之前有自己的事业
+</li>
+<li>35岁之前赚够多少钱
+</li>
+</ul>
+
+<p>
+一上来这么大的目标？搞一些小目标好不好？
+</p>
+
+<p>
+还有方向的问题，目前看到的方向有这些：
+</p>
+<ul class="org-ul">
+<li>人工智能，我觉得我在这方面还有有兴趣的，以前自己也思考过，如果几年前我就搞这些 …</li></ul></a></div><!-- /.entry-content -->
+    <a href="http://www.iknockdoor.com/我要给自己订个目标....html"><span class="more"> more &raquo;</span></a>
 </article>
 <ul class="paginator">
   <li class="deactive"><a href="http://www.iknockdoor.com/category/misc.html">1</a></li>
@@ -189,7 +253,6 @@ while IFS= read -r line; do echo …</pre></div></a></div><!-- /.entry-content -
   <li class="deactive"><a href="http://www.iknockdoor.com/category/misc4.html">4</a></li>
   <li class="deactive"><a href="http://www.iknockdoor.com/category/misc5.html">5</a></li>
   <li class="deactive"><a href="http://www.iknockdoor.com/category/misc6.html">6</a></li>
-  <li class="deactive"><a href="http://www.iknockdoor.com/category/misc7.html">7</a></li>
 </ul>
 </section><!-- /#content -->
         </div>

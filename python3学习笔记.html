@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+        <title>iknockdoor-python3学习笔记</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="http://www.iknockdoor.com/theme/css/org.css" />
+        <link rel="stylesheet" type="text/css" href="http://www.iknockdoor.com/theme/css/custom.css" />
+        <link href="http://www.iknockdoor.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="iknockdoor Full Atom Feed" />
+
+    <meta name="tags" content="python" />
+
+<script>var _gaq=[['_setAccount','UA-103057848-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+        <!-- mathjax config similar to math.stackexchange -->
+	<script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({
+	  jax: ["input/TeX", "output/HTML-CSS"],
+	  tex2jax: {
+	  inlineMath: [ ['$', '$'] ],
+	  displayMath: [ ['$$', '$$']],
+	  processEscapes: true,
+	  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+	  },
+	  messageStyle: "none",
+	  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+	  });
+	</script>
+</head>
+
+<body id="index" class="home">
+  <div id="banner"><div id="banner-inside">
+      <nav id="menu">
+      <header id="site_name">
+                iknockdoor
+        </header><!-- /#banner -->
+          <ul>
+            <li><a href="http://www.iknockdoor.com/index.html">Index</a></li>
+            <li><a href="http://www.iknockdoor.com/categories.html">Categories</a></li>
+            <li><a href="http://www.iknockdoor.com/tags.html">Tags</a></li>
+            <li><a href="http://www.iknockdoor.com/archives.html">Archives</a></li>
+      </ul></nav><!-- /#menu -->
+  </div></div>
+  <div id="content">
+<section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="http://www.iknockdoor.com/python3学习笔记.html" rel="bookmark"
+         title="Permalink to python3学习笔记">python3学习笔记</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <time class="published" datetime="2018-12-10T00:00:00+08:00">
+      一 10 十二月 2018
+    </time>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">tutorial</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">代码块是用缩进控制的，缩进多少个space不重要，重要的是需要一致</h3>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">交互模式下&gt;&gt;&gt; 与 &#x2026;的区别，&#x2026;需要用一个换行结束</h3>
+</div>
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3">除法的返回值是浮点数，无论除数与被除数是什么类型，除法取整用//，取模用%</h3>
+</div>
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4">幂运算符 **</h3>
+</div>
+<div id="outline-container-sec-1-5" class="outline-3">
+<h3 id="sec-1-5">在交互模式下，最后一个表达式的值总会被赋给一个内建变量"_"，这个变量对用户只可读不可写。如果我们自己声明一个同名的变量，会覆盖内建变量。</h3>
+</div>
+<div id="outline-container-sec-1-6" class="outline-3">
+<h3 id="sec-1-6">字符串</h3>
+<div class="outline-text-3" id="text-1-6">
+</div><div id="outline-container-sec-1-6-1" class="outline-4">
+<h4 id="sec-1-6-1">对于''和""的使用和区别</h4>
+<div class="outline-text-4" id="text-1-6-1">
+<p>
+可以考虑lisp的对象，字符串是一个可被计算的值，他具备输入形式和输出形式，注意输出形式是对字符串值的表示形式，而不是打印字符串，打印字符串用print函数，输出形式和打印的区别在转义字符上体现的很明显，输出形式会输出\，而打印形式就会按具体转义字符的输出。
+</p>
+
+<p>
+输入形式'"的使用怎么方便怎么来就好。输出形式大部分情况使用'，只有以下一种情况下会使用"：
+</p>
+<pre class="example">
+The string is enclosed in double quotes if the string contains a single quote and no double quotes, otherwise it is enclosed in single quotes. 
+</pre>
+<p>
+输出形式和打印形式看以下代码:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-python">    &gt;&gt;&gt; <span class="org-string">'It\'s\nhe said'</span>
+<span class="org-string">"It's\nhe said"</span>
+&gt;&gt;&gt; <span class="org-keyword">print</span>(<span class="org-string">'It\'s\nhe said'</span>)
+It<span class="org-string">'s</span>
+<span class="org-string">he said</span>
+<span class="org-string">&gt;&gt;&gt;</span>
+</pre>
+</div>
+
+<p>
+python中的字符串还有一些小特点：
+</p>
+<ul class="org-ul">
+<li>不存在char类型，字符只是长度为1的字符串
+</li>
+<li>字符串是常量，不可被赋值，这通常出现在用下标索引时的赋值操作
+</li>
+<li>索引长度为1的字符串会越界，通过索引取字串不会出现越界
+</li>
+<li>字符串支持+ *的操作
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-1-7" class="outline-3">
+<h3 id="sec-1-7">函数</h3>
+<div class="outline-text-3" id="text-1-7">
+</div><div id="outline-container-sec-1-7-1" class="outline-4">
+<h4 id="sec-1-7-1">函数是什么</h4>
+<div class="outline-text-4" id="text-1-7-1">
+<p>
+同lisp一样，函数也是有输出形式的，很类似，而且print也是个函数
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-7-2" class="outline-4">
+<h4 id="sec-1-7-2">变量作用域</h4>
+<div class="outline-text-4" id="text-1-7-2">
+<p>
+也同lisp一样，似乎函数式语言的变量作用域总是很容易搞不明白，这里就搞的不是很明白，遇到问题可以再研究。尤其是参数默认值，要区分可变数据类型和不可变数据类型
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-7-3" class="outline-4">
+<h4 id="sec-1-7-3">函数的调用与参数列表</h4>
+<div class="outline-text-4" id="text-1-7-3">
+<p>
+调用方式区别于其他语言，可以用key=value的形式调用函数，并指定参数。通过位置给定参数的形式一定要在通过key=value形式之前。
+</p>
+
+<p>
+tuple(*name)参与与dict(**name)参数，tuple参数要在dict参数之前
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">数据类型</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">list</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+这种运算还是挺有意思的
+</p>
+<div class="org-src-container">
+
+<pre class="src src-python">   <span class="org-variable-name">vec</span> = [-4, -2, 0, 2, 4]
+<span class="org-comment-delimiter"># </span><span class="org-comment">create a new list with the values doubled</span>
+[x*2 <span class="org-keyword">for</span> x <span class="org-keyword">in</span> vec]
+
+<span class="org-comment-delimiter"># </span><span class="org-comment">filter the list to exclude negative numbers</span>
+[x <span class="org-keyword">for</span> x <span class="org-keyword">in</span> vec <span class="org-keyword">if</span> x &gt;= 0]
+
+<span class="org-comment-delimiter"># </span><span class="org-comment">apply a function to all the elements</span>
+[<span class="org-builtin">abs</span>(x) <span class="org-keyword">for</span> x <span class="org-keyword">in</span> vec]
+
+<span class="org-comment-delimiter"># </span><span class="org-comment">call a method on each element</span>
+<span class="org-variable-name">freshfruit</span> = [<span class="org-string">'  banana'</span>, <span class="org-string">'  loganberry '</span>, <span class="org-string">'passion fruit  '</span>]
+[weapon.strip() <span class="org-keyword">for</span> weapon <span class="org-keyword">in</span> freshfruit]
+
+<span class="org-comment-delimiter"># </span><span class="org-comment">create a list of 2-tuples like (number, square)</span>
+[(x, x**2) <span class="org-keyword">for</span> x <span class="org-keyword">in</span> <span class="org-builtin">range</span>(6)]
+
+<span class="org-comment-delimiter"># </span><span class="org-comment">the tuple must be parenthesized, otherwise an error is raised</span>
+[x, x**2 <span class="org-keyword">for</span> x <span class="org-keyword">in</span> <span class="org-builtin">range</span>(6)]
+
+
+
+
+<span class="org-comment-delimiter"># </span><span class="org-comment">flatten a list using a listcomp with two 'for'</span>
+<span class="org-variable-name">vec</span> = [[1,2,3], [4,5,6], [7,8,9]]
+[num <span class="org-keyword">for</span> elem <span class="org-keyword">in</span> vec <span class="org-keyword">for</span> num <span class="org-keyword">in</span> elem]
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+  </div><!-- /.entry-content -->
+  <footer class="post-info-footer">
+        Category: <a href="http://www.iknockdoor.com/category/kai-fa.html"><span>开发</span></a>
+    
+        Tags:
+            <a href="http://www.iknockdoor.com/tag/python.html"><span>python</span></a>
+    
+  </footer>
+</section>
+        </div>
+        <footer id="contentinfo" class="body">
+          © 2017-2020 iknockdoor</address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>

@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="http://www.iknockdoor.com/theme/css/custom.css" />
         <link href="http://www.iknockdoor.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="iknockdoor Full Atom Feed" />
 
+    <meta name="tags" content="org-mode" />
 
 <script>var _gaq=[['_setAccount','UA-103057848-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
         <!-- mathjax config similar to math.stackexchange -->
@@ -53,91 +54,8 @@
     </time>
   </footer><!-- /.post-info -->
   <div class="entry-content">
-    <div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#sec-1">1. todo的概念</a>
-<ul>
-<li><a href="#sec-1-1">1.1. todo配置的生效范围</a></li>
-</ul>
-</li>
-<li><a href="#sec-2">2. todo list基本快捷键</a></li>
-<li><a href="#sec-3">3. 如果要做的事情状态不只是TODO 和DONE？</a></li>
-<li><a href="#sec-4">4. 如果想同时用几组关键字怎么办？</a></li>
-<li><a href="#sec-5">5. todo状态总是轮流切换，如果状态一多会太慢，这样就可以定义状态快捷键</a></li>
-<li><a href="#sec-6">6. 上述通过修改变量的方式会对所有org文件生效，如果只想对当前文件生效呢？</a></li>
-<li><a href="#sec-7">7. 一项要做的事情可能可以细分为几个步骤，如何实现分步呢？</a></li>
-<li><a href="#sec-8">8. 如果一项事情分成几步，还可以添加依赖关系</a></li>
-<li><a href="#sec-9">9. 在更改TODO状态时记下时间戳，还能记下更改笔记</a>
-<ul>
-<li><a href="#sec-9-1">9.1. 基本使用</a></li>
-<li><a href="#sec-9-2">9.2. 订制哪些记哪些不记</a></li>
-<li><a href="#sec-9-3">9.3. 把记录做在指定的Drawer中</a></li>
-</ul>
-</li>
-<li><a href="#sec-10">10. <span class="todo TODO">TODO</span> 用todolist来做习惯管理</a></li>
-<li><a href="#sec-11">11. 给TODO添加优先级</a></li>
-<li><a href="#sec-12">12. 给TODO添加标签</a>
-<ul>
-<li><a href="#sec-12-1">12.1. tags的基本信息</a></li>
-<li><a href="#sec-12-2">12.2. 给headline设置tag</a></li>
-<li><a href="#sec-12-3">12.3. 定义tags</a></li>
-<li><a href="#sec-12-4">12.4. 定义tag快捷键，很简单同TODO</a></li>
-<li><a href="#sec-12-5">12.5. 给tags分组</a></li>
-<li><a href="#sec-12-6">12.6. 给tags分级</a></li>
-<li><a href="#sec-12-7">12.7. 通过tags查找headline</a></li>
-</ul>
-</li>
-<li><a href="#sec-13">13. Property</a>
-<ul>
-<li><a href="#sec-13-1">13.1. 语法</a></li>
-<li><a href="#sec-13-2">13.2. 常用命令</a></li>
-<li><a href="#sec-13-3">13.3. Property的查找</a></li>
-<li><a href="#sec-13-4">13.4. 基于outline结构的属性继承</a></li>
-<li><a href="#sec-13-5">13.5. column view</a>
-<ul>
-<li><a href="#sec-13-5-1">13.5.1. 定义columns</a></li>
-<li><a href="#sec-13-5-2">13.5.2. 一个定义和使用column view的例子</a></li>
-<li><a href="#sec-13-5-3">13.5.3. column view中的操作</a></li>
-<li><a href="#sec-13-5-4">13.5.4. Capturing column view</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#sec-14">14. 时间</a>
-<ul>
-<li><a href="#sec-14-1">14.1. 时间类型</a></li>
-<li><a href="#sec-14-2">14.2. 相关命令和快捷键</a>
-<ul>
-<li><a href="#sec-14-2-1">14.2.1. 创建时间时的小技巧</a></li>
-</ul>
-</li>
-<li><a href="#sec-14-3">14.3. Deadlines and Scheduling</a></li>
-<li><a href="#sec-14-4">14.4. <span class="todo TODO">TODO</span> 为任务计时</a></li>
-</ul>
-</li>
-<li><a href="#sec-15">15. <span class="todo TODO">TODO</span> Capture</a>
-<ul>
-<li><a href="#sec-15-1">15.1. <span class="todo TODO">TODO</span> 如何快速做笔记这个点还是挺有用的</a></li>
-<li><a href="#sec-15-2">15.2. <span class="todo TODO">TODO</span> attachments这个挺有用，让我对添加图片有了一个新的认识</a></li>
-<li><a href="#sec-15-3">15.3. <span class="todo TODO">TODO</span> RSS也很有用</a></li>
-</ul>
-</li>
-<li><a href="#sec-16">16. Agenda Views</a>
-<ul>
-<li><a href="#sec-16-1">16.1. Agenda files</a></li>
-<li><a href="#sec-16-2">16.2. 主要的几个视图</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<p>
-org mode中todo的原生概念就是分散在各个笔记中的，因为todo往往是在记笔记的过程中产生的，但org mode提供了便利的从各个文件中收集todo的方法。
-</p>
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> todo的概念</h2>
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">todo的概念</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 TODO List是用来做待办事项管理的，了解GTD的同学会很熟悉。Org mode通过以下概念和方式实现对TODO list的支持，可以支持：
@@ -171,7 +89,7 @@ todo的功能本质上是在一组关键字和无关键字之间轮换，然后�
 </ul>
 </div>
 <div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> todo配置的生效范围</h3>
+<h3 id="sec-1-1">todo配置的生效范围</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 下面讨论的配置基本上都会有三种有效范围
@@ -188,7 +106,7 @@ todo的功能本质上是在一组关键字和无关键字之间轮换，然后�
 </div>
 </div>
 <div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> todo list基本快捷键</h2>
+<h2 id="sec-2">todo list基本快捷键</h2>
 <div class="outline-text-2" id="text-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -236,7 +154,7 @@ todo的功能本质上是在一组关键字和无关键字之间轮换，然后�
 </div>
 </div>
 <div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> 如果要做的事情状态不只是TODO 和DONE？</h2>
+<h2 id="sec-3">如果要做的事情状态不只是TODO 和DONE？</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 自定义关键字
@@ -250,7 +168,7 @@ todo的功能本质上是在一组关键字和无关键字之间轮换，然后�
 </div>
 </div>
 <div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> 如果想同时用几组关键字怎么办？</h2>
+<h2 id="sec-4">如果想同时用几组关键字怎么办？</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 可以同时定义多组关键字，快捷键会不太一样，最简单的s-left/s-right，其他可以查看文档。如下方式定义多组关键字
@@ -262,7 +180,7 @@ todo的功能本质上是在一组关键字和无关键字之间轮换，然后�
 </div>
 </div>
 <div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> todo状态总是轮流切换，如果状态一多会太慢，这样就可以定义状态快捷键</h2>
+<h2 id="sec-5">todo状态总是轮流切换，如果状态一多会太慢，这样就可以定义状态快捷键</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 设置org-use-fast-todo-selection为非nil
@@ -275,7 +193,7 @@ todo的功能本质上是在一组关键字和无关键字之间轮换，然后�
 </div>
 </div>
 <div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6"><span class="section-number-2">6</span> 上述通过修改变量的方式会对所有org文件生效，如果只想对当前文件生效呢？</h2>
+<h2 id="sec-6">上述通过修改变量的方式会对所有org文件生效，如果只想对当前文件生效呢？</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 使用in-buffet settings，也支持多组，如下：
@@ -291,7 +209,7 @@ todo的功能本质上是在一组关键字和无关键字之间轮换，然后�
 </div>
 </div>
 <div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7"><span class="section-number-2">7</span> 一项要做的事情可能可以细分为几个步骤，如何实现分步呢？</h2>
+<h2 id="sec-7">一项要做的事情可能可以细分为几个步骤，如何实现分步呢？</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 两种方法，一个是通过headline的级别关系，另外一种是通过checkbox，我更倾向于用checkbox。另外用<code>[/]</code><code>[%]</code>可以显示进度。
@@ -300,7 +218,7 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 </div>
 </div>
 <div id="outline-container-sec-8" class="outline-2">
-<h2 id="sec-8"><span class="section-number-2">8</span> 如果一项事情分成几步，还可以添加依赖关系</h2>
+<h2 id="sec-8">如果一项事情分成几步，还可以添加依赖关系</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 这个点，其实可以靠自觉，如果当时思考并安排了一个顺序，后面害怕忘记，也可以设置一个，这里只给一个例子，具体看文档
@@ -323,10 +241,10 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 </div>
 </div>
 <div id="outline-container-sec-9" class="outline-2">
-<h2 id="sec-9"><span class="section-number-2">9</span> 在更改TODO状态时记下时间戳，还能记下更改笔记</h2>
+<h2 id="sec-9">在更改TODO状态时记下时间戳，还能记下更改笔记</h2>
 <div class="outline-text-2" id="text-9">
 </div><div id="outline-container-sec-9-1" class="outline-3">
-<h3 id="sec-9-1"><span class="section-number-3">9.1</span> 基本使用</h3>
+<h3 id="sec-9-1">基本使用</h3>
 <div class="outline-text-3" id="text-9-1">
 <div class="org-src-container">
 
@@ -340,7 +258,7 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 </div>
 </div>
 <div id="outline-container-sec-9-2" class="outline-3">
-<h3 id="sec-9-2"><span class="section-number-3">9.2</span> 订制哪些记哪些不记</h3>
+<h3 id="sec-9-2">订制哪些记哪些不记</h3>
 <div class="outline-text-3" id="text-9-2">
 <p>
 并不是更改每种状态时都想记录笔记，所以可以配置哪些状态记录时间戳，哪些记录笔记，哪些什么都不记
@@ -363,7 +281,7 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 </div>
 </div>
 <div id="outline-container-sec-9-3" class="outline-3">
-<h3 id="sec-9-3"><span class="section-number-3">9.3</span> 把记录做在指定的Drawer中</h3>
+<h3 id="sec-9-3">把记录做在指定的Drawer中</h3>
 <div class="outline-text-3" id="text-9-3">
 <p>
 如果状态变更历史太多，放在一个Drawer中收起来会好看很多。设置org-log-into-drawer，指定笔记放在那个Drawer，一般指定为LOGBOOK，会在aganda view生效。
@@ -372,7 +290,7 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 </div>
 </div>
 <div id="outline-container-sec-10" class="outline-2">
-<h2 id="sec-10"><span class="section-number-2">10</span> <span class="todo TODO">TODO</span> 用todolist来做习惯管理</h2>
+<h2 id="sec-10"><span class="todo TODO">TODO</span> 用todolist来做习惯管理</h2>
 <div class="outline-text-2" id="text-10">
 <p>
 暂时还没用到晚些再看
@@ -380,7 +298,7 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 </div>
 </div>
 <div id="outline-container-sec-11" class="outline-2">
-<h2 id="sec-11"><span class="section-number-2">11</span> 给TODO添加优先级</h2>
+<h2 id="sec-11">给TODO添加优先级</h2>
 <div class="outline-text-2" id="text-11">
 <p>
 只是在agenda view时用来排序，其他没什么太大意义，语法如下：
@@ -395,10 +313,10 @@ S-up/down 调整优先级
 </div>
 </div>
 <div id="outline-container-sec-12" class="outline-2">
-<h2 id="sec-12"><span class="section-number-2">12</span> 给TODO添加标签</h2>
+<h2 id="sec-12">给TODO添加标签</h2>
 <div class="outline-text-2" id="text-12">
 </div><div id="outline-container-sec-12-1" class="outline-3">
-<h3 id="sec-12-1"><span class="section-number-3">12.1</span> tags的基本信息</h3>
+<h3 id="sec-12-1">tags的基本信息</h3>
 <div class="outline-text-3" id="text-12-1">
 <p>
 标签可以根据TODO headline的结构关系继承。
@@ -418,7 +336,7 @@ tags大概长这个样子：
 </div>
 </div>
 <div id="outline-container-sec-12-2" class="outline-3">
-<h3 id="sec-12-2"><span class="section-number-3">12.2</span> 给headline设置tag</h3>
+<h3 id="sec-12-2">给headline设置tag</h3>
 <div class="outline-text-3" id="text-12-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -459,7 +377,7 @@ tags大概长这个样子：
 </div>
 </div>
 <div id="outline-container-sec-12-3" class="outline-3">
-<h3 id="sec-12-3"><span class="section-number-3">12.3</span> 定义tags</h3>
+<h3 id="sec-12-3">定义tags</h3>
 <div class="outline-text-3" id="text-12-3">
 <p>
 默认tags列表是动态的，你写什么就有什么，也可以通过设置org-tag-alist定义一个固定的tag
@@ -472,7 +390,7 @@ list，类似TODO的定义，可以全局，可以文件
 </div>
 </div>
 <div id="outline-container-sec-12-4" class="outline-3">
-<h3 id="sec-12-4"><span class="section-number-3">12.4</span> 定义tag快捷键，很简单同TODO</h3>
+<h3 id="sec-12-4">定义tag快捷键，很简单同TODO</h3>
 <div class="outline-text-3" id="text-12-4">
 <pre class="example">
 (setq org-tag-alist '(("@work" . ?w) ("@home" . ?h) ("laptop" . ?l)))
@@ -481,7 +399,7 @@ list，类似TODO的定义，可以全局，可以文件
 </div>
 </div>
 <div id="outline-container-sec-12-5" class="outline-3">
-<h3 id="sec-12-5"><span class="section-number-3">12.5</span> 给tags分组</h3>
+<h3 id="sec-12-5">给tags分组</h3>
 <div class="outline-text-3" id="text-12-5">
 <p>
 一个headline或者TODO可以同时有几个tag，但一旦给tags分组之后，同一组的tags只能出现一个。如下方式给tags分组
@@ -497,7 +415,7 @@ list，类似TODO的定义，可以全局，可以文件
 </div>
 </div>
 <div id="outline-container-sec-12-6" class="outline-3">
-<h3 id="sec-12-6"><span class="section-number-3">12.6</span> 给tags分级</h3>
+<h3 id="sec-12-6">给tags分级</h3>
 <div class="outline-text-3" id="text-12-6">
 <p>
 分级的概念和作用是给tags提供一个隶属关系，比如C++，lisp都属于编程语言这一类。定义tags分级的方式如下：
@@ -528,7 +446,7 @@ list，类似TODO的定义，可以全局，可以文件
 </div>
 </div>
 <div id="outline-container-sec-12-7" class="outline-3">
-<h3 id="sec-12-7"><span class="section-number-3">12.7</span> 通过tags查找headline</h3>
+<h3 id="sec-12-7">通过tags查找headline</h3>
 <div class="outline-text-3" id="text-12-7">
 <p>
 类似于agenda view，tags view也是可以搜索出分散文件中的tags，这些文件就是agenda定义的文件目录
@@ -573,7 +491,7 @@ list，类似TODO的定义，可以全局，可以文件
 </div>
 </div>
 <div id="outline-container-sec-13" class="outline-2">
-<h2 id="sec-13"><span class="section-number-2">13</span> Property</h2>
+<h2 id="sec-13">Property</h2>
 <div class="outline-text-2" id="text-13">
 <p>
 属性就是一个键值对，其实就是在名为PROPERTIES的Drawer中的一个个键值对。属性的有两个主要作用：
@@ -586,7 +504,7 @@ list，类似TODO的定义，可以全局，可以文件
 </ul>
 </div>
 <div id="outline-container-sec-13-1" class="outline-3">
-<h3 id="sec-13-1"><span class="section-number-3">13.1</span> 语法</h3>
+<h3 id="sec-13-1">语法</h3>
 <div class="outline-text-3" id="text-13-1">
 <p>
 语法上的几个要点：
@@ -617,7 +535,7 @@ list，类似TODO的定义，可以全局，可以文件
       :END:
 </pre>
 <p>
-可以为一个key的value范围做限制，例如为:Xyz:做取值限定，只需要定义:Xyz<sub>ALL</sub>:
+可以为一个key的value范围做限制，例如为:Xyz:做取值限定，只需要定义:Xyz_ALL:
 可以在文件范围内内定义属性和限制取值范围，如下：
 </p>
 <pre class="example">
@@ -626,7 +544,7 @@ list，类似TODO的定义，可以全局，可以文件
 </div>
 </div>
 <div id="outline-container-sec-13-2" class="outline-3">
-<h3 id="sec-13-2"><span class="section-number-3">13.2</span> 常用命令</h3>
+<h3 id="sec-13-2">常用命令</h3>
 <div class="outline-text-3" id="text-13-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -681,7 +599,7 @@ list，类似TODO的定义，可以全局，可以文件
 </div>
 </div>
 <div id="outline-container-sec-13-3" class="outline-3">
-<h3 id="sec-13-3"><span class="section-number-3">13.3</span> Property的查找</h3>
+<h3 id="sec-13-3">Property的查找</h3>
 <div class="outline-text-3" id="text-13-3">
 <p>
 跟tags完全一样，连命令都是一样的
@@ -689,7 +607,7 @@ list，类似TODO的定义，可以全局，可以文件
 </div>
 </div>
 <div id="outline-container-sec-13-4" class="outline-3">
-<h3 id="sec-13-4"><span class="section-number-3">13.4</span> 基于outline结构的属性继承</h3>
+<h3 id="sec-13-4">基于outline结构的属性继承</h3>
 <div class="outline-text-3" id="text-13-4">
 <p>
 org为了查找性能问题，默认是关闭了继承的，而且也不常用，设置
@@ -698,14 +616,14 @@ org-use-property-inheritance变量为t即可。有一些属性是hardcode继承�
 </div>
 </div>
 <div id="outline-container-sec-13-5" class="outline-3">
-<h3 id="sec-13-5"><span class="section-number-3">13.5</span> column view</h3>
+<h3 id="sec-13-5">column view</h3>
 <div class="outline-text-3" id="text-13-5">
 <p>
 看了下例子才大概明白property的主要用途，制作项目计划很灵活。另外就是用来编辑Property非常方便，定义的快捷键就是专门用来做这个的。
 </p>
 </div>
 <div id="outline-container-sec-13-5-1" class="outline-4">
-<h4 id="sec-13-5-1"><span class="section-number-4">13.5.1</span> 定义columns</h4>
+<h4 id="sec-13-5-1">定义columns</h4>
 <div class="outline-text-4" id="text-13-5-1">
 <p>
 使用column view之前需要先定义格式。可以在in-buffer settings中定义，也可在属性中定义，如下：
@@ -729,7 +647,7 @@ column定义的语法如下：
 </div>
 </div>
 <div id="outline-container-sec-13-5-2" class="outline-4">
-<h4 id="sec-13-5-2"><span class="section-number-4">13.5.2</span> 一个定义和使用column view的例子</h4>
+<h4 id="sec-13-5-2">一个定义和使用column view的例子</h4>
 <div class="outline-text-4" id="text-13-5-2">
 <pre class="example">
 *** 例子 
@@ -764,7 +682,7 @@ column定义的语法如下：
 </div>
 </div>
 <div id="outline-container-sec-13-5-3" class="outline-4">
-<h4 id="sec-13-5-3"><span class="section-number-4">13.5.3</span> column view中的操作</h4>
+<h4 id="sec-13-5-3">column view中的操作</h4>
 <div class="outline-text-4" id="text-13-5-3">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -854,7 +772,7 @@ column定义的语法如下：
 </div>
 </div>
 <div id="outline-container-sec-13-5-4" class="outline-4">
-<h4 id="sec-13-5-4"><span class="section-number-4">13.5.4</span> Capturing column view</h4>
+<h4 id="sec-13-5-4">Capturing column view</h4>
 <div class="outline-text-4" id="text-13-5-4">
 <p>
 就是方便导出或打印column view，似乎用处不是很大
@@ -864,7 +782,7 @@ column定义的语法如下：
 </div>
 </div>
 <div id="outline-container-sec-14" class="outline-2">
-<h2 id="sec-14"><span class="section-number-2">14</span> 时间</h2>
+<h2 id="sec-14">时间</h2>
 <div class="outline-text-2" id="text-14">
 <p>
 时间对于TODO和plan都很重要。
@@ -885,7 +803,7 @@ column定义的语法如下：
 </ul>
 </div>
 <div id="outline-container-sec-14-1" class="outline-3">
-<h3 id="sec-14-1"><span class="section-number-3">14.1</span> 时间类型</h3>
+<h3 id="sec-14-1">时间类型</h3>
 <div class="outline-text-3" id="text-14-1">
 <ul class="org-ul">
 <li>普通时间戳，用来表示时间点，事件，成就 <span class="timestamp-wrapper"><span class="timestamp">&lt;2017-08-07 Mon&gt;</span></span>
@@ -908,7 +826,7 @@ calendar/diary package一起使用，形式如下：
 </div>
 </div>
 <div id="outline-container-sec-14-2" class="outline-3">
-<h3 id="sec-14-2"><span class="section-number-3">14.2</span> 相关命令和快捷键</h3>
+<h3 id="sec-14-2">相关命令和快捷键</h3>
 <div class="outline-text-3" id="text-14-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -962,7 +880,7 @@ calendar/diary package一起使用，形式如下：
 </table>
 </div>
 <div id="outline-container-sec-14-2-1" class="outline-4">
-<h4 id="sec-14-2-1"><span class="section-number-4">14.2.1</span> 创建时间时的小技巧</h4>
+<h4 id="sec-14-2-1">创建时间时的小技巧</h4>
 <div class="outline-text-4" id="text-14-2-1">
 <p>
 当弹出时间选择窗口时可以手动输入时间，支持多种格式，具体参考手册。值得一提的是给+/-号会自动计算日期，很方便，比如+2w指两个星期后的时间点
@@ -971,7 +889,7 @@ calendar/diary package一起使用，形式如下：
 </div>
 </div>
 <div id="outline-container-sec-14-3" class="outline-3">
-<h3 id="sec-14-3"><span class="section-number-3">14.3</span> Deadlines and Scheduling</h3>
+<h3 id="sec-14-3">Deadlines and Scheduling</h3>
 <div class="outline-text-3" id="text-14-3">
 <p>
 最迟时间和计划开始时间，这两个只是在时间戳前面了加个DEADLINES或
@@ -1016,24 +934,24 @@ SCHEDULING的关键字，有什么作用呢？主要还是在agenda view中，�
 </div>
 </div>
 <div id="outline-container-sec-14-4" class="outline-3">
-<h3 id="sec-14-4"><span class="section-number-3">14.4</span> <span class="todo TODO">TODO</span> 为任务计时</h3>
+<h3 id="sec-14-4"><span class="todo TODO">TODO</span> 为任务计时</h3>
 </div>
 </div>
 <div id="outline-container-sec-15" class="outline-2">
-<h2 id="sec-15"><span class="section-number-2">15</span> <span class="todo TODO">TODO</span> Capture</h2>
+<h2 id="sec-15"><span class="todo TODO">TODO</span> Capture</h2>
 <div class="outline-text-2" id="text-15">
 </div><div id="outline-container-sec-15-1" class="outline-3">
-<h3 id="sec-15-1"><span class="section-number-3">15.1</span> <span class="todo TODO">TODO</span> 如何快速做笔记这个点还是挺有用的</h3>
+<h3 id="sec-15-1"><span class="todo TODO">TODO</span> 如何快速做笔记这个点还是挺有用的</h3>
 </div>
 <div id="outline-container-sec-15-2" class="outline-3">
-<h3 id="sec-15-2"><span class="section-number-3">15.2</span> <span class="todo TODO">TODO</span> attachments这个挺有用，让我对添加图片有了一个新的认识</h3>
+<h3 id="sec-15-2"><span class="todo TODO">TODO</span> attachments这个挺有用，让我对添加图片有了一个新的认识</h3>
 </div>
 <div id="outline-container-sec-15-3" class="outline-3">
-<h3 id="sec-15-3"><span class="section-number-3">15.3</span> <span class="todo TODO">TODO</span> RSS也很有用</h3>
+<h3 id="sec-15-3"><span class="todo TODO">TODO</span> RSS也很有用</h3>
 </div>
 </div>
 <div id="outline-container-sec-16" class="outline-2">
-<h2 id="sec-16"><span class="section-number-2">16</span> Agenda Views</h2>
+<h2 id="sec-16">Agenda Views</h2>
 <div class="outline-text-2" id="text-16">
 <p>
 前面那么多的地方提到agenda view，现在终于见到了，但是你会发现其实他并没有那么神秘。agenda view的唯一的作用就是把分散在各个文件中的TODO，任务，约会等等以一种视图呈现在一个buffer中，同时提供一些便利的操作。所以，这里并不会深入讨论细节，用到的时候自然会用到，那会儿可以再看文档，现在看多了，也记不住，记住了也可能用不到。这里只关注两个重点
@@ -1046,7 +964,7 @@ SCHEDULING的关键字，有什么作用呢？主要还是在agenda view中，�
 </ul>
 </div>
 <div id="outline-container-sec-16-1" class="outline-3">
-<h3 id="sec-16-1"><span class="section-number-3">16.1</span> Agenda files</h3>
+<h3 id="sec-16-1">Agenda files</h3>
 <div class="outline-text-3" id="text-16-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1101,7 +1019,7 @@ SCHEDULING的关键字，有什么作用呢？主要还是在agenda view中，�
 </div>
 </div>
 <div id="outline-container-sec-16-2" class="outline-3">
-<h3 id="sec-16-2"><span class="section-number-3">16.2</span> 主要的几个视图</h3>
+<h3 id="sec-16-2">主要的几个视图</h3>
 <div class="outline-text-3" id="text-16-2">
 <p>
 agenda view的视图是可以自定义的，有几个内置的视图比较常用。所有视图的入口都通过C-c a然后再选择进入
@@ -1125,6 +1043,10 @@ agenda view的视图是可以自定义的，有几个内置的视图比较常用
   </div><!-- /.entry-content -->
   <footer class="post-info-footer">
         Category: <a href="http://www.iknockdoor.com/category/misc.html"><span>misc</span></a>
+    
+        Tags:
+            <a href="http://www.iknockdoor.com/tag/org-mode.html"><span>org-mode</span></a>
+    
   </footer>
 </section>
         </div>
