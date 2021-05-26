@@ -1,5 +1,1077 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>iknockdoor</title><link href="http://www.iknockdoor.com/" rel="alternate"></link><link href="http://www.iknockdoor.com/feeds/all.atom.xml" rel="self"></link><id>http://www.iknockdoor.com/</id><updated>2020-04-20T00:00:00+08:00</updated><entry><title>mac递归通配删除指定文件</title><link href="http://www.iknockdoor.com/mac%E9%80%92%E5%BD%92%E9%80%9A%E9%85%8D%E5%88%A0%E9%99%A4%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6.html" rel="alternate"></link><published>2020-04-20T00:00:00+08:00</published><updated>2020-04-20T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2020-04-20:/mac递归通配删除指定文件.html</id><content type="html">&lt;pre class="example"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>iknockdoor</title><link href="http://www.iknockdoor.com/" rel="alternate"></link><link href="http://www.iknockdoor.com/feeds/all.atom.xml" rel="self"></link><id>http://www.iknockdoor.com/</id><updated>2021-05-03T00:00:00+08:00</updated><entry><title>用Kotlin开发Android应用的单元测试</title><link href="http://www.iknockdoor.com/%E7%94%A8Kotlin%E5%BC%80%E5%8F%91Android%E5%BA%94%E7%94%A8%E7%9A%84%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.html" rel="alternate"></link><published>2021-05-03T00:00:00+08:00</published><updated>2021-05-03T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2021-05-03:/用Kotlin开发Android应用的单元测试.html</id><summary type="html">
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; Junit5&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+搞清楚的各个包的关系，以及执行顺序基本上就没问题了。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
+&lt;h3 id="sec-1-1"&gt;&lt;span class="section-number-3"&gt;1.1&lt;/span&gt; 被迫使用jvm 1.8&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-1"&gt;
+&lt;p&gt;
+参数化测试被迫使用了jvm 1.8，Stream.of方法，Arguments.of方法不用编译不过
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2" class="outline-3"&gt;
+&lt;h3 id="sec-1-2"&gt;&lt;span class="section-number-3"&gt;1.2&lt;/span&gt; 换回JUnit4&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-2"&gt;
+&lt;p&gt;
+由于以下问题 …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; Junit5&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+搞清楚的各个包的关系，以及执行顺序基本上就没问题了。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
+&lt;h3 id="sec-1-1"&gt;&lt;span class="section-number-3"&gt;1.1&lt;/span&gt; 被迫使用jvm 1.8&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-1"&gt;
+&lt;p&gt;
+参数化测试被迫使用了jvm 1.8，Stream.of方法，Arguments.of方法不用编译不过
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2" class="outline-3"&gt;
+&lt;h3 id="sec-1-2"&gt;&lt;span class="section-number-3"&gt;1.2&lt;/span&gt; 换回JUnit4&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-2"&gt;
+&lt;p&gt;
+由于以下问题，我选择了换回JUnit4
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;jvm 1.8的问题，没搞清楚，有点担心
+&lt;/li&gt;
+&lt;li&gt;无法使用Robolectric
+&lt;/li&gt;
+&lt;li&gt;Android官方资料基本上都使用JUnit4写的，有得参考
+&lt;/li&gt;
+&lt;li&gt;官方说仪器测试也是基于JUnit4的，谁知道后面有没有问题
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-3" class="outline-3"&gt;
+&lt;h3 id="sec-1-3"&gt;&lt;span class="section-number-3"&gt;1.3&lt;/span&gt; 又换回JUnit5&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-3"&gt;
+&lt;p&gt;
+换回JUnit4之后，发现执行效率比JUnit5低很多，尤其是参数测试，都无法接受
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;JUnit4效率太低
+&lt;/li&gt;
+&lt;li&gt;一个测试类中，只要有一个方法需要参数化测试，其他方法都会被参数化测试，不管用不用到参数，这效率很低，而且毫无用处
+&lt;/li&gt;
+&lt;li&gt;JUnit4无法显示DisplayName
+&lt;/li&gt;
+&lt;li&gt;LiveData的本地测试问题得以解决
+&lt;a href="https://jeroenmols.com/blog/2019/01/17/livedatajunit5/"&gt;https://jeroenmols.com/blog/2019/01/17/livedatajunit5/&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;考虑本地测试用JUnit5，仪器测试用JUnit4的方案是否可行，事实上仪器测试并不是大头，所以还是以本地测试的效率为主，还是用JUnit5好事实证明可以本地用JUnit5仪器用JUnit4
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;span class="section-number-2"&gt;2&lt;/span&gt; Mockito&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+挺好用的，系统的类也是可以mock的，但用Kotlin开发就有点尴尬，因为
+Kotlin即使是自己写的类也都是final的，无法mock，如果能直接mock应该会简单一些，可以通过直接创建自己写的Kotlin的实现的类的对象测试，然后这些对象对系统的依赖进行注入，稍稍有点麻烦。
+&lt;/p&gt;
+
+&lt;p&gt;
+  也需要jvm&lt;sub&gt;1&lt;/sub&gt;.8
+  Execution failed for task ':app:mergeExtDexDebugAndroidTest'.
+&amp;gt; Could not resolve all files for configuration ':app:debugAndroidTestRuntimeClasspath'.
+   &amp;gt; Failed to transform mockito-core-3.9.0.jar (org.mockito:mockito-core:3.9.0) to match attributes {artifactType=android-dex, dexing-enable-desugaring=false, dexing-incremental-transform=false, dexing-is-debuggable=true, dexing-min-sdk=19, org.gradle.category=library, org.gradle.libraryelements=jar, org.gradle.status=release, org.gradle.usage=java-runtime}.
+      &amp;gt; Execution failed for DexingNoClasspathTransform: &lt;i&gt;Users/chappie&lt;/i&gt;.gradle/caches/transforms-2/files-2.1/6319f7e3ae7c2113bdb38d4b79aea8fd/jetified-mockito-core-3.9.0.jar.
+         &amp;gt; Error while dexing.
+           The dependency contains Java 8 bytecode. Please enable desugaring by adding the following to build.gradle
+           android {
+               compileOptions {
+                   sourceCompatibility 1.8
+                   targetCompatibility 1.8
+               }
+           }
+           See &lt;a href="https://developer.android.com/studio/write/java8-support.html"&gt;https://developer.android.com/studio/write/java8-support.html&lt;/a&gt; for details. Alternatively, increase the minSdkVersion to 24 or above.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-1" class="outline-3"&gt;
+&lt;h3 id="sec-2-1"&gt;&lt;span class="section-number-3"&gt;2.1&lt;/span&gt; mock-inline是什么，有什么影响&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;&lt;span class="section-number-2"&gt;3&lt;/span&gt; android.jar&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;p&gt;
+自己的类实现中内部调用了android 系统API的方法，比如
+Looper.getMainLooper()，由于是内部调用，无法从外部mock然后注入，同时
+android.jar只有接口无具体实现，导致在开发环境中无法进行测试。这个问题怎么解决？
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3-1" class="outline-3"&gt;
+&lt;h3 id="sec-3-1"&gt;&lt;span class="section-number-3"&gt;3.1&lt;/span&gt; android-test Android官方codelabs给的启示&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3-1"&gt;
+&lt;p&gt;
+官方代码里面涉及到LiveData的代码居然是本地可测的，没有用Robolectric，通过排除法，找到了关键
+testImplementation
+"androidx.arch.core:core-testing:$archTestingVersion"
+@get:Rule
+ var instantExecutorRule = InstantTaskExecutorRule()
+&lt;/p&gt;
+
+&lt;p&gt;
+看InstantTaskExecutorRule的源码，关键问题应该是在主线程运行
+LiveData，这样就不会调用到系统API的方法。尝试一下。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-4" class="outline-2"&gt;
+&lt;h2 id="sec-4"&gt;&lt;span class="section-number-2"&gt;4&lt;/span&gt; 依赖注入&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-4"&gt;
+&lt;p&gt;
+单元测试无法避开的话题就是依赖注入，要想实现单元测试，就需要代码有足够的隔离，这要求类内部尽量少的去自动获取其他组合对象，因为这样的话被测试的代码就会对这些组合对象产生依赖，这带来的问题是：
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;如果是自己的代码，那还好，可以运行，如果是Android系统的代码，那就无法本地测试了，因为根本无法获取，也无法mock
+&lt;/li&gt;
+&lt;li&gt;无法改变组合对象的行为，制造虚拟的测试条件，测试都是通过假设，断言，但是现在无法做假设了
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+可以说实现单元测试的主要难点不是会不会用JUnit,Mockito而是被测试的代码结构是否是可以方便的单元测试的。
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-4-1" class="outline-3"&gt;
+&lt;h3 id="sec-4-1"&gt;&lt;span class="section-number-3"&gt;4.1&lt;/span&gt; 类组合的方式&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-4-1"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;内部主动创建
+&lt;/li&gt;
+&lt;li&gt;内部从其他提供者处抓取
+&lt;/li&gt;
+&lt;li&gt;构造函数注入
+&lt;/li&gt;
+&lt;li&gt;调用某方法时传入
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-4-2" class="outline-3"&gt;
+&lt;h3 id="sec-4-2"&gt;&lt;span class="section-number-3"&gt;4.2&lt;/span&gt; 依赖注入与工厂方法的矛盾&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-4-2"&gt;
+&lt;p&gt;
+我们通常会实现私有构造函数，然后通过内部静态方法构造实例的工厂方法来获取实例，这种情况都不知道怎么测试，工厂方法无法被mock，通过其他方式又无法构造私有构造函数类的实例。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-5" class="outline-2"&gt;
+&lt;h2 id="sec-5"&gt;&lt;span class="section-number-2"&gt;5&lt;/span&gt; 小技巧&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-5"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-5-1" class="outline-3"&gt;
+&lt;h3 id="sec-5-1"&gt;&lt;span class="section-number-3"&gt;5.1&lt;/span&gt; 快速执行当前测试用例&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-5-2" class="outline-3"&gt;
+&lt;h3 id="sec-5-2"&gt;&lt;span class="section-number-3"&gt;5.2&lt;/span&gt; 执行所有的测试用例&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-5-3" class="outline-3"&gt;
+&lt;h3 id="sec-5-3"&gt;&lt;span class="section-number-3"&gt;5.3&lt;/span&gt; 单元测试要测的不只是逻辑的正确性，而是代码在修改后，依然是预期的输入输出或行为，更像函数式编程的不可变性&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="未分类"></category></entry><entry><title>英语学习笔记之时态</title><link href="http://www.iknockdoor.com/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E6%97%B6%E6%80%81.html" rel="alternate"></link><published>2020-04-28T00:00:00+08:00</published><updated>2020-04-28T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2020-04-28:/英语学习笔记之时态.html</id><summary type="html">
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; 英语时态体系概述&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+英语的时和态是两个不同的概念，时是与时间相联系的，当我们说时的时候，我们关心的是动作发生的时间；而态，或者称为体，是与动作的内在结构相关的。当我们淡到态的时候，我们关心的是这个动作是固定不变的还是动态变化的，这个动作是完成了的还是在延续的，这个动作持续的时间是很短还是很长，等。在分析时态时应以体为核心，深入理解体的核心意义，同一体的动作有着本质上相通的特点。另外需要注意的是，体本质上包含两个部分，一部分是一般体 …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;span class="section-number-2"&gt;1&lt;/span&gt; 英语时态体系概述&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+英语的时和态是两个不同的概念，时是与时间相联系的，当我们说时的时候，我们关心的是动作发生的时间；而态，或者称为体，是与动作的内在结构相关的。当我们淡到态的时候，我们关心的是这个动作是固定不变的还是动态变化的，这个动作是完成了的还是在延续的，这个动作持续的时间是很短还是很长，等。在分析时态时应以体为核心，深入理解体的核心意义，同一体的动作有着本质上相通的特点。另外需要注意的是，体本质上包含两个部分，一部分是一般体，进行体，完成体这样的，称为语法体；别一部分是动词本身所固有的特点，动词是状态还是动作，动作是短暂动作还是延续动作等，这部分称为动词体。语法体和动词体这两方面是相互作用的，二者的共同作用不仅影响到时态的正确使用，同时也深刻影响对句子的意思的理解。每一种时态的核心意义就是它最基本、最稳定的中心意义。比如，简单体的核心意是，被概念化的整体事件，这些事件是无法继续发展的。简言之，一般时态具有完整和不变的核心意义，这种体态与进行体相对。进行体表示不完整的或未完成的，其相关的吉件或状态被看作是一个整体的某个部分，往往还有继续发展或变化的余地。
+&lt;/p&gt;
+&lt;pre class="example"&gt;
+John lives in Beijing. 这是个整体事件，是个常态的事实，从说话者的角度没有任何进一步发展和变化的可能。
+John is living in Beijing. 居住在北京是整个过程中的某个片断，现在居住在北京可能是暂时的，存在变化的可能，之前可能不在北京住，而且将来也可能再搬到其他地方去。
+&lt;/pre&gt;
+&lt;p&gt;
+时(tense)有四种：
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;现在时 present
+&lt;/li&gt;
+&lt;li&gt;过去时 past
+&lt;/li&gt;
+&lt;li&gt;将来时 future
+&lt;/li&gt;
+&lt;li&gt;过去将来时 past future
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+态(aspect)也有四种
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;简单体 (simple)
+&lt;/li&gt;
+&lt;li&gt;进行体(continuous)
+&lt;/li&gt;
+&lt;li&gt;完成体(perfect)
+&lt;/li&gt;
+&lt;li&gt;完成进行体(perfect continuous)
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+这四时四态两两组合构成了英语的所有时态，共16种时态，以work为例:
+&lt;/p&gt;
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class="left"&gt;一般&lt;/td&gt;
+&lt;td class="left"&gt;进行&lt;/td&gt;
+&lt;td class="left"&gt;完成&lt;/td&gt;
+&lt;td class="left"&gt;完成进行&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;现在&lt;/td&gt;
+&lt;td class="left"&gt;现在一般时 work/works&lt;/td&gt;
+&lt;td class="left"&gt;现在进行时 am/is/are working&lt;/td&gt;
+&lt;td class="left"&gt;现在完成时 has/have worked&lt;/td&gt;
+&lt;td class="left"&gt;现在完成进行时 has/have been working&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;过去&lt;/td&gt;
+&lt;td class="left"&gt;过去一般时 worked&lt;/td&gt;
+&lt;td class="left"&gt;过去进行时 was/were working&lt;/td&gt;
+&lt;td class="left"&gt;过去完成时 had worked&lt;/td&gt;
+&lt;td class="left"&gt;过去完成进行时 had been working&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;将来&lt;/td&gt;
+&lt;td class="left"&gt;将来一般时 will work&lt;/td&gt;
+&lt;td class="left"&gt;将来进行时 will be working&lt;/td&gt;
+&lt;td class="left"&gt;将来完成时 will have worked&lt;/td&gt;
+&lt;td class="left"&gt;将来完成进行时 will have been working&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;过去将来&lt;/td&gt;
+&lt;td class="left"&gt;过去将来一般时 would work&lt;/td&gt;
+&lt;td class="left"&gt;过去将来进行时 would be working&lt;/td&gt;
+&lt;td class="left"&gt;过去将来完成时 would have worked&lt;/td&gt;
+&lt;td class="left"&gt;过去将来完成进行时 would have been working&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;span class="section-number-2"&gt;2&lt;/span&gt; 一般现在时&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-2-1" class="outline-3"&gt;
+&lt;h3 id="sec-2-1"&gt;&lt;span class="section-number-3"&gt;2.1&lt;/span&gt; 一般现在时的本质思维特征&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-1"&gt;
+&lt;p&gt;
+表示从过去到现在直至将来的一段时间内发生的动作(action)或存在的状态
+(state)。是一个整体，不会发展变化，发生的时间不限于某个特定的时间，可能发生于任何时间，包括现在、过去和将来，这一段时间可以近乎无限长，也可以是人们生活中的一段时间。一般现在时无法向我们展示一个明确的时间段，是在泛泛的淡时间，并没有时间段的概念。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I swim 1000 meters every afternoon.
+&lt;/li&gt;
+&lt;li&gt;I have been swimming 1000 meters every afternoon./I have been
+winter swimming for about four years./I have been winer swimming
+since 1984.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-2" class="outline-3"&gt;
+&lt;h3 id="sec-2-2"&gt;&lt;span class="section-number-3"&gt;2.2&lt;/span&gt; 一般现在时的能力&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-2"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;不受时间限制的科学事实、客观真理、谚语格言，以及用于概括、结论、观点等，动作或状态发生的时间不限于某个特定的时间，它们可发生于任何时间，包括现在、过去和将来。陈述，描述等，说明文。
+&lt;/li&gt;
+&lt;li&gt;或者表示人们日常的生活习惯及重复活动
+&lt;/li&gt;
+&lt;li&gt;表示正在发生的动作
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;一般现在时用在以there或here开头的句中，表示目前的短暂动作。
+Here comes your wife.
+&lt;/li&gt;
+&lt;li&gt;表示现在瞬间的动作，说话同时即刻发生的，这只适用于表达动作的动词，表示对一些动作的解说，比如：球赛解说，剧情介绍，解释己正在做的事情，给别人一边说一边做的示范动作。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Michael passes to Clint.Clint to Jack,Jack back to Clint&amp;#x2013;and
+Clint shoots&amp;#x2013;and it's a goal!
+球赛解说，表示在说话时刻正在发生的动作。
+&lt;/li&gt;
+&lt;li&gt;The woman is a spy,now she enters the room,opens the
+drawer,takes out a pistol and slips into her pocket.
+剧情说明
+&lt;/li&gt;
+&lt;li&gt;I select an album,remove the record from its cover and put it
+on the turn table.
+这是解释自己正在做的动作。
+&lt;/li&gt;
+&lt;li&gt;Watch carefully.First I pick up the receiver,dial the number
+I want,the drop the coin into the slot as required.
+这是表示动作示范，边做边教
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;一般现在时表示将来发生的动作
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;用在条件状语从句和时间状语从句中
+Please let me know when he comes back
+&lt;/li&gt;
+&lt;li&gt;在淡到未来的计划和时间安排表的时候，表示将来的动作，此时句中的动词往往是表示短暂性的动作的动词，如go,come,leave,start和
+move等
+The train starts at 2 o'clock.
+We move next week.
+&lt;/li&gt;
+&lt;li&gt;在从句中表示将来的动作，此时主句往往用了一个将来时
+I will reward the person who finds my lost kitten.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;一般现在时表示过去发生的动作
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;表示死者的理论、著作等到现在仍有效，或表示一些名人名言
+In The Sociology of Science,now considered a classic,Robert
+Merton discusses cultural,economic, and socialforces that
+contributed to the development of modern science.
+&lt;/li&gt;
+&lt;li&gt;引用书刊、报纸、通知或新近收到的信件的内容时
+The newspaper reads,"The criminal who killed eight women has
+been executed."
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;一般现在时代指现在完成时，在口语中，能这样用的动词不多，通常有:hear,find,see,learn,tell和read等等.
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I am(= have been) informed that you have been there.
+&lt;/li&gt;
+&lt;li&gt;I hear(=have heard)that he has left Beijing.
+&lt;/li&gt;
+&lt;li&gt;I see/find(have seen/found) that you have you hair cut.You
+look terrific!
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;&lt;span class="section-number-2"&gt;3&lt;/span&gt; 一般过去时&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-3-1" class="outline-3"&gt;
+&lt;h3 id="sec-3-1"&gt;&lt;span class="section-number-3"&gt;3.1&lt;/span&gt; 过去发生的短暂动作或状态&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3-1"&gt;
+&lt;p&gt;
+有点感觉是过去发生了，后来没再发生了，或者是过去是这样，现在不这样了。通常会跟表示过去特定时间的状语连用，或根据上下文推测。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I saw him in the library yesterday morning.
+&lt;/li&gt;
+&lt;li&gt;He was late for school this moring.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3-2" class="outline-3"&gt;
+&lt;h3 id="sec-3-2"&gt;&lt;span class="section-number-3"&gt;3.2&lt;/span&gt; 过去发生的重复或延续活动，现在不了&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3-2"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I slept for eight hours last night.
+&lt;/li&gt;
+&lt;li&gt;She lived in our town for three years,but now she is living in Beijing.
+&lt;/li&gt;
+&lt;li&gt;I wrote a letter once a week to my family when I was in my first
+college year.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3-3" class="outline-3"&gt;
+&lt;h3 id="sec-3-3"&gt;&lt;span class="section-number-3"&gt;3.3&lt;/span&gt; 一般过去时和现在完成时的区别&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3-3"&gt;
+&lt;p&gt;
+一般过去时与“for+时间段”连用，表示动作在过去已经结束，并没有延续到现在；而现在完成时与“for+时间段”连用，则表明动作延续到现在，并且还有可能延续下去。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4" class="outline-2"&gt;
+&lt;h2 id="sec-4"&gt;&lt;span class="section-number-2"&gt;4&lt;/span&gt; 一般将来时——预测、计划和意愿&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-4"&gt;
+&lt;p&gt;
+将来时比较特殊，它不像个时态，更像是情态动词will和各种表示将来意义的结构的用法，所以对将来时的学习基本上就是对will和这些结构的学习。
+&lt;/p&gt;
+
+&lt;p&gt;
+注意，下面多种不同的表示将来事物的表达方式，并不是同一个意思的多种不同表达方式，而是不同意思，每种形式表达的意义有不同的区别，不能混用，要选择合适的场景用合适的方式。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4-1" class="outline-3"&gt;
+&lt;h3 id="sec-4-1"&gt;&lt;span class="section-number-3"&gt;4.1&lt;/span&gt; 将来一般时思维总结&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-4-1"&gt;
+&lt;p&gt;
+结合书上内容和自己的理解，做个总结。将来一般时确实是比较特殊的时态，因为将来的事物还没有发生，不是确定的，那在描述和表达将来的事物时会有很多主观的，客观的，条件的，意愿的，确定性大小的意味在里面，如果事情是确定的已经发生的，那描述它自然就没这么多麻烦事了。能够品出上述各种意味，能够灵活运用各种形式清楚的表达上述意味，才能够真正掌握好将来一般时。
+&lt;/p&gt;
+
+&lt;p&gt;
+从语言功能的本质出发，对将来的表达有两个方面，一是表达和描述自己对外部事物（自己，别人，事物）将来的看法，一个是表达和描述自己内部的想法，主要从这两个方面分析。
+&lt;/p&gt;
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class="left"&gt;表达对自己，别人，事物将来客观发展的状态的预测&lt;/td&gt;
+&lt;td class="left"&gt;表达我或别人的主观意愿&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;will&lt;/td&gt;
+&lt;td class="left"&gt;1. 主观推测 2. 条件触发&lt;/td&gt;
+&lt;td class="left"&gt;1. 当机立断的主观决定，意愿 2. 通常主语是人，如果是事物会有拟人的意味&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;be going to&lt;/td&gt;
+&lt;td class="left"&gt;1. 根据事实客观推测 2. 说话者无力控制的客观发展&lt;/td&gt;
+&lt;td class="left"&gt;1. 已做的计划，规划  2. 强烈的情感，决心&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;现在进行时&lt;/td&gt;
+&lt;td class="left"&gt;N/A&lt;/td&gt;
+&lt;td class="left"&gt;有实质进展的计划，规划，主观各客观相结合，有个人感情色彩&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;现在一般时&lt;/td&gt;
+&lt;td class="left"&gt;N/A&lt;/td&gt;
+&lt;td class="left"&gt;有点被动，客观发展的计划的感觉，没有太多个人感情色彩&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;be to do&lt;/td&gt;
+&lt;td class="left"&gt;N/A&lt;/td&gt;
+&lt;td class="left"&gt;命令，要求&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-4-2" class="outline-3"&gt;
+&lt;h3 id="sec-4-2"&gt;&lt;span class="section-number-3"&gt;4.2&lt;/span&gt; will表示将来——预测&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-4-2"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;will表示预测往往只是表示说话人的主观态度，而并没有多少证据。
+&lt;/li&gt;
+&lt;li&gt;用于“在某种条件下某事才会发生”的情况。所以，在带有条件或时间状语从句的主句中，我们通常用will表示预测，而不用be going to
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;If the crop fails,there will be a famine.
+&lt;/li&gt;
+&lt;li&gt;You'll feel better when you take this medicine.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4-3" class="outline-3"&gt;
+&lt;h3 id="sec-4-3"&gt;&lt;span class="section-number-3"&gt;4.3&lt;/span&gt; be going to表示将来——预测&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-4-3"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;表示预测，be going to比will有更多的证据支持，而且事件发生的时间更近。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;With all of these typos in this resume,you are not going to
+make a very good impression.
+&lt;/li&gt;
+&lt;li&gt;Look at the time.I'm going to miss my bus.
+&lt;/li&gt;
+&lt;li&gt;The traffic is terrible.We're going to be late.By the time we
+get to the airport,Bot's plane will already have arrived,and
+he'll be wondering where we are.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;be going to 还往往表示当前已有迹象表明说话者无力控制的即将发生的行为
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;She is going to dive into the water
+&lt;/li&gt;
+&lt;li&gt;Help! I'm going to fall.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;在口语中，表达和will相同意思时will语气比be going to 显得正式，主要就是gonna有用法
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4-4" class="outline-3"&gt;
+&lt;h3 id="sec-4-4"&gt;&lt;span class="section-number-3"&gt;4.4&lt;/span&gt; will和be going to 都表示预测时的辩忻&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-4-4"&gt;
+&lt;p&gt;
+整体感觉will更主观，be going to 更客观，或者说will是带主观情态的感觉的。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I'm going to be sick 以经不舒服了，有迹象要生病了
+&lt;/li&gt;
+&lt;li&gt;I will be sick.(if i eat any more of this ice cream) 如果再吃就要生病了
+&lt;/li&gt;
+&lt;li&gt;The bridge is going to collapse.褚多迹象表明这座桥就要塌了，比如开始摇晃，或是有裂纹
+&lt;/li&gt;
+&lt;li&gt;The bridge will collapse.只是预测，比如知道这座桥设计不合理，或有质量问题。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4-5" class="outline-3"&gt;
+&lt;h3 id="sec-4-5"&gt;&lt;span class="section-number-3"&gt;4.5&lt;/span&gt; be going to表示计划打算&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-4-5"&gt;
+&lt;p&gt;
+相比will当机立断的决定，be going to从时间点上比will更靠前，之前就做了的决定。
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;be going to表示计划，需要用人作主语，只有人才能有主观意识去做计划，做打算，如果是非人称主语，那be going to应该是表示推测的意义，同理，如果主语是人称主语，那be going to既可能表示计划打算，也可能表示预测的含义，此时需要通过上下文来判断。
+&lt;/li&gt;
+&lt;li&gt;be going to表示“打算、计划”或“预测”意味进一步升华后，就可以解释成个人的“决心”，具有强烈的感情色彩。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;We're going to become the world's leading forwarding
+company. 我们一定要成为世界上最大的快递公司！（如果是 我们一定会成为世界上最大的快递公司 该怎么说？）
+&lt;/li&gt;
+&lt;li&gt;You're gonna be sorry!You're gonna be so sorry! 你一定会后悔的，我决饶不了你！
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4-6" class="outline-3"&gt;
+&lt;h3 id="sec-4-6"&gt;&lt;span class="section-number-3"&gt;4.6&lt;/span&gt; will表示“意愿”，一个当机立断的决定&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-4-6"&gt;
+&lt;p&gt;
+怎么理解“当机立断”？说是意愿，更像是被动员，一种一时冲动的决定，事先没有经过考虑，更没有为这一活动做出事先的准备。很适合一动员的场景，比如“谁愿意去执行这次任务？”“我愿意”。从时间点上也是从现在开始才做的决定。
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;表示预测时，句子的主语往往是无生命的事物，当will表示意愿时，句子的主语通常是有生命的“人”。若用“物”作主语则具有拟人的意味，此时说话人往往是在抱怨，而且通常用否定形式的won't
+&lt;pre class="example"&gt;
+My car won't start.Will you give me a ride?  我的车子就是发动不了，我能搭你的车吗？
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;用于will you ?中则可以用来提出“请求”
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Will you help me to mail these letters?
+&lt;/li&gt;
+&lt;li&gt;Will you marry me?
+&lt;/li&gt;
+&lt;li&gt;Will you be my girlfriend?
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;will的否定，在句中会有歧义，一般won't do等同于refuse to do，即表示“不愿意”，而用won't be doing 来表达说话人的预测。下面这句如果没有语境会有歧义，而且语义差异也比较大。
+&lt;pre class="example"&gt;
+Paul won't come.
+&lt;/pre&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Paul won't come,because he is too busy.我想保罗恐怕来不了，因为他太忙了。
+&lt;/li&gt;
+&lt;li&gt;Paul won't come,because he doesn't want to.保罗不愿意来，因为他不想来。 
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4-7" class="outline-3"&gt;
+&lt;h3 id="sec-4-7"&gt;&lt;span class="section-number-3"&gt;4.7&lt;/span&gt; 现在进行时表示将来&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-4-7"&gt;
+&lt;p&gt;
+现在进行时表示对最近的将来做出计划或安排，表示将来确定的安排。相比
+be going to更为确定的将来的事情，比如已经通过审批的假期安排，而be
+going to更像是一种打算，比如我自己想安排假期，只是个想法，还没向公司伸请。
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;语义上必须带有表示将来的时间状语，否则会和现在进行时与一般将来动作混淆
+&lt;/li&gt;
+&lt;li&gt;必须是人称主语，只有人才能做安排计划
+&lt;/li&gt;
+&lt;li&gt;与一般现在时表示将来的区别
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;一般现在时要比现在进行时听起来更正式，个人主观色彩要淡些
+&lt;/li&gt;
+&lt;li&gt;如果是一系列预定的将来的安排，比如旅游行程安排，用进行时态显得较累赘，而用一般时态则较简洁。
+&lt;/li&gt;
+&lt;li&gt;I am leaving tonight.个人主观色彩要浓一些，“我自己决定今晚走”
+&lt;/li&gt;
+&lt;li&gt;I leave tonight.一般时态更加客观，比如可能是“公司安排了我出差，给我安排的是今晚动身。”
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4-8" class="outline-3"&gt;
+&lt;h3 id="sec-4-8"&gt;&lt;span class="section-number-3"&gt;4.8&lt;/span&gt; 其他表示将来的句型结构&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-4-8"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;be to do
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;表示已安排好要在将来发生的事，是比较正式的用法。
+&lt;/li&gt;
+&lt;li&gt;表示强烈的命令，相当于must,should，如：父母对孩子、上级对下级或法律条文中的规定等
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;be about to do
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;这一结构用来表示即将发生的动作（比如通常在5分钟之内就会发生），意思是“正要，马上就要”。
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;be on the point/verge/brink/eve of doing
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-5" class="outline-2"&gt;
+&lt;h2 id="sec-5"&gt;&lt;span class="section-number-2"&gt;5&lt;/span&gt; 进行时态&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-5"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-5-1" class="outline-3"&gt;
+&lt;h3 id="sec-5-1"&gt;&lt;span class="section-number-3"&gt;5.1&lt;/span&gt; 现在进行时&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-5-1"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;用法一：说话时刻在进行的动作
+&lt;/li&gt;
+&lt;li&gt;用法二：在目前一段时期内持续的一种暂时的情况，持续发生，时有时无，并不是刚刚好在发生，相对于一般时有会发生变化的意味，只是暂时性的。
+&lt;/li&gt;
+&lt;li&gt;用法三：用表示“改变”的动词，强调“逐渐变化”的过程，中文的越来越
+&lt;/li&gt;
+&lt;li&gt;用法四：用于强烈的感情色彩的表达
+&lt;/li&gt;
+&lt;li&gt;用法五：表示将来确定的安排，参考将来一般时的笔记
+&lt;/li&gt;
+&lt;li&gt;用法六：与always等连用，表示多次重复，且含有感情色彩。常与
+always,forever,continually,constantly等连用，既可以表示积极的，让人喜欢的情感，也可以表示让说话者厌烦、感觉不合情理或使人不愉快的事。
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Scott is very generous.He's always giving his friends gifts
+and inviting them out for meals.
+&lt;/li&gt;
+&lt;li&gt;He's continually asking me for money.
+&lt;/li&gt;
+&lt;li&gt;My wife is forever looking for her keys.
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-5-2" class="outline-3"&gt;
+&lt;h3 id="sec-5-2"&gt;&lt;span class="section-number-3"&gt;5.2&lt;/span&gt; 过去进行时&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-5-2"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;常见用法：设置时间背景
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;常见用法：用来设置故事背景。进行的感觉有点强调事物发生的特定时间的感觉，重点在那个特定的时间和场景上，因此用过去进行时设置故事背景会比较生动，给人一种身临其境的感觉。
+&lt;/li&gt;
+&lt;li&gt;长动作用过去进行时做一般过去时的短动作的背景。同现在一般时在从句中表示将来的用法有点像。
+&lt;pre class="example"&gt;
+I was walking along the street late last night when suddenly I heard footsteps behind me.Somebody was following me.I was frightened and I started to run.
+&lt;/pre&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;注意动作长短的相对性
+&lt;/li&gt;
+&lt;li&gt;I was telephoning Harry when she arrived. 她到的时候我正在给哈里打电话。
+&lt;/li&gt;
+&lt;li&gt;I telephoned Harry when she arrived. 她到了这后我才给哈里打的电话。
+&lt;/li&gt;
+&lt;li&gt;注意when和while的区别，when可以接长动作和短动作，while只能接长动作。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I was walking past the car when it exploaded.
+&lt;/li&gt;
+&lt;li&gt;The car exploded when I was walking past it.
+&lt;/li&gt;
+&lt;li&gt;The car exploded while I was walking past it.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;少见用法：两个过去同时在持续的动作
+&lt;pre class="example"&gt;
+While I was studying in my dorm,my roommates were talking loudly with their friends.
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;小总结
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;句中有一个长动作一个短动作，长动作用过去进行时，短动作用一般过去时
+&lt;/li&gt;
+&lt;li&gt;句中两个动作都是长动作，都用过去进行时
+&lt;/li&gt;
+&lt;li&gt;句中两个动作都是短动作，都用一般过去时
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;典型用法：描述一个过去的特定时刻正在发生的事情，这也是各种进行时的典型用法
+&lt;/li&gt;
+&lt;li&gt;口语用法：表示委婉的请求或提建议。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Excuse me,Prof. Davidson.But I was hoping to talk to you about
+my class project for economics.
+&lt;/li&gt;
+&lt;li&gt;I was wondering if you'd like to lend me your car.
+&lt;/li&gt;
+&lt;li&gt;I was hoping that you'd like to lend me your car.
+&lt;/li&gt;
+&lt;li&gt;I hope to borrow your car.
+&lt;/li&gt;
+&lt;li&gt;I wonder if you can lend me your car.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+为什么过去进行时会有委婉的感觉？按自己的理解，进行时强调的是客观时间，说话人以陈述强调当时自己的一个心态，显得客观，并非强烈的主观要求，同时又通过这种方式表达出了自己的诉求，就显得很委婉。后面也有类似的用法，感觉是相似的心理过程。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-5-3" class="outline-3"&gt;
+&lt;h3 id="sec-5-3"&gt;&lt;span class="section-number-3"&gt;5.3&lt;/span&gt; 将来进行时&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-5-3"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;典型用法：将来某一特定时刻正在持续的事
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;A:When do you leave for Hainan? B:Tomorrow.Just think,two days
+from now I will be lying on the beach in the sun.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;口语用法：将来计划好的事，和现在进行时表示将来用法相似，有两点不同：
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;现在进行时只表示最近的将来，而将来进行时既可以表示最近的将来也可表示较远的将来，比如：
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I am meeting him tomorrow.
+&lt;/li&gt;
+&lt;li&gt;I will be meeting him tomorrow/next year.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;现在进行时表示最近将来的动作时必须有确定的表示将来的时间状语，如果没有语义上会和正在发生的行为混淆而将来进行时则没有这种限制，请比较：
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;He's woking in this room next Monday.
+&lt;/li&gt;
+&lt;li&gt;He'll be woking in this room.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;少见用法：表示背景动作——提供另外一个短动作发生的事件背景，和过支进行时的用法类似。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;They probably will be watching TV when we get there.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;难点用法1：用在疑问句中，表示客气地询问。这种用法感觉和过去进行时表达委婉的请求或建议的味道相似，比如服务员问客户支付方式时的感觉，有种服务员在问将来那个特定时刻事情客观发生的情况，一来通过让人感觉付款是一个客观将要发生的事情，因为客户将要主动付款，所以对服务员来说是客观的，显得很礼貌，既提醒了客户又让客户很有面子，同时询问了付款方式，很细腻的细节表达，很实用。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;How will you pay for this?
+&lt;/li&gt;
+&lt;li&gt;How will you be paying for this?
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+注意这种客观的感觉，之前将来一般时的时候也有主观客观的区别，很类似。看下面这个例子，通过用这种方式客观的询问，一来问了想问的问题，二来又表达出了不是干涉导演安排，只是客气的咨询的感觉，这种客观表达出了自己的角色是别人安排的感觉。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Who will I be acting with?
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+同理，由于这种客观的感觉，有主观意味的表达就不能用这种方式了，比如请求别人借给你钱的时候：
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Will you be lending me ten dollars?就很不合适，好像是别人主动要借给你，或不得不借给你的感觉。所以要用Will you lend me ten dollars?
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;难点用法2：用来表示客观的将来，以避免与表示“意愿”的will do混淆。书中这里和难点1分开了，按难点1自己的分析，两点基本上是一致的。但这里给了一个解释，will be doing的必要性，主要是可以同will do的含义区分开。从例句上看，有点描述别人想法时表示对别人想法的不擅自干涉，不揣测别人意图的客观，只是自己的猜测，比如：
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;A: It's already 10 o'clock.I guess Bob and Amy won't be coming
+to the party.我想他们来不了了
+&lt;/li&gt;
+&lt;li&gt;He won't resign. 他拒绝辞职
+&lt;/li&gt;
+&lt;li&gt;He won't be resigning.我想他不会辞职吧。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+也需要注意同将来一般时中will和be going to用法区别。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;He will resign.他想辞职
+&lt;/li&gt;
+&lt;li&gt;He is going to resign.有一种计划的感觉。
+&lt;/li&gt;
+&lt;li&gt;He is resigning.以经有实质的动作了，比如提交了辞职报告。
+&lt;/li&gt;
+&lt;li&gt;He will be resigning.我想他会辞职。这是我自己造的句子，不知道是否有这种用法。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-5-4" class="outline-3"&gt;
+&lt;h3 id="sec-5-4"&gt;&lt;span class="section-number-3"&gt;5.4&lt;/span&gt; 难点：深入分析进行时的思维特征&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-5-4"&gt;
+&lt;p&gt;
+语法体和动词体要注意
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-5-4-1" class="outline-4"&gt;
+&lt;h4 id="sec-5-4-1"&gt;&lt;span class="section-number-4"&gt;5.4.1&lt;/span&gt; 进行时态的核心含义&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-5-4-1"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;事件具有持续性：进行时态首先表示的是一个事件或活动在某个特定时间正在持续
+&lt;/li&gt;
+&lt;li&gt;事件具有短暂性：即表明事件的持续时间是有限的，如果是无限的，即表达一个长期的、恒久的含义，那么就该有一般现在时态了。
+&lt;/li&gt;
+&lt;li&gt;事件未完成：进行体既然强调动作的持续性，那么就表明这个动作还没有结束。
+&lt;/li&gt;
+&lt;li&gt;进行体动作与一般动作对比
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;活动与状态的对比
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I am thinking about the answer.
+&lt;/li&gt;
+&lt;li&gt;I think it is 144.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;发生在说话那一刻的动作与一个习惯的对比
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Why are you wearing glasses? 你怎么戴着眼镜啊？
+&lt;/li&gt;
+&lt;li&gt;Why do you wear glasses? 你为什么习惯戴眼镜？
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;具体事件与概括描述的对比
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Weeds are growing like wildfire(in my garden).
+&lt;/li&gt;
+&lt;li&gt;Weeds grows like wildfire.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;暂时的事件与长期的状态对比
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Joan is singing well.
+&lt;/li&gt;
+&lt;li&gt;Joan sings well.
+&lt;/li&gt;
+&lt;li&gt;Linda is living with her parents(until she gets a better
+job).
+&lt;/li&gt;
+&lt;li&gt;Linda lives with her parents(because it costs her too
+much to live alone).
+&lt;/li&gt;
+&lt;li&gt;Mr. Smith is standing by the Nile.
+&lt;/li&gt;
+&lt;li&gt;The Sphinx stands by the Nile.
+&lt;/li&gt;
+&lt;li&gt;They were living in Beijing during the seventies.
+&lt;/li&gt;
+&lt;li&gt;They lived in Beijing all their lives.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;未完成与完成对比
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;He was drowing in the lake,so the lifeguard raced into
+the water.
+&lt;/li&gt;
+&lt;li&gt;He drowned in the lake.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;事件可变化与不变化的对比
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;He was calling Mary when I came in.
+&lt;/li&gt;
+&lt;li&gt;He called Mary when I came in.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;不适于用进行体的情形
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;不用进行时谈不能在同一时间内同时做的不同的事情
+&lt;/li&gt;
+&lt;li&gt;不用进行时谈活动的次数
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-5-4-2" class="outline-4"&gt;
+&lt;h4 id="sec-5-4-2"&gt;&lt;span class="section-number-4"&gt;5.4.2&lt;/span&gt; 进行时态与动词体&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-5-4-2"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;延续动词与进行时态，和进行时态的核心意义吻合，最自然的用法，不多说了。
+&lt;/li&gt;
+&lt;li&gt;短暂动词与进行时态。短暂动词与进行体连用表示“反复”的意义，一系列重复的动作，短暂动词通过其“重复”的意义来与进行体的核心意义“延续”基本达成一致，即一系列类似持续动作的重复。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;He is nodding his head in agreement.
+&lt;/li&gt;
+&lt;li&gt;Someone is coughing.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+用于进行体的短暂动词也可以表示一个事件的开始，或者其他特殊的含义。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Joe is realizing his mistakes.乔开始意识到自己的错误。
+&lt;/li&gt;
+&lt;li&gt;I am starting the car.给人感觉车很难发动。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;静态动词与进行时态。这里一定要注意，并不是动词本身是静态的，一个单词往往会有多种含义，这里指这个单词的静态意义，不同场景下单词的意义的差异很细微，对意义的理解影响又可以很大，这对单词的学习也很有帮助。
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;施动与受动，系动词和表示结果的动词不能用于进行时态，表示动作过程的动词可以用于进行时态。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;He is smelling the chicken.
+&lt;/li&gt;
+&lt;li&gt;And it smells nice.
+&lt;/li&gt;
+&lt;li&gt;I smell something burning in the kitchen.这里smell不是系动词，但主语语不是施动者，而是被动地接受了一个结果，是一个状态，所以不能用于进行时态。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;特殊含义总结
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;加强动词所表达的感情
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I'm loving it.我就喜欢。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;通过强调随时间的流逝而发生的程度上的变化，来表明状态的变化。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Yes, I understand you.这是一状态，不能有进行时
+&lt;/li&gt;
+&lt;li&gt;I'm understanding less and less about life,the older I
+get.我年龄越大，对生活就越发不能理解了。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;强调有意识的参与
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;What we are seeing is a red dwarf star.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;表明生动性
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;One night in the middle of the night,I'm hearing dripping.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;使批评变得缓和
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I like the first piano notes,but I'm not liking where
+the strings come in.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;与一般性描述不同，进行时态表示当前的行为
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;He's being rude.
+&lt;/li&gt;
+&lt;li&gt;He's rude.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;延续状态与时行时态。延续状态一般都是由be动词接一个形容词或名词构成的。形容词也可以分为静态形容词和动态形容词。静态形容词不能用于进行时态，动态形容词可以用于进行时态，来描述主语的一个暂时的性质状态或特征，而非其本身所固有的或持久的特征。此时主语是施动者，所以有时表示主语“有意如此”的含义。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;He's being rude.他现在的样子显得很粗鲁。（怎么区分他是不是在装粗鲁？好像并没有什么区别）
+&lt;/li&gt;
+&lt;li&gt;He's rude.他这人一向很粗鲁。
+&lt;/li&gt;
+&lt;li&gt;She was just being polite.假装有礼貌（只是为了给你面子等等）
+&lt;/li&gt;
+&lt;li&gt;She was being stupid.这里装傻和犯傻不知道如何区分，书中也没做区分，可能需要根据上下文或具体的单词来区分。
+&lt;/li&gt;
+&lt;li&gt;She was being stupid.Actually she had already known the whole
+story.这里显然是装傻的意思
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-6" class="outline-2"&gt;
+&lt;h2 id="sec-6"&gt;&lt;span class="section-number-2"&gt;6&lt;/span&gt; 现在完成进行时&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-6"&gt;
+&lt;p&gt;
+到目前为止，有一个明确的时间段。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="未分类"></category></entry><entry><title>mac递归通配删除指定文件</title><link href="http://www.iknockdoor.com/mac%E9%80%92%E5%BD%92%E9%80%9A%E9%85%8D%E5%88%A0%E9%99%A4%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6.html" rel="alternate"></link><published>2020-04-20T00:00:00+08:00</published><updated>2020-04-20T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2020-04-20:/mac递归通配删除指定文件.html</id><content type="html">&lt;pre class="example"&gt;
 find . -name ._*|xargs rm -rf
 find . -name "*-e" -exec rm '{}' +
 &lt;/pre&gt;
@@ -31,6 +1103,10 @@ diskutil cs list
 &lt;p&gt;
 Look for "Conversion Progress" and check if "Conversion Direction:" is
 set to "backward".如果Status是Pause，重启一下电脑即可。另外，取消加密也是需要耗时的，这取决于已经加密了多少内容。
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="https://superuser.com/questions/461757/is-there-a-way-to-stop-mac-osx-disk-encryption-in-progress/667734#667734"&gt;参考链接&lt;/a&gt;
 &lt;/p&gt;
 </content><category term="未分类"></category></entry><entry><title>swich破解</title><link href="http://www.iknockdoor.com/swich%E7%A0%B4%E8%A7%A3.html" rel="alternate"></link><published>2020-02-04T00:00:00+08:00</published><updated>2020-02-04T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2020-02-04:/swich破解.html</id><summary type="html">
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
@@ -1432,6 +2508,20 @@ kotlin中，包括变量声明，函数签名的声明等，只要能够做类�
 public static final String XXX = "" (const val XXX = "")
 &lt;/pre&gt;
 &lt;/li&gt;
+&lt;li&gt;代码块和函数题中声明的变量默认值？
+&lt;/li&gt;
+&lt;li&gt;属性的初始化问题
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;val的属性必须声明时初始化
+&lt;/li&gt;
+&lt;li&gt;var的属性可以lateinit
+&lt;/li&gt;
+&lt;li&gt;by lazy
+&lt;/li&gt;
+&lt;li&gt;属性，init block初始化顺序，在init block初始化的属性和在声明时初始化效果是一样的，不需要加lateinit
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1471,6 +2561,19 @@ Kotlin中除了循环（for,while,do/while）以外大多数控制结构都是�
 &lt;/div&gt;
 &lt;div id="outline-container-sec-5-4" class="outline-3"&gt;
 &lt;h3 id="sec-5-4"&gt;&lt;span class="section-number-3"&gt;5.4&lt;/span&gt; 可变参数与展开运算符&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-5-5" class="outline-3"&gt;
+&lt;h3 id="sec-5-5"&gt;&lt;span class="section-number-3"&gt;5.5&lt;/span&gt; 异常处理&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-5-5"&gt;
+&lt;p&gt;
+Kotlin中的异常在实际使用过程中很是别扭，尤其是在io类的时候，Kotlin
+的库做了各种封装，而且文档上也不说明什么时候有异常，什么时候没异常，会有什么异常，导致想要处理都不知道需不需要处理异常，处理什么异常。
+&lt;/p&gt;
+
+&lt;p&gt;
+而且kotlin的io封装带来的另一个问题是，你不知道是否需要关闭流对象了。有的自动关闭，有的时候又不自动关闭。
+&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id="outline-container-sec-6" class="outline-2"&gt;
@@ -1695,6 +2798,10 @@ fun bar(){
 &lt;/li&gt;
 &lt;li&gt;对象表达式
 &lt;/li&gt;
+&lt;li&gt;匿名内部类
+&lt;/li&gt;
+&lt;li&gt;单例
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -1702,6 +2809,9 @@ fun bar(){
 &lt;div id="outline-container-sec-9-1" class="outline-3"&gt;
 &lt;h3 id="sec-9-1"&gt;&lt;span class="section-number-3"&gt;9.1&lt;/span&gt; 类的声明&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-9-1"&gt;
+&lt;p&gt;
+主构造方法和从构造方法可以同时存在吗？可以，但是从构造方法必须调用主构造方法。从构造方法如何初始化属性？
+&lt;/p&gt;
 &lt;div class="org-src-container"&gt;
 
 &lt;pre class="src src-kotlin"&gt;   class User //:最简单的，构造方法不带参数使用默认构造方法
@@ -1787,6 +2897,87 @@ fun bar(){
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
+&lt;div id="outline-container-sec-11-1" class="outline-3"&gt;
+&lt;h3 id="sec-11-1"&gt;&lt;span class="section-number-3"&gt;11.1&lt;/span&gt; 实际开发中遇到的蛋疼的问题&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-11-1"&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-kotlin"&gt;class Some(){
+var s:XXX?=null
+fun f(){
+if(s != null){s...}//:编译不过，提示s是var，可能改变，无法进行智能转换
+s?.let{it...}//:编译可以。。。这是为什么？
+}
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;
+可以通过安全类型转换之后赋值给一个val的变量，然后这个变量就可以正常使用了，let函数的语法应该也是内部it是个val的
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-11-1-1" class="outline-4"&gt;
+&lt;h4 id="sec-11-1-1"&gt;&lt;span class="section-number-4"&gt;11.1.1&lt;/span&gt; 异常处理&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-11-1-1"&gt;
+&lt;p&gt;
+根本不知道会不会发生异常，而且标准库文档也没有说明，比如IO库，那都不知道有没有异常，怎么用？？？全靠测试？
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-11-1-2" class="outline-4"&gt;
+&lt;h4 id="sec-11-1-2"&gt;&lt;span class="section-number-4"&gt;11.1.2&lt;/span&gt; 构造函数的getter和setter&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-11-1-2"&gt;
+&lt;p&gt;
+如果你的一个属性外部能读，但不能写，这个时候你就没办法使用构造函数的语法，你就得老老实实的写private的setter，代码量一点也不必java少，而且还很难看
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-11-1-3" class="outline-4"&gt;
+&lt;h4 id="sec-11-1-3"&gt;&lt;span class="section-number-4"&gt;11.1.3&lt;/span&gt; 增加包大小&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-11-1-4" class="outline-4"&gt;
+&lt;h4 id="sec-11-1-4"&gt;&lt;span class="section-number-4"&gt;11.1.4&lt;/span&gt; mockito,junit4，还会遇到其他库对kotlin不支持的&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-11-1-5" class="outline-4"&gt;
+&lt;h4 id="sec-11-1-5"&gt;&lt;span class="section-number-4"&gt;11.1.5&lt;/span&gt; 默认final，mockito-android都不支持&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-11-1-6" class="outline-4"&gt;
+&lt;h4 id="sec-11-1-6"&gt;&lt;span class="section-number-4"&gt;11.1.6&lt;/span&gt; 事实证明，同样功能的代码java写出来比kotlin整洁，并不是因为看习惯了&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-11-1-7" class="outline-4"&gt;
+&lt;h4 id="sec-11-1-7"&gt;&lt;span class="section-number-4"&gt;11.1.7&lt;/span&gt; java中几乎看不到对属性的引用，都是调用方法，也可以称为发消息&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-11-1-7"&gt;
+&lt;p&gt;
+kotlin就乱了，有些地方是调用方法，有些地方是引用属性，很乱，毫无原则，面向对象本就应该只调用方法的，kotlin可能想面向函数编程，但又无法完全面向函数编程。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-11-1-8" class="outline-4"&gt;
+&lt;h4 id="sec-11-1-8"&gt;&lt;span class="section-number-4"&gt;11.1.8&lt;/span&gt; 传说中的与java的互操作性&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-11-1-8"&gt;
+&lt;p&gt;
+你试着在kotlin的类或者接口中声明一个能抛异常的方法，你无法声明，那么当你用java实现kotlin中定义的接口时问题就来了，java这个实现方法中不处理异常，这很正常，异常一般要在最上层处理，所以要抛出，但是
+kotlin声明的接口却无法抛出，你无法改变方法签名，最后你只能在内部处理异常，但可能又没有能力处理，比如需要界面显示，这个时候异常就断了，埋下了坑。
+&lt;/p&gt;
+
+&lt;p&gt;
+你在kotlin中声明一个方法名为new的方法，你在java中根本无法调用，这是个关键字。
+&lt;/p&gt;
+
+&lt;p&gt;
+还有其他情况，比如静态函数引用，lambda表达式，很奇怪，Android都不支持java8的一些特性，kotlin居然支持了，其实只是语法糖，kotlin内部转化为常规的java写法，而且还不是java8的，这样效率可想而知。另外这些东西直接导致java无法调用kotlin，只能kotlin调用Android，kotlin的互操作性是单向的。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-11-1-9" class="outline-4"&gt;
+&lt;h4 id="sec-11-1-9"&gt;&lt;span class="section-number-4"&gt;11.1.9&lt;/span&gt; 其他语言也有没有异常的，为什么kotlin就不行&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-11-1-9"&gt;
+&lt;p&gt;
+没有异常得又返回值啊，像C总会给一个错误码，至少还有处理的机会，
+kotlin就有意思了，因为兼容java的异常，能够抛出异常，所以遇到错误时没有返回码，但是却不知道会抛出什么异常，文档上也没有，你只能等着崩溃了
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div id="outline-container-sec-12" class="outline-2"&gt;
 &lt;h2 id="sec-12"&gt;&lt;span class="section-number-2"&gt;12&lt;/span&gt; &lt;span class="todo TODO"&gt;TODO&lt;/span&gt; 依赖注入的问题&lt;/h2&gt;
@@ -1830,6 +3021,31 @@ fun bar(){
 &lt;p&gt;
 kotlin中是否有比较好的处理方法呢？
 &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-14" class="outline-2"&gt;
+&lt;h2 id="sec-14"&gt;&lt;span class="section-number-2"&gt;14&lt;/span&gt; 约定与属性委托&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-14"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-14-1" class="outline-3"&gt;
+&lt;h3 id="sec-14-1"&gt;&lt;span class="section-number-3"&gt;14.1&lt;/span&gt; 属性委托&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-14-1"&gt;
+&lt;p&gt;
+属性委托依赖于约定，根据约定，一个类具有getValue和setValue方法，可以是成员函数也可以是扩展函数，那么他可以做为属性的委托使用，通过by
+关键字（注意val的属性的委托不需要setValue方法）。
+&lt;/p&gt;
+
+&lt;p&gt;
+如果只是有个方法约定，那么属性委托就没什么意思了，只是一个简单的语法糖，让kotlin中的属性委托更有用的关键是委托过程中提供了拥有这个属性的对象和一个称为KProperty类型的参数，这个参数可以访问属性名，这样就可以把多个属性委托给同一个委托对象，委托对象可以根据KProperty来做不同的操作，这样确实可以抽象出很多模版代码。
+&lt;/p&gt;
+
+&lt;p&gt;
+系统支持，kotlin标准库中Map和MutableMap接口都定义了符合委托约定的函数，因此可以直接用。很多框架也支持，这样就更方便一些。
+&lt;/p&gt;
+
+&lt;p&gt;
+实际使用中也还是有不少问题，能够直接将属性的名字做为key的能力相当于可以读取和使用属性程序代码引用的字面值，这可不是程序中的字符串，或者说程序有数据段和代码段的区分，这就相当于把代码段的内容当数据段使用，带来的问题也很明确，你只能用通过属性访问的方式读取和设置数据，其他对map中key的操作，比如比较，那就会出问题了，尤其是存在代码混淆的时候，不过这个倒也是可以解决，通过位置对照表转换成自己想要的字符串。
+&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </content><category term="开发"></category><category term="kotlin"></category></entry><entry><title>Android的状态栏</title><link href="http://www.iknockdoor.com/Android%E7%9A%84%E7%8A%B6%E6%80%81%E6%A0%8F.html" rel="alternate"></link><published>2019-07-29T00:00:00+08:00</published><updated>2019-07-29T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2019-07-29:/Android的状态栏.html</id><summary type="html">从需求和原理的角度来解释Android的statusbar到底应该如何设置，解决沉浸式状态栏，透明状态的各种问题。</summary><content type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
@@ -2026,7 +3242,34 @@ SYSTEM&lt;sub&gt;UI&lt;/sub&gt;&lt;sub&gt;FLAG&lt;/sub&gt;&lt;sub&gt;LIGHT&lt;/s
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;特殊疑问句特殊疑问句是在一般疑问句的基础上变化而来的，其句式为“特殊疑问词 + 一般疑问句”
+&lt;li&gt;特殊疑问句特殊疑问句是在一般疑问句的基础上变化而来的，其句式为“特殊疑问词 + 一般疑问句”。这里需要注意这个变化指的是什么，一般疑问句，然后提问哪部分就将这部分替换为对应的特殊疑问词放在句首，比如：
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;He can sing in English.
+Can him sing in English?
+Who can sing in English?
+&lt;/li&gt;
+&lt;li&gt;I saw him at the party last night.
+Did you see him at the party last night?
+Who did you see at the party last night?
+&lt;/li&gt;
+&lt;li&gt;I like English.
+Do you like English?
+What do you like?
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;how的用法详解
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;how 单独使用，此时how是对动作的方式进行提问
+&lt;/li&gt;
+&lt;li&gt;how 与形容词或副词连用，表示对程度提问
+How big is your new house?
+How far is it from your home to school?
+How quickly can you get here?
+&lt;/li&gt;
+&lt;li&gt;how often/how many times 对动作发生频率提问
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -2337,8 +3580,9 @@ chmod +x /usr/local/bin/emacs
 &lt;li&gt;&lt;a href="#sec-1-3-5"&gt;1.3.5. 名词做定语&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#sec-1-3-6"&gt;1.3.6. 不可数名词的度量&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#sec-1-3-7"&gt;1.3.7. 名词单复数的变形&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-1-3-8"&gt;1.3.8. 复合名词&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-1-3-9"&gt;1.3.9. 名词的所有格&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-3-8"&gt;1.3.8. 主谓一致，单复数对谓语的影响&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-3-9"&gt;1.3.9. 复合名词&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-3-10"&gt;1.3.10. 名词的所有格&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="#sec-1-4"&gt;1.4. 第二章 限定词（一）冠词&lt;/a&gt;
@@ -2348,11 +3592,100 @@ chmod +x /usr/local/bin/emacs
 &lt;li&gt;&lt;a href="#sec-1-4-3"&gt;1.4.3. the修饰复数时一定是表示特指&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#sec-1-4-4"&gt;1.4.4. 是否所有的普通名词前必须有限定词或者说是冠词？&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#sec-1-4-5"&gt;1.4.5. 专有名词中的冠词&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-4-6"&gt;1.4.6. 整理一个表格，展现特指，泛指，定指的全貌&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-4-7"&gt;1.4.7. 不定冠词a/an的用法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-4-8"&gt;1.4.8. 不定冠词a/an与数词one&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-4-9"&gt;1.4.9. 不定冠词a/an与this&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-5"&gt;1.5. 第四章 形容词&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#sec-1-5-1"&gt;1.5.1. 多个形容词修饰名词时候的顺序&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-5-2"&gt;1.5.2. 形容词短语做后置定语&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-5-3"&gt;1.5.3. 形容词的比较级和最高级的构成形式&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-6"&gt;1.6. 第五章 动词分类&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#sec-1-6-1"&gt;1.6.1. 否定句和一般疑问句&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-6-2"&gt;1.6.2. 特殊疑问句&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-6-3"&gt;1.6.3. 特殊疑问句对句子成分的修饰部分进行提问&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-7"&gt;1.7. 第六章 动词分类（二）五种基本句型&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#sec-1-7-1"&gt;1.7.1. 主系表和主谓&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-7-2"&gt;1.7.2. 主+谓+间接宾语+直接宾语&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-7-3"&gt;1.7.3. 区分双宾语句型和主谓宾宾补句型&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-8"&gt;1.8. 第七章 英语时态——一般时态&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#sec-1-8-1"&gt;1.8.1. 一般现在时&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-8-2"&gt;1.8.2. 一般过去式&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-8-3"&gt;1.8.3. 一般将来时&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-8-4"&gt;1.8.4. 现在进行时&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-8-5"&gt;1.8.5. 过去进行时&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-1-8-6"&gt;1.8.6. 一般现在时和一般过去时的否定&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="#sec-2"&gt;2. 思考和总结&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2"&gt;2. 中级教程&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#sec-2-1"&gt;2.1. 第一章简单句与复合句&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#sec-2-1-1"&gt;2.1.1. 句型一：主系表&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-1-2"&gt;2.1.2. 同源宾语&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-1-3"&gt;2.1.3. 句型二：主谓&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-1-4"&gt;2.1.4. 句型三：主谓宾&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-1-5"&gt;2.1.5. 基本从句&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-2"&gt;2.2. 名词从句&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#sec-2-2-1"&gt;2.2.1. 陈述句做句子成分&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-2-2"&gt;2.2.2. 一般疑问句做句子成分&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-2-3"&gt;2.2.3. 特殊疑问句做句子成分&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-3"&gt;2.3. 第三章 定语从句&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#sec-2-3-1"&gt;2.3.1. 关系词做从句的主语&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-3-2"&gt;2.3.2. 关系词做从句中动词或介词的宾语&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-3-3"&gt;2.3.3. 关系词&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-3-4"&gt;2.3.4. 限定性与非限定性定语从句&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-3-5"&gt;2.3.5. 整个定语从句的理解的关键点&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-4"&gt;2.4. 第四章 状语从句&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#sec-2-4-1"&gt;2.4.1. until的用法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-4-2"&gt;2.4.2. 表示“一……就”的结构，关键是时间连词都比较特别&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-4-3"&gt;2.4.3. 表示因果关系的连词和介词&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-4-4"&gt;2.4.4. 状语从句的省略形式&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-4-5"&gt;2.4.5. 结果状语从句&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-4-6"&gt;2.4.6. as 引导的倒桩句表示让步&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-4-7"&gt;2.4.7. 比较状语从句&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-4-8"&gt;2.4.8. 方式状语从句&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-5"&gt;2.5. 完成时态&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#sec-2-5-1"&gt;2.5.1. 回顾思维&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-5-2"&gt;2.5.2. 延续事件&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-3"&gt;3. 思考和总结&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#sec-3-1"&gt;3.1. 目前总结的的英语学习的几个关键点&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-3-2"&gt;3.2. 方法，哲学&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-3-3"&gt;3.3. 时态总结&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-3-4"&gt;3.4. 时态另外一个总结思路&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2500,7 +3833,7 @@ There are some red roses on that small table.
 &lt;h3 id="sec-1-3"&gt;&lt;span class="section-number-3"&gt;1.3&lt;/span&gt; 第一章 名词&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-1-3"&gt;
 &lt;p&gt;
-什么是名词这个无需多言了。
+ 表示人对事物的认知，概念。婴幼儿学说话都是从名词开始的，无论是哪种语言，所有人对世界都会有认知，世间万物在人的认知中都会有个概念，这个概念就是名词，可以是实体的概念，也可以是抽象的概念。
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;div id="outline-container-sec-1-3-1" class="outline-4"&gt;
@@ -2549,6 +3882,10 @@ the seventh of the seventh lunar month.七夕
 &lt;li&gt;习惯用法，对于固定表达某意义的习惯性用法要保持
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;
+根据前面所说，名词是人类对事物的认知的概念，这个概念其实并不需要可数与不可数的概念，也就是说这个概念没有单复数之分（先有单复数再有可数与不可数，可数与不可数是因为要数，要数是因为有一个，两个，多个，这样的单复数之分），语言是人类向外表达自己思想的一种途径，当我们向外表达的时候需要有单复数了，我们需要表达我们思想中的事物是一个，两个还是多个，单复数就出现在这个表达的过程中。
+**要注意这并不意味着可以跟着感觉走，一个单词可数和不可数的时候表达的概念是不同的，这些不同的概念的时候是可数还是不可数，常见用法都在字典上**
+&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id="outline-container-sec-1-3-4" class="outline-4"&gt;
@@ -2605,20 +3942,56 @@ one and half days
 一天半，day要用复数
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-1-3-7-1" name="sec-1-3-7-1"&gt;&lt;/a&gt;只用做单数的名词——不可数名，专有名词&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-7-1"&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-3-8" class="outline-4"&gt;
+&lt;h4 id="sec-1-3-8"&gt;&lt;span class="section-number-4"&gt;1.3.8&lt;/span&gt; 主谓一致，单复数对谓语的影响&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-3-8"&gt;
+&lt;p&gt;
+由于名词有可数与不可数，单复数的情况，会出现单形复意的情况，那么这个时候谓语应该用什么形式？主谓一致指的是形式上的一致还是意义上的一致？
+&lt;/p&gt;
+
+&lt;p&gt;
+目前来看，谓语的单复数是跟着主语的意义走的，单意就用单数形式，复意就用复数形式。这里有个明显的现象：
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;对于普通名词，单数就是表达单数概念，所以谓语也是单数，复数就是要表达复数的概念，所以谓语也是复数
+&lt;/li&gt;
+&lt;li&gt;对于只用作复数的名词，包括专有名词，复数形式有不同意义的名词，由于他们之所以是复数的形式就是因为表达的是复数的概念，因此谓语也是复数，这和谓语跟着意义走很一致。比如：
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;These damages have not yet been paid,have they?
+张满胜. 新东方·英语语法新思维:初级教程+中级教程+高级教程(套装共3册) (Chinese Edition) (Kindle 位置 1326-1327). 群言出版社.
+Kindle 版本. 
+这里damage的复数形式damages具有新的意思，做“赔偿金”讲
+&lt;/li&gt;
+&lt;li&gt;The Himalayas are the roof of the world.喜马拉雅山脉是世界屋脊。张满胜. 新东方·英语语法新思维:初级教程+中级教程+高级教程(套装共3册) (Chinese Edition) (Kindle 位置 1098-1099). 群言出版社.
+Kindle 版本.  
+这里 The Himalayas是专有名词，喜马拉雅山，喜马拉雅山这一个概念指的是山脉，群山，因此他只有复数形式，所以谓语也是复数形式。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;对于单形复意的名词，很明显，表达的是复数的意义，因此谓语是复数形式。比如people,the rich
+&lt;/li&gt;
+&lt;li&gt;对于不可数名词，抽象概念这些，没有表达出可数的，能数的意义，谓语用单数形式。
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+所以会有个规律，复数形式的名词谓语一定是复数，单数形式的名词如果表达的是复意则谓语是复数形式，如果表达是单意则谓语是单数形式。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-1-3-8-1" name="sec-1-3-8-1"&gt;&lt;/a&gt;只用做单数的名词——不可数名，专有名词&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-8-1"&gt;
 &lt;p&gt;
 注意，用作单数指的是谓语会用单数形式
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a id="sec-1-3-7-2" name="sec-1-3-7-2"&gt;&lt;/a&gt;只用做复数的名词&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-7-2"&gt;
+&lt;li&gt;&lt;a id="sec-1-3-8-2" name="sec-1-3-8-2"&gt;&lt;/a&gt;只用做复数的名词&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-8-2"&gt;
 &lt;p&gt;
 这里也要注意，虽然可能指的是一件物品，但谓语会用复数形式，比如
 glasses(眼镜)
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a id="sec-1-3-7-3" name="sec-1-3-7-3"&gt;&lt;/a&gt;单形复意的名词&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-7-3"&gt;
+&lt;li&gt;&lt;a id="sec-1-3-8-3" name="sec-1-3-8-3"&gt;&lt;/a&gt;单形复意的名词&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-8-3"&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;people
 people做“人们，人民”讲的时候，相当于person的复数形式，谓语要用复数形式。但如果做“民族，部族”讲的时候，就是个普通名词，有单复数变化。
@@ -2632,13 +4005,13 @@ people做“人们，人民”讲的时候，相当于person的复数形式，�
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a id="sec-1-3-7-4" name="sec-1-3-7-4"&gt;&lt;/a&gt;"the+形容词"——表示一类人的复数名词&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-7-4"&gt;
+&lt;li&gt;&lt;a id="sec-1-3-8-4" name="sec-1-3-8-4"&gt;&lt;/a&gt;"the+形容词"——表示一类人的复数名词&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-8-4"&gt;
 &lt;p&gt;
 表示一类人，此时当作复数名词，做主语时谓语要用复数。
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a id="sec-1-3-7-5" name="sec-1-3-7-5"&gt;&lt;/a&gt;有新词义的复数名词&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-7-5"&gt;
+&lt;li&gt;&lt;a id="sec-1-3-8-5" name="sec-1-3-8-5"&gt;&lt;/a&gt;有新词义的复数名词&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-8-5"&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;arm
 arms表示军事，武器
@@ -2663,7 +4036,7 @@ customs 海关
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a id="sec-1-3-7-6" name="sec-1-3-7-6"&gt;&lt;/a&gt;扑克牌的四种花色&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-7-6"&gt;
+&lt;li&gt;&lt;a id="sec-1-3-8-6" name="sec-1-3-8-6"&gt;&lt;/a&gt;扑克牌的四种花色&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-8-6"&gt;
 &lt;p&gt;
 表示扑克牌花色的时候要用复数
 &lt;/p&gt;
@@ -2683,9 +4056,9 @@ the ace of clubs 梅花尖 the jack of hearts  红桃勾
 &lt;/div&gt;
 &lt;/li&gt;&lt;/ol&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-sec-1-3-8" class="outline-4"&gt;
-&lt;h4 id="sec-1-3-8"&gt;&lt;span class="section-number-4"&gt;1.3.8&lt;/span&gt; 复合名词&lt;/h4&gt;
-&lt;div class="outline-text-4" id="text-1-3-8"&gt;
+&lt;div id="outline-container-sec-1-3-9" class="outline-4"&gt;
+&lt;h4 id="sec-1-3-9"&gt;&lt;span class="section-number-4"&gt;1.3.9&lt;/span&gt; 复合名词&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-3-9"&gt;
 &lt;p&gt;
 在讲复合名词单复数变形的时候涉及到了复合名词，这部分倒是可以看到各种各样的复合名词，比较有意思，可以学习一下如何构造复合名词。
 &lt;/p&gt;
@@ -2713,9 +4086,9 @@ the ace of clubs 梅花尖 the jack of hearts  红桃勾
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-sec-1-3-9" class="outline-4"&gt;
-&lt;h4 id="sec-1-3-9"&gt;&lt;span class="section-number-4"&gt;1.3.9&lt;/span&gt; 名词的所有格&lt;/h4&gt;
-&lt;div class="outline-text-4" id="text-1-3-9"&gt;
+&lt;div id="outline-container-sec-1-3-10" class="outline-4"&gt;
+&lt;h4 id="sec-1-3-10"&gt;&lt;span class="section-number-4"&gt;1.3.10&lt;/span&gt; 名词的所有格&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-3-10"&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;人或高等动物的所有格用's，其他用of。如果是短语或从句做定语也要用of
 &lt;/li&gt;
@@ -2727,7 +4100,7 @@ the ace of clubs 梅花尖 the jack of hearts  红桃勾
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-1-3-9-1" name="sec-1-3-9-1"&gt;&lt;/a&gt;同位关系&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-9-1"&gt;
+&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-1-3-10-1" name="sec-1-3-10-1"&gt;&lt;/a&gt;同位关系&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-10-1"&gt;
 &lt;p&gt;
 这里涉及到一个所有格表示的同位关系，先看下经常出现的同位关系，同位语，同位语从句中的同位到底是个什么概念。
 &lt;/p&gt;
@@ -2751,6 +4124,115 @@ the loss of Bhutto's loss 失去Bhutto的这一损失
 &lt;p&gt;
 这么一看，同位关系就很明确了。
 &lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-1-3-10-2" name="sec-1-3-10-2"&gt;&lt;/a&gt;意义&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-10-2"&gt;
+&lt;p&gt;
+从例子看名词的所有格修饰名词的情况有当限定词用的，起限定范围的作用，有当定语用的起修饰作用。书中提到的主谓关系，动宾关系，同位语关系，可以统一按名词短语来理解，具体是什么关系，怎么翻译主要就看中心名词，由动词演化来的中心名词，原来的动词是及物或者不及物对意思的理解起到的作用比较大。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;my brother's car
+&lt;/li&gt;
+&lt;li&gt;nobody's fault
+&lt;/li&gt;
+&lt;li&gt;the party's decision
+&lt;/li&gt;
+&lt;li&gt;the horse's mouth,a bird's nest
+&lt;/li&gt;
+&lt;li&gt;Rachel:I'm Carol's ex-husband's sister's roommate
+Doctor:I'm your roommate's brother's ex-wife's obstetrician
+&lt;/li&gt;
+&lt;li&gt;How will Bhutto's death affect the world?
+&lt;/li&gt;
+&lt;li&gt;Bhutto's assassination rocks Pakistan.
+&lt;/li&gt;
+&lt;li&gt;the children's education
+&lt;/li&gt;
+&lt;li&gt;the boy's punishment
+&lt;/li&gt;
+&lt;li&gt;For Washington,Bhutto's loss is incalculable.
+&lt;/li&gt;
+&lt;li&gt;today's newspaper
+&lt;/li&gt;
+&lt;li&gt;I am very tired after a hard day's work.
+这就有点定语的意思了
+&lt;/li&gt;
+&lt;li&gt;Let's have ten minutes's break.
+&lt;/li&gt;
+&lt;li&gt;My college is fifteen minutes' ride from my home.
+上面两个有点定语的意思，这里可以用of形式的所有格替换吗？感觉并不合适，还没搞清楚为什么不合适。
+&lt;/li&gt;
+&lt;li&gt;two pounds' weight
+&lt;/li&gt;
+&lt;li&gt;ten dollars' worth of meat
+两种所有格的形式一起用
+&lt;/li&gt;
+&lt;li&gt;the arrival of my mother.这里感觉用my mother's arrival没毛病
+&lt;/li&gt;
+&lt;li&gt;America's invasion of Iraq.
+&lt;/li&gt;
+&lt;li&gt;the examination of the fireman  the firemen's examination
+&lt;/li&gt;
+&lt;li&gt;the scrutiny of the tenants   the tenants' scrutiny
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-1-3-10-3" name="sec-1-3-10-3"&gt;&lt;/a&gt;形式&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-3-10-3"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;'s中心名词为复数，且以-s或-es结尾时在词尾加"'"构成所有格。要注意，中心名词是单数，即使是以s或es结尾，名词所有格也要用's；复数名词即使是复数，不以s或es结尾，名词所有格也要用's
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;the actress's boyfriend
+&lt;/li&gt;
+&lt;li&gt;the Children's Day,the children's books
+&lt;/li&gt;
+&lt;li&gt;women's ware
+&lt;/li&gt;
+&lt;li&gt;her friends' money
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;并列名词表示共有，最后一个词后加's，表示各自所有则每个名词后加's
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;John and his wife's bank savings
+约翰他妻子的共有存款
+&lt;/li&gt;
+&lt;li&gt;John's and his wife's bank savings
+约翰和他妻子各自的存款
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;中心名词省略的情况
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;前面已经出现过，避免重复
+This bike is mine,not Michael's.
+&lt;/li&gt;
+&lt;li&gt;表示店铺或教堂，表示某人的住宅，书上这两个是分开讲的，我觉得可以分为一类，如果前面没提到过，然后省略了，就是表示不动产的所有权。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;at the baker's(= baker's shop)
+&lt;/li&gt;
+&lt;li&gt;at the doctor's(= doctor's clinic)
+&lt;/li&gt;
+&lt;li&gt;I want to pay a visit to the St.Paul's.(= St.Paul's Cathedral)
+&lt;/li&gt;
+&lt;li&gt;go to my sister's(= my sister's home)
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;什么时候用's什么时候of所有格，总结下来，决定性因素在于名词短语的构成，哪些修饰词要前置，哪些要后置。另外看语义，可能意思相同，但强调的内容不同。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;肯定是用of所有格的情况，当中心名词后面接短语或从句修饰时
+&lt;/li&gt;
+&lt;li&gt;the scrutiny of the tenants   the tenants' scrutiny
+前者强调scrutiny，后者强调tenants
+&lt;/li&gt;
+&lt;li&gt;书中所说的有生命或无生命的情况，特例太多了，既出现了's用在无生命的概念，也出现了of用在有生命的概念，应该是对大部分情况的总结，但本质上还是在于名词短语的构成形式和语义。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 &lt;/li&gt;&lt;/ol&gt;
 &lt;/div&gt;
@@ -2799,7 +4281,17 @@ of,some,any,enough,several,most和all
 &lt;h4 id="sec-1-4-2"&gt;&lt;span class="section-number-4"&gt;1.4.2&lt;/span&gt; 泛指与特指&lt;/h4&gt;
 &lt;div class="outline-text-4" id="text-1-4-2"&gt;
 &lt;p&gt;
-一直以来对泛指和特指的概念其实理解的不是很清晰，总是从字面理解为特别的事物，其实不然，泛指就是表示一类事物，或某类事物的总称，特指就是表示某类事物中的具体某一个或某一些，可以这么理解，一个某一个特定事物的全集，一个是子集。对于定冠词的the的理解也存在误区，以前一直the就是特指的，准确的是这样的：
+一直以来对泛指和特指的概念其实理解的不是很清晰，总是从字面理解为特别的事物，其实不然，泛指就是表示一类事物，或某类事物的总称，特指就是表示某类事物中的具体某一个或某一些，可以这么理解，一个某一个特定事物的全集，一个是子集。书中对特指的概念是这么定意的，感觉更合理一些:
+&lt;/p&gt;
+&lt;pre class="example"&gt;
+根据说话者和听话者共有的知识，或根据上下文，可以识别的独特的某物。换句话说，说话者用the是想要听话者找到双方心中都知道的所指。
+&lt;/pre&gt;
+&lt;p&gt;
+所以前面对于子集全集的理解方式更像是上面定义的表象，而上面的定义才是本质。如果我们要表达全集的概念，由于已经是全集了，不会有事物和它再重复了，所以不用特指听话者已经可以知道我们想要表达的概念了，本质上是由于我们想让听话者能够明白我们的所指，这才有了泛指和特指的区分，全集和子集的区分。
+&lt;/p&gt;
+
+&lt;p&gt;
+对于定冠词的the的理解也存在误区，以前一直the就是特指的，准确的是这样的：
 &lt;/p&gt;
 &lt;pre class="example"&gt;
 定冠词主要是表示特指的用法，其次才是表示泛指的用法。
@@ -2889,6 +4381,10 @@ The tiger is becoming almost extinct.而不能说A tiger is becoming almost exti
 我的理解是必须的。可以发现英语的逻辑思维对于名词的表达英语一定会说清这个名词的单复数，多个还是一个，某个还是一类，这种准确的表达是英语的思维，所以冠词就像单复数一样，英语中说一个名词时一定会区分他的单复数，所以冠词也一定会区分。对于一次词组的特殊用法，比如 by
 train,on foot这些，不需要加冠词，很合理，因为上面我们说的是英语在表达名词概念时的逻辑思维，上面的特殊词组已经不再是表示名词概念的了。
 &lt;/p&gt;
+
+&lt;p&gt;
+语言是用于沟通表达的，在沟通表达的过程中对概念（名词）的表达必定有所指，这就意味着必有限定词限定范围。即使是出现在表语，宾语位置的概念。
+&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id="outline-container-sec-1-4-5" class="outline-4"&gt;
@@ -2926,14 +4422,1128 @@ england的queen
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;div id="outline-container-sec-1-4-6" class="outline-4"&gt;
+&lt;h4 id="sec-1-4-6"&gt;&lt;span class="section-number-4"&gt;1.4.6&lt;/span&gt; 整理一个表格，展现特指，泛指，定指的全貌&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-4-6"&gt;
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class="left"&gt;可数名词单数&lt;/td&gt;
+&lt;td class="left"&gt;可数名词复数&lt;/td&gt;
+&lt;td class="left"&gt;不可数名词&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;a/an&lt;/td&gt;
+&lt;td class="left"&gt;1. 泛指，用于表达某一类事物任一一个个体都能代表的概念，不能用于表达集体属性的概念；这种表示泛指的用法限定用在主语的位置，其它位置不表示泛指，通常可以用any替换a/an&lt;/td&gt;
+&lt;td class="left"&gt;N/A 矛盾&lt;/td&gt;
+&lt;td class="left"&gt;N/A 如果是不可数名词表示单意，比如某一类，某一种，可以用a/an，与可数单数一致，表泛指&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;the&lt;/td&gt;
+&lt;td class="left"&gt;1. 泛指，语气文雅，正式，所表达概念是可以由典型样本所代表的，可表达集体属性的概念 2. 特指具体某个&lt;/td&gt;
+&lt;td class="left"&gt;特指&lt;/td&gt;
+&lt;td class="left"&gt;特指，有特例， the+国籍(某些)，the+形容词 表泛指&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;不加&lt;/td&gt;
+&lt;td class="left"&gt;N/A 语言是表达，表达必有所指&lt;/td&gt;
+&lt;td class="left"&gt;泛指,相比the+单数没那么正式，可表达集体属性的概念&lt;/td&gt;
+&lt;td class="left"&gt;泛指&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-4-7" class="outline-4"&gt;
+&lt;h4 id="sec-1-4-7"&gt;&lt;span class="section-number-4"&gt;1.4.7&lt;/span&gt; 不定冠词a/an的用法&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-4-7"&gt;
+&lt;/div&gt;&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-1-4-7-1" name="sec-1-4-7-1"&gt;&lt;/a&gt;用在主语中，具有泛指的功能&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-4-7-1"&gt;
+&lt;p&gt;
+就是前面关于冠词讨论的表格a/an + 可数单数的情况
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-1-4-7-2" name="sec-1-4-7-2"&gt;&lt;/a&gt;用在表语中，无指定，用于描述功能&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-4-7-2"&gt;
+&lt;p&gt;
+主系表的结构，通常用来给主语下定义和描述主语。什么是什么，什么怎么样。
+&lt;/p&gt;
+&lt;pre class="example"&gt;
+Bill is an engineer.
+&lt;/pre&gt;
+&lt;p&gt;
+上句是个下定义的过程，如果没有an，感觉是在描述状态，应该是个形容词的感觉，很不合理，因为我们对概念的表达通常会有个所指，所以这里是需要an的。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-1-4-7-3" name="sec-1-4-7-3"&gt;&lt;/a&gt;用在宾语中，具有所指功能&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-4-7-3"&gt;
+&lt;p&gt;
+定指不定指的概念，specific定指，nonspecific不定指
+&lt;/p&gt;
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class="left"&gt;speaker specific&lt;/td&gt;
+&lt;td class="left"&gt;speaker nonspecific&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;listener specific&lt;/td&gt;
+&lt;td class="left"&gt;特指the&lt;/td&gt;
+&lt;td class="left"&gt;a/an&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;listener nonspecific&lt;/td&gt;
+&lt;td class="left"&gt;a/an&lt;/td&gt;
+&lt;td class="left"&gt;泛指 a/an&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+如上表，用在宾语的情况下会有个模糊区域，这里要根据上下文来理解和翻译。这种情况出现在宾语是因为说话者是第三者，存在知或不知的情况，如果是在主语的位置，要表达的人不存在不知的情况。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-4-8" class="outline-4"&gt;
+&lt;h4 id="sec-1-4-8"&gt;&lt;span class="section-number-4"&gt;1.4.8&lt;/span&gt; 不定冠词a/an与数词one&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-4-8"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;强调数量“一”时可以用one，当我们想加强口吻或引人注意时可以用
+one强调“只有一个/不超过一个”的意思，而a/an则没这个意思，它显得比较平淡，中性。
+&lt;pre class="example"&gt;
+Customer:When will they be ready? Assistant:They take a weak. Customer:One week,right,thanks very much.
+&lt;/pre&gt;
+&lt;p&gt;
+店员轻描淡写地表达“一周时间”，但顾客用one来强调数字“一”，显然是为了加强语气，表示他认为一周时间有点长，翻译时要表达出这种语气，比如译成“得一周啊”
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;因为one强调数量，所以常用于准确的对照数字
+&lt;pre class="example"&gt;
+A handred grams of flour to one egg,yeah,mixed up in the bowl.100克面粉加一个鸡蛋
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;讲故事中用one，强调人或事物
+&lt;/li&gt;
+&lt;li&gt;表示类指意义的a/an不能换成one
+&lt;pre class="example"&gt;
+A shotgun is no good.猎枪不行（这种武器不合适）
+One shotgun is no good.一支猎枪不行的（需要两支或更多的猎枪）
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;表示度量的a/an不能换成one
+&lt;pre class="example"&gt;
+The rent is $100 a week.
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;表示数量的固定搭配中的a不能换成one,a few ,a little, a large
+number of 等等
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-4-9" class="outline-4"&gt;
+&lt;h4 id="sec-1-4-9"&gt;&lt;span class="section-number-4"&gt;1.4.9&lt;/span&gt; 不定冠词a/an与this&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-4-9"&gt;
+&lt;p&gt;
+讲故事或开玩笑时用this代替a/an，正式的口语或书面语形式中不能使用这种说法。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-5" class="outline-3"&gt;
+&lt;h3 id="sec-1-5"&gt;&lt;span class="section-number-3"&gt;1.5&lt;/span&gt; 第四章 形容词&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-5"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-1-5-1" class="outline-4"&gt;
+&lt;h4 id="sec-1-5-1"&gt;&lt;span class="section-number-4"&gt;1.5.1&lt;/span&gt; 多个形容词修饰名词时候的顺序&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-5-1"&gt;
+&lt;p&gt;
+限定词(my,the,three,this)-观点形容词(beautiful,famous)-尺寸大小
+(large,small,long)-形状(round,square)-新旧(new,old,ancient)-颜色
+(white,yellow)-国籍、出处或产地-质地材料-用途-中心名词
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-5-2" class="outline-4"&gt;
+&lt;h4 id="sec-1-5-2"&gt;&lt;span class="section-number-4"&gt;1.5.2&lt;/span&gt; 形容词短语做后置定语&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-5-2"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;形容词+补足语构成的形容词短语
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;形容词+介词短语
+a jacket similar to yours
+&lt;/li&gt;
+&lt;li&gt;形容词+不定式短语
+parents eager to support their children's efforts
+&lt;/li&gt;
+&lt;li&gt;形容词+动名词短语
+a waiter busy serving the guests
+&lt;/li&gt;
+&lt;li&gt;形容词+that从句
+If a diamond is heated without oxygen,it will turn to graphite,a
+form of carbon so soft that it is used as a lubricant.
+&lt;/li&gt;
+&lt;li&gt;形容词短语的中心形容词与其补足语（如介词短语）之间插入其他成分的情况
+Vitamins are organic compounds necessary in small amounts in
+the diet for the normal grwoth and maintenance of life of
+animals,including man.
+vitamins are organic compounds 主系表句型
+nessesary形容词短语的中心形容词
+in small amounts in the diet 分隔形容词短语的介词短语，既然是介词短语，他一定是在修饰什么内容，那么他修饰的是谁呢？应该中心名词compounds，这样整个句子的理解就准确多了，不是需求少，而是含量少，那为什么要放在nesessary后面呢，其实是想表达尽管很少但很需要的意思 ，可以说 it's in small amounts in the diet but
+nesessary&amp;#x2026;for&amp;#x2026;但这样整个句子就显得很笨重，而且重点是在
+nesessary而不是small amount,插入在necessary后面，体现了重点是necessary，又因为有个停顿，这就表达出了“尽管量小但。。。”的意思。
+&lt;/li&gt;
+&lt;li&gt;把单个形容词提到名词前，而把形容词的补足语留在名词后面的情况
+a man taller than John
+a taller man than John
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;多个形容词并列构成形容词短语两个或两个以上的形容词（短语）（注意这里还有个短语，意思是包含了形容与上面的形容词+补足语形式的形容词短语并列的情况）并列作定语，一般是放在被修饰词的后面，而且还用逗号将形容词与句子的其他部分隔开。这时，作定语的形容词通常是对所修饰词作补充性的说明或解释。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;He bought a set of furniture,simple and beautiful.
+&lt;/li&gt;
+&lt;li&gt;All countries,large or small,should be equal.
+&lt;/li&gt;
+&lt;li&gt;Each person has his or her own purpose and distinct
+path,unique and separate from anyone else's.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-5-3" class="outline-4"&gt;
+&lt;h4 id="sec-1-5-3"&gt;&lt;span class="section-number-4"&gt;1.5.3&lt;/span&gt; 形容词的比较级和最高级的构成形式&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-6" class="outline-3"&gt;
+&lt;h3 id="sec-1-6"&gt;&lt;span class="section-number-3"&gt;1.6&lt;/span&gt; 第五章 动词分类&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-6"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-1-6-1" class="outline-4"&gt;
+&lt;h4 id="sec-1-6-1"&gt;&lt;span class="section-number-4"&gt;1.6.1&lt;/span&gt; 否定句和一般疑问句&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-6-1"&gt;
+&lt;p&gt;
+比较简单
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;be动词和情态动词的都be动词和情态动词上做文章
+&lt;/li&gt;
+&lt;li&gt;实意动词的就加do
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-6-2" class="outline-4"&gt;
+&lt;h4 id="sec-1-6-2"&gt;&lt;span class="section-number-4"&gt;1.6.2&lt;/span&gt; 特殊疑问句&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-6-2"&gt;
+&lt;p&gt;
+这里按照和书上不同的角度做个总结。基本句型为：特殊疑问词+一般疑问句。变形时，先把陈述句变成一般疑问句，这个变形过程不用区分是对句子的哪个部分提问，一般疑问句变特殊疑问句时可以区分是对句子的哪部分提问，然后将对应部分换成对应的特殊疑问词放在句首。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;He can sing in English.
+Can he sing in English.
+Who can sing in English.
+&lt;/li&gt;
+&lt;li&gt;I saw him at the party last night.
+Did you see him at the party last night?
+Who did you see at the party last night?
+&lt;/li&gt;
+&lt;li&gt;I am studying English grammar.
+Are you studying English grammar?
+What are you doing?这里对谓语提问，加了个doing，不然无法理解是主谓的意思还是主系表的意思
+What are you studying?这里对宾语提问
+&lt;/li&gt;
+&lt;li&gt;I'd like to go swimming tomorrow.
+Would you like to go swimming tomorrow?
+What would you like to do tomorrow?原句型可以理解为主谓结构，
+would like to 可以当作助动词，对谓语提问，保留了助动词。
+&lt;/li&gt;
+&lt;li&gt;I was born in 1980.
+Were you born in 1980?
+When were you born?对状语提问，替换掉了整个状语，包含介词，是否存在不留着介词的情况？书上后面几个对状语的提问都是替换掉了整个状语，包括时间状语，地点状语，原因状语等情况，就不一一列举了。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-6-3" class="outline-4"&gt;
+&lt;h4 id="sec-1-6-3"&gt;&lt;span class="section-number-4"&gt;1.6.3&lt;/span&gt; 特殊疑问句对句子成分的修饰部分进行提问&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-6-3"&gt;
+&lt;p&gt;
+基本句型，将被提问的整个句子成分提前，被提问部分换成对应的特殊疑问词。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;You want this pen.
+Do you want this pen?
+Which pen/Which one/Which do you want?
+&lt;/li&gt;
+&lt;li&gt;This is his book.
+Is this his book?
+Whose book is this? his book整体做为表语，对表语的修饰词提问，整个表语都提前了。
+&lt;/li&gt;
+&lt;li&gt;How old are you?
+&lt;/li&gt;
+&lt;li&gt;How tall is he?
+&lt;/li&gt;
+&lt;li&gt;I write to my parents once a month.
+Do you write to your parents once a month?
+How often do you write to your parents?
+How many times a month do you write to your parents?
+这个例句有两点要注意，前面的句子是对整个频率状语(once a month)提问，所以用特殊疑问词换掉了整个频率状语，后面的句子是对频率状语的修饰词(once)提问，所以只换掉once，但整个句子成分要提前。另外这里也看到，特殊疑问词不一定是一个词，比如这里的how often,how many
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-7" class="outline-3"&gt;
+&lt;h3 id="sec-1-7"&gt;&lt;span class="section-number-3"&gt;1.7&lt;/span&gt; 第六章 动词分类（二）五种基本句型&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-7"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-1-7-1" class="outline-4"&gt;
+&lt;h4 id="sec-1-7-1"&gt;&lt;span class="section-number-4"&gt;1.7.1&lt;/span&gt; 主系表和主谓&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-7-1"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;He died.
+这是主谓，die是个动作，如果要用主系表结构表示，就是 He is dieing.
+&lt;/li&gt;
+&lt;li&gt;He died in 2007.主谓状
+&lt;/li&gt;
+&lt;li&gt;如何区分主系表和主谓状
+He shouted loudly.
+He looks happy.
+只需要看最后的部分是形容谁的，不能说he is loudly,所以明显loudly
+是形容shout的，因此是主谓状的结构
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-7-2" class="outline-4"&gt;
+&lt;h4 id="sec-1-7-2"&gt;&lt;span class="section-number-4"&gt;1.7.2&lt;/span&gt; 主+谓+间接宾语+直接宾语&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-7-2"&gt;
+&lt;p&gt;
+主要注意间接宾语和直接宾语应该都是可以做宾语的词性，常见名词，代词
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-7-3" class="outline-4"&gt;
+&lt;h4 id="sec-1-7-3"&gt;&lt;span class="section-number-4"&gt;1.7.3&lt;/span&gt; 区分双宾语句型和主谓宾宾补句型&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-7-3"&gt;
+&lt;p&gt;
+宾补是对宾语状态和性质的一个描述，相当于一个主系表的结构，因此可以做宾语的词性或结构就比较清晰了，就是可以做表语的词和结构。当宾语是名词的时候，主谓宾宾补和双宾语比较容易混淆，看下面两个例句：
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I made John our chairman.
+&lt;/li&gt;
+&lt;li&gt;I made John a cake.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+区分的方法，将两个宾语或宾语和宾语补足语尝试换成主系表的结构，讲得通就是宾补的形式，讲不通就是双宾语。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-8" class="outline-3"&gt;
+&lt;h3 id="sec-1-8"&gt;&lt;span class="section-number-3"&gt;1.8&lt;/span&gt; 第七章 英语时态——一般时态&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-8"&gt;
+&lt;p&gt;
+学习英语的时态一定要从“时”和“态”两个方面思考，将语言和事物以及行为进行同构，语言是描述事物和行为的，那么行为，或者说动作有发生的时间，动作本身有长有短，有原子性的，有可变的，有一次性的，有可以重复的，时态就是为了能够清楚的表达这些概念而存在，学习时态的过程中将时态与世界存在的概念去对应就会理解的比较到位。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-8-1" class="outline-4"&gt;
+&lt;h4 id="sec-1-8-1"&gt;&lt;span class="section-number-4"&gt;1.8.1&lt;/span&gt; 一般现在时&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-8-1"&gt;
+&lt;p&gt;
+引用书上的话
+&lt;/p&gt;
+&lt;pre class="example"&gt;
+确切地说，一般现在时的本质思维特征是：表示从过去到现在直至将来的一段时间内发生的动作（action）或存在的状态（state）。也就是说，这些动作或状态的发生不限于某个特定的时间，它们可发生于任何时间，包括现在、过去和将来，这一段时间到底有多长，我们不知道。它可以是近乎无限长（如表示客观真理），也可以是人们生活中的一段时间（如人们的习惯活动）。因此，一般现在时态通常被描述为有两种基本用法：表示客观真理，以及表示习惯活动（ThePresentSimpleTenseisusedtoexpressageneraltruthorfact,oranactionthatoccursregularlyorhabitually.）
+&lt;/pre&gt;
+&lt;p&gt;
+重点在于不可变性，一般现在时不是一个可持续发展的动作，这里有两层意思同时存在，第一，短暂，因为不持续；第二，不可变，因为不发展。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;瞬时动作
+&lt;/li&gt;
+&lt;li&gt;耗时动作
+&lt;/li&gt;
+&lt;li&gt;重复性动作
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+引用书上的话
+&lt;/p&gt;
+&lt;pre class="example"&gt;
+简单体的核心意义是，被概念化的整体事件，这些事件是无法继续发展的。
+&lt;/pre&gt;
+&lt;p&gt;
+整体这个意思也包含了短暂，完整，原子的意思，无法继续发展的表达不可变性。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-1-8-1-1" name="sec-1-8-1-1"&gt;&lt;/a&gt;描述动作的发生与描述动作的抽象概念&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-8-1-1"&gt;
+&lt;p&gt;
+我们常会描述一个动作真实的发生，也会只是描述一个动作的抽象概念。比如中文说
+&lt;/p&gt;
+&lt;pre class="example"&gt;
+人们说：知识就是力量
+&lt;/pre&gt;
+&lt;p&gt;
+这里并不是要描述人们说这个动作的真实发生，什么时候说，而是要描述人们说这个抽象概念。英语要用一般现在时。
+&lt;/p&gt;
+&lt;pre class="example"&gt;
+We say:xxx
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-1-8-1-2" name="sec-1-8-1-2"&gt;&lt;/a&gt;表示习惯的状态的一般现在时常会有表示频度的副词，这些副词位置的特点&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-8-1-2"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;be 动词之后，实意动词之前
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;He is always late
+&lt;/li&gt;
+&lt;li&gt;He always goes to scholl by bike
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;一般放在否定助词前面，always除外
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;The history lectures sometimes aren't interesting.
+&lt;/li&gt;
+&lt;li&gt;His wife complains that he sometimes doesn't listen to her.
+&lt;/li&gt;
+&lt;li&gt;He doesn't always leave before 6 o'clock.Sometimes he works
+until 7 o'clock.
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+放前面放后面并不是随意的使用习惯，仔细观察和理解，其实跟表达的含义有关，因为是表示频度，而be动词是表示状态的描述，定性的描述，所以意思上是矛盾的，状态没有频度，因此会放在后面修饰形容词。这里可以看出英语中修饰一般是在前面的。always goes这个也很明显，go 这个动作是可以有频度的。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-8-2" class="outline-4"&gt;
+&lt;h4 id="sec-1-8-2"&gt;&lt;span class="section-number-4"&gt;1.8.2&lt;/span&gt; 一般过去式&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-8-2"&gt;
+&lt;p&gt;
+经常带有时间状语,yesterday,yesterday evening,last night,the night
+before last,last year,last spring,three days/months/years ago等等。注意，这次时间状语之前不需要加介词。（为什么？）
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-1-8-2-1" name="sec-1-8-2-1"&gt;&lt;/a&gt;讲故事为什么用过去式，讲剧情为什么用现在时？&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-8-2-1"&gt;
+&lt;p&gt;
+看书上讲一般过去式的几个例子，讲故事都用了一般过去式，准确说不应该是说讲故事，而是说讲过去，曾经发生的事情，由于这个事情是真实发生的，发生时有个时间点，所以用了一般过去时；而剧情通常都是假的，只是在表达这个动作概念以完成剧情需要，不是真实发生的，所以用一般现在时。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-8-3" class="outline-4"&gt;
+&lt;h4 id="sec-1-8-3"&gt;&lt;span class="section-number-4"&gt;1.8.3&lt;/span&gt; 一般将来时&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-8-3"&gt;
+&lt;p&gt;
+按书上的意思，将来时可以不当作是个时态，只是表达一个，预测，事先计划，意愿等这种意义的手段，是情态动词的用法。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-1-8-3-1" name="sec-1-8-3-1"&gt;&lt;/a&gt;预测&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-8-3-1"&gt;
+&lt;p&gt;
+表示说话人人为将来会发生某件事
+will
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-1-8-3-2" name="sec-1-8-3-2"&gt;&lt;/a&gt;事先计划&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-8-3-2"&gt;
+&lt;p&gt;
+表示说话人在头脑里已经做出决定将来要做某件事。经过思考，经过计划。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-1-8-3-3" name="sec-1-8-3-3"&gt;&lt;/a&gt;意愿&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-8-3-3"&gt;
+&lt;p&gt;
+表示说话人既不是预计某事将会发生，也不是预先经过思考决定将做某事，而是在说话的时刻立即做出决断表明他将去做某事。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-8-4" class="outline-4"&gt;
+&lt;h4 id="sec-1-8-4"&gt;&lt;span class="section-number-4"&gt;1.8.4&lt;/span&gt; 现在进行时&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-8-4"&gt;
+&lt;p&gt;
+进行体给人感觉的核心意义在于在指定时间点或时间段正在发生的动作状态是可变的，或正在发展变化的。
+&lt;/p&gt;
+
+&lt;p&gt;
+从目前的例句理解来看，一般态绝大部分都可以当作动作或状态概念本身来理解，可以类比成泛指，不与具体时间挂钩。而进行态更像是表示这个具体动作的发生，然后再搭配上动作发生的时间，所以总会感觉进行态更生动。在询问时，用一般态感觉是在询问动作，用进行态感觉是在询问动作发生的相关信息。比如：
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;How will you pay your &amp;#x2026;
+对动作这个概念提问，你要怎么付钱，你愿不愿意付钱，你会不会付钱，这个动作会不会发生？
+&lt;/li&gt;
+&lt;li&gt;How will you paying your&amp;#x2026;
+只是询问这个动作发生的时候是用那种方式，这个动作会怎样发生？
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-1-8-4-1" name="sec-1-8-4-1"&gt;&lt;/a&gt;这个例句很有意思，单独拿出来分析一下&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-8-4-1"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;A:What are you doing on Saturday night?
+B:I'm doing some shopping with Jane.
+&lt;/li&gt;
+&lt;li&gt;A:周六晚上你有何安排？
+B:我要和简去购物。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+这是书上的例句和翻译，我觉得无论时提问还是回答，翻译的内容都没有原文表达内容丰富，从原文中还能读出很多细微的信息。
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;A是在问B已经做好的计划有什么，不是在问B准备，计划，打算做什么，这是有区别的，翻译用“安排”其实很合理，但不细读会领悟不到这层意思。A是在问B周六晚上有什么安排。
+&lt;/li&gt;
+&lt;li&gt;回答也有意思，要和简去购物这件事是安排好的，什么叫安排好的，就是Jane也知道的，两个人约好的事情。如果是我想去，但还没和简商量好，那就应该说I'm going to do some shopping with Jane.所以原文可以翻译成：我和简约好要去购物。
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-1-8-4-2" name="sec-1-8-4-2"&gt;&lt;/a&gt;现在进行时表示现阶段的动作与状态与表示将来的安排思维是一致的&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-8-4-2"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;现阶段的动作与状态，没什么好说的
+&lt;/li&gt;
+&lt;li&gt;表示将来的安排为什么和上面的思维是一致的？现在进行时表示的将来的安排是确定的，已经安排好的，参考和be going to do的区别分析，这事就等到点发生了，所以可以说这事现阶段已经在进行中了，所以底层思维本质上还是一致的。
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-1-8-4-3" name="sec-1-8-4-3"&gt;&lt;/a&gt;用法六：与always等连用，表示多次重复，且含有感情色彩&lt;br  /&gt;&lt;div class="outline-text-5" id="text-1-8-4-3"&gt;
+&lt;p&gt;
+Scott is very generous.He's always giving his friends gifts and
+inviting them out for meals.
+其实这里也没脱离现在进行时的本质思维，由于加了always等时间副词，时间段的概念就无限制了，过去现在和将来，都这样，有点像一般现在时，但强调了在时间上一直都这样，就生动很多，而一般现在时只强调动作，没有时间的概念，就没那么生动。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-8-5" class="outline-4"&gt;
+&lt;h4 id="sec-1-8-5"&gt;&lt;span class="section-number-4"&gt;1.8.5&lt;/span&gt; 过去进行时&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-8-6" class="outline-4"&gt;
+&lt;h4 id="sec-1-8-6"&gt;&lt;span class="section-number-4"&gt;1.8.6&lt;/span&gt; 一般现在时和一般过去时的否定&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-1-8-6"&gt;
+&lt;p&gt;
+这是现在进行时举例哈利和萨莉对话的例子中看到很多否定，但有的时一般现在时有的是一般过去时，这里思考一下他们表达意思的细微区别。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;一般现在时表达的重点是这个动作或状态这个概念本身，强调动作和状态的否定，不强调时间。包括书中讲时态时一开始举的翻译问题，We do
+not say&amp;#x2026;翻译成：我们不说。。。
+&lt;/li&gt;
+&lt;li&gt;一般过去时表达的重点除了动作和状态之外还有时间，强调在特定的时间的动作和状态，We did not say&amp;#x2026;翻译成：我们当时没说。。。仔细体会这两个翻译的区别，和表达概念的细微区别。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;&lt;span class="section-number-2"&gt;2&lt;/span&gt; 思考和总结&lt;/h2&gt;
+&lt;h2 id="sec-2"&gt;&lt;span class="section-number-2"&gt;2&lt;/span&gt; 中级教程&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-2"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-2-1" class="outline-3"&gt;
+&lt;h3 id="sec-2-1"&gt;&lt;span class="section-number-3"&gt;2.1&lt;/span&gt; 第一章简单句与复合句&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-1"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-2-1-1" class="outline-4"&gt;
+&lt;h4 id="sec-2-1-1"&gt;&lt;span class="section-number-4"&gt;2.1.1&lt;/span&gt; 句型一：主系表&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-1-1"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;单纯表示主语的特征、状态的
+The iron feels hot.
+&lt;/li&gt;
+&lt;li&gt;表示主语由一种状态转变为另一种状态的
+The leaf will turn yellow in autumn.
+The dream has come true.
+&lt;/li&gt;
+&lt;li&gt;表示主语保持某种状态的
+The weather continued fine for several days.
+You may rest assured that he will come to the party.
+&lt;/li&gt;
+&lt;li&gt;近似于不及物动词的系动词
+He arrived in the U.S. a peniless 21-year-old.
+He lived the life of and died a prairie checken.
+All men are created equal.
+这个半系动词的用法是个重点，关键不知道哪些词可以这么用，还是说比较随意的都可以这么用。
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-1-2" class="outline-4"&gt;
+&lt;h4 id="sec-2-1-2"&gt;&lt;span class="section-number-4"&gt;2.1.2&lt;/span&gt; 同源宾语&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-1-2"&gt;
 &lt;p&gt;
-目前总结的的英语学习的几个关键点
+He died a hero's death.这不是主系表的结构，而是主谓宾的结构，A
+hero's death是个特殊的宾语，die本身是不及物的。
 &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-1-3" class="outline-4"&gt;
+&lt;h4 id="sec-2-1-3"&gt;&lt;span class="section-number-4"&gt;2.1.3&lt;/span&gt; 句型二：主谓&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-1-4" class="outline-4"&gt;
+&lt;h4 id="sec-2-1-4"&gt;&lt;span class="section-number-4"&gt;2.1.4&lt;/span&gt; 句型三：主谓宾&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-1-5" class="outline-4"&gt;
+&lt;h4 id="sec-2-1-5"&gt;&lt;span class="section-number-4"&gt;2.1.5&lt;/span&gt; 基本从句&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-1-5"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;名词从句
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;主语从句 句子充当主语
+&lt;/li&gt;
+&lt;li&gt;宾语从句 句子充当宾语
+&lt;/li&gt;
+&lt;li&gt;表语从句 句子充当表语
+&lt;/li&gt;
+&lt;li&gt;同位语从句 句子充当同位语
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;定语从句 句子充当定语
+&lt;/li&gt;
+&lt;li&gt;状语从句 句子充当状语
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-2" class="outline-3"&gt;
+&lt;h3 id="sec-2-2"&gt;&lt;span class="section-number-3"&gt;2.2&lt;/span&gt; 名词从句&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-2"&gt;
+&lt;p&gt;
+名词从句就是用三种句子来分别充当另外一个句子的四种句子成分，这构成来名词从句的本质特征。三种句子：陈述句，一般疑问句，特殊疑问句四个位置：主语，宾语，表语，同位语共12种组合
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-2-1" class="outline-4"&gt;
+&lt;h4 id="sec-2-2-1"&gt;&lt;span class="section-number-4"&gt;2.2.1&lt;/span&gt; 陈述句做句子成分&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-2-1"&gt;
+&lt;p&gt;
+不管做什么成分，陈述句句首加一个that，宾语从句可以省略。由于存在从句，句子中会有至少两个谓语动词，that相当于指路牌，说明这个是个从句，避免读者对句子造成误解或无法理解，这就是为什么陈述句做句子成分要要
+that的原因。而陈述句做宾语从句时，由于一些谓语的习惯用法很明确的清楚后面要有宾语从句了，不会造成句子的表达意思的混淆，这时that可以省略。所以陈述句做宾语从句时that能不能省略要看表达的意思是否会不清晰。
+&lt;/p&gt;
+
+&lt;p&gt;
+另外要注意，that在这里不做从句的任何成分，只起连接作用。
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;做主语
+That English is important is an undoubted fact.
+&lt;/li&gt;
+&lt;li&gt;做宾语
+I've learned that love,not time heals all wounds.
+I think you are right.阅读过程中根据句子的意思，比较容易判断you
+不是think的宾语，所以容易you是后面从句的成分，因此这里that可以省略了。
+&lt;/li&gt;
+&lt;li&gt;My idea is that child should be sent to school.
+&lt;/li&gt;
+&lt;li&gt;The fact that he succeeded in the experiment pleased everybody.
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-2-2-1-1" name="sec-2-2-1-1"&gt;&lt;/a&gt;it做形式主语放在句首&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-2-1-1"&gt;
+&lt;p&gt;
+对于陈述句做主语，更常见的是用it做形式主语置于句首，而将主语从句放在句末。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;That the seas are being overfished has been known for years.
+&lt;/li&gt;
+&lt;li&gt;It has been known for years that the seas are being overfished.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-2-1-2" name="sec-2-2-1-2"&gt;&lt;/a&gt;做同位语从句时会出现于先行词被隔开的情况，要注意分析&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-2-1-2"&gt;
+&lt;p&gt;
+They spread the lie everywhere that Tom was guilty of theft.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-2-1-3" name="sec-2-2-1-3"&gt;&lt;/a&gt;同位语从句主要时由that引导的&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-2-1-3"&gt;
+&lt;p&gt;
+同位语从句主要时由that引导，而很少用whether以及连接代词或连接副词引导，这是因为我们多是用陈述句来补充说明名词的内容，而很少用一般疑问句或特殊疑问句来补充说明名词的内容。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-2-2" class="outline-4"&gt;
+&lt;h4 id="sec-2-2-2"&gt;&lt;span class="section-number-4"&gt;2.2.2&lt;/span&gt; 一般疑问句做句子成分&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-2-2"&gt;
+&lt;p&gt;
+一般疑问句做句子成分和陈述句比较接近，因为一般疑问句本身只是对陈述句做词序上的调整，没有替换省略的情况，当把一个一般疑问句当作名词来使用时，先将一般疑问句变成陈述句，然后用whether或if引导，以表明这是一般疑问句，不是陈述句。
+&lt;/p&gt;
+
+&lt;p&gt;
+另外要注意，whether和if也不在从句或主句中做任何成分，但表示疑问含义，不能省略，起连接作用。
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;做主语
+Whether he will come to my party makes no difference to me.
+这个句子细微含义的理解还是有点意思，容易理解成两种意思：
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;他来或者不来我的party对我来说没什么区别
+&lt;/li&gt;
+&lt;li&gt;他愿不愿意来我的party对我来说没什么区别
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+这两个意思还是有一点点细微区别，一个是客观被动的能不能来得了对我来说没什么区别，另一个是主观主动想不想来对我来说没什么区别。
+A:It's already 10 o'clock.I guess Bob and Amy won't be coming
+to the party.
+B:They called at nine to say that they'd been held up.
+上面这个对话是说Bob和Amy不是不想来，而是来不了。可以先把主语换成一般疑问句，这样容易理解清楚：
+Will he come to my party?他会来我的party吗？（他愿意来吗？）
+Is he coming to my party?他在来的路上了吗？
+Whether he will come to my party &amp;#x2026;.
+Whether he is coming to my party &amp;#x2026;.
+两个句子第一个实际场景更正常一些，愿不愿意来我无所谓，第二个有点不太正常，别人去你的party，没有意愿的问题，只是来得了来不了的问题，你却无所谓，显得很不礼貌，从场景上来说应该是不常见的。
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-2-2-2-1" name="sec-2-2-2-1"&gt;&lt;/a&gt;用if还是whether&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-2-2-1"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;if 一般只用于引导宾语从句,whether名词从句都可以
+&lt;/li&gt;
+&lt;li&gt;if不和or not直接连用，即一般不说if or not，但可以说if&amp;#x2026;or not。而whether没有此限制。
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-2-3" class="outline-4"&gt;
+&lt;h4 id="sec-2-2-3"&gt;&lt;span class="section-number-4"&gt;2.2.3&lt;/span&gt; 特殊疑问句做句子成分&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-2-3"&gt;
+&lt;p&gt;
+没什么说的，不需要另加引导词，直接用原来特殊疑问句的疑问词就可以，从句的语序要用陈述句的语序。
+&lt;/p&gt;
+
+&lt;p&gt;
+需要注意的是，特殊疑问句做名词从句，从句中的特殊疑问词是需要充当从句的成分的，既有成分的作用又有连词的作用，不能省略。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-3" class="outline-3"&gt;
+&lt;h3 id="sec-2-3"&gt;&lt;span class="section-number-3"&gt;2.3&lt;/span&gt; 第三章 定语从句&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-3"&gt;
+&lt;p&gt;
+定语从句与特殊疑问句做名词从句有点像，关系词（what,that,who&amp;#x2026;这一类的，感觉都是特殊疑问词）既当连词也做定语句子中的成分。关系词起到两个作用，一，指代前面定语从句要修饰的主句或主句中成分，二，连接主句和从句，自己加个三，在定语从句中做成分
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-3-1" class="outline-4"&gt;
+&lt;h4 id="sec-2-3-1"&gt;&lt;span class="section-number-4"&gt;2.3.1&lt;/span&gt; 关系词做从句的主语&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-3-1"&gt;
+&lt;p&gt;
+注意主谓一致，和之前学习单复数问题一样，跟着概念走，关系词指代谁，形容谁就跟着谁走，那个被指代的对象是单数从句谓语就单数，是复数从句谓语就复数。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-3-2" class="outline-4"&gt;
+&lt;h4 id="sec-2-3-2"&gt;&lt;span class="section-number-4"&gt;2.3.2&lt;/span&gt; 关系词做从句中动词或介词的宾语&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-3-2"&gt;
+&lt;p&gt;
+做宾语的关系词习惯省去
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-3-3" class="outline-4"&gt;
+&lt;h4 id="sec-2-3-3"&gt;&lt;span class="section-number-4"&gt;2.3.3&lt;/span&gt; 关系词&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-3-3"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;基本的指代人，物，所有关系之类的该用哪个关系词不说了，比较简单
+&lt;/li&gt;
+&lt;li&gt;指代短语或句子时关系词要用which
+&lt;/li&gt;
+&lt;li&gt;that
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;既可以指人也可以指物，不用在非限定性定语从句中，不用在介词的后面
+&lt;/li&gt;
+&lt;li&gt;先行词为指物的代词all,little,few,much,none,the first时用that
+&lt;/li&gt;
+&lt;li&gt;先行词是不定代词something,anything,nothing,everything时一般用that
+&lt;/li&gt;
+&lt;li&gt;先行词被any,only,all,every,no,some,much,few,little，序数词，形容词最高级，the only,the one,the very,the right和the last 等成分修饰时，用that
+&lt;/li&gt;
+&lt;li&gt;that有点the的意思，看看什么时候该用the了，那关系词就该用that了
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;when和where都是关系副词用不用when和where主要看在从句中起什么作用，是时间状语可以用when，是地点状语可以用where，而不是看指代主句中的什么概念，比如即使指代主句时间的概念，但在从句中做宾语，那也不能用when而要用which。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I'll never forget the time which I spent on campus.
+&lt;/li&gt;
+&lt;li&gt;I'll never forget the day when we first met in the park.
+&lt;/li&gt;
+&lt;li&gt;This is the town where I spent my childhood.
+&lt;/li&gt;
+&lt;li&gt;This is the town which I told you about before.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-3-4" class="outline-4"&gt;
+&lt;h4 id="sec-2-3-4"&gt;&lt;span class="section-number-4"&gt;2.3.4&lt;/span&gt; 限定性与非限定性定语从句&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-3-4"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;限定性定语从句是用来对一个名词提供必要的信息，以说明定语从句所修饰的先行词的身份或性质，或用来限制先行词所指的范围。若去掉限制性定语从句，则主句部分的含义不明确，或意义不完整，所以不能用逗号来分隔先行词和定语从句。
+&lt;/li&gt;
+&lt;li&gt;非限定性定语从句用来提供附加的而非必要的信息，只是对先行词作进一步的解释、补充或说明。若去掉此定语从句，整个主句的意义一样很明确，不会引起误解和歧义。
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+常见两种情况用非限定定语从句
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;定语从句修饰专有名词，书上的例子都是mother
+&lt;/li&gt;
+&lt;li&gt;类指名词，修饰某一类事物
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+限定性和非限定性定语从句所表达的意义的区别。总的来讲，还是强调的意义不一样，限定性定语从句有点特指的意味，重点强调从句的内容，而非限定性定语从句有点泛指的概念，强调主句的含义，定语从句只是做个补充说明。
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;He has a daughter who works in a hospital.
+他有一个在医院工作的女儿。
+&lt;/li&gt;
+&lt;li&gt;He has a daughter,who works in a hospital.
+他有个女儿，是在医院工作的。
+&lt;/li&gt;
+&lt;li&gt;The food which wasn't in the fridge all went off.
+没有放在冰箱里的那些食物坏了。
+&lt;/li&gt;
+&lt;li&gt;The food,which wasn't in the fridge,all went off.
+食物都坏了，因为没有放在冰箱里。
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-3-5" class="outline-4"&gt;
+&lt;h4 id="sec-2-3-5"&gt;&lt;span class="section-number-4"&gt;2.3.5&lt;/span&gt; 整个定语从句的理解的关键点&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-3-5"&gt;
+&lt;p&gt;
+感觉主要还是在于特殊疑问句的结构，哪部分要提前，哪部分要用特殊疑问词替换，然后不要倒桩，就成了定语从句。定语从句修饰主句或主句中的成分，本身不作为主句的关键成分。
+&lt;/p&gt;
+
+&lt;p&gt;
+另外，定语从句不用区分是陈述句，一般疑问句和特殊疑问句吗？
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-4" class="outline-3"&gt;
+&lt;h3 id="sec-2-4"&gt;&lt;span class="section-number-3"&gt;2.4&lt;/span&gt; 第四章 状语从句&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-4"&gt;
+&lt;p&gt;
+从本质上来讲，状语从句就是用不同的连词将几个分句连接起来，以表达分句之间特定的逻辑语义关系。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-4-1" class="outline-4"&gt;
+&lt;h4 id="sec-2-4-1"&gt;&lt;span class="section-number-4"&gt;2.4.1&lt;/span&gt; until的用法&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-4-1"&gt;
+&lt;p&gt;
+until既可以用作介词也可以作为连词，所以until的后面可以接名词短语也可以接时间从句。
+&lt;/p&gt;
+
+&lt;p&gt;
+until的本质思维是一个主句动作或状态一直持续到某一个时间点。
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;延续动词+until+短暂动词或时间点
+&lt;/li&gt;
+&lt;li&gt;否定短暂动词+until+短暂动词或时间点值得注意的是，若主句或句子的谓语动词是短暂动词，则要用否定形式。因为否定之后表示的是一个状态，而状态则是延续的，这就是我们常说的not&amp;#x2026;until&amp;#x2026;(直到……才)的结构。
+He didn't leave the office until his boss came back.
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-4-2" class="outline-4"&gt;
+&lt;h4 id="sec-2-4-2"&gt;&lt;span class="section-number-4"&gt;2.4.2&lt;/span&gt; 表示“一……就”的结构，关键是时间连词都比较特别&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-4-2"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;从句动作先于主句动作
+as soon as,once,the minute,the moment,the instant,immediately,directly,instantly
+&lt;/li&gt;
+&lt;li&gt;主句动作先于从句动作
+hardly&amp;#x2026;when,scarcely&amp;#x2026;when,no sooner&amp;#x2026;than
+No sooner had I arrived home than it began to rain.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-4-3" class="outline-4"&gt;
+&lt;h4 id="sec-2-4-3"&gt;&lt;span class="section-number-4"&gt;2.4.3&lt;/span&gt; 表示因果关系的连词和介词&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-4-3"&gt;
+&lt;p&gt;
+because,for,as,since
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;because语气最强，只有它才能用来回答why的问句，所引出的原因往往是听话人所不知道或最感兴趣的，也只有because才能被强调词如
+only,just,perhaps等修饰。because强调由它引出的从句，强调原因
+&lt;/li&gt;
+&lt;li&gt;since表示人们已知的事实，是不需要强调的原因，所以常译成“既然”，通常放在句首。
+&lt;/li&gt;
+&lt;li&gt;as和since差不多，所引出的理由在说话人看来已经很明显，或已为听话人所熟悉而不需要用because加以强调。
+&lt;/li&gt;
+&lt;li&gt;for表示推断的理由，是对前面分句的内容加以解释或说明
+It rained last night,for the ground is wet this morning.
+Because it rained last night,the ground is wet this morning.
+&lt;/li&gt;
+&lt;li&gt;用介词表示因果关系，常用的介词有because of ,due to,owing to，因为是介词，所以其后面不能接从句。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;We had an accident because he was careless.
+&lt;/li&gt;
+&lt;li&gt;We had an accident dut to his carelessness.
+&lt;/li&gt;
+&lt;li&gt;Owing to his carelessness we had an accident.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-4-4" class="outline-4"&gt;
+&lt;h4 id="sec-2-4-4"&gt;&lt;span class="section-number-4"&gt;2.4.4&lt;/span&gt; 状语从句的省略形式&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-4-4"&gt;
+&lt;p&gt;
+介词后面可以接名词、名词短语、动名词或what引导的从句；连词后面可以接完整的陈述句、形容词（相当于省略句）、分词（相当于省略句）等。
+Though tired,he wouldn't stop working.Though是连词，原句相当于
+Though he was tired,he wouldn't stop working.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-4-5" class="outline-4"&gt;
+&lt;h4 id="sec-2-4-5"&gt;&lt;span class="section-number-4"&gt;2.4.5&lt;/span&gt; 结果状语从句&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-4-5"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;so&amp;#x2026;that so后面接形容词或副词
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I was so late that I didn't have time to get on it.
+&lt;/li&gt;
+&lt;li&gt;The newly described languages were often so strikingly
+different from the well studied languages of Europe and
+Southeast Asia that some scholars even accused Boas and Sapir
+of fabricating their data.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;such&amp;#x2026;that such后面接名词
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;He is such a good teacher that everyone likes him.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;结果状语从句的倒桩为了表示强调，可以将主句中so或such引导的部分置于句首从而构成倒桩结构。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;So fast does light travel that it is difficult for us to
+imagine its speed.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-4-6" class="outline-4"&gt;
+&lt;h4 id="sec-2-4-6"&gt;&lt;span class="section-number-4"&gt;2.4.6&lt;/span&gt; as 引导的倒桩句表示让步&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-4-6"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;adj.
+&lt;/li&gt;
+&lt;li&gt;adv.
+&lt;/li&gt;
+&lt;li&gt;分词
+&lt;/li&gt;
+&lt;li&gt;名词（无冠词）
+&lt;/li&gt;
+&lt;li&gt;短语
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
++as+主语+谓语动词
+&lt;/p&gt;
+
+&lt;p&gt;
+Young as he is,he is knowledgeable.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-4-7" class="outline-4"&gt;
+&lt;h4 id="sec-2-4-7"&gt;&lt;span class="section-number-4"&gt;2.4.7&lt;/span&gt; 比较状语从句&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-4-7"&gt;
+&lt;/div&gt;&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-2-4-7-1" name="sec-2-4-7-1"&gt;&lt;/a&gt;连词as的基本用法&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-4-7-1"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;as + 形容词或副词 + as
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;The work is not as difficult as you think.
+&lt;/li&gt;
+&lt;li&gt;Eyes are as eloquent as lips(are).注意这种省略用法
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;as + 形容词 + a(n) + 可数名词单数 + as
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Rarely has a technological development had as great an
+impact on so many aspects of social,economic,and cultural
+development as the growth of electronics.
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;在否定句中第一个as可以用so代替
+This room is not so large as the one we saw yesterday.
+上句也是一个分句的省略用法。
+This room is not so large as the one we saw yesterday(is).
+&lt;/li&gt;
+&lt;li&gt;为了保持句子平衡，从句还可以用倒桩结构。
+Small as it is,the ant is as much a creature as are all other
+animals on the earth.
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-4-7-2" name="sec-2-4-7-2"&gt;&lt;/a&gt;连词than的基本用法&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-4-7-2"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;相同的食物才有可比性
+&lt;/li&gt;
+&lt;li&gt;主句中要有比较级
+&lt;/li&gt;
+&lt;li&gt;从句常有省略用法
+He is taller than I (am).
+&lt;/li&gt;
+&lt;li&gt;为了保持句子平衡，从句还可以用全部或部分倒桩。
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-4-7-3" name="sec-2-4-7-3"&gt;&lt;/a&gt;表示倍数比较的三种句型结构&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-4-7-3"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;倍数+比较级
+A is three times bigger than B
+&lt;/li&gt;
+&lt;li&gt;倍数+as&amp;#x2026;as
+A is three times as big as B
+&lt;/li&gt;
+&lt;li&gt;倍数+名词
+A is three times the size of B
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-4-7-4" name="sec-2-4-7-4"&gt;&lt;/a&gt;the more&amp;#x2026;,the more句型&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-4-7-4"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;要注意比较级部分都须在歌词的分句中充当一定的成分，换句话说，相当于是将分句中的某个成分变为比较级之后提到了句首。
+&lt;/li&gt;
+&lt;li&gt;注意有省略句的用法。
+Friends are lights in winter:the older the friend,the brighter
+the light.
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-4-8" class="outline-4"&gt;
+&lt;h4 id="sec-2-4-8"&gt;&lt;span class="section-number-4"&gt;2.4.8&lt;/span&gt; 方式状语从句&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-4-8"&gt;
+&lt;p&gt;
+as,like,as if, as though,the way
+Do it the way you were taught.这里the way是个连词，the way既不是主句中的成分，也不是分句中的成分，因此这个句子不是名词性从句也不是定语从句，而是状语从句，因此the way是个连词。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-5" class="outline-3"&gt;
+&lt;h3 id="sec-2-5"&gt;&lt;span class="section-number-3"&gt;2.5&lt;/span&gt; 完成时态&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-5"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-2-5-1" class="outline-4"&gt;
+&lt;h4 id="sec-2-5-1"&gt;&lt;span class="section-number-4"&gt;2.5.1&lt;/span&gt; 回顾思维&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-5-1"&gt;
+&lt;p&gt;
+书中反复说完成时态的核心意义是回顾性思维，自己理解的什么是回顾？就是快要结束了，还没结束，还在那个状态，对之前的事情做个回顾总结。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-5-2" class="outline-4"&gt;
+&lt;h4 id="sec-2-5-2"&gt;&lt;span class="section-number-4"&gt;2.5.2&lt;/span&gt; 延续事件&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-5-2"&gt;
+&lt;p&gt;
+一个开始于过去的动作或状态一直延续到现在，而且还可能继续持续下去。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;谓语要是延续性的，能够表示延续的意思，不能是短暂的。要注意并不是完成式不能用表示短暂的谓语，而是因为表示延续事件的完成式必须要有延续性的时间状语，短暂谓语于延续性时间状语会有冲突。
+&lt;/li&gt;
+&lt;li&gt;如上所说，完成式表达延续到现在的意思须要用延续性的时间状语连用
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;since + 时间点或从句
+Since time began,man has lived in fear of fire.
+&lt;/li&gt;
+&lt;li&gt;for + 时间段
+Great changes have taken place in Beijing for the past few years.
+&lt;/li&gt;
+&lt;li&gt;到目前为止，迄今为止，until now,up unitl now,up to now,up till
+now,so far
+&lt;/li&gt;
+&lt;li&gt;在最近几个/年/月以来，int the past few years,over the past few
+years,during the last three months,for the last few
+centuries,throught centuries,throughout history.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;完成式没有延续性时间状语，则表示一个“完成了”的动作，在过去已经完成的动作，而没有持续到现在。另外要注意上下文语境。
+Where has John lived since he left Beijing?
+He has lived in Paris.
+这里虽然没有延续性时间状语，但根据上下文语境可以看出是省略了
+since&amp;#x2026;因此是表示延续性的意思。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I have been a school teacher for 28 years now.
+我当老师到现在有28年了。
+&lt;/li&gt;
+&lt;li&gt;I have been a school teacher.
+我曾经是个老师。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;&lt;span class="section-number-2"&gt;3&lt;/span&gt; 思考和总结&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-3-1" class="outline-3"&gt;
+&lt;h3 id="sec-3-1"&gt;&lt;span class="section-number-3"&gt;3.1&lt;/span&gt; 目前总结的的英语学习的几个关键点&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3-1"&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;名次的单复数
 &lt;/li&gt;
@@ -2964,6 +5574,185 @@ england的queen
 &lt;li&gt;不要被词性所限制，而要重点从词或者词组或短语在句子中起到的作用来学习和理解词，比如名词也是可以做定语的，重点在于这个词起的作用，而不是他的词性限制他能做什么不能做什么；还有不定式短语做宾语，补语之类；分词做主语之类，都是类似的。
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3-2" class="outline-3"&gt;
+&lt;h3 id="sec-3-2"&gt;&lt;span class="section-number-3"&gt;3.2&lt;/span&gt; 方法，哲学&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3-2"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;一个形式，一个句子，一个单词的构造，能够识别一种形式
+&lt;/li&gt;
+&lt;li&gt;上述的形式能够表达什么含义，这个含义和现实生活中什么场景同构，想表达什么意思的时候可以使用？
+&lt;/li&gt;
+&lt;li&gt;英语思维中都有哪些思维方式，表达方式，哪些武器可以用？
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;冠词
+&lt;/li&gt;
+&lt;li&gt;单复数
+&lt;/li&gt;
+&lt;li&gt;词形变化
+&lt;/li&gt;
+&lt;li&gt;时态
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;积累经典好句好词，在想表达这个意思的时候可以使用，不能盲目造句，想当然的用词，得看有没有过这样的用法
+&lt;/li&gt;
+&lt;li&gt;像学一门新的编程语言一样学英语
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3-3" class="outline-3"&gt;
+&lt;h3 id="sec-3-3"&gt;&lt;span class="section-number-3"&gt;3.3&lt;/span&gt; 时态总结&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3-3"&gt;
+&lt;p&gt;
+学习时态很大的启示是要区分开动作的发生时间和动作的性质，也就是“时”和“体”，下面的总结就从这两个方面总结无代表没有具体的发生时间，只是描述一个概念，不是真的发生了这个动作，这个动作可能发生在过去现在将来任何时间，表达的重点不是动作的发生，而是动作这个概念本身。
+&lt;/p&gt;
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class="left"&gt;完整的，不发展变化的，不持续的，短暂的或瞬时的&lt;/td&gt;
+&lt;td class="left"&gt;不发展变化的，持续的动作&lt;/td&gt;
+&lt;td class="left"&gt;会发展变化的，因为可发展变化所以一般持续时间相对较长&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;无（概念描述）&lt;/td&gt;
+&lt;td class="left"&gt;现在一般式(1,2,3,8,9)&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;概念描述也存在过去的情况，但很少&lt;/td&gt;
+&lt;td class="left"&gt;过去一般式时&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;过去&lt;/td&gt;
+&lt;td class="left"&gt;过去一般式&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;过去开始 过去结束&lt;/td&gt;
+&lt;td class="left"&gt;过去一般式，表示多次，重复，或习惯&lt;/td&gt;
+&lt;td class="left"&gt;过去一般式&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;过去开始持续到现在还没结束&lt;/td&gt;
+&lt;td class="left"&gt;现在完成式，表示多次，还在重复，习惯还没变&lt;/td&gt;
+&lt;td class="left"&gt;现在完成式，表示没有打算改变&lt;/td&gt;
+&lt;td class="left"&gt;现在完成进行式，表示准备，打算做些改变&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;现在&lt;/td&gt;
+&lt;td class="left"&gt;现在一般式&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class="left"&gt;现在进行式，现在开始，可能有变&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;The earth moves around the sun.
+客观真理
+&lt;/li&gt;
+&lt;li&gt;He walks to school every day.
+概念描述，观点
+&lt;/li&gt;
+&lt;li&gt;I swim 1,000 meters every afternoon.
+习惯，经常重复发生的，也可以说是概念描述
+&lt;/li&gt;
+&lt;li&gt;Here comes your wife.
+这里是已经看到了，是现在发生的动作，从看到到来到已经很短暂，而且一般我们人为已经不会再有发展变化了。
+&lt;/li&gt;
+&lt;li&gt;Michael passes to Clint.Clint to Jack,Jack back to Clint&amp;#x2013;and
+Clint shoots&amp;#x2013;and it's a goal!
+球赛解说
+&lt;/li&gt;
+&lt;li&gt;The woman is a spy,now she enters the room,opens the
+drawer,takes out a pistol and slips it into her pocket.
+剧情说明。这里要注意一下，书上是放在了这里，但本身也有点像是表达概念，不知道什么时候发生的动作，我觉得两个理解都可以，总之不会与其他时态混淆，类似这样的表达在讲剧情，讲经过（注意区分讲故事）理解成现在发生的动作会很有代入感。
+&lt;/li&gt;
+&lt;li&gt;Please let me know when he comes back.
+这里特别有意思，when引导的时间状语从句要表达的概念是时间，相当于是把时态倒着用，一般讲时态我们是讲什么时候发生的什么动作，表达时间概念的时候可以利用动作表达时间，这和时态本身的意义完全相符。这里对一般现在时中的“现在”理解就更加深刻了，这个“现在”在表达时间概念时指的是动作正在发生的时刻。
+&lt;pre class="example"&gt;
+“现在”的概念，给一个时间点，动作就在这个时间点发生，两者没有前后关系
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;The train starts at 2 o'ckock.
+这个就更加在说明上面的意义了，给了一个2 o'clock的时间点，start就发生在这个时间点，而且动作短暂，完整，整个事情具有一贯性，客观的，整个事情过去是这样，现在是这样，将来也是这样，这里更像是在说火车
+2点发车这个概念本身，而不是发车这个具体动作。
+&lt;/li&gt;
+&lt;li&gt;They leave for Shanghai by train tomorrow evening.
+They will leave for Shanghai by train tomorrow evening.这句是我自己写的，上面是书上的，我自己思考，这两个具体表达的含义是有细微差别的，一般现在时的表达重点在于这个事情本身，这个概念，我在说这个事儿，而一般将来时的表述方式表达重点在于leave这个动作。
+&lt;/li&gt;
+&lt;li&gt;Your wife is coming.
+这里是知道你的妻子正在来，你妻子正在来这个动作也是现在发生的，在来的路上，可能在准备，可能已经在路上，总之只是知道但还没有那么确定它的不可变性，比如没有看到，这个动作持续时间可能会相对较长，而且有发展变化的可能，比如中途改变主意了。
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3-4" class="outline-3"&gt;
+&lt;h3 id="sec-3-4"&gt;&lt;span class="section-number-3"&gt;3.4&lt;/span&gt; 时态另外一个总结思路&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3-4"&gt;
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+
+&lt;col  class="left" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;时态&lt;/td&gt;
+&lt;td class="left"&gt;动词性质&lt;/td&gt;
+&lt;td class="left"&gt;明确的或隐含的给出时间&lt;/td&gt;
+&lt;td class="left"&gt;表达的意义&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;td class="left"&gt;&amp;#xa0;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </content><category term="未分类"></category><category term="english"></category></entry><entry><title>RecyclerView的onBindHolder与onViewAttachToWindow</title><link href="http://www.iknockdoor.com/RecyclerView%E7%9A%84onBindHolder%E4%B8%8EonViewAttachToWindow.html" rel="alternate"></link><published>2018-12-10T00:00:00+08:00</published><updated>2018-12-10T00:00:00+08:00</updated><author><name>chappie</name></author><id>tag:www.iknockdoor.com,2018-12-10:/RecyclerView的onBindHolder与onViewAttachToWindow.html</id><content type="html">&lt;p&gt;
@@ -7923,9 +10712,7 @@ TODO List是用来做待办事项管理的，了解GTD的同学会很熟悉。Or
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
-总之可能是最好的todo list管理工具了。
-TODO的实现是基于headline的，他在headline的头部通过插入关键字的方式标记TODO不同的状态。
-todo的功能本质上是在一组关键字和无关键字之间轮换，然后通过一个竖线区分成了两个状态，如果没有提供竖线最后一个关键字就作为和前面不同的状态。这个状态只是在agent view中使用判断出现和不出现而已。通过上面这种机制，可以当成几种工具来用
+总之可能是最好的todo list管理工具了。TODO的实现是基于headline的，他在headline的头部通过插入关键字的方式标记TODO不同的状态。todo的功能本质上是在一组关键字和无关键字之间轮换，然后通过一个竖线区分成了两个状态，如果没有提供竖线最后一个关键字就作为和前面不同的状态。这个状态只是在agent view中使用判断出现和不出现而已。通过上面这种机制，可以当成几种工具来用
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;也是最基本的，在待办与完成之间切换
@@ -8009,8 +10796,8 @@ todo的功能本质上是在一组关键字和无关键字之间轮换，然后�
 &lt;/p&gt;
 &lt;div class="org-src-container"&gt;
 
-&lt;pre class="src src-elisp"&gt;(&lt;span class="org-keyword"&gt;setq&lt;/span&gt; org-todo-keywords
-'((sequence &lt;span class="org-string"&gt;"TODO"&lt;/span&gt; &lt;span class="org-string"&gt;"FEEDBACK"&lt;/span&gt; &lt;span class="org-string"&gt;"VERIFY"&lt;/span&gt; &lt;span class="org-string"&gt;"|"&lt;/span&gt; &lt;span class="org-string"&gt;"DONE"&lt;/span&gt; &lt;span class="org-string"&gt;"DELEGATED"&lt;/span&gt;)))
+&lt;pre class="src src-elisp"&gt;(&lt;span class="org-keyword"&gt;setq&lt;/span&gt; org-todo-keywords '((sequence &lt;span class="org-string"&gt;"TODO"&lt;/span&gt; &lt;span class="org-string"&gt;"FEEDBACK"&lt;/span&gt; &lt;span class="org-string"&gt;"VERIFY"&lt;/span&gt; &lt;span class="org-string"&gt;"|"&lt;/span&gt;
+&lt;span class="org-string"&gt;"DONE"&lt;/span&gt; &lt;span class="org-string"&gt;"DELEGATED"&lt;/span&gt;)))
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -8019,11 +10806,9 @@ todo的功能本质上是在一组关键字和无关键字之间轮换，然后�
 &lt;h2 id="sec-4"&gt;如果想同时用几组关键字怎么办？&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-4"&gt;
 &lt;p&gt;
-可以同时定义多组关键字，快捷键会不太一样，最简单的s-left/s-right，其他可以查看文档。如下方式定义多组关键字
-(setq org-todo-keywords
-         '((sequence "TODO" "|" "DONE")
-           (sequence "REPORT" "BUG" "KNOWNCAUSE" "|" "FIXED")
-           (sequence "|" "CANCELED")))
+可以同时定义多组关键字，快捷键会不太一样，最简单的s-left/s-right，其他可以查看文档。如下方式定义多组关键字(setq org-todo-keywords
+'((sequence "TODO" "|" "DONE") (sequence "REPORT" "BUG" "KNOWNCAUSE"
+"|" "FIXED") (sequence "|" "CANCELED")))
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -8031,12 +10816,9 @@ todo的功能本质上是在一组关键字和无关键字之间轮换，然后�
 &lt;h2 id="sec-5"&gt;todo状态总是轮流切换，如果状态一多会太慢，这样就可以定义状态快捷键&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-5"&gt;
 &lt;p&gt;
-设置org-use-fast-todo-selection为非nil
-或者c-u c-c c-t强制弹出选择设置状态快捷键
-(setq org-todo-keywords
-         '((sequence "TODO(t)" "|" "DONE(d)")
-           (sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
-           (sequence "|" "CANCELED(c)")))
+设置org-use-fast-todo-selection为非nil或者c-u c-c c-t强制弹出选择设置状态快捷键(setq org-todo-keywords '((sequence "TODO(t)" "|"
+"DONE(d)") (sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|"
+"FIXED(f)") (sequence "|" "CANCELED(c)")))
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -8060,8 +10842,8 @@ todo的功能本质上是在一组关键字和无关键字之间轮换，然后�
 &lt;h2 id="sec-7"&gt;一项要做的事情可能可以细分为几个步骤，如何实现分步呢？&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-7"&gt;
 &lt;p&gt;
-两种方法，一个是通过headline的级别关系，另外一种是通过checkbox，我更倾向于用checkbox。另外用&lt;code&gt;[/]&lt;/code&gt;&lt;code&gt;[%]&lt;/code&gt;可以显示进度。
-C-c C-c org-toggle-checkbox可以修改checkbox状态
+两种方法，一个是通过headline的级别关系，另外一种是通过checkbox，我更倾向于用checkbox。另外用&lt;code&gt;[/]&lt;/code&gt;&lt;code&gt;[%]&lt;/code&gt;可以显示进度。C-c C-c
+org-toggle-checkbox可以修改checkbox状态
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -8073,15 +10855,13 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 &lt;/p&gt;
 &lt;pre class="example"&gt;
 * TODO Blocked until (two) is done
-** DONE one
-** TODO two
+** DONE one TODO two
 * Parent
      :PROPERTIES:
      :ORDERED: t
      :END:
-** TODO a
-** TODO b, needs to wait for (a)
-** TODO c, needs to wait for (a) and (b)
+** TODO a TODO b, needs to wait for (a) TODO c, needs to wait for
+** (a) and (b)
 &lt;/pre&gt;
 &lt;p&gt;
 插入ordered properties快捷键C-c C-x o
@@ -8096,8 +10876,8 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 &lt;div class="outline-text-3" id="text-9-1"&gt;
 &lt;div class="org-src-container"&gt;
 
-&lt;pre class="src src-elisp"&gt;(&lt;span class="org-keyword"&gt;setq&lt;/span&gt; org-log-done 'time) &lt;span class="org-comment-delimiter"&gt;;;&lt;/span&gt;&lt;span class="org-comment"&gt;&amp;#30456;&amp;#21516;&amp;#30340;in-buffer settings #+STARTUP: logdone&lt;/span&gt;
-(&lt;span class="org-keyword"&gt;setq&lt;/span&gt; org-log-done 'note) &lt;span class="org-comment-delimiter"&gt;;;&lt;/span&gt;&lt;span class="org-comment"&gt;#+STARTUP: lognotedone&lt;/span&gt;
+&lt;pre class="src src-elisp"&gt;(&lt;span class="org-keyword"&gt;setq&lt;/span&gt; org-log-done 'time) &lt;span class="org-comment-delimiter"&gt;;;&lt;/span&gt;&lt;span class="org-comment"&gt;&amp;#30456;&amp;#21516;&amp;#30340;in-buffer settings #+STARTUP:&lt;/span&gt;
+logdone (&lt;span class="org-keyword"&gt;setq&lt;/span&gt; org-log-done 'note) &lt;span class="org-comment-delimiter"&gt;;;&lt;/span&gt;&lt;span class="org-comment"&gt;#+STARTUP: lognotedone&lt;/span&gt;
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;p&gt;
@@ -8113,13 +10893,10 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 &lt;/p&gt;
 &lt;div class="org-src-container"&gt;
 
-&lt;pre class="src src-elisp"&gt;(&lt;span class="org-keyword"&gt;setq&lt;/span&gt; org-todo-keywords
-'((sequence &lt;span class="org-string"&gt;"TODO(t)"&lt;/span&gt; &lt;span class="org-string"&gt;"WAIT(w@/!)"&lt;/span&gt; &lt;span class="org-string"&gt;"|"&lt;/span&gt; &lt;span class="org-string"&gt;"DONE(d!)"&lt;/span&gt; &lt;span class="org-string"&gt;"CANCELED(c@)"&lt;/span&gt;)))
-&lt;span class="org-comment-delimiter"&gt;;;&lt;/span&gt;&lt;span class="org-comment"&gt;&amp;#25110;&amp;#32773;&amp;#29992;in-buffer settings&lt;/span&gt;
-&lt;span class="org-comment-delimiter"&gt;;;&lt;/span&gt;&lt;span class="org-comment"&gt;#+TODO: TODO(t) WAIT(w@/!) | DONE(d!) CANCELED(c@)&lt;/span&gt;
-&lt;span class="org-comment-delimiter"&gt;;;&lt;/span&gt;&lt;span class="org-comment"&gt;&amp;#20877;&amp;#25110;&amp;#32773;&amp;#29992;property&lt;/span&gt;
-&lt;span class="org-comment-delimiter"&gt;;;&lt;/span&gt;&lt;span class="org-comment"&gt;:PROPERTIES:&lt;/span&gt;
-&lt;span class="org-comment-delimiter"&gt;;;&lt;/span&gt;&lt;span class="org-comment"&gt;:LOGGING: TODO(!) WAIT(!) DONE(!) CANCELED(!)&lt;/span&gt;
+&lt;pre class="src src-elisp"&gt;(&lt;span class="org-keyword"&gt;setq&lt;/span&gt; org-todo-keywords '((sequence &lt;span class="org-string"&gt;"TODO(t)"&lt;/span&gt; &lt;span class="org-string"&gt;"WAIT(w@/!)"&lt;/span&gt; &lt;span class="org-string"&gt;"|"&lt;/span&gt;
+&lt;span class="org-string"&gt;"DONE(d!)"&lt;/span&gt; &lt;span class="org-string"&gt;"CANCELED(c@)"&lt;/span&gt;))) &lt;span class="org-comment-delimiter"&gt;;;&lt;/span&gt;&lt;span class="org-comment"&gt;&amp;#25110;&amp;#32773;&amp;#29992;in-buffer settings ;;#+TODO:&lt;/span&gt;
+TODO(t) WAIT(w@/!) | DONE(d!) CANCELED(c@) &lt;span class="org-comment-delimiter"&gt;;;&lt;/span&gt;&lt;span class="org-comment"&gt;&amp;#20877;&amp;#25110;&amp;#32773;&amp;#29992;property&lt;/span&gt;
+&lt;span class="org-comment-delimiter"&gt;;;&lt;/span&gt;&lt;span class="org-comment"&gt;:PROPERTIES: ;;:LOGGING: TODO(!) WAIT(!) DONE(!) CANCELED(!)&lt;/span&gt;
 &lt;span class="org-comment-delimiter"&gt;;;&lt;/span&gt;&lt;span class="org-comment"&gt;:END:&lt;/span&gt;
 &lt;/pre&gt;
 &lt;/div&gt;
@@ -8132,7 +10909,8 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 &lt;h3 id="sec-9-3"&gt;把记录做在指定的Drawer中&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-9-3"&gt;
 &lt;p&gt;
-如果状态变更历史太多，放在一个Drawer中收起来会好看很多。设置org-log-into-drawer，指定笔记放在那个Drawer，一般指定为LOGBOOK，会在aganda view生效。
+如果状态变更历史太多，放在一个Drawer中收起来会好看很多。设置
+org-log-into-drawer，指定笔记放在那个Drawer，一般指定为LOGBOOK，会在aganda view生效。
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -8155,8 +10933,7 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 * TODO [#A] Write letter to Sam Fortune
 &lt;/pre&gt;
 &lt;p&gt;
-C-c , 添加优先级
-S-up/down 调整优先级
+C-c , 添加优先级S-up/down 调整优先级
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -8167,13 +10944,12 @@ S-up/down 调整优先级
 &lt;h3 id="sec-12-1"&gt;tags的基本信息&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-12-1"&gt;
 &lt;p&gt;
-标签可以根据TODO headline的结构关系继承。
-tags大概长这个样子：
+标签可以根据TODO headline的结构关系继承。tags大概长这个样子：
 &lt;/p&gt;
 &lt;pre class="example"&gt;
 * Meeting with the French group  :work:
-** Summary by Frank              :boss:notes:
-*** TODO Prepare slides for him  :action:
+** Summary by Frank :boss:notes: * TODO Prepare slides for
+**him :action:
 &lt;/pre&gt;
 &lt;p&gt;
 可以通过in-buffer settings设置文件的tag，所有的todo都会继承
@@ -8228,8 +11004,8 @@ tags大概长这个样子：
 &lt;h3 id="sec-12-3"&gt;定义tags&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-12-3"&gt;
 &lt;p&gt;
-默认tags列表是动态的，你写什么就有什么，也可以通过设置org-tag-alist定义一个固定的tag
-list，类似TODO的定义，可以全局，可以文件
+默认tags列表是动态的，你写什么就有什么，也可以通过设置org-tag-alist
+定义一个固定的tag list，类似TODO的定义，可以全局，可以文件
 &lt;/p&gt;
 &lt;pre class="example"&gt;
 #+TAGS: @work @home @tennisclub
@@ -8241,7 +11017,8 @@ list，类似TODO的定义，可以全局，可以文件
 &lt;h3 id="sec-12-4"&gt;定义tag快捷键，很简单同TODO&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-12-4"&gt;
 &lt;pre class="example"&gt;
-(setq org-tag-alist '(("@work" . ?w) ("@home" . ?h) ("laptop" . ?l)))
+(setq org-tag-alist '(("@work" . ?w) ("@home" . ?h) ("laptop"
+. ?l)))
 #+TAGS: @work(w)  @home(h)  @tennisclub(t)  laptop(l)  pc(p)
 &lt;/pre&gt;
 &lt;/div&gt;
@@ -8254,11 +11031,9 @@ list，类似TODO的定义，可以全局，可以文件
 &lt;/p&gt;
 &lt;pre class="example"&gt;
 #+TAGS: { @work(w)  @home(h)  @tennisclub(t) }  laptop(l)  pc(p)
-(setq org-tag-alist '((:startgroup . nil)
-                        ("@work" . ?w) ("@home" . ?h)
-                        ("@tennisclub" . ?t)
-                        (:endgroup . nil)
-                        ("laptop" . ?l) ("pc" . ?p)))
+(setq org-tag-alist '((:startgroup . nil) ("@work" . ?w) ("@home"
+                        . ?h) ("@tennisclub" . ?t) (:endgroup
+                        . nil) ("laptop" . ?l) ("pc" . ?p)))
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -8272,20 +11047,10 @@ list，类似TODO的定义，可以全局，可以文件
 #+TAGS: [ GTD : Control Persp ]
 #+TAGS: [ Control : Context Task ]
 #+TAGS: [ Persp : Vision Goal AOF Project ]
-;;使用全局设置
-(setq org-tag-alist '((:startgrouptag)
-                        ("GTD")
-                        (:grouptags)
-                        ("Control")
-                        ("Persp")
-                        (:endgrouptag)
-                        (:startgrouptag)
-                        ("Control")
-                        (:grouptags)
-                        ("Context")
-                        ("Task")
-                        (:endgrouptag)))
-;;使用正则
+;;使用全局设置(setq org-tag-alist '((:startgrouptag) ("GTD")
+(:grouptags) ("Control") ("Persp") (:endgrouptag) (:startgrouptag)
+("Control") (:grouptags) ("Context") ("Task") (:endgrouptag))) ;;使
+用正则
 #+TAGS: [ Vision : {V@.+} ]
 #+TAGS: [ Goal : {G@.+} ]
 #+TAGS: [ AOF : {AOF@.+} ]
@@ -8372,8 +11137,7 @@ list，类似TODO的定义，可以全局，可以文件
 &lt;/p&gt;
 &lt;pre class="example"&gt;
 * CD collection
-  ** Classic
-  *** Goldberg Variations
+  ** Classic * Goldberg Variations
       :PROPERTIES:
       :Title:     Goldberg Variations
       :Composer:  J.S. Bach
@@ -8383,8 +11147,7 @@ list，类似TODO的定义，可以全局，可以文件
       :END:
 &lt;/pre&gt;
 &lt;p&gt;
-可以为一个key的value范围做限制，例如为:Xyz:做取值限定，只需要定义:Xyz_ALL:
-可以在文件范围内内定义属性和限制取值范围，如下：
+可以为一个key的value范围做限制，例如为:Xyz:做取值限定，只需要定义:Xyz_ALL:可以在文件范围内内定义属性和限制取值范围，如下：
 &lt;/p&gt;
 &lt;pre class="example"&gt;
 #+PROPERTY: NDisks_ALL 1 2 3 4
@@ -8498,7 +11261,7 @@ column定义的语法如下：
 &lt;h4 id="sec-13-5-2"&gt;一个定义和使用column view的例子&lt;/h4&gt;
 &lt;div class="outline-text-4" id="text-13-5-2"&gt;
 &lt;pre class="example"&gt;
-*** 例子 
+*** 例子
 :PROPERTIES:
 :COLUMNS: %25ITEM %9Approved(Approved?){X} %Owner %11Status \4 %10Time_Estimate{:} %CLOCKSUM %CLOCKSUM_T
 :Owner_ALL:    Tammy Mark Karl Lisa Don
@@ -8661,8 +11424,7 @@ column定义的语法如下：
 &lt;span class="timestamp-wrapper"&gt;&lt;span class="timestamp"&gt;&amp;lt;2017-08-07 Mon 10:42 +1w&amp;gt;&lt;/span&gt;&lt;/span&gt;
 &lt;/li&gt;
 &lt;li&gt;日历表达式表示的时间，这里没看太懂，应该是要结合emacs
-calendar/diary package一起使用，形式如下：
-&lt;span class="timestamp-wrapper"&gt;&lt;span class="timestamp"&gt;&amp;lt;%%(diary-float t 4 2)&amp;gt;&lt;/span&gt;&lt;/span&gt;
+calendar/diary package一起使用，形式如下：&lt;span class="timestamp-wrapper"&gt;&lt;span class="timestamp"&gt;&amp;lt;%%(diary-float t 4 2)&amp;gt;&lt;/span&gt;&lt;/span&gt;
 &lt;/li&gt;
 &lt;li&gt;时间段，时间范围
 &lt;span class="timestamp-wrapper"&gt;&lt;span class="timestamp"&gt;&amp;lt;2017-08-07 一 10:46&amp;gt;&amp;#x2013;&amp;lt;2017-08-08 二 10:46&amp;gt;&lt;/span&gt;&lt;/span&gt;
@@ -9383,7 +12145,7 @@ GitHub
 &lt;div class="outline-text-2" id="text-3"&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;&lt;code&gt;[X]&lt;/code&gt; 修改插入meta信息（即titile，date这些信息）的模版，目前是交互式的，比较容易打断思路。改成固定的，想修改时再修改。TAGS默认未分类，KEYWORDS
-默认chappie，查派
+默认
 &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;[&amp;#xa0;]&lt;/code&gt; 自动文件名和标题，在开始记笔记的时候思考标题和文件名非常容易打断思路。所以应该可以自动生成文件名和标题，后面可以再改。
 &lt;/li&gt;

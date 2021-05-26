@@ -75,9 +75,7 @@ TODO List是用来做待办事项管理的，了解GTD的同学会很熟悉。Or
 </li>
 </ul>
 <p>
-总之可能是最好的todo list管理工具了。
-TODO的实现是基于headline的，他在headline的头部通过插入关键字的方式标记TODO不同的状态。
-todo的功能本质上是在一组关键字和无关键字之间轮换，然后通过一个竖线区分成了两个状态，如果没有提供竖线最后一个关键字就作为和前面不同的状态。这个状态只是在agent view中使用判断出现和不出现而已。通过上面这种机制，可以当成几种工具来用
+总之可能是最好的todo list管理工具了。TODO的实现是基于headline的，他在headline的头部通过插入关键字的方式标记TODO不同的状态。todo的功能本质上是在一组关键字和无关键字之间轮换，然后通过一个竖线区分成了两个状态，如果没有提供竖线最后一个关键字就作为和前面不同的状态。这个状态只是在agent view中使用判断出现和不出现而已。通过上面这种机制，可以当成几种工具来用
 </p>
 <ul class="org-ul">
 <li>也是最基本的，在待办与完成之间切换
@@ -161,8 +159,8 @@ todo的功能本质上是在一组关键字和无关键字之间轮换，然后�
 </p>
 <div class="org-src-container">
 
-<pre class="src src-elisp">(<span class="org-keyword">setq</span> org-todo-keywords
-'((sequence <span class="org-string">"TODO"</span> <span class="org-string">"FEEDBACK"</span> <span class="org-string">"VERIFY"</span> <span class="org-string">"|"</span> <span class="org-string">"DONE"</span> <span class="org-string">"DELEGATED"</span>)))
+<pre class="src src-elisp">(<span class="org-keyword">setq</span> org-todo-keywords '((sequence <span class="org-string">"TODO"</span> <span class="org-string">"FEEDBACK"</span> <span class="org-string">"VERIFY"</span> <span class="org-string">"|"</span>
+<span class="org-string">"DONE"</span> <span class="org-string">"DELEGATED"</span>)))
 </pre>
 </div>
 </div>
@@ -171,11 +169,9 @@ todo的功能本质上是在一组关键字和无关键字之间轮换，然后�
 <h2 id="sec-4">如果想同时用几组关键字怎么办？</h2>
 <div class="outline-text-2" id="text-4">
 <p>
-可以同时定义多组关键字，快捷键会不太一样，最简单的s-left/s-right，其他可以查看文档。如下方式定义多组关键字
-(setq org-todo-keywords
-         '((sequence "TODO" "|" "DONE")
-           (sequence "REPORT" "BUG" "KNOWNCAUSE" "|" "FIXED")
-           (sequence "|" "CANCELED")))
+可以同时定义多组关键字，快捷键会不太一样，最简单的s-left/s-right，其他可以查看文档。如下方式定义多组关键字(setq org-todo-keywords
+'((sequence "TODO" "|" "DONE") (sequence "REPORT" "BUG" "KNOWNCAUSE"
+"|" "FIXED") (sequence "|" "CANCELED")))
 </p>
 </div>
 </div>
@@ -183,12 +179,9 @@ todo的功能本质上是在一组关键字和无关键字之间轮换，然后�
 <h2 id="sec-5">todo状态总是轮流切换，如果状态一多会太慢，这样就可以定义状态快捷键</h2>
 <div class="outline-text-2" id="text-5">
 <p>
-设置org-use-fast-todo-selection为非nil
-或者c-u c-c c-t强制弹出选择设置状态快捷键
-(setq org-todo-keywords
-         '((sequence "TODO(t)" "|" "DONE(d)")
-           (sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")
-           (sequence "|" "CANCELED(c)")))
+设置org-use-fast-todo-selection为非nil或者c-u c-c c-t强制弹出选择设置状态快捷键(setq org-todo-keywords '((sequence "TODO(t)" "|"
+"DONE(d)") (sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|"
+"FIXED(f)") (sequence "|" "CANCELED(c)")))
 </p>
 </div>
 </div>
@@ -212,8 +205,8 @@ todo的功能本质上是在一组关键字和无关键字之间轮换，然后�
 <h2 id="sec-7">一项要做的事情可能可以细分为几个步骤，如何实现分步呢？</h2>
 <div class="outline-text-2" id="text-7">
 <p>
-两种方法，一个是通过headline的级别关系，另外一种是通过checkbox，我更倾向于用checkbox。另外用<code>[/]</code><code>[%]</code>可以显示进度。
-C-c C-c org-toggle-checkbox可以修改checkbox状态
+两种方法，一个是通过headline的级别关系，另外一种是通过checkbox，我更倾向于用checkbox。另外用<code>[/]</code><code>[%]</code>可以显示进度。C-c C-c
+org-toggle-checkbox可以修改checkbox状态
 </p>
 </div>
 </div>
@@ -225,15 +218,13 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 </p>
 <pre class="example">
 * TODO Blocked until (two) is done
-** DONE one
-** TODO two
+** DONE one TODO two
 * Parent
      :PROPERTIES:
      :ORDERED: t
      :END:
-** TODO a
-** TODO b, needs to wait for (a)
-** TODO c, needs to wait for (a) and (b)
+** TODO a TODO b, needs to wait for (a) TODO c, needs to wait for
+** (a) and (b)
 </pre>
 <p>
 插入ordered properties快捷键C-c C-x o
@@ -248,8 +239,8 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 <div class="outline-text-3" id="text-9-1">
 <div class="org-src-container">
 
-<pre class="src src-elisp">(<span class="org-keyword">setq</span> org-log-done 'time) <span class="org-comment-delimiter">;;</span><span class="org-comment">&#30456;&#21516;&#30340;in-buffer settings #+STARTUP: logdone</span>
-(<span class="org-keyword">setq</span> org-log-done 'note) <span class="org-comment-delimiter">;;</span><span class="org-comment">#+STARTUP: lognotedone</span>
+<pre class="src src-elisp">(<span class="org-keyword">setq</span> org-log-done 'time) <span class="org-comment-delimiter">;;</span><span class="org-comment">&#30456;&#21516;&#30340;in-buffer settings #+STARTUP:</span>
+logdone (<span class="org-keyword">setq</span> org-log-done 'note) <span class="org-comment-delimiter">;;</span><span class="org-comment">#+STARTUP: lognotedone</span>
 </pre>
 </div>
 <p>
@@ -265,13 +256,10 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 </p>
 <div class="org-src-container">
 
-<pre class="src src-elisp">(<span class="org-keyword">setq</span> org-todo-keywords
-'((sequence <span class="org-string">"TODO(t)"</span> <span class="org-string">"WAIT(w@/!)"</span> <span class="org-string">"|"</span> <span class="org-string">"DONE(d!)"</span> <span class="org-string">"CANCELED(c@)"</span>)))
-<span class="org-comment-delimiter">;;</span><span class="org-comment">&#25110;&#32773;&#29992;in-buffer settings</span>
-<span class="org-comment-delimiter">;;</span><span class="org-comment">#+TODO: TODO(t) WAIT(w@/!) | DONE(d!) CANCELED(c@)</span>
-<span class="org-comment-delimiter">;;</span><span class="org-comment">&#20877;&#25110;&#32773;&#29992;property</span>
-<span class="org-comment-delimiter">;;</span><span class="org-comment">:PROPERTIES:</span>
-<span class="org-comment-delimiter">;;</span><span class="org-comment">:LOGGING: TODO(!) WAIT(!) DONE(!) CANCELED(!)</span>
+<pre class="src src-elisp">(<span class="org-keyword">setq</span> org-todo-keywords '((sequence <span class="org-string">"TODO(t)"</span> <span class="org-string">"WAIT(w@/!)"</span> <span class="org-string">"|"</span>
+<span class="org-string">"DONE(d!)"</span> <span class="org-string">"CANCELED(c@)"</span>))) <span class="org-comment-delimiter">;;</span><span class="org-comment">&#25110;&#32773;&#29992;in-buffer settings ;;#+TODO:</span>
+TODO(t) WAIT(w@/!) | DONE(d!) CANCELED(c@) <span class="org-comment-delimiter">;;</span><span class="org-comment">&#20877;&#25110;&#32773;&#29992;property</span>
+<span class="org-comment-delimiter">;;</span><span class="org-comment">:PROPERTIES: ;;:LOGGING: TODO(!) WAIT(!) DONE(!) CANCELED(!)</span>
 <span class="org-comment-delimiter">;;</span><span class="org-comment">:END:</span>
 </pre>
 </div>
@@ -284,7 +272,8 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 <h3 id="sec-9-3">把记录做在指定的Drawer中</h3>
 <div class="outline-text-3" id="text-9-3">
 <p>
-如果状态变更历史太多，放在一个Drawer中收起来会好看很多。设置org-log-into-drawer，指定笔记放在那个Drawer，一般指定为LOGBOOK，会在aganda view生效。
+如果状态变更历史太多，放在一个Drawer中收起来会好看很多。设置
+org-log-into-drawer，指定笔记放在那个Drawer，一般指定为LOGBOOK，会在aganda view生效。
 </p>
 </div>
 </div>
@@ -307,8 +296,7 @@ C-c C-c org-toggle-checkbox可以修改checkbox状态
 * TODO [#A] Write letter to Sam Fortune
 </pre>
 <p>
-C-c , 添加优先级
-S-up/down 调整优先级
+C-c , 添加优先级S-up/down 调整优先级
 </p>
 </div>
 </div>
@@ -319,13 +307,12 @@ S-up/down 调整优先级
 <h3 id="sec-12-1">tags的基本信息</h3>
 <div class="outline-text-3" id="text-12-1">
 <p>
-标签可以根据TODO headline的结构关系继承。
-tags大概长这个样子：
+标签可以根据TODO headline的结构关系继承。tags大概长这个样子：
 </p>
 <pre class="example">
 * Meeting with the French group  :work:
-** Summary by Frank              :boss:notes:
-*** TODO Prepare slides for him  :action:
+** Summary by Frank :boss:notes: * TODO Prepare slides for
+**him :action:
 </pre>
 <p>
 可以通过in-buffer settings设置文件的tag，所有的todo都会继承
@@ -380,8 +367,8 @@ tags大概长这个样子：
 <h3 id="sec-12-3">定义tags</h3>
 <div class="outline-text-3" id="text-12-3">
 <p>
-默认tags列表是动态的，你写什么就有什么，也可以通过设置org-tag-alist定义一个固定的tag
-list，类似TODO的定义，可以全局，可以文件
+默认tags列表是动态的，你写什么就有什么，也可以通过设置org-tag-alist
+定义一个固定的tag list，类似TODO的定义，可以全局，可以文件
 </p>
 <pre class="example">
 #+TAGS: @work @home @tennisclub
@@ -393,7 +380,8 @@ list，类似TODO的定义，可以全局，可以文件
 <h3 id="sec-12-4">定义tag快捷键，很简单同TODO</h3>
 <div class="outline-text-3" id="text-12-4">
 <pre class="example">
-(setq org-tag-alist '(("@work" . ?w) ("@home" . ?h) ("laptop" . ?l)))
+(setq org-tag-alist '(("@work" . ?w) ("@home" . ?h) ("laptop"
+. ?l)))
 #+TAGS: @work(w)  @home(h)  @tennisclub(t)  laptop(l)  pc(p)
 </pre>
 </div>
@@ -406,11 +394,9 @@ list，类似TODO的定义，可以全局，可以文件
 </p>
 <pre class="example">
 #+TAGS: { @work(w)  @home(h)  @tennisclub(t) }  laptop(l)  pc(p)
-(setq org-tag-alist '((:startgroup . nil)
-                        ("@work" . ?w) ("@home" . ?h)
-                        ("@tennisclub" . ?t)
-                        (:endgroup . nil)
-                        ("laptop" . ?l) ("pc" . ?p)))
+(setq org-tag-alist '((:startgroup . nil) ("@work" . ?w) ("@home"
+                        . ?h) ("@tennisclub" . ?t) (:endgroup
+                        . nil) ("laptop" . ?l) ("pc" . ?p)))
 </pre>
 </div>
 </div>
@@ -424,20 +410,10 @@ list，类似TODO的定义，可以全局，可以文件
 #+TAGS: [ GTD : Control Persp ]
 #+TAGS: [ Control : Context Task ]
 #+TAGS: [ Persp : Vision Goal AOF Project ]
-;;使用全局设置
-(setq org-tag-alist '((:startgrouptag)
-                        ("GTD")
-                        (:grouptags)
-                        ("Control")
-                        ("Persp")
-                        (:endgrouptag)
-                        (:startgrouptag)
-                        ("Control")
-                        (:grouptags)
-                        ("Context")
-                        ("Task")
-                        (:endgrouptag)))
-;;使用正则
+;;使用全局设置(setq org-tag-alist '((:startgrouptag) ("GTD")
+(:grouptags) ("Control") ("Persp") (:endgrouptag) (:startgrouptag)
+("Control") (:grouptags) ("Context") ("Task") (:endgrouptag))) ;;使
+用正则
 #+TAGS: [ Vision : {V@.+} ]
 #+TAGS: [ Goal : {G@.+} ]
 #+TAGS: [ AOF : {AOF@.+} ]
@@ -524,8 +500,7 @@ list，类似TODO的定义，可以全局，可以文件
 </p>
 <pre class="example">
 * CD collection
-  ** Classic
-  *** Goldberg Variations
+  ** Classic * Goldberg Variations
       :PROPERTIES:
       :Title:     Goldberg Variations
       :Composer:  J.S. Bach
@@ -535,8 +510,7 @@ list，类似TODO的定义，可以全局，可以文件
       :END:
 </pre>
 <p>
-可以为一个key的value范围做限制，例如为:Xyz:做取值限定，只需要定义:Xyz_ALL:
-可以在文件范围内内定义属性和限制取值范围，如下：
+可以为一个key的value范围做限制，例如为:Xyz:做取值限定，只需要定义:Xyz_ALL:可以在文件范围内内定义属性和限制取值范围，如下：
 </p>
 <pre class="example">
 #+PROPERTY: NDisks_ALL 1 2 3 4
@@ -650,7 +624,7 @@ column定义的语法如下：
 <h4 id="sec-13-5-2">一个定义和使用column view的例子</h4>
 <div class="outline-text-4" id="text-13-5-2">
 <pre class="example">
-*** 例子 
+*** 例子
 :PROPERTIES:
 :COLUMNS: %25ITEM %9Approved(Approved?){X} %Owner %11Status \4 %10Time_Estimate{:} %CLOCKSUM %CLOCKSUM_T
 :Owner_ALL:    Tammy Mark Karl Lisa Don
@@ -813,8 +787,7 @@ column定义的语法如下：
 <span class="timestamp-wrapper"><span class="timestamp">&lt;2017-08-07 Mon 10:42 +1w&gt;</span></span>
 </li>
 <li>日历表达式表示的时间，这里没看太懂，应该是要结合emacs
-calendar/diary package一起使用，形式如下：
-<span class="timestamp-wrapper"><span class="timestamp">&lt;%%(diary-float t 4 2)&gt;</span></span>
+calendar/diary package一起使用，形式如下：<span class="timestamp-wrapper"><span class="timestamp">&lt;%%(diary-float t 4 2)&gt;</span></span>
 </li>
 <li>时间段，时间范围
 <span class="timestamp-wrapper"><span class="timestamp">&lt;2017-08-07 一 10:46&gt;&#x2013;&lt;2017-08-08 二 10:46&gt;</span></span>
