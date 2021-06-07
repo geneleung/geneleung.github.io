@@ -3670,6 +3670,17 @@ chmod +x /usr/local/bin/emacs
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#sec-2-5-1"&gt;2.5.1. 回顾思维&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#sec-2-5-2"&gt;2.5.2. 延续事件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-5-3"&gt;2.5.3. 表示重复性思维&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-5-4"&gt;2.5.4. 单一事件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-5-5"&gt;2.5.5. “延续事件”、“重复事件”与“单一事件”之间的相互联系&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-5-6"&gt;2.5.6. 过去完成时&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-6"&gt;2.6. 第六章 完成进行时态&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#sec-2-6-1"&gt;2.6.1. 延续事件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-6-2"&gt;2.6.2. 延续事件比较：完成进行时与完成时&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sec-2-6-3"&gt;2.6.3. 重复事件&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -5487,13 +5498,17 @@ Do it the way you were taught.这里the way是个连词，the way既不是主句
 &lt;p&gt;
 书中反复说完成时态的核心意义是回顾性思维，自己理解的什么是回顾？就是快要结束了，还没结束，还在那个状态，对之前的事情做个回顾总结。
 &lt;/p&gt;
+
+&lt;p&gt;
+继续看到后面的理解，完成时态之所以是完成时态，重点在于have这个词，也就是说完成时态重点表达不是have后面的动作，而是have的含义，have有两个含义，一个是have的时态“现在”，一个have的含义“有”，所以，延续也好，可重复性也好，对现在有影响也好，回顾也好，都和have的这两个含义有关。
+&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id="outline-container-sec-2-5-2" class="outline-4"&gt;
 &lt;h4 id="sec-2-5-2"&gt;&lt;span class="section-number-4"&gt;2.5.2&lt;/span&gt; 延续事件&lt;/h4&gt;
 &lt;div class="outline-text-4" id="text-2-5-2"&gt;
 &lt;p&gt;
-一个开始于过去的动作或状态一直延续到现在，而且还可能继续持续下去。
+一个开始于过去的动作或状态一直延续到现在，而且还可能继续持续下去。这里重点就是过去式have“现在时”的含义，说话者重点表达的是现在还是这样，持续到了现在。
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;谓语要是延续性的，能够表示延续的意思，不能是短暂的。要注意并不是完成式不能用表示短暂的谓语，而是因为表示延续事件的完成式必须要有延续性的时间状语，短暂谓语于延续性时间状语会有冲突。
@@ -5528,6 +5543,476 @@ since&amp;#x2026;因此是表示延续性的意思。
 我曾经是个老师。
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-5-3" class="outline-4"&gt;
+&lt;h4 id="sec-2-5-3"&gt;&lt;span class="section-number-4"&gt;2.5.3&lt;/span&gt; 表示重复性思维&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-5-3"&gt;
+&lt;p&gt;
+往往会有比较明显的表示重复概念的词语或语言标示，或上下文暗示。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I have had so many teachers in my life.
+&lt;/li&gt;
+&lt;li&gt;I have had teachers in school.
+&lt;/li&gt;
+&lt;li&gt;Since then he made hit after hit movies.
+&lt;/li&gt;
+&lt;li&gt;You've changed your mind a dozen times in a few minutes!
+&lt;/li&gt;
+&lt;li&gt;For us this has been the most perfect way to remember her,and
+this is how she would want to be remembered.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-2-5-3-1" name="sec-2-5-3-1"&gt;&lt;/a&gt;重复性思维和延续性思维没有明确的界限&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-5-3-1"&gt;
+&lt;p&gt;
+For more than eighty years,scientists have argued over whether
+life exists on the planet Mars.
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;延续性思维：八十多年以来，科学家们一直在争论火星上是否有生命存在。
+&lt;/li&gt;
+&lt;li&gt;重复性思维：八十多年以来，就火星上是否有生命存在这一问题，科学家们不断的挑起争论。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+一个是没停止过争论，一个是争论一会儿平息了，然后又来了。
+&lt;/p&gt;
+
+&lt;p&gt;
+I have lived in Beijing for 10 years.
+可以表示我一直在北京生活，一刻也没离开，也可能表示我前后断断续续在北京生活了10年，中间离开过北京，比如每年冬天在北京生活。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-5-3-2" name="sec-2-5-3-2"&gt;&lt;/a&gt;完成时态与一般过去时态的区别&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-5-3-2"&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;I have called him three times this morning.
+我今天上午到目前为止已经给他打过三次电话了。
+&lt;/li&gt;
+&lt;li&gt;I called him three times this morning.
+我今天上午给他打了三次电话。
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+注意区别如下：
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;说话时间点有区别，1是在今天上午说的，2是在下午，或者晚上说的，对时间没什么要求
+&lt;/li&gt;
+&lt;li&gt;可重复性不同，1中可重复，已经打了三次，后面可能还要继续打第四次第五次，2中不具有可重复性，3次就已经完了。
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+其实还是一般态的本质思维，一般态只讲一个动作的概念，不讲这个动作本身，有这么一个动作，过去发生的，而重点不在这个动作具体的发生方式，延续不延续，重复不重复，开始结束，对现在有没有影响等等，而其他体态则会强调动作的具体发生方式。
+&lt;/p&gt;
+
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;How many people have entered for the race?
+目前为止多少人报名参加这个比赛。比赛还没开始，后面还有人陆续报名。
+&lt;/li&gt;
+&lt;li&gt;How many people entered for the race?
+有多人报名参加那次比赛。书上说是比赛已经结束了，我到觉得说报名已经结束了更准确。
+&lt;/li&gt;
+&lt;li&gt;Have you visited the new exhibit?
+注意细节，因为是完成时态，具备了将来可持续性，因此可以判断展览会还没结束
+&lt;/li&gt;
+&lt;li&gt;Did you visited the new exhibit?
+展览会已经结束，无法再visit了
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-5-3-3" name="sec-2-5-3-3"&gt;&lt;/a&gt;完成时态的可重复性与时间状语&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-5-3-3"&gt;
+&lt;p&gt;
+说白了，主要还是看表达的意义是否是合理的，完成时态具有意义，时间状语又给出了时间点，两者结合表达的意义如果是合理的就是可搭配的，如果不合理就不能搭配。
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;可重复原则是现在完成时态的一条根本原则
+&lt;/li&gt;
+&lt;li&gt;可重复原则与将来的时间
+&lt;/li&gt;
+&lt;li&gt;可重复性原则与过去时间
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I was absent four times last semester.
+我上学期逃课四次。
+&lt;/li&gt;
+&lt;li&gt;I have been absent twice this semester.
+这学期到目前为止我逃过两次课。注意，last semester这样的状语和完成时态的意义是冲突的，所以这里用了this semester
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;可重复性原则与现在时间
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I haven't seen him this morning.
+今天上午到现在我还一直没有见到他。
+&lt;/li&gt;
+&lt;li&gt;I didn't see him this morning.
+今天上午我没见到他。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;可重复性原则与一般时间什么是一般时间，就是指如in the morning这样的时间概念，而不是具体的时间点。在时间概念上，事件是可重复的，比如在早晨，在晚上，在5点钟这样的概念，而且这也是完成时态的一个典型用法。
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I have gotten up at five o'clock in the morning.
+我曾在早晨五点起过床。注意，将来也可能。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;可重复性原则与地点表达有时地点状语起着表明说话时间的作用
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;In my hometown,I had five jobs.
+In this city,I have had two jobs.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-5-4" class="outline-4"&gt;
+&lt;h4 id="sec-2-5-4"&gt;&lt;span class="section-number-4"&gt;2.5.4&lt;/span&gt; 单一事件&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-5-4"&gt;
+&lt;/div&gt;&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-2-5-4-1" name="sec-2-5-4-1"&gt;&lt;/a&gt;单一事件对现在有影响&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-5-4-1"&gt;
+&lt;p&gt;
+“对现在有影响”的理解是，一个是事情确实对现在有影响，另一方面，从说话者的角度，更倾向于表达让听者注意现在而不是过去那个事。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;David has fallen in love.
+言外之意，说话者必然还有一个David现在什么的状态的一个暗示，这才是说话者想要强调的内容。这就是所谓的对现在有影响。
+David has fallen in love,and that's why he's becoming excited.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-5-4-2" name="sec-2-5-4-2"&gt;&lt;/a&gt;近的过去事件&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-5-4-2"&gt;
+&lt;p&gt;
+书中分为近的过去事件和远的过去事件。引用书中的一段话：我们用“现在完成式”提起一个新闻话题，用“一般过去时”继续详谈内容。这是因为，现在完成时属于现在时态，所以我们不关心动作发生的具体的过去时间是远还是近，而是关注这一过去事件对现在的结果或对现在造成的影响，即不关注事件发生的时间，而关注事件的内容。因而，在实际生活对话中，通常先用现在完成时开始提出一个谈论的话题，随着对话的继续，动作发生的过去事件在说话人的脑子里已经确定了。
+&lt;/p&gt;
+
+
+&lt;p&gt;
+近的事件我自己的理解其实倾向于have
+这个词现在的时态，有种“我给你讲个新鲜事”的感觉，重点在于“新鲜”，虽然这个事情是之前（近的过去）发生的，但是听者可能还不知道，对于听者来说是现在的，新鲜的，一旦说完就不新鲜了，后面就是过去时了，就是书中说的完成式和过去式的搭配问题。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;The President has been assasinated.
+热点新闻，第一时间播报的新闻。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-5-4-3" name="sec-2-5-4-3"&gt;&lt;/a&gt;远的过去事件&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-5-4-3"&gt;
+&lt;p&gt;
+当谈论一个发生在离现在事件较远的过去的某个事件时，常常还有回顾自己曾经经历的意味。所以，如果把现在完成时用于指较远的过去事件，这时的完成时往往用来谈论人们过去的经历或经验。
+&lt;/p&gt;
+
+&lt;p&gt;
+我的理解就是这个用法在于have的“有”的含义，重点在于“有过”，“经历过”，而不在于事件本身。另外还应注意，这个表达并没有强调事件次数的概念，可以是一次，也可以是多次，和“重复事件”的用法联系而不冲突。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Have you ever &amp;#x2026;?
+&lt;/li&gt;
+&lt;li&gt;I have been married.
+我结过婚。（注意，没有说我结过几次，可以一次，也可以多次）
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-5-4-4" name="sec-2-5-4-4"&gt;&lt;/a&gt;“单一事件”与事件状语的关系&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-5-4-4"&gt;
+&lt;p&gt;
+还是之前的总结，看意义即可，意义合理就OK
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;持续事件与持续时间状语
+&lt;/li&gt;
+&lt;li&gt;单一事件肯定句不与持续时间状语连用
+&lt;/li&gt;
+&lt;li&gt;单一事件否定句与持续时间状语连用
+&lt;/li&gt;
+&lt;li&gt;单一事件与不确定的事件状语连用
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-5-5" class="outline-4"&gt;
+&lt;h4 id="sec-2-5-5"&gt;&lt;span class="section-number-4"&gt;2.5.5&lt;/span&gt; “延续事件”、“重复事件”与“单一事件”之间的相互联系&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-5-5"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I have been married for a year.
+&lt;/li&gt;
+&lt;li&gt;I have been married.
+&lt;/li&gt;
+&lt;li&gt;I have been married three times.
+&lt;/li&gt;
+&lt;li&gt;I have lived here since 1980.
+&lt;/li&gt;
+&lt;li&gt;I have lived here on and off since 1980.
+&lt;/li&gt;
+&lt;li&gt;He has lived here for ten years.
+&lt;/li&gt;
+&lt;li&gt;He has lived here several times.
+&lt;/li&gt;
+&lt;li&gt;He has been married for a year.
+&lt;/li&gt;
+&lt;li&gt;He has been married a couple of times.
+&lt;/li&gt;
+&lt;li&gt;He has been fired.
+&lt;/li&gt;
+&lt;li&gt;He has been fired before.
+&lt;/li&gt;
+&lt;li&gt;He has just been fired.
+&lt;/li&gt;
+&lt;li&gt;He has been fired three times so far.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-2-5-5-1" name="sec-2-5-5-1"&gt;&lt;/a&gt;"动作表达"的完成时态与“状态表达”的一般现在时态&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-5-5-1"&gt;
+&lt;p&gt;
+两者一个是用动作来表达一个事件，一个是用状态来表达一个事件，可以表达同一个事件，但强调的重点不同，表达出的含义也有很大区别，有些场景是不能混用的。
+&lt;/p&gt;
+
+&lt;p&gt;
+“动作表达”的完成时态和“状态表达”的一般现在时都是描述一个过去事件。“动作表达”描述一个强调对现在影响的，近的过去的单一事件，往往是个短暂动词。而状态表达只是陈述事实。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;His father has died.
+可能朋友的爸爸刚刚趋势，你的朋友状态很不好，别人问起的时候就可以这么说。
+&lt;/li&gt;
+&lt;li&gt;His father id dead.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-5-5-2" name="sec-2-5-5-2"&gt;&lt;/a&gt;"动作表达"的完成时态与“状态表达”的完成时态&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-5-5-2"&gt;
+&lt;p&gt;
+“状态表达”的完成时态表示较远的过去
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;He has come here.
+他过来了。（强调现在，暗示后面他一定会做什么事情，过来只是这些事情的原因，这些事情是过来的目的）
+&lt;/li&gt;
+&lt;li&gt;He has been here.
+他来过。（现在已经不在这里了，强调他有过在这的经历）
+&lt;/li&gt;
+&lt;li&gt;He has been here for three hours.
+他已经在这里3个小时了（现在还在）
+&lt;/li&gt;
+&lt;li&gt;He is here.
+他在这里.(简单陈述)
+&lt;/li&gt;
+&lt;li&gt;He was here.
+他之前在这。（现在已经不在这里了，强调他在与不在这个事儿）
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-5-5-3" name="sec-2-5-5-3"&gt;&lt;/a&gt;完成时与最高级&lt;br  /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-5-5-4" name="sec-2-5-5-4"&gt;&lt;/a&gt;时间连词since的特殊用法&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-5-5-4"&gt;
+&lt;p&gt;
+重点看下下面这句
+It has been three years since I worked in this company.
+距离我离开这家公司已经三年了。（基于对过去式的理解，理解这句话并不难）
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-2-5-5-4-1" name="sec-2-5-5-4-1"&gt;&lt;/a&gt;since + 短暂动词&lt;br  /&gt;&lt;div class="outline-text-6" id="text-2-5-5-4-1"&gt;
+&lt;p&gt;
+since 后面接短暂动词时，用一般过去时态或现在完成时态均可，而且意思一样，都表示从句动作“结束”以来，主句活动在持续。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I have worked in this company since I left school.
+&lt;/li&gt;
+&lt;li&gt;I have worked in this company since I have left school.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-5-5-4-2" name="sec-2-5-5-4-2"&gt;&lt;/a&gt;since + 延续动词&lt;br  /&gt;&lt;div class="outline-text-6" id="text-2-5-5-4-2"&gt;
+&lt;p&gt;
+当since接延续动词时，用一般过去时态或现在完成时态均可，但意思不一样。若用一般过去时态，则表示从句动作“结束”以来，主句活动在持续；若用现在完成时态，则表示从句动作“开始”以来，主句活动在持续。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;It's been three years since I worked in this company.
+&lt;/li&gt;
+&lt;li&gt;It's been three years since I have worked in this company.
+&lt;/li&gt;
+&lt;li&gt;It's tow years since I was in this university.
+我离开这所大学两年了。
+&lt;/li&gt;
+&lt;li&gt;It's tow years since I have been in this university.
+我上这所大学已经有两年了。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;
+&lt;/li&gt;&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-5-6" class="outline-4"&gt;
+&lt;h4 id="sec-2-5-6"&gt;&lt;span class="section-number-4"&gt;2.5.6&lt;/span&gt; 过去完成时&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-6" class="outline-3"&gt;
+&lt;h3 id="sec-2-6"&gt;&lt;span class="section-number-3"&gt;2.6&lt;/span&gt; 第六章 完成进行时态&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-6"&gt;
+&lt;p&gt;
+现在完成进行时的核心意义时表示：被描述的事件开始于现在之前，而且时有限地（不会无限期地）持续下去。简而言之，完成进行时的核心含义是表示“有限的延续性”
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-6-1" class="outline-4"&gt;
+&lt;h4 id="sec-2-6-1"&gt;&lt;span class="section-number-4"&gt;2.6.1&lt;/span&gt; 延续事件&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-6-1"&gt;
+&lt;/div&gt;&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-2-6-1-1" name="sec-2-6-1-1"&gt;&lt;/a&gt;长期在延续的事件&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-6-1-1"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I have been teaching in this school for 25 years.
+&lt;/li&gt;
+&lt;li&gt;I have taught in this school for 25 years.
+&lt;/li&gt;
+&lt;li&gt;有限延续动词
+&lt;/li&gt;
+&lt;li&gt;无限延续动词
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-6-1-2" name="sec-2-6-1-2"&gt;&lt;/a&gt;近期在延续的事件&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-6-1-2"&gt;
+&lt;p&gt;
+下面是我自己造句思考的。相近的意思，不同的动词需要搭配不同的时态，表达细微区别的意思。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Recently,they have been considering getting married.
+最近在考虑
+&lt;/li&gt;
+&lt;li&gt;They are getting married.
+已经安排好结婚了，就等到日子了。
+&lt;/li&gt;
+&lt;li&gt;They are going to be married.
+他们计划结婚。
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+看下面完成进行时和正在进行时的区别，还是完成时的感觉占了主导，就是以have所强调的“现在”为主要强调含义，前调因果，强调影响，强调主观故意而为之。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Has Cynthia been working hard on her term paper?She looks so tired.
+&lt;/li&gt;
+&lt;li&gt;Cynthia is working hard on her term paper these days.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+看下面的对话，直接用正在进行时有种客观发展的感觉；用完成进行时就有别人有意而为之的感觉。正在进行时描述一个当前正在发生的现象，而完成进行时重点在have，有过这样的一个行为（现象），“现象”和“有现象”的区别。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Nina:Do you have a sec?
+&lt;/li&gt;
+&lt;li&gt;Chandler:Ah,sure,Nina,What's up?
+&lt;/li&gt;
+&lt;li&gt;I don't know.For the past couple days, people have been
+avoiding me and giving me these really strange looks.
+&lt;/li&gt;
+&lt;li&gt;For the past couple days,people are avoiding me &amp;#x2026;自己造的句子，可能不应该有前面的时间状语。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-6-1-3" name="sec-2-6-1-3"&gt;&lt;/a&gt;在说话时刻仍在延续的事件&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-6-1-3"&gt;
+&lt;p&gt;
+完成进行时和正在进行时的区别基本也就清晰了，正在进行时只描述当前的一个还没结束的“现象”，没有表示时间段的时间状语；而完成进行时则强调某一时间段内“现象”的持续。注意强调的重点，进行时是“现象”，完成进行时时“持续”。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I'm staring at this computer.不接时间状语。
+&lt;/li&gt;
+&lt;li&gt;I've been staring at this computer screen for hours and my eyes hurt.
+&lt;/li&gt;
+&lt;li&gt;It began raining two hours ago and it's still raining.It has
+been raining for two hours.
+&lt;/li&gt;
+&lt;li&gt;It began raining at 8 o'clock.Now it's still raining.It has
+been raining since 8 o'clock.It has been raining all day.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-6-1-4" name="sec-2-6-1-4"&gt;&lt;/a&gt;在说话时刻之前在延续的事件（即刚刚在延续的事件）&lt;br  /&gt;&lt;/li&gt;&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-6-2" class="outline-4"&gt;
+&lt;h4 id="sec-2-6-2"&gt;&lt;span class="section-number-4"&gt;2.6.2&lt;/span&gt; 延续事件比较：完成进行时与完成时&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-6-2"&gt;
+&lt;/div&gt;&lt;ol class="org-ol"&gt;&lt;li&gt;&lt;a id="sec-2-6-2-1" name="sec-2-6-2-1"&gt;&lt;/a&gt;情况一&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-6-2-1"&gt;
+&lt;p&gt;
+完成进行时和完成时都有have，都表示对现在的影响，区别在于后面。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;My hands are dirty.I've been cleaning the car.
+完成进行时强调当时那个活动的持续性，以及这个正在持续的活动对现在的影响。（我的手脏了，我刚刚一直在洗车来着），因为这个持续活动的结果。强调这个事件过程对现在的影响。
+&lt;/li&gt;
+&lt;li&gt;I've just cleaned the car.
+完成时强调活动完成后的影响。（我把车洗干净了），因为洗了车，所以车干净了。强调这个事件结果对现在的影响。
+&lt;/li&gt;
+&lt;li&gt;Be careful!I've been painting the door!
+小心！这门我刚刚刷过漆。（漆还没干）
+&lt;/li&gt;
+&lt;li&gt;I've painted the door green.
+我把门漆成了绿色。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-6-2-2" name="sec-2-6-2-2"&gt;&lt;/a&gt;情况二&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-6-2-2"&gt;
+&lt;p&gt;
+书上说几乎无区别，只是有观点认为二者的细微区别在于：现在完成进行时会强烈暗示动作会继续持续下去；而现在完成时则往往表示动作有可能会持续下去。我自己理解，完成进行时语气更强一些，强调动作的过程，完成时则强调动作结果，和情况一很类似。以下例句书上都没出区别，含义一样，都是表示动作仍会持续下去，我自己加了一些理解。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I have been learning English for ten years.
+考虑这样的场景，别人看到你在学英语，问你“还在学英语啊，学了多长时间了？”然后用完成进行时回答就挺合适的。
+&lt;/li&gt;
+&lt;li&gt;I have learned English for ten years.
+考虑这样的场景，别人看到你看英文原版书或电影，感叹：哇，你英语这么好啊。然后用完成时回答就挺合适的。
+&lt;/li&gt;
+&lt;li&gt;I have been living here since 3 years ago.
+&lt;/li&gt;
+&lt;li&gt;I have lived here since 3 years ago.
+&lt;/li&gt;
+&lt;li&gt;I have been teaching for 25 years.
+&lt;/li&gt;
+&lt;li&gt;I have taught for 25 years.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id="sec-2-6-2-3" name="sec-2-6-2-3"&gt;&lt;/a&gt;情况三&lt;br  /&gt;&lt;div class="outline-text-5" id="text-2-6-2-3"&gt;
+&lt;p&gt;
+完成时如果没有持续的时间状语，则表示一个在过去完成了的事件，而完成进行时即使不接持续的时间状语，依然可以表示事件的延续性。
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I have worked in this company.
+我在这家公司工作过。
+&lt;/li&gt;
+&lt;li&gt;I have been working in this company.
+我一直就在这家公司工作。
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-6-3" class="outline-4"&gt;
+&lt;h4 id="sec-2-6-3"&gt;&lt;span class="section-number-4"&gt;2.6.3&lt;/span&gt; 重复事件&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-2-6-3"&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I have been coming to Beijing for 14 years.
+在过去的14年中，我常常来北京。
+&lt;/li&gt;
+&lt;li&gt;They have been going together for over three years now.
+&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Mike has been winning that race for two hours.&lt;/del&gt;
+短暂动词用于完成进行时态（如have been coming）一般不宜接“短的时间状语”。上面这句话就是错的，因为一个人不可能在两小时内连续两次、甚至多次赢得某个比赛。但可以这么用。
+Mike has been winning that race for years.
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
